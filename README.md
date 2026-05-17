@@ -602,16 +602,29 @@ The goal is to make Zonules.com a reference system that can be read, cited, navi
 The approved language priority is:
 
 1. **English** — primary scientific, technical, institutional, and global reference layer
-2. **German** — optics, ophthalmology, engineering, and the linguistic relevance of “Zonules” in European scientific contexts
-3. **Arabic** — underserved high-quality scientific reference layer across MENA, ophthalmology, AI, education, and visual literacy
-4. **Chinese** — major AI, computer vision, optics, manufacturing, and research ecosystem
-5. **Japanese** — precision optics, robotics, imaging systems, medical technology, and advanced machine vision
-6. **French** — European and francophone scientific, medical, philosophical, and AI reference layer
-7. **Spanish** — broad scientific accessibility across Spain, Latin America, medicine, education, and technology
+2. **French** — francophone scientific, medical, philosophical, educational, and AI reference layer
+3. **German** — optics, ophthalmology, engineering, terminology precision, and European scientific depth
+4. **Spanish** — broad scientific accessibility across Spain, Latin America, medicine, education, and technology
+5. **Chinese** — major AI, computer vision, optics, manufacturing, and research ecosystem
+6. **Arabic** — high-value scientific reference layer across MENA, ophthalmology, AI, education, and visual literacy
+7. **Japanese** — precision optics, robotics, imaging systems, medical technology, and advanced machine vision
+8. **Russian** — scientific, medical, optical, mathematical, engineering, and technical reference layer across Russian-language research contexts
 
 English remains the canonical base layer.
 
 Secondary languages must inherit the same thesis, structure, safety posture, and reference quality.
+
+Approved language codes:
+
+- `en` — English
+- `fr` — French
+- `de` — German
+- `es` — Spanish
+- `zh` — Chinese
+- `ar` — Arabic
+- `ja` — Japanese
+- `ru` — Russian
+
 
 ---
 

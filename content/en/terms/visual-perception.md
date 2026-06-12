@@ -66,6 +66,7 @@ Perception is the bridge to the technology layer. The questions perception answe
 
 - [Zonules of Zinn](/zonules-of-zinn/) — the physical suspension system that delivers the image perception interprets
 - [Machine Vision](/machine-vision/) — the artificial counterpart that answers the same questions differently
+- [Focus Integrity Engine](/focus-integrity-engine/) — run the same five-criterion assessment against human perception
 
 ## Reference Notes
 

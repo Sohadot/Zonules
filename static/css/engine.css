@@ -1,0 +1,120 @@
+/*
+ * Focus Integrity Engine — governed interface styling.
+ * Visual language: hidden structure, optical tension, controlled luminosity.
+ * Concept first, then performance, then beauty. No decoration without function.
+ * Inlined into static/engine/index.html by scripts/build_engine.py.
+ */
+:root {
+  --ink: #0c1218;
+  --paper: #f4f6f8;
+  --line: #2a3744;
+  --fiber: #5f7d92;
+  --accent: #c8d6e0;
+  --intact: #3f7d5a;
+  --atrisk: #a8842c;
+  --failed: #a4453a;
+  --muted: #7c8a96;
+  --focus-ring: #9fc1d8;
+}
+
+* { box-sizing: border-box; }
+
+body.fie {
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fie-wrap { max-width: 820px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+
+.fie-eyebrow {
+  text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.72rem;
+  color: var(--muted); margin: 0 0 0.75rem;
+}
+.fie-title { font-size: 1.9rem; line-height: 1.2; margin: 0 0 0.75rem; font-weight: 600; }
+.fie-lede { color: var(--accent); font-size: 1.05rem; margin: 0 0 2rem; max-width: 60ch; }
+
+/* Suspension motif: a hairline that holds the title block in tension. */
+.fie-rule {
+  height: 1px; background: linear-gradient(90deg, transparent, var(--fiber), transparent);
+  margin: 0 0 2.25rem;
+}
+
+.fie-step { border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem 1.25rem 1.5rem; margin: 0 0 1.5rem; }
+.fie-step legend { padding: 0 0.5rem; color: var(--accent); font-weight: 600; letter-spacing: 0.02em; }
+.fie-thesis { color: var(--muted); font-style: italic; margin: 0.25rem 0 1.25rem; }
+
+.fie-layers { display: grid; gap: 0.75rem; }
+@media (min-width: 680px) { .fie-layers { grid-template-columns: repeat(3, 1fr); } }
+.fie-layer {
+  text-align: left; cursor: pointer; background: #121b23; color: var(--paper);
+  border: 1px solid var(--line); border-radius: 6px; padding: 0.9rem; display: grid; gap: 0.35rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.fie-layer:hover { border-color: var(--fiber); transform: translateY(-1px); }
+.fie-layer[aria-pressed="true"], .fie-layer:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.fie-layer-id { font-size: 0.7rem; letter-spacing: 0.14em; color: var(--muted); }
+.fie-layer-label { font-weight: 600; font-size: 1.02rem; }
+.fie-layer-framing { font-size: 0.82rem; color: var(--muted); line-height: 1.45; }
+
+.fie-q { padding: 0.9rem 0; border-top: 1px solid #1b2730; }
+.fie-q:first-of-type { border-top: 0; }
+.fie-q-text { margin: 0 0 0.6rem; display: grid; gap: 0.2rem; }
+.fie-crit-id { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
+.fie-q-question { font-size: 1rem; }
+.fie-opts { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.fie-opt {
+  display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; padding: 0.35rem 0.8rem; font-size: 0.9rem;
+}
+.fie-opt:focus-within { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.fie-opt input { accent-color: var(--focus-ring); }
+
+.fie-actions { margin-top: 1.25rem; }
+.fie-run {
+  cursor: pointer; background: var(--accent); color: var(--ink); border: 0; border-radius: 6px;
+  padding: 0.7rem 1.4rem; font-weight: 600; font-size: 1rem;
+}
+.fie-run:hover { background: #fff; }
+.fie-run:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+.fie-reading { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1.75rem; }
+.fie-verdict { font-size: 1.4rem; margin: 0 0 0.25rem; outline: none; }
+.fie-verdict-intact { color: var(--intact); }
+.fie-verdict-at-risk { color: var(--atrisk); }
+.fie-verdict-failed { color: var(--failed); }
+.fie-reading-sub { color: var(--muted); margin: 0 0 1.25rem; font-size: 0.9rem; letter-spacing: 0.02em; }
+
+.fie-guard {
+  background: #1b1410; border: 1px solid #3a2c1e; color: #e6cfa6; border-radius: 6px;
+  padding: 0.8rem 1rem; font-size: 0.88rem; margin: 0 0 1.25rem;
+}
+.fie-clean { color: var(--intact); }
+
+.fie-findings { display: grid; gap: 1rem; }
+.fie-finding { border: 1px solid var(--line); border-left-width: 3px; border-radius: 6px; padding: 1rem 1.1rem; }
+.fie-finding-failed { border-left-color: var(--failed); }
+.fie-finding-at-risk { border-left-color: var(--atrisk); }
+.fie-finding h3 { margin: 0 0 0.5rem; font-size: 1rem; display: flex; gap: 0.6rem; align-items: baseline; flex-wrap: wrap; }
+.fie-finding-state { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.fie-finding-sign { margin: 0 0 0.5rem; }
+.fie-finding-map { margin: 0 0 0.4rem; color: var(--accent); }
+.fie-arrow { color: var(--muted); }
+.fie-finding-claim { margin: 0 0 0.5rem; color: var(--muted); font-style: italic; }
+.fie-finding-refs { margin: 0; font-size: 0.88rem; }
+.fie-finding-refs a { color: var(--focus-ring); }
+
+.fie-provenance { margin-top: 1.75rem; color: var(--muted); font-size: 0.78rem; letter-spacing: 0.02em; }
+
+.fie-fallback { border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem; }
+.fie-fallback h2 { margin-top: 0; }
+.fie-fallback a { color: var(--focus-ring); }
+.fie-fallback ul { padding-left: 1.1rem; }
+
+a { color: var(--focus-ring); }
+
+@media (prefers-reduced-motion: reduce) {
+  .fie-layer { transition: none; }
+}

@@ -71,6 +71,7 @@ The chain traces back to the eye. The [zonular suspension system](/zonules-of-zi
 
 - [Visual Perception](/visual-perception/) — the human counterpart machine vision is measured against
 - [Zonules of Zinn](/zonules-of-zinn/) — the anatomical origin of the focus-integrity thesis
+- [Focus Integrity Engine](/focus-integrity-engine/) — run the five-criterion assessment against a machine vision system
 
 ## Reference Notes
 

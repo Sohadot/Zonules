@@ -1,0 +1,114 @@
+{
+  "id": "FIE",
+  "name": "Focus Integrity Engine",
+  "version": "0.1",
+  "asset": "zonules.com",
+  "protocol": "FIA",
+  "governing_document": "REFERENCE_ARCHITECTURE.md",
+  "determinism_note": "Every reading is a pure function of the selected inputs, computed by inverting FIS criteria into FIO classes. No randomness, no network call, no data collection, no input leaves the device.",
+  "thesis_line": "The same five questions decide focus integrity — whether the system that sees is made of tissue, of attention, or of silicon.",
+  "verdict_order": ["failed", "at-risk", "intact"],
+  "verdict_labels": {
+    "intact": "Focus integrity: intact",
+    "at-risk": "Focus integrity: at risk",
+    "compromised": "Focus integrity: compromised"
+  },
+  "class_links": {
+    "FIO-01": ["/zonules-of-zinn/", "/visual-perception/"],
+    "FIO-02": ["/lens-accommodation/"],
+    "FIO-03": ["/machine-vision/"],
+    "FIO-04": ["/machine-vision/"],
+    "FIO-05": ["/machine-vision/"]
+  },
+  "layers": {
+    "L1": {
+      "label": "The biological eye",
+      "framing": "Anatomy is where the thesis is literal: fibers hold a lens in tension so focus can exist.",
+      "medical_guard": true,
+      "criteria": ["FIS-1", "FIS-2", "FIS-3"],
+      "prompts": {
+        "FIS-1": {
+          "question": "Are the structures that suspend the focal element identified and stable?",
+          "failed_sign": "The suspension layer cannot hold the focal element in position.",
+          "atrisk_sign": "The suspension is present but its stability is uncertain."
+        },
+        "FIS-2": {
+          "question": "Can focus be adjusted across its intended range of distances?",
+          "failed_sign": "Focus is fixed and cannot adjust across the range.",
+          "atrisk_sign": "The adjustable range is narrowing."
+        },
+        "FIS-3": {
+          "question": "Does meaningful signal reach the focal surface clearly?",
+          "failed_sign": "Signal is lost in scatter or opacity before it resolves.",
+          "atrisk_sign": "Contrast is reduced but signal still resolves."
+        }
+      }
+    },
+    "L2": {
+      "label": "Human perception",
+      "framing": "In perception, attention is the suspension system: it holds an interpretation in place the way the zonules hold the lens.",
+      "medical_guard": false,
+      "criteria": ["FIS-1", "FIS-2", "FIS-3", "FIS-4", "FIS-5"],
+      "prompts": {
+        "FIS-1": {
+          "question": "Is attention holding the focal target steady against competing stimuli?",
+          "failed_sign": "Attentional anchoring has collapsed; the target cannot be held.",
+          "atrisk_sign": "Attention is held but contested."
+        },
+        "FIS-2": {
+          "question": "Does the interpretation stay stable as viewing conditions change?",
+          "failed_sign": "Perceptual constancy fails; the percept does not adapt.",
+          "atrisk_sign": "Constancy is strained under changing conditions."
+        },
+        "FIS-3": {
+          "question": "Is figure separated from ground, signal from noise?",
+          "failed_sign": "Figure-ground separation has collapsed.",
+          "atrisk_sign": "Salience is partly misallocated."
+        },
+        "FIS-4": {
+          "question": "Is the source of the percept correctly attributed?",
+          "failed_sign": "The percept's source is misattributed; false confidence in an illusion.",
+          "atrisk_sign": "Source attribution is uncertain."
+        },
+        "FIS-5": {
+          "question": "Does clear, held focus produce the correct meaning?",
+          "failed_sign": "A sharp percept is read with the wrong meaning.",
+          "atrisk_sign": "Interpretation is plausible but unconfirmed."
+        }
+      }
+    },
+    "L3": {
+      "label": "A machine vision system",
+      "framing": "In a machine, calibration and grounding play the suspension role. The age of synthetic media is a crisis of machine focus integrity.",
+      "medical_guard": false,
+      "criteria": ["FIS-1", "FIS-2", "FIS-3", "FIS-4", "FIS-5"],
+      "prompts": {
+        "FIS-1": {
+          "question": "Is the model's spatial grounding and calibration stable?",
+          "failed_sign": "Calibration or grounding is lost; the reference frame drifts.",
+          "atrisk_sign": "Grounding is holding but degrading."
+        },
+        "FIS-2": {
+          "question": "Does the model hold focus across operating conditions, not just training ones?",
+          "failed_sign": "Domain shift defeats the model outside training conditions.",
+          "atrisk_sign": "Performance narrows as conditions move from training."
+        },
+        "FIS-3": {
+          "question": "Does the model separate signal from adversarial or synthetic noise?",
+          "failed_sign": "Adversarial or synthetic noise defeats separation.",
+          "atrisk_sign": "Separation is reduced under noise."
+        },
+        "FIS-4": {
+          "question": "Can the origin and authenticity of the input be established?",
+          "failed_sign": "No provenance: the system cannot tell whether the input is real.",
+          "atrisk_sign": "Provenance is partial or unverified."
+        },
+        "FIS-5": {
+          "question": "Does correct detection translate into correct interpretation?",
+          "failed_sign": "Detection is correct but the scene is interpreted wrongly.",
+          "atrisk_sign": "Interpretation is uncertain beyond detection."
+        }
+      }
+    }
+  }
+}

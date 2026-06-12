@@ -1,11 +1,38 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "0.4",
+  "version": "0.5",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
   "routes": [
+    {
+      "path": "/focus-integrity-engine/",
+      "language": "en",
+      "page_type": "engine",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/focus-integrity-engine/",
+      "hreflang_group": "focus-integrity-engine",
+      "layer": "cross",
+      "cluster": "engine",
+      "fio_class": "all",
+      "template": "static/engine/index.html",
+      "content": "static/engine/index.html",
+      "seo_title": "Focus Integrity Engine — Run the Focus Integrity Assessment | Zonules.com",
+      "meta_description": "Run the Focus Integrity Assessment: the same five criteria decide whether focus holds in the eye, in perception, or in a machine. Deterministic, computed locally, no data collected.",
+      "required_internal_links": [
+        "/zonules-of-zinn/",
+        "/visual-perception/",
+        "/machine-vision/",
+        "/lens-accommodation/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
     {
       "path": "/zonules-of-zinn/",
       "language": "en",
@@ -154,7 +181,8 @@
       "meta_description": "Visual perception is the constructive process that turns visual input into stable meaning. The Layer 02 anchor of the focus-integrity thesis, bridging anatomy and machine vision.",
       "required_internal_links": [
         "/zonules-of-zinn/",
-        "/machine-vision/"
+        "/machine-vision/",
+        "/focus-integrity-engine/"
       ],
       "source_requirements": ["SRC-005", "SRC-006"],
       "claim_requirements": ["CLM-022", "CLM-023", "CLM-024", "CLM-025"],
@@ -179,7 +207,8 @@
       "meta_description": "Machine vision lets artificial systems detect and interpret images, but detection is not understanding and seeing is not provenance. The Layer 03 anchor of the focus-integrity thesis.",
       "required_internal_links": [
         "/visual-perception/",
-        "/zonules-of-zinn/"
+        "/zonules-of-zinn/",
+        "/focus-integrity-engine/"
       ],
       "source_requirements": ["SRC-007", "SRC-008"],
       "claim_requirements": ["CLM-026", "CLM-027", "CLM-028", "CLM-029"],

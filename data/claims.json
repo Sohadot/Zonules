@@ -727,6 +727,209 @@
       "statement": "Adversarial examples are signal-noise failures (FIO-03): imperceptible perturbations are noise structured specifically to defeat the signal-noise separation the model relies on, showing that machine and human signal boundaries do not coincide.",
       "sources": ["SRC-004"],
       "page": "/adversarial-examples/"
+    },
+    {
+      "id": "CLM-104",
+      "status": "sourced",
+      "statement": "The aqueous humor is the clear fluid filling the anterior and posterior chambers of the eye in front of the lens, supplying nutrients to the avascular cornea and lens and maintaining intraocular pressure.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/aqueous-humor/"
+    },
+    {
+      "id": "CLM-105",
+      "status": "sourced",
+      "statement": "Aqueous humor is continuously produced by the ciliary body and drained through the trabecular meshwork; the balance between production and drainage determines intraocular pressure.",
+      "sources": ["SRC-001"],
+      "page": "/aqueous-humor/"
+    },
+    {
+      "id": "CLM-106",
+      "status": "internal-framework",
+      "statement": "The aqueous humor is a structural maintenance element of focus integrity (FIO-01): it sustains the pressure and nourishment that keep the optical elements in their working geometry, an invisible support for the system rather than part of the image.",
+      "sources": ["SRC-004"],
+      "page": "/aqueous-humor/"
+    },
+    {
+      "id": "CLM-107",
+      "status": "sourced",
+      "statement": "The primary visual cortex (V1) is the region of the occipital lobe that receives the principal visual input from the lateral geniculate nucleus and performs the first cortical stage of visual processing.",
+      "sources": ["SRC-001", "SRC-005"],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-108",
+      "status": "sourced",
+      "statement": "Neurons in the primary visual cortex are tuned to specific stimulus features such as edge orientation, spatial frequency, and direction of motion, decomposing the retinal image into elementary features for further processing.",
+      "sources": ["SRC-005"],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-109",
+      "status": "internal-framework",
+      "statement": "The visual cortex is the anatomical site where interpretation begins (FIO-05): the signal arrives intact from the eye, and the construction of meaning starts here; cortical failure produces a defect of interpretation rather than of sensing.",
+      "sources": ["SRC-004"],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-110",
+      "status": "sourced",
+      "statement": "The pupillary light reflex is the automatic constriction of the pupil in response to increased light, mediated by a reflex arc involving the retina, the optic nerve, the pretectal nucleus, and the parasympathetic supply to the iris sphincter.",
+      "sources": ["SRC-001", "SRC-003"],
+      "page": "/pupillary-reflex/"
+    },
+    {
+      "id": "CLM-111",
+      "status": "sourced",
+      "statement": "The pupillary light reflex is consensual: light directed into one eye produces constriction in both pupils, because the afferent signal is distributed to the pretectal nuclei of both sides.",
+      "sources": ["SRC-001"],
+      "page": "/pupillary-reflex/"
+    },
+    {
+      "id": "CLM-112",
+      "status": "internal-framework",
+      "statement": "The pupillary light reflex is an automatic accommodation mechanism (FIO-02): it adjusts the input range to ambient conditions without conscious control, the involuntary counterpart to lens accommodation in keeping the signal within a workable range.",
+      "sources": ["SRC-004"],
+      "page": "/pupillary-reflex/"
+    },
+    {
+      "id": "CLM-113",
+      "status": "sourced",
+      "statement": "Sustained attention, also called vigilance, is the capacity to maintain focused attention on a task or stimulus stream over an extended period of time.",
+      "sources": ["SRC-005"],
+      "page": "/sustained-attention/"
+    },
+    {
+      "id": "CLM-114",
+      "status": "sourced",
+      "statement": "Vigilance performance typically declines over time on monotonous monitoring tasks, a phenomenon known as the vigilance decrement, in which detection of infrequent targets becomes slower and less reliable.",
+      "sources": ["SRC-005"],
+      "page": "/sustained-attention/"
+    },
+    {
+      "id": "CLM-115",
+      "status": "sourced",
+      "statement": "Sustained attention is distinct from selective attention: selective attention concerns which stimulus is prioritized at a moment, while sustained attention concerns maintaining that prioritization across time.",
+      "sources": ["SRC-005"],
+      "page": "/sustained-attention/"
+    },
+    {
+      "id": "CLM-116",
+      "status": "internal-framework",
+      "statement": "Sustained attention is the temporal dimension of perceptual suspension (FIO-01): selective attention establishes the hold on a focal target and sustained attention maintains that hold over time; the vigilance decrement is suspension failure across duration.",
+      "sources": ["SRC-004"],
+      "page": "/sustained-attention/"
+    },
+    {
+      "id": "CLM-117",
+      "status": "sourced",
+      "statement": "Change blindness is the failure to detect a substantial change in a visual scene when the change coincides with a brief visual disruption such as a saccade, a flicker, or an occlusion.",
+      "sources": ["SRC-005", "SRC-006"],
+      "page": "/change-blindness/"
+    },
+    {
+      "id": "CLM-118",
+      "status": "sourced",
+      "statement": "Change blindness demonstrates that the visual system does not maintain a complete detailed representation of a scene; detection of change depends on having attended to and stored the changed element before the disruption.",
+      "sources": ["SRC-006"],
+      "page": "/change-blindness/"
+    },
+    {
+      "id": "CLM-119",
+      "status": "sourced",
+      "statement": "Changes to objects that are the current focus of attention are detected readily, while changes to unattended objects frequently go unnoticed even when they are large and occur in central vision.",
+      "sources": ["SRC-005"],
+      "page": "/change-blindness/"
+    },
+    {
+      "id": "CLM-120",
+      "status": "internal-framework",
+      "statement": "Change blindness is a provenance failure across time (FIO-04): without a stored prior representation, the system has no record against which to verify what changed, so the change has no detectable origin in the perceptual record.",
+      "sources": ["SRC-004"],
+      "page": "/change-blindness/"
+    },
+    {
+      "id": "CLM-121",
+      "status": "sourced",
+      "statement": "Visual saliency is the property by which some elements of a scene stand out from their surroundings and attract attention automatically, driven by local contrasts in features such as color, intensity, orientation, and motion.",
+      "sources": ["SRC-005", "SRC-006"],
+      "page": "/visual-saliency/"
+    },
+    {
+      "id": "CLM-122",
+      "status": "sourced",
+      "statement": "Bottom-up saliency operates rapidly and involuntarily, prioritizing locations for attention based on stimulus features before any task-driven control is applied.",
+      "sources": ["SRC-005"],
+      "page": "/visual-saliency/"
+    },
+    {
+      "id": "CLM-123",
+      "status": "sourced",
+      "statement": "Computational models of saliency predict where observers will look in an image by computing feature contrast maps, and are used both to model human attention and to guide machine vision systems.",
+      "sources": ["SRC-006"],
+      "page": "/visual-saliency/"
+    },
+    {
+      "id": "CLM-124",
+      "status": "internal-framework",
+      "statement": "Visual saliency is the signal-prioritization stage of perceptual signal separation (FIO-03): it determines which parts of the field are treated as candidate signal before deliberate processing, and misallocated saliency directs focus toward noise.",
+      "sources": ["SRC-004"],
+      "page": "/visual-saliency/"
+    },
+    {
+      "id": "CLM-125",
+      "status": "sourced",
+      "statement": "Geometric calibration in computer vision establishes the relationship between a camera's image coordinates and the three-dimensional world, recovering parameters such as focal length, principal point, and lens distortion.",
+      "sources": ["SRC-007"],
+      "page": "/model-calibration/"
+    },
+    {
+      "id": "CLM-126",
+      "status": "sourced",
+      "statement": "Accurate calibration is a prerequisite for tasks that depend on spatial measurement, such as stereo reconstruction, structure from motion, and metric localization; calibration error propagates into every downstream geometric estimate.",
+      "sources": ["SRC-007"],
+      "page": "/model-calibration/"
+    },
+    {
+      "id": "CLM-127",
+      "status": "sourced",
+      "statement": "Calibration can drift over time due to thermal, mechanical, or optical changes, so systems relying on precise spatial grounding require recalibration or online calibration to maintain accuracy.",
+      "sources": ["SRC-007"],
+      "page": "/model-calibration/"
+    },
+    {
+      "id": "CLM-128",
+      "status": "internal-framework",
+      "statement": "Calibration is the suspension system of machine vision (FIO-01): it holds the model's spatial reference frame in place the way the zonules hold the lens; when calibration drifts, the system still receives input but can no longer ground where it is looking.",
+      "sources": ["SRC-004"],
+      "page": "/model-calibration/"
+    },
+    {
+      "id": "CLM-129",
+      "status": "sourced",
+      "statement": "Domain shift occurs when the distribution of inputs a model encounters at deployment differs from the distribution it was trained on, degrading performance even when the task is unchanged.",
+      "sources": ["SRC-007"],
+      "page": "/domain-shift/"
+    },
+    {
+      "id": "CLM-130",
+      "status": "sourced",
+      "statement": "Common sources of domain shift include changes in lighting, sensor characteristics, geographic or demographic context, and the appearance of object categories under conditions not represented in the training data.",
+      "sources": ["SRC-007"],
+      "page": "/domain-shift/"
+    },
+    {
+      "id": "CLM-131",
+      "status": "sourced",
+      "statement": "Domain adaptation and domain generalization are the families of techniques developed to maintain performance across distribution shift, and they constitute a distinct engineering problem from improving accuracy on a fixed distribution.",
+      "sources": ["SRC-007"],
+      "page": "/domain-shift/"
+    },
+    {
+      "id": "CLM-132",
+      "status": "internal-framework",
+      "statement": "Domain shift is the accommodation failure of machine vision (FIO-02): a model accommodates focus across the range of conditions it was trained for, and shift beyond that range is the machine analogue of a focus system that cannot adjust to a distance outside its operating envelope.",
+      "sources": ["SRC-004"],
+      "page": "/domain-shift/"
     }
   ]
 }

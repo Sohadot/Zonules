@@ -11,6 +11,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/aqueous-humor/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/change-blindness/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/ciliary-body/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
@@ -37,6 +47,11 @@
   </url>
   <url>
     <loc>https://zonules.com/depth-perception/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/domain-shift/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
   </url>
@@ -121,6 +136,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://zonules.com/model-calibration/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/object-detection/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
@@ -141,6 +161,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/pupillary-reflex/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/retina/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
@@ -156,7 +181,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://zonules.com/sustained-attention/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/visual-cortex/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/visual-perception/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/visual-saliency/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
   </url>

@@ -65,6 +65,7 @@ In perception, the analogue of the iris is attentional capacity regulation: the 
 - [Crystalline lens](/crystalline-lens/) — the variable-focus element the iris regulates input for
 - [Vitreous humor](/vitreous-humor/) — the structural medium that occupies the posterior chamber
 - [Lens accommodation](/lens-accommodation/) — the process of focus adjustment the iris works in concert with
+- [Pupillary light reflex](/pupillary-reflex/) — the automatic control loop that drives the iris aperture
 
 ## Reference Notes
 

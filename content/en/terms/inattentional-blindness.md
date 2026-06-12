@@ -66,6 +66,7 @@ In machine vision, the analogue of inattentional blindness is out-of-distributio
 - [Selective attention](/selective-attention/) — the mechanism whose engagement creates the conditions for inattentional blindness
 - [Visual working memory](/visual-working-memory/) — the system that fails to receive a record of the unattended input
 - [Depth perception](/depth-perception/) — a spatial interpretation failure contrasting with the representational failure of inattentional blindness
+- [Change blindness](/change-blindness/) — the across-time counterpart: failure to register that a stimulus has changed
 
 ## Reference Notes
 

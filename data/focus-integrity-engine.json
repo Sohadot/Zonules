@@ -14,11 +14,11 @@
     "compromised": "Focus integrity: compromised"
   },
   "class_links": {
-    "FIO-01": ["/zonules-of-zinn/", "/vitreous-humor/", "/optic-nerve/", "/visual-perception/", "/selective-attention/"],
-    "FIO-02": ["/lens-accommodation/", "/iris/", "/visual-working-memory/"],
-    "FIO-03": ["/cornea/", "/photoreceptors/", "/macula/", "/figure-ground/", "/gestalt-principles/", "/adversarial-examples/"],
-    "FIO-04": ["/machine-vision/", "/deepfake-detection/", "/image-provenance/", "/inattentional-blindness/"],
-    "FIO-05": ["/retina/", "/depth-perception/", "/perceptual-constancy/", "/computer-vision/", "/object-detection/", "/image-classification/"]
+    "FIO-01": ["/zonules-of-zinn/", "/vitreous-humor/", "/aqueous-humor/", "/optic-nerve/", "/visual-perception/", "/selective-attention/", "/sustained-attention/", "/model-calibration/"],
+    "FIO-02": ["/lens-accommodation/", "/iris/", "/pupillary-reflex/", "/visual-working-memory/", "/domain-shift/"],
+    "FIO-03": ["/cornea/", "/photoreceptors/", "/macula/", "/figure-ground/", "/gestalt-principles/", "/visual-saliency/", "/adversarial-examples/"],
+    "FIO-04": ["/machine-vision/", "/deepfake-detection/", "/image-provenance/", "/inattentional-blindness/", "/change-blindness/"],
+    "FIO-05": ["/retina/", "/visual-cortex/", "/depth-perception/", "/perceptual-constancy/", "/computer-vision/", "/object-detection/", "/image-classification/"]
   },
   "layers": {
     "L1": {

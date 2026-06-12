@@ -64,6 +64,7 @@ In perception, the analogue of the optic nerve is the attentional pathway: the m
 - [Retina](/retina/) — the tissue whose output the optic nerve carries
 - [Photoreceptors](/photoreceptors/) — the cells whose signals are aggregated into the optic nerve's axonal bundle
 - [Cornea](/cornea/) — the entry surface that begins the chain the optic nerve completes
+- [Visual cortex](/visual-cortex/) — the cortical destination the optic nerve delivers the signal to
 
 ## Reference Notes
 

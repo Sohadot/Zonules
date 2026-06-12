@@ -236,7 +236,9 @@
       "required_internal_links": [
         "/zonules-of-zinn/",
         "/machine-vision/",
-        "/focus-integrity-engine/"
+        "/focus-integrity-engine/",
+        "/selective-attention/",
+        "/figure-ground/"
       ],
       "source_requirements": ["SRC-005", "SRC-006"],
       "claim_requirements": ["CLM-022", "CLM-023", "CLM-024", "CLM-025"],
@@ -262,10 +264,116 @@
       "required_internal_links": [
         "/visual-perception/",
         "/zonules-of-zinn/",
-        "/focus-integrity-engine/"
+        "/focus-integrity-engine/",
+        "/deepfake-detection/",
+        "/image-provenance/"
       ],
       "source_requirements": ["SRC-007", "SRC-008"],
       "claim_requirements": ["CLM-026", "CLM-027", "CLM-028", "CLM-029"],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/selective-attention/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/selective-attention/",
+      "hreflang_group": "selective-attention",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/selective-attention.md",
+      "seo_title": "Selective Attention — The Perceptual Suspension of Focus | Zonules.com",
+      "meta_description": "Selective attention holds a focal target steady against competing stimuli. In the focus-integrity thesis it is the perceptual suspension system — the zonules of the mind.",
+      "required_internal_links": [
+        "/visual-perception/",
+        "/figure-ground/",
+        "/zonules-of-zinn/"
+      ],
+      "source_requirements": ["SRC-005"],
+      "claim_requirements": ["CLM-030", "CLM-031", "CLM-032", "CLM-033"],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/figure-ground/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/figure-ground/",
+      "hreflang_group": "figure-ground",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/figure-ground.md",
+      "seo_title": "Figure-Ground Separation — Perceptual Signal and Noise | Zonules.com",
+      "meta_description": "Figure-ground separation segregates a scene into object and background. In the focus-integrity thesis it is the perceptual form of signal-noise integrity (FIO-03).",
+      "required_internal_links": [
+        "/visual-perception/",
+        "/selective-attention/",
+        "/machine-vision/"
+      ],
+      "source_requirements": ["SRC-005", "SRC-006"],
+      "claim_requirements": ["CLM-034", "CLM-035", "CLM-036", "CLM-037"],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/deepfake-detection/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/deepfake-detection/",
+      "hreflang_group": "deepfake-detection",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/deepfake-detection.md",
+      "seo_title": "Deepfake Detection — The Provenance Problem of Machine Focus | Zonules.com",
+      "meta_description": "Deepfake detection asks whether what a system sees is real. In the focus-integrity thesis it is a provenance problem (FIO-04): detection is not the same as proof of origin.",
+      "required_internal_links": [
+        "/machine-vision/",
+        "/image-provenance/",
+        "/visual-perception/"
+      ],
+      "source_requirements": ["SRC-007", "SRC-008"],
+      "claim_requirements": ["CLM-038", "CLM-039", "CLM-040", "CLM-041"],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/image-provenance/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/image-provenance/",
+      "hreflang_group": "image-provenance",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/image-provenance.md",
+      "seo_title": "Image Provenance — The Origin Record Behind Visual Truth | Zonules.com",
+      "meta_description": "Image provenance records where an image came from and how it was changed. In the focus-integrity thesis it is the infrastructure of provenance integrity (FIO-04).",
+      "required_internal_links": [
+        "/machine-vision/",
+        "/deepfake-detection/",
+        "/visual-perception/"
+      ],
+      "source_requirements": ["SRC-008"],
+      "claim_requirements": ["CLM-042", "CLM-043", "CLM-044", "CLM-045"],
       "safety_class": "technical",
       "monetization": "none",
       "last_reviewed": "2026-06-12"

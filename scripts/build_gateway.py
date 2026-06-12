@@ -134,7 +134,7 @@ def build():
 
 <p class="gw-cta"><a href="/focus-integrity-engine/">Run the Focus Integrity Assessment &rarr;</a></p>
 
-<p class="gw-foot">A governed, source-backed reference asset. Educational reference only — not medical advice; not a substitute for a qualified eye-care professional. Strategic inquiries: <a href="mailto:agent@sohadot.com">agent@sohadot.com</a>.</p>
+<p class="gw-foot">A governed, source-backed reference asset. Educational reference only — not medical advice; not a substitute for a qualified eye-care professional. <a href="/acquire/">Strategic acquisition</a>.</p>
 </main>
 <script>%(js)s</script>
 </body>

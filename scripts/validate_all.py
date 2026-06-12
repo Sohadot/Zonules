@@ -69,7 +69,7 @@ def main():
         if len(r.get("meta_description", "")) < 50:
             errors.append(f"{path} meta_description too short or missing")
 
-        if page_type in ("engine", "gateway"):
+        if page_type in ("engine", "gateway", "acquire"):
             # Generated pages (not markdown units): validate their internal links resolve.
             for href in re.findall(r'href="(/[a-z0-9-]*/?)"', body):
                 if href not in route_paths:
@@ -82,6 +82,19 @@ def main():
             if page_type == "gateway":
                 if "what makes vision possible" not in body:
                     errors.append(f"{path} gateway missing the governing sentence")
+            if page_type == "acquire":
+                # ACQUISITION_POSTURE.md: show the structure, never beg for the sale.
+                low = body.lower()
+                banned = ["buy now", "act now", "act fast", "limited time", "limited offer",
+                          "hurry", "don't miss", "won't last", "best price", "discount",
+                          "make an offer", "highest bidder", "auction", "for sale", "best offer"]
+                for phrase in banned:
+                    if phrase in low:
+                        errors.append(f"{path} acquisition surface contains banned phrase '{phrase}'")
+                if re.search(r"\$\s?\d|\b\d[\d,]*\s?(?:usd|eur|dollars)\b", low):
+                    errors.append(f"{path} acquisition surface contains a price/valuation figure")
+                if "noindex" not in low:
+                    errors.append(f"{path} acquisition surface must be noindex")
         else:
             # 4. Every claim cited in the body is registered; sourced claims are used.
             refs = set(re.findall(r"CLM-\d+", body))
@@ -126,7 +139,7 @@ def main():
                 if link not in route_paths:
                     errors.append(f"engine class {cls} links to unregistered route {link}")
     # 10b. Generated pages must be freshly built from their governed sources.
-    for builder_name in ("build_engine.py", "build_gateway.py", "generate_sitemap.py"):
+    for builder_name in ("build_engine.py", "build_gateway.py", "build_acquire.py", "generate_sitemap.py"):
         builder = os.path.join(ROOT, "scripts", builder_name)
         if os.path.exists(builder):
             res = subprocess.run([sys.executable, builder, "--check"],

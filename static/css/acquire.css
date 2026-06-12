@@ -1,0 +1,60 @@
+/*
+ * Zonules.com — Acquisition surface.
+ * Shares the "Ocular Depth / Controlled Luminosity" system. Calm, institutional,
+ * evidence-based. The structure of the asset is rendered as structure: ordered,
+ * cool, held. No urgency, no warmth of pressure.
+ */
+:root {
+  --depth-near: #1a4258;
+  --depth-mid:  #103040;
+  --depth-far:  #0a1f2b;
+  --panel:      #13303f;
+  --paper: #eaf2f6;
+  --line: #28485a;
+  --fiber: #5f93a6;
+  --fiber-bright: #7fd6d0;
+  --muted: #8aa2af;
+  --accent: #b7d6e2;
+  --focus-ring: #8fd0e0;
+}
+
+* { box-sizing: border-box; }
+
+body.aq {
+  margin: 0;
+  background: radial-gradient(130% 95% at 50% 12%, var(--depth-near) 0%, var(--depth-mid) 48%, var(--depth-far) 100%);
+  background-attachment: fixed;
+  color: var(--paper);
+  font: 16px/1.7 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.aq-wrap { max-width: 760px; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+
+.aq-eyebrow { text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.72rem; color: var(--muted); margin: 0 0 1rem; }
+.aq-title { font-size: clamp(1.5rem, 4vw, 2.2rem); line-height: 1.22; font-weight: 600; margin: 0 0 1.1rem; max-width: 24ch; }
+.aq-lede { color: var(--accent); font-size: 1.06rem; margin: 0 0 2.5rem; max-width: 60ch; }
+
+.aq-section { margin: 0 0 2.5rem; }
+.aq-h { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); margin: 0 0 0.9rem; }
+.aq-p { margin: 0 0 1rem; }
+
+.aq-grid { display: grid; gap: 0.75rem; }
+@media (min-width: 640px) { .aq-grid { grid-template-columns: 1fr 1fr; } }
+.aq-item { border: 1px solid var(--line); border-left: 2px solid var(--fiber); border-radius: 6px; padding: 0.85rem 1rem; background: var(--panel); }
+.aq-item strong { display: block; margin-bottom: 0.2rem; font-size: 0.97rem; }
+.aq-item span { color: var(--muted); font-size: 0.88rem; }
+
+.aq-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+.aq-list li { padding-left: 1.2rem; position: relative; color: var(--accent); }
+.aq-list li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 0.6rem; height: 1px; background: var(--fiber-bright); }
+
+.aq-rule { height: 1px; background: linear-gradient(90deg, transparent, var(--fiber), transparent); margin: 0 0 2.5rem; }
+
+.aq-contact { border: 1px solid var(--line); border-radius: 8px; padding: 1.5rem; background: var(--panel); }
+.aq-contact a { color: var(--focus-ring); font-weight: 600; }
+
+.aq-foot { margin-top: 2.5rem; color: var(--muted); font-size: 0.85rem; }
+.aq-foot a { color: var(--focus-ring); }
+
+a { color: var(--focus-ring); }

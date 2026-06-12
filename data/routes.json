@@ -1,11 +1,37 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "0.6",
+  "version": "0.7",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
   "routes": [
+    {
+      "path": "/acquire/",
+      "language": "en",
+      "page_type": "acquire",
+      "status": "approved",
+      "indexable": false,
+      "canonical": "https://zonules.com/acquire/",
+      "hreflang_group": "acquire",
+      "layer": "cross",
+      "cluster": "acquisition",
+      "fio_class": "none",
+      "template": "static/acquire/index.html",
+      "content": "static/acquire/index.html",
+      "seo_title": "Acquisition — Zonules.com",
+      "meta_description": "Zonules.com is a developed category asset: a governed reference system and Category Intelligence Factory for focus, perception, and visual truth. Strategic inquiries only.",
+      "required_internal_links": [
+        "/",
+        "/focus-integrity-engine/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "institutional",
+      "monetization": "acquisition",
+      "governing_standard": "ACQUISITION_POSTURE.md",
+      "last_reviewed": "2026-06-12"
+    },
     {
       "path": "/",
       "language": "en",
@@ -25,7 +51,8 @@
         "/zonules-of-zinn/",
         "/visual-perception/",
         "/machine-vision/",
-        "/focus-integrity-engine/"
+        "/focus-integrity-engine/",
+        "/acquire/"
       ],
       "source_requirements": [],
       "claim_requirements": [],

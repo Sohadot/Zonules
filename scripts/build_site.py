@@ -1,0 +1,350 @@
+#!/usr/bin/env python3
+"""
+Render the governed markdown corpus into structured, citable HTML.
+
+Source of truth stays the markdown reference units and the data registries.
+For each markdown-backed route this renderer produces a static HTML page with:
+  - semantic HTML and the shared ocular-depth design
+  - breadcrumb navigation
+  - a generated References section built from the claim and source registries
+  - JSON-LD structured data (DefinedTerm + isPartOf + BreadcrumbList + citations)
+    so AI agents, search engines, and citation tools can read the asset reliably
+  - canonical, Open Graph, and hreflang scaffolding
+
+It also generates the glossary hub (/glossary/) directly from the registry, so
+that index can never contain a broken or phantom link.
+
+Pure standard library. No markdown dependency, no network, no third-party code.
+The renderer accepts only the constrained markdown our governed content uses:
+frontmatter, ATX headings, paragraphs, bold, internal/mailto links, unordered
+lists, and blockquotes.
+
+Output: site/<path>/index.html
+Usage:
+  python scripts/build_site.py            # render the corpus
+  python scripts/build_site.py --check    # exit 1 if any rendered page is stale
+"""
+import html
+import json
+import os
+import re
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE = os.path.join(ROOT, "site")
+BASE = "https://zonules.com"
+
+LAYER_NAME = {
+    "L1": "Anatomy", "L2": "Perception", "L3": "Machine Vision & Verification",
+    "cross": "Reference", "": "Reference",
+}
+
+
+def load(name):
+    with open(os.path.join(ROOT, "data", name), encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+# ---------- constrained markdown ----------
+
+def parse_frontmatter(text):
+    """Parse the simple YAML subset our content uses."""
+    meta, body = {}, text
+    if text.startswith("---"):
+        end = text.find("\n---", 3)
+        if end != -1:
+            block = text[3:end].strip("\n")
+            body = text[end + 4:].lstrip("\n")
+            for line in block.split("\n"):
+                if not line.strip() or ":" not in line:
+                    continue
+                k, v = line.split(":", 1)
+                k, v = k.strip(), v.strip()
+                if v.startswith("[") and v.endswith("]"):
+                    v = [x.strip() for x in v[1:-1].split(",") if x.strip()]
+                else:
+                    v = v.strip('"')
+                meta[k] = v
+    return meta, body
+
+
+def render_inline(text):
+    text = html.escape(text, quote=False)
+    # strip authoring claim markers (provenance is regenerated as a References section)
+    text = re.sub(r"\s*\[CLM-\d+\]", "", text)
+    # bold
+    text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
+    # links — internal (/...), anchors (#...), or mailto only
+    def link(m):
+        label, href = m.group(1), m.group(2)
+        if not (href.startswith("/") or href.startswith("mailto:") or href.startswith("#")):
+            return label  # external links are not permitted in the static corpus
+        return '<a href="%s">%s</a>' % (html.escape(href, quote=True), label)
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", link, text)
+    return text
+
+
+def render_markdown(body):
+    lines = body.split("\n")
+    out, i = [], 0
+    while i < len(lines):
+        line = lines[i]
+        if not line.strip():
+            i += 1
+            continue
+        m = re.match(r"^(#{1,4})\s+(.*)$", line)
+        if m:
+            level = len(m.group(1))
+            out.append("<h%d>%s</h%d>" % (level, render_inline(m.group(2).strip()), level))
+            i += 1
+            continue
+        if line.startswith(">"):
+            quote = []
+            while i < len(lines) and lines[i].startswith(">"):
+                quote.append(lines[i].lstrip(">").strip())
+                i += 1
+            out.append("<blockquote>%s</blockquote>" % render_inline(" ".join(quote)))
+            continue
+        if re.match(r"^[-*]\s+", line):
+            items = []
+            while i < len(lines) and re.match(r"^[-*]\s+", lines[i]):
+                items.append("<li>%s</li>" % render_inline(re.sub(r"^[-*]\s+", "", lines[i])))
+                i += 1
+            out.append("<ul>%s</ul>" % "".join(items))
+            continue
+        para = []
+        while i < len(lines) and lines[i].strip() and not re.match(r"^(#{1,4}\s|>|[-*]\s)", lines[i]):
+            para.append(lines[i].strip())
+            i += 1
+        out.append("<p>%s</p>" % render_inline(" ".join(para)))
+    return "\n".join(out)
+
+
+# ---------- references + structured data ----------
+
+def references_section(meta, claims_by_id, sources_by_id):
+    ids = meta.get("claims", [])
+    if not ids:
+        return "", []
+    rows, cited_sources = [], []
+    for cid in ids:
+        c = claims_by_id.get(cid)
+        if not c:
+            continue
+        srcs = []
+        for sid in c["sources"]:
+            s = sources_by_id.get(sid)
+            if s:
+                srcs.append(s["citation"])
+                if s["type"] != "conceptual-internal":
+                    cited_sources.append(s)
+        tag = {"sourced": "Sourced", "internal-framework": "Framework",
+               "conceptual": "Conceptual"}.get(c["status"], c["status"])
+        src_txt = "; ".join(html.escape(x) for x in srcs)
+        rows.append(
+            '<li><span class="ref-tag">%s</span> %s <span class="ref-src">%s</span></li>'
+            % (tag, html.escape(c["statement"]), src_txt)
+        )
+    # de-duplicate cited sources, preserve order
+    seen, uniq = set(), []
+    for s in cited_sources:
+        if s["id"] not in seen:
+            seen.add(s["id"])
+            uniq.append(s)
+    section = ('<section class="rl-refs"><h2>References &amp; claim provenance</h2>'
+               '<p class="rl-refs-note">Every claim below is registered and classified. '
+               '&ldquo;Sourced&rdquo; claims rest on the listed references; '
+               '&ldquo;Framework&rdquo; claims are internal conceptual mappings, not external fact.</p>'
+               '<ul class="rl-reflist">%s</ul></section>') % "".join(rows)
+    return section, uniq
+
+
+def json_ld(meta, route, cited_sources):
+    name = meta.get("term") or meta.get("title") or "Zonules.com"
+    desc = meta.get("meta_description", "")
+    url = BASE + route["path"]
+    term = {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "name": name,
+        "description": desc,
+        "url": url,
+        "inDefinedTermSet": BASE + "/glossary/",
+        "termCode": meta.get("term_id", ""),
+        "isPartOf": {"@type": "WebSite", "name": "Zonules.com", "url": BASE + "/"},
+    }
+    if cited_sources:
+        term["citation"] = [s["citation"] for s in cited_sources]
+    crumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Zonules.com", "item": BASE + "/"},
+            {"@type": "ListItem", "position": 2,
+             "name": LAYER_NAME.get(meta.get("layer", ""), "Reference"),
+             "item": BASE + "/glossary/"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": url},
+        ],
+    }
+    blocks = []
+    for obj in (term, crumbs):
+        blocks.append('<script type="application/ld+json">%s</script>'
+                      % json.dumps(obj, ensure_ascii=True, separators=(",", ":")))
+    return "\n".join(blocks)
+
+
+# ---------- page assembly ----------
+
+def head(meta, route, extra=""):
+    title = meta.get("seo_title") or route.get("seo_title") or meta.get("term", "Zonules.com")
+    desc = meta.get("meta_description") or route.get("meta_description", "")
+    url = BASE + route["path"]
+    return """<!DOCTYPE html>
+<html lang="%(lang)s">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>%(title)s</title>
+<meta name="description" content="%(desc)s">
+<link rel="canonical" href="%(url)s">
+<link rel="alternate" hreflang="en" href="%(url)s">
+<link rel="alternate" hreflang="x-default" href="%(url)s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="%(title)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:url" content="%(url)s">
+<link rel="stylesheet" href="/static/css/reference.css">
+%(extra)s
+</head>""" % {
+        "lang": meta.get("language", "en"),
+        "title": html.escape(title, quote=True),
+        "desc": html.escape(desc, quote=True),
+        "url": url,
+        "extra": extra,
+    }
+
+
+def breadcrumb(meta, name):
+    layer = LAYER_NAME.get(meta.get("layer", ""), "Reference")
+    return ('<nav class="rl-crumb" aria-label="Breadcrumb"><a href="/">Zonules.com</a>'
+            ' <span aria-hidden="true">/</span> <a href="/glossary/">%s</a>'
+            ' <span aria-hidden="true">/</span> <span aria-current="page">%s</span></nav>'
+            % (html.escape(layer), html.escape(name)))
+
+
+def render_unit(route, meta, body, claims_by_id, sources_by_id):
+    name = meta.get("term") or meta.get("title", "")
+    refs_html, cited = references_section(meta, claims_by_id, sources_by_id)
+    badges = ""
+    if meta.get("layer") in ("L1", "L2", "L3"):
+        badges = ('<p class="rl-badges">'
+                  '<span class="rl-badge">Layer %s · %s</span>'
+                  '<span class="rl-badge">%s</span>'
+                  '<span class="rl-badge">%s</span></p>'
+                  % (meta["layer"][-1], html.escape(LAYER_NAME[meta["layer"]]),
+                     html.escape(meta.get("fio_class", "")),
+                     html.escape(meta.get("fis_criterion", ""))))
+    article = render_markdown(body)
+    return (head(meta, route, json_ld(meta, route, cited)) +
+            '\n<body class="rl">\n<main class="rl-wrap">\n' +
+            breadcrumb(meta, name) + badges + '<article class="rl-article">' +
+            article + refs_html +
+            '</article>\n'
+            '<footer class="rl-foot"><a href="/glossary/">All reference units</a> · '
+            '<a href="/methodology/">Methodology</a> · '
+            '<a href="/source-policy/">Source policy</a> · '
+            '<a href="/focus-integrity-engine/">Focus Integrity Engine</a></footer>\n'
+            '</main>\n</body>\n</html>\n')
+
+
+def render_glossary(routes, by_path):
+    """Generate the glossary hub from the registry — links can never break."""
+    groups = {"L1": [], "L2": [], "L3": [], "cross": []}
+    for r in routes:
+        if r.get("page_type") != "reference-unit":
+            continue
+        groups.setdefault(r.get("layer", "cross"), []).append(r)
+    sections = []
+    order = [("L1", "Layer 01 · Anatomy — the biological suspension of focus"),
+             ("L2", "Layer 02 · Perception — attention as the second suspension"),
+             ("L3", "Layer 03 · Machine Vision — focus integrity in machines")]
+    for key, title in order:
+        rows = sorted(groups.get(key, []), key=lambda r: r["path"])
+        if not rows:
+            continue
+        items = "".join(
+            '<li><a href="%s">%s</a><span>%s · %s</span></li>'
+            % (r["path"], html.escape(r["seo_title"].split(" — ")[0].split(" | ")[0]),
+               html.escape(r.get("fio_class", "")), html.escape(r.get("fis_criterion", "")))
+            for r in rows
+        )
+        sections.append('<section class="gl-group"><h2>%s</h2><ul class="gl-list">%s</ul></section>'
+                        % (html.escape(title), items))
+    meta = {"language": "en", "layer": "cross",
+            "seo_title": "Glossary — The Governed Reference Index | Zonules.com",
+            "meta_description": "The complete governed index of Zonules.com reference units across anatomy, perception, and machine vision — each a node in the focus-integrity system."}
+    route = {"path": "/glossary/", "seo_title": meta["seo_title"],
+             "meta_description": meta["meta_description"]}
+    ld = {"@context": "https://schema.org", "@type": "DefinedTermSet",
+          "name": "Zonules.com Reference Glossary", "url": BASE + "/glossary/",
+          "hasDefinedTerm": [BASE + r["path"] for r in routes if r.get("page_type") == "reference-unit"]}
+    extra = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=True, separators=(",", ":"))
+    return (head(meta, route, extra) +
+            '\n<body class="rl">\n<main class="rl-wrap">\n' +
+            breadcrumb(meta, "Glossary") +
+            '<article class="rl-article"><h1>The Reference Index</h1>'
+            '<p>Every unit below is a governed node in the focus-integrity system: '
+            'registered, source-classified, internally linked, and safety-checked. '
+            'No page exists here that does not earn its place.</p>' +
+            "".join(sections) +
+            '</article>\n<footer class="rl-foot"><a href="/">Gateway</a> · '
+            '<a href="/methodology/">Methodology</a> · <a href="/source-policy/">Source policy</a>'
+            '</footer>\n</main>\n</body>\n</html>\n')
+
+
+def outputs():
+    routes = load("routes.json")["routes"]
+    claims = {c["id"]: c for c in load("claims.json")["claims"]}
+    sources = {s["id"]: s for s in load("sources.json")["sources"]}
+    by_path = {r["path"]: r for r in routes}
+    pages = {}
+    for r in routes:
+        if r.get("page_type") not in ("reference-unit", "policy"):
+            continue
+        src = os.path.join(ROOT, r["content"])
+        with open(src, encoding="utf-8") as fh:
+            meta, body = parse_frontmatter(fh.read())
+        pages[r["path"]] = render_unit(r, meta, body, claims, sources)
+    pages["/glossary/"] = render_glossary(routes, by_path)
+    return pages
+
+
+def path_to_file(path):
+    rel = path.strip("/")
+    return os.path.join(SITE, rel, "index.html") if rel else os.path.join(SITE, "index.html")
+
+
+def main():
+    pages = outputs()
+    if "--check" in sys.argv[1:]:
+        stale = []
+        for path, content in pages.items():
+            fp = path_to_file(path)
+            if not os.path.exists(fp) or open(fp, encoding="utf-8").read() != content:
+                stale.append(path)
+        if stale:
+            print("STALE rendered pages: " + ", ".join(sorted(stale)) + ". Run scripts/build_site.py")
+            return 1
+        print("FRESH: %d rendered pages match governed sources." % len(pages))
+        return 0
+    for path, content in pages.items():
+        fp = path_to_file(path)
+        os.makedirs(os.path.dirname(fp), exist_ok=True)
+        with open(fp, "w", encoding="utf-8") as fh:
+            fh.write(content)
+    print("Rendered %d pages into site/" % len(pages))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

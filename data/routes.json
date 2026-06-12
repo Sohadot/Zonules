@@ -377,6 +377,82 @@
       "safety_class": "technical",
       "monetization": "none",
       "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/glossary/",
+      "language": "en",
+      "page_type": "glossary",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/glossary/",
+      "hreflang_group": "glossary",
+      "layer": "cross",
+      "cluster": "governance",
+      "fio_class": "all",
+      "template": "generated",
+      "content": "site/glossary/index.html",
+      "seo_title": "Glossary — The Governed Reference Index | Zonules.com",
+      "meta_description": "The complete governed index of Zonules.com reference units across anatomy, perception, and machine vision — each a node in the focus-integrity system.",
+      "required_internal_links": [
+        "/",
+        "/methodology/",
+        "/source-policy/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "institutional",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/methodology/",
+      "language": "en",
+      "page_type": "policy",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/methodology/",
+      "hreflang_group": "methodology",
+      "layer": "cross",
+      "cluster": "governance",
+      "fio_class": "none",
+      "template": "term.html",
+      "content": "content/en/pages/methodology.md",
+      "seo_title": "Methodology — How Zonules.com Is Governed | Zonules.com",
+      "meta_description": "How Zonules.com is built and governed: a single thesis, a three-layer reference architecture, a versioned ontology and standard, a deterministic engine, and a blocking quality gate.",
+      "required_internal_links": [
+        "/source-policy/",
+        "/glossary/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "institutional",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/source-policy/",
+      "language": "en",
+      "page_type": "policy",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/source-policy/",
+      "hreflang_group": "source-policy",
+      "layer": "cross",
+      "cluster": "governance",
+      "fio_class": "none",
+      "template": "term.html",
+      "content": "content/en/pages/source-policy.md",
+      "seo_title": "Source Policy — How Claims Are Sourced and Classified | Zonules.com",
+      "meta_description": "How Zonules.com classifies sources and governs claims: every scientific statement is sourced, marked as conceptual framework, or excluded. No unsourced claim is published.",
+      "required_internal_links": [
+        "/methodology/",
+        "/glossary/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "institutional",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
     }
   ]
 }

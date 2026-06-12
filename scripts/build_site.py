@@ -195,7 +195,7 @@ def json_ld(meta, route, cited_sources):
 
 # ---------- page assembly ----------
 
-def head(meta, route, extra=""):
+def head(meta, route, css, extra=""):
     title = meta.get("seo_title") or route.get("seo_title") or meta.get("term", "Zonules.com")
     desc = meta.get("meta_description") or route.get("meta_description", "")
     url = BASE + route["path"]
@@ -213,13 +213,14 @@ def head(meta, route, extra=""):
 <meta property="og:title" content="%(title)s">
 <meta property="og:description" content="%(desc)s">
 <meta property="og:url" content="%(url)s">
-<link rel="stylesheet" href="/static/css/reference.css">
+<style>%(css)s</style>
 %(extra)s
 </head>""" % {
         "lang": meta.get("language", "en"),
         "title": html.escape(title, quote=True),
         "desc": html.escape(desc, quote=True),
         "url": url,
+        "css": css,
         "extra": extra,
     }
 
@@ -232,7 +233,7 @@ def breadcrumb(meta, name):
             % (html.escape(layer), html.escape(name)))
 
 
-def render_unit(route, meta, body, claims_by_id, sources_by_id):
+def render_unit(route, meta, body, claims_by_id, sources_by_id, css):
     name = meta.get("term") or meta.get("title", "")
     refs_html, cited = references_section(meta, claims_by_id, sources_by_id)
     badges = ""
@@ -245,7 +246,7 @@ def render_unit(route, meta, body, claims_by_id, sources_by_id):
                      html.escape(meta.get("fio_class", "")),
                      html.escape(meta.get("fis_criterion", ""))))
     article = render_markdown(body)
-    return (head(meta, route, json_ld(meta, route, cited)) +
+    return (head(meta, route, css, json_ld(meta, route, cited)) +
             '\n<body class="rl">\n<main class="rl-wrap">\n' +
             breadcrumb(meta, name) + badges + '<article class="rl-article">' +
             article + refs_html +
@@ -257,7 +258,7 @@ def render_unit(route, meta, body, claims_by_id, sources_by_id):
             '</main>\n</body>\n</html>\n')
 
 
-def render_glossary(routes, by_path):
+def render_glossary(routes, by_path, css):
     """Generate the glossary hub from the registry — links can never break."""
     groups = {"L1": [], "L2": [], "L3": [], "cross": []}
     for r in routes:
@@ -289,7 +290,7 @@ def render_glossary(routes, by_path):
           "name": "Zonules.com Reference Glossary", "url": BASE + "/glossary/",
           "hasDefinedTerm": [BASE + r["path"] for r in routes if r.get("page_type") == "reference-unit"]}
     extra = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=True, separators=(",", ":"))
-    return (head(meta, route, extra) +
+    return (head(meta, route, css, extra) +
             '\n<body class="rl">\n<main class="rl-wrap">\n' +
             breadcrumb(meta, "Glossary") +
             '<article class="rl-article"><h1>The Reference Index</h1>'
@@ -306,6 +307,8 @@ def outputs():
     routes = load("routes.json")["routes"]
     claims = {c["id"]: c for c in load("claims.json")["claims"]}
     sources = {s["id"]: s for s in load("sources.json")["sources"]}
+    with open(os.path.join(ROOT, "static", "css", "reference.css"), encoding="utf-8") as fh:
+        css = fh.read()
     by_path = {r["path"]: r for r in routes}
     pages = {}
     for r in routes:
@@ -314,8 +317,8 @@ def outputs():
         src = os.path.join(ROOT, r["content"])
         with open(src, encoding="utf-8") as fh:
             meta, body = parse_frontmatter(fh.read())
-        pages[r["path"]] = render_unit(r, meta, body, claims, sources)
-    pages["/glossary/"] = render_glossary(routes, by_path)
+        pages[r["path"]] = render_unit(r, meta, body, claims, sources, css)
+    pages["/glossary/"] = render_glossary(routes, by_path, css)
     return pages
 
 

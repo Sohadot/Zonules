@@ -379,6 +379,32 @@
       "last_reviewed": "2026-06-12"
     },
     {
+      "path": "/focus-integrity-ontology/",
+      "language": "en",
+      "page_type": "ontology",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/focus-integrity-ontology/",
+      "hreflang_group": "focus-integrity-ontology",
+      "layer": "cross",
+      "cluster": "governance",
+      "fio_class": "all",
+      "template": "generated",
+      "content": "site/focus-integrity-ontology/index.html",
+      "seo_title": "The Focus Integrity Ontology — How Focus Fails and What Holds It | Zonules.com",
+      "meta_description": "The Focus Integrity Ontology classifies how focus fails across anatomy, perception, and machine vision; the Focus Integrity Standard defines what intact focus is. The governing spine of Zonules.com.",
+      "required_internal_links": [
+        "/glossary/",
+        "/focus-integrity-engine/",
+        "/methodology/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "institutional",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
       "path": "/glossary/",
       "language": "en",
       "page_type": "glossary",
@@ -396,7 +422,8 @@
       "required_internal_links": [
         "/",
         "/methodology/",
-        "/source-policy/"
+        "/source-policy/",
+        "/focus-integrity-ontology/"
       ],
       "source_requirements": [],
       "claim_requirements": [],
@@ -421,7 +448,8 @@
       "meta_description": "How Zonules.com is built and governed: a single thesis, a three-layer reference architecture, a versioned ontology and standard, a deterministic engine, and a blocking quality gate.",
       "required_internal_links": [
         "/source-policy/",
-        "/glossary/"
+        "/glossary/",
+        "/focus-integrity-ontology/"
       ],
       "source_requirements": [],
       "claim_requirements": [],

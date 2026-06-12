@@ -1,0 +1,46 @@
+{
+  "id": "CLAIMS",
+  "name": "Zonules.com Claim Registry",
+  "version": "0.1",
+  "asset": "zonules.com",
+  "governing_document": "ASSET_THESIS.md",
+  "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded. No unsourced scientific claim may be published.",
+  "claim_status_types": ["sourced", "conceptual", "internal-framework"],
+  "claims": [
+    {
+      "id": "CLM-001",
+      "status": "sourced",
+      "statement": "The zonules of Zinn are fine fibrous strands that suspend the crystalline lens from the ciliary body.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-002",
+      "status": "sourced",
+      "statement": "The zonular apparatus, also called the suspensory ligament of the lens, holds the lens in centered geometric tension.",
+      "sources": ["SRC-002", "SRC-003"],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-003",
+      "status": "sourced",
+      "statement": "Tension transmitted through the zonules allows the ciliary muscle to change lens shape during accommodation, shifting focus across distances.",
+      "sources": ["SRC-001", "SRC-003"],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-004",
+      "status": "sourced",
+      "statement": "The structure is named after Johann Gottfried Zinn, the 18th-century anatomist who described it.",
+      "sources": ["SRC-002"],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-005",
+      "status": "internal-framework",
+      "statement": "The zonules are the literal instance of the suspension layer (FIO-01): focus is produced by hidden structural tension, not by the lens alone.",
+      "sources": ["SRC-004"],
+      "page": "/zonules-of-zinn/"
+    }
+  ]
+}

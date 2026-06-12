@@ -1,0 +1,37 @@
+{
+  "id": "ROUTES",
+  "name": "Zonules.com Route Registry",
+  "version": "0.1",
+  "asset": "zonules.com",
+  "governing_document": "ASSET_THESIS.md",
+  "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
+  "routes": [
+    {
+      "path": "/zonules-of-zinn/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/zonules-of-zinn/",
+      "hreflang_group": "zonules-of-zinn",
+      "layer": "L1",
+      "cluster": "lens-suspension",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/zonules-of-zinn.md",
+      "seo_title": "Zonules of Zinn — The Suspension System That Holds Focus | Zonules.com",
+      "meta_description": "The zonules of Zinn suspend the crystalline lens in precise tension, making accommodation and optical focus possible. A governed reference unit on the hidden suspension layer of vision.",
+      "required_internal_links": [
+        "/ciliary-body/",
+        "/crystalline-lens/",
+        "/lens-accommodation/",
+        "/focus-integrity-ontology/"
+      ],
+      "source_requirements": ["SRC-001", "SRC-002", "SRC-003"],
+      "claim_requirements": ["CLM-001", "CLM-002", "CLM-003", "CLM-004"],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    }
+  ]
+}

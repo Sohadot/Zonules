@@ -1,0 +1,50 @@
+{
+  "id": "SOURCES",
+  "name": "Zonules.com Source Registry",
+  "version": "0.1",
+  "asset": "zonules.com",
+  "governing_document": "ASSET_THESIS.md",
+  "classification_types": [
+    "peer-reviewed",
+    "medical-institution",
+    "academic-textbook",
+    "standards-body",
+    "government-regulatory",
+    "technical-documentation",
+    "conceptual-internal"
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "type": "academic-textbook",
+      "citation": "Forrester JV, Dick AD, McMenamin PG, Roberts F, Pearlman E. The Eye: Basic Sciences in Practice.",
+      "publisher": "Elsevier",
+      "scope": "Ocular anatomy and physiology, including lens, ciliary body, and zonular apparatus.",
+      "note": "Standard academic reference for ocular basic science."
+    },
+    {
+      "id": "SRC-002",
+      "type": "academic-textbook",
+      "citation": "Standring S (ed.). Gray's Anatomy: The Anatomical Basis of Clinical Practice.",
+      "publisher": "Elsevier",
+      "scope": "General and ocular anatomy, including the suspensory ligament of the lens.",
+      "note": "Canonical anatomical reference."
+    },
+    {
+      "id": "SRC-003",
+      "type": "medical-institution",
+      "citation": "American Academy of Ophthalmology — Basic and Clinical Science Course (BCSC), Section on Fundamentals and Principles of Ophthalmology.",
+      "publisher": "American Academy of Ophthalmology",
+      "scope": "Lens anatomy, accommodation, and zonular structure in an educational clinical-science context.",
+      "note": "Institutional ophthalmology education reference."
+    },
+    {
+      "id": "SRC-004",
+      "type": "conceptual-internal",
+      "citation": "Zonules.com — Focus Integrity Ontology and Standard (FIO/FIS v0.1).",
+      "publisher": "Sohadot",
+      "scope": "Internal framework mapping anatomical structure to the focus-integrity thesis.",
+      "note": "Internal conceptual framework. Not a source of external scientific fact; used only to mark framework-level claims."
+    }
+  ]
+}

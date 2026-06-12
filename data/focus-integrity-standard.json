@@ -1,0 +1,46 @@
+{
+  "id": "FIS",
+  "name": "Focus Integrity Standard",
+  "version": "0.1",
+  "asset": "zonules.com",
+  "governing_document": "REFERENCE_ARCHITECTURE.md",
+  "application_rule": "Governs structural reasoning about focus only, never clinical assessment of an individual. Anatomy-layer application requires the educational-reference disclaimer and forbids diagnostic phrasing.",
+  "report_states": ["intact", "at-risk", "failed", "not-applicable"],
+  "criteria": [
+    {
+      "id": "FIS-1",
+      "name": "Suspension",
+      "statement": "The structures holding the focal element are identified and stable.",
+      "inverse_of": "FIO-01",
+      "applicable_layers": ["L1", "L2", "L3"]
+    },
+    {
+      "id": "FIS-2",
+      "name": "Accommodation",
+      "statement": "The system adjusts focus across its intended operating range.",
+      "inverse_of": "FIO-02",
+      "applicable_layers": ["L1", "L2", "L3"]
+    },
+    {
+      "id": "FIS-3",
+      "name": "Separation",
+      "statement": "The system separates signal from noise within stated tolerances.",
+      "inverse_of": "FIO-03",
+      "applicable_layers": ["L1", "L2", "L3"]
+    },
+    {
+      "id": "FIS-4",
+      "name": "Provenance",
+      "statement": "The system can establish the origin or authenticity of what it sees to a stated confidence.",
+      "inverse_of": "FIO-04",
+      "applicable_layers": ["L2", "L3"]
+    },
+    {
+      "id": "FIS-5",
+      "name": "Interpretation",
+      "statement": "Held, clean focus yields correct interpretation, not merely sharp signal.",
+      "inverse_of": "FIO-05",
+      "applicable_layers": ["L2", "L3"]
+    }
+  ]
+}

@@ -101,3 +101,11 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
 ---
 
 *Execution sequence (Factory Plan §11) is now complete: FIO/FIS ratified, anatomy cluster built, L2/L3 anchors established, Focus Integrity Engine shipped, suspension-reveal interface shipped, quality gate enforced. Next phase: deepen the L2/L3 clusters toward the 300-page corpus, add sitemap generation, and prepare the /acquire/ surface.*
+
+## 2026-06-12 — Adopt the "Ocular Depth / Controlled Luminosity" color system
+
+- **Change:** Replace the near-black background across the gateway and engine with a conceptual palette. The background is no longer a void but the luminous medium light travels through inside the eye, lit by a single focal source near the top and fading into ocular depth. The palette carries the thesis through temperature: cool (teal/cyan/silver) = focus held and the suspension intact; warm (amber → clay) = the system failing. In the gateway, cutting the fibers shifts them from cool to warm; in the engine, readings move intact→at-risk→failed along the same cool→warm axis. The revealed zonular fibers are the most luminous element on screen — the hidden structure rendered as the most precious thing in the system.
+- **Type:** Interface/design-system change (strengthens thesis embodiment).
+- **Rationale:** Per request, the interface should be conceptual and let colour serve the story rather than default to black. Temperature now encodes the focus-integrity argument directly, satisfying the Interface Governance rule that every colour has a function.
+- **Verification:** Both generated pages rebuilt and fresh. WCAG contrast checked: body text 14.9:1; all functional text pairs ≥ 3:1 (AA-large minimum), most ≥ 7:1. Governance gate PASS (9 pages; zero broken links, orphans, unsafe patterns, or unsourced claims).
+- **Affected:** `static/css/gateway.css`, `static/css/engine.css`, `static/gateway/index.html`, `static/engine/index.html`.

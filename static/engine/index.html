@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Focus Integrity Engine — Zonules.com</title>
+<meta name="description" content="Run the Focus Integrity Assessment: the same five criteria decide whether focus holds in the eye, in perception, or in a machine. Deterministic, computed locally, no data collected.">
+<link rel="canonical" href="https://zonules.com/focus-integrity-engine/">
+<style>/*
+ * Focus Integrity Engine — governed interface styling.
+ * Visual language: hidden structure, optical tension, controlled luminosity.
+ * Concept first, then performance, then beauty. No decoration without function.
+ * Inlined into static/engine/index.html by scripts/build_engine.py.
+ */
+:root {
+  --ink: #0c1218;
+  --paper: #f4f6f8;
+  --line: #2a3744;
+  --fiber: #5f7d92;
+  --accent: #c8d6e0;
+  --intact: #3f7d5a;
+  --atrisk: #a8842c;
+  --failed: #a4453a;
+  --muted: #7c8a96;
+  --focus-ring: #9fc1d8;
+}
+
+* { box-sizing: border-box; }
+
+body.fie {
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fie-wrap { max-width: 820px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+
+.fie-eyebrow {
+  text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.72rem;
+  color: var(--muted); margin: 0 0 0.75rem;
+}
+.fie-title { font-size: 1.9rem; line-height: 1.2; margin: 0 0 0.75rem; font-weight: 600; }
+.fie-lede { color: var(--accent); font-size: 1.05rem; margin: 0 0 2rem; max-width: 60ch; }
+
+/* Suspension motif: a hairline that holds the title block in tension. */
+.fie-rule {
+  height: 1px; background: linear-gradient(90deg, transparent, var(--fiber), transparent);
+  margin: 0 0 2.25rem;
+}
+
+.fie-step { border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem 1.25rem 1.5rem; margin: 0 0 1.5rem; }
+.fie-step legend { padding: 0 0.5rem; color: var(--accent); font-weight: 600; letter-spacing: 0.02em; }
+.fie-thesis { color: var(--muted); font-style: italic; margin: 0.25rem 0 1.25rem; }
+
+.fie-layers { display: grid; gap: 0.75rem; }
+@media (min-width: 680px) { .fie-layers { grid-template-columns: repeat(3, 1fr); } }
+.fie-layer {
+  text-align: left; cursor: pointer; background: #121b23; color: var(--paper);
+  border: 1px solid var(--line); border-radius: 6px; padding: 0.9rem; display: grid; gap: 0.35rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.fie-layer:hover { border-color: var(--fiber); transform: translateY(-1px); }
+.fie-layer[aria-pressed="true"], .fie-layer:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.fie-layer-id { font-size: 0.7rem; letter-spacing: 0.14em; color: var(--muted); }
+.fie-layer-label { font-weight: 600; font-size: 1.02rem; }
+.fie-layer-framing { font-size: 0.82rem; color: var(--muted); line-height: 1.45; }
+
+.fie-q { padding: 0.9rem 0; border-top: 1px solid #1b2730; }
+.fie-q:first-of-type { border-top: 0; }
+.fie-q-text { margin: 0 0 0.6rem; display: grid; gap: 0.2rem; }
+.fie-crit-id { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
+.fie-q-question { font-size: 1rem; }
+.fie-opts { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.fie-opt {
+  display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; padding: 0.35rem 0.8rem; font-size: 0.9rem;
+}
+.fie-opt:focus-within { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.fie-opt input { accent-color: var(--focus-ring); }
+
+.fie-actions { margin-top: 1.25rem; }
+.fie-run {
+  cursor: pointer; background: var(--accent); color: var(--ink); border: 0; border-radius: 6px;
+  padding: 0.7rem 1.4rem; font-weight: 600; font-size: 1rem;
+}
+.fie-run:hover { background: #fff; }
+.fie-run:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+.fie-reading { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1.75rem; }
+.fie-verdict { font-size: 1.4rem; margin: 0 0 0.25rem; outline: none; }
+.fie-verdict-intact { color: var(--intact); }
+.fie-verdict-at-risk { color: var(--atrisk); }
+.fie-verdict-failed { color: var(--failed); }
+.fie-reading-sub { color: var(--muted); margin: 0 0 1.25rem; font-size: 0.9rem; letter-spacing: 0.02em; }
+
+.fie-guard {
+  background: #1b1410; border: 1px solid #3a2c1e; color: #e6cfa6; border-radius: 6px;
+  padding: 0.8rem 1rem; font-size: 0.88rem; margin: 0 0 1.25rem;
+}
+.fie-clean { color: var(--intact); }
+
+.fie-findings { display: grid; gap: 1rem; }
+.fie-finding { border: 1px solid var(--line); border-left-width: 3px; border-radius: 6px; padding: 1rem 1.1rem; }
+.fie-finding-failed { border-left-color: var(--failed); }
+.fie-finding-at-risk { border-left-color: var(--atrisk); }
+.fie-finding h3 { margin: 0 0 0.5rem; font-size: 1rem; display: flex; gap: 0.6rem; align-items: baseline; flex-wrap: wrap; }
+.fie-finding-state { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.fie-finding-sign { margin: 0 0 0.5rem; }
+.fie-finding-map { margin: 0 0 0.4rem; color: var(--accent); }
+.fie-arrow { color: var(--muted); }
+.fie-finding-claim { margin: 0 0 0.5rem; color: var(--muted); font-style: italic; }
+.fie-finding-refs { margin: 0; font-size: 0.88rem; }
+.fie-finding-refs a { color: var(--focus-ring); }
+
+.fie-provenance { margin-top: 1.75rem; color: var(--muted); font-size: 0.78rem; letter-spacing: 0.02em; }
+
+.fie-fallback { border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem; }
+.fie-fallback h2 { margin-top: 0; }
+.fie-fallback a { color: var(--focus-ring); }
+.fie-fallback ul { padding-left: 1.1rem; }
+
+a { color: var(--focus-ring); }
+
+@media (prefers-reduced-motion: reduce) {
+  .fie-layer { transition: none; }
+}
+</style>
+<script type="application/json" id="fio-data">{"id":"FIO","name":"Focus Integrity Ontology","version":"0.1","asset":"zonules.com","governing_document":"REFERENCE_ARCHITECTURE.md","thesis_layers":{"L1":"Anatomy \u2014 biological structures that make optical focus possible","L2":"Perception \u2014 cognitive systems that convert visual input into clarity","L3":"Machine Vision & Verification \u2014 artificial systems that detect, interpret, and verify"},"entry_criteria":["Failure or condition of focus, not of vision in general","Maps to at least one thesis layer (L1, L2, or L3)","Source-backed or explicitly marked as conceptual interpretation","Connects to at least two existing reference units"],"classes":[{"id":"FIO-01","name":"Suspension Failure","group":"structural","definition":"The holding structures that keep the focal element in position themselves fail.","governing_claim":"When the suspension layer fails, the focal element is present but unstable.","layers":{"L1":"Zonular weakness, dislocation, or rupture compromising lens position.","L2":"Collapse of attentional anchoring; focal target cannot be held against competing stimuli.","L3":"Loss of calibration or spatial grounding; the model's reference frame degrades."},"medical_guard":true,"related":["FIO-02"]},{"id":"FIO-02","name":"Accommodation Failure","group":"structural","definition":"The system cannot adjust focus across its intended operating range.","governing_claim":"A system that focuses at one setting only does not have focus integrity.","layers":{"L1":"Loss of accommodative range.","L2":"Failure of perceptual constancy as conditions change.","L3":"Domain shift; correct focus in training conditions, failure in new ones."},"medical_guard":true,"related":["FIO-01"]},{"id":"FIO-03","name":"Signal\u2013Noise Failure","group":"input","definition":"The system cannot separate meaningful signal from noise.","governing_claim":"Focus without separation produces sharp noise, not meaning.","layers":{"L1":"Optical scatter or media opacity reducing contrast at the receptor.","L2":"Figure-ground collapse; salience misallocation.","L3":"Adversarial perturbation, synthetic noise, or low signal-to-noise input."},"medical_guard":true,"related":["FIO-04","FIO-05"]},{"id":"FIO-04","name":"Provenance Failure","group":"input","definition":"The system cannot establish whether what it sees is real or where it came from.","governing_claim":"In an age of synthetic images, focus without provenance cannot yield visual truth.","layers":{"L1":"Conceptual bridge only \u2014 not strongly applicable at the anatomical layer.","L2":"Misattributed source of a percept; false confidence in an illusion.","L3":"Deepfake and synthetic media; absent or broken image provenance."},"medical_guard":false,"related":["FIO-03","FIO-05"]},{"id":"FIO-05","name":"Interpretation Failure","group":"output","definition":"Focus is held and signal is clean, but the resulting meaning is wrong.","governing_claim":"The final failure of focus is not blur \u2014 it is confident misreading.","layers":{"L1":"Conceptual bridge only \u2014 interpretation is not an anatomical property.","L2":"Perceptual error; correct sharp percept, incorrect meaning.","L3":"Machine sight without machine understanding; correct detection, wrong interpretation."},"medical_guard":false,"related":["FIO-03","FIO-04"]}]}</script>
+<script type="application/json" id="fis-data">{"id":"FIS","name":"Focus Integrity Standard","version":"0.1","asset":"zonules.com","governing_document":"REFERENCE_ARCHITECTURE.md","application_rule":"Governs structural reasoning about focus only, never clinical assessment of an individual. Anatomy-layer application requires the educational-reference disclaimer and forbids diagnostic phrasing.","report_states":["intact","at-risk","failed","not-applicable"],"criteria":[{"id":"FIS-1","name":"Suspension","statement":"The structures holding the focal element are identified and stable.","inverse_of":"FIO-01","applicable_layers":["L1","L2","L3"]},{"id":"FIS-2","name":"Accommodation","statement":"The system adjusts focus across its intended operating range.","inverse_of":"FIO-02","applicable_layers":["L1","L2","L3"]},{"id":"FIS-3","name":"Separation","statement":"The system separates signal from noise within stated tolerances.","inverse_of":"FIO-03","applicable_layers":["L1","L2","L3"]},{"id":"FIS-4","name":"Provenance","statement":"The system can establish the origin or authenticity of what it sees to a stated confidence.","inverse_of":"FIO-04","applicable_layers":["L2","L3"]},{"id":"FIS-5","name":"Interpretation","statement":"Held, clean focus yields correct interpretation, not merely sharp signal.","inverse_of":"FIO-05","applicable_layers":["L2","L3"]}]}</script>
+<script type="application/json" id="fie-data">{"id":"FIE","name":"Focus Integrity Engine","version":"0.1","asset":"zonules.com","protocol":"FIA","governing_document":"REFERENCE_ARCHITECTURE.md","determinism_note":"Every reading is a pure function of the selected inputs, computed by inverting FIS criteria into FIO classes. No randomness, no network call, no data collection, no input leaves the device.","thesis_line":"The same five questions decide focus integrity \u2014 whether the system that sees is made of tissue, of attention, or of silicon.","verdict_order":["failed","at-risk","intact"],"verdict_labels":{"intact":"Focus integrity: intact","at-risk":"Focus integrity: at risk","compromised":"Focus integrity: compromised"},"class_links":{"FIO-01":["/zonules-of-zinn/","/visual-perception/"],"FIO-02":["/lens-accommodation/"],"FIO-03":["/machine-vision/"],"FIO-04":["/machine-vision/"],"FIO-05":["/machine-vision/"]},"layers":{"L1":{"label":"The biological eye","framing":"Anatomy is where the thesis is literal: fibers hold a lens in tension so focus can exist.","medical_guard":true,"criteria":["FIS-1","FIS-2","FIS-3"],"prompts":{"FIS-1":{"question":"Are the structures that suspend the focal element identified and stable?","failed_sign":"The suspension layer cannot hold the focal element in position.","atrisk_sign":"The suspension is present but its stability is uncertain."},"FIS-2":{"question":"Can focus be adjusted across its intended range of distances?","failed_sign":"Focus is fixed and cannot adjust across the range.","atrisk_sign":"The adjustable range is narrowing."},"FIS-3":{"question":"Does meaningful signal reach the focal surface clearly?","failed_sign":"Signal is lost in scatter or opacity before it resolves.","atrisk_sign":"Contrast is reduced but signal still resolves."}}},"L2":{"label":"Human perception","framing":"In perception, attention is the suspension system: it holds an interpretation in place the way the zonules hold the lens.","medical_guard":false,"criteria":["FIS-1","FIS-2","FIS-3","FIS-4","FIS-5"],"prompts":{"FIS-1":{"question":"Is attention holding the focal target steady against competing stimuli?","failed_sign":"Attentional anchoring has collapsed; the target cannot be held.","atrisk_sign":"Attention is held but contested."},"FIS-2":{"question":"Does the interpretation stay stable as viewing conditions change?","failed_sign":"Perceptual constancy fails; the percept does not adapt.","atrisk_sign":"Constancy is strained under changing conditions."},"FIS-3":{"question":"Is figure separated from ground, signal from noise?","failed_sign":"Figure-ground separation has collapsed.","atrisk_sign":"Salience is partly misallocated."},"FIS-4":{"question":"Is the source of the percept correctly attributed?","failed_sign":"The percept's source is misattributed; false confidence in an illusion.","atrisk_sign":"Source attribution is uncertain."},"FIS-5":{"question":"Does clear, held focus produce the correct meaning?","failed_sign":"A sharp percept is read with the wrong meaning.","atrisk_sign":"Interpretation is plausible but unconfirmed."}}},"L3":{"label":"A machine vision system","framing":"In a machine, calibration and grounding play the suspension role. The age of synthetic media is a crisis of machine focus integrity.","medical_guard":false,"criteria":["FIS-1","FIS-2","FIS-3","FIS-4","FIS-5"],"prompts":{"FIS-1":{"question":"Is the model's spatial grounding and calibration stable?","failed_sign":"Calibration or grounding is lost; the reference frame drifts.","atrisk_sign":"Grounding is holding but degrading."},"FIS-2":{"question":"Does the model hold focus across operating conditions, not just training ones?","failed_sign":"Domain shift defeats the model outside training conditions.","atrisk_sign":"Performance narrows as conditions move from training."},"FIS-3":{"question":"Does the model separate signal from adversarial or synthetic noise?","failed_sign":"Adversarial or synthetic noise defeats separation.","atrisk_sign":"Separation is reduced under noise."},"FIS-4":{"question":"Can the origin and authenticity of the input be established?","failed_sign":"No provenance: the system cannot tell whether the input is real.","atrisk_sign":"Provenance is partial or unverified."},"FIS-5":{"question":"Does correct detection translate into correct interpretation?","failed_sign":"Detection is correct but the scene is interpreted wrongly.","atrisk_sign":"Interpretation is uncertain beyond detection."}}}}}</script>
+</head>
+<body class="fie">
+<main class="fie-wrap">
+<p class="fie-eyebrow">Focus Integrity Engine</p>
+<h1 class="fie-title">The same five questions decide whether a system can be trusted to focus.</h1>
+<p class="fie-lede">Whether the seeing system is made of tissue, of attention, or of silicon, focus is held by a hidden suspension layer. This engine runs the Focus Integrity Assessment and maps each finding to the structure that explains it.</p>
+<div class="fie-rule" aria-hidden="true"></div>
+<noscript>
+<p><em>The interactive reading requires JavaScript. The governed framework below explains every criterion and every failure class, and links to each reference unit.</em></p>
+</noscript>
+<div id="fie-app" hidden></div>
+<div id="fie-reading" class="fie-reading" hidden aria-live="polite"></div>
+<div class="fie-fallback"><h2>The Focus Integrity Assessment</h2><p>Focus integrity is decided by five criteria. Each failure maps to one class in the Focus Integrity Ontology, and each class resolves to a governed reference page. The interactive reading enhances this framework; it does not replace it.</p><h3>The five criteria (FIS)</h3><ul><li><strong>FIS-1 · Suspension.</strong> The structures holding the focal element are identified and stable.</li><li><strong>FIS-2 · Accommodation.</strong> The system adjusts focus across its intended operating range.</li><li><strong>FIS-3 · Separation.</strong> The system separates signal from noise within stated tolerances.</li><li><strong>FIS-4 · Provenance.</strong> The system can establish the origin or authenticity of what it sees to a stated confidence.</li><li><strong>FIS-5 · Interpretation.</strong> Held, clean focus yields correct interpretation, not merely sharp signal.</li></ul><h3>The five failure classes (FIO)</h3><ul><li><strong>FIO-01 · Suspension Failure.</strong> When the suspension layer fails, the focal element is present but unstable.</li><li><strong>FIO-02 · Accommodation Failure.</strong> A system that focuses at one setting only does not have focus integrity.</li><li><strong>FIO-03 · Signal–Noise Failure.</strong> Focus without separation produces sharp noise, not meaning.</li><li><strong>FIO-04 · Provenance Failure.</strong> In an age of synthetic images, focus without provenance cannot yield visual truth.</li><li><strong>FIO-05 · Interpretation Failure.</strong> The final failure of focus is not blur — it is confident misreading.</li></ul><p>Reference units: <a href="/zonules-of-zinn/">Zonules of Zinn</a> · <a href="/ciliary-body/">Ciliary Body</a> · <a href="/crystalline-lens/">Crystalline Lens</a> · <a href="/lens-capsule/">Lens Capsule</a> · <a href="/lens-accommodation/">Lens Accommodation</a> · <a href="/visual-perception/">Visual Perception</a> · <a href="/machine-vision/">Machine Vision</a>.</p></div>
+</main>
+<script>/*
+ * Focus Integrity Engine — Zonules.com
+ *
+ * Deterministic, client-side, no network, no data collection.
+ * Reads three governed JSON blocks embedded in the page (FIO, FIS, FIE)
+ * and computes a Focus Integrity reading by inverting FIS criteria into
+ * FIO classes. The reading is a pure function of the user's selections;
+ * nothing is sent anywhere.
+ *
+ * Source of truth: data/focus-integrity-ontology.json,
+ * data/focus-integrity-standard.json, data/focus-integrity-engine.json.
+ * This file is inlined into static/engine/index.html by scripts/build_engine.py.
+ */
+(function () {
+  "use strict";
+
+  function readJSON(id) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    try {
+      return JSON.parse(el.textContent);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  var FIO = readJSON("fio-data");
+  var FIS = readJSON("fis-data");
+  var FIE = readJSON("fie-data");
+
+  if (!FIO || !FIS || !FIE) {
+    return; // Static fallback content remains visible; nothing to enhance.
+  }
+
+  var fisById = {};
+  FIS.criteria.forEach(function (c) { fisById[c.id] = c; });
+  var fioById = {};
+  FIO.classes.forEach(function (c) { fioById[c.id] = c; });
+
+  var STATES = ["intact", "at-risk", "failed"];
+  var STATE_LABEL = { "intact": "Intact", "at-risk": "At risk", "failed": "Failed" };
+
+  var app = document.getElementById("fie-app");
+  if (!app) return;
+  app.hidden = false;
+
+  var state = { layer: null, selections: {} };
+
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    if (attrs) {
+      Object.keys(attrs).forEach(function (k) {
+        if (k === "text") node.textContent = attrs[k];
+        else if (k === "html") node.innerHTML = attrs[k];
+        else node.setAttribute(k, attrs[k]);
+      });
+    }
+    (children || []).forEach(function (c) { if (c) node.appendChild(c); });
+    return node;
+  }
+
+  function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
+
+  // Step 1 — layer chooser
+  function renderLayers() {
+    var wrap = el("fieldset", { "class": "fie-step", "aria-label": "Choose the seeing system" });
+    wrap.appendChild(el("legend", { text: "1 · Which seeing system?" }));
+    wrap.appendChild(el("p", { "class": "fie-thesis", text: FIE.thesis_line }));
+    var list = el("div", { "class": "fie-layers" });
+    Object.keys(FIE.layers).forEach(function (lid) {
+      var L = FIE.layers[lid];
+      var btn = el("button", { "type": "button", "class": "fie-layer", "data-layer": lid });
+      btn.appendChild(el("span", { "class": "fie-layer-id", text: lid }));
+      btn.appendChild(el("span", { "class": "fie-layer-label", text: L.label }));
+      btn.appendChild(el("span", { "class": "fie-layer-framing", text: L.framing }));
+      btn.addEventListener("click", function () { selectLayer(lid); });
+      list.appendChild(btn);
+    });
+    wrap.appendChild(list);
+    return wrap;
+  }
+
+  function selectLayer(lid) {
+    state.layer = lid;
+    state.selections = {};
+    render();
+    var q = document.getElementById("fie-questions");
+    if (q) q.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  // Step 2 — criteria questions for the chosen layer
+  function renderQuestions() {
+    if (!state.layer) return null;
+    var L = FIE.layers[state.layer];
+    var wrap = el("fieldset", { "class": "fie-step", "id": "fie-questions" });
+    wrap.appendChild(el("legend", { text: "2 · Test each criterion" }));
+
+    L.criteria.forEach(function (cid) {
+      var fis = fisById[cid];
+      var prompt = L.prompts[cid];
+      var row = el("div", { "class": "fie-q" });
+      row.appendChild(el("p", { "class": "fie-q-text" }, [
+        el("span", { "class": "fie-crit-id", text: fis.id + " · " + fis.name }),
+        el("span", { "class": "fie-q-question", text: prompt.question })
+      ]));
+      var opts = el("div", { "class": "fie-opts", "role": "radiogroup", "aria-label": fis.name });
+      STATES.forEach(function (st) {
+        var id = "opt-" + cid + "-" + st;
+        var label = el("label", { "class": "fie-opt", "for": id });
+        var input = el("input", {
+          "type": "radio", "name": "crit-" + cid, "id": id, "value": st
+        });
+        if (state.selections[cid] === st) input.checked = true;
+        input.addEventListener("change", function () {
+          state.selections[cid] = st;
+        });
+        label.appendChild(input);
+        label.appendChild(el("span", { text: STATE_LABEL[st] }));
+        opts.appendChild(label);
+      });
+      row.appendChild(opts);
+      wrap.appendChild(row);
+    });
+
+    var actions = el("div", { "class": "fie-actions" });
+    var run = el("button", { "type": "button", "class": "fie-run", text: "Compute reading" });
+    run.addEventListener("click", computeReading);
+    actions.appendChild(run);
+    wrap.appendChild(actions);
+    return wrap;
+  }
+
+  // Step 3 — deterministic reading
+  function computeReading() {
+    var L = FIE.layers[state.layer];
+    var findings = [];
+    var worst = "intact";
+
+    L.criteria.forEach(function (cid) {
+      var st = state.selections[cid] || "intact";
+      if (st === "failed") worst = "failed";
+      else if (st === "at-risk" && worst !== "failed") worst = "at-risk";
+      if (st === "intact") return;
+      var fis = fisById[cid];
+      var fioId = fis.inverse_of;
+      var fio = fioById[fioId];
+      var sign = st === "failed" ? L.prompts[cid].failed_sign : L.prompts[cid].atrisk_sign;
+      findings.push({
+        criterion: fis, state: st, sign: sign, fio: fio,
+        links: FIE.class_links[fioId] || []
+      });
+    });
+
+    renderReading(worst, findings);
+  }
+
+  function verdictKey(worst) {
+    if (worst === "failed") return "compromised";
+    if (worst === "at-risk") return "at-risk";
+    return "intact";
+  }
+
+  function renderReading(worst, findings) {
+    var L = FIE.layers[state.layer];
+    var out = document.getElementById("fie-reading");
+    clear(out);
+    out.hidden = false;
+
+    var vkey = verdictKey(worst);
+    out.appendChild(el("h2", { "class": "fie-verdict fie-verdict-" + worst, "tabindex": "-1",
+      text: FIE.verdict_labels[vkey] }));
+    out.appendChild(el("p", { "class": "fie-reading-sub",
+      text: "Focus Integrity Assessment · " + L.label }));
+
+    if (L.medical_guard) {
+      out.appendChild(el("p", { "class": "fie-guard", text:
+        "Educational reference only. This reading describes structural reasoning about focus. " +
+        "It is not a diagnosis or assessment of any individual's eyes and is no substitute for a qualified eye-care professional." }));
+    }
+
+    if (!findings.length) {
+      out.appendChild(el("p", { "class": "fie-clean", text:
+        "Every applicable criterion is intact. Under this assessment, the suspension layer is holding focus." }));
+    } else {
+      var list = el("div", { "class": "fie-findings" });
+      findings.forEach(function (f) {
+        var card = el("article", { "class": "fie-finding fie-finding-" + f.state });
+        card.appendChild(el("h3", {}, [
+          el("span", { "class": "fie-finding-state", text: STATE_LABEL[f.state] }),
+          el("span", { "class": "fie-finding-crit", text: f.criterion.id + " " + f.criterion.name })
+        ]));
+        card.appendChild(el("p", { "class": "fie-finding-sign", text: f.sign }));
+        card.appendChild(el("p", { "class": "fie-finding-map" }, [
+          el("span", { "class": "fie-arrow", text: "maps to " }),
+          el("strong", { text: f.fio.id + " · " + f.fio.name })
+        ]));
+        card.appendChild(el("p", { "class": "fie-finding-claim", text: f.fio.governing_claim }));
+        if (f.links.length) {
+          var refs = el("p", { "class": "fie-finding-refs" });
+          refs.appendChild(el("span", { text: "Reference: " }));
+          f.links.forEach(function (href, i) {
+            if (i) refs.appendChild(document.createTextNode(" · "));
+            refs.appendChild(el("a", { "href": href, text: href }));
+          });
+          card.appendChild(refs);
+        }
+        list.appendChild(card);
+      });
+      out.appendChild(list);
+    }
+
+    out.appendChild(el("p", { "class": "fie-provenance", text:
+      "Computed locally from FIO v" + FIO.version + " · FIS v" + FIS.version +
+      " · FIE v" + FIE.version + ". No input left your device." }));
+
+    var verdict = out.querySelector(".fie-verdict");
+    if (verdict) verdict.focus();
+  }
+
+  function render() {
+    clear(app);
+    app.appendChild(renderLayers());
+    var q = renderQuestions();
+    if (q) app.appendChild(q);
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

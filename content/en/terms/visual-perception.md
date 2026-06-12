@@ -64,6 +64,8 @@ Perception is the bridge to the technology layer. The questions perception answe
 
 ## Related Terms
 
+- [Selective Attention](/selective-attention/) — the perceptual suspension mechanism that holds the focal target
+- [Figure-Ground Separation](/figure-ground/) — the perceptual separation of signal from ground
 - [Zonules of Zinn](/zonules-of-zinn/) — the physical suspension system that delivers the image perception interprets
 - [Machine Vision](/machine-vision/) — the artificial counterpart that answers the same questions differently
 - [Focus Integrity Engine](/focus-integrity-engine/) — run the same five-criterion assessment against human perception

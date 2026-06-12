@@ -14,10 +14,10 @@
     "compromised": "Focus integrity: compromised"
   },
   "class_links": {
-    "FIO-01": ["/zonules-of-zinn/", "/visual-perception/"],
+    "FIO-01": ["/zonules-of-zinn/", "/visual-perception/", "/selective-attention/"],
     "FIO-02": ["/lens-accommodation/"],
-    "FIO-03": ["/machine-vision/"],
-    "FIO-04": ["/machine-vision/"],
+    "FIO-03": ["/machine-vision/", "/figure-ground/"],
+    "FIO-04": ["/machine-vision/", "/deepfake-detection/", "/image-provenance/"],
     "FIO-05": ["/machine-vision/"]
   },
   "layers": {

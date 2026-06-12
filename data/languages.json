@@ -1,0 +1,36 @@
+{
+  "id": "LANGUAGES",
+  "name": "Zonules.com Language Layer Registry",
+  "version": "0.1",
+  "asset": "zonules.com",
+  "governing_document": "ASSET_THESIS.md",
+  "doctrine": "No Partial Language Doctrine: a language layer is exposed publicly (sitemap, hreflang, navigation) only when status == 'launched'. A registered but incomplete layer is 'blocked' and must never appear in public output.",
+  "canonical_language": "en",
+  "layers": [
+    {
+      "code": "en",
+      "name": "English",
+      "status": "launched",
+      "role": "Primary scientific, technical, institutional, and global reference layer.",
+      "public": true
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "status": "blocked",
+      "role": "Francophone scientific, medical, philosophical, educational, and AI reference layer.",
+      "public": false,
+      "launch_requirements": [
+        "Complete foundational navigation",
+        "Complete core reference units for all three layers",
+        "Complete metadata and canonical structure",
+        "Correct reciprocal hreflang with the English layer",
+        "Translated medical-safety, source, and acquisition language",
+        "Localized terminology reviewed for scientific meaning",
+        "No orphaned or machine-only-translated pages",
+        "Quality gate pass for the fr layer"
+      ],
+      "note": "Registered to reserve the architecture. Blocked from all public output until every launch requirement is met. Beginning a layer means registering and governing it — not exposing it partially."
+    }
+  ]
+}

@@ -109,3 +109,33 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
 - **Rationale:** Per request, the interface should be conceptual and let colour serve the story rather than default to black. Temperature now encodes the focus-integrity argument directly, satisfying the Interface Governance rule that every colour has a function.
 - **Verification:** Both generated pages rebuilt and fresh. WCAG contrast checked: body text 14.9:1; all functional text pairs ≥ 3:1 (AA-large minimum), most ≥ 7:1. Governance gate PASS (9 pages; zero broken links, orphans, unsafe patterns, or unsourced claims).
 - **Affected:** `static/css/gateway.css`, `static/css/engine.css`, `static/gateway/index.html`, `static/engine/index.html`.
+
+## 2026-06-12 — Sitemap and robots generation from the registry
+
+- **Change:** Add `scripts/generate_sitemap.py`, producing `static/sitemap.xml` and `static/robots.txt` derived exclusively from the route registry. A page enters the sitemap only if registered, approved, and indexable; priority is assigned by page type and lastmod from the review date. robots.txt allows indexing and points to the sitemap. Gate enforces freshness.
+- **Type:** New SEO/archival infrastructure.
+- **Rationale:** Keeps search visibility governed — the sitemap can never contain a draft, non-indexable, or unregistered surface. Validated as well-formed XML matching the approved-and-indexable route set exactly.
+- **Affected:** `scripts/generate_sitemap.py`, `static/sitemap.xml`, `static/robots.txt`, `scripts/validate_all.py`.
+
+## 2026-06-12 — Add the /acquire/ strategic acquisition surface
+
+- **Change:** Codify `ACQUISITION_POSTURE.md` and build `/acquire/` (`scripts/build_acquire.py`) — a calm, institutional surface that shows the structure constituting the asset and the categories of strategic buyer, with one contact path. The surface is `noindex` and excluded from the sitemap, reached deliberately rather than via search to protect reference authority from any for-sale signal. A calm "Strategic acquisition" link from the gateway footer provides the inbound path.
+- **Type:** New strategic surface (Quality Gate item 15) and new governed standard.
+- **Rationale & enforcement:** The acquisition surface is where a reference asset can destroy its own authority by sounding like a listing. The gate now blocks publication if the surface contains urgency/marketplace phrases (buy now, act now, limited time, make an offer, auction, for sale, …), any price or valuation figure, or lacks noindex. Negative test confirmed the enforcement blocks violations rather than passing silently.
+- **Affected:** `ACQUISITION_POSTURE.md`, `static/acquire/index.html`, `static/css/acquire.css`, `scripts/build_acquire.py`, `scripts/build_gateway.py`, `scripts/validate_all.py`, `data/routes.json`.
+
+## 2026-06-12 — Deepen the L2 and L3 clusters (4 reference units)
+
+- **Change:** Add four governed reference units that build out the perception and machine-vision clusters around their anchors: `selective-attention.md` (L2, FIO-01 — attention as the perceptual suspension) and `figure-ground.md` (L2, FIO-03 — perceptual signal/noise); `deepfake-detection.md` (L3, FIO-04 — provenance as inference) and `image-provenance.md` (L3, FIO-04 — provenance as record). Claims registry to v0.5 (CLM-030…CLM-045). The two anchors now link down to their cluster children, and the Focus Integrity Engine's class-links for FIO-03 and FIO-04 resolve to these specialized units, deepening factory output.
+- **Type:** New reference units (approved); cluster build toward the 300-page corpus.
+- **Rationale:** Each unit extends the focus-integrity thesis into a concrete sub-problem while staying on-story: attention is the mind's suspension layer; figure-ground is perceptual signal separation; deepfake detection and image provenance are the two halves of the provenance failure class — inference versus record. The provenance pair carries the strategically newest claim: a failure mode biology never had to solve.
+- **Verification:** Governance gate PASS — 14 pages, 45 claims, 8 sources; 13 indexable URLs in the sitemap; zero broken links, orphans, unsafe patterns, or unsourced claims.
+- **Affected:** `content/en/terms/{selective-attention,figure-ground,deepfake-detection,image-provenance}.md`, `content/en/terms/{visual-perception,machine-vision}.md`, `data/{claims,routes,focus-integrity-engine}.json`, regenerated engine and sitemap.
+
+## 2026-06-12 — Render the corpus to citable HTML + governance and glossary surfaces
+
+- **Change:** Add `scripts/build_site.py`, a pure-stdlib renderer that turns every governed markdown unit into a structured, servable HTML page in `site/`. Each page carries breadcrumb navigation, a generated **References & claim provenance** section built from the claim and source registries (inline authoring markers are stripped; provenance is regenerated and classified), and **JSON-LD structured data** (DefinedTerm + isPartOf + BreadcrumbList + citations) so AI agents, search engines, and citation tools can read the asset reliably. Add the governance surfaces `/methodology/` and `/source-policy/`, and a `/glossary/` hub generated directly from the registry (its links can never break). Add `static/css/reference.css` as the shared reference styling.
+- **Why this is the keystone:** Until now the reference units were governed content but not servable pages. This closes that gap — the corpus is now real, inspectable HTML with the trust, SEO, and agent-legibility layers the asset's strategy depends on: stable URLs, structured data, visible provenance, strong internal links, and a governance record a reader or agent can examine.
+- **Second language layer, begun correctly:** Add `data/languages.json` registering French (`fr`) as `blocked` — the architecture is reserved but the layer is excluded from all public output (sitemap, hreflang, indexing) until every launch requirement is met. The gate now enforces the No Partial Language Doctrine: a route in a non-launched layer may not be indexable.
+- **Verification:** Renderer accepts only the constrained markdown our content uses; no third-party code, no network. Rendered pages validated: well-formed HTML, valid JSON-LD, no leftover claim markers, all internal links resolve, no inline scripts or external resources. Governance gate PASS — 17 routes, 14 rendered pages, 16 indexable URLs; zero broken links, orphans, unsafe patterns, or unsourced claims. All five builders report fresh.
+- **Affected:** `scripts/build_site.py`, `static/css/reference.css`, `content/en/pages/{methodology,source-policy}.md`, `data/{routes,languages}.json`, `scripts/validate_all.py`, `scripts/generate_sitemap.py`, rendered `site/`.

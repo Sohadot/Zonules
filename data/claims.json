@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "0.4",
+  "version": "0.5",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded. No unsourced scientific claim may be published.",
@@ -209,6 +209,118 @@
       "statement": "Machine vision is the Layer 03 instance of the focus-integrity thesis: calibration and grounding play the suspension role, and machine failures map onto the FIO classes (signal-noise, provenance, interpretation).",
       "sources": ["SRC-004"],
       "page": "/machine-vision/"
+    },
+    {
+      "id": "CLM-030",
+      "status": "sourced",
+      "statement": "Selective attention is the mechanism by which the visual system prioritizes some stimuli for detailed processing while suppressing others.",
+      "sources": ["SRC-005"],
+      "page": "/selective-attention/"
+    },
+    {
+      "id": "CLM-031",
+      "status": "sourced",
+      "statement": "Attention can be directed voluntarily (top-down) or captured involuntarily (bottom-up) by salient stimuli.",
+      "sources": ["SRC-005"],
+      "page": "/selective-attention/"
+    },
+    {
+      "id": "CLM-032",
+      "status": "sourced",
+      "statement": "Attentional capacity is limited, so not all of the visual field can be processed in detail at the same time.",
+      "sources": ["SRC-005"],
+      "page": "/selective-attention/"
+    },
+    {
+      "id": "CLM-033",
+      "status": "internal-framework",
+      "statement": "Selective attention is the perceptual suspension mechanism (FIO-01): it holds a focal target in place, and its failure is the perceptual form of suspension collapse.",
+      "sources": ["SRC-004"],
+      "page": "/selective-attention/"
+    },
+    {
+      "id": "CLM-034",
+      "status": "sourced",
+      "statement": "Figure-ground organization is the perceptual process of segregating a scene into objects (figure) and background (ground).",
+      "sources": ["SRC-006"],
+      "page": "/figure-ground/"
+    },
+    {
+      "id": "CLM-035",
+      "status": "sourced",
+      "statement": "Figure-ground assignment can be ambiguous, as demonstrated by reversible figures where the same image yields two organizations.",
+      "sources": ["SRC-006"],
+      "page": "/figure-ground/"
+    },
+    {
+      "id": "CLM-036",
+      "status": "sourced",
+      "statement": "Gestalt principles describe how the visual system groups elements into coherent figures.",
+      "sources": ["SRC-005", "SRC-006"],
+      "page": "/figure-ground/"
+    },
+    {
+      "id": "CLM-037",
+      "status": "internal-framework",
+      "statement": "Figure-ground separation is the perceptual instance of signal-noise integrity (FIO-03): when it collapses, signal cannot be separated from ground.",
+      "sources": ["SRC-004"],
+      "page": "/figure-ground/"
+    },
+    {
+      "id": "CLM-038",
+      "status": "sourced",
+      "statement": "Deepfakes are synthetic media in which a person's likeness is generated or manipulated using machine-learning methods.",
+      "sources": ["SRC-007"],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-039",
+      "status": "sourced",
+      "statement": "Detection methods analyze artifacts, inconsistencies, or statistical signatures to classify media as authentic or synthetic.",
+      "sources": ["SRC-007"],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-040",
+      "status": "sourced",
+      "statement": "Detection alone does not establish origin; content provenance approaches record an image's source and edit history.",
+      "sources": ["SRC-008"],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-041",
+      "status": "internal-framework",
+      "statement": "Deepfake detection is a focus-integrity problem of provenance (FIO-04): the system must establish whether what it sees is real.",
+      "sources": ["SRC-004"],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-042",
+      "status": "sourced",
+      "statement": "Image provenance is the recorded history of where an image came from and how it was modified.",
+      "sources": ["SRC-008"],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-043",
+      "status": "sourced",
+      "statement": "Content provenance standards attach tamper-evident metadata to media to support authenticity verification.",
+      "sources": ["SRC-008"],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-044",
+      "status": "sourced",
+      "statement": "Provenance complements detection by establishing origin rather than inferring manipulation from the pixels alone.",
+      "sources": ["SRC-008"],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-045",
+      "status": "internal-framework",
+      "statement": "Image provenance is the infrastructure of provenance integrity (FIO-04): it answers the origin question that focus alone cannot.",
+      "sources": ["SRC-004"],
+      "page": "/image-provenance/"
     }
   ]
 }

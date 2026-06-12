@@ -69,9 +69,12 @@ def main():
         if len(r.get("meta_description", "")) < 50:
             errors.append(f"{path} meta_description too short or missing")
 
-        if page_type in ("engine", "gateway"):
+        if page_type in ("engine", "gateway", "acquire", "glossary"):
             # Generated pages (not markdown units): validate their internal links resolve.
-            for href in re.findall(r'href="(/[a-z0-9-]*/?)"', body):
+            # Asset paths (/static/...) and fragments are not routes and are skipped.
+            for href in re.findall(r'href="(/[a-z0-9-]+/)"', body):
+                if href.startswith("/static/"):
+                    continue
                 if href not in route_paths:
                     errors.append(f"{path} {page_type} links to unregistered route {href}")
             if page_type == "engine":
@@ -82,6 +85,19 @@ def main():
             if page_type == "gateway":
                 if "what makes vision possible" not in body:
                     errors.append(f"{path} gateway missing the governing sentence")
+            if page_type == "acquire":
+                # ACQUISITION_POSTURE.md: show the structure, never beg for the sale.
+                low = body.lower()
+                banned = ["buy now", "act now", "act fast", "limited time", "limited offer",
+                          "hurry", "don't miss", "won't last", "best price", "discount",
+                          "make an offer", "highest bidder", "auction", "for sale", "best offer"]
+                for phrase in banned:
+                    if phrase in low:
+                        errors.append(f"{path} acquisition surface contains banned phrase '{phrase}'")
+                if re.search(r"\$\s?\d|\b\d[\d,]*\s?(?:usd|eur|dollars)\b", low):
+                    errors.append(f"{path} acquisition surface contains a price/valuation figure")
+                if "noindex" not in low:
+                    errors.append(f"{path} acquisition surface must be noindex")
         else:
             # 4. Every claim cited in the body is registered; sourced claims are used.
             refs = set(re.findall(r"CLM-\d+", body))
@@ -101,8 +117,11 @@ def main():
                     errors.append(f"{path} body links to unregistered route {href}")
 
             # 8. Safety classification (class-aware).
-            if "## Safety Notes" not in body:
-                errors.append(f"{path} missing Safety Notes section")
+            #    Scientific reference units must carry a Safety Notes section;
+            #    institutional governance pages (policy) carry their own framing.
+            if r["safety_class"] in ("medical-educational", "educational", "technical"):
+                if "## Safety Notes" not in body:
+                    errors.append(f"{path} missing Safety Notes section")
             if r["safety_class"] == "medical-educational" and "qualified eye-care professional" not in body:
                 errors.append(f"{path} medical page missing eye-care disclaimer")
 
@@ -126,13 +145,26 @@ def main():
                 if link not in route_paths:
                     errors.append(f"engine class {cls} links to unregistered route {link}")
     # 10b. Generated pages must be freshly built from their governed sources.
-    for builder_name in ("build_engine.py", "build_gateway.py"):
+    for builder_name in ("build_engine.py", "build_gateway.py", "build_acquire.py",
+                          "build_site.py", "generate_sitemap.py"):
         builder = os.path.join(ROOT, "scripts", builder_name)
         if os.path.exists(builder):
             res = subprocess.run([sys.executable, builder, "--check"],
                                  capture_output=True, text=True)
             if res.returncode != 0:
                 errors.append(f"{builder_name}: " + res.stdout.strip())
+
+    # 9b. No Partial Language Doctrine: routes in a non-launched layer must not be public.
+    lang_path = os.path.join(ROOT, "data", "languages.json")
+    if os.path.exists(lang_path):
+        langs = load("languages.json")
+        status_by_code = {l["code"]: l["status"] for l in langs["layers"]}
+        for r in routes["routes"]:
+            code = r.get("language", "en")
+            if code not in status_by_code:
+                errors.append(f"{r['path']} uses unregistered language '{code}'")
+            elif status_by_code[code] != "launched" and r.get("indexable") is True:
+                errors.append(f"{r['path']} is in non-launched layer '{code}' but is indexable")
 
     # 10. Static-security scan of content and data (No Hidden Infrastructure).
     # The generated engine page legitimately contains reviewed inline JS/CSS and

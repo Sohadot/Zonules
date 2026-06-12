@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "0.2",
+  "version": "0.3",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -24,7 +24,8 @@
       "required_internal_links": [
         "/ciliary-body/",
         "/crystalline-lens/",
-        "/lens-accommodation/"
+        "/lens-accommodation/",
+        "/lens-capsule/"
       ],
       "source_requirements": ["SRC-001", "SRC-002", "SRC-003"],
       "claim_requirements": ["CLM-001", "CLM-002", "CLM-003", "CLM-004", "CLM-005"],
@@ -106,6 +107,32 @@
       ],
       "source_requirements": ["SRC-001", "SRC-003"],
       "claim_requirements": ["CLM-014", "CLM-015", "CLM-016", "CLM-017"],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/lens-capsule/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/lens-capsule/",
+      "hreflang_group": "lens-capsule",
+      "layer": "L1",
+      "cluster": "lens-suspension",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/lens-capsule.md",
+      "seo_title": "Lens Capsule — The Surface That Transmits Suspension Tension | Zonules.com",
+      "meta_description": "The lens capsule is the elastic envelope into which the zonular fibers insert, transmitting their tension to reshape the lens. A governed reference unit on the suspension interface.",
+      "required_internal_links": [
+        "/zonules-of-zinn/",
+        "/crystalline-lens/",
+        "/ciliary-body/"
+      ],
+      "source_requirements": ["SRC-001", "SRC-002"],
+      "claim_requirements": ["CLM-018", "CLM-019", "CLM-020", "CLM-021"],
       "safety_class": "medical-educational",
       "monetization": "none",
       "last_reviewed": "2026-06-12"

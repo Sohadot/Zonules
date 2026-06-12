@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "0.2",
+  "version": "0.3",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded. No unsourced scientific claim may be published.",
@@ -125,6 +125,34 @@
       "statement": "Accommodation is the operational expression of FIS-2: focus integrity maintained across an intended operating range.",
       "sources": ["SRC-004"],
       "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-018",
+      "status": "sourced",
+      "statement": "The lens capsule is a transparent, elastic basement-membrane envelope that surrounds the crystalline lens.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/lens-capsule/"
+    },
+    {
+      "id": "CLM-019",
+      "status": "sourced",
+      "statement": "The zonular fibers insert into the lens capsule around the lens equator, transmitting their tension to the lens through the capsule.",
+      "sources": ["SRC-002"],
+      "page": "/lens-capsule/"
+    },
+    {
+      "id": "CLM-020",
+      "status": "sourced",
+      "statement": "The elasticity of the capsule helps mold the lens into a more curved shape when zonular tension is released during accommodation.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/lens-capsule/"
+    },
+    {
+      "id": "CLM-021",
+      "status": "internal-framework",
+      "statement": "The lens capsule is the transmission interface of the suspension layer: the surface through which hidden tension becomes a change in focal geometry.",
+      "sources": ["SRC-004"],
+      "page": "/lens-capsule/"
     }
   ]
 }

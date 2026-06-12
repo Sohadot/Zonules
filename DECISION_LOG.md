@@ -57,6 +57,14 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
 - **Detection:** Caught by the automated governance gate (broken-Markdown-link check) before publication, not after. This is the enforcement model working as intended.
 - **Security scan:** No secrets/tokens in tracked content (policy prose excepted); no inline scripts, event handlers, `javascript:`, or external `http://` assets in `content/` or `data/`. Static-first and No-API posture intact.
 
+## 2026-06-12 — Close the anatomy cluster: lens-capsule reference unit
+
+- **Change:** Add `lens-capsule.md` (FIO-01 / FIS-1), the transmission interface of the suspension layer, and restore the live `/lens-capsule/` link on the anchor page that was de-linked in the previous entry. Registries advanced to routes v0.3 and claims v0.3 (CLM-018…CLM-021).
+- **Type:** New reference unit (approved); resolves prior forward reference.
+- **Rationale:** The capsule was the last dangling forward link. Building it closes the L1 lens-suspension cluster as a complete, fully reciprocal sub-graph and makes the mechanical chain explicit: ciliary body → zonules → capsule → lens → focus.
+- **Verification:** Governance gate PASS — 5 pages, 21 claims, 0 broken links, 0 orphans, all sourced claims used and resolved, every page safety-classified. Security scan of `content/` and `data/` clean: no inline scripts, event handlers, `javascript:`, external `http://` assets, or secrets.
+- **Affected:** `content/en/terms/lens-capsule.md`, `content/en/terms/zonules-of-zinn.md`, `data/routes.json`, `data/claims.json`.
+
 ---
 
-*Next planned entries: lens-capsule unit, remaining FIO clusters (FIO-03/04/05 anchors), Focus Integrity Engine build, suspension-reveal interface.*
+*Next planned entries: remaining FIO clusters (FIO-03/04/05 anchors for the perception and machine-vision layers), Focus Integrity Engine build, suspension-reveal interface.*

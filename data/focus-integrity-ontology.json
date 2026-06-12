@@ -1,0 +1,90 @@
+{
+  "id": "FIO",
+  "name": "Focus Integrity Ontology",
+  "version": "0.1",
+  "asset": "zonules.com",
+  "governing_document": "REFERENCE_ARCHITECTURE.md",
+  "thesis_layers": {
+    "L1": "Anatomy — biological structures that make optical focus possible",
+    "L2": "Perception — cognitive systems that convert visual input into clarity",
+    "L3": "Machine Vision & Verification — artificial systems that detect, interpret, and verify"
+  },
+  "entry_criteria": [
+    "Failure or condition of focus, not of vision in general",
+    "Maps to at least one thesis layer (L1, L2, or L3)",
+    "Source-backed or explicitly marked as conceptual interpretation",
+    "Connects to at least two existing reference units"
+  ],
+  "classes": [
+    {
+      "id": "FIO-01",
+      "name": "Suspension Failure",
+      "group": "structural",
+      "definition": "The holding structures that keep the focal element in position themselves fail.",
+      "governing_claim": "When the suspension layer fails, the focal element is present but unstable.",
+      "layers": {
+        "L1": "Zonular weakness, dislocation, or rupture compromising lens position.",
+        "L2": "Collapse of attentional anchoring; focal target cannot be held against competing stimuli.",
+        "L3": "Loss of calibration or spatial grounding; the model's reference frame degrades."
+      },
+      "medical_guard": true,
+      "related": ["FIO-02"]
+    },
+    {
+      "id": "FIO-02",
+      "name": "Accommodation Failure",
+      "group": "structural",
+      "definition": "The system cannot adjust focus across its intended operating range.",
+      "governing_claim": "A system that focuses at one setting only does not have focus integrity.",
+      "layers": {
+        "L1": "Loss of accommodative range.",
+        "L2": "Failure of perceptual constancy as conditions change.",
+        "L3": "Domain shift; correct focus in training conditions, failure in new ones."
+      },
+      "medical_guard": true,
+      "related": ["FIO-01"]
+    },
+    {
+      "id": "FIO-03",
+      "name": "Signal–Noise Failure",
+      "group": "input",
+      "definition": "The system cannot separate meaningful signal from noise.",
+      "governing_claim": "Focus without separation produces sharp noise, not meaning.",
+      "layers": {
+        "L1": "Optical scatter or media opacity reducing contrast at the receptor.",
+        "L2": "Figure-ground collapse; salience misallocation.",
+        "L3": "Adversarial perturbation, synthetic noise, or low signal-to-noise input."
+      },
+      "medical_guard": true,
+      "related": ["FIO-04", "FIO-05"]
+    },
+    {
+      "id": "FIO-04",
+      "name": "Provenance Failure",
+      "group": "input",
+      "definition": "The system cannot establish whether what it sees is real or where it came from.",
+      "governing_claim": "In an age of synthetic images, focus without provenance cannot yield visual truth.",
+      "layers": {
+        "L1": "Conceptual bridge only — not strongly applicable at the anatomical layer.",
+        "L2": "Misattributed source of a percept; false confidence in an illusion.",
+        "L3": "Deepfake and synthetic media; absent or broken image provenance."
+      },
+      "medical_guard": false,
+      "related": ["FIO-03", "FIO-05"]
+    },
+    {
+      "id": "FIO-05",
+      "name": "Interpretation Failure",
+      "group": "output",
+      "definition": "Focus is held and signal is clean, but the resulting meaning is wrong.",
+      "governing_claim": "The final failure of focus is not blur — it is confident misreading.",
+      "layers": {
+        "L1": "Conceptual bridge only — interpretation is not an anatomical property.",
+        "L2": "Perceptual error; correct sharp percept, incorrect meaning.",
+        "L3": "Machine sight without machine understanding; correct detection, wrong interpretation."
+      },
+      "medical_guard": false,
+      "related": ["FIO-03", "FIO-04"]
+    }
+  ]
+}

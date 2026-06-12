@@ -78,7 +78,7 @@ In machine perception, calibration and spatial grounding play the suspension rol
 - [Ciliary body](/ciliary-body/) — the source of zonular tension and the muscle of accommodation
 - [Crystalline lens](/crystalline-lens/) — the optical element the zonules suspend
 - [Lens accommodation](/lens-accommodation/) — the focus-shifting process the zonules enable
-- [Lens capsule](/lens-capsule/) — the surface into which the zonular fibers insert
+- **Lens capsule** — the surface into which the zonular fibers insert *(reference unit forthcoming)*
 
 ## Reference Notes
 

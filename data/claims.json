@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "0.1",
+  "version": "0.2",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded. No unsourced scientific claim may be published.",
@@ -41,6 +41,90 @@
       "statement": "The zonules are the literal instance of the suspension layer (FIO-01): focus is produced by hidden structural tension, not by the lens alone.",
       "sources": ["SRC-004"],
       "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-006",
+      "status": "sourced",
+      "statement": "The ciliary body is a ring of tissue behind the iris that contains the ciliary muscle and gives rise to the zonular fibers.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/ciliary-body/"
+    },
+    {
+      "id": "CLM-007",
+      "status": "sourced",
+      "statement": "Contraction of the ciliary muscle reduces tension on the zonules, allowing the elastic lens to become more convex for near focus.",
+      "sources": ["SRC-001", "SRC-003"],
+      "page": "/ciliary-body/"
+    },
+    {
+      "id": "CLM-008",
+      "status": "sourced",
+      "statement": "The ciliary body also produces aqueous humor, the fluid that fills the anterior segment of the eye.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/ciliary-body/"
+    },
+    {
+      "id": "CLM-009",
+      "status": "internal-framework",
+      "statement": "The ciliary body is the force source of the suspension layer (FIO-01): it does not focus light but governs the tension that makes focus adjustable.",
+      "sources": ["SRC-004"],
+      "page": "/ciliary-body/"
+    },
+    {
+      "id": "CLM-010",
+      "status": "sourced",
+      "statement": "The crystalline lens is a transparent, biconvex structure suspended behind the iris that refracts light to help form an image on the retina.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/crystalline-lens/"
+    },
+    {
+      "id": "CLM-011",
+      "status": "sourced",
+      "statement": "The lens is elastic and changes curvature during accommodation.",
+      "sources": ["SRC-001", "SRC-003"],
+      "page": "/crystalline-lens/"
+    },
+    {
+      "id": "CLM-012",
+      "status": "sourced",
+      "statement": "The lens is enclosed in an elastic capsule into which the zonular fibers insert.",
+      "sources": ["SRC-002"],
+      "page": "/crystalline-lens/"
+    },
+    {
+      "id": "CLM-013",
+      "status": "internal-framework",
+      "statement": "The lens is the focal element of the suspension system: present but unable to focus reliably without zonular tension.",
+      "sources": ["SRC-004"],
+      "page": "/crystalline-lens/"
+    },
+    {
+      "id": "CLM-014",
+      "status": "sourced",
+      "statement": "Accommodation is the process by which the eye changes its optical power to maintain a clear image of objects at varying distances.",
+      "sources": ["SRC-001", "SRC-003"],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-015",
+      "status": "sourced",
+      "statement": "During accommodation for near vision, the ciliary muscle contracts, zonular tension decreases, and the lens becomes more spherical.",
+      "sources": ["SRC-001", "SRC-003"],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-016",
+      "status": "sourced",
+      "statement": "Accommodative ability typically declines with age, a condition known as presbyopia.",
+      "sources": ["SRC-003"],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-017",
+      "status": "internal-framework",
+      "statement": "Accommodation is the operational expression of FIS-2: focus integrity maintained across an intended operating range.",
+      "sources": ["SRC-004"],
+      "page": "/lens-accommodation/"
     }
   ]
 }

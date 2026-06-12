@@ -43,6 +43,20 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
 - **Affected:** `content/en/terms/zonules-of-zinn.md`, registries above.
 - **Note:** Internal links to `/ciliary-body/`, `/crystalline-lens/`, `/lens-accommodation/`, `/lens-capsule/` are forward references to unbuilt pages. They are NOT yet live and must not enter navigation or sitemap until their target pages reach approved status (No Broken Structure non-negotiable).
 
+## 2026-06-12 — Complete the lens-suspension cluster (3 reference units)
+
+- **Change:** Add three governed reference units completing the FIO-01 lens-suspension cluster: `ciliary-body.md` (force source / actuator), `crystalline-lens.md` (focal element), and `lens-accommodation.md` (FIO-02 / FIS-2, range). Registries advanced to routes v0.2 and claims v0.2; sources unchanged (v0.1 covers all claims).
+- **Type:** New reference units (approved).
+- **Rationale:** These three were the forward references from the anchor page. Building them closes those internal links and makes the suspension cluster a complete, mutually-linked sub-graph rather than a single page with dangling pointers.
+- **Affected:** `content/en/terms/{ciliary-body,crystalline-lens,lens-accommodation}.md`, `data/routes.json`, `data/claims.json`.
+
+## 2026-06-12 — Gate defect found and fixed: broken link to /lens-capsule/
+
+- **Defect:** The anchor page `zonules-of-zinn.md` contained a Markdown link to `/lens-capsule/`, which has no registered route — a violation of the No Broken Structure non-negotiable.
+- **Resolution:** De-linked the reference to plain text marked *(reference unit forthcoming)*. The link will be restored when the lens-capsule reference unit is built and registered.
+- **Detection:** Caught by the automated governance gate (broken-Markdown-link check) before publication, not after. This is the enforcement model working as intended.
+- **Security scan:** No secrets/tokens in tracked content (policy prose excepted); no inline scripts, event handlers, `javascript:`, or external `http://` assets in `content/` or `data/`. Static-first and No-API posture intact.
+
 ---
 
-*Next planned entries: remaining FIO class reference units, Focus Integrity Engine build, suspension-reveal interface.*
+*Next planned entries: lens-capsule unit, remaining FIO clusters (FIO-03/04/05 anchors), Focus Integrity Engine build, suspension-reveal interface.*

@@ -49,4 +49,4 @@ The asset is built to be read by AI agents and citation systems as well as peopl
 
 ## Notes
 
-This page describes governance, not medical or scientific content. The reference units themselves carry the relevant educational and safety framing. See the [source policy](/source-policy/) for how references are classified and the [glossary](/glossary/) for the full reference index.
+This page describes governance, not medical or scientific content. The reference units themselves carry the relevant educational and safety framing. See the [source policy](/source-policy/) for how references are classified, the [editorial policy](/editorial-policy/) for how content is selected and maintained, and the [glossary](/glossary/) for the full reference index.

@@ -1,0 +1,122 @@
+/*
+ * Zonules.com — Gateway / Suspension-Reveal interface.
+ * The interface embodies the thesis: focus is produced by hidden tension.
+ * Concept first, then performance, then beauty. Every state has a meaning.
+ * Inlined into static/gateway/index.html by scripts/build_gateway.py.
+ */
+/*
+ * Color story — "Ocular Depth / Controlled Luminosity":
+ *   The background is the medium light travels through inside the eye, lit by
+ *   a single focal source near the top — not a void, but depth converging on
+ *   focus. The palette carries a thesis through temperature:
+ *     COOL (teal / cyan / silver) = focus held, the suspension intact and ordered.
+ *     WARM (amber / clay) = the system failing; entropy intruding when fibers are cut.
+ *   The hidden fibers, when revealed, are the most luminous element on screen:
+ *   the structure no one sees is the most precious thing in the system.
+ */
+:root {
+  --depth-near: #1a4258;   /* luminous focal medium, near the light source */
+  --depth-mid:  #103040;   /* ocular depth */
+  --depth-far:  #0a1f2b;   /* the far interior */
+  --panel:      #13303f;   /* raised surfaces, still within the medium */
+  --paper: #eaf2f6;
+  --line: #28485a;
+  --fiber: #5f93a6;
+  --fiber-bright: #7fd6d0; /* revealed zonules — cool, luminous, precious */
+  --lens: #cfe7f0;
+  --muted: #8aa2af;
+  --accent: #b7d6e2;
+  --focus-ring: #8fd0e0;
+  --cut: #d98a5a;          /* warm — the temperature of failure */
+  --cut-deep: #c4543f;
+}
+
+* { box-sizing: border-box; }
+
+body.gw {
+  margin: 0;
+  /* Light converges from a focal source near the top into ocular depth. */
+  background:
+    radial-gradient(130% 95% at 50% 14%, var(--depth-near) 0%, var(--depth-mid) 46%, var(--depth-far) 100%);
+  background-attachment: fixed;
+  color: var(--paper);
+  font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.gw-wrap { max-width: 960px; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+
+.gw-eyebrow { text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.72rem; color: var(--muted); margin: 0 0 1rem; }
+.gw-governing { font-size: clamp(1.6rem, 4.5vw, 2.6rem); line-height: 1.18; font-weight: 600; margin: 0 0 1rem; max-width: 18ch; }
+.gw-lede { color: var(--accent); font-size: 1.08rem; max-width: 62ch; margin: 0 0 2.5rem; }
+
+/* ---- The stage ---- */
+.gw-stage { border: 1px solid var(--line); border-radius: 10px; background: linear-gradient(180deg, var(--panel), var(--depth-far)); padding: 1.5rem; margin: 0 0 1.25rem; }
+.gw-figure { margin: 0; }
+.gw-svg { display: block; width: 100%; height: auto; max-height: 60vh; }
+
+.gw-ciliary { fill: none; stroke: var(--line); stroke-width: 1.2; stroke-dasharray: 3 6; }
+.gw-fiber { stroke: var(--fiber); stroke-width: 1; opacity: 0; transition: opacity 0.5s ease; }
+.gw-lens { fill: url(#gw-lensgrad); stroke: var(--fiber-bright); stroke-width: 1.5; transition: transform 0.6s ease; transform-origin: center; }
+.gw-focal { transition: filter 0.6s ease, opacity 0.6s ease; transform-origin: center; }
+.gw-focal-ring { fill: none; stroke: var(--fiber-bright); stroke-width: 1.2; }
+.gw-focal-core { fill: var(--fiber-bright); }
+
+/* State: revealed — the hidden fibers become visible */
+.gw-svg.is-revealed .gw-fiber,
+.gw-svg.is-collapsed .gw-fiber { opacity: 1; }
+
+/* State: collapsed — fibers are cut, the lens drifts, focus is lost */
+.gw-svg.is-collapsed .gw-fiber { stroke: var(--cut); opacity: 0.55; }
+.gw-svg.is-collapsed .gw-fiber-cut { stroke-dasharray: 14 8; }
+.gw-svg.is-collapsed .gw-lens { transform: translate(10px, 14px) rotate(4deg) scale(0.97); }
+.gw-svg.is-collapsed .gw-focal { filter: blur(3.5px); opacity: 0.7; }
+
+/* ---- Controls ---- */
+.gw-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 0.9rem; }
+.gw-step {
+  cursor: pointer; background: var(--panel); color: var(--paper); border: 1px solid var(--line);
+  border-radius: 999px; padding: 0.5rem 1rem; font-size: 0.92rem; display: inline-flex; gap: 0.45rem; align-items: center;
+}
+.gw-step .gw-step-n { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; }
+.gw-step[aria-pressed="true"] { border-color: var(--fiber-bright); background: #173a4a; }
+.gw-step:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+.gw-caption { min-height: 3.2em; color: var(--accent); margin: 0 0 0.4rem; font-size: 1.02rem; }
+.gw-caption strong { color: var(--paper); }
+
+/* ---- No-JS static triptych ---- */
+.gw-static { display: grid; gap: 1rem; margin: 1.25rem 0 0; }
+@media (min-width: 720px) { .gw-static { grid-template-columns: repeat(3, 1fr); } }
+.gw-static figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; padding: 1rem; background: var(--panel); }
+.gw-static figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; }
+.gw-mini { width: 100%; height: auto; }
+
+/* ---- Reference gateway ---- */
+.gw-rule { height: 1px; background: linear-gradient(90deg, transparent, var(--fiber), transparent); margin: 3rem 0 2.25rem; }
+.gw-layers { display: grid; gap: 1rem; }
+@media (min-width: 720px) { .gw-layers { grid-template-columns: repeat(3, 1fr); } }
+.gw-layer { border: 1px solid var(--line); border-radius: 8px; padding: 1.1rem; background: var(--panel); display: block; color: inherit; text-decoration: none; transition: border-color 0.15s ease, transform 0.15s ease; }
+.gw-layer:hover { border-color: var(--fiber); transform: translateY(-1px); }
+.gw-layer:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.gw-layer-id { font-size: 0.7rem; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+.gw-layer-title { font-weight: 600; font-size: 1.05rem; margin: 0.25rem 0; }
+.gw-layer-desc { color: var(--muted); font-size: 0.9rem; margin: 0; }
+
+.gw-cta { margin: 2.25rem 0 0; }
+.gw-cta a { display: inline-block; background: var(--accent); color: var(--depth-far); border-radius: 6px; padding: 0.7rem 1.4rem; font-weight: 600; text-decoration: none; }
+.gw-cta a:hover { background: #fff; }
+.gw-cta a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+.gw-foot { margin: 3rem 0 0; color: var(--muted); font-size: 0.85rem; }
+.gw-foot a { color: var(--focus-ring); }
+
+a { color: var(--focus-ring); }
+
+/* JS-on: hide the static triptych, show interactive controls */
+body.gw.js .gw-static { display: none; }
+body.gw:not(.js) .gw-controls { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gw-fiber, .gw-lens, .gw-focal, .gw-layer { transition: none; }
+}

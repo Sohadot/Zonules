@@ -69,15 +69,19 @@ def main():
         if len(r.get("meta_description", "")) < 50:
             errors.append(f"{path} meta_description too short or missing")
 
-        if page_type == "engine":
-            # Engine-specific checks (the engine is generated, not a markdown unit).
-            if "qualified eye-care professional" not in body:
-                errors.append(f"{path} engine missing medical guard text")
-            if "no input left your device" not in body.lower():
-                errors.append(f"{path} engine missing local-only provenance statement")
-            for href in re.findall(r'href="(/[a-z0-9-]+/)"', body):
+        if page_type in ("engine", "gateway"):
+            # Generated pages (not markdown units): validate their internal links resolve.
+            for href in re.findall(r'href="(/[a-z0-9-]*/?)"', body):
                 if href not in route_paths:
-                    errors.append(f"{path} engine links to unregistered route {href}")
+                    errors.append(f"{path} {page_type} links to unregistered route {href}")
+            if page_type == "engine":
+                if "qualified eye-care professional" not in body:
+                    errors.append(f"{path} engine missing medical guard text")
+                if "no input left your device" not in body.lower():
+                    errors.append(f"{path} engine missing local-only provenance statement")
+            if page_type == "gateway":
+                if "what makes vision possible" not in body:
+                    errors.append(f"{path} gateway missing the governing sentence")
         else:
             # 4. Every claim cited in the body is registered; sourced claims are used.
             refs = set(re.findall(r"CLM-\d+", body))
@@ -103,8 +107,11 @@ def main():
                 errors.append(f"{path} medical page missing eye-care disclaimer")
 
     # 9. No orphans: every page is linked to by at least one other page.
+    #    The root gateway is the entry point, reached directly, and is exempt.
     linked = {link for r in routes["routes"] for link in r["required_internal_links"]}
     for r in routes["routes"]:
+        if r["path"] == "/" or r.get("page_type") == "gateway":
+            continue
         if r["path"] not in linked:
             errors.append(f"orphan page (no inbound link): {r['path']}")
 
@@ -118,12 +125,14 @@ def main():
             for link in links:
                 if link not in route_paths:
                     errors.append(f"engine class {cls} links to unregistered route {link}")
-        builder = os.path.join(ROOT, "scripts", "build_engine.py")
+    # 10b. Generated pages must be freshly built from their governed sources.
+    for builder_name in ("build_engine.py", "build_gateway.py"):
+        builder = os.path.join(ROOT, "scripts", builder_name)
         if os.path.exists(builder):
             res = subprocess.run([sys.executable, builder, "--check"],
                                  capture_output=True, text=True)
             if res.returncode != 0:
-                errors.append("engine page is stale: " + res.stdout.strip())
+                errors.append(f"{builder_name}: " + res.stdout.strip())
 
     # 10. Static-security scan of content and data (No Hidden Infrastructure).
     # The generated engine page legitimately contains reviewed inline JS/CSS and

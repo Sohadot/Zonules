@@ -4,24 +4,35 @@
  * Concept first, then performance, then beauty. No decoration without function.
  * Inlined into static/engine/index.html by scripts/build_engine.py.
  */
+/*
+ * Shares the gateway color story — "Ocular Depth / Controlled Luminosity".
+ * Temperature carries meaning in the readings too:
+ *   COOL = focus intact; WARM (amber -> clay) = at-risk -> failed.
+ */
 :root {
-  --ink: #0c1218;
-  --paper: #f4f6f8;
-  --line: #2a3744;
-  --fiber: #5f7d92;
-  --accent: #c8d6e0;
-  --intact: #3f7d5a;
-  --atrisk: #a8842c;
-  --failed: #a4453a;
-  --muted: #7c8a96;
-  --focus-ring: #9fc1d8;
+  --depth-near: #1a4258;
+  --depth-mid:  #103040;
+  --depth-far:  #0a1f2b;
+  --panel:      #13303f;
+  --ink: #0a1f2b;
+  --paper: #eaf2f6;
+  --line: #28485a;
+  --fiber: #5f93a6;
+  --accent: #b7d6e2;
+  --intact: #5bbf9a;   /* cool — held */
+  --atrisk: #d8a55a;   /* warm — strain */
+  --failed: #c4543f;   /* clay — failure */
+  --muted: #8aa2af;
+  --focus-ring: #8fd0e0;
 }
 
 * { box-sizing: border-box; }
 
 body.fie {
   margin: 0;
-  background: var(--ink);
+  background:
+    radial-gradient(130% 90% at 50% 12%, var(--depth-near) 0%, var(--depth-mid) 48%, var(--depth-far) 100%);
+  background-attachment: fixed;
   color: var(--paper);
   font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -49,7 +60,7 @@ body.fie {
 .fie-layers { display: grid; gap: 0.75rem; }
 @media (min-width: 680px) { .fie-layers { grid-template-columns: repeat(3, 1fr); } }
 .fie-layer {
-  text-align: left; cursor: pointer; background: #121b23; color: var(--paper);
+  text-align: left; cursor: pointer; background: var(--panel); color: var(--paper);
   border: 1px solid var(--line); border-radius: 6px; padding: 0.9rem; display: grid; gap: 0.35rem;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
@@ -59,7 +70,7 @@ body.fie {
 .fie-layer-label { font-weight: 600; font-size: 1.02rem; }
 .fie-layer-framing { font-size: 0.82rem; color: var(--muted); line-height: 1.45; }
 
-.fie-q { padding: 0.9rem 0; border-top: 1px solid #1b2730; }
+.fie-q { padding: 0.9rem 0; border-top: 1px solid var(--line); }
 .fie-q:first-of-type { border-top: 0; }
 .fie-q-text { margin: 0 0 0.6rem; display: grid; gap: 0.2rem; }
 .fie-crit-id { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }

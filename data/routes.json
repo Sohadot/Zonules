@@ -1,11 +1,38 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "0.5",
+  "version": "0.6",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
   "routes": [
+    {
+      "path": "/",
+      "language": "en",
+      "page_type": "gateway",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/",
+      "hreflang_group": "home",
+      "layer": "cross",
+      "cluster": "gateway",
+      "fio_class": "all",
+      "template": "static/gateway/index.html",
+      "content": "static/gateway/index.html",
+      "seo_title": "Zonules.com — The Hidden System That Makes Vision Possible",
+      "meta_description": "Zonules are not vision. They are what makes vision possible. A sovereign visual reference system mapping the hidden structures that hold focus across anatomy, perception, and machine vision.",
+      "required_internal_links": [
+        "/zonules-of-zinn/",
+        "/visual-perception/",
+        "/machine-vision/",
+        "/focus-integrity-engine/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
     {
       "path": "/focus-integrity-engine/",
       "language": "en",

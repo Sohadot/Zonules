@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zonules.com — The Hidden System That Makes Vision Possible</title>
+<meta name="description" content="Zonules are not vision. They are what makes vision possible. A sovereign visual reference system mapping the hidden structures that hold focus across anatomy, perception, and machine vision.">
+<link rel="canonical" href="https://zonules.com/">
+<style>/*
+ * Zonules.com — Gateway / Suspension-Reveal interface.
+ * The interface embodies the thesis: focus is produced by hidden tension.
+ * Concept first, then performance, then beauty. Every state has a meaning.
+ * Inlined into static/gateway/index.html by scripts/build_gateway.py.
+ */
+/*
+ * Color story — "Ocular Depth / Controlled Luminosity":
+ *   The background is the medium light travels through inside the eye, lit by
+ *   a single focal source near the top — not a void, but depth converging on
+ *   focus. The palette carries a thesis through temperature:
+ *     COOL (teal / cyan / silver) = focus held, the suspension intact and ordered.
+ *     WARM (amber / clay) = the system failing; entropy intruding when fibers are cut.
+ *   The hidden fibers, when revealed, are the most luminous element on screen:
+ *   the structure no one sees is the most precious thing in the system.
+ */
+:root {
+  --depth-near: #1a4258;   /* luminous focal medium, near the light source */
+  --depth-mid:  #103040;   /* ocular depth */
+  --depth-far:  #0a1f2b;   /* the far interior */
+  --panel:      #13303f;   /* raised surfaces, still within the medium */
+  --paper: #eaf2f6;
+  --line: #28485a;
+  --fiber: #5f93a6;
+  --fiber-bright: #7fd6d0; /* revealed zonules — cool, luminous, precious */
+  --lens: #cfe7f0;
+  --muted: #8aa2af;
+  --accent: #b7d6e2;
+  --focus-ring: #8fd0e0;
+  --cut: #d98a5a;          /* warm — the temperature of failure */
+  --cut-deep: #c4543f;
+}
+
+* { box-sizing: border-box; }
+
+body.gw {
+  margin: 0;
+  /* Light converges from a focal source near the top into ocular depth. */
+  background:
+    radial-gradient(130% 95% at 50% 14%, var(--depth-near) 0%, var(--depth-mid) 46%, var(--depth-far) 100%);
+  background-attachment: fixed;
+  color: var(--paper);
+  font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.gw-wrap { max-width: 960px; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+
+.gw-eyebrow { text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.72rem; color: var(--muted); margin: 0 0 1rem; }
+.gw-governing { font-size: clamp(1.6rem, 4.5vw, 2.6rem); line-height: 1.18; font-weight: 600; margin: 0 0 1rem; max-width: 18ch; }
+.gw-lede { color: var(--accent); font-size: 1.08rem; max-width: 62ch; margin: 0 0 2.5rem; }
+
+/* ---- The stage ---- */
+.gw-stage { border: 1px solid var(--line); border-radius: 10px; background: linear-gradient(180deg, var(--panel), var(--depth-far)); padding: 1.5rem; margin: 0 0 1.25rem; }
+.gw-figure { margin: 0; }
+.gw-svg { display: block; width: 100%; height: auto; max-height: 60vh; }
+
+.gw-ciliary { fill: none; stroke: var(--line); stroke-width: 1.2; stroke-dasharray: 3 6; }
+.gw-fiber { stroke: var(--fiber); stroke-width: 1; opacity: 0; transition: opacity 0.5s ease; }
+.gw-lens { fill: url(#gw-lensgrad); stroke: var(--fiber-bright); stroke-width: 1.5; transition: transform 0.6s ease; transform-origin: center; }
+.gw-focal { transition: filter 0.6s ease, opacity 0.6s ease; transform-origin: center; }
+.gw-focal-ring { fill: none; stroke: var(--fiber-bright); stroke-width: 1.2; }
+.gw-focal-core { fill: var(--fiber-bright); }
+
+/* State: revealed — the hidden fibers become visible */
+.gw-svg.is-revealed .gw-fiber,
+.gw-svg.is-collapsed .gw-fiber { opacity: 1; }
+
+/* State: collapsed — fibers are cut, the lens drifts, focus is lost */
+.gw-svg.is-collapsed .gw-fiber { stroke: var(--cut); opacity: 0.55; }
+.gw-svg.is-collapsed .gw-fiber-cut { stroke-dasharray: 14 8; }
+.gw-svg.is-collapsed .gw-lens { transform: translate(10px, 14px) rotate(4deg) scale(0.97); }
+.gw-svg.is-collapsed .gw-focal { filter: blur(3.5px); opacity: 0.7; }
+
+/* ---- Controls ---- */
+.gw-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 0.9rem; }
+.gw-step {
+  cursor: pointer; background: var(--panel); color: var(--paper); border: 1px solid var(--line);
+  border-radius: 999px; padding: 0.5rem 1rem; font-size: 0.92rem; display: inline-flex; gap: 0.45rem; align-items: center;
+}
+.gw-step .gw-step-n { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; }
+.gw-step[aria-pressed="true"] { border-color: var(--fiber-bright); background: #173a4a; }
+.gw-step:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+.gw-caption { min-height: 3.2em; color: var(--accent); margin: 0 0 0.4rem; font-size: 1.02rem; }
+.gw-caption strong { color: var(--paper); }
+
+/* ---- No-JS static triptych ---- */
+.gw-static { display: grid; gap: 1rem; margin: 1.25rem 0 0; }
+@media (min-width: 720px) { .gw-static { grid-template-columns: repeat(3, 1fr); } }
+.gw-static figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; padding: 1rem; background: var(--panel); }
+.gw-static figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; }
+.gw-mini { width: 100%; height: auto; }
+
+/* ---- Reference gateway ---- */
+.gw-rule { height: 1px; background: linear-gradient(90deg, transparent, var(--fiber), transparent); margin: 3rem 0 2.25rem; }
+.gw-layers { display: grid; gap: 1rem; }
+@media (min-width: 720px) { .gw-layers { grid-template-columns: repeat(3, 1fr); } }
+.gw-layer { border: 1px solid var(--line); border-radius: 8px; padding: 1.1rem; background: var(--panel); display: block; color: inherit; text-decoration: none; transition: border-color 0.15s ease, transform 0.15s ease; }
+.gw-layer:hover { border-color: var(--fiber); transform: translateY(-1px); }
+.gw-layer:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.gw-layer-id { font-size: 0.7rem; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+.gw-layer-title { font-weight: 600; font-size: 1.05rem; margin: 0.25rem 0; }
+.gw-layer-desc { color: var(--muted); font-size: 0.9rem; margin: 0; }
+
+.gw-cta { margin: 2.25rem 0 0; }
+.gw-cta a { display: inline-block; background: var(--accent); color: var(--depth-far); border-radius: 6px; padding: 0.7rem 1.4rem; font-weight: 600; text-decoration: none; }
+.gw-cta a:hover { background: #fff; }
+.gw-cta a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+.gw-foot { margin: 3rem 0 0; color: var(--muted); font-size: 0.85rem; }
+.gw-foot a { color: var(--focus-ring); }
+
+a { color: var(--focus-ring); }
+
+/* JS-on: hide the static triptych, show interactive controls */
+body.gw.js .gw-static { display: none; }
+body.gw:not(.js) .gw-controls { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gw-fiber, .gw-lens, .gw-focal, .gw-layer { transition: none; }
+}
+</style>
+</head>
+<body class="gw">
+<main class="gw-wrap">
+<p class="gw-eyebrow">Zonules.com · Sovereign Visual Reference System</p>
+<h1 class="gw-governing">Zonules are not vision. They are what makes vision possible.</h1>
+<p class="gw-lede">Focus is not a property of sight. It is produced by hidden structural tension. The same logic holds whether the system that sees is made of tissue, of attention, or of silicon.</p>
+
+<section class="gw-stage" aria-labelledby="gw-stage-h">
+<h2 id="gw-stage-h" class="gw-eyebrow">The suspension, revealed</h2>
+<figure class="gw-figure">
+<svg id="gw-svg" class="gw-svg" viewBox="0 0 400 300" role="img" aria-label="A lens suspended by fine fibers from a surrounding ring. When the fibers are cut, the lens drifts and the focal target blurs."><defs><radialGradient id="gw-lensgrad" cx="50%" cy="42%" r="60%"><stop offset="0%" stop-color="#eaf4fb" stop-opacity="0.95"/><stop offset="100%" stop-color="#9fc1d8" stop-opacity="0.65"/></radialGradient></defs><circle class="gw-ciliary" cx="200" cy="150" r="130"/><line class="gw-fiber" x1="330.0" y1="150.0" x2="246.0" y2="150.0"/><line class="gw-fiber" x1="325.6" y1="183.6" x2="244.4" y2="166.6"/><line class="gw-fiber" x1="312.6" y1="215.0" x2="239.8" y2="182.0"/><line class="gw-fiber" x1="291.9" y1="241.9" x2="232.5" y2="195.3"/><line class="gw-fiber" x1="265.0" y1="262.6" x2="223.0" y2="205.4"/><line class="gw-fiber" x1="233.6" y1="275.6" x2="211.9" y2="211.8"/><line class="gw-fiber" x1="200.0" y1="280.0" x2="200.0" y2="214.0"/><line class="gw-fiber" x1="166.4" y1="275.6" x2="188.1" y2="211.8"/><line class="gw-fiber" x1="135.0" y1="262.6" x2="177.0" y2="205.4"/><line class="gw-fiber" x1="108.1" y1="241.9" x2="167.5" y2="195.3"/><line class="gw-fiber" x1="87.4" y1="215.0" x2="160.2" y2="182.0"/><line class="gw-fiber" x1="74.4" y1="183.6" x2="155.6" y2="166.6"/><line class="gw-fiber" x1="70.0" y1="150.0" x2="154.0" y2="150.0"/><line class="gw-fiber" x1="74.4" y1="116.4" x2="155.6" y2="133.4"/><line class="gw-fiber" x1="87.4" y1="85.0" x2="160.2" y2="118.0"/><line class="gw-fiber" x1="108.1" y1="58.1" x2="167.5" y2="104.7"/><line class="gw-fiber" x1="135.0" y1="37.4" x2="177.0" y2="94.6"/><line class="gw-fiber" x1="166.4" y1="24.4" x2="188.1" y2="88.2"/><line class="gw-fiber" x1="200.0" y1="20.0" x2="200.0" y2="86.0"/><line class="gw-fiber" x1="233.6" y1="24.4" x2="211.9" y2="88.2"/><line class="gw-fiber" x1="265.0" y1="37.4" x2="223.0" y2="94.6"/><line class="gw-fiber" x1="291.9" y1="58.1" x2="232.5" y2="104.7"/><line class="gw-fiber" x1="312.6" y1="85.0" x2="239.8" y2="118.0"/><line class="gw-fiber" x1="325.6" y1="116.4" x2="244.4" y2="133.4"/><g class="gw-focal"><circle class="gw-focal-ring" cx="200" cy="150" r="20"/><circle class="gw-focal-ring" cx="200" cy="150" r="11"/><circle class="gw-focal-core" cx="200" cy="150" r="3"/></g><ellipse class="gw-lens" cx="200" cy="150" rx="46" ry="64"/></svg>
+</figure>
+<div id="gw-controls" class="gw-controls" role="group" aria-label="Reveal the suspension">
+<button type="button" class="gw-step" data-state="held" aria-pressed="true"><span class="gw-step-n">1</span> See the lens</button>
+<button type="button" class="gw-step" data-state="revealed" aria-pressed="false"><span class="gw-step-n">2</span> Reveal the zonules</button>
+<button type="button" class="gw-step" data-state="collapsed" aria-pressed="false"><span class="gw-step-n">3</span> Cut the fibers</button>
+</div>
+<p id="gw-caption" class="gw-caption" aria-live="polite">This is the lens, apparently in focus. <strong>Nothing visible is holding it.</strong></p>
+<div class="gw-static">
+<figure><div class="gw-mini"><svg class="gw-svg" viewBox="0 0 400 300" role="img" aria-label="A lens suspended by fine fibers from a surrounding ring. When the fibers are cut, the lens drifts and the focal target blurs."><defs><radialGradient id="gw-lensgrad" cx="50%" cy="42%" r="60%"><stop offset="0%" stop-color="#eaf4fb" stop-opacity="0.95"/><stop offset="100%" stop-color="#9fc1d8" stop-opacity="0.65"/></radialGradient></defs><circle class="gw-ciliary" cx="200" cy="150" r="130"/><line class="gw-fiber" x1="330.0" y1="150.0" x2="246.0" y2="150.0"/><line class="gw-fiber" x1="325.6" y1="183.6" x2="244.4" y2="166.6"/><line class="gw-fiber" x1="312.6" y1="215.0" x2="239.8" y2="182.0"/><line class="gw-fiber" x1="291.9" y1="241.9" x2="232.5" y2="195.3"/><line class="gw-fiber" x1="265.0" y1="262.6" x2="223.0" y2="205.4"/><line class="gw-fiber" x1="233.6" y1="275.6" x2="211.9" y2="211.8"/><line class="gw-fiber" x1="200.0" y1="280.0" x2="200.0" y2="214.0"/><line class="gw-fiber" x1="166.4" y1="275.6" x2="188.1" y2="211.8"/><line class="gw-fiber" x1="135.0" y1="262.6" x2="177.0" y2="205.4"/><line class="gw-fiber" x1="108.1" y1="241.9" x2="167.5" y2="195.3"/><line class="gw-fiber" x1="87.4" y1="215.0" x2="160.2" y2="182.0"/><line class="gw-fiber" x1="74.4" y1="183.6" x2="155.6" y2="166.6"/><line class="gw-fiber" x1="70.0" y1="150.0" x2="154.0" y2="150.0"/><line class="gw-fiber" x1="74.4" y1="116.4" x2="155.6" y2="133.4"/><line class="gw-fiber" x1="87.4" y1="85.0" x2="160.2" y2="118.0"/><line class="gw-fiber" x1="108.1" y1="58.1" x2="167.5" y2="104.7"/><line class="gw-fiber" x1="135.0" y1="37.4" x2="177.0" y2="94.6"/><line class="gw-fiber" x1="166.4" y1="24.4" x2="188.1" y2="88.2"/><line class="gw-fiber" x1="200.0" y1="20.0" x2="200.0" y2="86.0"/><line class="gw-fiber" x1="233.6" y1="24.4" x2="211.9" y2="88.2"/><line class="gw-fiber" x1="265.0" y1="37.4" x2="223.0" y2="94.6"/><line class="gw-fiber" x1="291.9" y1="58.1" x2="232.5" y2="104.7"/><line class="gw-fiber" x1="312.6" y1="85.0" x2="239.8" y2="118.0"/><line class="gw-fiber" x1="325.6" y1="116.4" x2="244.4" y2="133.4"/><g class="gw-focal"><circle class="gw-focal-ring" cx="200" cy="150" r="20"/><circle class="gw-focal-ring" cx="200" cy="150" r="11"/><circle class="gw-focal-core" cx="200" cy="150" r="3"/></g><ellipse class="gw-lens" cx="200" cy="150" rx="46" ry="64"/></svg></div><figcaption>1 · The lens appears in focus. Nothing visible holds it.</figcaption></figure>
+<figure><div class="gw-mini"><svg class="gw-svg is-revealed" viewBox="0 0 400 300" role="img" aria-label="A lens suspended by fine fibers from a surrounding ring. When the fibers are cut, the lens drifts and the focal target blurs."><defs><radialGradient id="gw-lensgrad" cx="50%" cy="42%" r="60%"><stop offset="0%" stop-color="#eaf4fb" stop-opacity="0.95"/><stop offset="100%" stop-color="#9fc1d8" stop-opacity="0.65"/></radialGradient></defs><circle class="gw-ciliary" cx="200" cy="150" r="130"/><line class="gw-fiber" x1="330.0" y1="150.0" x2="246.0" y2="150.0"/><line class="gw-fiber" x1="325.6" y1="183.6" x2="244.4" y2="166.6"/><line class="gw-fiber" x1="312.6" y1="215.0" x2="239.8" y2="182.0"/><line class="gw-fiber" x1="291.9" y1="241.9" x2="232.5" y2="195.3"/><line class="gw-fiber" x1="265.0" y1="262.6" x2="223.0" y2="205.4"/><line class="gw-fiber" x1="233.6" y1="275.6" x2="211.9" y2="211.8"/><line class="gw-fiber" x1="200.0" y1="280.0" x2="200.0" y2="214.0"/><line class="gw-fiber" x1="166.4" y1="275.6" x2="188.1" y2="211.8"/><line class="gw-fiber" x1="135.0" y1="262.6" x2="177.0" y2="205.4"/><line class="gw-fiber" x1="108.1" y1="241.9" x2="167.5" y2="195.3"/><line class="gw-fiber" x1="87.4" y1="215.0" x2="160.2" y2="182.0"/><line class="gw-fiber" x1="74.4" y1="183.6" x2="155.6" y2="166.6"/><line class="gw-fiber" x1="70.0" y1="150.0" x2="154.0" y2="150.0"/><line class="gw-fiber" x1="74.4" y1="116.4" x2="155.6" y2="133.4"/><line class="gw-fiber" x1="87.4" y1="85.0" x2="160.2" y2="118.0"/><line class="gw-fiber" x1="108.1" y1="58.1" x2="167.5" y2="104.7"/><line class="gw-fiber" x1="135.0" y1="37.4" x2="177.0" y2="94.6"/><line class="gw-fiber" x1="166.4" y1="24.4" x2="188.1" y2="88.2"/><line class="gw-fiber" x1="200.0" y1="20.0" x2="200.0" y2="86.0"/><line class="gw-fiber" x1="233.6" y1="24.4" x2="211.9" y2="88.2"/><line class="gw-fiber" x1="265.0" y1="37.4" x2="223.0" y2="94.6"/><line class="gw-fiber" x1="291.9" y1="58.1" x2="232.5" y2="104.7"/><line class="gw-fiber" x1="312.6" y1="85.0" x2="239.8" y2="118.0"/><line class="gw-fiber" x1="325.6" y1="116.4" x2="244.4" y2="133.4"/><g class="gw-focal"><circle class="gw-focal-ring" cx="200" cy="150" r="20"/><circle class="gw-focal-ring" cx="200" cy="150" r="11"/><circle class="gw-focal-core" cx="200" cy="150" r="3"/></g><ellipse class="gw-lens" cx="200" cy="150" rx="46" ry="64"/></svg></div><figcaption>2 · The hidden zonular fibers that suspend it.</figcaption></figure>
+<figure><div class="gw-mini"><svg class="gw-svg is-collapsed" viewBox="0 0 400 300" role="img" aria-label="A lens suspended by fine fibers from a surrounding ring. When the fibers are cut, the lens drifts and the focal target blurs."><defs><radialGradient id="gw-lensgrad" cx="50%" cy="42%" r="60%"><stop offset="0%" stop-color="#eaf4fb" stop-opacity="0.95"/><stop offset="100%" stop-color="#9fc1d8" stop-opacity="0.65"/></radialGradient></defs><circle class="gw-ciliary" cx="200" cy="150" r="130"/><line class="gw-fiber gw-fiber-cut" x1="330.0" y1="150.0" x2="272.0" y2="150.0"/><line class="gw-fiber gw-fiber-cut" x1="325.6" y1="183.6" x2="269.5" y2="173.3"/><line class="gw-fiber gw-fiber-cut" x1="312.6" y1="215.0" x2="262.4" y2="195.0"/><line class="gw-fiber gw-fiber-cut" x1="291.9" y1="241.9" x2="250.9" y2="213.6"/><line class="gw-fiber gw-fiber-cut" x1="265.0" y1="262.6" x2="236.0" y2="227.9"/><line class="gw-fiber gw-fiber-cut" x1="233.6" y1="275.6" x2="218.6" y2="236.9"/><line class="gw-fiber gw-fiber-cut" x1="200.0" y1="280.0" x2="200.0" y2="240.0"/><line class="gw-fiber gw-fiber-cut" x1="166.4" y1="275.6" x2="181.4" y2="236.9"/><line class="gw-fiber gw-fiber-cut" x1="135.0" y1="262.6" x2="164.0" y2="227.9"/><line class="gw-fiber gw-fiber-cut" x1="108.1" y1="241.9" x2="149.1" y2="213.6"/><line class="gw-fiber gw-fiber-cut" x1="87.4" y1="215.0" x2="137.6" y2="195.0"/><line class="gw-fiber gw-fiber-cut" x1="74.4" y1="183.6" x2="130.5" y2="173.3"/><line class="gw-fiber gw-fiber-cut" x1="70.0" y1="150.0" x2="128.0" y2="150.0"/><line class="gw-fiber gw-fiber-cut" x1="74.4" y1="116.4" x2="130.5" y2="126.7"/><line class="gw-fiber gw-fiber-cut" x1="87.4" y1="85.0" x2="137.6" y2="105.0"/><line class="gw-fiber gw-fiber-cut" x1="108.1" y1="58.1" x2="149.1" y2="86.4"/><line class="gw-fiber gw-fiber-cut" x1="135.0" y1="37.4" x2="164.0" y2="72.1"/><line class="gw-fiber gw-fiber-cut" x1="166.4" y1="24.4" x2="181.4" y2="63.1"/><line class="gw-fiber gw-fiber-cut" x1="200.0" y1="20.0" x2="200.0" y2="60.0"/><line class="gw-fiber gw-fiber-cut" x1="233.6" y1="24.4" x2="218.6" y2="63.1"/><line class="gw-fiber gw-fiber-cut" x1="265.0" y1="37.4" x2="236.0" y2="72.1"/><line class="gw-fiber gw-fiber-cut" x1="291.9" y1="58.1" x2="250.9" y2="86.4"/><line class="gw-fiber gw-fiber-cut" x1="312.6" y1="85.0" x2="262.4" y2="105.0"/><line class="gw-fiber gw-fiber-cut" x1="325.6" y1="116.4" x2="269.5" y2="126.7"/><g class="gw-focal"><circle class="gw-focal-ring" cx="200" cy="150" r="20"/><circle class="gw-focal-ring" cx="200" cy="150" r="11"/><circle class="gw-focal-core" cx="200" cy="150" r="3"/></g><ellipse class="gw-lens" cx="200" cy="150" rx="46" ry="64"/></svg></div><figcaption>3 · Cut the fibers and focus collapses.</figcaption></figure>
+</div>
+</section>
+
+<div class="gw-rule" aria-hidden="true"></div>
+
+<h2 class="gw-eyebrow">Three layers, one hidden system</h2>
+<nav class="gw-layers" aria-label="Reference layers">
+<a class="gw-layer" href="/zonules-of-zinn/"><span class="gw-layer-id">Layer 01 · Anatomy</span><p class="gw-layer-title">The biological suspension of focus</p><p class="gw-layer-desc">The zonules of Zinn, the ciliary body, the lens, and the capsule — the structures that hold optical focus.</p></a>
+<a class="gw-layer" href="/visual-perception/"><span class="gw-layer-id">Layer 02 · Perception</span><p class="gw-layer-title">Attention as the second suspension</p><p class="gw-layer-desc">How the mind holds an interpretation steady — and what it means when that anchoring collapses.</p></a>
+<a class="gw-layer" href="/machine-vision/"><span class="gw-layer-id">Layer 03 · Machine vision</span><p class="gw-layer-title">Focus integrity in machines</p><p class="gw-layer-desc">Detection is not understanding; seeing is not provenance. The crisis of focus in the age of synthetic media.</p></a>
+</nav>
+
+<p class="gw-cta"><a href="/focus-integrity-engine/">Run the Focus Integrity Assessment &rarr;</a></p>
+
+<p class="gw-foot">A governed, source-backed reference asset. Educational reference only — not medical advice; not a substitute for a qualified eye-care professional. Strategic inquiries: <a href="mailto:agent@sohadot.com">agent@sohadot.com</a>.</p>
+</main>
+<script>/*
+ * Suspension-Reveal — Zonules.com gateway interaction.
+ *
+ * Embodies the thesis in three meaningful states:
+ *   held      — the lens appears in focus; the fibers are hidden.
+ *   revealed  — the hidden zonular fibers that hold it become visible.
+ *   collapsed — the fibers are cut; the lens drifts and focus is lost.
+ *
+ * The visitor is meant to feel that focus was never a property of the lens.
+ * It was produced by hidden tension. No network, no data collection.
+ * Inlined into static/gateway/index.html by scripts/build_gateway.py.
+ */
+(function () {
+  "use strict";
+
+  var STATES = {
+    held: {
+      cls: "",
+      text: "This is the lens, apparently in focus. <strong>Nothing visible is holding it.</strong>"
+    },
+    revealed: {
+      cls: "is-revealed",
+      text: "These are the <strong>zonules</strong> — the hidden fibers that suspend the lens in precise tension. Focus was never the lens alone."
+    },
+    collapsed: {
+      cls: "is-collapsed",
+      text: "Cut the fibers and the lens is still present — but <strong>focus collapses.</strong> Focus is a product of hidden structural tension."
+    }
+  };
+  var ORDER = ["held", "revealed", "collapsed"];
+
+  var body = document.body;
+  var svg = document.getElementById("gw-svg");
+  var caption = document.getElementById("gw-caption");
+  var controls = document.getElementById("gw-controls");
+  if (!svg || !caption || !controls) return;
+
+  // Signal JS is active: the CSS hides the static triptych and shows controls.
+  body.classList.add("js");
+
+  function setState(name) {
+    var s = STATES[name];
+    if (!s) return;
+    svg.classList.remove("is-revealed", "is-collapsed");
+    if (s.cls) svg.classList.add(s.cls);
+    caption.innerHTML = s.text;
+    var btns = controls.querySelectorAll(".gw-step");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute("aria-pressed", btns[i].getAttribute("data-state") === name ? "true" : "false");
+    }
+  }
+
+  ORDER.forEach(function (name) {
+    var btn = controls.querySelector('.gw-step[data-state="' + name + '"]');
+    if (btn) btn.addEventListener("click", function () { setState(name); });
+  });
+
+  setState("held");
+})();
+</script>
+</body>
+</html>

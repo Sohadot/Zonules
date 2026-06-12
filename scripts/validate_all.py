@@ -126,7 +126,7 @@ def main():
                 if link not in route_paths:
                     errors.append(f"engine class {cls} links to unregistered route {link}")
     # 10b. Generated pages must be freshly built from their governed sources.
-    for builder_name in ("build_engine.py", "build_gateway.py"):
+    for builder_name in ("build_engine.py", "build_gateway.py", "generate_sitemap.py"):
         builder = os.path.join(ROOT, "scripts", builder_name)
         if os.path.exists(builder):
             res = subprocess.run([sys.executable, builder, "--check"],

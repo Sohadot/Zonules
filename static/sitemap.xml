@@ -11,6 +11,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/computer-vision/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/cornea/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/crystalline-lens/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
@@ -19,6 +29,11 @@
     <loc>https://zonules.com/deepfake-detection/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/editorial-policy/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://zonules.com/figure-ground/</loc>
@@ -36,9 +51,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://zonules.com/gestalt-principles/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/glossary/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/image-classification/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zonules.com/image-provenance/</loc>
@@ -61,9 +86,34 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/medical-disclaimer/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/methodology/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/optic-nerve/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/perceptual-constancy/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/photoreceptors/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/retina/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zonules.com/selective-attention/</loc>

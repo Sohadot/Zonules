@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "0.3",
+  "version": "0.4",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded. No unsourced scientific claim may be published.",
@@ -153,6 +153,62 @@
       "statement": "The lens capsule is the transmission interface of the suspension layer: the surface through which hidden tension becomes a change in focal geometry.",
       "sources": ["SRC-004"],
       "page": "/lens-capsule/"
+    },
+    {
+      "id": "CLM-022",
+      "status": "sourced",
+      "statement": "Visual perception is the process by which the brain organizes and interprets visual input into a stable, meaningful representation of the environment.",
+      "sources": ["SRC-005", "SRC-006"],
+      "page": "/visual-perception/"
+    },
+    {
+      "id": "CLM-023",
+      "status": "sourced",
+      "statement": "Perception is constructive: the visual system actively organizes input rather than passively recording it, as shown by perceptual organization and constancy.",
+      "sources": ["SRC-005", "SRC-006"],
+      "page": "/visual-perception/"
+    },
+    {
+      "id": "CLM-024",
+      "status": "sourced",
+      "statement": "Selective attention determines which parts of the visual field are processed in detail, holding a focal target stable against competing stimuli.",
+      "sources": ["SRC-005"],
+      "page": "/visual-perception/"
+    },
+    {
+      "id": "CLM-025",
+      "status": "internal-framework",
+      "statement": "Perception is the Layer 02 instance of the suspension thesis: attention holds a focal interpretation in place the way the zonules hold the lens, and its collapse is the perceptual form of suspension failure (FIO-01).",
+      "sources": ["SRC-004"],
+      "page": "/visual-perception/"
+    },
+    {
+      "id": "CLM-026",
+      "status": "sourced",
+      "statement": "Machine vision is the field of methods by which artificial systems detect, classify, localize, and interpret content in images and video.",
+      "sources": ["SRC-007"],
+      "page": "/machine-vision/"
+    },
+    {
+      "id": "CLM-027",
+      "status": "sourced",
+      "statement": "Machine vision systems can produce correct detections while failing to interpret a scene correctly, distinguishing detection from understanding.",
+      "sources": ["SRC-007"],
+      "page": "/machine-vision/"
+    },
+    {
+      "id": "CLM-028",
+      "status": "sourced",
+      "statement": "Establishing the origin and authenticity of an image is addressed by content provenance standards rather than by detection alone.",
+      "sources": ["SRC-008"],
+      "page": "/machine-vision/"
+    },
+    {
+      "id": "CLM-029",
+      "status": "internal-framework",
+      "statement": "Machine vision is the Layer 03 instance of the focus-integrity thesis: calibration and grounding play the suspension role, and machine failures map onto the FIO classes (signal-noise, provenance, interpretation).",
+      "sources": ["SRC-004"],
+      "page": "/machine-vision/"
     }
   ]
 }

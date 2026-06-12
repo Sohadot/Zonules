@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "0.3",
+  "version": "0.4",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -134,6 +134,56 @@
       "source_requirements": ["SRC-001", "SRC-002"],
       "claim_requirements": ["CLM-018", "CLM-019", "CLM-020", "CLM-021"],
       "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/visual-perception/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-perception/",
+      "hreflang_group": "visual-perception",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/visual-perception.md",
+      "seo_title": "Visual Perception — How the Mind Holds Focus on Meaning | Zonules.com",
+      "meta_description": "Visual perception is the constructive process that turns visual input into stable meaning. The Layer 02 anchor of the focus-integrity thesis, bridging anatomy and machine vision.",
+      "required_internal_links": [
+        "/zonules-of-zinn/",
+        "/machine-vision/"
+      ],
+      "source_requirements": ["SRC-005", "SRC-006"],
+      "claim_requirements": ["CLM-022", "CLM-023", "CLM-024", "CLM-025"],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-12"
+    },
+    {
+      "path": "/machine-vision/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/machine-vision/",
+      "hreflang_group": "machine-vision",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/machine-vision.md",
+      "seo_title": "Machine Vision — Detection, Understanding, and Visual Truth | Zonules.com",
+      "meta_description": "Machine vision lets artificial systems detect and interpret images, but detection is not understanding and seeing is not provenance. The Layer 03 anchor of the focus-integrity thesis.",
+      "required_internal_links": [
+        "/visual-perception/",
+        "/zonules-of-zinn/"
+      ],
+      "source_requirements": ["SRC-007", "SRC-008"],
+      "claim_requirements": ["CLM-026", "CLM-027", "CLM-028", "CLM-029"],
+      "safety_class": "technical",
       "monetization": "none",
       "last_reviewed": "2026-06-12"
     }

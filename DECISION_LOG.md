@@ -65,6 +65,20 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
 - **Verification:** Governance gate PASS — 5 pages, 21 claims, 0 broken links, 0 orphans, all sourced claims used and resolved, every page safety-classified. Security scan of `content/` and `data/` clean: no inline scripts, event handlers, `javascript:`, external `http://` assets, or secrets.
 - **Affected:** `content/en/terms/lens-capsule.md`, `content/en/terms/zonules-of-zinn.md`, `data/routes.json`, `data/claims.json`.
 
+## 2026-06-12 — Establish Layer 02 and Layer 03 anchors
+
+- **Change:** Add the two layer anchors that extend the asset beyond anatomy: `visual-perception.md` (L2, the perceptual suspension system) and `machine-vision.md` (L3, the artificial instance, routing to FIO-03/04/05). Expand sources to v0.2 (perception science, vision science, computer vision, and a content-provenance standards body), claims to v0.4, routes to v0.4. Add per-page safety classes `educational` and `technical`.
+- **Type:** New reference units (approved); first L2 and L3 pages.
+- **Rationale:** These anchors carry the focus-integrity thesis across all three layers and create the human-vs-machine comparison surface that is the asset's most strategically valuable ground for buyer logic. Each anchor links to anatomy and to the other, making the cross-layer graph reciprocal.
+- **Affected:** `content/en/terms/{visual-perception,machine-vision}.md`, `data/{sources,claims,routes}.json`.
+
+## 2026-06-12 — Commit the governance gate as a repeatable script
+
+- **Change:** Replace the ad-hoc inline validation with `scripts/validate_all.py`, a blocking quality gate that enforces ten checks derived from the Foundation Doctrine non-negotiables: claim/source resolution, registered routes, used-and-resolved claims, internal-link integrity, no orphans, canonical/metadata presence, class-aware safety classification, and a static-security scan of content and data.
+- **Type:** New governance infrastructure (replaces manual checks).
+- **Rationale:** The thesis names `scripts/validate_all.py` as a core command. Committing the gate makes enforcement reproducible and version-controlled rather than dependent on manual review. Current run: PASS (7 pages, 29 claims, 8 sources, layers L1/L2/L3; zero broken links, orphans, unsafe patterns, or unsourced claims).
+- **Affected:** `scripts/validate_all.py`.
+
 ---
 
-*Next planned entries: remaining FIO clusters (FIO-03/04/05 anchors for the perception and machine-vision layers), Focus Integrity Engine build, suspension-reveal interface.*
+*Next planned entries: deepen L2/L3 clusters around their anchors, build the Focus Integrity Engine wired to the FIO class pages, ship the suspension-reveal interface.*

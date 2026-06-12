@@ -1,7 +1,7 @@
 {
   "id": "SOURCES",
   "name": "Zonules.com Source Registry",
-  "version": "0.1",
+  "version": "0.2",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "classification_types": [
@@ -45,6 +45,38 @@
       "publisher": "Sohadot",
       "scope": "Internal framework mapping anatomical structure to the focus-integrity thesis.",
       "note": "Internal conceptual framework. Not a source of external scientific fact; used only to mark framework-level claims."
+    },
+    {
+      "id": "SRC-005",
+      "type": "academic-textbook",
+      "citation": "Goldstein EB, Cacciamani L. Sensation and Perception.",
+      "publisher": "Cengage",
+      "scope": "Visual perception, attention, perceptual organization, and the perceptual processing of visual input.",
+      "note": "Standard academic reference for sensation and perception."
+    },
+    {
+      "id": "SRC-006",
+      "type": "academic-textbook",
+      "citation": "Palmer SE. Vision Science: Photons to Phenomenology.",
+      "publisher": "MIT Press",
+      "scope": "Perceptual organization, figure-ground, constancy, and the computational study of vision.",
+      "note": "Canonical reference bridging perception science and computational vision."
+    },
+    {
+      "id": "SRC-007",
+      "type": "academic-textbook",
+      "citation": "Szeliski R. Computer Vision: Algorithms and Applications.",
+      "publisher": "Springer",
+      "scope": "Computer vision and machine vision methods: detection, recognition, scene understanding, and image processing.",
+      "note": "Standard reference for computer vision."
+    },
+    {
+      "id": "SRC-008",
+      "type": "standards-body",
+      "citation": "Coalition for Content Provenance and Authenticity (C2PA) — Technical Specification for content provenance.",
+      "publisher": "C2PA",
+      "scope": "Content provenance and authenticity standards relevant to image origin verification.",
+      "note": "Standards-body reference for provenance and media authenticity. Cited for the existence and purpose of provenance standards, not for performance claims."
     }
   ]
 }

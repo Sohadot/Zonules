@@ -69,4 +69,18 @@ body.rl {
 .gl-list a:hover { text-decoration: underline; }
 .gl-list span { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.04em; }
 
+/* ontology hub */
+.ont-crit { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: 0.5rem; }
+.ont-crit li { border-left: 2px solid var(--fiber-bright); padding-left: 0.8rem; }
+.ont-class { border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.2rem; margin: 1rem 0; background: var(--panel); }
+.ont-class h3 { margin: 0 0 0.5rem; }
+.ont-inv { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.ont-def { margin: 0 0 0.6rem; }
+.ont-layers { list-style: none; padding: 0; margin: 0.6rem 0; display: grid; gap: 0.35rem; }
+.ont-layers li { font-size: 0.92rem; color: var(--accent); }
+.ont-layer { display: inline-block; min-width: 1.6rem; font-size: 0.7rem; font-weight: 600; color: var(--fiber-bright); }
+.ont-units { font-size: 0.9rem; margin: 0.6rem 0 0; }
+.ont-units span { color: var(--muted); }
+.ont-units a { margin-right: 0.6rem; }
+
 a { color: var(--focus-ring); }

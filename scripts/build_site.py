@@ -264,6 +264,7 @@ def render_unit(route, meta, body, claims_by_id, sources_by_id):
             article + refs_html +
             '</article>\n'
             '<footer class="rl-foot"><a href="/glossary/">All reference units</a> · '
+            '<a href="/focus-integrity-ontology/">Ontology</a> · '
             '<a href="/methodology/">Methodology</a> · '
             '<a href="/source-policy/">Source policy</a> · '
             '<a href="/focus-integrity-engine/">Focus Integrity Engine</a></footer>\n'
@@ -311,14 +312,94 @@ def render_glossary(routes, by_path):
             'No page exists here that does not earn its place.</p>' +
             "".join(sections) +
             '</article>\n<footer class="rl-foot"><a href="/">Gateway</a> · '
+            '<a href="/focus-integrity-ontology/">Ontology</a> · '
             '<a href="/methodology/">Methodology</a> · <a href="/source-policy/">Source policy</a>'
             '</footer>\n</main>\n</body>\n</html>\n')
+
+
+def render_ontology(routes, fio, fis):
+    """Generate the ontology hub from FIO + FIS — the governing spine, browsable and citable."""
+    fis_by_inv = {c["inverse_of"]: c for c in fis["criteria"]}
+    units_by_class = {}
+    for r in routes:
+        if r.get("page_type") == "reference-unit" and r.get("language", "en") == "en":
+            units_by_class.setdefault(r.get("fio_class"), []).append(r)
+
+    crit_rows = "".join(
+        '<li><strong>%s · %s.</strong> %s</li>' % (
+            html.escape(c["id"]), html.escape(c["name"]), html.escape(c["statement"]))
+        for c in fis["criteria"]
+    )
+
+    class_blocks = []
+    for c in fio["classes"]:
+        fis_c = fis_by_inv.get(c["id"])
+        layers = "".join(
+            '<li><span class="ont-layer">%s</span> %s</li>' % (lk, html.escape(lv))
+            for lk, lv in c["layers"].items()
+        )
+        units = units_by_class.get(c["id"], [])
+        unit_links = "".join(
+            '<a href="%s">%s</a>' % (u["path"], html.escape(u["seo_title"].split(" — ")[0].split(" | ")[0]))
+            for u in sorted(units, key=lambda r: r["path"])
+        )
+        unit_html = ('<p class="ont-units"><span>Reference units:</span> %s</p>' % unit_links) if unit_links else ""
+        inv = (' <span class="ont-inv">Inverse of %s · %s</span>'
+               % (html.escape(fis_c["id"]), html.escape(fis_c["name"]))) if fis_c else ""
+        class_blocks.append(
+            '<section class="ont-class" id="%s">'
+            '<h3>%s · %s%s</h3>'
+            '<p class="ont-def">%s</p>'
+            '<blockquote>%s</blockquote>'
+            '<ul class="ont-layers">%s</ul>%s</section>' % (
+                html.escape(c["id"]).lower(),
+                html.escape(c["id"]), html.escape(c["name"]), inv,
+                html.escape(c["definition"]),
+                html.escape(c["governing_claim"]),
+                layers, unit_html,
+            )
+        )
+
+    meta = {"language": "en", "layer": "cross",
+            "seo_title": "The Focus Integrity Ontology — How Focus Fails and What Holds It | Zonules.com",
+            "meta_description": "The Focus Integrity Ontology classifies how focus fails across anatomy, perception, and machine vision; the Focus Integrity Standard defines what intact focus is. The governing spine of Zonules.com."}
+    route = {"path": "/focus-integrity-ontology/", "seo_title": meta["seo_title"],
+             "meta_description": meta["meta_description"]}
+    ld = {"@context": "https://schema.org", "@type": "DefinedTermSet",
+          "name": "Focus Integrity Ontology", "url": BASE + "/focus-integrity-ontology/",
+          "description": meta["meta_description"],
+          "hasDefinedTerm": [{"@type": "DefinedTerm", "termCode": c["id"], "name": c["name"],
+                              "description": c["definition"]} for c in fio["classes"]]}
+    extra = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=True, separators=(",", ":"))
+    return (head(meta, route, extra) +
+            '\n<body class="rl">\n<main class="rl-wrap">\n' +
+            breadcrumb(meta, "Focus Integrity Ontology") +
+            '<article class="rl-article"><h1>The Focus Integrity Ontology</h1>'
+            '<p>This is the governing spine of the asset. The <strong>Focus Integrity Standard</strong> '
+            'defines what intact focus is; the <strong>Focus Integrity Ontology</strong> classifies how it '
+            'fails. The same five-part structure runs through anatomy, perception, and machine vision — '
+            'because the logic of held focus is one logic across all three.</p>'
+            '<h2>The Focus Integrity Standard — what intact focus is</h2>'
+            '<p>A seeing system has focus integrity when all five criteria hold (FIS v%s):</p>'
+            '<ul class="ont-crit">%s</ul>'
+            '<h2>The Focus Integrity Ontology — how focus fails</h2>'
+            '<p>Each failure class is the inverse of one standard criterion (FIO v%s). Every class '
+            'resolves to the governed reference units that explain it.</p>'
+            '%s'
+            '</article>\n'
+            '<footer class="rl-foot"><a href="/glossary/">All reference units</a> · '
+            '<a href="/focus-integrity-engine/">Run the assessment</a> · '
+            '<a href="/methodology/">Methodology</a></footer>\n'
+            '</main>\n</body>\n</html>\n'
+            % (html.escape(fis["version"]), crit_rows, html.escape(fio["version"]), "".join(class_blocks)))
 
 
 def outputs():
     routes = load("routes.json")["routes"]
     claims = {c["id"]: c for c in load("claims.json")["claims"]}
     sources = {s["id"]: s for s in load("sources.json")["sources"]}
+    fio = load("focus-integrity-ontology.json")
+    fis = load("focus-integrity-standard.json")
     by_path = {r["path"]: r for r in routes}
     pages = {}
     for r in routes:
@@ -329,6 +410,7 @@ def outputs():
             meta, body = parse_frontmatter(fh.read())
         pages[r["path"]] = render_unit(r, meta, body, claims, sources)
     pages["/glossary/"] = render_glossary(routes, by_path)
+    pages["/focus-integrity-ontology/"] = render_ontology(routes, fio, fis)
     return pages
 
 

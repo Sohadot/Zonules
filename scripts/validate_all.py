@@ -69,7 +69,7 @@ def main():
         if len(r.get("meta_description", "")) < 50:
             errors.append(f"{path} meta_description too short or missing")
 
-        if page_type in ("engine", "gateway", "acquire", "glossary"):
+        if page_type in ("engine", "gateway", "acquire", "glossary", "ontology"):
             # Generated pages (not markdown units): validate their internal links resolve.
             # Asset paths (/static/...) and fragments are not routes and are skipped.
             for href in re.findall(r'href="(/[a-z0-9-]+/)"', body):

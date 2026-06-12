@@ -29,7 +29,7 @@ The asset is organized around a single governing thesis — focus is produced by
 
 ## The Focus Integrity Ontology and Standard
 
-The asset maintains a versioned ontology of how focus fails (the Focus Integrity Ontology) and a standard of what intact focus integrity is (the Focus Integrity Standard). These are not marketing language. They are governed structures with explicit entry criteria, version numbers, and a decision log recording every change.
+The asset maintains a versioned ontology of how focus fails (the [Focus Integrity Ontology](/focus-integrity-ontology/)) and a standard of what intact focus integrity is (the Focus Integrity Standard). These are not marketing language. They are governed structures with explicit entry criteria, version numbers, and a decision log recording every change.
 
 ## Governed claims
 

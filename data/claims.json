@@ -524,6 +524,209 @@
       "statement": "Image classification is a focus-integrity problem of interpretation (FIO-05): the system receives a signal, constructs an internal representation, and must produce the correct categorical interpretation.",
       "sources": ["SRC-004"],
       "page": "/image-classification/"
+    },
+    {
+      "id": "CLM-075",
+      "status": "sourced",
+      "statement": "The iris is the pigmented muscular diaphragm that controls the size of the pupil, regulating the amount of light entering the eye.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/iris/"
+    },
+    {
+      "id": "CLM-076",
+      "status": "sourced",
+      "statement": "The iris contains two sets of smooth muscle — the sphincter pupillae and the dilator pupillae — allowing the pupil to constrict in bright light and dilate in dim conditions across a wide dynamic range.",
+      "sources": ["SRC-001"],
+      "page": "/iris/"
+    },
+    {
+      "id": "CLM-077",
+      "status": "internal-framework",
+      "statement": "The iris is the accommodation layer of the eye's signal input (FIO-02): it regulates the range of incoming signal, and when this regulation fails, signal quality degrades regardless of how well the rest of the optical system is aligned.",
+      "sources": ["SRC-004"],
+      "page": "/iris/"
+    },
+    {
+      "id": "CLM-078",
+      "status": "sourced",
+      "statement": "The vitreous humor is the transparent, gel-like substance that fills the posterior chamber of the eye, accounting for approximately two-thirds of the eye's total volume and maintaining the eye's spherical shape.",
+      "sources": ["SRC-001", "SRC-002"],
+      "page": "/vitreous-humor/"
+    },
+    {
+      "id": "CLM-079",
+      "status": "sourced",
+      "statement": "The vitreous humor provides the spatial separation between the lens and the retina that is required for the optical system to focus: the cornea and lens must project a focused image at the precise distance of the retinal surface.",
+      "sources": ["SRC-001"],
+      "page": "/vitreous-humor/"
+    },
+    {
+      "id": "CLM-080",
+      "status": "internal-framework",
+      "statement": "The vitreous humor is a structural element of focus integrity (FIO-01): it maintains the geometry of the optical system by holding the retina in position and preserving the focal distance the cornea and lens were calibrated to.",
+      "sources": ["SRC-004"],
+      "page": "/vitreous-humor/"
+    },
+    {
+      "id": "CLM-081",
+      "status": "sourced",
+      "statement": "The macula is the central zone of the retina, approximately 5 mm in diameter, containing the highest concentration of cone photoreceptors and responsible for the highest spatial resolution in human vision.",
+      "sources": ["SRC-001", "SRC-003"],
+      "page": "/macula/"
+    },
+    {
+      "id": "CLM-082",
+      "status": "sourced",
+      "statement": "The fovea at the center of the macula is the region of sharpest fixation; the oculomotor system directs gaze so that the image of a fixated object falls on the fovea.",
+      "sources": ["SRC-001"],
+      "page": "/macula/"
+    },
+    {
+      "id": "CLM-083",
+      "status": "internal-framework",
+      "statement": "The macula is the anatomical site of signal precision (FIO-03): the quality of the focused signal at this zone determines the acuity of central vision; degradation here is signal-noise failure at the highest-priority region of the visual field.",
+      "sources": ["SRC-004"],
+      "page": "/macula/"
+    },
+    {
+      "id": "CLM-084",
+      "status": "sourced",
+      "statement": "Depth perception is the ability to perceive the relative distance of objects in three-dimensional space from two-dimensional retinal images, achieved through binocular cues such as disparity and convergence, and monocular cues such as perspective, occlusion, and motion parallax.",
+      "sources": ["SRC-005", "SRC-006"],
+      "page": "/depth-perception/"
+    },
+    {
+      "id": "CLM-085",
+      "status": "sourced",
+      "statement": "Binocular disparity — the slight difference between retinal images received by the two eyes — is the primary cue for depth at close range; stereopsis is the neural process of resolving this disparity into perceived depth.",
+      "sources": ["SRC-006"],
+      "page": "/depth-perception/"
+    },
+    {
+      "id": "CLM-086",
+      "status": "sourced",
+      "statement": "Monocular depth cues including linear perspective, familiar size, occlusion, and motion parallax allow depth to be inferred from a single eye's image and remain effective at distances where binocular cues are weak.",
+      "sources": ["SRC-005"],
+      "page": "/depth-perception/"
+    },
+    {
+      "id": "CLM-087",
+      "status": "internal-framework",
+      "statement": "Depth perception is an interpretation problem (FIO-05): the perceptual system must construct a three-dimensional interpretation from two-dimensional signals; failure produces a misjudgment of distance or surface layout that downstream behavior cannot correct.",
+      "sources": ["SRC-004"],
+      "page": "/depth-perception/"
+    },
+    {
+      "id": "CLM-088",
+      "status": "sourced",
+      "statement": "Inattentional blindness is the failure to notice a fully visible but unexpected stimulus when attention is directed elsewhere; the observer has normal vision and the stimulus is present, but it does not reach awareness.",
+      "sources": ["SRC-005"],
+      "page": "/inattentional-blindness/"
+    },
+    {
+      "id": "CLM-089",
+      "status": "sourced",
+      "statement": "Inattentional blindness demonstrates that conscious visual awareness requires attention as well as sensory input: objects outside the focus of attention are processed to a limited extent but do not reach reportable awareness.",
+      "sources": ["SRC-005"],
+      "page": "/inattentional-blindness/"
+    },
+    {
+      "id": "CLM-090",
+      "status": "sourced",
+      "statement": "The probability of inattentional blindness increases when the unexpected stimulus is dissimilar to the attended target or appears in the periphery rather than in the attended location.",
+      "sources": ["SRC-005"],
+      "page": "/inattentional-blindness/"
+    },
+    {
+      "id": "CLM-091",
+      "status": "internal-framework",
+      "statement": "Inattentional blindness is a provenance failure (FIO-04): the visual signal was present, but the system formed no attended representation of it — the input has no provenance in working memory or awareness, so it cannot be retrieved or verified.",
+      "sources": ["SRC-004"],
+      "page": "/inattentional-blindness/"
+    },
+    {
+      "id": "CLM-092",
+      "status": "sourced",
+      "statement": "Visual working memory is the cognitive system that temporarily stores and actively maintains visual and spatial information for use in ongoing tasks; its capacity is limited to approximately three to four objects or feature sets at a time.",
+      "sources": ["SRC-005"],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-093",
+      "status": "sourced",
+      "statement": "Visual working memory enables comparison of a currently viewed scene with a recently stored representation, supporting change detection, scene completion, and the maintenance of object identity across eye movements.",
+      "sources": ["SRC-005", "SRC-006"],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-094",
+      "status": "sourced",
+      "statement": "The limited capacity of visual working memory creates a predictable constraint: when a scene contains more items than working memory can hold, failures of comparison and change detection follow systematically.",
+      "sources": ["SRC-006"],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-095",
+      "status": "internal-framework",
+      "statement": "Visual working memory is the accommodation system of perception (FIO-02): it sets the range of visual information that can be actively held and compared; when its capacity is exceeded, the perceptual system can no longer maintain focus across all relevant inputs.",
+      "sources": ["SRC-004"],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-096",
+      "status": "sourced",
+      "statement": "Object detection is the computer vision task of identifying and localizing instances of objects within an image, producing both a category label and a spatial boundary for each detected instance.",
+      "sources": ["SRC-007"],
+      "page": "/object-detection/"
+    },
+    {
+      "id": "CLM-097",
+      "status": "sourced",
+      "statement": "Object detection systems must generalize across variations in scale, orientation, lighting, and occlusion; a detector that is accurate on its training distribution may fail on the same object class presented under different conditions.",
+      "sources": ["SRC-007"],
+      "page": "/object-detection/"
+    },
+    {
+      "id": "CLM-098",
+      "status": "sourced",
+      "statement": "False positives (detecting absent objects) and false negatives (missing present objects) are the symmetric failure modes of detection, and their balance is controlled by a confidence threshold that determines what the system commits to reporting.",
+      "sources": ["SRC-007"],
+      "page": "/object-detection/"
+    },
+    {
+      "id": "CLM-099",
+      "status": "internal-framework",
+      "statement": "Object detection is an interpretation task (FIO-05): it requires both correct categorization and correct localization, and failure at either constitutes an interpretation failure — seeing something in the wrong place is as much a focus failure as misidentifying what is there.",
+      "sources": ["SRC-004"],
+      "page": "/object-detection/"
+    },
+    {
+      "id": "CLM-100",
+      "status": "sourced",
+      "statement": "Adversarial examples are inputs to machine learning models that have been imperceptibly perturbed to cause incorrect outputs; the modifications are too small for a human observer to notice but exploit the model's decision boundaries systematically.",
+      "sources": ["SRC-007"],
+      "page": "/adversarial-examples/"
+    },
+    {
+      "id": "CLM-101",
+      "status": "sourced",
+      "statement": "The existence of adversarial examples demonstrates that high accuracy on standard benchmarks does not guarantee robustness: a model can fail catastrophically on inputs that appear normal to a human observer.",
+      "sources": ["SRC-007"],
+      "page": "/adversarial-examples/"
+    },
+    {
+      "id": "CLM-102",
+      "status": "sourced",
+      "statement": "Adversarial robustness — the ability to maintain correct output under adversarial perturbation — is a distinct property from standard accuracy and must be specifically engineered rather than assumed from general training.",
+      "sources": ["SRC-007"],
+      "page": "/adversarial-examples/"
+    },
+    {
+      "id": "CLM-103",
+      "status": "internal-framework",
+      "statement": "Adversarial examples are signal-noise failures (FIO-03): imperceptible perturbations are noise structured specifically to defeat the signal-noise separation the model relies on, showing that machine and human signal boundaries do not coincide.",
+      "sources": ["SRC-004"],
+      "page": "/adversarial-examples/"
     }
   ]
 }

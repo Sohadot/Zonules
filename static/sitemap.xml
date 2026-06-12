@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://zonules.com/adversarial-examples/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/ciliary-body/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
@@ -27,6 +32,11 @@
   </url>
   <url>
     <loc>https://zonules.com/deepfake-detection/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/depth-perception/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
   </url>
@@ -71,6 +81,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/inattentional-blindness/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/iris/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/lens-accommodation/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
@@ -86,6 +106,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/macula/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/medical-disclaimer/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.6</priority>
@@ -94,6 +119,11 @@
     <loc>https://zonules.com/methodology/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/object-detection/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zonules.com/optic-nerve/</loc>
@@ -127,6 +157,16 @@
   </url>
   <url>
     <loc>https://zonules.com/visual-perception/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/visual-working-memory/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/vitreous-humor/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
   </url>

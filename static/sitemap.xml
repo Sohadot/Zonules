@@ -191,11 +191,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zonules.com/optical-flow/</loc>
-    <lastmod>2026-06-13</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zonules.com/optic-chiasm/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
@@ -207,6 +202,11 @@
   </url>
   <url>
     <loc>https://zonules.com/optic-tract/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/optical-flow/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
   </url>

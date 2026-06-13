@@ -1,935 +1,170 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "0.5",
+  "version": "0.6",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
-  "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded. No unsourced scientific claim may be published.",
+  "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
   "claim_status_types": ["sourced", "conceptual", "internal-framework"],
   "claims": [
-    {
-      "id": "CLM-001",
-      "status": "sourced",
-      "statement": "The zonules of Zinn are fine fibrous strands that suspend the crystalline lens from the ciliary body.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/zonules-of-zinn/"
-    },
-    {
-      "id": "CLM-002",
-      "status": "sourced",
-      "statement": "The zonular apparatus, also called the suspensory ligament of the lens, holds the lens in centered geometric tension.",
-      "sources": ["SRC-002", "SRC-003"],
-      "page": "/zonules-of-zinn/"
-    },
-    {
-      "id": "CLM-003",
-      "status": "sourced",
-      "statement": "Tension transmitted through the zonules allows the ciliary muscle to change lens shape during accommodation, shifting focus across distances.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/zonules-of-zinn/"
-    },
-    {
-      "id": "CLM-004",
-      "status": "sourced",
-      "statement": "The structure is named after Johann Gottfried Zinn, the 18th-century anatomist who described it.",
-      "sources": ["SRC-002"],
-      "page": "/zonules-of-zinn/"
-    },
-    {
-      "id": "CLM-005",
-      "status": "internal-framework",
-      "statement": "The zonules are the literal instance of the suspension layer (FIO-01): focus is produced by hidden structural tension, not by the lens alone.",
-      "sources": ["SRC-004"],
-      "page": "/zonules-of-zinn/"
-    },
-    {
-      "id": "CLM-006",
-      "status": "sourced",
-      "statement": "The ciliary body is a ring of tissue behind the iris that contains the ciliary muscle and gives rise to the zonular fibers.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/ciliary-body/"
-    },
-    {
-      "id": "CLM-007",
-      "status": "sourced",
-      "statement": "Contraction of the ciliary muscle reduces tension on the zonules, allowing the elastic lens to become more convex for near focus.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/ciliary-body/"
-    },
-    {
-      "id": "CLM-008",
-      "status": "sourced",
-      "statement": "The ciliary body also produces aqueous humor, the fluid that fills the anterior segment of the eye.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/ciliary-body/"
-    },
-    {
-      "id": "CLM-009",
-      "status": "internal-framework",
-      "statement": "The ciliary body is the force source of the suspension layer (FIO-01): it does not focus light but governs the tension that makes focus adjustable.",
-      "sources": ["SRC-004"],
-      "page": "/ciliary-body/"
-    },
-    {
-      "id": "CLM-010",
-      "status": "sourced",
-      "statement": "The crystalline lens is a transparent, biconvex structure suspended behind the iris that refracts light to help form an image on the retina.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/crystalline-lens/"
-    },
-    {
-      "id": "CLM-011",
-      "status": "sourced",
-      "statement": "The lens is elastic and changes curvature during accommodation.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/crystalline-lens/"
-    },
-    {
-      "id": "CLM-012",
-      "status": "sourced",
-      "statement": "The lens is enclosed in an elastic capsule into which the zonular fibers insert.",
-      "sources": ["SRC-002"],
-      "page": "/crystalline-lens/"
-    },
-    {
-      "id": "CLM-013",
-      "status": "internal-framework",
-      "statement": "The lens is the focal element of the suspension system: present but unable to focus reliably without zonular tension.",
-      "sources": ["SRC-004"],
-      "page": "/crystalline-lens/"
-    },
-    {
-      "id": "CLM-014",
-      "status": "sourced",
-      "statement": "Accommodation is the process by which the eye changes its optical power to maintain a clear image of objects at varying distances.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/lens-accommodation/"
-    },
-    {
-      "id": "CLM-015",
-      "status": "sourced",
-      "statement": "During accommodation for near vision, the ciliary muscle contracts, zonular tension decreases, and the lens becomes more spherical.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/lens-accommodation/"
-    },
-    {
-      "id": "CLM-016",
-      "status": "sourced",
-      "statement": "Accommodative ability typically declines with age, a condition known as presbyopia.",
-      "sources": ["SRC-003"],
-      "page": "/lens-accommodation/"
-    },
-    {
-      "id": "CLM-017",
-      "status": "internal-framework",
-      "statement": "Accommodation is the operational expression of FIS-2: focus integrity maintained across an intended operating range.",
-      "sources": ["SRC-004"],
-      "page": "/lens-accommodation/"
-    },
-    {
-      "id": "CLM-018",
-      "status": "sourced",
-      "statement": "The lens capsule is a transparent, elastic basement-membrane envelope that surrounds the crystalline lens.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/lens-capsule/"
-    },
-    {
-      "id": "CLM-019",
-      "status": "sourced",
-      "statement": "The zonular fibers insert into the lens capsule around the lens equator, transmitting their tension to the lens through the capsule.",
-      "sources": ["SRC-002"],
-      "page": "/lens-capsule/"
-    },
-    {
-      "id": "CLM-020",
-      "status": "sourced",
-      "statement": "The elasticity of the capsule helps mold the lens into a more curved shape when zonular tension is released during accommodation.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/lens-capsule/"
-    },
-    {
-      "id": "CLM-021",
-      "status": "internal-framework",
-      "statement": "The lens capsule is the transmission interface of the suspension layer: the surface through which hidden tension becomes a change in focal geometry.",
-      "sources": ["SRC-004"],
-      "page": "/lens-capsule/"
-    },
-    {
-      "id": "CLM-022",
-      "status": "sourced",
-      "statement": "Visual perception is the process by which the brain organizes and interprets visual input into a stable, meaningful representation of the environment.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/visual-perception/"
-    },
-    {
-      "id": "CLM-023",
-      "status": "sourced",
-      "statement": "Perception is constructive: the visual system actively organizes input rather than passively recording it, as shown by perceptual organization and constancy.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/visual-perception/"
-    },
-    {
-      "id": "CLM-024",
-      "status": "sourced",
-      "statement": "Selective attention determines which parts of the visual field are processed in detail, holding a focal target stable against competing stimuli.",
-      "sources": ["SRC-005"],
-      "page": "/visual-perception/"
-    },
-    {
-      "id": "CLM-025",
-      "status": "internal-framework",
-      "statement": "Perception is the Layer 02 instance of the suspension thesis: attention holds a focal interpretation in place the way the zonules hold the lens, and its collapse is the perceptual form of suspension failure (FIO-01).",
-      "sources": ["SRC-004"],
-      "page": "/visual-perception/"
-    },
-    {
-      "id": "CLM-026",
-      "status": "sourced",
-      "statement": "Machine vision is the field of methods by which artificial systems detect, classify, localize, and interpret content in images and video.",
-      "sources": ["SRC-007"],
-      "page": "/machine-vision/"
-    },
-    {
-      "id": "CLM-027",
-      "status": "sourced",
-      "statement": "Machine vision systems can produce correct detections while failing to interpret a scene correctly, distinguishing detection from understanding.",
-      "sources": ["SRC-007"],
-      "page": "/machine-vision/"
-    },
-    {
-      "id": "CLM-028",
-      "status": "sourced",
-      "statement": "Establishing the origin and authenticity of an image is addressed by content provenance standards rather than by detection alone.",
-      "sources": ["SRC-008"],
-      "page": "/machine-vision/"
-    },
-    {
-      "id": "CLM-029",
-      "status": "internal-framework",
-      "statement": "Machine vision is the Layer 03 instance of the focus-integrity thesis: calibration and grounding play the suspension role, and machine failures map onto the FIO classes (signal-noise, provenance, interpretation).",
-      "sources": ["SRC-004"],
-      "page": "/machine-vision/"
-    },
-    {
-      "id": "CLM-030",
-      "status": "sourced",
-      "statement": "Selective attention is the mechanism by which the visual system prioritizes some stimuli for detailed processing while suppressing others.",
-      "sources": ["SRC-005"],
-      "page": "/selective-attention/"
-    },
-    {
-      "id": "CLM-031",
-      "status": "sourced",
-      "statement": "Attention can be directed voluntarily (top-down) or captured involuntarily (bottom-up) by salient stimuli.",
-      "sources": ["SRC-005"],
-      "page": "/selective-attention/"
-    },
-    {
-      "id": "CLM-032",
-      "status": "sourced",
-      "statement": "Attentional capacity is limited, so not all of the visual field can be processed in detail at the same time.",
-      "sources": ["SRC-005"],
-      "page": "/selective-attention/"
-    },
-    {
-      "id": "CLM-033",
-      "status": "internal-framework",
-      "statement": "Selective attention is the perceptual suspension mechanism (FIO-01): it holds a focal target in place, and its failure is the perceptual form of suspension collapse.",
-      "sources": ["SRC-004"],
-      "page": "/selective-attention/"
-    },
-    {
-      "id": "CLM-034",
-      "status": "sourced",
-      "statement": "Figure-ground organization is the perceptual process of segregating a scene into objects (figure) and background (ground).",
-      "sources": ["SRC-006"],
-      "page": "/figure-ground/"
-    },
-    {
-      "id": "CLM-035",
-      "status": "sourced",
-      "statement": "Figure-ground assignment can be ambiguous, as demonstrated by reversible figures where the same image yields two organizations.",
-      "sources": ["SRC-006"],
-      "page": "/figure-ground/"
-    },
-    {
-      "id": "CLM-036",
-      "status": "sourced",
-      "statement": "Gestalt principles describe how the visual system groups elements into coherent figures.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/figure-ground/"
-    },
-    {
-      "id": "CLM-037",
-      "status": "internal-framework",
-      "statement": "Figure-ground separation is the perceptual instance of signal-noise integrity (FIO-03): when it collapses, signal cannot be separated from ground.",
-      "sources": ["SRC-004"],
-      "page": "/figure-ground/"
-    },
-    {
-      "id": "CLM-038",
-      "status": "sourced",
-      "statement": "Deepfakes are synthetic media in which a person's likeness is generated or manipulated using machine-learning methods.",
-      "sources": ["SRC-007"],
-      "page": "/deepfake-detection/"
-    },
-    {
-      "id": "CLM-039",
-      "status": "sourced",
-      "statement": "Detection methods analyze artifacts, inconsistencies, or statistical signatures to classify media as authentic or synthetic.",
-      "sources": ["SRC-007"],
-      "page": "/deepfake-detection/"
-    },
-    {
-      "id": "CLM-040",
-      "status": "sourced",
-      "statement": "Detection alone does not establish origin; content provenance approaches record an image's source and edit history.",
-      "sources": ["SRC-008"],
-      "page": "/deepfake-detection/"
-    },
-    {
-      "id": "CLM-041",
-      "status": "internal-framework",
-      "statement": "Deepfake detection is a focus-integrity problem of provenance (FIO-04): the system must establish whether what it sees is real.",
-      "sources": ["SRC-004"],
-      "page": "/deepfake-detection/"
-    },
-    {
-      "id": "CLM-042",
-      "status": "sourced",
-      "statement": "Image provenance is the recorded history of where an image came from and how it was modified.",
-      "sources": ["SRC-008"],
-      "page": "/image-provenance/"
-    },
-    {
-      "id": "CLM-043",
-      "status": "sourced",
-      "statement": "Content provenance standards attach tamper-evident metadata to media to support authenticity verification.",
-      "sources": ["SRC-008"],
-      "page": "/image-provenance/"
-    },
-    {
-      "id": "CLM-044",
-      "status": "sourced",
-      "statement": "Provenance complements detection by establishing origin rather than inferring manipulation from the pixels alone.",
-      "sources": ["SRC-008"],
-      "page": "/image-provenance/"
-    },
-    {
-      "id": "CLM-045",
-      "status": "internal-framework",
-      "statement": "Image provenance is the infrastructure of provenance integrity (FIO-04): it answers the origin question that focus alone cannot.",
-      "sources": ["SRC-004"],
-      "page": "/image-provenance/"
-    },
-    {
-      "id": "CLM-046",
-      "status": "sourced",
-      "statement": "The cornea is the transparent, avascular anterior surface of the eye and provides approximately two-thirds of the eye's total refractive power.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/cornea/"
-    },
-    {
-      "id": "CLM-047",
-      "status": "sourced",
-      "statement": "Corneal transparency depends on the precise arrangement and hydration of collagen fibrils in the stroma, maintained by active metabolic processes.",
-      "sources": ["SRC-001"],
-      "page": "/cornea/"
-    },
-    {
-      "id": "CLM-048",
-      "status": "internal-framework",
-      "statement": "The cornea is a focus-integrity element of signal quality (FIO-03): its transparency determines whether the optical signal is clear or degraded before it reaches the lens.",
-      "sources": ["SRC-004"],
-      "page": "/cornea/"
-    },
-    {
-      "id": "CLM-049",
-      "status": "sourced",
-      "statement": "The retina is the light-sensitive tissue lining the posterior interior of the eye, containing photoreceptors and multiple layers of neural processing cells.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/retina/"
-    },
-    {
-      "id": "CLM-050",
-      "status": "sourced",
-      "statement": "The retina converts incident light into neural signals through phototransduction, with the neural output carried by the optic nerve toward the brain.",
-      "sources": ["SRC-001"],
-      "page": "/retina/"
-    },
-    {
-      "id": "CLM-051",
-      "status": "internal-framework",
-      "statement": "The retina is the anatomical site where focus integrity is decided (FIO-05): the signal is received, but the interpretation it enables depends entirely on where and how it is focused.",
-      "sources": ["SRC-004"],
-      "page": "/retina/"
-    },
-    {
-      "id": "CLM-052",
-      "status": "sourced",
-      "statement": "Photoreceptors are specialized retinal cells that transduce light into neural signals; rods are sensitive to low light and motion, cones are concentrated at the fovea and detect color and fine detail.",
-      "sources": ["SRC-001", "SRC-005"],
-      "page": "/photoreceptors/"
-    },
-    {
-      "id": "CLM-053",
-      "status": "sourced",
-      "statement": "The highest density of cone photoreceptors is at the fovea, the retinal region responsible for the sharpest central vision.",
-      "sources": ["SRC-001"],
-      "page": "/photoreceptors/"
-    },
-    {
-      "id": "CLM-054",
-      "status": "sourced",
-      "statement": "Photoreceptor density and distribution across the retina determine the spatial resolution and luminance sensitivity available to the visual system.",
-      "sources": ["SRC-005"],
-      "page": "/photoreceptors/"
-    },
-    {
-      "id": "CLM-055",
-      "status": "internal-framework",
-      "statement": "Photoreceptors are the signal-noise boundary of anatomy (FIO-03): below their threshold there is no signal; above it, signal quality depends on receptor density and health.",
-      "sources": ["SRC-004"],
-      "page": "/photoreceptors/"
-    },
-    {
-      "id": "CLM-056",
-      "status": "sourced",
-      "statement": "The optic nerve is the bundle of approximately one million axons that carry retinal ganglion cell output from the eye to the lateral geniculate nucleus and primary visual cortex.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/optic-nerve/"
-    },
-    {
-      "id": "CLM-057",
-      "status": "sourced",
-      "statement": "Damage to the optic nerve causes permanent loss of the visual field it carries, because retinal ganglion cell axons in adults do not regenerate.",
-      "sources": ["SRC-001"],
-      "page": "/optic-nerve/"
-    },
-    {
-      "id": "CLM-058",
-      "status": "internal-framework",
-      "statement": "The optic nerve is the structural conduit of vision (FIO-01): without its physical integrity, no signal from the retina reaches interpretation, regardless of how well the optical system focuses.",
-      "sources": ["SRC-004"],
-      "page": "/optic-nerve/"
-    },
-    {
-      "id": "CLM-059",
-      "status": "sourced",
-      "statement": "Perceptual constancy is the tendency of the perceptual system to maintain a stable representation of an object despite variations in viewing angle, distance, illumination, or surrounding context.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/perceptual-constancy/"
-    },
-    {
-      "id": "CLM-060",
-      "status": "sourced",
-      "statement": "Classical forms of perceptual constancy include size constancy, shape constancy, and lightness constancy, each representing a stable perceived property across changing sensory conditions.",
-      "sources": ["SRC-005"],
-      "page": "/perceptual-constancy/"
-    },
-    {
-      "id": "CLM-061",
-      "status": "sourced",
-      "statement": "Constancy depends on the visual system's ability to discount the conditions of observation and infer what properties of the world are invariant, a form of perceptual inference.",
-      "sources": ["SRC-006"],
-      "page": "/perceptual-constancy/"
-    },
-    {
-      "id": "CLM-062",
-      "status": "internal-framework",
-      "statement": "Perceptual constancy is the perceptual analogue of interpretation integrity (FIS-5): a system with intact constancy holds a stable interpretation of reality across varying conditions.",
-      "sources": ["SRC-004"],
-      "page": "/perceptual-constancy/"
-    },
-    {
-      "id": "CLM-063",
-      "status": "sourced",
-      "statement": "The Gestalt principles are rules describing how the visual system organizes elements into perceptual wholes; proximity, similarity, continuity, closure, and figure-ground are the core grouping laws.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/gestalt-principles/"
-    },
-    {
-      "id": "CLM-064",
-      "status": "sourced",
-      "statement": "Gestalt organization reflects fundamental tendencies of the perceptual system to structure visual input into coherent units, not learned from individual experience alone.",
-      "sources": ["SRC-006"],
-      "page": "/gestalt-principles/"
-    },
-    {
-      "id": "CLM-065",
-      "status": "sourced",
-      "statement": "Failure of Gestalt organization, as in certain perceptual disorders or ambiguous figures, produces an unstable or fragmented percept that cannot sustain a stable interpretation.",
-      "sources": ["SRC-005"],
-      "page": "/gestalt-principles/"
-    },
-    {
-      "id": "CLM-066",
-      "status": "internal-framework",
-      "statement": "Gestalt principles are the structural grammar of perceptual signal separation (FIO-03): they determine what counts as signal and what counts as noise at the organizational level.",
-      "sources": ["SRC-004"],
-      "page": "/gestalt-principles/"
-    },
-    {
-      "id": "CLM-067",
-      "status": "sourced",
-      "statement": "Computer vision is the field concerned with enabling machines to extract meaningful information from digital images and video, including recognition, detection, segmentation, and scene understanding.",
-      "sources": ["SRC-007"],
-      "page": "/computer-vision/"
-    },
-    {
-      "id": "CLM-068",
-      "status": "sourced",
-      "statement": "Modern computer vision systems use learned representations, with deep convolutional networks having become dominant for most recognition tasks, replacing hand-crafted feature engineering.",
-      "sources": ["SRC-007"],
-      "page": "/computer-vision/"
-    },
-    {
-      "id": "CLM-069",
-      "status": "sourced",
-      "statement": "Computer vision systems operate on pixel arrays as primary input; the quality of the input signal — resolution, noise, illumination — directly affects the performance of any downstream task.",
-      "sources": ["SRC-007"],
-      "page": "/computer-vision/"
-    },
-    {
-      "id": "CLM-070",
-      "status": "internal-framework",
-      "statement": "Computer vision is the machine layer in which all five FIO failure classes can be instantiated: suspension (calibration), accommodation (scale and focus), signal-noise (input quality), provenance (image origin), and interpretation (model output).",
-      "sources": ["SRC-004"],
-      "page": "/computer-vision/"
-    },
-    {
-      "id": "CLM-071",
-      "status": "sourced",
-      "statement": "Image classification is the task of assigning a categorical label to an image from a predefined set of classes; it is one of the foundational benchmark tasks of computer vision.",
-      "sources": ["SRC-007"],
-      "page": "/image-classification/"
-    },
-    {
-      "id": "CLM-072",
-      "status": "sourced",
-      "statement": "Classification performance depends on the model's ability to learn discriminative features that generalize from training examples to previously unseen inputs.",
-      "sources": ["SRC-007"],
-      "page": "/image-classification/"
-    },
-    {
-      "id": "CLM-073",
-      "status": "sourced",
-      "statement": "Distribution shift — when test images come from a different distribution than the training set — is a systematic source of classification failure even in high-accuracy systems.",
-      "sources": ["SRC-007"],
-      "page": "/image-classification/"
-    },
-    {
-      "id": "CLM-074",
-      "status": "internal-framework",
-      "statement": "Image classification is a focus-integrity problem of interpretation (FIO-05): the system receives a signal, constructs an internal representation, and must produce the correct categorical interpretation.",
-      "sources": ["SRC-004"],
-      "page": "/image-classification/"
-    },
-    {
-      "id": "CLM-075",
-      "status": "sourced",
-      "statement": "The iris is the pigmented muscular diaphragm that controls the size of the pupil, regulating the amount of light entering the eye.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/iris/"
-    },
-    {
-      "id": "CLM-076",
-      "status": "sourced",
-      "statement": "The iris contains two sets of smooth muscle — the sphincter pupillae and the dilator pupillae — allowing the pupil to constrict in bright light and dilate in dim conditions across a wide dynamic range.",
-      "sources": ["SRC-001"],
-      "page": "/iris/"
-    },
-    {
-      "id": "CLM-077",
-      "status": "internal-framework",
-      "statement": "The iris is the accommodation layer of the eye's signal input (FIO-02): it regulates the range of incoming signal, and when this regulation fails, signal quality degrades regardless of how well the rest of the optical system is aligned.",
-      "sources": ["SRC-004"],
-      "page": "/iris/"
-    },
-    {
-      "id": "CLM-078",
-      "status": "sourced",
-      "statement": "The vitreous humor is the transparent, gel-like substance that fills the posterior chamber of the eye, accounting for approximately two-thirds of the eye's total volume and maintaining the eye's spherical shape.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/vitreous-humor/"
-    },
-    {
-      "id": "CLM-079",
-      "status": "sourced",
-      "statement": "The vitreous humor provides the spatial separation between the lens and the retina that is required for the optical system to focus: the cornea and lens must project a focused image at the precise distance of the retinal surface.",
-      "sources": ["SRC-001"],
-      "page": "/vitreous-humor/"
-    },
-    {
-      "id": "CLM-080",
-      "status": "internal-framework",
-      "statement": "The vitreous humor is a structural element of focus integrity (FIO-01): it maintains the geometry of the optical system by holding the retina in position and preserving the focal distance the cornea and lens were calibrated to.",
-      "sources": ["SRC-004"],
-      "page": "/vitreous-humor/"
-    },
-    {
-      "id": "CLM-081",
-      "status": "sourced",
-      "statement": "The macula is the central zone of the retina, approximately 5 mm in diameter, containing the highest concentration of cone photoreceptors and responsible for the highest spatial resolution in human vision.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/macula/"
-    },
-    {
-      "id": "CLM-082",
-      "status": "sourced",
-      "statement": "The fovea at the center of the macula is the region of sharpest fixation; the oculomotor system directs gaze so that the image of a fixated object falls on the fovea.",
-      "sources": ["SRC-001"],
-      "page": "/macula/"
-    },
-    {
-      "id": "CLM-083",
-      "status": "internal-framework",
-      "statement": "The macula is the anatomical site of signal precision (FIO-03): the quality of the focused signal at this zone determines the acuity of central vision; degradation here is signal-noise failure at the highest-priority region of the visual field.",
-      "sources": ["SRC-004"],
-      "page": "/macula/"
-    },
-    {
-      "id": "CLM-084",
-      "status": "sourced",
-      "statement": "Depth perception is the ability to perceive the relative distance of objects in three-dimensional space from two-dimensional retinal images, achieved through binocular cues such as disparity and convergence, and monocular cues such as perspective, occlusion, and motion parallax.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/depth-perception/"
-    },
-    {
-      "id": "CLM-085",
-      "status": "sourced",
-      "statement": "Binocular disparity — the slight difference between retinal images received by the two eyes — is the primary cue for depth at close range; stereopsis is the neural process of resolving this disparity into perceived depth.",
-      "sources": ["SRC-006"],
-      "page": "/depth-perception/"
-    },
-    {
-      "id": "CLM-086",
-      "status": "sourced",
-      "statement": "Monocular depth cues including linear perspective, familiar size, occlusion, and motion parallax allow depth to be inferred from a single eye's image and remain effective at distances where binocular cues are weak.",
-      "sources": ["SRC-005"],
-      "page": "/depth-perception/"
-    },
-    {
-      "id": "CLM-087",
-      "status": "internal-framework",
-      "statement": "Depth perception is an interpretation problem (FIO-05): the perceptual system must construct a three-dimensional interpretation from two-dimensional signals; failure produces a misjudgment of distance or surface layout that downstream behavior cannot correct.",
-      "sources": ["SRC-004"],
-      "page": "/depth-perception/"
-    },
-    {
-      "id": "CLM-088",
-      "status": "sourced",
-      "statement": "Inattentional blindness is the failure to notice a fully visible but unexpected stimulus when attention is directed elsewhere; the observer has normal vision and the stimulus is present, but it does not reach awareness.",
-      "sources": ["SRC-005"],
-      "page": "/inattentional-blindness/"
-    },
-    {
-      "id": "CLM-089",
-      "status": "sourced",
-      "statement": "Inattentional blindness demonstrates that conscious visual awareness requires attention as well as sensory input: objects outside the focus of attention are processed to a limited extent but do not reach reportable awareness.",
-      "sources": ["SRC-005"],
-      "page": "/inattentional-blindness/"
-    },
-    {
-      "id": "CLM-090",
-      "status": "sourced",
-      "statement": "The probability of inattentional blindness increases when the unexpected stimulus is dissimilar to the attended target or appears in the periphery rather than in the attended location.",
-      "sources": ["SRC-005"],
-      "page": "/inattentional-blindness/"
-    },
-    {
-      "id": "CLM-091",
-      "status": "internal-framework",
-      "statement": "Inattentional blindness is a provenance failure (FIO-04): the visual signal was present, but the system formed no attended representation of it — the input has no provenance in working memory or awareness, so it cannot be retrieved or verified.",
-      "sources": ["SRC-004"],
-      "page": "/inattentional-blindness/"
-    },
-    {
-      "id": "CLM-092",
-      "status": "sourced",
-      "statement": "Visual working memory is the cognitive system that temporarily stores and actively maintains visual and spatial information for use in ongoing tasks; its capacity is limited to approximately three to four objects or feature sets at a time.",
-      "sources": ["SRC-005"],
-      "page": "/visual-working-memory/"
-    },
-    {
-      "id": "CLM-093",
-      "status": "sourced",
-      "statement": "Visual working memory enables comparison of a currently viewed scene with a recently stored representation, supporting change detection, scene completion, and the maintenance of object identity across eye movements.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/visual-working-memory/"
-    },
-    {
-      "id": "CLM-094",
-      "status": "sourced",
-      "statement": "The limited capacity of visual working memory creates a predictable constraint: when a scene contains more items than working memory can hold, failures of comparison and change detection follow systematically.",
-      "sources": ["SRC-006"],
-      "page": "/visual-working-memory/"
-    },
-    {
-      "id": "CLM-095",
-      "status": "internal-framework",
-      "statement": "Visual working memory is the accommodation system of perception (FIO-02): it sets the range of visual information that can be actively held and compared; when its capacity is exceeded, the perceptual system can no longer maintain focus across all relevant inputs.",
-      "sources": ["SRC-004"],
-      "page": "/visual-working-memory/"
-    },
-    {
-      "id": "CLM-096",
-      "status": "sourced",
-      "statement": "Object detection is the computer vision task of identifying and localizing instances of objects within an image, producing both a category label and a spatial boundary for each detected instance.",
-      "sources": ["SRC-007"],
-      "page": "/object-detection/"
-    },
-    {
-      "id": "CLM-097",
-      "status": "sourced",
-      "statement": "Object detection systems must generalize across variations in scale, orientation, lighting, and occlusion; a detector that is accurate on its training distribution may fail on the same object class presented under different conditions.",
-      "sources": ["SRC-007"],
-      "page": "/object-detection/"
-    },
-    {
-      "id": "CLM-098",
-      "status": "sourced",
-      "statement": "False positives (detecting absent objects) and false negatives (missing present objects) are the symmetric failure modes of detection, and their balance is controlled by a confidence threshold that determines what the system commits to reporting.",
-      "sources": ["SRC-007"],
-      "page": "/object-detection/"
-    },
-    {
-      "id": "CLM-099",
-      "status": "internal-framework",
-      "statement": "Object detection is an interpretation task (FIO-05): it requires both correct categorization and correct localization, and failure at either constitutes an interpretation failure — seeing something in the wrong place is as much a focus failure as misidentifying what is there.",
-      "sources": ["SRC-004"],
-      "page": "/object-detection/"
-    },
-    {
-      "id": "CLM-100",
-      "status": "sourced",
-      "statement": "Adversarial examples are inputs to machine learning models that have been imperceptibly perturbed to cause incorrect outputs; the modifications are too small for a human observer to notice but exploit the model's decision boundaries systematically.",
-      "sources": ["SRC-007"],
-      "page": "/adversarial-examples/"
-    },
-    {
-      "id": "CLM-101",
-      "status": "sourced",
-      "statement": "The existence of adversarial examples demonstrates that high accuracy on standard benchmarks does not guarantee robustness: a model can fail catastrophically on inputs that appear normal to a human observer.",
-      "sources": ["SRC-007"],
-      "page": "/adversarial-examples/"
-    },
-    {
-      "id": "CLM-102",
-      "status": "sourced",
-      "statement": "Adversarial robustness — the ability to maintain correct output under adversarial perturbation — is a distinct property from standard accuracy and must be specifically engineered rather than assumed from general training.",
-      "sources": ["SRC-007"],
-      "page": "/adversarial-examples/"
-    },
-    {
-      "id": "CLM-103",
-      "status": "internal-framework",
-      "statement": "Adversarial examples are signal-noise failures (FIO-03): imperceptible perturbations are noise structured specifically to defeat the signal-noise separation the model relies on, showing that machine and human signal boundaries do not coincide.",
-      "sources": ["SRC-004"],
-      "page": "/adversarial-examples/"
-    },
-    {
-      "id": "CLM-104",
-      "status": "sourced",
-      "statement": "The aqueous humor is the clear fluid filling the anterior and posterior chambers of the eye in front of the lens, supplying nutrients to the avascular cornea and lens and maintaining intraocular pressure.",
-      "sources": ["SRC-001", "SRC-002"],
-      "page": "/aqueous-humor/"
-    },
-    {
-      "id": "CLM-105",
-      "status": "sourced",
-      "statement": "Aqueous humor is continuously produced by the ciliary body and drained through the trabecular meshwork; the balance between production and drainage determines intraocular pressure.",
-      "sources": ["SRC-001"],
-      "page": "/aqueous-humor/"
-    },
-    {
-      "id": "CLM-106",
-      "status": "internal-framework",
-      "statement": "The aqueous humor is a structural maintenance element of focus integrity (FIO-01): it sustains the pressure and nourishment that keep the optical elements in their working geometry, an invisible support for the system rather than part of the image.",
-      "sources": ["SRC-004"],
-      "page": "/aqueous-humor/"
-    },
-    {
-      "id": "CLM-107",
-      "status": "sourced",
-      "statement": "The primary visual cortex (V1) is the region of the occipital lobe that receives the principal visual input from the lateral geniculate nucleus and performs the first cortical stage of visual processing.",
-      "sources": ["SRC-001", "SRC-005"],
-      "page": "/visual-cortex/"
-    },
-    {
-      "id": "CLM-108",
-      "status": "sourced",
-      "statement": "Neurons in the primary visual cortex are tuned to specific stimulus features such as edge orientation, spatial frequency, and direction of motion, decomposing the retinal image into elementary features for further processing.",
-      "sources": ["SRC-005"],
-      "page": "/visual-cortex/"
-    },
-    {
-      "id": "CLM-109",
-      "status": "internal-framework",
-      "statement": "The visual cortex is the anatomical site where interpretation begins (FIO-05): the signal arrives intact from the eye, and the construction of meaning starts here; cortical failure produces a defect of interpretation rather than of sensing.",
-      "sources": ["SRC-004"],
-      "page": "/visual-cortex/"
-    },
-    {
-      "id": "CLM-110",
-      "status": "sourced",
-      "statement": "The pupillary light reflex is the automatic constriction of the pupil in response to increased light, mediated by a reflex arc involving the retina, the optic nerve, the pretectal nucleus, and the parasympathetic supply to the iris sphincter.",
-      "sources": ["SRC-001", "SRC-003"],
-      "page": "/pupillary-reflex/"
-    },
-    {
-      "id": "CLM-111",
-      "status": "sourced",
-      "statement": "The pupillary light reflex is consensual: light directed into one eye produces constriction in both pupils, because the afferent signal is distributed to the pretectal nuclei of both sides.",
-      "sources": ["SRC-001"],
-      "page": "/pupillary-reflex/"
-    },
-    {
-      "id": "CLM-112",
-      "status": "internal-framework",
-      "statement": "The pupillary light reflex is an automatic accommodation mechanism (FIO-02): it adjusts the input range to ambient conditions without conscious control, the involuntary counterpart to lens accommodation in keeping the signal within a workable range.",
-      "sources": ["SRC-004"],
-      "page": "/pupillary-reflex/"
-    },
-    {
-      "id": "CLM-113",
-      "status": "sourced",
-      "statement": "Sustained attention, also called vigilance, is the capacity to maintain focused attention on a task or stimulus stream over an extended period of time.",
-      "sources": ["SRC-005"],
-      "page": "/sustained-attention/"
-    },
-    {
-      "id": "CLM-114",
-      "status": "sourced",
-      "statement": "Vigilance performance typically declines over time on monotonous monitoring tasks, a phenomenon known as the vigilance decrement, in which detection of infrequent targets becomes slower and less reliable.",
-      "sources": ["SRC-005"],
-      "page": "/sustained-attention/"
-    },
-    {
-      "id": "CLM-115",
-      "status": "sourced",
-      "statement": "Sustained attention is distinct from selective attention: selective attention concerns which stimulus is prioritized at a moment, while sustained attention concerns maintaining that prioritization across time.",
-      "sources": ["SRC-005"],
-      "page": "/sustained-attention/"
-    },
-    {
-      "id": "CLM-116",
-      "status": "internal-framework",
-      "statement": "Sustained attention is the temporal dimension of perceptual suspension (FIO-01): selective attention establishes the hold on a focal target and sustained attention maintains that hold over time; the vigilance decrement is suspension failure across duration.",
-      "sources": ["SRC-004"],
-      "page": "/sustained-attention/"
-    },
-    {
-      "id": "CLM-117",
-      "status": "sourced",
-      "statement": "Change blindness is the failure to detect a substantial change in a visual scene when the change coincides with a brief visual disruption such as a saccade, a flicker, or an occlusion.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/change-blindness/"
-    },
-    {
-      "id": "CLM-118",
-      "status": "sourced",
-      "statement": "Change blindness demonstrates that the visual system does not maintain a complete detailed representation of a scene; detection of change depends on having attended to and stored the changed element before the disruption.",
-      "sources": ["SRC-006"],
-      "page": "/change-blindness/"
-    },
-    {
-      "id": "CLM-119",
-      "status": "sourced",
-      "statement": "Changes to objects that are the current focus of attention are detected readily, while changes to unattended objects frequently go unnoticed even when they are large and occur in central vision.",
-      "sources": ["SRC-005"],
-      "page": "/change-blindness/"
-    },
-    {
-      "id": "CLM-120",
-      "status": "internal-framework",
-      "statement": "Change blindness is a provenance failure across time (FIO-04): without a stored prior representation, the system has no record against which to verify what changed, so the change has no detectable origin in the perceptual record.",
-      "sources": ["SRC-004"],
-      "page": "/change-blindness/"
-    },
-    {
-      "id": "CLM-121",
-      "status": "sourced",
-      "statement": "Visual saliency is the property by which some elements of a scene stand out from their surroundings and attract attention automatically, driven by local contrasts in features such as color, intensity, orientation, and motion.",
-      "sources": ["SRC-005", "SRC-006"],
-      "page": "/visual-saliency/"
-    },
-    {
-      "id": "CLM-122",
-      "status": "sourced",
-      "statement": "Bottom-up saliency operates rapidly and involuntarily, prioritizing locations for attention based on stimulus features before any task-driven control is applied.",
-      "sources": ["SRC-005"],
-      "page": "/visual-saliency/"
-    },
-    {
-      "id": "CLM-123",
-      "status": "sourced",
-      "statement": "Computational models of saliency predict where observers will look in an image by computing feature contrast maps, and are used both to model human attention and to guide machine vision systems.",
-      "sources": ["SRC-006"],
-      "page": "/visual-saliency/"
-    },
-    {
-      "id": "CLM-124",
-      "status": "internal-framework",
-      "statement": "Visual saliency is the signal-prioritization stage of perceptual signal separation (FIO-03): it determines which parts of the field are treated as candidate signal before deliberate processing, and misallocated saliency directs focus toward noise.",
-      "sources": ["SRC-004"],
-      "page": "/visual-saliency/"
-    },
-    {
-      "id": "CLM-125",
-      "status": "sourced",
-      "statement": "Geometric calibration in computer vision establishes the relationship between a camera's image coordinates and the three-dimensional world, recovering parameters such as focal length, principal point, and lens distortion.",
-      "sources": ["SRC-007"],
-      "page": "/model-calibration/"
-    },
-    {
-      "id": "CLM-126",
-      "status": "sourced",
-      "statement": "Accurate calibration is a prerequisite for tasks that depend on spatial measurement, such as stereo reconstruction, structure from motion, and metric localization; calibration error propagates into every downstream geometric estimate.",
-      "sources": ["SRC-007"],
-      "page": "/model-calibration/"
-    },
-    {
-      "id": "CLM-127",
-      "status": "sourced",
-      "statement": "Calibration can drift over time due to thermal, mechanical, or optical changes, so systems relying on precise spatial grounding require recalibration or online calibration to maintain accuracy.",
-      "sources": ["SRC-007"],
-      "page": "/model-calibration/"
-    },
-    {
-      "id": "CLM-128",
-      "status": "internal-framework",
-      "statement": "Calibration is the suspension system of machine vision (FIO-01): it holds the model's spatial reference frame in place the way the zonules hold the lens; when calibration drifts, the system still receives input but can no longer ground where it is looking.",
-      "sources": ["SRC-004"],
-      "page": "/model-calibration/"
-    },
-    {
-      "id": "CLM-129",
-      "status": "sourced",
-      "statement": "Domain shift occurs when the distribution of inputs a model encounters at deployment differs from the distribution it was trained on, degrading performance even when the task is unchanged.",
-      "sources": ["SRC-007"],
-      "page": "/domain-shift/"
-    },
-    {
-      "id": "CLM-130",
-      "status": "sourced",
-      "statement": "Common sources of domain shift include changes in lighting, sensor characteristics, geographic or demographic context, and the appearance of object categories under conditions not represented in the training data.",
-      "sources": ["SRC-007"],
-      "page": "/domain-shift/"
-    },
-    {
-      "id": "CLM-131",
-      "status": "sourced",
-      "statement": "Domain adaptation and domain generalization are the families of techniques developed to maintain performance across distribution shift, and they constitute a distinct engineering problem from improving accuracy on a fixed distribution.",
-      "sources": ["SRC-007"],
-      "page": "/domain-shift/"
-    },
-    {
-      "id": "CLM-132",
-      "status": "internal-framework",
-      "statement": "Domain shift is the accommodation failure of machine vision (FIO-02): a model accommodates focus across the range of conditions it was trained for, and shift beyond that range is the machine analogue of a focus system that cannot adjust to a distance outside its operating envelope.",
-      "sources": ["SRC-004"],
-      "page": "/domain-shift/"
-    }
+    {"id":"CLM-001","status":"sourced","statement":"The zonules of Zinn are fine fibrous strands that suspend the crystalline lens from the ciliary body.","sources":["SRC-001","SRC-002"],"page":"/zonules-of-zinn/"},
+    {"id":"CLM-002","status":"sourced","statement":"The zonular apparatus, also called the suspensory ligament of the lens, holds the lens in centered geometric tension.","sources":["SRC-002","SRC-003"],"page":"/zonules-of-zinn/"},
+    {"id":"CLM-003","status":"sourced","statement":"Tension transmitted through the zonules allows the ciliary muscle to change lens shape during accommodation, shifting focus across distances.","sources":["SRC-001","SRC-003"],"page":"/zonules-of-zinn/"},
+    {"id":"CLM-004","status":"sourced","statement":"The structure is named after Johann Gottfried Zinn, the 18th-century anatomist who described it.","sources":["SRC-002"],"page":"/zonules-of-zinn/"},
+    {"id":"CLM-005","status":"internal-framework","statement":"The zonules are the literal instance of the suspension layer (FIO-01): focus is produced by hidden structural tension, not by the lens alone.","sources":["SRC-004"],"page":"/zonules-of-zinn/"},
+    {"id":"CLM-006","status":"sourced","statement":"The ciliary body is a ring of tissue behind the iris that contains the ciliary muscle and gives rise to the zonular fibers.","sources":["SRC-001","SRC-002"],"page":"/ciliary-body/"},
+    {"id":"CLM-007","status":"sourced","statement":"Contraction of the ciliary muscle reduces tension on the zonules, allowing the elastic lens to become more convex for near focus.","sources":["SRC-001","SRC-003"],"page":"/ciliary-body/"},
+    {"id":"CLM-008","status":"sourced","statement":"The ciliary body also produces aqueous humor, the fluid that fills the anterior segment of the eye.","sources":["SRC-001","SRC-002"],"page":"/ciliary-body/"},
+    {"id":"CLM-009","status":"internal-framework","statement":"The ciliary body is the force source of the suspension layer (FIO-01): it does not focus light but governs the tension that makes focus adjustable.","sources":["SRC-004"],"page":"/ciliary-body/"},
+    {"id":"CLM-010","status":"sourced","statement":"The crystalline lens is a transparent, biconvex structure suspended behind the iris that refracts light to help form an image on the retina.","sources":["SRC-001","SRC-002"],"page":"/crystalline-lens/"},
+    {"id":"CLM-011","status":"sourced","statement":"The lens is elastic and changes curvature during accommodation.","sources":["SRC-001","SRC-003"],"page":"/crystalline-lens/"},
+    {"id":"CLM-012","status":"sourced","statement":"The lens is enclosed in an elastic capsule into which the zonular fibers insert.","sources":["SRC-002"],"page":"/crystalline-lens/"},
+    {"id":"CLM-013","status":"internal-framework","statement":"The lens is the focal element of the suspension system: present but unable to focus reliably without zonular tension.","sources":["SRC-004"],"page":"/crystalline-lens/"},
+    {"id":"CLM-014","status":"sourced","statement":"Accommodation is the process by which the eye changes its optical power to maintain a clear image of objects at varying distances.","sources":["SRC-001","SRC-003"],"page":"/lens-accommodation/"},
+    {"id":"CLM-015","status":"sourced","statement":"During accommodation for near vision, the ciliary muscle contracts, zonular tension decreases, and the lens becomes more spherical.","sources":["SRC-001","SRC-003"],"page":"/lens-accommodation/"},
+    {"id":"CLM-016","status":"sourced","statement":"Accommodative ability typically declines with age, a condition known as presbyopia.","sources":["SRC-003"],"page":"/lens-accommodation/"},
+    {"id":"CLM-017","status":"internal-framework","statement":"Accommodation is the operational expression of FIS-2: focus integrity maintained across an intended operating range.","sources":["SRC-004"],"page":"/lens-accommodation/"},
+    {"id":"CLM-018","status":"sourced","statement":"The lens capsule is a transparent, elastic basement-membrane envelope that surrounds the crystalline lens.","sources":["SRC-001","SRC-002"],"page":"/lens-capsule/"},
+    {"id":"CLM-019","status":"sourced","statement":"The zonular fibers insert into the lens capsule around the lens equator, transmitting their tension to the lens through the capsule.","sources":["SRC-002"],"page":"/lens-capsule/"},
+    {"id":"CLM-020","status":"sourced","statement":"The elasticity of the capsule helps mold the lens into a more curved shape when zonular tension is released during accommodation.","sources":["SRC-001","SRC-002"],"page":"/lens-capsule/"},
+    {"id":"CLM-021","status":"internal-framework","statement":"The lens capsule is the transmission interface of the suspension layer: the surface through which hidden tension becomes a change in focal geometry.","sources":["SRC-004"],"page":"/lens-capsule/"},
+    {"id":"CLM-022","status":"sourced","statement":"Visual perception is the process by which the brain organizes and interprets visual input into a stable, meaningful representation of the environment.","sources":["SRC-005","SRC-006"],"page":"/visual-perception/"},
+    {"id":"CLM-023","status":"sourced","statement":"Perception is constructive: the visual system actively organizes input rather than passively recording it.","sources":["SRC-005","SRC-006"],"page":"/visual-perception/"},
+    {"id":"CLM-024","status":"sourced","statement":"Selective attention determines which parts of the visual field are processed in detail.","sources":["SRC-005"],"page":"/visual-perception/"},
+    {"id":"CLM-025","status":"internal-framework","statement":"Perception is the Layer 02 instance of the suspension thesis: attention holds a focal interpretation in place the way the zonules hold the lens.","sources":["SRC-004"],"page":"/visual-perception/"},
+    {"id":"CLM-026","status":"sourced","statement":"Machine vision is the field of methods by which artificial systems detect, classify, localize, and interpret content in images and video.","sources":["SRC-007"],"page":"/machine-vision/"},
+    {"id":"CLM-027","status":"sourced","statement":"Machine vision systems can produce correct detections while failing to interpret a scene correctly.","sources":["SRC-007"],"page":"/machine-vision/"},
+    {"id":"CLM-028","status":"sourced","statement":"Establishing the origin and authenticity of an image is addressed by content provenance standards rather than by detection alone.","sources":["SRC-008"],"page":"/machine-vision/"},
+    {"id":"CLM-029","status":"internal-framework","statement":"Machine vision is the Layer 03 instance of the focus-integrity thesis: calibration and grounding play the suspension role.","sources":["SRC-004"],"page":"/machine-vision/"},
+    {"id":"CLM-030","status":"sourced","statement":"Selective attention is the mechanism by which the visual system prioritizes some stimuli for detailed processing while suppressing others.","sources":["SRC-005"],"page":"/selective-attention/"},
+    {"id":"CLM-031","status":"sourced","statement":"Attention can be directed voluntarily (top-down) or captured involuntarily (bottom-up) by salient stimuli.","sources":["SRC-005"],"page":"/selective-attention/"},
+    {"id":"CLM-032","status":"sourced","statement":"Attentional capacity is limited, so not all of the visual field can be processed in detail at the same time.","sources":["SRC-005"],"page":"/selective-attention/"},
+    {"id":"CLM-033","status":"internal-framework","statement":"Selective attention is the perceptual suspension mechanism (FIO-01): it holds a focal target in place.","sources":["SRC-004"],"page":"/selective-attention/"},
+    {"id":"CLM-034","status":"sourced","statement":"Figure-ground organization is the perceptual process of segregating a scene into objects (figure) and background (ground).","sources":["SRC-006"],"page":"/figure-ground/"},
+    {"id":"CLM-035","status":"sourced","statement":"Figure-ground assignment can be ambiguous, as demonstrated by reversible figures.","sources":["SRC-006"],"page":"/figure-ground/"},
+    {"id":"CLM-036","status":"sourced","statement":"Gestalt principles describe how the visual system groups elements into coherent figures.","sources":["SRC-005","SRC-006"],"page":"/figure-ground/"},
+    {"id":"CLM-037","status":"internal-framework","statement":"Figure-ground separation is the perceptual instance of signal-noise integrity (FIO-03).","sources":["SRC-004"],"page":"/figure-ground/"},
+    {"id":"CLM-038","status":"sourced","statement":"Deepfakes are synthetic media in which a person's likeness is generated or manipulated using machine-learning methods.","sources":["SRC-007"],"page":"/deepfake-detection/"},
+    {"id":"CLM-039","status":"sourced","statement":"Detection methods analyze artifacts, inconsistencies, or statistical signatures to classify media as authentic or synthetic.","sources":["SRC-007"],"page":"/deepfake-detection/"},
+    {"id":"CLM-040","status":"sourced","statement":"Detection alone does not establish origin; content provenance approaches record an image's source and edit history.","sources":["SRC-008"],"page":"/deepfake-detection/"},
+    {"id":"CLM-041","status":"internal-framework","statement":"Deepfake detection is a focus-integrity problem of provenance (FIO-04).","sources":["SRC-004"],"page":"/deepfake-detection/"},
+    {"id":"CLM-042","status":"sourced","statement":"Image provenance is the recorded history of where an image came from and how it was modified.","sources":["SRC-008"],"page":"/image-provenance/"},
+    {"id":"CLM-043","status":"sourced","statement":"Content provenance standards attach tamper-evident metadata to media to support authenticity verification.","sources":["SRC-008"],"page":"/image-provenance/"},
+    {"id":"CLM-044","status":"sourced","statement":"Provenance complements detection by establishing origin rather than inferring manipulation from the pixels alone.","sources":["SRC-008"],"page":"/image-provenance/"},
+    {"id":"CLM-045","status":"internal-framework","statement":"Image provenance is the infrastructure of provenance integrity (FIO-04).","sources":["SRC-004"],"page":"/image-provenance/"},
+    {"id":"CLM-046","status":"sourced","statement":"The cornea is the transparent, avascular anterior surface of the eye and provides approximately two-thirds of the eye's total refractive power.","sources":["SRC-001","SRC-002"],"page":"/cornea/"},
+    {"id":"CLM-047","status":"sourced","statement":"Corneal transparency depends on the precise arrangement and hydration of collagen fibrils in the stroma.","sources":["SRC-001"],"page":"/cornea/"},
+    {"id":"CLM-048","status":"internal-framework","statement":"The cornea is a focus-integrity element of signal quality (FIO-03): its transparency determines whether the optical signal is clear before it reaches the lens.","sources":["SRC-004"],"page":"/cornea/"},
+    {"id":"CLM-049","status":"sourced","statement":"The retina is the light-sensitive tissue lining the posterior interior of the eye, containing photoreceptors and multiple layers of neural processing cells.","sources":["SRC-001","SRC-003"],"page":"/retina/"},
+    {"id":"CLM-050","status":"sourced","statement":"The retina converts incident light into neural signals through phototransduction.","sources":["SRC-001"],"page":"/retina/"},
+    {"id":"CLM-051","status":"internal-framework","statement":"The retina is the anatomical site where focus integrity is decided (FIO-05).","sources":["SRC-004"],"page":"/retina/"},
+    {"id":"CLM-052","status":"sourced","statement":"Photoreceptors are specialized retinal cells that transduce light into neural signals; rods are sensitive to low light and motion, cones are concentrated at the fovea and detect color and fine detail.","sources":["SRC-001","SRC-005"],"page":"/photoreceptors/"},
+    {"id":"CLM-053","status":"sourced","statement":"The highest density of cone photoreceptors is at the fovea.","sources":["SRC-001"],"page":"/photoreceptors/"},
+    {"id":"CLM-054","status":"sourced","statement":"Photoreceptor density and distribution determine the spatial resolution and luminance sensitivity available to the visual system.","sources":["SRC-005"],"page":"/photoreceptors/"},
+    {"id":"CLM-055","status":"internal-framework","statement":"Photoreceptors are the signal-noise boundary of anatomy (FIO-03).","sources":["SRC-004"],"page":"/photoreceptors/"},
+    {"id":"CLM-056","status":"sourced","statement":"The optic nerve is the bundle of approximately one million axons that carry retinal ganglion cell output from the eye to the lateral geniculate nucleus and primary visual cortex.","sources":["SRC-001","SRC-002"],"page":"/optic-nerve/"},
+    {"id":"CLM-057","status":"sourced","statement":"Damage to the optic nerve causes permanent loss of the visual field it carries.","sources":["SRC-001"],"page":"/optic-nerve/"},
+    {"id":"CLM-058","status":"internal-framework","statement":"The optic nerve is the structural conduit of vision (FIO-01): without its physical integrity, no signal reaches interpretation.","sources":["SRC-004"],"page":"/optic-nerve/"},
+    {"id":"CLM-059","status":"sourced","statement":"Perceptual constancy is the tendency to maintain a stable representation of an object despite variations in viewing angle, distance, illumination, or context.","sources":["SRC-005","SRC-006"],"page":"/perceptual-constancy/"},
+    {"id":"CLM-060","status":"sourced","statement":"Classical forms include size constancy, shape constancy, and lightness constancy.","sources":["SRC-005"],"page":"/perceptual-constancy/"},
+    {"id":"CLM-061","status":"sourced","statement":"Constancy depends on the visual system's ability to discount conditions of observation and infer invariant properties.","sources":["SRC-006"],"page":"/perceptual-constancy/"},
+    {"id":"CLM-062","status":"internal-framework","statement":"Perceptual constancy is the perceptual analogue of interpretation integrity (FIS-5).","sources":["SRC-004"],"page":"/perceptual-constancy/"},
+    {"id":"CLM-063","status":"sourced","statement":"The Gestalt principles describe how the visual system organizes elements into perceptual wholes; proximity, similarity, continuity, closure, and figure-ground are the core grouping laws.","sources":["SRC-005","SRC-006"],"page":"/gestalt-principles/"},
+    {"id":"CLM-064","status":"sourced","statement":"Gestalt organization reflects fundamental tendencies of the perceptual system to structure visual input into coherent units.","sources":["SRC-006"],"page":"/gestalt-principles/"},
+    {"id":"CLM-065","status":"sourced","statement":"Failure of Gestalt organization produces an unstable or fragmented percept.","sources":["SRC-005"],"page":"/gestalt-principles/"},
+    {"id":"CLM-066","status":"internal-framework","statement":"Gestalt principles are the structural grammar of perceptual signal separation (FIO-03).","sources":["SRC-004"],"page":"/gestalt-principles/"},
+    {"id":"CLM-067","status":"sourced","statement":"Computer vision is the field concerned with enabling machines to extract meaningful information from digital images and video.","sources":["SRC-007"],"page":"/computer-vision/"},
+    {"id":"CLM-068","status":"sourced","statement":"Modern computer vision systems use learned representations, with deep convolutional networks having become dominant for most recognition tasks.","sources":["SRC-007"],"page":"/computer-vision/"},
+    {"id":"CLM-069","status":"sourced","statement":"Computer vision systems operate on pixel arrays; input signal quality directly affects downstream task performance.","sources":["SRC-007"],"page":"/computer-vision/"},
+    {"id":"CLM-070","status":"internal-framework","statement":"Computer vision is the machine layer in which all five FIO failure classes can be instantiated.","sources":["SRC-004"],"page":"/computer-vision/"},
+    {"id":"CLM-071","status":"sourced","statement":"Image classification is the task of assigning a categorical label to an image from a predefined set of classes.","sources":["SRC-007"],"page":"/image-classification/"},
+    {"id":"CLM-072","status":"sourced","statement":"Classification performance depends on the model's ability to learn discriminative features that generalize.","sources":["SRC-007"],"page":"/image-classification/"},
+    {"id":"CLM-073","status":"sourced","statement":"Distribution shift is a systematic source of classification failure even in high-accuracy systems.","sources":["SRC-007"],"page":"/image-classification/"},
+    {"id":"CLM-074","status":"internal-framework","statement":"Image classification is a focus-integrity problem of interpretation (FIO-05).","sources":["SRC-004"],"page":"/image-classification/"},
+    {"id":"CLM-075","status":"sourced","statement":"The iris is the pigmented muscular diaphragm that controls the size of the pupil.","sources":["SRC-001","SRC-002"],"page":"/iris/"},
+    {"id":"CLM-076","status":"sourced","statement":"The iris contains sphincter pupillae and dilator pupillae muscles allowing pupil constriction and dilation.","sources":["SRC-001"],"page":"/iris/"},
+    {"id":"CLM-077","status":"internal-framework","statement":"The iris is the accommodation layer of the eye's signal input (FIO-02).","sources":["SRC-004"],"page":"/iris/"},
+    {"id":"CLM-078","status":"sourced","statement":"The vitreous humor is the transparent, gel-like substance filling the posterior chamber, accounting for approximately two-thirds of the eye's total volume.","sources":["SRC-001","SRC-002"],"page":"/vitreous-humor/"},
+    {"id":"CLM-079","status":"sourced","statement":"The vitreous humor provides the spatial separation between lens and retina required for the optical system to focus.","sources":["SRC-001"],"page":"/vitreous-humor/"},
+    {"id":"CLM-080","status":"internal-framework","statement":"The vitreous humor is a structural element of focus integrity (FIO-01): it maintains the geometry of the optical system.","sources":["SRC-004"],"page":"/vitreous-humor/"},
+    {"id":"CLM-081","status":"sourced","statement":"The macula is the central zone of the retina, approximately 5 mm in diameter, containing the highest concentration of cone photoreceptors.","sources":["SRC-001","SRC-003"],"page":"/macula/"},
+    {"id":"CLM-082","status":"sourced","statement":"The fovea at the center of the macula is the region of sharpest fixation.","sources":["SRC-001"],"page":"/macula/"},
+    {"id":"CLM-083","status":"internal-framework","statement":"The macula is the anatomical site of signal precision (FIO-03).","sources":["SRC-004"],"page":"/macula/"},
+    {"id":"CLM-084","status":"sourced","statement":"Depth perception is the ability to perceive relative distance from two-dimensional retinal images, achieved through binocular and monocular cues.","sources":["SRC-005","SRC-006"],"page":"/depth-perception/"},
+    {"id":"CLM-085","status":"sourced","statement":"Binocular disparity is the primary cue for depth at close range; stereopsis is the neural process of resolving this disparity.","sources":["SRC-006"],"page":"/depth-perception/"},
+    {"id":"CLM-086","status":"sourced","statement":"Monocular depth cues including perspective, familiar size, occlusion, and motion parallax allow depth inference from a single eye.","sources":["SRC-005"],"page":"/depth-perception/"},
+    {"id":"CLM-087","status":"internal-framework","statement":"Depth perception is an interpretation problem (FIO-05): the system must construct a 3D representation from 2D signals.","sources":["SRC-004"],"page":"/depth-perception/"},
+    {"id":"CLM-088","status":"sourced","statement":"Inattentional blindness is the failure to notice a fully visible but unexpected stimulus when attention is directed elsewhere.","sources":["SRC-005"],"page":"/inattentional-blindness/"},
+    {"id":"CLM-089","status":"sourced","statement":"Inattentional blindness demonstrates that conscious visual awareness requires attention as well as sensory input.","sources":["SRC-005"],"page":"/inattentional-blindness/"},
+    {"id":"CLM-090","status":"sourced","statement":"The probability of inattentional blindness increases when the unexpected stimulus is dissimilar to the attended target.","sources":["SRC-005"],"page":"/inattentional-blindness/"},
+    {"id":"CLM-091","status":"internal-framework","statement":"Inattentional blindness is a provenance failure (FIO-04): the input has no provenance in working memory.","sources":["SRC-004"],"page":"/inattentional-blindness/"},
+    {"id":"CLM-092","status":"sourced","statement":"Visual working memory temporarily stores and actively maintains visual information; its capacity is limited to approximately three to four objects.","sources":["SRC-005"],"page":"/visual-working-memory/"},
+    {"id":"CLM-093","status":"sourced","statement":"Visual working memory enables comparison of a current scene with a recently stored representation.","sources":["SRC-005","SRC-006"],"page":"/visual-working-memory/"},
+    {"id":"CLM-094","status":"sourced","statement":"The limited capacity of visual working memory creates predictable failures of comparison and change detection.","sources":["SRC-006"],"page":"/visual-working-memory/"},
+    {"id":"CLM-095","status":"internal-framework","statement":"Visual working memory is the accommodation system of perception (FIO-02).","sources":["SRC-004"],"page":"/visual-working-memory/"},
+    {"id":"CLM-096","status":"sourced","statement":"Object detection identifies and localizes object instances in an image, producing a category label and spatial boundary.","sources":["SRC-007"],"page":"/object-detection/"},
+    {"id":"CLM-097","status":"sourced","statement":"Object detection systems must generalize across scale, orientation, lighting, and occlusion variations.","sources":["SRC-007"],"page":"/object-detection/"},
+    {"id":"CLM-098","status":"sourced","statement":"False positives and false negatives are the symmetric failure modes of detection, controlled by a confidence threshold.","sources":["SRC-007"],"page":"/object-detection/"},
+    {"id":"CLM-099","status":"internal-framework","statement":"Object detection is an interpretation task (FIO-05): it requires correct categorization and correct localization.","sources":["SRC-004"],"page":"/object-detection/"},
+    {"id":"CLM-100","status":"sourced","statement":"Adversarial examples are inputs that have been imperceptibly perturbed to cause incorrect model outputs.","sources":["SRC-007"],"page":"/adversarial-examples/"},
+    {"id":"CLM-101","status":"sourced","statement":"High accuracy on standard benchmarks does not guarantee robustness: a model can fail on inputs that appear normal to a human observer.","sources":["SRC-007"],"page":"/adversarial-examples/"},
+    {"id":"CLM-102","status":"sourced","statement":"Adversarial robustness is a distinct property from standard accuracy and must be specifically engineered.","sources":["SRC-007"],"page":"/adversarial-examples/"},
+    {"id":"CLM-103","status":"internal-framework","statement":"Adversarial examples are signal-noise failures (FIO-03): imperceptible perturbations defeat the signal-noise separation the model relies on.","sources":["SRC-004"],"page":"/adversarial-examples/"},
+    {"id":"CLM-104","status":"sourced","statement":"The aqueous humor is the clear fluid filling the anterior and posterior chambers, supplying nutrients to the avascular cornea and lens.","sources":["SRC-001","SRC-002"],"page":"/aqueous-humor/"},
+    {"id":"CLM-105","status":"sourced","statement":"Aqueous humor is continuously produced by the ciliary body and drained through the trabecular meshwork.","sources":["SRC-001"],"page":"/aqueous-humor/"},
+    {"id":"CLM-106","status":"internal-framework","statement":"The aqueous humor is a structural maintenance element of focus integrity (FIO-01).","sources":["SRC-004"],"page":"/aqueous-humor/"},
+    {"id":"CLM-107","status":"sourced","statement":"The primary visual cortex (V1) receives the principal visual input from the lateral geniculate nucleus and performs the first cortical stage of visual processing.","sources":["SRC-001","SRC-005"],"page":"/visual-cortex/"},
+    {"id":"CLM-108","status":"sourced","statement":"Neurons in V1 are tuned to edge orientation, spatial frequency, and direction of motion, decomposing the retinal image into elementary features.","sources":["SRC-005"],"page":"/visual-cortex/"},
+    {"id":"CLM-109","status":"internal-framework","statement":"The visual cortex is where interpretation begins (FIO-05): cortical failure produces a defect of interpretation rather than of sensing.","sources":["SRC-004"],"page":"/visual-cortex/"},
+    {"id":"CLM-110","status":"sourced","statement":"The pupillary light reflex is the automatic constriction of the pupil in response to increased light, mediated by a reflex arc involving the retina, optic nerve, pretectal nucleus, and iris sphincter.","sources":["SRC-001","SRC-003"],"page":"/pupillary-reflex/"},
+    {"id":"CLM-111","status":"sourced","statement":"The pupillary light reflex is consensual: light directed into one eye produces constriction in both pupils.","sources":["SRC-001"],"page":"/pupillary-reflex/"},
+    {"id":"CLM-112","status":"internal-framework","statement":"The pupillary light reflex is an automatic accommodation mechanism (FIO-02).","sources":["SRC-004"],"page":"/pupillary-reflex/"},
+    {"id":"CLM-113","status":"sourced","statement":"Sustained attention is the capacity to maintain focused attention on a task over an extended period.","sources":["SRC-005"],"page":"/sustained-attention/"},
+    {"id":"CLM-114","status":"sourced","statement":"Vigilance performance typically declines over time on monotonous monitoring tasks — the vigilance decrement.","sources":["SRC-005"],"page":"/sustained-attention/"},
+    {"id":"CLM-115","status":"sourced","statement":"Sustained attention is distinct from selective attention: selective attention concerns which stimulus is prioritized, sustained attention concerns maintaining that prioritization across time.","sources":["SRC-005"],"page":"/sustained-attention/"},
+    {"id":"CLM-116","status":"internal-framework","statement":"Sustained attention is the temporal dimension of perceptual suspension (FIO-01): the vigilance decrement is suspension failure across duration.","sources":["SRC-004"],"page":"/sustained-attention/"},
+    {"id":"CLM-117","status":"sourced","statement":"Change blindness is the failure to detect a substantial change when it coincides with a brief visual disruption.","sources":["SRC-005","SRC-006"],"page":"/change-blindness/"},
+    {"id":"CLM-118","status":"sourced","statement":"Change blindness demonstrates that the visual system does not maintain a complete detailed scene representation.","sources":["SRC-006"],"page":"/change-blindness/"},
+    {"id":"CLM-119","status":"sourced","statement":"Changes to currently attended objects are detected readily; changes to unattended objects frequently go unnoticed.","sources":["SRC-005"],"page":"/change-blindness/"},
+    {"id":"CLM-120","status":"internal-framework","statement":"Change blindness is a provenance failure across time (FIO-04).","sources":["SRC-004"],"page":"/change-blindness/"},
+    {"id":"CLM-121","status":"sourced","statement":"Visual saliency is the property by which some scene elements stand out and attract attention automatically, driven by local feature contrasts.","sources":["SRC-005","SRC-006"],"page":"/visual-saliency/"},
+    {"id":"CLM-122","status":"sourced","statement":"Bottom-up saliency operates rapidly and involuntarily, prioritizing locations before task-driven control is applied.","sources":["SRC-005"],"page":"/visual-saliency/"},
+    {"id":"CLM-123","status":"sourced","statement":"Computational saliency models predict where observers look by computing feature contrast maps.","sources":["SRC-006"],"page":"/visual-saliency/"},
+    {"id":"CLM-124","status":"internal-framework","statement":"Visual saliency is the signal-prioritization stage of perceptual signal separation (FIO-03).","sources":["SRC-004"],"page":"/visual-saliency/"},
+    {"id":"CLM-125","status":"sourced","statement":"Geometric calibration establishes the relationship between a camera's image coordinates and the 3D world.","sources":["SRC-007"],"page":"/model-calibration/"},
+    {"id":"CLM-126","status":"sourced","statement":"Accurate calibration is a prerequisite for tasks depending on spatial measurement; calibration error propagates into every downstream geometric estimate.","sources":["SRC-007"],"page":"/model-calibration/"},
+    {"id":"CLM-127","status":"sourced","statement":"Calibration can drift over time due to thermal, mechanical, or optical changes.","sources":["SRC-007"],"page":"/model-calibration/"},
+    {"id":"CLM-128","status":"internal-framework","statement":"Calibration is the suspension system of machine vision (FIO-01): it holds the model's spatial reference frame in place.","sources":["SRC-004"],"page":"/model-calibration/"},
+    {"id":"CLM-129","status":"sourced","statement":"Domain shift occurs when deployment input distribution differs from training distribution, degrading performance.","sources":["SRC-007"],"page":"/domain-shift/"},
+    {"id":"CLM-130","status":"sourced","statement":"Common sources include changes in lighting, sensor characteristics, geographic context, and object appearance.","sources":["SRC-007"],"page":"/domain-shift/"},
+    {"id":"CLM-131","status":"sourced","statement":"Domain adaptation and domain generalization address performance across distribution shift.","sources":["SRC-007"],"page":"/domain-shift/"},
+    {"id":"CLM-132","status":"internal-framework","statement":"Domain shift is the accommodation failure of machine vision (FIO-02).","sources":["SRC-004"],"page":"/domain-shift/"},
+    {"id":"CLM-133","status":"sourced","statement":"The fovea centralis is a shallow depression at the centre of the macula, approximately 1.5 mm in diameter, containing the highest concentration of cone photoreceptors in the eye.","sources":["SRC-001","SRC-003"],"page":"/fovea-centralis/"},
+    {"id":"CLM-134","status":"sourced","statement":"At the foveal centre, overlying retinal layers are displaced laterally, leaving only cone photoreceptors to receive the focused image with minimal optical scatter.","sources":["SRC-001"],"page":"/fovea-centralis/"},
+    {"id":"CLM-135","status":"sourced","statement":"The fovea contains no rod photoreceptors; it is entirely cone-mediated, conferring high-acuity, colour-sensitive vision in the central visual field.","sources":["SRC-001","SRC-003"],"page":"/fovea-centralis/"},
+    {"id":"CLM-136","status":"internal-framework","statement":"The fovea is the anatomical zero-point of focus integrity (FIO-03): every optical element exists to deliver a clean signal to this location; degradation here is signal-noise failure at the output-critical site.","sources":["SRC-004"],"page":"/fovea-centralis/"},
+    {"id":"CLM-137","status":"sourced","statement":"The optic chiasm is the X-shaped junction at the base of the brain where nasal retinal fibres from each optic nerve cross to the contralateral hemisphere; temporal fibres remain ipsilateral.","sources":["SRC-001","SRC-002"],"page":"/optic-chiasm/"},
+    {"id":"CLM-138","status":"sourced","statement":"Compression of the optic chiasm produces bitemporal hemianopia, loss of both temporal visual fields, because the crossing nasal fibres are selectively damaged.","sources":["SRC-001"],"page":"/optic-chiasm/"},
+    {"id":"CLM-139","status":"internal-framework","statement":"The optic chiasm is a suspension element of the visual pathway (FIO-01): it maintains the structural routing necessary for binocular signal integration; damage collapses the spatial coherence of the combined visual field.","sources":["SRC-004"],"page":"/optic-chiasm/"},
+    {"id":"CLM-140","status":"sourced","statement":"Each optic tract carries post-chiasmatic visual fibres from the ipsilateral temporal retina and the contralateral nasal retina — signals representing the contralateral visual field — from the optic chiasm to the lateral geniculate nucleus.","sources":["SRC-001","SRC-002"],"page":"/optic-tract/"},
+    {"id":"CLM-141","status":"sourced","statement":"The retinotopic organisation of the visual field is preserved through the optic tract: neighbouring fibres carry signals from neighbouring points in the visual field.","sources":["SRC-001"],"page":"/optic-tract/"},
+    {"id":"CLM-142","status":"internal-framework","statement":"The optic tract is a suspension element of the visual pathway (FIO-01): a non-redundant structural conduit whose failure collapses signal delivery to the cortex regardless of optical quality.","sources":["SRC-004"],"page":"/optic-tract/"},
+    {"id":"CLM-143","status":"sourced","statement":"The lateral geniculate nucleus is a layered thalamic relay that receives visual input from the optic tract and projects to the primary visual cortex, maintaining retinotopic organisation and segregating signals into magnocellular and parvocellular streams.","sources":["SRC-001","SRC-005"],"page":"/lateral-geniculate-nucleus/"},
+    {"id":"CLM-144","status":"sourced","statement":"The LGN receives substantially more input from cortical feedback than from the retina, making it an active gating station that modulates signals based on attentional state and arousal.","sources":["SRC-005"],"page":"/lateral-geniculate-nucleus/"},
+    {"id":"CLM-145","status":"internal-framework","statement":"The lateral geniculate nucleus is a suspension element of the visual pathway (FIO-01): it maintains the active signal channel between the retina and the visual cortex.","sources":["SRC-004"],"page":"/lateral-geniculate-nucleus/"},
+    {"id":"CLM-146","status":"sourced","statement":"Binocular vision integrates input from two laterally separated eyes into a single percept; binocular disparity is the primary cue for stereoscopic depth at close range.","sources":["SRC-001","SRC-005"],"page":"/binocular-vision/"},
+    {"id":"CLM-147","status":"sourced","statement":"Binocular fusion requires the oculomotor system to maintain alignment of both eyes on the same point; misalignment produces diplopia or suppression of one eye's input.","sources":["SRC-005"],"page":"/binocular-vision/"},
+    {"id":"CLM-148","status":"sourced","statement":"Binocular rivalry results in perceptual alternation between incompatible images from the two eyes, demonstrating active perceptual selection.","sources":["SRC-006"],"page":"/binocular-vision/"},
+    {"id":"CLM-149","status":"internal-framework","statement":"Binocular vision is an interpretation problem (FIO-05): the system must construct a depth representation from the disparity between two signals; failure produces a qualitatively wrong spatial model.","sources":["SRC-004"],"page":"/binocular-vision/"},
+    {"id":"CLM-150","status":"sourced","statement":"The oculomotor system controls eye movement through six extraocular muscles per eye, producing saccades, smooth pursuit, vergence, and the vestibulo-ocular reflex to direct and stabilise gaze.","sources":["SRC-001","SRC-003"],"page":"/oculomotor-system/"},
+    {"id":"CLM-151","status":"sourced","statement":"Vergence eye movements work together with lens accommodation and the pupillary light reflex as the accommodative near triad.","sources":["SRC-001"],"page":"/oculomotor-system/"},
+    {"id":"CLM-152","status":"sourced","statement":"Saccadic suppression reduces visual sensitivity during saccades; the perceived stability of the visual world is a perceptual construction from fixation-period snapshots.","sources":["SRC-003"],"page":"/oculomotor-system/"},
+    {"id":"CLM-153","status":"internal-framework","statement":"The oculomotor system defines the accommodation range of gaze (FIO-02): it sets the envelope of positions across which high-acuity fixation can be directed.","sources":["SRC-004"],"page":"/oculomotor-system/"},
+    {"id":"CLM-154","status":"sourced","statement":"The sclera is the tough, fibrous outer coat of the eye forming approximately five-sixths of the globe's outer surface, maintaining the eye's spherical shape and providing extraocular muscle insertion points.","sources":["SRC-001","SRC-002"],"page":"/sclera/"},
+    {"id":"CLM-155","status":"sourced","statement":"At the optic nerve head the sclera forms the lamina cribrosa through which retinal ganglion cell axons exit; elevated intraocular pressure damages this structure in glaucoma.","sources":["SRC-001"],"page":"/sclera/"},
+    {"id":"CLM-156","status":"internal-framework","statement":"The sclera is a suspension element of the eye's optical system (FIO-01): it maintains the geometric shell within which the optical components are held in their correct spatial relationships.","sources":["SRC-004"],"page":"/sclera/"},
+    {"id":"CLM-157","status":"sourced","statement":"The choroid is the highly vascular layer between the sclera and retina, supplying oxygen and nutrients to the outer retinal layers including the photoreceptors and retinal pigment epithelium, which are avascular.","sources":["SRC-001","SRC-003"],"page":"/choroid/"},
+    {"id":"CLM-158","status":"sourced","statement":"The choriocapillaris beneath the macula has the highest blood flow per unit tissue of any structure in the body, reflecting the exceptional metabolic demands of macular photoreceptors.","sources":["SRC-001"],"page":"/choroid/"},
+    {"id":"CLM-159","status":"internal-framework","statement":"The choroid is a metabolic suspension element of focus integrity (FIO-01): it sustains the living infrastructure of phototransduction; its failure collapses retinal signal production regardless of the quality of the focused image.","sources":["SRC-004"],"page":"/choroid/"}
   ]
 }

@@ -17,7 +17,7 @@ canonical: https://zonules.com/image-provenance/
 last_reviewed: 2026-06-12
 claims: [CLM-042, CLM-043, CLM-044, CLM-045]
 sources: [SRC-008, SRC-004]
-related_terms: [machine-vision, deepfake-detection, visual-perception]
+related_terms: [machine-vision, deepfake-detection, synthetic-media, visual-perception]
 seo_title: "Image Provenance — The Origin Record Behind Visual Truth | Zonules.com"
 meta_description: "Image provenance records where an image came from and how it was changed. In the focus-integrity thesis it is the infrastructure of provenance integrity (FIO-04)."
 ---
@@ -64,6 +64,7 @@ Like deepfake detection, provenance has no anatomical counterpart. It is a purpo
 
 - [Machine Vision](/machine-vision/) — the layer anchor this specializes
 - [Deepfake Detection](/deepfake-detection/) — the inference method provenance complements
+- [Synthetic Media](/synthetic-media/) — the generated content whose origin provenance records
 - [Visual Perception](/visual-perception/) — the human judgment provenance externalizes
 
 ## Reference Notes

@@ -259,3 +259,38 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
 - **Preserved:** Sprint 3D corpus (101 routes), README.md, ASSET_THESIS.md, and all governance files unchanged in substance. No API, no Cloudflare Workers, no forms, no newsletter backend, no payment widgets, no third-party scripts introduced.
 - **Type:** Publishing correction; routes v1.5→v1.6; no corpus or claim changes.
 - **Affected:** `scripts/{build_gateway,build_engine,build_acquire,build_site,generate_sitemap,validate_all}.py`, `data/routes.json`, new root publication tree (`index.html`, `/<slug>/index.html`, `assets/`, `sitemap.xml`, `robots.txt`, `.nojekyll`); removed `site/` and the moved `static/` outputs.
+
+## 2026-06-13 — Interface Freeze After Root Publication
+
+### Status
+
+APPROVED — Public gateway interface accepted for the current phase.
+
+### Decision
+
+The current Zonules.com public interface is approved as sufficient for the next development phase.
+
+No major visual redesign, animation expansion, layout restructuring, or interface experimentation is required at this stage.
+
+### Rationale
+
+The live interface now communicates the governing thesis clearly, no longer exposes README-style repository documentation, and presents Zonules.com as a sovereign visual reference system rather than a generic content site.
+
+The suspension-reveal interface embodies the core thesis: hidden structural tension makes focus possible.
+
+### Freeze Rule
+
+Interface changes are frozen except for:
+
+- broken layout fixes
+- accessibility defects
+- mobile readability defects
+- broken links
+- validation failures
+- security or publishing issues
+
+No aesthetic-only redesign is permitted until the English canonical corpus is substantially expanded.
+
+### Next Priority
+
+Continue corpus expansion and reference authority building.

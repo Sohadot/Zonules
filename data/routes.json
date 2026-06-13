@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "1.6",
+  "version": "1.9",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -3445,6 +3445,1830 @@
         "CLM-353",
         "CLM-354",
         "CLM-355"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/receptive-fields/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/receptive-fields/",
+      "hreflang_group": "receptive-fields",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/receptive-fields.md",
+      "seo_title": "Receptive Fields | Zonules.com",
+      "meta_description": "A receptive field is the region of sensory space within which a stimulus activates a given sensory neuron.",
+      "required_internal_links": [
+        "/retina/",
+        "/photoreceptors/",
+        "/visual-cortex/",
+        "/dark-adaptation/",
+        "/light-adaptation/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-356",
+        "CLM-357",
+        "CLM-358",
+        "CLM-359"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/dark-adaptation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/dark-adaptation/",
+      "hreflang_group": "dark-adaptation",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/dark-adaptation.md",
+      "seo_title": "Dark Adaptation | Zonules.com",
+      "meta_description": "Dark adaptation is the process by which the visual system increases its sensitivity after exposure to bright conditions, driven by photoreceptor recovery.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/scotopic-vision/",
+        "/receptive-fields/",
+        "/light-adaptation/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-360",
+        "CLM-361",
+        "CLM-362",
+        "CLM-363"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/light-adaptation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/light-adaptation/",
+      "hreflang_group": "light-adaptation",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/light-adaptation.md",
+      "seo_title": "Light Adaptation | Zonules.com",
+      "meta_description": "Light adaptation is the process by which the visual system reduces its sensitivity and adjusts its operating range in response to increased illumination.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/pupillary-reflex/",
+        "/dark-adaptation/",
+        "/receptive-fields/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-364",
+        "CLM-365",
+        "CLM-366",
+        "CLM-367"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/stereopsis/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/stereopsis/",
+      "hreflang_group": "stereopsis",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/stereopsis.md",
+      "seo_title": "Stereopsis | Zonules.com",
+      "meta_description": "Stereopsis is the perception of depth produced by the visual system's comparison of the slightly different images received by each eye.",
+      "required_internal_links": [
+        "/binocular-vision/",
+        "/depth-perception/",
+        "/vergence/",
+        "/visual-field/",
+        "/color-constancy/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-368",
+        "CLM-369",
+        "CLM-370",
+        "CLM-371"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/color-constancy/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/color-constancy/",
+      "hreflang_group": "color-constancy",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/color-constancy.md",
+      "seo_title": "Color Constancy | Zonules.com",
+      "meta_description": "Color constancy is the ability of the visual system to perceive the surface color of objects as stable despite changes in the spectral composition of the i",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/color-perception/",
+        "/stereopsis/",
+        "/visual-field/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-372",
+        "CLM-373",
+        "CLM-374",
+        "CLM-375"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/visual-field/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-field/",
+      "hreflang_group": "visual-field",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/visual-field.md",
+      "seo_title": "Visual Field | Zonules.com",
+      "meta_description": "The visual field is the spatial extent of the environment that can be perceived when fixation is held steady, bounded by the anatomy of the retina and opti",
+      "required_internal_links": [
+        "/fovea-centralis/",
+        "/optic-nerve/",
+        "/scotoma/",
+        "/stereopsis/",
+        "/vergence/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-376",
+        "CLM-377",
+        "CLM-378",
+        "CLM-379"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/vergence/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/vergence/",
+      "hreflang_group": "vergence",
+      "layer": "L1",
+      "cluster": "oculomotor",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/vergence.md",
+      "seo_title": "Vergence | Zonules.com",
+      "meta_description": "Vergence refers to the disjunctive movements of the two eyes that maintain alignment of the visual axes on objects at different distances.",
+      "required_internal_links": [
+        "/binocular-vision/",
+        "/lens-accommodation/",
+        "/oculomotor-system/",
+        "/stereopsis/",
+        "/visual-field/",
+        "/accommodation-reflex/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-380",
+        "CLM-381",
+        "CLM-382",
+        "CLM-383"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/predictive-coding/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/predictive-coding/",
+      "hreflang_group": "predictive-coding",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/predictive-coding.md",
+      "seo_title": "Predictive Coding | Zonules.com",
+      "meta_description": "Predictive coding is a framework in which the brain continuously generates predictions about sensory input and propagates only the residual error signals n",
+      "required_internal_links": [
+        "/top-down-processing/",
+        "/visual-inference/",
+        "/active-inference/",
+        "/face-perception/",
+        "/object-recognition/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-384",
+        "CLM-385",
+        "CLM-386",
+        "CLM-387"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/face-perception/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/face-perception/",
+      "hreflang_group": "face-perception",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/face-perception.md",
+      "seo_title": "Face Perception | Zonules.com",
+      "meta_description": "Face perception is the visual processing of facial information, including identity, emotional expression, gaze direction, and age, supported by dedicated n",
+      "required_internal_links": [
+        "/object-recognition/",
+        "/predictive-coding/",
+        "/visual-cortex/",
+        "/scene-recognition/",
+        "/visual-illusions/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-388",
+        "CLM-389",
+        "CLM-390",
+        "CLM-391"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/object-recognition/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/object-recognition/",
+      "hreflang_group": "object-recognition",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/object-recognition.md",
+      "seo_title": "Object Recognition | Zonules.com",
+      "meta_description": "Object recognition is the visual process by which the identity of an object is determined from its projected two-dimensional image.",
+      "required_internal_links": [
+        "/face-perception/",
+        "/scene-recognition/",
+        "/visual-crowding/",
+        "/pattern-recognition/",
+        "/image-classification/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-392",
+        "CLM-393",
+        "CLM-394",
+        "CLM-395"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/scene-recognition/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/scene-recognition/",
+      "hreflang_group": "scene-recognition",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/scene-recognition.md",
+      "seo_title": "Scene Recognition | Zonules.com",
+      "meta_description": "Scene recognition is the process by which the visual system assigns a global meaning to a visual environment from its spatial layout and statistical regula",
+      "required_internal_links": [
+        "/object-recognition/",
+        "/visual-scene-parsing/",
+        "/gestalt-principles/",
+        "/visual-crowding/",
+        "/scene-understanding/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-396",
+        "CLM-397",
+        "CLM-398",
+        "CLM-399"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/visual-crowding/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-crowding/",
+      "hreflang_group": "visual-crowding",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/visual-crowding.md",
+      "seo_title": "Visual Crowding | Zonules.com",
+      "meta_description": "Visual crowding is the impaired recognition of peripheral targets caused by the presence of nearby flanking elements.",
+      "required_internal_links": [
+        "/visual-acuity/",
+        "/fovea-centralis/",
+        "/scene-recognition/",
+        "/object-recognition/",
+        "/selective-attention/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-400",
+        "CLM-401",
+        "CLM-402",
+        "CLM-403"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/attention-mechanism/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/attention-mechanism/",
+      "hreflang_group": "attention-mechanism",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/attention-mechanism.md",
+      "seo_title": "Attention Mechanism | Zonules.com",
+      "meta_description": "In machine learning, an attention mechanism is a learned weighting function that selects the most relevant parts of an input representation before producin",
+      "required_internal_links": [
+        "/transformer-architecture/",
+        "/convolutional-neural-networks/",
+        "/neural-network-interpretability/",
+        "/few-shot-learning/",
+        "/visual-tracking/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-404",
+        "CLM-405",
+        "CLM-406",
+        "CLM-407"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/transformer-architecture/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/transformer-architecture/",
+      "hreflang_group": "transformer-architecture",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/transformer-architecture.md",
+      "seo_title": "Transformer Architecture | Zonules.com",
+      "meta_description": "The transformer is a neural network architecture that processes input sequences by stacking self-attention layers with feed-forward networks, replacing rec",
+      "required_internal_links": [
+        "/attention-mechanism/",
+        "/convolutional-neural-networks/",
+        "/vision-language-models/",
+        "/transfer-learning/",
+        "/self-supervised-learning/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-408",
+        "CLM-409",
+        "CLM-410",
+        "CLM-411"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/convolutional-neural-networks/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/convolutional-neural-networks/",
+      "hreflang_group": "convolutional-neural-networks",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/convolutional-neural-networks.md",
+      "seo_title": "Convolutional Neural Networks | Zonules.com",
+      "meta_description": "A convolutional neural network is a neural network that uses learned, spatially-shared filters to detect local patterns at multiple scales.",
+      "required_internal_links": [
+        "/attention-mechanism/",
+        "/transformer-architecture/",
+        "/feature-extraction/",
+        "/image-classification/",
+        "/object-detection/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-412",
+        "CLM-413",
+        "CLM-414",
+        "CLM-415"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/few-shot-learning/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/few-shot-learning/",
+      "hreflang_group": "few-shot-learning",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/few-shot-learning.md",
+      "seo_title": "Few-Shot Learning | Zonules.com",
+      "meta_description": "Few-shot learning is the ability of a model to recognize new categories or tasks from a small number of examples after pre-training on a large corpus.",
+      "required_internal_links": [
+        "/transfer-learning/",
+        "/domain-shift/",
+        "/generative-models/",
+        "/zero-shot-learning/",
+        "/attention-mechanism/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-416",
+        "CLM-417",
+        "CLM-418",
+        "CLM-419"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/generative-models/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/generative-models/",
+      "hreflang_group": "generative-models",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/generative-models.md",
+      "seo_title": "Generative Models | Zonules.com",
+      "meta_description": "A generative model is a statistical model that learns the joint distribution of inputs and can produce new samples indistinguishable from training data.",
+      "required_internal_links": [
+        "/deepfake-detection/",
+        "/image-provenance/",
+        "/synthetic-media/",
+        "/few-shot-learning/",
+        "/image-synthesis/"
+      ],
+      "source_requirements": [
+        "SRC-007",
+        "SRC-008"
+      ],
+      "claim_requirements": [
+        "CLM-420",
+        "CLM-421",
+        "CLM-422",
+        "CLM-423"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/photopic-vision/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/photopic-vision/",
+      "hreflang_group": "photopic-vision",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/photopic-vision.md",
+      "seo_title": "Photopic Vision | Zonules.com",
+      "meta_description": "Photopic vision is the visual function of the eye under well-lit conditions, mediated by cone photoreceptors.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/fovea-centralis/",
+        "/color-perception/",
+        "/scotopic-vision/",
+        "/light-adaptation/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-424",
+        "CLM-425",
+        "CLM-426",
+        "CLM-427"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/scotopic-vision/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/scotopic-vision/",
+      "hreflang_group": "scotopic-vision",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/scotopic-vision.md",
+      "seo_title": "Scotopic Vision | Zonules.com",
+      "meta_description": "Scotopic vision is the visual function of the eye under dim light conditions, mediated by rod photoreceptors.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/dark-adaptation/",
+        "/photopic-vision/",
+        "/retina/",
+        "/visual-acuity/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-428",
+        "CLM-429",
+        "CLM-430",
+        "CLM-431"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/nystagmus/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/nystagmus/",
+      "hreflang_group": "nystagmus",
+      "layer": "L1",
+      "cluster": "oculomotor",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/nystagmus.md",
+      "seo_title": "Nystagmus | Zonules.com",
+      "meta_description": "Nystagmus is an involuntary, rhythmic oscillation of the eyes that impairs fixation stability and is the most common oculomotor disorder.",
+      "required_internal_links": [
+        "/oculomotor-system/",
+        "/fixation/",
+        "/saccades/",
+        "/vestibulo-ocular-reflex/",
+        "/optokinetic-reflex/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-432",
+        "CLM-433",
+        "CLM-434",
+        "CLM-435"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/scotoma/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/scotoma/",
+      "hreflang_group": "scotoma",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/scotoma.md",
+      "seo_title": "Scotoma | Zonules.com",
+      "meta_description": "A scotoma is a region of absent or diminished vision within the visual field surrounded by areas of normal or relatively normal vision.",
+      "required_internal_links": [
+        "/blind-spot/",
+        "/visual-field/",
+        "/optic-nerve/",
+        "/retina/",
+        "/inattentional-blindness/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-436",
+        "CLM-437",
+        "CLM-438",
+        "CLM-439"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/accommodation-reflex/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/accommodation-reflex/",
+      "hreflang_group": "accommodation-reflex",
+      "layer": "L1",
+      "cluster": "oculomotor",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/accommodation-reflex.md",
+      "seo_title": "Accommodation Reflex | Zonules.com",
+      "meta_description": "The accommodation reflex is the coordinated response of the visual system to bring a near object into focus, comprising lens accommodation, pupillary const",
+      "required_internal_links": [
+        "/lens-accommodation/",
+        "/crystalline-lens/",
+        "/pupillary-reflex/",
+        "/vergence/",
+        "/ciliary-body/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-440",
+        "CLM-441",
+        "CLM-442",
+        "CLM-443"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/active-inference/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/active-inference/",
+      "hreflang_group": "active-inference",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/active-inference.md",
+      "seo_title": "Active Inference | Zonules.com",
+      "meta_description": "Active inference is the framework in which organisms minimize surprise by both updating internal models (perception) and acting on the environment to match",
+      "required_internal_links": [
+        "/predictive-coding/",
+        "/visual-inference/",
+        "/top-down-processing/",
+        "/mental-imagery/",
+        "/metacognition/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-444",
+        "CLM-445",
+        "CLM-446",
+        "CLM-447"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/mental-imagery/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/mental-imagery/",
+      "hreflang_group": "mental-imagery",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/mental-imagery.md",
+      "seo_title": "Mental Imagery | Zonules.com",
+      "meta_description": "Mental imagery is the experience of visual representations in the absence of corresponding external stimulation.",
+      "required_internal_links": [
+        "/active-inference/",
+        "/predictive-coding/",
+        "/visual-working-memory/",
+        "/spatial-cognition/",
+        "/visual-inference/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-448",
+        "CLM-449",
+        "CLM-450",
+        "CLM-451"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/multisensory-integration/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/multisensory-integration/",
+      "hreflang_group": "multisensory-integration",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/multisensory-integration.md",
+      "seo_title": "Multisensory Integration | Zonules.com",
+      "meta_description": "Multisensory integration is the process by which the brain combines signals from different sensory modalities into a unified percept.",
+      "required_internal_links": [
+        "/binding-problem/",
+        "/perceptual-constancy/",
+        "/spatial-cognition/",
+        "/active-inference/",
+        "/temporal-integration/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-452",
+        "CLM-453",
+        "CLM-454",
+        "CLM-455"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/spatial-cognition/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/spatial-cognition/",
+      "hreflang_group": "spatial-cognition",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/spatial-cognition.md",
+      "seo_title": "Spatial Cognition | Zonules.com",
+      "meta_description": "Spatial cognition is the set of mental processes by which the brain represents, navigates, and reasons about spatial relationships and locations in the env",
+      "required_internal_links": [
+        "/mental-imagery/",
+        "/multisensory-integration/",
+        "/depth-perception/",
+        "/visual-working-memory/",
+        "/visual-slam/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-456",
+        "CLM-457",
+        "CLM-458",
+        "CLM-459"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/perceptual-grouping/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/perceptual-grouping/",
+      "hreflang_group": "perceptual-grouping",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/perceptual-grouping.md",
+      "seo_title": "Perceptual Grouping | Zonules.com",
+      "meta_description": "Perceptual grouping is the visual system's tendency to organize elements of the visual scene into coherent units based on proximity, similarity, continuity",
+      "required_internal_links": [
+        "/gestalt-principles/",
+        "/figure-ground/",
+        "/visual-saliency/",
+        "/bottom-up-processing/",
+        "/scene-recognition/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-460",
+        "CLM-461",
+        "CLM-462",
+        "CLM-463"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/temporal-integration/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/temporal-integration/",
+      "hreflang_group": "temporal-integration",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/temporal-integration.md",
+      "seo_title": "Temporal Integration | Zonules.com",
+      "meta_description": "Temporal integration is the process by which the visual system combines stimuli presented within a brief time window into a single perceptual event.",
+      "required_internal_links": [
+        "/apparent-motion/",
+        "/attentional-blink/",
+        "/visual-masking/",
+        "/multisensory-integration/",
+        "/motion-perception/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-464",
+        "CLM-465",
+        "CLM-466",
+        "CLM-467"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/metacognition/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/metacognition/",
+      "hreflang_group": "metacognition",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/metacognition.md",
+      "seo_title": "Metacognition | Zonules.com",
+      "meta_description": "Metacognition is the capacity to monitor and evaluate one's own cognitive processes, including assessing the confidence and accuracy of one's own perceptua",
+      "required_internal_links": [
+        "/active-inference/",
+        "/perceptual-error/",
+        "/visual-inference/",
+        "/model-calibration/",
+        "/neural-network-interpretability/",
+        "/perceptual-adaptation/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-468",
+        "CLM-469",
+        "CLM-470",
+        "CLM-471"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/self-supervised-learning/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/self-supervised-learning/",
+      "hreflang_group": "self-supervised-learning",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/self-supervised-learning.md",
+      "seo_title": "Self-Supervised Learning | Zonules.com",
+      "meta_description": "Self-supervised learning is a training paradigm in which a model learns representations by predicting parts of the input from other parts, without human-la",
+      "required_internal_links": [
+        "/transformer-architecture/",
+        "/contrastive-learning/",
+        "/transfer-learning/",
+        "/feature-extraction/",
+        "/zero-shot-learning/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-472",
+        "CLM-473",
+        "CLM-474",
+        "CLM-475"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/contrastive-learning/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/contrastive-learning/",
+      "hreflang_group": "contrastive-learning",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/contrastive-learning.md",
+      "seo_title": "Contrastive Learning | Zonules.com",
+      "meta_description": "Contrastive learning is a self-supervised training objective that pulls representations of similar inputs together and pushes representations of dissimilar",
+      "required_internal_links": [
+        "/self-supervised-learning/",
+        "/feature-extraction/",
+        "/adversarial-examples/",
+        "/data-augmentation/",
+        "/domain-shift/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-476",
+        "CLM-477",
+        "CLM-478",
+        "CLM-479"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/zero-shot-learning/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/zero-shot-learning/",
+      "hreflang_group": "zero-shot-learning",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/zero-shot-learning.md",
+      "seo_title": "Zero-Shot Learning | Zonules.com",
+      "meta_description": "Zero-shot learning is the ability of a model to correctly classify or describe inputs from categories it has never seen during training, using semantic des",
+      "required_internal_links": [
+        "/few-shot-learning/",
+        "/vision-language-models/",
+        "/out-of-distribution-detection/",
+        "/domain-shift/",
+        "/self-supervised-learning/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-480",
+        "CLM-481",
+        "CLM-482",
+        "CLM-483"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/video-understanding/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/video-understanding/",
+      "hreflang_group": "video-understanding",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/video-understanding.md",
+      "seo_title": "Video Understanding | Zonules.com",
+      "meta_description": "Video understanding encompasses the machine vision tasks of recognizing actions, tracking objects, and modeling temporal relationships across video frame s",
+      "required_internal_links": [
+        "/optical-flow/",
+        "/visual-tracking/",
+        "/action-recognition/",
+        "/visual-slam/",
+        "/object-detection/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-484",
+        "CLM-485",
+        "CLM-486",
+        "CLM-487"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/action-recognition/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/action-recognition/",
+      "hreflang_group": "action-recognition",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/action-recognition.md",
+      "seo_title": "Action Recognition | Zonules.com",
+      "meta_description": "Action recognition is the task of identifying the action being performed in a video or sequence of images based on the temporal pattern of motion and appea",
+      "required_internal_links": [
+        "/video-understanding/",
+        "/optical-flow/",
+        "/pose-estimation/",
+        "/motion-perception/",
+        "/scene-understanding/",
+        "/gaze-estimation/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-488",
+        "CLM-489",
+        "CLM-490",
+        "CLM-491"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/optokinetic-reflex/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/optokinetic-reflex/",
+      "hreflang_group": "optokinetic-reflex",
+      "layer": "L1",
+      "cluster": "oculomotor",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/optokinetic-reflex.md",
+      "seo_title": "Optokinetic Reflex | Zonules.com",
+      "meta_description": "The optokinetic reflex is a reflexive eye movement that stabilizes the visual image during sustained whole-field motion by rotating the eyes in the directi",
+      "required_internal_links": [
+        "/smooth-pursuit/",
+        "/vestibulo-ocular-reflex/",
+        "/saccades/",
+        "/oculomotor-system/",
+        "/nystagmus/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-492",
+        "CLM-493",
+        "CLM-494",
+        "CLM-495"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/vestibulo-ocular-reflex/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/vestibulo-ocular-reflex/",
+      "hreflang_group": "vestibulo-ocular-reflex",
+      "layer": "L1",
+      "cluster": "oculomotor",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/vestibulo-ocular-reflex.md",
+      "seo_title": "Vestibulo-Ocular Reflex | Zonules.com",
+      "meta_description": "The vestibulo-ocular reflex stabilizes gaze during head movement by producing compensatory eye movements in the opposite direction to head rotation.",
+      "required_internal_links": [
+        "/optokinetic-reflex/",
+        "/extraocular-muscles/",
+        "/oculomotor-system/",
+        "/fixation/",
+        "/saccades/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-496",
+        "CLM-497",
+        "CLM-498",
+        "CLM-499"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/spatial-frequency/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/spatial-frequency/",
+      "hreflang_group": "spatial-frequency",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/spatial-frequency.md",
+      "seo_title": "Spatial Frequency | Zonules.com",
+      "meta_description": "Spatial frequency describes the periodicity of luminance variation across space, measured in cycles per degree of visual angle, and is a fundamental descri",
+      "required_internal_links": [
+        "/contrast-sensitivity/",
+        "/visual-acuity/",
+        "/receptive-fields/",
+        "/photoreceptors/",
+        "/contrast-threshold/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-500",
+        "CLM-501",
+        "CLM-502",
+        "CLM-503"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/contrast-threshold/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/contrast-threshold/",
+      "hreflang_group": "contrast-threshold",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/contrast-threshold.md",
+      "seo_title": "Contrast Threshold | Zonules.com",
+      "meta_description": "The contrast threshold is the minimum difference in luminance between a target and its background that is reliably detectable by the visual system.",
+      "required_internal_links": [
+        "/contrast-sensitivity/",
+        "/spatial-frequency/",
+        "/visual-resolution/",
+        "/receptive-fields/",
+        "/photoreceptors/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-504",
+        "CLM-505",
+        "CLM-506",
+        "CLM-507"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/visual-resolution/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-resolution/",
+      "hreflang_group": "visual-resolution",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/visual-resolution.md",
+      "seo_title": "Visual Resolution | Zonules.com",
+      "meta_description": "Visual resolution is the ability of the eye to distinguish fine detail, measured as the minimum angular separation of two points perceived as distinct.",
+      "required_internal_links": [
+        "/visual-acuity/",
+        "/fovea-centralis/",
+        "/contrast-threshold/",
+        "/spatial-frequency/",
+        "/contrast-sensitivity/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-508",
+        "CLM-509",
+        "CLM-510",
+        "CLM-511"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/bottom-up-processing/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/bottom-up-processing/",
+      "hreflang_group": "bottom-up-processing",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/bottom-up-processing.md",
+      "seo_title": "Bottom-Up Processing | Zonules.com",
+      "meta_description": "Bottom-up processing refers to perceptual analysis driven by the properties of the sensory input itself, proceeding from local features to global interpret",
+      "required_internal_links": [
+        "/top-down-processing/",
+        "/visual-saliency/",
+        "/perceptual-grouping/",
+        "/figure-ground/",
+        "/feature-based-attention/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-512",
+        "CLM-513",
+        "CLM-514",
+        "CLM-515"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/cognitive-load/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/cognitive-load/",
+      "hreflang_group": "cognitive-load",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/cognitive-load.md",
+      "seo_title": "Cognitive Load | Zonules.com",
+      "meta_description": "Cognitive load is the total amount of mental effort being used in working memory at a given time, limiting the capacity available for perception and task p",
+      "required_internal_links": [
+        "/visual-working-memory/",
+        "/inattentional-blindness/",
+        "/attentional-blink/",
+        "/perceptual-load/",
+        "/sustained-attention/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-516",
+        "CLM-517",
+        "CLM-518",
+        "CLM-519"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/attentional-blink/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/attentional-blink/",
+      "hreflang_group": "attentional-blink",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/attentional-blink.md",
+      "seo_title": "Attentional Blink | Zonules.com",
+      "meta_description": "The attentional blink is the temporary impairment in detecting a second target that occurs when it follows a first target within roughly 200-500 ms in a ra",
+      "required_internal_links": [
+        "/temporal-integration/",
+        "/cognitive-load/",
+        "/visual-working-memory/",
+        "/change-blindness/",
+        "/inattentional-blindness/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-520",
+        "CLM-521",
+        "CLM-522",
+        "CLM-523"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/perceptual-adaptation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/perceptual-adaptation/",
+      "hreflang_group": "perceptual-adaptation",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/perceptual-adaptation.md",
+      "seo_title": "Perceptual Adaptation | Zonules.com",
+      "meta_description": "Perceptual adaptation is the process by which the visual system recalibrates its sensitivity or interpretation framework following prolonged exposure to a ",
+      "required_internal_links": [
+        "/perceptual-constancy/",
+        "/dark-adaptation/",
+        "/light-adaptation/",
+        "/perceptual-priming/",
+        "/visual-illusions/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-524",
+        "CLM-525",
+        "CLM-526",
+        "CLM-527"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/visual-attention/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-attention/",
+      "hreflang_group": "visual-attention",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/visual-attention.md",
+      "seo_title": "Visual Attention | Zonules.com",
+      "meta_description": "Visual attention is the selective processing of part of the visual scene at the expense of other parts, determining what receives deeper analysis and reach",
+      "required_internal_links": [
+        "/selective-attention/",
+        "/spatial-attention/",
+        "/feature-based-attention/",
+        "/sustained-attention/",
+        "/attention-capture/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-528",
+        "CLM-529",
+        "CLM-530",
+        "CLM-531"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/spatial-attention/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/spatial-attention/",
+      "hreflang_group": "spatial-attention",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/spatial-attention.md",
+      "seo_title": "Spatial Attention | Zonules.com",
+      "meta_description": "Spatial attention is the selective enhancement of processing for stimuli at a particular location in the visual field, operating like a spotlight that brig",
+      "required_internal_links": [
+        "/visual-attention/",
+        "/feature-based-attention/",
+        "/selective-attention/",
+        "/visual-search/",
+        "/inattentional-blindness/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-532",
+        "CLM-533",
+        "CLM-534",
+        "CLM-535"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/feature-based-attention/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/feature-based-attention/",
+      "hreflang_group": "feature-based-attention",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/feature-based-attention.md",
+      "seo_title": "Feature-Based Attention | Zonules.com",
+      "meta_description": "Feature-based attention is the selective enhancement of processing for a particular visual feature value — a color, orientation, or motion direction — acro",
+      "required_internal_links": [
+        "/visual-attention/",
+        "/spatial-attention/",
+        "/bottom-up-processing/",
+        "/visual-search/",
+        "/attention-capture/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-536",
+        "CLM-537",
+        "CLM-538",
+        "CLM-539"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/image-quality-assessment/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/image-quality-assessment/",
+      "hreflang_group": "image-quality-assessment",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/image-quality-assessment.md",
+      "seo_title": "Image Quality Assessment | Zonules.com",
+      "meta_description": "Image quality assessment is the task of measuring or predicting the perceptual quality of an image, including degradations from noise, blur, compression, a",
+      "required_internal_links": [
+        "/contrast-sensitivity/",
+        "/adversarial-examples/",
+        "/image-registration/",
+        "/model-calibration/",
+        "/contrastive-learning/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-540",
+        "CLM-541",
+        "CLM-542",
+        "CLM-543"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/visual-question-answering/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-question-answering/",
+      "hreflang_group": "visual-question-answering",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/visual-question-answering.md",
+      "seo_title": "Visual Question Answering | Zonules.com",
+      "meta_description": "Visual question answering is the task of producing a correct textual answer to a natural language question about the content of an image.",
+      "required_internal_links": [
+        "/vision-language-models/",
+        "/scene-graph-generation/",
+        "/visual-grounding/",
+        "/scene-understanding/",
+        "/zero-shot-learning/",
+        "/instance-segmentation/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-544",
+        "CLM-545",
+        "CLM-546",
+        "CLM-547"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/instance-segmentation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/instance-segmentation/",
+      "hreflang_group": "instance-segmentation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/instance-segmentation.md",
+      "seo_title": "Instance Segmentation | Zonules.com",
+      "meta_description": "Instance segmentation is the task of simultaneously detecting, classifying, and producing pixel-level masks for each individual instance of each object cla",
+      "required_internal_links": [
+        "/semantic-segmentation/",
+        "/object-detection/",
+        "/scene-understanding/",
+        "/visual-question-answering/",
+        "/image-quality-assessment/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-548",
+        "CLM-549",
+        "CLM-550",
+        "CLM-551"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/gaze-estimation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/gaze-estimation/",
+      "hreflang_group": "gaze-estimation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/gaze-estimation.md",
+      "seo_title": "Gaze Estimation | Zonules.com",
+      "meta_description": "Gaze estimation is the task of determining the direction in which a person is looking from an image or video of their face or eyes.",
+      "required_internal_links": [
+        "/pose-estimation/",
+        "/visual-tracking/",
+        "/oculomotor-system/",
+        "/fixation/",
+        "/ophthalmic-ai/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-552",
+        "CLM-553",
+        "CLM-554",
+        "CLM-555"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/image-synthesis/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/image-synthesis/",
+      "hreflang_group": "image-synthesis",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/image-synthesis.md",
+      "seo_title": "Image Synthesis | Zonules.com",
+      "meta_description": "Image synthesis is the computational generation of new images from noise, text descriptions, or partial inputs using learned statistical models.",
+      "required_internal_links": [
+        "/generative-models/",
+        "/deepfake-detection/",
+        "/synthetic-media/",
+        "/image-provenance/",
+        "/out-of-distribution-detection/"
+      ],
+      "source_requirements": [
+        "SRC-007",
+        "SRC-008"
+      ],
+      "claim_requirements": [
+        "CLM-556",
+        "CLM-557",
+        "CLM-558",
+        "CLM-559"
       ],
       "safety_class": "technical",
       "monetization": "none",

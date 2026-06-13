@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Optical Flow — Tracking Motion Across the Visual Field | Zonules.com</title>
+  <meta name="description" content="Optical flow is the pattern of apparent motion of image brightness computed from frame-to-frame differences. It maintains spatio-temporal coherence of the visual signal. Classified FIO-01.">
+  <link rel="canonical" href="https://zonules.com/optical-flow/">
+  <link rel="alternate" hreflang="en" href="https://zonules.com/optical-flow/">
+  <link rel="alternate" hreflang="x-default" href="https://zonules.com/optical-flow/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Optical Flow — Tracking Motion Across the Visual Field">
+  <meta property="og:description" content="Optical flow is the pattern of apparent motion of image brightness computed from frame-to-frame differences. It maintains spatio-temporal coherence of the visual signal. Classified FIO-01.">
+  <meta property="og:url" content="https://zonules.com/optical-flow/">
+  <link rel="stylesheet" href="../assets/css/reference.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "termCode": "TRM-061",
+    "name": "Optical Flow",
+    "description": "The pattern of apparent motion of image brightness patterns caused by the relative motion between observer and scene, computed from frame-to-frame differences in a video sequence.",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Zonules Reference Lexicon",
+      "url": "https://zonules.com/glossary/"
+    },
+    "url": "https://zonules.com/optical-flow/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},
+      {"@type":"ListItem","position":2,"name":"Machine Vision","item":"https://zonules.com/glossary/"},
+      {"@type":"ListItem","position":3,"name":"Optical Flow","item":"https://zonules.com/optical-flow/"}
+    ]
+  }
+  </script>
+</head>
+<body class="rl">
+<main class="rl-wrap">
+
+  <nav class="rl-crumb">Zonules.com / Machine Vision / Optical Flow</nav>
+
+  <p class="rl-badges">
+    <span class="rl-badge">Layer 3 · Machine Vision</span>
+    <span class="rl-badge">FIO-01</span>
+    <span class="rl-badge">FIS-1</span>
+  </p>
+
+  <article class="rl-article">
+
+    <h1>Optical Flow</h1>
+    <blockquote>Motion is a signal. Optical flow is the method by which that signal is held coherent across time.</blockquote>
+
+    <h2>Definition</h2>
+    <p>Optical flow is the pattern of apparent motion of image brightness patterns caused by the relative motion between an observer (or camera) and a scene. In machine vision, it is computed from the frame-to-frame differences in a video sequence and expressed as a dense or sparse vector field assigning a velocity estimate to each pixel or tracked feature point.</p>
+
+    <h2>Scientific Grounding</h2>
+    <p>The foundational constraint of optical flow computation is the brightness constancy assumption: the intensity of a scene point is assumed constant as it moves across frames. Under this assumption, the optical flow constraint equation relates the spatial and temporal image gradients to the flow vector at each point. However, this equation is underdetermined for a single pixel — this is the aperture problem: local motion is ambiguous because only the motion component perpendicular to a local edge can be determined from that region alone.</p>
+    <p>Global constraints resolve the aperture problem. The Horn-Schunck method imposes a global smoothness prior on the flow field. The Lucas-Kanade method assumes locally uniform flow within a small region, producing a well-conditioned system from the neighbourhood. Modern deep learning approaches — FlowNet, RAFT — learn to estimate flow from large datasets of synthetically generated ground truth, achieving state-of-the-art performance on standard benchmarks while inheriting their own failure modes under domain shift.</p>
+    <p>Dense optical flow estimates a motion vector for every pixel; sparse methods (feature tracking) track selected keypoints with high reliability. Applications include video stabilisation, action recognition, autonomous navigation, and visual odometry.</p>
+    <p><em>Sources: SRC-007. See source registry.</em></p>
+
+    <h2>The Aperture Problem and Suspension</h2>
+    <p>The aperture problem is the precise machine-vision instance of the focus integrity suspension challenge. A locally computed flow estimate is structurally underspecified — like a lens without its suspension system, it cannot determine its own position in the field without global context. Optical flow algorithms impose that context through regularisation, prior constraints, or learned global representations. When those constraints are violated by real-world motion, the flow estimate fails in a systematic, predictable way.</p>
+
+    <h2>Layer Classification</h2>
+    <ul>
+      <li><strong>Layer:</strong> L3 — Machine Vision</li>
+      <li><strong>Cluster:</strong> machine-perception</li>
+      <li><strong>FIO Class:</strong> FIO-01 Suspension — optical flow maintains the spatio-temporal coherence of the visual signal across frames, the machine-vision analogue of the zonular suspension of the lens</li>
+      <li><strong>FIS Criterion:</strong> FIS-1 Suspension — the flow field must be structurally coherent to support downstream temporal reasoning</li>
+    </ul>
+
+    <h2>Relationship to the Governing Thesis</h2>
+    <p>Optical flow is the mechanism by which machine vision systems maintain focus across time rather than within a single frame. The suspension analogy is precise: the zonules hold the lens in place against gravity and ciliary force; the flow field holds the scene representation in place against temporal disruption. Optical flow failure — like suspension failure — produces a cascade of downstream errors in any system that depends on temporal coherence.</p>
+
+    <h2>Related Terms</h2>
+    <ul>
+      <li><a href="../scene-understanding/">Scene Understanding</a></li>
+      <li><a href="../semantic-segmentation/">Semantic Segmentation</a></li>
+      <li><a href="../object-detection/">Object Detection</a></li>
+      <li><a href="../model-calibration/">Model Calibration</a></li>
+      <li><a href="../visual-grounding/">Visual Grounding</a></li>
+    </ul>
+
+    <h2>Reference Notes</h2>
+    <p>Optical flow theory and algorithms are documented in SRC-007 (Szeliski). The biological analogue of motion computation in the human visual system is documented in SRC-005 and SRC-006 (motion perception, motion aftereffects). See also <a href="../oculomotor-system/">Oculomotor System</a> for the biological motion-maintenance mechanism.</p>
+
+    <h2>Safety Notes</h2>
+    <p>Educational reference only. Claims about optical flow in safety-critical systems (autonomous vehicles, medical robotics) require expert evaluation. This page does not constitute professional advice.</p>
+
+    <section class="rl-refs">
+      <h2>References &amp; claim provenance</h2>
+      <ul class="rl-reflist">
+        <li><span class="ref-tag">Sourced</span> Optical flow describes the apparent motion of image brightness patterns, computed from frame-to-frame differences in a video sequence. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Dense optical flow methods estimate a motion vector for every pixel; sparse methods track selected feature points. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Optical flow is subject to the aperture problem: local motion is ambiguous without global context, as only the motion component perpendicular to a local edge can be measured. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Framework</span> In the Zonules FIO framework, optical flow is classified under FIO-01 Suspension: it maintains the spatio-temporal coherence of the visual signal across frames. <span class="ref-src">Zonules.com — FIO/FIS v0.1</span></li>
+      </ul>
+    </section>
+
+  </article>
+
+  <footer class="rl-foot">
+    <a href="../glossary/">glossary</a> · <a href="../ontology/">ontology</a> · <a href="../methodology/">methodology</a> · <a href="../source-policy/">source-policy</a> · <a href="../engine/">engine</a>
+  </footer>
+
+</main>
+</body>
+</html>

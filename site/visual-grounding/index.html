@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Grounding — Linking Language to the Visual World | Zonules.com</title>
+  <meta name="description" content="Visual grounding is the task of linking linguistic expressions to their corresponding image regions, requiring joint vision-language understanding. Classified FIO-05 Interpretation.">
+  <link rel="canonical" href="https://zonules.com/visual-grounding/">
+  <link rel="alternate" hreflang="en" href="https://zonules.com/visual-grounding/">
+  <link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-grounding/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Visual Grounding — Linking Language to the Visual World">
+  <meta property="og:description" content="Visual grounding is the task of linking linguistic expressions to their corresponding image regions, requiring joint vision-language understanding. Classified FIO-05 Interpretation.">
+  <meta property="og:url" content="https://zonules.com/visual-grounding/">
+  <link rel="stylesheet" href="../assets/css/reference.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "termCode": "TRM-064",
+    "name": "Visual Grounding",
+    "description": "The task of linking natural-language expressions to their corresponding regions or objects in an image, requiring joint understanding of language and vision.",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Zonules Reference Lexicon",
+      "url": "https://zonules.com/glossary/"
+    },
+    "url": "https://zonules.com/visual-grounding/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},
+      {"@type":"ListItem","position":2,"name":"Machine Vision","item":"https://zonules.com/glossary/"},
+      {"@type":"ListItem","position":3,"name":"Visual Grounding","item":"https://zonules.com/visual-grounding/"}
+    ]
+  }
+  </script>
+</head>
+<body class="rl">
+<main class="rl-wrap">
+
+  <nav class="rl-crumb">Zonules.com / Machine Vision / Visual Grounding</nav>
+
+  <p class="rl-badges">
+    <span class="rl-badge">Layer 3 · Machine Vision</span>
+    <span class="rl-badge">FIO-05</span>
+    <span class="rl-badge">FIS-5</span>
+  </p>
+
+  <article class="rl-article">
+
+    <h1>Visual Grounding</h1>
+    <blockquote>A model that can name every object in an image may still fail to find the one you are pointing at. Grounding is the harder test.</blockquote>
+
+    <h2>Definition</h2>
+    <p>Visual grounding is the task of linking natural-language expressions to their corresponding regions or objects in an image. It requires joint understanding of both visual content and language, mapping from a referring expression — a description that uniquely identifies a scene element — to the spatial location of the described object or region.</p>
+
+    <h2>Scientific Grounding</h2>
+    <p>The canonical visual grounding task is referring expression comprehension: given an image and an expression such as "the dog on the left" or "the person nearest the window," the model must localize the entity referred to. This requires not only identifying objects of the relevant category but resolving the relational and contextual constraints in the referring expression against the spatial layout of the scene.</p>
+    <p>Visual grounding performance reveals gaps in compositional understanding that standard object recognition benchmarks conceal. A model can achieve high accuracy on object detection while systematically failing on spatial relations ("above," "behind"), comparative descriptions ("the larger dog"), and negations ("the cup that is not on the table"). These failures are not noise — they reveal the model's inability to compose object-level representations into relational scene models.</p>
+    <p>Large vision-language models have improved grounding performance substantially, but systematic errors on compositional and relational expressions persist. These are FIO-05 failures: the model's interpretation mechanism cannot correctly parse the relationship between the linguistic description and the visual content.</p>
+    <p><em>Sources: SRC-007. See source registry.</em></p>
+
+    <h2>Grounding as the Test of Interpretation</h2>
+    <p>Visual grounding is the strictest available test of whether a model's interpretation of an image is grounded in the image's actual content. An object detector can be right about what is present; grounding requires being right about which specific instance, in which location, relative to which other objects. The gap between detection accuracy and grounding accuracy is a direct measure of the depth of the model's interpretation.</p>
+
+    <h2>Layer Classification</h2>
+    <ul>
+      <li><strong>Layer:</strong> L3 — Machine Vision</li>
+      <li><strong>Cluster:</strong> machine-perception</li>
+      <li><strong>FIO Class:</strong> FIO-05 Interpretation — visual grounding is the machine-vision analogue of visual inference, requiring the model to commit to a reading of visual content against a linguistic description</li>
+      <li><strong>FIS Criterion:</strong> FIS-5 Interpretation — requires that the model's grounding output be traceable to the signal content rather than to statistical co-occurrence patterns in training data</li>
+    </ul>
+
+    <h2>Relationship to the Governing Thesis</h2>
+    <p>Zonules.com treats visual grounding as the L3 analogue of L2 <a href="../visual-inference/">Visual Inference</a>. Both require committing to a specific interpretation of visual content against external constraints. Both can produce confident, structured, incorrect outputs when the model's priors do not match the content's actual structure. The Focus Integrity Standard requires that grounding outputs used in high-stakes contexts carry confidence-qualified provenance documentation.</p>
+
+    <h2>Related Terms</h2>
+    <ul>
+      <li><a href="../scene-understanding/">Scene Understanding</a></li>
+      <li><a href="../semantic-segmentation/">Semantic Segmentation</a></li>
+      <li><a href="../object-detection/">Object Detection</a></li>
+      <li><a href="../visual-inference/">Visual Inference</a></li>
+      <li><a href="../neural-network-interpretability/">Neural Network Interpretability</a></li>
+    </ul>
+
+    <h2>Reference Notes</h2>
+    <p>Visual grounding and referring expression comprehension are documented in SRC-007 (Szeliski). The human perceptual parallel — the resolution of referring expressions in natural scene viewing — is discussed in SRC-005 and SRC-006.</p>
+
+    <h2>Safety Notes</h2>
+    <p>Educational reference only. Claims about visual grounding in deployed systems require expert evaluation. This page does not constitute professional advice.</p>
+
+    <section class="rl-refs">
+      <h2>References &amp; claim provenance</h2>
+      <ul class="rl-reflist">
+        <li><span class="ref-tag">Sourced</span> Visual grounding requires a model to identify the image region referred to by a natural-language expression, mapping from language to spatial location via joint vision-language understanding. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Referring expression comprehension is the canonical visual grounding task: given an image and an expression, the model must localize the described object. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Visual grounding performance reveals gaps in compositional understanding: models can identify individual objects while failing to correctly resolve spatial or relational expressions. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Framework</span> In the Zonules FIO framework, visual grounding is classified under FIO-05 Interpretation: it is the machine-vision analogue of visual inference, where the model must commit to a reading of visual content against a linguistic description. <span class="ref-src">Zonules.com — FIO/FIS v0.1</span></li>
+      </ul>
+    </section>
+
+  </article>
+
+  <footer class="rl-foot">
+    <a href="../glossary/">glossary</a> · <a href="../ontology/">ontology</a> · <a href="../methodology/">methodology</a> · <a href="../source-policy/">source-policy</a> · <a href="../engine/">engine</a>
+  </footer>
+
+</main>
+</body>
+</html>

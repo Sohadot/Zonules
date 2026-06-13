@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Synthetic Media — Machine-Generated Images and the Provenance Problem | Zonules.com</title>
+  <meta name="description" content="Synthetic media is visual content generated or substantially modified by machine learning systems. Its indistinguishability from authentic capture is a provenance integrity failure. Classified FIO-04.">
+  <link rel="canonical" href="https://zonules.com/synthetic-media/">
+  <link rel="alternate" hreflang="en" href="https://zonules.com/synthetic-media/">
+  <link rel="alternate" hreflang="x-default" href="https://zonules.com/synthetic-media/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Synthetic Media — Machine-Generated Images and the Provenance Problem">
+  <meta property="og:description" content="Synthetic media is visual content generated or substantially modified by machine learning systems. Its indistinguishability from authentic capture is a provenance integrity failure. Classified FIO-04.">
+  <meta property="og:url" content="https://zonules.com/synthetic-media/">
+  <link rel="stylesheet" href="../assets/css/reference.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "termCode": "TRM-063",
+    "name": "Synthetic Media",
+    "description": "Any image, video, or audio content generated or substantially modified by machine learning systems rather than directly captured from the physical world.",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Zonules Reference Lexicon",
+      "url": "https://zonules.com/glossary/"
+    },
+    "url": "https://zonules.com/synthetic-media/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},
+      {"@type":"ListItem","position":2,"name":"Machine Vision","item":"https://zonules.com/glossary/"},
+      {"@type":"ListItem","position":3,"name":"Synthetic Media","item":"https://zonules.com/synthetic-media/"}
+    ]
+  }
+  </script>
+</head>
+<body class="rl">
+<main class="rl-wrap">
+
+  <nav class="rl-crumb">Zonules.com / Machine Vision / Synthetic Media</nav>
+
+  <p class="rl-badges">
+    <span class="rl-badge">Layer 3 · Machine Vision</span>
+    <span class="rl-badge">FIO-04</span>
+    <span class="rl-badge">FIS-4</span>
+  </p>
+
+  <article class="rl-article">
+
+    <h1>Synthetic Media</h1>
+    <blockquote>A synthetic image may be optically perfect. That is precisely what makes it a provenance problem, not an optical one.</blockquote>
+
+    <h2>Definition</h2>
+    <p>Synthetic media is any image, video, or audio content that has been generated or substantially modified by machine learning systems rather than directly captured from the physical world. It encompasses outputs of generative adversarial networks, diffusion models, neural radiance field renderings, and text-to-image synthesis systems — the full class of machine-generated visual content.</p>
+
+    <h2>Scientific Grounding</h2>
+    <p>The distinguishing characteristic of modern synthetic media is photorealism: outputs from state-of-the-art generative systems are frequently indistinguishable from authentic photography by human observers, and detection systems based on pixel-level forensics face an adversarial arms race in which generative systems improve faster than detectors. This renders pixel-level authenticity assessment unreliable as a primary provenance strategy.</p>
+    <p>Content provenance standards — notably the C2PA (Coalition for Content Provenance and Authenticity) Technical Specification — address this by attaching cryptographically anchored metadata to images at the point of capture or generation. This metadata records the origin of the image (camera, software, generative model) and a tamper-evident log of subsequent modifications. Verification of this metadata chain allows a receiver to distinguish authenticated-capture from authenticated-generation, even when the pixel content is visually indistinguishable.</p>
+    <p>The absence of provenance metadata does not imply manipulation; it implies unknown provenance. This asymmetry is important: a clean, unfalsified capture without C2PA credentials is indistinguishable from a high-quality synthetic image without credentials. Provenance infrastructure is necessary precisely because pixel content alone cannot bear the weight of origin claims.</p>
+    <p><em>Sources: SRC-007, SRC-008. See source registry.</em></p>
+
+    <h2>The Provenance Problem</h2>
+    <p>Synthetic media makes the provenance problem categorical rather than marginal. Previously, image authenticity could be contested on the margins — was this image manipulated? Now it is categorical — was this image captured at all? The FIO-04 Provenance failure class exists precisely for this condition: when the chain of custody between a visual asset and the world it purports to represent is broken or unverifiable.</p>
+
+    <h2>Layer Classification</h2>
+    <ul>
+      <li><strong>Layer:</strong> L3 — Machine Vision</li>
+      <li><strong>Cluster:</strong> machine-perception</li>
+      <li><strong>FIO Class:</strong> FIO-04 Provenance — synthetic media presents the challenge of asserting the real-world correspondence of a visual asset when that correspondence may be entirely absent</li>
+      <li><strong>FIS Criterion:</strong> FIS-4 Provenance — requires that visual assets used in high-stakes contexts carry verifiable provenance metadata establishing their origin</li>
+    </ul>
+
+    <h2>Relationship to the Governing Thesis</h2>
+    <p>Zonules.com treats synthetic media as the defining provenance challenge of contemporary visual culture. The Focus Integrity Standard's FIS-4 Provenance criterion requires that high-stakes visual assets carry verifiable origin metadata — not because pixels can be trusted to reveal their own history, but because they cannot. Provenance is the record that makes a visual signal trustworthy independent of its content.</p>
+
+    <h2>Related Terms</h2>
+    <ul>
+      <li><a href="../deepfake-detection/">Deepfake Detection</a></li>
+      <li><a href="../image-provenance/">Image Provenance</a></li>
+      <li><a href="../neural-network-interpretability/">Neural Network Interpretability</a></li>
+      <li><a href="../visual-grounding/">Visual Grounding</a></li>
+      <li><a href="../perceptual-error/">Perceptual Error</a></li>
+    </ul>
+
+    <h2>Reference Notes</h2>
+    <p>Generative model architectures and their outputs are documented in SRC-007 (Szeliski). The C2PA Technical Specification is SRC-008. See also <a href="../deepfake-detection/">Deepfake Detection</a> for pixel-level forensic approaches and <a href="../image-provenance/">Image Provenance</a> for the metadata-based provenance infrastructure.</p>
+
+    <h2>Safety Notes</h2>
+    <p>Educational reference only. Claims about synthetic media detection or provenance in legal, journalistic, or evidentiary contexts require expert evaluation. This page does not constitute professional advice.</p>
+
+    <section class="rl-refs">
+      <h2>References &amp; claim provenance</h2>
+      <ul class="rl-reflist">
+        <li><span class="ref-tag">Sourced</span> Synthetic media encompasses generative adversarial network outputs, diffusion model images, neural radiance field renderings, and text-to-image synthesis — all machine-generated visual content. <span class="ref-src">SRC-007 Szeliski; SRC-008 C2PA</span></li>
+        <li><span class="ref-tag">Sourced</span> The indistinguishability of synthetic media from authentic capture represents a provenance integrity failure: the origin of the image cannot be inferred from its pixels alone. <span class="ref-src">SRC-008 C2PA</span></li>
+        <li><span class="ref-tag">Sourced</span> Content provenance standards (C2PA) provide cryptographically anchored metadata to attest to image origin and edit history, enabling verification without pixel-level forensics. <span class="ref-src">SRC-008 C2PA</span></li>
+        <li><span class="ref-tag">Framework</span> In the Zonules FIO framework, synthetic media is classified under FIO-04 Provenance: it presents the challenge of asserting the real-world correspondence of a visual asset when that correspondence may be entirely absent. <span class="ref-src">Zonules.com — FIO/FIS v0.1</span></li>
+      </ul>
+    </section>
+
+  </article>
+
+  <footer class="rl-foot">
+    <a href="../glossary/">glossary</a> · <a href="../ontology/">ontology</a> · <a href="../methodology/">methodology</a> · <a href="../source-policy/">source-policy</a> · <a href="../engine/">engine</a>
+  </footer>
+
+</main>
+</body>
+</html>

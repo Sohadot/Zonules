@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Imaging AI — High-Stakes Machine Interpretation of Clinical Images | Zonules.com</title>
+  <meta name="description" content="Medical imaging AI applies machine vision to clinical images for diagnostic support. It carries the highest-stakes interpretation risks in the FIO framework. Classified FIO-05.">
+  <link rel="canonical" href="https://zonules.com/medical-imaging-ai/">
+  <link rel="alternate" hreflang="en" href="https://zonules.com/medical-imaging-ai/">
+  <link rel="alternate" hreflang="x-default" href="https://zonules.com/medical-imaging-ai/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Medical Imaging AI — High-Stakes Machine Interpretation of Clinical Images">
+  <meta property="og:description" content="Medical imaging AI applies machine vision to clinical images for diagnostic support. It carries the highest-stakes interpretation risks in the FIO framework. Classified FIO-05.">
+  <meta property="og:url" content="https://zonules.com/medical-imaging-ai/">
+  <link rel="stylesheet" href="../assets/css/reference.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "termCode": "TRM-067",
+    "name": "Medical Imaging AI",
+    "description": "The application of machine vision and deep learning to clinical images — including radiology, pathology, and ophthalmology — to support diagnosis, screening, and treatment planning.",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Zonules Reference Lexicon",
+      "url": "https://zonules.com/glossary/"
+    },
+    "url": "https://zonules.com/medical-imaging-ai/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},
+      {"@type":"ListItem","position":2,"name":"Machine Vision","item":"https://zonules.com/glossary/"},
+      {"@type":"ListItem","position":3,"name":"Medical Imaging AI","item":"https://zonules.com/medical-imaging-ai/"}
+    ]
+  }
+  </script>
+</head>
+<body class="rl">
+<main class="rl-wrap">
+
+  <nav class="rl-crumb">Zonules.com / Machine Vision / Medical Imaging AI</nav>
+
+  <p class="rl-badges">
+    <span class="rl-badge">Layer 3 · Machine Vision</span>
+    <span class="rl-badge">FIO-05</span>
+    <span class="rl-badge">FIS-5</span>
+  </p>
+
+  <article class="rl-article">
+
+    <h1>Medical Imaging AI</h1>
+    <blockquote>Benchmark accuracy is not clinical accuracy. The gap between them is where patients are.</blockquote>
+
+    <h2>Definition</h2>
+    <p>Medical imaging AI encompasses the application of machine vision and deep learning to clinical images — including radiology (X-ray, CT, MRI), pathology (histology slides), and ophthalmology (fundus photography, OCT) — to support clinical decision-making in diagnosis, screening, and treatment planning. It represents the highest-stakes application domain in the L3 machine-perception cluster.</p>
+
+    <h2>Scientific Grounding</h2>
+    <p>Medical imaging AI has achieved expert-level performance on specific benchmark tasks: chest X-ray interpretation for pneumonia and cardiomegaly, skin lesion classification for melanoma, colorectal polyp detection in colonoscopy, and pathology slide grading for prostate and breast cancer. These results, published in high-impact journals, generated substantial clinical interest.</p>
+    <p>The performance gap between benchmark and clinical deployment is the defining challenge of the field. Benchmark performance is measured on curated, retrospective datasets that may not represent the diversity of clinical practice. Clinical deployment involves images from different scanners, different imaging protocols, different patient demographics, and different disease prevalence than the training set. Domain shift is therefore not an edge case — it is the default condition of clinical deployment.</p>
+    <p>Regulatory frameworks — FDA 510(k) and De Novo pathways in the US, CE marking in the EU — require demonstration of clinical validity across demographically representative test populations. However, post-market performance surveillance requirements are less stringent, creating a gap between pre-market validation and real-world deployment performance. Autonomous AI decision-making without human oversight remains outside regulatory approval for most clinical indications.</p>
+    <p><em>Sources: SRC-007. See source registry.</em></p>
+
+    <h2>Interpretation Stakes</h2>
+    <p>Medical imaging AI carries the highest interpretation stakes in the FIO framework because errors affect clinical outcomes. A semantic segmentation error in a consumer app is recoverable; a missed lesion in a screening AI is not. The FIO-05 classification applies with full clinical force: interpretation failure here is not a conceptual problem but a patient safety problem. Focus Integrity at this level requires not only signal quality but rigorous documentation of the conditions under which the model's interpretation is and is not valid.</p>
+
+    <h2>Layer Classification</h2>
+    <ul>
+      <li><strong>Layer:</strong> L3 — Machine Vision</li>
+      <li><strong>Cluster:</strong> machine-perception</li>
+      <li><strong>FIO Class:</strong> FIO-05 Interpretation — medical imaging AI is the machine-vision system most directly implicated in highest-stakes interpretation failures, where errors affect clinical outcomes</li>
+      <li><strong>FIS Criterion:</strong> FIS-5 Interpretation — requires that the interpretive scope and validated operating conditions of a medical imaging AI system be documented with clinical-grade precision</li>
+    </ul>
+
+    <h2>Relationship to the Governing Thesis</h2>
+    <p>Medical imaging AI instantiates the Focus Integrity problem at clinical scale. The same five failure classes documented in the FIO ontology — suspension, accommodation, signal-noise, provenance, interpretation — apply to medical imaging AI with patient-safety consequences. A calibration failure (FIO-01) in an MRI acquisition degrades image quality before the AI sees it. A domain shift failure (FIO-02) produces incorrect classification for out-of-distribution patients. A signal-noise failure (FIO-03) causes missed lesions in low-contrast images. A provenance failure (FIO-04) means the AI is operating on an image of unknown origin or quality. An interpretation failure (FIO-05) produces a confident incorrect diagnosis. All five are present in clinical deployment.</p>
+
+    <h2>Related Terms</h2>
+    <ul>
+      <li><a href="../ophthalmic-ai/">Ophthalmic AI</a></li>
+      <li><a href="../domain-shift/">Domain Shift</a></li>
+      <li><a href="../model-calibration/">Model Calibration</a></li>
+      <li><a href="../semantic-segmentation/">Semantic Segmentation</a></li>
+      <li><a href="../neural-network-interpretability/">Neural Network Interpretability</a></li>
+    </ul>
+
+    <h2>Reference Notes</h2>
+    <p>Medical imaging AI benchmarks, limitations, and regulatory pathways are documented in SRC-007 (Szeliski). For ophthalmic-specific medical imaging AI, see <a href="../ophthalmic-ai/">Ophthalmic AI</a>.</p>
+
+    <h2>Safety Notes</h2>
+    <p>Educational reference only. Medical imaging AI systems are regulated medical devices. Clinical deployment requires regulatory clearance and qualified clinical oversight. This page does not constitute medical or regulatory advice.</p>
+
+    <section class="rl-refs">
+      <h2>References &amp; claim provenance</h2>
+      <ul class="rl-reflist">
+        <li><span class="ref-tag">Sourced</span> Medical imaging AI systems have achieved expert-level performance on specific benchmark tasks including chest X-ray interpretation, skin lesion classification, and pathology slide grading. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Performance gaps between benchmark and clinical deployment are documented across medical imaging AI, driven by distribution shift between training and deployment settings. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Medical imaging AI outputs require integration with clinical context; autonomous AI decision-making without human oversight is not currently supported by regulatory frameworks in most jurisdictions. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Framework</span> In the Zonules FIO framework, medical imaging AI is classified under FIO-05 Interpretation: it is the machine-vision system most directly implicated in highest-stakes interpretation failures, where errors affect clinical outcomes. <span class="ref-src">Zonules.com — FIO/FIS v0.1</span></li>
+      </ul>
+    </section>
+
+  </article>
+
+  <footer class="rl-foot">
+    <a href="../glossary/">glossary</a> · <a href="../ontology/">ontology</a> · <a href="../methodology/">methodology</a> · <a href="../source-policy/">source-policy</a> · <a href="../engine/">engine</a>
+  </footer>
+
+</main>
+</body>
+</html>

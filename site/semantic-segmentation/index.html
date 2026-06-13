@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Segmentation — Dense Pixel-Level Scene Labelling | Zonules.com</title>
+  <meta name="description" content="Semantic segmentation is the dense labelling of every pixel in an image with a class category. The machine-vision instantiation of visual scene parsing at pixel level. Classified FIO-05.">
+  <link rel="canonical" href="https://zonules.com/semantic-segmentation/">
+  <link rel="alternate" hreflang="en" href="https://zonules.com/semantic-segmentation/">
+  <link rel="alternate" hreflang="x-default" href="https://zonules.com/semantic-segmentation/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Semantic Segmentation — Dense Pixel-Level Scene Labelling">
+  <meta property="og:description" content="Semantic segmentation is the dense labelling of every pixel in an image with a class category. The machine-vision instantiation of visual scene parsing at pixel level. Classified FIO-05.">
+  <meta property="og:url" content="https://zonules.com/semantic-segmentation/">
+  <link rel="stylesheet" href="../assets/css/reference.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "termCode": "TRM-065",
+    "name": "Semantic Segmentation",
+    "description": "The dense labelling of every pixel in an image with a semantic class category, producing a complete partition of the image into labelled regions.",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Zonules Reference Lexicon",
+      "url": "https://zonules.com/glossary/"
+    },
+    "url": "https://zonules.com/semantic-segmentation/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},
+      {"@type":"ListItem","position":2,"name":"Machine Vision","item":"https://zonules.com/glossary/"},
+      {"@type":"ListItem","position":3,"name":"Semantic Segmentation","item":"https://zonules.com/semantic-segmentation/"}
+    ]
+  }
+  </script>
+</head>
+<body class="rl">
+<main class="rl-wrap">
+
+  <nav class="rl-crumb">Zonules.com / Machine Vision / Semantic Segmentation</nav>
+
+  <p class="rl-badges">
+    <span class="rl-badge">Layer 3 · Machine Vision</span>
+    <span class="rl-badge">FIO-05</span>
+    <span class="rl-badge">FIS-5</span>
+  </p>
+
+  <article class="rl-article">
+
+    <h1>Semantic Segmentation</h1>
+    <blockquote>Every pixel gets a label. Whether the label is correct is a question about interpretation, not about the image.</blockquote>
+
+    <h2>Definition</h2>
+    <p>Semantic segmentation is the task of assigning a semantic class label to every pixel in an image, producing a complete partition of the image into contiguous labelled regions. It is the dense, pixel-level form of scene classification, distinguishing between categories such as road, sky, pedestrian, and vehicle without differentiating individual instances within a class.</p>
+
+    <h2>Scientific Grounding</h2>
+    <p>Semantic segmentation is typically implemented as a dense prediction problem using encoder-decoder architectures. The encoder produces a compressed, semantically rich feature representation; the decoder upsamples this to pixel resolution, assigning class probabilities to each location. Fully convolutional networks demonstrated that the same feature learning applied to classification could be extended to dense prediction by replacing fully connected layers with convolutional layers that preserve spatial information.</p>
+    <p>Instance segmentation extends semantic segmentation by additionally separating individual instances of the same class — distinguishing car-1 from car-2 rather than assigning all car pixels the same label. Panoptic segmentation unifies both tasks, requiring a complete, instance-aware partition of the image.</p>
+    <p>A systematic failure mode: models trained on limited class vocabularies assign confident, incorrect labels to out-of-vocabulary regions. A new class of object not in the training set will be assigned the most visually similar known class. This silent failure is a FIO-05 failure — the model's interpretation schema confidently produces incorrect output without signalling uncertainty.</p>
+    <p><em>Sources: SRC-007. See source registry.</em></p>
+
+    <h2>Dense Labelling and Interpretation Scale</h2>
+    <p>Semantic segmentation makes interpretation commitments at the pixel level rather than the image level. This scales the interpretation risk: a single image with 10 million pixels requires 10 million interpretation decisions, each of which can fail. At the same time, the local context at each pixel constrains the decision: neighbouring pixels in the same region are likely to share a class. This local coherence is both an asset (it can be exploited through spatial regularisation) and a vulnerability (spatially correlated errors can propagate across large regions).</p>
+
+    <h2>Layer Classification</h2>
+    <ul>
+      <li><strong>Layer:</strong> L3 — Machine Vision</li>
+      <li><strong>Cluster:</strong> machine-perception</li>
+      <li><strong>FIO Class:</strong> FIO-05 Interpretation — semantic segmentation is the machine-vision instantiation of visual scene parsing at pixel level, carrying interpretation-layer risk for every pixel in the image</li>
+      <li><strong>FIS Criterion:</strong> FIS-5 Interpretation — requires that segmentation-level claims be grounded in image signal evidence, not in prior class distribution expectations</li>
+    </ul>
+
+    <h2>Relationship to the Governing Thesis</h2>
+    <p>Zonules.com treats semantic segmentation as the pixel-resolution instance of the interpretation challenge documented in L2 <a href="../visual-scene-parsing/">Visual Scene Parsing</a>. Both partition a visual scene into labelled regions; both operate through interpretation mechanisms that can produce confident, structured, incorrect partitions. The Focus Integrity concern is the same: when a segmentation output is used as ground truth for downstream reasoning, its interpretation errors propagate.</p>
+
+    <h2>Related Terms</h2>
+    <ul>
+      <li><a href="../scene-understanding/">Scene Understanding</a></li>
+      <li><a href="../object-detection/">Object Detection</a></li>
+      <li><a href="../visual-grounding/">Visual Grounding</a></li>
+      <li><a href="../visual-scene-parsing/">Visual Scene Parsing</a></li>
+      <li><a href="../ophthalmic-ai/">Ophthalmic AI</a></li>
+    </ul>
+
+    <h2>Reference Notes</h2>
+    <p>Semantic and instance segmentation are documented in SRC-007 (Szeliski). The human perceptual analogue — figure-ground segregation and scene parsing — is documented in SRC-005 and SRC-006.</p>
+
+    <h2>Safety Notes</h2>
+    <p>Educational reference only. Claims about semantic segmentation in safety-critical or clinical contexts require expert evaluation. This page does not constitute professional advice.</p>
+
+    <section class="rl-refs">
+      <h2>References &amp; claim provenance</h2>
+      <ul class="rl-reflist">
+        <li><span class="ref-tag">Sourced</span> Semantic segmentation assigns a class label to every pixel in an image, distinguishing between categories without identifying individual instances. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Instance segmentation extends semantic segmentation by additionally separating individual instances of the same class, requiring both categorization and individual delineation. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Semantic segmentation systems trained on limited class vocabularies fail silently on novel or uncategorized regions, assigning confident but incorrect labels to out-of-distribution pixels. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Framework</span> In the Zonules FIO framework, semantic segmentation is classified under FIO-05 Interpretation: it is the machine-vision instantiation of visual scene parsing at the pixel level. <span class="ref-src">Zonules.com — FIO/FIS v0.1</span></li>
+      </ul>
+    </section>
+
+  </article>
+
+  <footer class="rl-foot">
+    <a href="../glossary/">glossary</a> · <a href="../ontology/">ontology</a> · <a href="../methodology/">methodology</a> · <a href="../source-policy/">source-policy</a> · <a href="../engine/">engine</a>
+  </footer>
+
+</main>
+</body>
+</html>

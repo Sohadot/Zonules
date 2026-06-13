@@ -7,7 +7,7 @@ constitutes the asset and the categories of strategic buyer, with one calm
 contact path — and never a price, an urgency cue, a marketplace frame, or a
 named buyer. Those prohibitions are enforced by the quality gate.
 
-Output: static/acquire/index.html
+Output: acquire/index.html (repository root)
 
 Usage:
   python scripts/build_acquire.py          # write the page
@@ -17,7 +17,8 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "static", "acquire", "index.html")
+# Published from the repository root at the canonical route directory (noindex).
+OUT = os.path.join(ROOT, "acquire", "index.html")
 
 # What a strategic buyer acquires — the structure, rendered as structure.
 ACQUIRES = [
@@ -110,14 +111,14 @@ def main():
     page = build()
     if "--check" in sys.argv[1:]:
         if not os.path.exists(OUT) or open(OUT, encoding="utf-8").read() != page:
-            print("STALE: static/acquire/index.html does not match sources. Run scripts/build_acquire.py")
+            print("STALE: /acquire/index.html does not match sources. Run scripts/build_acquire.py")
             return 1
-        print("FRESH: static/acquire/index.html matches governed sources.")
+        print("FRESH: /acquire/index.html matches governed sources.")
         return 0
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as fh:
         fh.write(page)
-    print("Built static/acquire/index.html (%d bytes)" % len(page))
+    print("Built /acquire/index.html (%d bytes)" % len(page))
     return 0
 
 

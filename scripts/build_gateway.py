@@ -8,7 +8,7 @@ hidden fibers, revealed, then cut so focus visibly collapses. A no-JS
 static triptych renders the same three states, so the page and its thesis
 are fully understandable without JavaScript.
 
-Output: static/gateway/index.html
+Output: index.html (repository root)
 
 Usage:
   python scripts/build_gateway.py          # write the page
@@ -19,7 +19,8 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "static", "gateway", "index.html")
+# Published from the repository root (GitHub Pages source = main / root).
+OUT = os.path.join(ROOT, "index.html")
 
 CX, CY, RING, LENS_RX, LENS_RY, N_FIBERS = 200, 150, 130, 46, 64, 24
 
@@ -154,14 +155,14 @@ def main():
     page = build()
     if "--check" in sys.argv[1:]:
         if not os.path.exists(OUT) or open(OUT, encoding="utf-8").read() != page:
-            print("STALE: static/gateway/index.html does not match sources. Run scripts/build_gateway.py")
+            print("STALE: /index.html does not match sources. Run scripts/build_gateway.py")
             return 1
-        print("FRESH: static/gateway/index.html matches governed sources.")
+        print("FRESH: /index.html matches governed sources.")
         return 0
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as fh:
         fh.write(page)
-    print("Built static/gateway/index.html (%d bytes)" % len(page))
+    print("Built /index.html (%d bytes)" % len(page))
     return 0
 
 

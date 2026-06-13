@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /scripts/
+Disallow: /content/
+Disallow: /static/
+Disallow: /templates/
+Disallow: /site/
+Disallow: /docs/
+
+Sitemap: https://zonules.com/sitemap.xml

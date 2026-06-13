@@ -8,7 +8,7 @@ embedded as inert JSON script blocks, so the engine runs with no network
 call, no fetch, and no runtime dependency — inspectable and reproducible.
 
 Single source of truth: data/*.json + static/js + static/css.
-Output: static/engine/index.html
+Output: focus-integrity-engine/index.html (repository root)
 
 Usage:
   python scripts/build_engine.py          # write the page
@@ -19,7 +19,8 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "static", "engine", "index.html")
+# Published from the repository root at the canonical route directory.
+OUT = os.path.join(ROOT, "focus-integrity-engine", "index.html")
 
 
 def read(path):
@@ -115,14 +116,14 @@ def main():
     check = "--check" in sys.argv[1:]
     if check:
         if not os.path.exists(OUT) or open(OUT, encoding="utf-8").read() != page:
-            print("STALE: static/engine/index.html does not match sources. Run scripts/build_engine.py")
+            print("STALE: /focus-integrity-engine/index.html does not match sources. Run scripts/build_engine.py")
             return 1
-        print("FRESH: static/engine/index.html matches governed sources.")
+        print("FRESH: /focus-integrity-engine/index.html matches governed sources.")
         return 0
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as fh:
         fh.write(page)
-    print("Built static/engine/index.html (%d bytes)" % len(page))
+    print("Built /focus-integrity-engine/index.html (%d bytes)" % len(page))
     return 0
 
 

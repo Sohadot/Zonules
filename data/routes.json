@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "1.5",
+  "version": "1.6",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -17,8 +17,8 @@
       "layer": "cross",
       "cluster": "acquisition",
       "fio_class": "none",
-      "template": "static/acquire/index.html",
-      "content": "static/acquire/index.html",
+      "template": "acquire/index.html",
+      "content": "acquire/index.html",
       "seo_title": "Acquisition — Zonules.com",
       "meta_description": "Zonules.com is a developed category asset: a governed reference system and Category Intelligence Factory for focus, perception, and visual truth. Strategic inquiries only.",
       "required_internal_links": [
@@ -43,8 +43,8 @@
       "layer": "cross",
       "cluster": "gateway",
       "fio_class": "all",
-      "template": "static/gateway/index.html",
-      "content": "static/gateway/index.html",
+      "template": "index.html",
+      "content": "index.html",
       "seo_title": "Zonules.com — The Hidden System That Makes Vision Possible",
       "meta_description": "Zonules are not vision. They are what makes vision possible. A sovereign visual reference system mapping the hidden structures that hold focus across anatomy, perception, and machine vision.",
       "required_internal_links": [
@@ -71,8 +71,8 @@
       "layer": "cross",
       "cluster": "engine",
       "fio_class": "all",
-      "template": "static/engine/index.html",
-      "content": "static/engine/index.html",
+      "template": "focus-integrity-engine/index.html",
+      "content": "focus-integrity-engine/index.html",
       "seo_title": "Focus Integrity Engine | Zonules.com",
       "meta_description": "Run the Focus Integrity Assessment: the same five criteria decide whether focus holds in the eye, in perception, or in a machine. Deterministic, computed locally, no data collected.",
       "required_internal_links": [
@@ -483,7 +483,7 @@
       "cluster": "governance",
       "fio_class": "all",
       "template": "generated",
-      "content": "site/focus-integrity-ontology/index.html",
+      "content": "focus-integrity-ontology/index.html",
       "seo_title": "The Focus Integrity Ontology | Zonules.com",
       "meta_description": "How focus fails across anatomy, perception, and machine vision.",
       "required_internal_links": [
@@ -509,7 +509,7 @@
       "cluster": "governance",
       "fio_class": "all",
       "template": "generated",
-      "content": "site/glossary/index.html",
+      "content": "glossary/index.html",
       "seo_title": "Glossary | Zonules.com",
       "meta_description": "The complete governed index of Zonules.com reference units.",
       "required_internal_links": [

@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "1.4",
+  "version": "1.5",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -2298,6 +2298,393 @@
         "CLM-223"
       ],
       "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/retinal-ganglion-cells/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/retinal-ganglion-cells/",
+      "hreflang_group": "retinal-ganglion-cells",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/retinal-ganglion-cells.md",
+      "seo_title": "Retinal Ganglion Cells | Zonules.com",
+      "meta_description": "Retinal ganglion cells are the output neurons of the retina whose axons form the optic nerve and carry the encoded visual signal to the brain.",
+      "required_internal_links": [
+        "/retina/",
+        "/optic-nerve/",
+        "/blind-spot/",
+        "/optic-radiations/",
+        "/retinal-pigment-epithelium/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-224",
+        "CLM-225",
+        "CLM-226",
+        "CLM-227"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/blind-spot/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/blind-spot/",
+      "hreflang_group": "blind-spot",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/blind-spot.md",
+      "seo_title": "Blind Spot | Zonules.com",
+      "meta_description": "The blind spot is the region of the retina where the optic nerve exits and which contains no photoreceptors, producing a gap in the visual field.",
+      "required_internal_links": [
+        "/optic-nerve/",
+        "/retina/",
+        "/retinal-ganglion-cells/",
+        "/fixation/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-228",
+        "CLM-229",
+        "CLM-230",
+        "CLM-231"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/saccades/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/saccades/",
+      "hreflang_group": "saccades",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/saccades.md",
+      "seo_title": "Saccades | Zonules.com",
+      "meta_description": "Saccades are rapid ballistic eye movements that shift the high-acuity fovea from one point of interest to another to maintain focus on changing targets.",
+      "required_internal_links": [
+        "/oculomotor-system/",
+        "/fovea-centralis/",
+        "/smooth-pursuit/",
+        "/fixation/",
+        "/extraocular-muscles/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-232",
+        "CLM-233",
+        "CLM-234",
+        "CLM-235"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/smooth-pursuit/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/smooth-pursuit/",
+      "hreflang_group": "smooth-pursuit",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/smooth-pursuit.md",
+      "seo_title": "Smooth Pursuit | Zonules.com",
+      "meta_description": "Smooth pursuit is a voluntary eye movement that tracks a moving target to keep its image stable on the fovea, matching eye velocity to target velocity.",
+      "required_internal_links": [
+        "/oculomotor-system/",
+        "/saccades/",
+        "/fixation/",
+        "/extraocular-muscles/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-236",
+        "CLM-237",
+        "CLM-238",
+        "CLM-239"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/extraocular-muscles/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/extraocular-muscles/",
+      "hreflang_group": "extraocular-muscles",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/extraocular-muscles.md",
+      "seo_title": "Extraocular Muscles | Zonules.com",
+      "meta_description": "The extraocular muscles are the six muscles that rotate each eye within the orbit to direct gaze and maintain binocular alignment.",
+      "required_internal_links": [
+        "/oculomotor-system/",
+        "/saccades/",
+        "/smooth-pursuit/",
+        "/sclera/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-240",
+        "CLM-241",
+        "CLM-242",
+        "CLM-243"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/optic-radiations/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/optic-radiations/",
+      "hreflang_group": "optic-radiations",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/optic-radiations.md",
+      "seo_title": "Optic Radiations | Zonules.com",
+      "meta_description": "The optic radiations are the white-matter fiber tracts carrying visual signals from the lateral geniculate nucleus to the primary visual cortex.",
+      "required_internal_links": [
+        "/lateral-geniculate-nucleus/",
+        "/visual-cortex/",
+        "/optic-tract/",
+        "/binocular-vision/",
+        "/retinal-ganglion-cells/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-244",
+        "CLM-245",
+        "CLM-246",
+        "CLM-247"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/retinal-pigment-epithelium/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/retinal-pigment-epithelium/",
+      "hreflang_group": "retinal-pigment-epithelium",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/retinal-pigment-epithelium.md",
+      "seo_title": "Retinal Pigment Epithelium | Zonules.com",
+      "meta_description": "The retinal pigment epithelium is a single layer of pigmented cells between the photoreceptors and the choroid that supports photoreceptor function.",
+      "required_internal_links": [
+        "/retina/",
+        "/photoreceptors/",
+        "/choroid/",
+        "/macula/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-248",
+        "CLM-249",
+        "CLM-250",
+        "CLM-251"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/conjunctiva/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/conjunctiva/",
+      "hreflang_group": "conjunctiva",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/conjunctiva.md",
+      "seo_title": "Conjunctiva | Zonules.com",
+      "meta_description": "The conjunctiva is the thin transparent mucous membrane covering the sclera and lining the inner eyelids, protecting and lubricating the ocular surface.",
+      "required_internal_links": [
+        "/cornea/",
+        "/sclera/",
+        "/tear-film/",
+        "/trabecular-meshwork/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-252",
+        "CLM-253",
+        "CLM-254",
+        "CLM-255"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/trabecular-meshwork/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/trabecular-meshwork/",
+      "hreflang_group": "trabecular-meshwork",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/trabecular-meshwork.md",
+      "seo_title": "Trabecular Meshwork | Zonules.com",
+      "meta_description": "The trabecular meshwork is the spongy tissue at the iridocorneal angle through which aqueous humor drains, regulating intraocular pressure.",
+      "required_internal_links": [
+        "/aqueous-humor/",
+        "/ciliary-body/",
+        "/iris/",
+        "/cornea/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-256",
+        "CLM-257",
+        "CLM-258",
+        "CLM-259"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/fixation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/fixation/",
+      "hreflang_group": "fixation",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/fixation.md",
+      "seo_title": "Ocular Fixation | Zonules.com",
+      "meta_description": "Ocular fixation is the maintenance of gaze on a single location, holding the target's image on the fovea through tiny stabilizing eye movements.",
+      "required_internal_links": [
+        "/oculomotor-system/",
+        "/saccades/",
+        "/smooth-pursuit/",
+        "/fovea-centralis/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-260",
+        "CLM-261",
+        "CLM-262",
+        "CLM-263"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/tear-film/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/tear-film/",
+      "hreflang_group": "tear-film",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/tear-film.md",
+      "seo_title": "Tear Film | Zonules.com",
+      "meta_description": "The tear film is the thin fluid layer coating the ocular surface that maintains a smooth optical surface on the cornea and protects it.",
+      "required_internal_links": [
+        "/cornea/",
+        "/conjunctiva/",
+        "/sclera/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-264",
+        "CLM-265",
+        "CLM-266",
+        "CLM-267"
+      ],
+      "safety_class": "medical-educational",
       "monetization": "none",
       "last_reviewed": "2026-06-13"
     }

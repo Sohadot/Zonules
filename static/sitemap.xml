@@ -91,8 +91,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/data-augmentation/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/deepfake-detection/</loc>
     <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/depth-estimation/</loc>
+    <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -112,6 +122,11 @@
   </url>
   <url>
     <loc>https://zonules.com/extraocular-muscles/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/feature-extraction/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
   </url>
@@ -158,6 +173,11 @@
   <url>
     <loc>https://zonules.com/image-provenance/</loc>
     <lastmod>2026-06-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/image-registration/</loc>
+    <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -266,6 +286,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/out-of-distribution-detection/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/pattern-recognition/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
@@ -296,6 +321,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/pose-estimation/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/pupillary-reflex/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
@@ -317,6 +347,11 @@
   </url>
   <url>
     <loc>https://zonules.com/saccades/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/scene-graph-generation/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
   </url>
@@ -381,6 +416,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zonules.com/transfer-learning/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/vision-language-models/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zonules.com/visual-acuity/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
@@ -427,6 +472,16 @@
   </url>
   <url>
     <loc>https://zonules.com/visual-search/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/visual-slam/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zonules.com/visual-tracking/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
   </url>

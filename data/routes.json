@@ -3071,6 +3071,384 @@
       "safety_class": "educational",
       "monetization": "none",
       "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/vision-language-models/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/vision-language-models/",
+      "hreflang_group": "vision-language-models",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/vision-language-models.md",
+      "seo_title": "Vision-Language Models | Zonules.com",
+      "meta_description": "Vision-language models are machine learning systems that jointly process images and text to perform tasks such as captioning and visual question answering.",
+      "required_internal_links": [
+        "/visual-grounding/",
+        "/scene-understanding/",
+        "/scene-graph-generation/",
+        "/neural-network-interpretability/",
+        "/machine-vision/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-312",
+        "CLM-313",
+        "CLM-314",
+        "CLM-315"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/pose-estimation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/pose-estimation/",
+      "hreflang_group": "pose-estimation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/pose-estimation.md",
+      "seo_title": "Pose Estimation | Zonules.com",
+      "meta_description": "Pose estimation is the machine vision task of inferring the spatial configuration of objects or human bodies, such as joint keypoints, from images.",
+      "required_internal_links": [
+        "/object-detection/",
+        "/depth-estimation/",
+        "/visual-tracking/",
+        "/scene-understanding/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-316",
+        "CLM-317",
+        "CLM-318",
+        "CLM-319"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/depth-estimation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/depth-estimation/",
+      "hreflang_group": "depth-estimation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/depth-estimation.md",
+      "seo_title": "Depth Estimation | Zonules.com",
+      "meta_description": "Depth estimation is the machine vision task of inferring distance to scene points from images, using stereo, motion, or learned monocular cues.",
+      "required_internal_links": [
+        "/pose-estimation/",
+        "/visual-slam/",
+        "/optical-flow/",
+        "/depth-perception/",
+        "/scene-understanding/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-320",
+        "CLM-321",
+        "CLM-322",
+        "CLM-323"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/visual-slam/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-slam/",
+      "hreflang_group": "visual-slam",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/visual-slam.md",
+      "seo_title": "Visual SLAM | Zonules.com",
+      "meta_description": "Visual SLAM is the technique by which a system builds a map of an environment while tracking its own position using camera input.",
+      "required_internal_links": [
+        "/optical-flow/",
+        "/depth-estimation/",
+        "/image-registration/",
+        "/visual-tracking/",
+        "/model-calibration/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-324",
+        "CLM-325",
+        "CLM-326",
+        "CLM-327"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/feature-extraction/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/feature-extraction/",
+      "hreflang_group": "feature-extraction",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/feature-extraction.md",
+      "seo_title": "Feature Extraction | Zonules.com",
+      "meta_description": "Feature extraction transforms raw image data into representations that capture informative structure for downstream machine vision tasks.",
+      "required_internal_links": [
+        "/image-classification/",
+        "/transfer-learning/",
+        "/object-detection/",
+        "/data-augmentation/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-328",
+        "CLM-329",
+        "CLM-330",
+        "CLM-331"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/transfer-learning/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/transfer-learning/",
+      "hreflang_group": "transfer-learning",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/transfer-learning.md",
+      "seo_title": "Transfer Learning | Zonules.com",
+      "meta_description": "Transfer learning is the reuse of a model trained on one task or dataset to improve learning on a related task, commonly by adapting pretrained features.",
+      "required_internal_links": [
+        "/feature-extraction/",
+        "/domain-shift/",
+        "/data-augmentation/",
+        "/image-classification/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-332",
+        "CLM-333",
+        "CLM-334",
+        "CLM-335"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/out-of-distribution-detection/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/out-of-distribution-detection/",
+      "hreflang_group": "out-of-distribution-detection",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/out-of-distribution-detection.md",
+      "seo_title": "Out-of-Distribution Detection | Zonules.com",
+      "meta_description": "Out-of-distribution detection is the task of identifying inputs that differ from a model's training distribution, important for safe deployment.",
+      "required_internal_links": [
+        "/domain-shift/",
+        "/model-calibration/",
+        "/transfer-learning/",
+        "/adversarial-examples/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-336",
+        "CLM-337",
+        "CLM-338",
+        "CLM-339"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/visual-tracking/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/visual-tracking/",
+      "hreflang_group": "visual-tracking",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/visual-tracking.md",
+      "seo_title": "Visual Tracking | Zonules.com",
+      "meta_description": "Visual tracking is the machine vision task of following the position of one or more targets across video frames despite appearance change and occlusion.",
+      "required_internal_links": [
+        "/optical-flow/",
+        "/object-detection/",
+        "/visual-slam/",
+        "/pose-estimation/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-340",
+        "CLM-341",
+        "CLM-342",
+        "CLM-343"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/data-augmentation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/data-augmentation/",
+      "hreflang_group": "data-augmentation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/data-augmentation.md",
+      "seo_title": "Data Augmentation | Zonules.com",
+      "meta_description": "Data augmentation expands training data by applying label-preserving transformations to existing images, improving robustness to input variation.",
+      "required_internal_links": [
+        "/transfer-learning/",
+        "/domain-shift/",
+        "/out-of-distribution-detection/",
+        "/image-classification/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-344",
+        "CLM-345",
+        "CLM-346",
+        "CLM-347"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/image-registration/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/image-registration/",
+      "hreflang_group": "image-registration",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/image-registration.md",
+      "seo_title": "Image Registration | Zonules.com",
+      "meta_description": "Image registration is the process of aligning two or more images into a common spatial coordinate frame, critical in fields such as medical imaging.",
+      "required_internal_links": [
+        "/visual-slam/",
+        "/model-calibration/",
+        "/medical-imaging-ai/",
+        "/optical-flow/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-348",
+        "CLM-349",
+        "CLM-350",
+        "CLM-351"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/scene-graph-generation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/scene-graph-generation/",
+      "hreflang_group": "scene-graph-generation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/scene-graph-generation.md",
+      "seo_title": "Scene Graph Generation | Zonules.com",
+      "meta_description": "Scene graph generation is the machine vision task of producing a structured graph of objects and their relationships in an image to support reasoning.",
+      "required_internal_links": [
+        "/scene-understanding/",
+        "/vision-language-models/",
+        "/object-detection/",
+        "/visual-grounding/",
+        "/semantic-segmentation/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-352",
+        "CLM-353",
+        "CLM-354",
+        "CLM-355"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-13"
     }
   ]
 }

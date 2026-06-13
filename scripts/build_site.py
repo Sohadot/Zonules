@@ -31,7 +31,9 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = os.path.join(ROOT, "site")
+# Published from the repository root (GitHub Pages source = main / root):
+# reference units render to /<slug>/index.html, never under /site/.
+SITE = ROOT
 BASE = "https://zonules.com"
 
 # Shared stylesheet, emitted once inside the publish root and cached across all
@@ -443,7 +445,7 @@ def main():
     os.makedirs(os.path.dirname(CSS_OUT), exist_ok=True)
     with open(CSS_OUT, "w", encoding="utf-8") as fh:
         fh.write(css)
-    print("Rendered %d pages + shared stylesheet into site/" % len(pages))
+    print("Rendered %d pages + shared stylesheet into the repository root" % len(pages))
     return 0
 
 

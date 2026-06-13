@@ -181,6 +181,43 @@ def main():
                 if unsafe.search(text):
                     errors.append(f"unsafe pattern in {os.path.relpath(fp, ROOT)}")
 
+    # 11. Root publication doctrine (GitHub Pages source = main / root).
+    #     The repository root IS the published site. README/ASSET_THESIS remain
+    #     governance files; the public homepage is the generated root index.html.
+    for fn in ("index.html", "sitemap.xml", "robots.txt", "CNAME", ".nojekyll"):
+        if not os.path.exists(os.path.join(ROOT, fn)):
+            errors.append(f"root publication: missing /{fn}")
+    if os.path.isdir(os.path.join(ROOT, "docs")):
+        errors.append("root publication: docs/ must not exist (publish from root, not /docs)")
+
+    robots_fp = os.path.join(ROOT, "robots.txt")
+    if os.path.exists(robots_fp):
+        rb = open(robots_fp, encoding="utf-8").read()
+        if "https://zonules.com/sitemap.xml" not in rb:
+            errors.append("root publication: robots.txt missing canonical sitemap reference")
+
+    sitemap_fp = os.path.join(ROOT, "sitemap.xml")
+    if os.path.exists(sitemap_fp):
+        sm = open(sitemap_fp, encoding="utf-8").read()
+        locs = re.findall(r"<loc>https://zonules\.com(/[^<]*)</loc>", sm)
+        for loc in locs:
+            if "/site/" in loc or "/static/" in loc:
+                errors.append(f"root publication: sitemap URL points inside a non-public dir: {loc}")
+            rel = loc.strip("/")
+            fp = os.path.join(ROOT, rel, "index.html") if rel else os.path.join(ROOT, "index.html")
+            if not os.path.exists(fp):
+                errors.append(f"root publication: sitemap URL has no published page at root: {loc}")
+        if "/acquire/" in locs:
+            errors.append("root publication: /acquire/ must be excluded from the sitemap")
+
+    # Every approved, indexable route must have a published page at the root.
+    for r in routes["routes"]:
+        if r.get("status") == "approved" and r.get("indexable") is True:
+            rel = r["path"].strip("/")
+            fp = os.path.join(ROOT, rel, "index.html") if rel else os.path.join(ROOT, "index.html")
+            if not os.path.exists(fp):
+                errors.append(f"root publication: route {r['path']} has no published page at root")
+
     if errors:
         print("GOVERNANCE GATE: FAIL")
         for e in errors:

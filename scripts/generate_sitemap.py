@@ -7,7 +7,7 @@ sitemap if and only if it is registered, status == "approved", and
 indexable == true. Draft, non-indexable, or unregistered surfaces can
 never appear — the registry is the single source of truth.
 
-Output: static/sitemap.xml, static/robots.txt
+Output: sitemap.xml, robots.txt (repository root)
 
 Usage:
   python scripts/generate_sitemap.py          # write both files
@@ -19,8 +19,9 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://zonules.com"
-SITEMAP = os.path.join(ROOT, "static", "sitemap.xml")
-ROBOTS = os.path.join(ROOT, "static", "robots.txt")
+# Published from the repository root (GitHub Pages source = main / root).
+SITEMAP = os.path.join(ROOT, "sitemap.xml")
+ROBOTS = os.path.join(ROOT, "robots.txt")
 
 # Priority by page type — the gateway and engine lead, reference units follow.
 PRIORITY = {"gateway": "1.0", "engine": "0.9", "reference-unit": "0.8"}
@@ -57,10 +58,20 @@ def build_sitemap(routes):
 
 def build_robots():
     # Static-first posture: allow indexing of the public asset; point to the sitemap.
-    # No crawl traps, no private surfaces, no API endpoints to disallow.
+    # Because GitHub Pages serves from the repository root, the governance source
+    # folders sit alongside the published pages. They contain no secrets, but they
+    # are source, not public surface, so they are disallowed from indexing. This is
+    # an indexing hint only — never a security boundary (no secrets are committed).
     return (
         "User-agent: *\n"
         "Allow: /\n"
+        "Disallow: /data/\n"
+        "Disallow: /scripts/\n"
+        "Disallow: /content/\n"
+        "Disallow: /static/\n"
+        "Disallow: /templates/\n"
+        "Disallow: /site/\n"
+        "Disallow: /docs/\n"
         "\n"
         "Sitemap: %s/sitemap.xml\n"
     ) % BASE

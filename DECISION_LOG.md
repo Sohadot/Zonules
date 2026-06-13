@@ -239,3 +239,23 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
 - **Verification:** Official final-gate sequence — `generate_sitemap.py` (100 indexable URLs; `/acquire/` excluded) → `validate_all.py` (PASS) → idempotent re-run (PASS). Confirmed: 101 governed pages, 355 registered claims, 100 intentional sitemap URLs, broken_links=0, orphans=0, unsourced_claims=0, unsafe=0; no draft pages in sitemap; static-first posture intact.
 - **Type:** Merge conflict resolution; governance gate pass.
 - **Affected:** `data/routes.json`, regenerated `site/` (glossary, ontology hub, 33 new term pages, shared outputs), `static/{sitemap.xml,robots.txt}`.
+
+## 2026-06-13 — Sprint 3E: publish the governed site from the repository root
+
+- **User decision:** GitHub Pages must publish from `main` / root. No `/docs` publication root (none existed; the prohibition is recorded and enforced). No public canonical URL may live under `/site/`.
+- **Problem:** The build pipeline wrote public output to `site/` (reference units, glossary, ontology) and `static/` (gateway, engine, acquire, sitemap.xml, robots.txt). With Pages serving from root, the site root had no `index.html`, so the repository README rendered as the homepage and canonical pages were only reachable under `/site/…` — not valid public canonical paths.
+- **Change:** Redirected every build *output* to the repository root, leaving all sources (`static/css`, `static/js`, `data/`, `content/`, `scripts/`) in place.
+  - `scripts/build_gateway.py` → `/index.html` (public homepage; replaces README as the served root).
+  - `scripts/build_engine.py` → `/focus-integrity-engine/index.html`.
+  - `scripts/build_acquire.py` → `/acquire/index.html` (retains `noindex`, stays out of the sitemap).
+  - `scripts/build_site.py` → `/<slug>/index.html` for all reference units, policy pages, `/glossary/`, and `/focus-integrity-ontology/`; shared stylesheet to `/assets/css/reference.css`.
+  - `scripts/generate_sitemap.py` → `/sitemap.xml` and `/robots.txt` at the root.
+  - `data/routes.json` content/template paths updated for the five generated routes (`/`, `/focus-integrity-engine/`, `/acquire/`, `/glossary/`, `/focus-integrity-ontology/`); registry to v1.6.
+- **Removed stale public outputs:** deleted `site/` and `static/{gateway,engine,acquire,sitemap.xml,robots.txt}`. Kept `static/css/` and `static/js/` as build sources only.
+- **Added root publication scaffolding:** `/.nojekyll` (serve files as-is, no Jekyll processing); `/CNAME` already present (`zonules.com`).
+- **robots.txt hardened:** because root publishing exposes source folders alongside published pages, added `Disallow:` for `/data/`, `/scripts/`, `/content/`, `/static/`, `/templates/`, `/site/`, `/docs/`. This is an indexing hint only, not a security boundary — the standing rule holds: no secrets, no API tokens, no sensitive files in the repository.
+- **Validator extended (`scripts/validate_all.py`):** new root-publication checks now block the gate unless — root `index.html`, `sitemap.xml`, `robots.txt`, `CNAME`, `.nojekyll` all exist; `docs/` does not exist; `robots.txt` references the canonical sitemap; no sitemap URL points inside `/site/` or `/static/`; every sitemap URL resolves to a published page at root; every approved+indexable route has a published root page; `/acquire/` is excluded from the sitemap (and, by the existing acquire check, carries `noindex`).
+- **Verification:** Official sequence run — `generate_sitemap.py` (100 urls) → `build_site.py` (98 pages + stylesheet) → `validate_all.py` (PASS) → `validate_all.py` (PASS, idempotent). Final gate: 101 pages, 355 claims, 8 sources, layers L1/L2/L3/cross; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Homepage serves the gateway ("what makes vision possible"), not README; `/acquire/` carries `noindex` and is absent from the 100-URL sitemap; sitemap contains no `/site/` or `/static/` paths.
+- **Preserved:** Sprint 3D corpus (101 routes), README.md, ASSET_THESIS.md, and all governance files unchanged in substance. No API, no Cloudflare Workers, no forms, no newsletter backend, no payment widgets, no third-party scripts introduced.
+- **Type:** Publishing correction; routes v1.5→v1.6; no corpus or claim changes.
+- **Affected:** `scripts/{build_gateway,build_engine,build_acquire,build_site,generate_sitemap,validate_all}.py`, `data/routes.json`, new root publication tree (`index.html`, `/<slug>/index.html`, `assets/`, `sitemap.xml`, `robots.txt`, `.nojekyll`); removed `site/` and the moved `static/` outputs.

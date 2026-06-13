@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scene Understanding — Structured Semantic Interpretation in Machine Vision | Zonules.com</title>
+  <meta name="description" content="Scene understanding is the capacity of a vision system to produce a structured, semantically labelled representation of an image. The machine-vision analogue of visual scene parsing. Classified FIO-05.">
+  <link rel="canonical" href="https://zonules.com/scene-understanding/">
+  <link rel="alternate" hreflang="en" href="https://zonules.com/scene-understanding/">
+  <link rel="alternate" hreflang="x-default" href="https://zonules.com/scene-understanding/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Scene Understanding — Structured Semantic Interpretation in Machine Vision">
+  <meta property="og:description" content="Scene understanding is the capacity of a vision system to produce a structured, semantically labelled representation of an image. The machine-vision analogue of visual scene parsing. Classified FIO-05.">
+  <meta property="og:url" content="https://zonules.com/scene-understanding/">
+  <link rel="stylesheet" href="../assets/css/reference.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "termCode": "TRM-062",
+    "name": "Scene Understanding",
+    "description": "The capacity of a machine vision system to produce a structured, semantically labelled representation of an image, including object categories, spatial layout, and relational context.",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Zonules Reference Lexicon",
+      "url": "https://zonules.com/glossary/"
+    },
+    "url": "https://zonules.com/scene-understanding/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},
+      {"@type":"ListItem","position":2,"name":"Machine Vision","item":"https://zonules.com/glossary/"},
+      {"@type":"ListItem","position":3,"name":"Scene Understanding","item":"https://zonules.com/scene-understanding/"}
+    ]
+  }
+  </script>
+</head>
+<body class="rl">
+<main class="rl-wrap">
+
+  <nav class="rl-crumb">Zonules.com / Machine Vision / Scene Understanding</nav>
+
+  <p class="rl-badges">
+    <span class="rl-badge">Layer 3 · Machine Vision</span>
+    <span class="rl-badge">FIO-05</span>
+    <span class="rl-badge">FIS-5</span>
+  </p>
+
+  <article class="rl-article">
+
+    <h1>Scene Understanding</h1>
+    <blockquote>Seeing a scene is not the same as understanding it. The machine that labels every pixel can still be wrong about everything that matters.</blockquote>
+
+    <h2>Definition</h2>
+    <p>Scene understanding is the capacity of a machine vision system to produce a structured, semantically labelled representation of an image that goes beyond detecting individual objects to account for spatial layout, inter-object relationships, scene category, and contextual coherence. It is the machine-vision analogue of human <a href="../visual-scene-parsing/">Visual Scene Parsing</a>.</p>
+
+    <h2>Scientific Grounding</h2>
+    <p>Scene understanding is typically operationalised as the joint solution of several sub-tasks: semantic segmentation (what class is each pixel?), object detection and instance segmentation (where are individual objects?), depth estimation (what is the spatial layout?), and scene classification (what kind of scene is this?). Modern systems built on large transformer architectures approach these tasks in a unified framework, but performance remains fragile under compositional novelty and distribution shift.</p>
+    <p>The gap between sub-task performance and holistic understanding is a defining challenge. A system can correctly label every object in a kitchen scene while failing to recognise that a knife is pointing at a person — failing at relational understanding while succeeding at categorical recognition. This gap is structurally analogous to the human perceptual gap between gist perception and detailed object-level parsing: each can be correct while the other fails.</p>
+    <p>Scene understanding performance degrades substantially under occlusion, unusual viewpoints, and rare object categories not represented in training data. These are predictable FIO-05 failure modes: the model's interpretation schema cannot handle inputs that fall outside its training distribution.</p>
+    <p><em>Sources: SRC-007. See source registry.</em></p>
+
+    <h2>Understanding vs Recognition</h2>
+    <p>The distinction between scene recognition and scene understanding is fundamental. Recognition assigns a label ("kitchen", "street scene"). Understanding produces a structured representation of what is present, where it is, and how it relates to other scene elements. The difference is the difference between knowing the category of a signal and being able to use it. Most deployed scene understanding systems produce recognition-level outputs that are marketed as understanding-level capabilities.</p>
+
+    <h2>Layer Classification</h2>
+    <ul>
+      <li><strong>Layer:</strong> L3 — Machine Vision</li>
+      <li><strong>Cluster:</strong> machine-perception</li>
+      <li><strong>FIO Class:</strong> FIO-05 Interpretation — scene understanding is the machine-vision instantiation of visual scene parsing, carrying interpretation-layer risk at every level of the output representation</li>
+      <li><strong>FIS Criterion:</strong> FIS-5 Interpretation — requires that scene-level interpretive claims be grounded in evidence from the image signal rather than in prior expectations</li>
+    </ul>
+
+    <h2>Relationship to the Governing Thesis</h2>
+    <p>Zonules.com treats scene understanding as the L3 analogue of L2 <a href="../visual-scene-parsing/">Visual Scene Parsing</a>. Both assign structure and meaning to a visual signal; both operate through interpretation mechanisms that can produce confident, structured, incorrect outputs. The Focus Integrity Standard requires that for high-stakes deployments, the interpretive assumptions of the scene understanding model be documented alongside the output — so that the boundary between what the image contains and what the model imposed upon it remains traceable.</p>
+
+    <h2>Related Terms</h2>
+    <ul>
+      <li><a href="../semantic-segmentation/">Semantic Segmentation</a></li>
+      <li><a href="../visual-grounding/">Visual Grounding</a></li>
+      <li><a href="../object-detection/">Object Detection</a></li>
+      <li><a href="../optical-flow/">Optical Flow</a></li>
+      <li><a href="../visual-scene-parsing/">Visual Scene Parsing</a></li>
+      <li><a href="../neural-network-interpretability/">Neural Network Interpretability</a></li>
+    </ul>
+
+    <h2>Reference Notes</h2>
+    <p>Scene understanding is documented in SRC-007 (Szeliski). The human perceptual parallel is documented in SRC-005 and SRC-006 under visual scene parsing and gist perception.</p>
+
+    <h2>Safety Notes</h2>
+    <p>Educational reference only. Claims about scene understanding in safety-critical systems require expert evaluation. This page does not constitute professional advice.</p>
+
+    <section class="rl-refs">
+      <h2>References &amp; claim provenance</h2>
+      <ul class="rl-reflist">
+        <li><span class="ref-tag">Sourced</span> Scene understanding in machine vision requires the integrated production of object detection, semantic segmentation, depth estimation, and relational reasoning from a single image or frame. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Current scene understanding systems excel at individual sub-tasks but struggle to produce globally consistent scene interpretations under distribution shift or compositional novelty. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Sourced</span> Scene understanding performance degrades substantially in the presence of occlusion, unusual viewpoints, and rare object categories not well represented in training data. <span class="ref-src">SRC-007 Szeliski</span></li>
+        <li><span class="ref-tag">Framework</span> In the Zonules FIO framework, scene understanding is classified under FIO-05 Interpretation: it is the machine-vision instantiation of visual scene parsing, carrying the same interpretation-layer risks. <span class="ref-src">Zonules.com — FIO/FIS v0.1</span></li>
+      </ul>
+    </section>
+
+  </article>
+
+  <footer class="rl-foot">
+    <a href="../glossary/">glossary</a> · <a href="../ontology/">ontology</a> · <a href="../methodology/">methodology</a> · <a href="../source-policy/">source-policy</a> · <a href="../engine/">engine</a>
+  </footer>
+
+</main>
+</body>
+</html>

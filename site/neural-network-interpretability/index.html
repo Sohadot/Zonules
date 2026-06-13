@@ -1,116 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Neural Network Interpretability — Understanding What Machine Vision Actually Sees | Zonules.com</title>
-  <meta name="description" content="Neural network interpretability is the field concerned with understanding and explaining the internal representations of deep learning models applied to visual tasks. Classified FIO-05.">
-  <link rel="canonical" href="https://zonules.com/neural-network-interpretability/">
-  <link rel="alternate" hreflang="en" href="https://zonules.com/neural-network-interpretability/">
-  <link rel="alternate" hreflang="x-default" href="https://zonules.com/neural-network-interpretability/">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Neural Network Interpretability — Understanding What Machine Vision Actually Sees">
-  <meta property="og:description" content="Neural network interpretability is the field concerned with understanding and explaining the internal representations of deep learning models applied to visual tasks. Classified FIO-05.">
-  <meta property="og:url" content="https://zonules.com/neural-network-interpretability/">
-  <link rel="stylesheet" href="../assets/css/reference.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "DefinedTerm",
-    "termCode": "TRM-068",
-    "name": "Neural Network Interpretability",
-    "description": "The field concerned with understanding and explaining the internal representations and decision-making processes of deep learning models applied to visual tasks.",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "Zonules Reference Lexicon",
-      "url": "https://zonules.com/glossary/"
-    },
-    "url": "https://zonules.com/neural-network-interpretability/"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},
-      {"@type":"ListItem","position":2,"name":"Machine Vision","item":"https://zonules.com/glossary/"},
-      {"@type":"ListItem","position":3,"name":"Neural Network Interpretability","item":"https://zonules.com/neural-network-interpretability/"}
-    ]
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neural Network Interpretability — Understanding What Machine Vision Actually Sees | Zonules.com</title>
+<meta name="description" content="Neural network interpretability is the field concerned with understanding the internal representations of deep learning models applied to visual tasks. Classified FIO-05.">
+<link rel="canonical" href="https://zonules.com/neural-network-interpretability/">
+<link rel="alternate" hreflang="en" href="https://zonules.com/neural-network-interpretability/">
+<link rel="alternate" hreflang="x-default" href="https://zonules.com/neural-network-interpretability/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Neural Network Interpretability — Understanding What Machine Vision Actually Sees | Zonules.com">
+<meta property="og:description" content="Neural network interpretability is the field concerned with understanding the internal representations of deep learning models applied to visual tasks. Classified FIO-05.">
+<meta property="og:url" content="https://zonules.com/neural-network-interpretability/">
+<link rel="stylesheet" href="../assets/css/reference.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","name":"Neural Network Interpretability","description":"Neural network interpretability is the field concerned with understanding the internal representations of deep learning models applied to visual tasks. Classified FIO-05.","url":"https://zonules.com/neural-network-interpretability/","inDefinedTermSet":"https://zonules.com/glossary/","termCode":"TRM-068","isPartOf":{"@type":"WebSite","name":"Zonules.com","url":"https://zonules.com/"},"citation":["Szeliski R. Computer Vision: Algorithms and Applications."]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Zonules.com","item":"https://zonules.com/"},{"@type":"ListItem","position":2,"name":"Machine Vision & Verification","item":"https://zonules.com/glossary/"},{"@type":"ListItem","position":3,"name":"Neural Network Interpretability","item":"https://zonules.com/neural-network-interpretability/"}]}</script>
 </head>
 <body class="rl">
 <main class="rl-wrap">
-
-  <nav class="rl-crumb">Zonules.com / Machine Vision / Neural Network Interpretability</nav>
-
-  <p class="rl-badges">
-    <span class="rl-badge">Layer 3 · Machine Vision</span>
-    <span class="rl-badge">FIO-05</span>
-    <span class="rl-badge">FIS-5</span>
-  </p>
-
-  <article class="rl-article">
-
-    <h1>Neural Network Interpretability</h1>
-    <blockquote>High accuracy is not the same as correct reasoning. Interpretability asks why the machine was right — because if it was right for the wrong reason, it will be wrong when it matters.</blockquote>
-
-    <h2>Definition</h2>
-    <p>Neural network interpretability is the field concerned with understanding and explaining the internal representations and decision-making processes of deep learning models applied to visual tasks. It seeks to answer: what features does the model use? what image regions influence each prediction? what has the model learned to represent? and whether the model's reasoning is grounded in the visual content that a human observer would identify as task-relevant.</p>
-
-    <h2>Scientific Grounding</h2>
-    <p>Interpretability methods fall into several categories. Feature visualization generates synthetic inputs that maximally activate individual neurons or channels, revealing what visual patterns each unit responds to. Saliency methods compute gradients or attention weights to generate pixel-level attribution maps indicating which image regions most influenced a given prediction. Probing classifiers train linear models on learned representations to test whether specific properties (shape, colour, texture, object identity) are linearly decodable from intermediate representations.</p>
-    <p>Gradient-weighted class activation mapping (Grad-CAM) is among the most widely applied attribution methods: it uses the gradient of a class score with respect to convolutional feature maps to highlight image regions that were most influential for the prediction. These visualizations are widely used in medical imaging AI to provide a form of accountability for model decisions — showing which retinal region drove a diabetic retinopathy classification, for example.</p>
-    <p>Interpretability research has produced a troubling finding: high-accuracy models can rely on spurious correlations in training data, achieving correct outputs for incorrect reasons. A skin lesion classifier was found to be partially using surgical markers (artefacts of the imaging context, not the lesion itself) as a diagnostic cue. A chest X-ray model used patient positioning and scanner manufacturer signatures. These are FIO-05 failures: correct predictions grounded in the wrong features of the signal.</p>
-    <p><em>Sources: SRC-007. See source registry.</em></p>
-
-    <h2>Interpretability as Focus Integrity Audit</h2>
-    <p>Neural network interpretability is, in Focus Integrity terms, the audit of whether a machine vision system's interpretation is grounded in the signal's actual content. The FIO-05 classification is precise: the failure mode interpretability exists to detect is exactly the condition where the model's output is an interpretation that diverges from the signal — where the model is “right” in a way that cannot be trusted because the grounding is incorrect.</p>
-
-    <h2>Layer Classification</h2>
-    <ul>
-      <li><strong>Layer:</strong> L3 — Machine Vision</li>
-      <li><strong>Cluster:</strong> machine-perception</li>
-      <li><strong>FIO Class:</strong> FIO-05 Interpretation — neural network interpretability is the discipline that asks whether a model's interpretation of a visual signal is grounded in the signal's actual content</li>
-      <li><strong>FIS Criterion:</strong> FIS-5 Interpretation — interpretability methods provide the evidence base for FIS-5 compliance in machine vision deployments</li>
-    </ul>
-
-    <h2>Relationship to the Governing Thesis</h2>
-    <p>Zonules.com treats neural network interpretability as the machine-vision analogue of the FIO-05 class across both L2 and L3. At L2, perceptual error and top-down processing document how human interpretation can diverge from signal content. At L3, interpretability is the methodological toolkit for detecting and documenting the analogous divergence in machine systems. The Focus Integrity Standard requires that for high-stakes machine vision deployments, interpretability analysis be conducted to verify that model predictions are grounded in task-relevant signal features.</p>
-
-    <h2>Related Terms</h2>
-    <ul>
-      <li><a href="../scene-understanding/">Scene Understanding</a></li>
-      <li><a href="../medical-imaging-ai/">Medical Imaging AI</a></li>
-      <li><a href="../ophthalmic-ai/">Ophthalmic AI</a></li>
-      <li><a href="../adversarial-examples/">Adversarial Examples</a></li>
-      <li><a href="../pattern-recognition/">Pattern Recognition</a></li>
-      <li><a href="../top-down-processing/">Top-Down Processing</a></li>
-    </ul>
-
-    <h2>Reference Notes</h2>
-    <p>Interpretability methods and their applications are documented in SRC-007 (Szeliski). The human perceptual analogues — the role of prior knowledge in shaping recognition and the systematic nature of perceptual errors — are documented in SRC-005 and SRC-006.</p>
-
-    <h2>Safety Notes</h2>
-    <p>Educational reference only. Interpretability methods do not guarantee model safety or correctness; they are diagnostic tools requiring expert interpretation. This page does not constitute professional or regulatory advice.</p>
-
-    <section class="rl-refs">
-      <h2>References &amp; claim provenance</h2>
-      <ul class="rl-reflist">
-        <li><span class="ref-tag">Sourced</span> Neural network interpretability methods include feature visualization, saliency mapping, activation analysis, and probing classifiers — techniques that expose what information a model has learned to represent. <span class="ref-src">SRC-007 Szeliski</span></li>
-        <li><span class="ref-tag">Sourced</span> Attribution methods such as Grad-CAM generate pixel-level explanations of model decisions, indicating which image regions most influenced a prediction. <span class="ref-src">SRC-007 Szeliski</span></li>
-        <li><span class="ref-tag">Sourced</span> Interpretability research has revealed that high-accuracy models can rely on spurious correlations in training data, achieving correct outputs for incorrect reasons. <span class="ref-src">SRC-007 Szeliski</span></li>
-        <li><span class="ref-tag">Framework</span> In the Zonules FIO framework, neural network interpretability is classified under FIO-05 Interpretation: it is the discipline that asks whether a machine vision system's interpretation of a visual signal is grounded in the signal's actual content. <span class="ref-src">Zonules.com — FIO/FIS v0.1</span></li>
-      </ul>
-    </section>
-
-  </article>
-
-  <footer class="rl-foot">
-    <a href="../glossary/">glossary</a> · <a href="../ontology/">ontology</a> · <a href="../methodology/">methodology</a> · <a href="../source-policy/">source-policy</a> · <a href="../engine/">engine</a>
-  </footer>
-
+<nav class="rl-crumb" aria-label="Breadcrumb"><a href="/">Zonules.com</a> <span aria-hidden="true">/</span> <a href="/glossary/">Machine Vision &amp; Verification</a> <span aria-hidden="true">/</span> <span aria-current="page">Neural Network Interpretability</span></nav><p class="rl-badges"><span class="rl-badge">Layer 3 · Machine Vision &amp; Verification</span><span class="rl-badge">FIO-05</span><span class="rl-badge">FIS-5</span></p><article class="rl-article"><h1>Neural Network Interpretability</h1>
+<blockquote>A correct output can be reached for the wrong reason; interpretability is how the reasoning is checked.</blockquote>
+<h2>Definition</h2>
+<p>Neural network interpretability methods include feature visualization, saliency mapping, activation analysis, probing classifiers, and mechanistic circuit analysis.</p>
+<h2>Scientific Grounding</h2>
+<p>Attribution methods such as Grad-CAM generate pixel-level explanations of model decisions by computing gradients with respect to feature map activations. High-accuracy models can rely on spurious correlations in training data, achieving correct benchmark performance for incorrect reasons that fail under distribution shift.</p>
+<p>*Sources: SRC-007. See the source registry for classification.*</p>
+<h2>Machine-Vision Role</h2>
+<p>In the Zonules FIO framework, neural network interpretability is classified under FIO-05 Interpretation: interpretability methods exist because the model's internal interpretation of its input cannot be assumed correct even when its output is.</p>
+<h2>Layer Classification</h2>
+<ul><li><strong>Layer:</strong> L3 — Machine Vision</li><li><strong>Cluster:</strong> machine-perception</li><li><strong>FIO class:</strong> FIO-05 — Interpretation</li><li><strong>FIS criterion:</strong> FIS-5</li></ul>
+<h2>Relationship to the Governing Thesis</h2>
+<p>Neural Network Interpretability is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the <a href="/focus-integrity-ontology/">focus-integrity ontology</a> is fixed as a FIO-05 (Interpretation) concern, the same failure class whether the seeing system is made of tissue, attention, or silicon.</p>
+<h2>Related Terms</h2>
+<ul><li><a href="/scene-understanding/">Scene Understanding</a> — governed reference unit linked within this cluster.</li><li><a href="/medical-imaging-ai/">Medical Imaging AI</a> — governed reference unit linked within this cluster.</li><li><a href="/ophthalmic-ai/">Ophthalmic AI</a> — governed reference unit linked within this cluster.</li><li><a href="/adversarial-examples/">Adversarial Examples</a> — governed reference unit linked within this cluster.</li><li><a href="/pattern-recognition/">Pattern Recognition</a> — governed reference unit linked within this cluster.</li><li><a href="/top-down-processing/">Top-Down Processing</a> — governed reference unit linked within this cluster.</li></ul>
+<h2>Reference Notes</h2>
+<ul><li><strong>Sources:</strong> SRC-007 (registered).</li><li><strong>Claims:</strong> CLM-220, CLM-221, CLM-222 sourced; CLM-223 internal framework.</li><li><strong>FIO/FIS:</strong> governed by `REFERENCE_ARCHITECTURE.md`.</li></ul>
+<h2>Safety Notes</h2>
+<p>This is <strong>educational reference content only</strong>. It describes machine-vision methods and their known failure modes and does not constitute engineering, clinical, or safety advice for any deployed system. Where machine vision is applied to the eye or to medicine, it is not a substitute for advice from a qualified eye-care professional.</p><section class="rl-refs"><h2>References &amp; claim provenance</h2><p class="rl-refs-note">Every claim below is registered and classified. &ldquo;Sourced&rdquo; claims rest on the listed references; &ldquo;Framework&rdquo; claims are internal conceptual mappings, not external fact.</p><ul class="rl-reflist"><li><span class="ref-tag">Sourced</span> Neural network interpretability methods include feature visualization, saliency mapping, activation analysis, probing classifiers, and mechanistic circuit analysis. <span class="ref-src">Szeliski R. Computer Vision: Algorithms and Applications.</span></li><li><span class="ref-tag">Sourced</span> Attribution methods such as Grad-CAM generate pixel-level explanations of model decisions by computing gradients with respect to feature map activations. <span class="ref-src">Szeliski R. Computer Vision: Algorithms and Applications.</span></li><li><span class="ref-tag">Sourced</span> High-accuracy models can rely on spurious correlations in training data, achieving correct benchmark performance for incorrect reasons that fail under distribution shift. <span class="ref-src">Szeliski R. Computer Vision: Algorithms and Applications.</span></li><li><span class="ref-tag">Framework</span> In the Zonules FIO framework, neural network interpretability is classified under FIO-05 Interpretation: interpretability methods exist because the model&#x27;s internal interpretation of its input cannot be assumed correct even when its output is. <span class="ref-src">Zonules.com — Focus Integrity Ontology and Standard (FIO/FIS v0.1).</span></li></ul></section></article>
+<footer class="rl-foot"><a href="/glossary/">All reference units</a> · <a href="/focus-integrity-ontology/">Ontology</a> · <a href="/methodology/">Methodology</a> · <a href="/source-policy/">Source policy</a> · <a href="/focus-integrity-engine/">Focus Integrity Engine</a></footer>
 </main>
 </body>
 </html>

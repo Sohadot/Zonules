@@ -17,7 +17,7 @@ canonical: https://zonules.com/deepfake-detection/
 last_reviewed: 2026-06-12
 claims: [CLM-038, CLM-039, CLM-040, CLM-041]
 sources: [SRC-007, SRC-008, SRC-004]
-related_terms: [machine-vision, image-provenance, visual-perception]
+related_terms: [machine-vision, image-provenance, synthetic-media, visual-perception]
 seo_title: "Deepfake Detection — The Provenance Problem of Machine Focus | Zonules.com"
 meta_description: "Deepfake detection asks whether what a system sees is real. In the focus-integrity thesis it is a provenance problem (FIO-04): detection is not the same as proof of origin."
 ---
@@ -64,6 +64,7 @@ Provenance has no anatomical analogue; the eye never evolved to ask whether ligh
 
 - [Machine Vision](/machine-vision/) — the layer anchor this specializes
 - [Image Provenance](/image-provenance/) — the origin record that complements detection
+- [Synthetic Media](/synthetic-media/) — the broader class of machine-generated content detection must contend with
 - [Visual Perception](/visual-perception/) — the human counterpart with weak provenance instincts
 
 ## Reference Notes

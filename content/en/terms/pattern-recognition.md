@@ -19,7 +19,7 @@ claims: [CLM-160, CLM-161, CLM-162, CLM-163]
 sources: [SRC-005, SRC-006]
 related_terms: [visual-inference, top-down-processing, perceptual-error, signal-ambiguity, visual-scene-parsing, attention-capture]
 seo_title: "Pattern Recognition | Zonules.com"
-meta_description: "Pattern recognition matches sensory input against stored templates and is a primary site of interpretation failure. A governed reference unit on perceptual clarity in the Zonules focus-integrity framework."
+meta_description: "Pattern recognition is the perception of meaningful structure — objects, faces, and regularities — in sensory input."
 ---
 # Pattern Recognition
 

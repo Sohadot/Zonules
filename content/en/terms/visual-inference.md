@@ -19,7 +19,7 @@ claims: [CLM-164, CLM-165, CLM-166, CLM-167]
 sources: [SRC-005, SRC-006]
 related_terms: [pattern-recognition, top-down-processing, perceptual-error, signal-ambiguity, binocular-vision, depth-perception]
 seo_title: "Visual Inference | Zonules.com"
-meta_description: "Visual inference fills gaps using prior probability, risking the override of signal fidelity by expectation. A governed reference unit on perceptual interpretation in the Zonules focus-integrity framework."
+meta_description: "Visual inference is the brain's construction of a percept by going beyond the sensory data to the most likely interpretation of it."
 ---
 # Visual Inference
 

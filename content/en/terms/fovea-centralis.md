@@ -19,7 +19,7 @@ claims: [CLM-133, CLM-134, CLM-135, CLM-136]
 sources: [SRC-001, SRC-003]
 related_terms: [macula, photoreceptors, retina, binocular-vision, oculomotor-system]
 seo_title: "Fovea Centralis | Zonules.com"
-meta_description: "The fovea centralis is the small depression at the center of the macula where cone density is highest and visual acuity is greatest. The anatomical zero-point of focused sight."
+meta_description: "The fovea centralis is the cone-rich central pit of the retina that delivers the sharpest, most detailed human vision."
 ---
 # Fovea Centralis
 

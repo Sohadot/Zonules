@@ -19,7 +19,7 @@ claims: [CLM-168, CLM-169, CLM-170, CLM-171]
 sources: [SRC-005, SRC-006]
 related_terms: [attention-capture, top-down-processing, visual-scene-parsing, signal-ambiguity, perceptual-error]
 seo_title: "Perceptual Load | Zonules.com"
-meta_description: "Perceptual load sets the effective aperture of attention, determining which stimuli are processed in detail. A governed reference unit on attentional accommodation in the Zonules focus-integrity framework."
+meta_description: "Perceptual load is how much a task consumes perceptual capacity, determining how much irrelevant information is processed alongside it."
 ---
 # Perceptual Load
 

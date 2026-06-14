@@ -19,7 +19,7 @@ claims: [CLM-176, CLM-177, CLM-178, CLM-179]
 sources: [SRC-005, SRC-006]
 related_terms: [perceptual-load, signal-ambiguity, top-down-processing, visual-scene-parsing, oculomotor-system]
 seo_title: "Attention Capture | Zonules.com"
-meta_description: "Attention capture is the involuntary, salience-driven reorientation of attention by competing visual noise. A governed reference unit on perceptual signal-noise separation in the Zonules focus-integrity framework."
+meta_description: "Attention capture is the involuntary pull of focus toward a salient stimulus, often before any deliberate decision to attend to it."
 ---
 # Attention Capture
 

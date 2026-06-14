@@ -19,7 +19,7 @@ claims: [CLM-704, CLM-705, CLM-706, CLM-707]
 sources: [SRC-005, SRC-006, SRC-004]
 related_terms: [visual-search, binding-problem, selective-attention, visual-attention, preattentive-processing]
 seo_title: "Feature Integration Theory | Zonules.com"
-meta_description: "Feature integration theory proposes that simple features such as color and orientation are registered in parallel across the visual field, while combining them into objects requires focused attention."
+meta_description: "Feature integration theory holds that focused attention binds separately registered features such as color and shape into perceived objects."
 ---
 
 # Feature Integration Theory

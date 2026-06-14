@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.7",
+  "version": "1.8",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -11959,6 +11959,334 @@
         "SRC-004"
       ],
       "page": "/medical-imaging-ai/"
+    },
+    {
+      "id": "CLM-1301",
+      "status": "sourced",
+      "statement": "Visual working memory holds a small number of visual items in an active state for seconds, maintained by sustained neural activity and refreshed by attention.",
+      "sources": [
+        "SRC-005",
+        "SRC-009"
+      ],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-1302",
+      "status": "sourced",
+      "statement": "It is the workspace where perception meets thought: comparing what is seen now with what was seen a moment ago underlies search, reading, and reasoning about scenes.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-1303",
+      "status": "internal-framework",
+      "statement": "In the standard it sits at the accommodation layer, where the system adjusts and sustains a usable representation across the gap between glances.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-1304",
+      "status": "sourced",
+      "statement": "Its sharp capacity limit means that beyond a few items information is lost or overwritten, and items can be confused or misbound under load.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-1305",
+      "status": "internal-framework",
+      "statement": "A machine system's context buffer or recurrent state plays the same role, holding a bounded amount of recent visual information that constrains what it can integrate over time.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-1306",
+      "status": "sourced",
+      "statement": "Working memory is often equated with short-term storage in general; it is specifically the active maintenance and manipulation of a few items, not a passive buffer of everything recently seen.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-working-memory/"
+    },
+    {
+      "id": "CLM-1307",
+      "status": "sourced",
+      "statement": "Perceptual errors arise when the heuristics that normally recover the world from ambiguous input are applied to input that violates their assumptions, yielding a confident but wrong percept.",
+      "sources": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "page": "/perceptual-error/"
+    },
+    {
+      "id": "CLM-1308",
+      "status": "sourced",
+      "statement": "Errors are not noise to be dismissed; they are the clearest evidence of how perception works, revealing the inferences the system makes by showing where they break.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/perceptual-error/"
+    },
+    {
+      "id": "CLM-1309",
+      "status": "internal-framework",
+      "statement": "Perceptual error is the canonical interpretation failure: focus is held and the signal is clean, yet the meaning is wrong.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/perceptual-error/"
+    },
+    {
+      "id": "CLM-1310",
+      "status": "sourced",
+      "statement": "Machine perception shows the same signature in adversarial examples and shortcut learning: a sharp input read with confident, incorrect meaning.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/perceptual-error/"
+    },
+    {
+      "id": "CLM-1311",
+      "status": "internal-framework",
+      "statement": "Sharing the FIO-05 class lets one standard ask of a person and a model whether clean focus produced the correct reading.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/perceptual-error/"
+    },
+    {
+      "id": "CLM-1312",
+      "status": "sourced",
+      "statement": "A perceptual error is often taken to mean poor eyesight; in fact illusions fool observers with perfect optics, because the error is in interpretation, not in the signal.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/perceptual-error/"
+    },
+    {
+      "id": "CLM-1313",
+      "status": "sourced",
+      "statement": "Camera fingerprinting extracts the sensor's photo-response non-uniformity, a fixed pattern of tiny pixel-to-pixel sensitivity differences that acts as a stable signature of a specific device.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1314",
+      "status": "sourced",
+      "statement": "It lets an image be tied to the camera that produced it, supporting source attribution in journalism, law, and investigations where origin is contested.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1315",
+      "status": "internal-framework",
+      "statement": "In the thesis it is a provenance instrument, establishing where an image came from rather than judging how it looks.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1316",
+      "status": "sourced",
+      "statement": "Heavy compression, resizing, and denoising weaken the fingerprint, and it cannot identify a device that was never enrolled, so a non-match is not proof of forgery.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1317",
+      "status": "internal-framework",
+      "statement": "Neither a human nor a model can see this signature by looking; establishing device origin requires a measurement outside the visible image.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1318",
+      "status": "sourced",
+      "statement": "Camera fingerprinting is sometimes confused with reading file metadata; the fingerprint lives in the pixels themselves and survives metadata stripping, whereas EXIF tags do not.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1319",
+      "status": "sourced",
+      "statement": "A perceptual hash summarizes an image's visual structure into a short code so that visually similar images yield similar codes, unlike a cryptographic hash that changes completely with any edit.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-1320",
+      "status": "sourced",
+      "statement": "Perceptual hashing scales matching across billions of images, underpinning provenance lookups, duplicate detection, and known-content matching.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-1321",
+      "status": "internal-framework",
+      "statement": "In the thesis it gives a system an index of provenance, a memory for whether an image has been seen before.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-1322",
+      "status": "sourced",
+      "statement": "Because near-identical images collide by design, perceptual hashes can produce false matches, and adversarial edits can be crafted to evade or to force a match.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-1323",
+      "status": "internal-framework",
+      "statement": "It gives a machine a recall of past images at a scale human recognition cannot reach, but it answers similarity, not authenticity.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-1324",
+      "status": "sourced",
+      "statement": "A perceptual hash is often assumed to verify authenticity; it establishes similarity to known content, not whether an image is real or where it originated.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-1325",
+      "status": "sourced",
+      "statement": "The dorsal stream projects from primary visual cortex through parietal areas, carrying fast, motion-sensitive magnocellular input used to localize objects and guide movement.",
+      "sources": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-1326",
+      "status": "sourced",
+      "statement": "It supplies the visual control of action — reaching, grasping, and navigating — often without conscious awareness of the computations involved.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-1327",
+      "status": "internal-framework",
+      "statement": "In the thesis it is an interpretation route specialized for where things are and how to act on them.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-1328",
+      "status": "sourced",
+      "statement": "Parietal damage to the dorsal stream can impair reaching toward or navigating around objects that the person can still recognize, dissociating action from identity.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-1329",
+      "status": "internal-framework",
+      "statement": "Robotics and visual-SLAM systems implement a dorsal-like function, using vision for localization and action separately from the recognition that names what is seen.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-1330",
+      "status": "sourced",
+      "statement": "The dorsal stream is often labeled simply the where pathway; it is better understood as the how pathway, computing vision for action rather than mere location.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-1331",
+      "status": "sourced",
+      "statement": "The ventral stream projects from primary visual cortex through the temporal lobe, building progressively more complex, view-tolerant representations that culminate in object and face recognition.",
+      "sources": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-1332",
+      "status": "sourced",
+      "statement": "It is the substrate of visual recognition and memory: the pathway by which seeing becomes knowing what one sees.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-1333",
+      "status": "internal-framework",
+      "statement": "In the thesis it is the interpretation route specialized for what things are.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-1334",
+      "status": "sourced",
+      "statement": "Damage to the ventral stream can produce agnosias, in which a person sees an object clearly yet cannot recognize it, sometimes for a specific category such as faces.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-1335",
+      "status": "sourced",
+      "statement": "A deep image classifier is a ventral-like hierarchy, transforming pixels into category labels through stacked feature stages.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-1336",
+      "status": "sourced",
+      "statement": "The ventral stream is sometimes thought to store images; it stores learned features and categories, which is why recognition survives large changes in a familiar object's appearance.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/ventral-stream/"
     }
   ]
 }

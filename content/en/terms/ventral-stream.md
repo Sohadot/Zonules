@@ -15,7 +15,7 @@ concept_id: CON-ventral-stream
 safety_class: medical-educational
 canonical: https://zonules.com/ventral-stream/
 last_reviewed: 2026-06-14
-claims: [CLM-904, CLM-905, CLM-906, CLM-907]
+claims: [CLM-904, CLM-905, CLM-906, CLM-907, CLM-1331, CLM-1332, CLM-1333, CLM-1334, CLM-1335, CLM-1336]
 sources: [SRC-009, SRC-013, SRC-004]
 related_terms: [dorsal-stream, parvocellular-pathway, visual-cortex, object-recognition, cortical-magnification]
 seo_title: "Ventral Stream | Zonules.com"
@@ -50,6 +50,31 @@ The ventral stream is an interpretation-layer route: it reads the scene for what
 ## Relationship to the Governing Thesis
 
 Ventral Stream is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as an FIO-05 — Interpretation concern, the same failure class whether the seeing system is made of tissue, attention, or silicon. The [Focus Integrity Codes](/focus-integrity-codes/) page explains how to read these codes.
+
+
+## Mechanism
+
+The ventral stream projects from primary visual cortex through the temporal lobe, building progressively more complex, view-tolerant representations that culminate in object and face recognition. [CLM-1331]
+
+## Why It Matters
+
+It is the substrate of visual recognition and memory: the pathway by which seeing becomes knowing what one sees. [CLM-1332] In the thesis it is the interpretation route specialized for what things are. [CLM-1333]
+
+## Failure Mode
+
+Damage to the ventral stream can produce agnosias, in which a person sees an object clearly yet cannot recognize it, sometimes for a specific category such as faces. [CLM-1334]
+
+## Human–Machine Bridge
+
+A deep image classifier is a ventral-like hierarchy, transforming pixels into category labels through stacked feature stages. [CLM-1335]
+
+## Common Misunderstanding
+
+The ventral stream is sometimes thought to store images; it stores learned features and categories, which is why recognition survives large changes in a familiar object's appearance. [CLM-1336]
+
+## Source Notes
+
+The pathway, its lesion effects, and the classifier parallel rest on neuroscience and deep-learning references (SRC-009, SRC-013, SRC-015, SRC-017). The framing as a what-interpretation route is internal Zonules.com language (SRC-004).
 
 ## Related Terms
 

@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "2.5",
+  "version": "2.6",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -605,7 +605,7 @@
       "template": "term.html",
       "content": "content/en/pages/methodology.md",
       "seo_title": "Methodology | Zonules.com",
-      "meta_description": "How Zonules.com governs its reference corpus: the route, claim, and source registries; the focus-integrity ontology and standard; and the blocking quality gate that enforces them.",
+      "meta_description": "How Zonules.com is governed: source classification, claim registration, FIO/FIS classification, and the safety rules behind every page.",
       "required_internal_links": [
         "/source-policy/",
         "/glossary/",
@@ -1242,13 +1242,21 @@
       ],
       "source_requirements": [
         "SRC-005",
-        "SRC-006"
+        "SRC-006",
+        "SRC-009",
+        "SRC-014"
       ],
       "claim_requirements": [
         "CLM-092",
         "CLM-093",
         "CLM-094",
-        "CLM-095"
+        "CLM-095",
+        "CLM-1301",
+        "CLM-1302",
+        "CLM-1303",
+        "CLM-1304",
+        "CLM-1305",
+        "CLM-1306"
       ],
       "safety_class": "educational",
       "monetization": "none",
@@ -1634,7 +1642,7 @@
       "template": "term.html",
       "content": "content/en/terms/fovea-centralis.md",
       "seo_title": "Fovea Centralis | Zonules.com",
-      "meta_description": "The fovea centralis is the small depression at the center of the macula where cone density is highest and visual acuity is greatest. The anatomical zero-point of focused sight.",
+      "meta_description": "The fovea centralis is the cone-rich central pit of the retina that delivers the sharpest, most detailed human vision.",
       "required_internal_links": [
         "/macula/",
         "/photoreceptors/",
@@ -1671,7 +1679,7 @@
       "template": "term.html",
       "content": "content/en/terms/optic-chiasm.md",
       "seo_title": "Optic Chiasm | Zonules.com",
-      "meta_description": "The optic chiasm is the X-shaped junction where nasal retinal fibres from each eye cross to the opposite hemisphere, routing the visual signal for binocular integration.",
+      "meta_description": "The optic chiasm is where the optic nerves partially cross, routing each visual hemifield to the opposite side of the brain.",
       "required_internal_links": [
         "/optic-nerve/",
         "/optic-tract/",
@@ -1862,7 +1870,7 @@
       "template": "term.html",
       "content": "content/en/terms/sclera.md",
       "seo_title": "Sclera | Zonules.com",
-      "meta_description": "The sclera is the tough outer coat of the eye that maintains its spherical shape, protecting the optical contents and providing attachment for the extraocular muscles.",
+      "meta_description": "The sclera is the tough white outer wall of the eye that protects its inner structures and helps maintain its shape.",
       "required_internal_links": [
         "/cornea/",
         "/choroid/",
@@ -1938,7 +1946,7 @@
       "template": "term.html",
       "content": "content/en/terms/pattern-recognition.md",
       "seo_title": "Pattern Recognition | Zonules.com",
-      "meta_description": "Pattern recognition matches sensory input against stored templates and is a primary site of interpretation failure. A governed reference unit on perceptual clarity in the Zonules focus-integrity framework.",
+      "meta_description": "Pattern recognition is the perception of meaningful structure — objects, faces, and regularities — in sensory input.",
       "required_internal_links": [
         "/visual-inference/",
         "/top-down-processing/",
@@ -1976,7 +1984,7 @@
       "template": "term.html",
       "content": "content/en/terms/visual-inference.md",
       "seo_title": "Visual Inference | Zonules.com",
-      "meta_description": "Visual inference fills gaps using prior probability, risking the override of signal fidelity by expectation. A governed reference unit on perceptual interpretation in the Zonules focus-integrity framework.",
+      "meta_description": "Visual inference is the brain's construction of a percept by going beyond the sensory data to the most likely interpretation of it.",
       "required_internal_links": [
         "/pattern-recognition/",
         "/top-down-processing/",
@@ -2014,7 +2022,7 @@
       "template": "term.html",
       "content": "content/en/terms/perceptual-load.md",
       "seo_title": "Perceptual Load | Zonules.com",
-      "meta_description": "Perceptual load sets the effective aperture of attention, determining which stimuli are processed in detail. A governed reference unit on attentional accommodation in the Zonules focus-integrity framework.",
+      "meta_description": "Perceptual load is how much a task consumes perceptual capacity, determining how much irrelevant information is processed alongside it.",
       "required_internal_links": [
         "/attention-capture/",
         "/top-down-processing/",
@@ -2051,7 +2059,7 @@
       "template": "term.html",
       "content": "content/en/terms/top-down-processing.md",
       "seo_title": "Top-Down Processing | Zonules.com",
-      "meta_description": "Top-down processing uses prior knowledge to guide interpretation and can systematically distort an accurate signal. A governed reference unit on perceptual interpretation in the Zonules focus-integrity framework.",
+      "meta_description": "Top-down processing is perception guided by knowledge and expectation, shaping how incoming visual signals are interpreted.",
       "required_internal_links": [
         "/visual-inference/",
         "/pattern-recognition/",
@@ -2088,7 +2096,7 @@
       "template": "term.html",
       "content": "content/en/terms/attention-capture.md",
       "seo_title": "Attention Capture | Zonules.com",
-      "meta_description": "Attention capture is the involuntary, salience-driven reorientation of attention by competing visual noise. A governed reference unit on perceptual signal-noise separation in the Zonules focus-integrity framework.",
+      "meta_description": "Attention capture is the involuntary pull of focus toward a salient stimulus, often before any deliberate decision to attend to it.",
       "required_internal_links": [
         "/perceptual-load/",
         "/signal-ambiguity/",
@@ -2125,7 +2133,7 @@
       "template": "term.html",
       "content": "content/en/terms/perceptual-error.md",
       "seo_title": "Perceptual Error | Zonules.com",
-      "meta_description": "Perceptual error is the observable output of interpretation failure, where a clear signal is assigned an incorrect meaning. A governed reference unit on perceptual clarity in the Zonules focus-integrity framework.",
+      "meta_description": "Perceptual error is a clear but incorrect percept — the failure of interpretation rather than of sharpness, the lesson of every visual illusion.",
       "required_internal_links": [
         "/pattern-recognition/",
         "/visual-inference/",
@@ -2137,13 +2145,20 @@
       ],
       "source_requirements": [
         "SRC-005",
-        "SRC-006"
+        "SRC-006",
+        "SRC-017"
       ],
       "claim_requirements": [
         "CLM-180",
         "CLM-181",
         "CLM-182",
-        "CLM-183"
+        "CLM-183",
+        "CLM-1307",
+        "CLM-1308",
+        "CLM-1309",
+        "CLM-1310",
+        "CLM-1311",
+        "CLM-1312"
       ],
       "safety_class": "educational",
       "monetization": "none",
@@ -2201,7 +2216,7 @@
       "template": "term.html",
       "content": "content/en/terms/visual-scene-parsing.md",
       "seo_title": "Visual Scene Parsing | Zonules.com",
-      "meta_description": "Visual scene parsing segments, groups, and assigns spatial relations to construct scene meaning. A governed reference unit on perceptual interpretation in the Zonules focus-integrity framework.",
+      "meta_description": "Visual scene parsing segments a scene into objects, surfaces, and their relations to build a structured percept of the whole.",
       "required_internal_links": [
         "/pattern-recognition/",
         "/visual-inference/",
@@ -2326,7 +2341,7 @@
       "template": "term.html",
       "content": "content/en/terms/synthetic-media.md",
       "seo_title": "Synthetic Media — Machine-Generated Images and the Provenance Problem | Zonules.com",
-      "meta_description": "Synthetic media is visual content generated by machine learning systems. Its indistinguishability from authentic capture is a provenance integrity failure. Classified FIO-04.",
+      "meta_description": "Synthetic media is AI-generated or AI-altered images, video, and audio — content whose origin and authenticity must be verified, not assumed.",
       "required_internal_links": [
         "/deepfake-detection/",
         "/image-provenance/",
@@ -2481,7 +2496,7 @@
       "template": "term.html",
       "content": "content/en/terms/medical-imaging-ai.md",
       "seo_title": "Medical Imaging AI — High-Stakes Machine Interpretation of Clinical Images | Zonules.com",
-      "meta_description": "Medical imaging AI applies machine vision to clinical images for diagnostic support. Carries the highest-stakes interpretation risks in the FIO framework. Classified FIO-05.",
+      "meta_description": "Medical imaging AI detects, segments, and classifies findings in scans — an aid to clinicians, never a substitute for diagnosis.",
       "required_internal_links": [
         "/ophthalmic-ai/",
         "/domain-shift/",
@@ -2523,7 +2538,7 @@
       "template": "term.html",
       "content": "content/en/terms/neural-network-interpretability.md",
       "seo_title": "Neural Network Interpretability — Understanding What Machine Vision Actually Sees | Zonules.com",
-      "meta_description": "Neural network interpretability is the field concerned with understanding the internal representations of deep learning models applied to visual tasks. Classified FIO-05.",
+      "meta_description": "Neural network interpretability is the effort to explain why a model produced an output, not merely what it predicted.",
       "required_internal_links": [
         "/scene-understanding/",
         "/medical-imaging-ai/",
@@ -5682,7 +5697,7 @@
       "template": "term.html",
       "content": "content/en/pages/focus-integrity-codes.md",
       "seo_title": "Focus Integrity Codes | Zonules.com",
-      "meta_description": "What the FIO and FIS codes on every Zonules.com reference page mean: FIO names how focus fails, FIS names what intact focus requires. A short reader's key for people and AI agents.",
+      "meta_description": "Focus Integrity Codes explained: what the FIO failure-class and FIS standard codes mean and how to read any Zonules.com page from them.",
       "required_internal_links": [
         "/focus-integrity-ontology/",
         "/glossary/",
@@ -6725,7 +6740,7 @@
       "template": "term.html",
       "content": "content/en/terms/feature-integration-theory.md",
       "seo_title": "Feature Integration Theory | Zonules.com",
-      "meta_description": "Feature integration theory proposes that simple features such as color and orientation are registered in parallel across the visual field, while combining them into objects requires focused attention.",
+      "meta_description": "Feature integration theory holds that focused attention binds separately registered features such as color and shape into perceived objects.",
       "required_internal_links": [
         "/visual-search/",
         "/binding-problem/",
@@ -7793,7 +7808,13 @@
         "CLM-820",
         "CLM-821",
         "CLM-822",
-        "CLM-823"
+        "CLM-823",
+        "CLM-1319",
+        "CLM-1320",
+        "CLM-1321",
+        "CLM-1322",
+        "CLM-1323",
+        "CLM-1324"
       ],
       "safety_class": "technical",
       "monetization": "none",
@@ -8367,7 +8388,7 @@
       "template": "term.html",
       "content": "content/en/terms/dorsal-stream.md",
       "seo_title": "Dorsal Stream | Zonules.com",
-      "meta_description": "The dorsal stream is the cortical visual pathway running from the visual cortex toward the parietal lobe, associated with spatial location and visually guided action.",
+      "meta_description": "The dorsal stream is the cortical where-and-how pathway, supporting spatial location and the visual control of action.",
       "required_internal_links": [
         "/ventral-stream/",
         "/magnocellular-pathway/",
@@ -8382,7 +8403,13 @@
         "CLM-900",
         "CLM-901",
         "CLM-902",
-        "CLM-903"
+        "CLM-903",
+        "CLM-1325",
+        "CLM-1326",
+        "CLM-1327",
+        "CLM-1328",
+        "CLM-1329",
+        "CLM-1330"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -8413,13 +8440,21 @@
       ],
       "source_requirements": [
         "SRC-009",
-        "SRC-013"
+        "SRC-013",
+        "SRC-015",
+        "SRC-017"
       ],
       "claim_requirements": [
         "CLM-904",
         "CLM-905",
         "CLM-906",
-        "CLM-907"
+        "CLM-907",
+        "CLM-1331",
+        "CLM-1332",
+        "CLM-1333",
+        "CLM-1334",
+        "CLM-1335",
+        "CLM-1336"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -10423,7 +10458,13 @@
         "CLM-1120",
         "CLM-1121",
         "CLM-1122",
-        "CLM-1123"
+        "CLM-1123",
+        "CLM-1313",
+        "CLM-1314",
+        "CLM-1315",
+        "CLM-1316",
+        "CLM-1317",
+        "CLM-1318"
       ],
       "safety_class": "technical",
       "monetization": "none",

@@ -15,7 +15,7 @@ concept_id: CON-perceptual-hashing
 safety_class: technical
 canonical: https://zonules.com/perceptual-hashing/
 last_reviewed: 2026-06-14
-claims: [CLM-820, CLM-821, CLM-822, CLM-823]
+claims: [CLM-820, CLM-821, CLM-822, CLM-823, CLM-1319, CLM-1320, CLM-1321, CLM-1322, CLM-1323, CLM-1324]
 sources: [SRC-008, SRC-023, SRC-004]
 related_terms: [image-provenance, digital-watermarking, deepfake-detection, image-registration]
 seo_title: "Perceptual Hashing | Zonules.com"
@@ -50,6 +50,31 @@ Perceptual hashing is a provenance-layer index — it lets a system ask whether 
 ## Relationship to the Governing Thesis
 
 Perceptual Hashing is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as an FIO-04 — Provenance concern, the same failure class whether the seeing system is made of tissue, attention, or silicon. The [Focus Integrity Codes](/focus-integrity-codes/) page explains how to read these codes.
+
+
+## Mechanism
+
+A perceptual hash summarizes an image's visual structure into a short code so that visually similar images yield similar codes, unlike a cryptographic hash that changes completely with any edit. [CLM-1319]
+
+## Why It Matters
+
+Perceptual hashing scales matching across billions of images, underpinning provenance lookups, duplicate detection, and known-content matching. [CLM-1320] In the thesis it gives a system an index of provenance, a memory for whether an image has been seen before. [CLM-1321]
+
+## Failure Mode
+
+Because near-identical images collide by design, perceptual hashes can produce false matches, and adversarial edits can be crafted to evade or to force a match. [CLM-1322]
+
+## Human–Machine Bridge
+
+It gives a machine a recall of past images at a scale human recognition cannot reach, but it answers similarity, not authenticity. [CLM-1323]
+
+## Common Misunderstanding
+
+A perceptual hash is often assumed to verify authenticity; it establishes similarity to known content, not whether an image is real or where it originated. [CLM-1324]
+
+## Source Notes
+
+The hashing mechanism rests on a provenance-standards reference (SRC-008) and its use and limits on a media-forensics reference (SRC-023). The framing as a provenance index is internal Zonules.com language (SRC-004).
 
 ## Related Terms
 

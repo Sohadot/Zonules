@@ -19,7 +19,7 @@ claims: [CLM-216, CLM-217, CLM-218, CLM-219, CLM-1296, CLM-1297, CLM-1298, CLM-1
 sources: [SRC-007]
 related_terms: [ophthalmic-ai, domain-shift, model-calibration, semantic-segmentation, neural-network-interpretability]
 seo_title: "Medical Imaging AI — High-Stakes Machine Interpretation of Clinical Images | Zonules.com"
-meta_description: "Medical imaging AI applies machine vision to clinical images for diagnostic support. Carries the highest-stakes interpretation risks in the FIO framework. Classified FIO-05."
+meta_description: "Medical imaging AI detects, segments, and classifies findings in scans — an aid to clinicians, never a substitute for diagnosis."
 ---
 # Medical Imaging AI
 

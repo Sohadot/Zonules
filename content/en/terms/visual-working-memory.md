@@ -15,7 +15,7 @@ concept_id: CON-active-holding
 safety_class: educational
 canonical: https://zonules.com/visual-working-memory/
 last_reviewed: 2026-06-12
-claims: [CLM-092, CLM-093, CLM-094, CLM-095]
+claims: [CLM-092, CLM-093, CLM-094, CLM-095, CLM-1301, CLM-1302, CLM-1303, CLM-1304, CLM-1305, CLM-1306]
 sources: [SRC-005, SRC-006, SRC-004]
 related_terms: [selective-attention, inattentional-blindness, figure-ground]
 seo_title: "Visual Working Memory — The Active Holding Capacity of Perception | Zonules.com"
@@ -54,6 +54,31 @@ Accommodation failure at this level is invisible: you do not experience working 
 ## Relationship to the Governing Thesis
 
 The governing thesis holds that focus is produced by hidden structural tension. Working memory is the hidden capacity that determines how much of the world can be held in focused comparison at any moment. Its limits are structural, invisible, and absolute. The observer does not feel the constraint — they simply fail to detect the change.
+
+
+## Mechanism
+
+Visual working memory holds a small number of visual items in an active state for seconds, maintained by sustained neural activity and refreshed by attention. [CLM-1301]
+
+## Why It Matters
+
+It is the workspace where perception meets thought: comparing what is seen now with what was seen a moment ago underlies search, reading, and reasoning about scenes. [CLM-1302] In the standard it sits at the accommodation layer, where the system adjusts and sustains a usable representation across the gap between glances. [CLM-1303]
+
+## Failure Mode
+
+Its sharp capacity limit means that beyond a few items information is lost or overwritten, and items can be confused or misbound under load. [CLM-1304]
+
+## Human–Machine Bridge
+
+A machine system's context buffer or recurrent state plays the same role, holding a bounded amount of recent visual information that constrains what it can integrate over time. [CLM-1305]
+
+## Common Misunderstanding
+
+Working memory is often equated with short-term storage in general; it is specifically the active maintenance and manipulation of a few items, not a passive buffer of everything recently seen. [CLM-1306]
+
+## Source Notes
+
+The capacity and mechanism claims rest on perception and neuroscience references (SRC-005, SRC-009, SRC-014). The placement of working memory at the accommodation layer is internal Zonules.com framing (SRC-004).
 
 ## Related Terms
 

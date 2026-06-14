@@ -19,7 +19,7 @@ claims: [CLM-220, CLM-221, CLM-222, CLM-223]
 sources: [SRC-007]
 related_terms: [scene-understanding, medical-imaging-ai, ophthalmic-ai, adversarial-examples, pattern-recognition, top-down-processing]
 seo_title: "Neural Network Interpretability — Understanding What Machine Vision Actually Sees | Zonules.com"
-meta_description: "Neural network interpretability is the field concerned with understanding the internal representations of deep learning models applied to visual tasks. Classified FIO-05."
+meta_description: "Neural network interpretability is the effort to explain why a model produced an output, not merely what it predicted."
 ---
 # Neural Network Interpretability
 

@@ -531,3 +531,39 @@ The critical spine now carries reference-grade depth, the source registry is ful
 1. **Optional Sprint 6E (minor):** harden the remaining Important-tier pages (visual-working-memory, perceptual-error, camera-fingerprinting, perceptual-hashing, dorsal-stream, ventral-stream) and optionally trim the ~20 long anchor metas — small, safe, non-blocking.
 2. **English Master Freeze:** declare the English corpus the canonical reference layer; freeze FIO/FIS codes, term_id/concept_id, canonical URLs, claim IDs, and source classifications as the stable contract that translations must preserve.
 3. **Sprint 7A — Multilingual Architecture:** begin governed translation on the frozen master, anchors first, with FIO/FIS and source notes held invariant across languages.
+
+## 2026-06-14 — Sprint 6E: Final English Master Hardening & Freeze Preparation
+
+Final minor hardening pass before declaring the English canonical master ready to freeze. No new pages, no interface change, no multilingual work.
+
+### 1. Remaining important pages hardened (6)
+Added page-specific analytical sections (Mechanism, Why It Matters, Failure Mode, Human–Machine Bridge, Common Misunderstanding, Source Notes) to: **visual-working-memory** (6/6), **camera-fingerprinting** (6/6), **perceptual-hashing** (6/6), **dorsal-stream** (6/6), **ventral-stream** (6/6), and **perceptual-error** (5/6 — a separate Failure Mode was intentionally omitted because the page's whole subject is the interpretation failure itself; redundancy would be filler). Word counts rose from ~350–765 to ~550–997. Batch: +35 sections, +36 registered claims (CLM-1301…CLM-1336), all sourced where a registered reference supports the statement and internal-framework (SRC-004) for thesis framing. No new sources; all 27 remain in use.
+
+### 2. Long metadata trimmed (17)
+Shortened the 17 reference-unit and policy meta descriptions that exceeded ~165 characters, to ≤144 characters each, preserving search intent and meaning, with distinct phrasing and no keyword stuffing: perceptual-error, attention-capture, top-down-processing, visual-inference, perceptual-load, pattern-recognition, feature-integration-theory, visual-scene-parsing, fovea-centralis, synthetic-media, medical-imaging-ai, neural-network-interpretability, optic-chiasm, sclera, dorsal-stream, focus-integrity-codes, methodology. Both the markdown frontmatter and the route registry were updated together. The **three remaining long metas belong to generated interface surfaces** — the gateway (`/`), the engine (`/focus-integrity-engine/`), and `/acquire/` (noindex) — and were intentionally left untouched under the approved interface freeze; their length is cosmetic and `/acquire/` is excluded from indexing entirely.
+
+### 3. Translation-safety check — the freeze contract
+For future multilingual expansion, the following fields are declared **stable and invariant across languages** (translations localize prose only, never these):
+- `term_id` and `concept_id` — identity of each reference unit.
+- route `slug` and `canonical` URL — the English canonical remains the hreflang `x-default`.
+- `fio_class` / `fis_criterion` (FIO/FIS classification) — the governing spine; same code in every language.
+- claim IDs (`CLM-…`) and source IDs (`SRC-…`) — provenance must map one-to-one across languages.
+- `safety_class` and the substance of Safety Notes — medical/AI safety wording must not be weakened, softened, or made vaguer in any translation; "detection is not diagnosis" and the eye-care disclaimer must survive translation intact.
+- internal-framework (SRC-004) wording defining FIO/FIS and the focus-integrity thesis — translated faithfully, never reinterpreted.
+No language folders were created and nothing was translated in this sprint.
+
+### 4. State changes
+`data/routes.json` v2.5 → **v2.6** (claim/source requirements extended on 6 pages; 17 meta descriptions trimmed; no route added). `data/claims.json` v1.7 → **v1.8** (1300 → 1336; 982 sourced, 354 internal-framework). `data/sources.json` unchanged (v0.3). Pages unchanged (300); sitemap unchanged (299). Root pages regenerated.
+
+### 5. Verification
+Gate **PASS** — 300 pages, 1336 claims, 27 sources; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Every reference unit retains ≥2 inbound and ≥3 outbound links (no orphan-risk). Sitemap = 299 = indexable routes; `/acquire/` noindex and excluded; no `/site/` or `/static/` canonical paths; static-first security intact.
+
+### Freeze-readiness note — RECOMMENDATION: ENGLISH MASTER FREEZE
+The English canonical master is **ready to freeze.** Evidence:
+- **Coverage & structure:** 300 governed pages across L1/L2/L3 with 7 sub-clusters per perception/machine layer; no orphans, no orphan-risk (every unit ≥2 inbound, ≥3 outbound).
+- **Authority depth:** all 19 critical/important spine pages carry the full analytical layer set (Mechanism, Why It Matters, Failure Mode, Human–Machine Bridge, Common Misunderstanding, Source Notes, Safety Notes); each answers the five canonical questions.
+- **Source maturity:** all 27 sources in use; 982 sourced claims vs 354 internal-framework; no page over-relies on framework claims.
+- **SEO/AI readability:** unique titles, no duplicate metas, long metas trimmed (only frozen interface surfaces remain), stable headings, JSON-LD, FIO/FIS codes legible and rendered in the glossary.
+- **Security/publication:** static-first; no APIs/forms/scripts/secrets; `/acquire/` noindex and excluded; sitemap = indexable routes.
+
+**Recommended next step:** declare the English corpus the canonical master and freeze the contract fields above, then proceed to **Sprint 7A — Multilingual Architecture** (governed translation on the frozen master, anchors first, FIO/FIS and Safety Notes held invariant). No further English numeric growth is needed before the freeze.

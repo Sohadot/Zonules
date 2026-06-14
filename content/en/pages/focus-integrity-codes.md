@@ -12,7 +12,7 @@ canonical: https://zonules.com/focus-integrity-codes/
 last_reviewed: 2026-06-14
 term_id: DOC-focus-integrity-codes
 seo_title: "Focus Integrity Codes — How to Read FIO and FIS | Zonules.com"
-meta_description: "What the FIO and FIS codes on every Zonules.com reference page mean: FIO names how focus fails, FIS names what intact focus requires. A short reader's key for people and AI agents."
+meta_description: "Focus Integrity Codes explained: what the FIO failure-class and FIS standard codes mean and how to read any Zonules.com page from them."
 ---
 
 # Focus Integrity Codes

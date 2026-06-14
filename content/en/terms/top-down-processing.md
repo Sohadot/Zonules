@@ -19,7 +19,7 @@ claims: [CLM-172, CLM-173, CLM-174, CLM-175]
 sources: [SRC-005, SRC-006]
 related_terms: [visual-inference, pattern-recognition, perceptual-error, attention-capture, visual-scene-parsing]
 seo_title: "Top-Down Processing | Zonules.com"
-meta_description: "Top-down processing uses prior knowledge to guide interpretation and can systematically distort an accurate signal. A governed reference unit on perceptual interpretation in the Zonules focus-integrity framework."
+meta_description: "Top-down processing is perception guided by knowledge and expectation, shaping how incoming visual signals are interpreted."
 ---
 # Top-Down Processing
 

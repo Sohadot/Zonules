@@ -19,7 +19,7 @@ claims: [CLM-137, CLM-138, CLM-139, CLM-838]
 sources: [SRC-001, SRC-002]
 related_terms: [optic-nerve, optic-tract, lateral-geniculate-nucleus, binocular-vision, visual-cortex]
 seo_title: "Optic Chiasm | Zonules.com"
-meta_description: "The optic chiasm is the X-shaped junction where nasal retinal fibres from each eye cross to the opposite hemisphere, routing the visual signal for binocular integration."
+meta_description: "The optic chiasm is where the optic nerves partially cross, routing each visual hemifield to the opposite side of the brain."
 ---
 # Optic Chiasm
 

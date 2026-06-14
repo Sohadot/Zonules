@@ -19,7 +19,7 @@ claims: [CLM-154, CLM-155, CLM-156, CLM-841]
 sources: [SRC-001, SRC-002]
 related_terms: [cornea, choroid, vitreous-humor, retina, oculomotor-system]
 seo_title: "Sclera | Zonules.com"
-meta_description: "The sclera is the tough outer coat of the eye that maintains its spherical shape, protecting the optical contents and providing attachment for the extraocular muscles."
+meta_description: "The sclera is the tough white outer wall of the eye that protects its inner structures and helps maintain its shape."
 ---
 # Sclera
 

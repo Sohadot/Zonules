@@ -19,7 +19,7 @@ claims: [CLM-188, CLM-189, CLM-190, CLM-191]
 sources: [SRC-005, SRC-006]
 related_terms: [pattern-recognition, visual-inference, top-down-processing, perceptual-error, semantic-segmentation, scene-understanding]
 seo_title: "Visual Scene Parsing | Zonules.com"
-meta_description: "Visual scene parsing segments, groups, and assigns spatial relations to construct scene meaning. A governed reference unit on perceptual interpretation in the Zonules focus-integrity framework."
+meta_description: "Visual scene parsing segments a scene into objects, surfaces, and their relations to build a structured percept of the whole."
 ---
 # Visual Scene Parsing
 

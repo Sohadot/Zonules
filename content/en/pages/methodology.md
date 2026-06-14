@@ -12,7 +12,7 @@ canonical: https://zonules.com/methodology/
 last_reviewed: 2026-06-12
 term_id: DOC-methodology
 seo_title: "Methodology — How Zonules.com Is Governed | Zonules.com"
-meta_description: "How Zonules.com is built and governed: a single thesis, a three-layer reference architecture, a versioned ontology and standard, a deterministic engine, and a blocking quality gate."
+meta_description: "How Zonules.com is governed: source classification, claim registration, FIO/FIS classification, and the safety rules behind every page."
 ---
 
 # Methodology

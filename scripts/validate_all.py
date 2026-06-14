@@ -33,6 +33,25 @@ def main():
     route_paths = {r["path"] for r in routes["routes"]}
     errors = []
 
+    # Freeze floor guard (Sprint 6F — English master freeze).
+    # These minimums protect the frozen corpus against silent deletion of registered elements.
+    # docs/ENGLISH_MASTER_FREEZE.md defines the full frozen contract.
+    _FREEZE_ROUTE_MIN = 300
+    _FREEZE_CLAIM_MIN = 1336
+    _FREEZE_SOURCE_MIN = 27
+    if len(routes["routes"]) < _FREEZE_ROUTE_MIN:
+        errors.append(
+            f"freeze: route count {len(routes['routes'])} below frozen minimum {_FREEZE_ROUTE_MIN}"
+        )
+    if len(claims["claims"]) < _FREEZE_CLAIM_MIN:
+        errors.append(
+            f"freeze: claim count {len(claims['claims'])} below frozen minimum {_FREEZE_CLAIM_MIN}"
+        )
+    if len(src_ids) < _FREEZE_SOURCE_MIN:
+        errors.append(
+            f"freeze: source count {len(src_ids)} below frozen minimum {_FREEZE_SOURCE_MIN}"
+        )
+
     # 1. Every claim resolves to a registered source (No Ungoverned Claims).
     for c in claims["claims"]:
         for s in c["sources"]:
@@ -184,11 +203,13 @@ def main():
     # 11. Root publication doctrine (GitHub Pages source = main / root).
     #     The repository root IS the published site. README/ASSET_THESIS remain
     #     governance files; the public homepage is the generated root index.html.
+    #     Governance documents (docs/ENGLISH_MASTER_FREEZE.md etc.) may reside in docs/;
+    #     only docs/index.html would cause GitHub Pages to serve from /docs/ instead of root.
     for fn in ("index.html", "sitemap.xml", "robots.txt", "CNAME", ".nojekyll"):
         if not os.path.exists(os.path.join(ROOT, fn)):
             errors.append(f"root publication: missing /{fn}")
-    if os.path.isdir(os.path.join(ROOT, "docs")):
-        errors.append("root publication: docs/ must not exist (publish from root, not /docs)")
+    if os.path.exists(os.path.join(ROOT, "docs", "index.html")):
+        errors.append("root publication: docs/index.html must not exist (publish from root, not /docs)")
 
     robots_fp = os.path.join(ROOT, "robots.txt")
     if os.path.exists(robots_fp):

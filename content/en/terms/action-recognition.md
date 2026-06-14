@@ -57,6 +57,7 @@ Action Recognition is one instance of the asset's governing claim: that focus is
 - [Pose Estimation](/pose-estimation/) — governed reference unit linked within this cluster.
 - [Motion Perception](/motion-perception/) — governed reference unit linked within this cluster.
 - [Scene Understanding](/scene-understanding/) — governed reference unit linked within this cluster.
+- [Gaze Estimation](/gaze-estimation/) — related governed reference unit.
 
 ## Reference Notes
 

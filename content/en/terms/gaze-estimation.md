@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-151
@@ -42,7 +42,7 @@ Gaze estimation is a structural tracking problem (FIO-01): the system must maint
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-01 — Suspension
 - **FIS criterion:** FIS-1
 

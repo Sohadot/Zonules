@@ -367,3 +367,39 @@ Audit of the 213-page English canonical corpus for coherence, internal authority
 1. **Source maturity:** wire SRC-025 (NEI) and SRC-026 (WHO) into relevant public-health/anatomy pages (e.g., visual-field, contrast-sensitivity, color-perception, macula) by adding them as supporting sources to existing claims, and lift the 11 two-sourced pages toward three sourced claims.
 2. **Cluster depth:** introduce sub-clusters within L2 (`perceptual-clarity`) and L3 (`machine-perception`) — e.g., attention / constancy / scene for L2 and recognition / generation-provenance / geometry for L3 — to improve navigability before further numeric growth.
 3. **FIO-04 balance:** if expanding, bias slightly toward provenance/verification (FIO-04/FIS-4), the narrowest class.
+
+## 2026-06-14 — Sprint 6A: Source Maturity & Cluster Architecture
+
+Matured source coverage and introduced sub-cluster architecture across L2 and L3 before the final English expansion. No broad new corpus pages were added; the page count holds at 213.
+
+### Source maturity
+
+- **Wired the two unused sources.** SRC-025 (National Eye Institute) and SRC-026 (WHO World Report on Vision) were previously registered but uncited (flagged in Sprint 5C). They are now cited by registered claims: **SRC-025 in 13 claims**, **SRC-026 in 3 claims**.
+- **NEI (SRC-025):** added one public-eye-health claim to each of the 11 two-sourced L1 anatomy pages (cornea, iris, vitreous-humor, macula, aqueous-humor, pupillary-reflex, optic-chiasm, optic-tract, lateral-geniculate-nucleus, sclera, choroid) plus the priority anchors retina and optic-nerve. Each NEI claim attributes a general structural/functional description to the NEI and carries no diagnostic phrasing.
+- **WHO (SRC-026):** added public-health framing claims where they genuinely fit — visual-field (glaucoma and the global impairment burden), visual-acuity (the WHO 2.2-billion vision-impairment estimate), and ophthalmic-ai (avoidable impairment motivating scalable screening). These are attributed, epidemiological, non-diagnostic statements.
+- **Lifted the 11 weak pages:** every one of the 11 pages that previously had only two sourced claims now has **three sourced claims**. New claims CLM-832…CLM-847 (16 sourced) registered in `claims.json`; each page's frontmatter, route `claim_requirements`/`source_requirements`, in-body Scientific Grounding text, and the authored Sources note were updated in lockstep. No source not relevant to a page was forced onto it.
+
+### Cluster architecture
+
+- **L2 (`perceptual-clarity`, flat) → 7 sub-clusters:** attention (16), recognition (17), scene-understanding (9), constancy (8), perceptual-error (8), prediction (7), memory (5).
+- **L3 (`machine-perception`, flat) → 7 sub-clusters:** detection (21), representation-learning (14), verification (8), robustness (7), provenance (5), segmentation (5), generative-vision (4).
+- Each of the 134 L2/L3 reference units was reassigned exactly once. The `cluster` field was updated consistently in `routes.json`, in each unit's markdown frontmatter, and in the in-body Layer Classification line. The glossary groups by layer (unchanged); sub-clusters add navigable structure for future expansion and for any later cluster-indexed surface.
+
+### FIO-04 (provenance) strengthening
+
+- Identified the provenance/verification surface: the new L3 `provenance` sub-cluster (image-provenance, deepfake-detection, synthetic-media, digital-watermarking, perceptual-hashing), the `generative-vision` sub-cluster (generative-models, GANs, diffusion-models, image-synthesis), plus verification pages (uncertainty-estimation, model-calibration, out-of-distribution-detection).
+- **Internal links:** the five provenance pages already form a tight reciprocal web — every one links to at least two others in the set (deepfake-detection and digital-watermarking link to all four) — so no additional links were structurally required.
+- **Source notes:** provenance pages consistently rest on the standards/forensics sources — SRC-008 (C2PA), SRC-023 (Verdoliva media forensics), SRC-024 (FaceForensics++).
+- **New pages:** none. The cluster is dense and well-sourced; no new page was structurally necessary, so the 3–5-page allowance was not exercised (honoring the "no broad new pages" constraint).
+
+### State changes
+
+- `data/routes.json` v2.2 → **v2.3** (134 cluster reassignments; +16 `claim_requirements`; updated `source_requirements`). `data/claims.json` v1.4 → **v1.5** (831 → 847 claims; +16 sourced, CLM-832…CLM-847). `data/sources.json` unchanged (v0.3) — no sources added, two previously-unused sources now in use. `sitemap.xml` regenerated (212 URLs, unchanged).
+
+### Verification
+
+- Gate **PASS** — 213 pages, 847 claims, 27 sources, layers [L1, L2, L3, cross]; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Sitemap = 212 = indexable approved routes; `/acquire/` noindex and excluded; no `/site/` or `/static/` canonical paths; root publishing intact. SRC-025 used ×13, SRC-026 used ×3; all 11 weak pages now at three sourced claims; L2 and L3 each carry seven meaningful sub-clusters.
+
+### Next recommendation
+
+The corpus is now source-mature (all 27 sources in use), sub-clustered, and graph-robust (every unit ≥2 inbound). It is ready for the final governed English expansion toward ~300 pages, which should fill the thinner sub-clusters first (L3 generative-vision and segmentation; L2 memory and prediction) and bias modestly toward FIO-04 provenance/verification, the narrowest failure class.

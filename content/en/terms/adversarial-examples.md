@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: robustness
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-027
@@ -47,7 +47,7 @@ This exposes a fundamental asymmetry: the machine and human visual systems have 
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision and Verification
-- **Cluster:** Machine perception
+- **Cluster:** robustness
 - **FIO class:** FIO-03 — Signal–Noise Failure (adversarial perturbations are noise structured to defeat signal-noise separation in machine models; they do not defeat human separation)
 - **FIS criterion:** FIS-3 — Separation (a model with intact FIS-3 correctly separates signal from structured noise, including adversarial noise)
 

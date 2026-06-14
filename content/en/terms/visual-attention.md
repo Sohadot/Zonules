@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-145
@@ -42,7 +42,7 @@ Visual attention is the suspension mechanism of perception (FIO-01): it holds se
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** attention
 - **FIO class:** FIO-01 — Suspension
 - **FIS criterion:** FIS-1
 

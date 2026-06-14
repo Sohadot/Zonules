@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: representation-learning
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-206
@@ -43,7 +43,7 @@ Knowledge distillation is an interpretation-layer transfer — it copies how one
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** representation-learning
 - **FIO class:** FIO-05 — Interpretation Failure
 - **FIS criterion:** FIS-5 — Interpretation
 

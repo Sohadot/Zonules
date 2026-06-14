@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-180
@@ -43,7 +43,7 @@ Divided attention is a suspension-layer stress test — it reveals the limits of
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** attention
 - **FIO class:** FIO-01 — Suspension Failure
 - **FIS criterion:** FIS-1 — Suspension
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-033
@@ -47,7 +47,7 @@ This places saliency in FIO-03. It is upstream of [figure-ground](/figure-ground
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** attention
 - **FIO class:** FIO-03 — Signal–Noise Failure (saliency is the automatic prioritization of candidate signal; misallocated saliency directs focus toward noise)
 - **FIS criterion:** FIS-3 — Separation (intact function means the most behaviorally relevant signal is among the most salient)
 

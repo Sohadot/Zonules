@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: memory
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-179
@@ -43,7 +43,7 @@ Iconic memory is a suspension-layer buffer — it holds the visual signal briefl
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** memory
 - **FIO class:** FIO-01 — Suspension Failure
 - **FIS criterion:** FIS-1 — Suspension
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: scene-understanding
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-023
@@ -47,7 +47,7 @@ This is a characteristically interpretive failure: the signal is received correc
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** scene-understanding
 - **FIO class:** FIO-05 — Interpretation Failure (depth is a constructed interpretation; its failure is a wrong spatial conclusion, not a sensory failure)
 - **FIS criterion:** FIS-5 — Interpretation (intact depth perception means the constructed spatial layout matches the actual layout)
 

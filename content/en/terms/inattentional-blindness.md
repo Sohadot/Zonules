@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-024
@@ -49,7 +49,7 @@ This maps inattentional blindness to FIO-04 (Provenance Failure): the issue is n
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** attention
 - **FIO class:** FIO-04 — Provenance Failure (the input was present but the perceptual system holds no record of it; it has no representational origin)
 - **FIS criterion:** FIS-4 — Provenance (intact perception means the source of attended inputs is correctly tracked and recorded)
 

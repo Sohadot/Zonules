@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: memory
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-127
@@ -42,7 +42,7 @@ Spatial cognition is an interpretation (FIO-05): the brain's map of space is a c
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** memory
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

@@ -15,7 +15,7 @@ concept_id: CON-optic-chiasm
 safety_class: medical-educational
 canonical: https://zonules.com/optic-chiasm/
 last_reviewed: 2026-06-13
-claims: [CLM-137, CLM-138, CLM-139]
+claims: [CLM-137, CLM-138, CLM-139, CLM-838]
 sources: [SRC-001, SRC-002]
 related_terms: [optic-nerve, optic-tract, lateral-geniculate-nucleus, binocular-vision, visual-cortex]
 seo_title: "Optic Chiasm | Zonules.com"
@@ -33,7 +33,9 @@ The optic chiasm is the X-shaped junction at the base of the brain where nasal r
 
 Compression of the optic chiasm produces bitemporal hemianopia, loss of both temporal visual fields, because the crossing nasal fibres are selectively damaged. [CLM-138]
 
-*Sources: SRC-001, SRC-002. See the source registry for classification.*
+The National Eye Institute describes visual signals as travelling from the eyes toward the brain along the optic nerves, which partially cross so each hemisphere receives input from both eyes. [CLM-838]
+
+*Sources: SRC-001, SRC-002, SRC-025. See the source registry for classification.*
 
 ## Structural Role
 

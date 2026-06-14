@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-018
@@ -55,7 +55,7 @@ This makes computer vision the richest domain for the focus-integrity thesis: ev
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision and Verification
-- **Cluster:** Machine perception
+- **Cluster:** detection
 - **FIO class:** FIO-05 — Interpretation Failure (the field's defining challenge is correct interpretation, and interpretation failure is its most subtle failure mode)
 - **FIS criterion:** FIS-5 — Interpretation (intact function requires that detection translate into correct meaning)
 

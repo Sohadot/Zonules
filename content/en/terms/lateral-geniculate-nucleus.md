@@ -15,7 +15,7 @@ concept_id: CON-lateral-geniculate-nucleus
 safety_class: medical-educational
 canonical: https://zonules.com/lateral-geniculate-nucleus/
 last_reviewed: 2026-06-13
-claims: [CLM-143, CLM-144, CLM-145]
+claims: [CLM-143, CLM-144, CLM-145, CLM-840]
 sources: [SRC-001, SRC-005]
 related_terms: [optic-tract, visual-cortex, optic-chiasm, binocular-vision]
 seo_title: "Lateral Geniculate Nucleus | Zonules.com"
@@ -33,7 +33,9 @@ The lateral geniculate nucleus is a layered thalamic relay that receives visual 
 
 The LGN receives substantially more input from cortical feedback than from the retina, making it an active gating station that modulates signals based on attentional state and arousal. [CLM-144]
 
-*Sources: SRC-001, SRC-005. See the source registry for classification.*
+The National Eye Institute describes vision as arising when signals travel from the retina along the visual pathway to the brain, where they are processed into the images we see. [CLM-840]
+
+*Sources: SRC-001, SRC-005, SRC-025. See the source registry for classification.*
 
 ## Structural Role
 

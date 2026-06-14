@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: verification
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-066
@@ -15,7 +15,7 @@ concept_id: CON-ophthalmic-ai
 safety_class: medical-educational
 canonical: https://zonules.com/ophthalmic-ai/
 last_reviewed: 2026-06-13
-claims: [CLM-212, CLM-213, CLM-214, CLM-215]
+claims: [CLM-212, CLM-213, CLM-214, CLM-215, CLM-847]
 sources: [SRC-007]
 related_terms: [medical-imaging-ai, semantic-segmentation, domain-shift, retina, macula, fovea-centralis]
 seo_title: "Ophthalmic AI — Machine Vision Applied to the Eye | Zonules.com"
@@ -33,7 +33,9 @@ Ophthalmic AI systems have demonstrated diagnostic performance comparable to spe
 
 Ophthalmic AI performance is sensitive to acquisition device, image quality, patient demographics, and disease prevalence, with performance varying substantially across deployment contexts. [CLM-213] Regulatory clearance for ophthalmic AI requires demonstration of safety and effectiveness across diverse populations and acquisition conditions beyond benchmark performance. [CLM-214]
 
-*Sources: SRC-007. See the source registry for classification.*
+The World Health Organization's World Report on Vision notes that a large share of the global vision-impairment burden is avoidable, motivating scalable eye-screening approaches such as ophthalmic AI. [CLM-847]
+
+*Sources: SRC-007, SRC-026. See the source registry for classification.*
 
 ## Machine-Vision Role
 
@@ -42,7 +44,7 @@ In the Zonules FIO framework, ophthalmic AI is classified under FIO-05 Interpret
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** verification
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

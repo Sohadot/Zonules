@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: robustness
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-035
@@ -47,7 +47,7 @@ This places domain shift squarely in FIO-02. It is not a signal-noise failure �
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision and Verification
-- **Cluster:** Machine perception
+- **Cluster:** robustness
 - **FIO class:** FIO-02 — Accommodation Failure (the model cannot adjust focus to conditions outside its trained operating range)
 - **FIS criterion:** FIS-2 — Accommodation (intact function means the model holds performance across the range of conditions it must operate in)
 

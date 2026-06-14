@@ -15,7 +15,7 @@ concept_id: CON-interpretation-surface
 safety_class: medical-educational
 canonical: https://zonules.com/retina/
 last_reviewed: 2026-06-14
-claims: [CLM-049, CLM-050, CLM-051, CLM-566, CLM-567]
+claims: [CLM-049, CLM-050, CLM-051, CLM-566, CLM-567, CLM-843]
 sources: [SRC-001, SRC-003, SRC-004, SRC-011, SRC-012]
 related_terms: [cornea, photoreceptors, optic-nerve, crystalline-lens]
 seo_title: "Retina — Where the Optical System Meets the Interpretive One | Zonules.com"
@@ -36,7 +36,9 @@ The retina converts incident light into neural signals through phototransduction
 
 The retina is not a passive screen. It performs substantial preprocessing: edge enhancement, contrast normalization, and temporal filtering all occur before the signal reaches the optic nerve. The brain receives a processed representation, not a raw image.
 
-*Sources: ocular basic science and ophthalmology education references (SRC-001, SRC-003). See the source registry for classification.*
+The National Eye Institute describes the retina as the light-sensitive tissue at the back of the eye that converts light into electrical signals carried to the brain by the optic nerve. [CLM-843]
+
+*Sources: ocular basic science and ophthalmology education references (SRC-001, SRC-003, SRC-025). See the source registry for classification.*
 
 ## The Interpretation Boundary
 

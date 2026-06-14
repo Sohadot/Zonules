@@ -15,7 +15,7 @@ concept_id: CON-maintenance-fluid
 safety_class: medical-educational
 canonical: https://zonules.com/aqueous-humor/
 last_reviewed: 2026-06-12
-claims: [CLM-104, CLM-105, CLM-106]
+claims: [CLM-104, CLM-105, CLM-106, CLM-836]
 sources: [SRC-001, SRC-002, SRC-004]
 related_terms: [cornea, crystalline-lens, ciliary-body, iris]
 seo_title: "Aqueous Humor — The Fluid That Maintains the Optical System | Zonules.com"
@@ -38,7 +38,9 @@ The aqueous humor is continuously produced by the [ciliary body](/ciliary-body/)
 
 When drainage is impaired and pressure rises beyond the normal range, the structures of the eye — including the optic nerve head — are placed under mechanical stress. The maintenance of correct pressure is therefore a structural prerequisite for the whole system, not a peripheral housekeeping function.
 
-*Sources: ocular basic science and anatomical references (SRC-001, SRC-002). See the source registry for classification.*
+The National Eye Institute notes that the balanced production and drainage of the fluid in the front of the eye maintains healthy intraocular pressure. [CLM-836]
+
+*Sources: ocular basic science and anatomical references (SRC-001, SRC-002, SRC-025). See the source registry for classification.*
 
 ## Structural Maintenance
 

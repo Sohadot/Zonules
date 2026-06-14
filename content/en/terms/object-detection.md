@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-026
@@ -49,7 +49,7 @@ This is the spatial generalization of the interpretation-integrity criterion (FI
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision and Verification
-- **Cluster:** Machine perception
+- **Cluster:** detection
 - **FIO class:** FIO-05 — Interpretation Failure (detection requires correct categorization and correct localization; failure at either is a failure of interpretive focus)
 - **FIS criterion:** FIS-5 — Interpretation (intact detection means both what and where are resolved correctly)
 

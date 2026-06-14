@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: constancy
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-188
@@ -43,7 +43,7 @@ The motion aftereffect is an accommodation-layer cost — recalibration to one c
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** constancy
 - **FIO class:** FIO-02 — Accommodation Failure
 - **FIS criterion:** FIS-2 — Accommodation
 

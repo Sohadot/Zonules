@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: constancy
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-129
@@ -42,7 +42,7 @@ Temporal integration is an accommodation mechanism (FIO-02): it extends the oper
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** constancy
 - **FIO class:** FIO-02 — Accommodation
 - **FIS criterion:** FIS-2
 

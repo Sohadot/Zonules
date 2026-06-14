@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: verification
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-034
@@ -49,7 +49,7 @@ This is precisely the machine instance of FIO-01, suspension failure. The optica
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision and Verification
-- **Cluster:** Machine perception
+- **Cluster:** verification
 - **FIO class:** FIO-01 — Suspension Failure (calibration holds the spatial reference frame; drift is the loss of that hold)
 - **FIS criterion:** FIS-1 — Suspension (intact function means the system's spatial grounding is identified and stable)
 

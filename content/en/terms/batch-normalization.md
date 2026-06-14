@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: representation-learning
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-205
@@ -43,7 +43,7 @@ Batch normalization is an accommodation-layer regulator — it keeps internal si
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** representation-learning
 - **FIO class:** FIO-02 — Accommodation Failure
 - **FIS criterion:** FIS-2 — Accommodation
 

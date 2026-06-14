@@ -15,7 +15,7 @@ concept_id: CON-sclera
 safety_class: medical-educational
 canonical: https://zonules.com/sclera/
 last_reviewed: 2026-06-13
-claims: [CLM-154, CLM-155, CLM-156]
+claims: [CLM-154, CLM-155, CLM-156, CLM-841]
 sources: [SRC-001, SRC-002]
 related_terms: [cornea, choroid, vitreous-humor, retina, oculomotor-system]
 seo_title: "Sclera | Zonules.com"
@@ -33,7 +33,9 @@ The sclera is the tough, fibrous outer coat of the eye forming approximately fiv
 
 At the optic nerve head the sclera forms the lamina cribrosa through which retinal ganglion cell axons exit; elevated intraocular pressure damages this structure in glaucoma. [CLM-155]
 
-*Sources: SRC-001, SRC-002. See the source registry for classification.*
+The National Eye Institute describes the sclera as the tough white outer wall of the eye that protects its inner structures and helps hold its shape. [CLM-841]
+
+*Sources: SRC-001, SRC-002, SRC-025. See the source registry for classification.*
 
 ## Structural Role
 

@@ -15,7 +15,7 @@ concept_id: CON-optic-tract
 safety_class: medical-educational
 canonical: https://zonules.com/optic-tract/
 last_reviewed: 2026-06-13
-claims: [CLM-140, CLM-141, CLM-142]
+claims: [CLM-140, CLM-141, CLM-142, CLM-839]
 sources: [SRC-001, SRC-002]
 related_terms: [optic-chiasm, lateral-geniculate-nucleus, optic-nerve, visual-cortex]
 seo_title: "Optic Tract | Zonules.com"
@@ -33,7 +33,9 @@ Each optic tract carries post-chiasmatic visual fibres from the ipsilateral temp
 
 The retinotopic organisation of the visual field is preserved through the optic tract: neighbouring fibres carry signals from neighbouring points in the visual field. [CLM-141]
 
-*Sources: SRC-001, SRC-002. See the source registry for classification.*
+The National Eye Institute describes the visual pathway as carrying signals onward from the optic nerves toward the brain's visual processing centers. [CLM-839]
+
+*Sources: SRC-001, SRC-002, SRC-025. See the source registry for classification.*
 
 ## Structural Role
 

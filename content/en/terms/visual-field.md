@@ -15,7 +15,7 @@ concept_id: CON-visual-field
 safety_class: medical-educational
 canonical: https://zonules.com/visual-field/
 last_reviewed: 2026-06-13
-claims: [CLM-376, CLM-377, CLM-378, CLM-379]
+claims: [CLM-376, CLM-377, CLM-378, CLM-379, CLM-845]
 sources: ["SRC-001", "SRC-003"]
 related_terms: ["fovea-centralis", "optic-nerve", "scotoma", "stereopsis", "vergence"]
 seo_title: "Visual Field | Zonules.com"
@@ -33,7 +33,9 @@ The visual field is the spatial extent of the environment that can be perceived 
 
 The central visual field is processed by the fovea and has the highest spatial resolution; peripheral regions are progressively less resolved. [CLM-377] Defects in the visual field correspond to lesions at specific points along the visual pathway, making field mapping a tool for localizing pathology. [CLM-378]
 
-*Sources: SRC-001, SRC-003. See the source registry for classification.*
+The World Health Organization's World Report on Vision lists glaucoma, which erodes the visual field, among the leading causes of irreversible vision impairment worldwide. [CLM-845]
+
+*Sources: SRC-001, SRC-003, SRC-026. See the source registry for classification.*
 
 ## Structural Role
 

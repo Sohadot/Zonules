@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: recognition
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-017
@@ -51,7 +51,7 @@ This is why they map to FIO-03 (Signal–Noise Failure): Gestalt failure is not 
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** recognition
 - **FIO class:** FIO-03 — Signal–Noise Failure (Gestalt failure is organizational failure: signal cannot be separated from noise at the grouping level)
 - **FIS criterion:** FIS-3 — Separation (intact Gestalt organization is the condition for signal separation in perception)
 

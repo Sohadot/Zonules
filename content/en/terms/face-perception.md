@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: recognition
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-110
@@ -42,7 +42,7 @@ Face perception is a high-priority interpretation system (FIO-05): the visual sy
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** recognition
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

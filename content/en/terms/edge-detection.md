@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-192
@@ -43,7 +43,7 @@ Edge detection is a separation-layer operation — it pulls meaningful boundarie
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-03 — Signal–Noise Failure
 - **FIS criterion:** FIS-3 — Separation
 

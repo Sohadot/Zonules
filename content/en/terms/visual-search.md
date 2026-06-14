@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-085
@@ -42,7 +42,7 @@ Visual search is a suspension of attention (FIO-01): focus is held and moved del
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** attention
 - **FIO class:** FIO-01 — Suspension
 - **FIS criterion:** FIS-1
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: provenance
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-063
@@ -42,7 +42,7 @@ In the Zonules FIO framework, synthetic media is classified under FIO-04 Provena
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** provenance
 - **FIO class:** FIO-04 — Provenance
 - **FIS criterion:** FIS-4
 

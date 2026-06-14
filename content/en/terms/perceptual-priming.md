@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: prediction
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-089
@@ -42,7 +42,7 @@ Perceptual priming is an interpretation bias (FIO-05): prior input tilts how the
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** prediction
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

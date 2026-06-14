@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.4",
+  "version": "1.5",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -7710,6 +7710,150 @@
         "SRC-004"
       ],
       "page": "/stereo-matching/"
+    },
+    {
+      "id": "CLM-832",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the cornea as the eye's clear, dome-shaped outer surface that helps focus incoming light.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/cornea/"
+    },
+    {
+      "id": "CLM-833",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the iris as the colored part of the eye that adjusts the size of the pupil to control how much light reaches the retina.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/iris/"
+    },
+    {
+      "id": "CLM-834",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the vitreous as the clear gel filling the space between the lens and the retina that helps the eye keep its shape.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/vitreous-humor/"
+    },
+    {
+      "id": "CLM-835",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the macula as the small central area of the retina responsible for sharp, straight-ahead vision.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/macula/"
+    },
+    {
+      "id": "CLM-836",
+      "status": "sourced",
+      "statement": "The National Eye Institute notes that the balanced production and drainage of the fluid in the front of the eye maintains healthy intraocular pressure.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/aqueous-humor/"
+    },
+    {
+      "id": "CLM-837",
+      "status": "sourced",
+      "statement": "The National Eye Institute notes that the pupil narrows in bright light and widens in dim light to regulate how much light enters the eye.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/pupillary-reflex/"
+    },
+    {
+      "id": "CLM-838",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes visual signals as travelling from the eyes toward the brain along the optic nerves, which partially cross so each hemisphere receives input from both eyes.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/optic-chiasm/"
+    },
+    {
+      "id": "CLM-839",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the visual pathway as carrying signals onward from the optic nerves toward the brain's visual processing centers.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/optic-tract/"
+    },
+    {
+      "id": "CLM-840",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes vision as arising when signals travel from the retina along the visual pathway to the brain, where they are processed into the images we see.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/lateral-geniculate-nucleus/"
+    },
+    {
+      "id": "CLM-841",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the sclera as the tough white outer wall of the eye that protects its inner structures and helps hold its shape.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/sclera/"
+    },
+    {
+      "id": "CLM-842",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the choroid as the layer of blood vessels between the retina and the sclera that nourishes the outer retina.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/choroid/"
+    },
+    {
+      "id": "CLM-843",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the retina as the light-sensitive tissue at the back of the eye that converts light into electrical signals carried to the brain by the optic nerve.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-844",
+      "status": "sourced",
+      "statement": "The National Eye Institute describes the optic nerve as the bundle of more than a million nerve fibers that carries visual information from the retina to the brain.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-845",
+      "status": "sourced",
+      "statement": "The World Health Organization's World Report on Vision lists glaucoma, which erodes the visual field, among the leading causes of irreversible vision impairment worldwide.",
+      "sources": [
+        "SRC-026"
+      ],
+      "page": "/visual-field/"
+    },
+    {
+      "id": "CLM-846",
+      "status": "sourced",
+      "statement": "The World Health Organization's World Report on Vision estimates that at least 2.2 billion people live with vision impairment, much of it measured as reduced visual acuity and much of it preventable or correctable.",
+      "sources": [
+        "SRC-026"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-847",
+      "status": "sourced",
+      "statement": "The World Health Organization's World Report on Vision notes that a large share of the global vision-impairment burden is avoidable, motivating scalable eye-screening approaches such as ophthalmic AI.",
+      "sources": [
+        "SRC-026"
+      ],
+      "page": "/ophthalmic-ai/"
     }
   ]
 }

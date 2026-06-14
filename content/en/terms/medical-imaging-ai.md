@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: verification
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-067
@@ -42,7 +42,7 @@ In the Zonules FIO framework, medical imaging AI is classified under FIO-05 Inte
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** verification
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: verification
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-148
@@ -42,7 +42,7 @@ Image quality assessment is a signal-noise measurement (FIO-03): it quantifies h
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** verification
 - **FIO class:** FIO-03 — Signal-Noise
 - **FIS criterion:** FIS-3
 

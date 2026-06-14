@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-135
@@ -42,7 +42,7 @@ Action recognition is an interpretation of motion (FIO-05): the category (the ac
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

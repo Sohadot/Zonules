@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "2.0",
+  "version": "2.1",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -5354,6 +5354,2116 @@
       "source_requirements": [],
       "claim_requirements": [],
       "safety_class": "institutional",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/corneal-endothelium/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/corneal-endothelium/",
+      "hreflang_group": "corneal-endothelium",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/corneal-endothelium.md",
+      "seo_title": "Corneal Endothelium | Zonules.com",
+      "meta_description": "The corneal endothelium is a single layer of cells on the posterior surface of the cornea that pumps fluid out of the corneal stroma to keep it dehydrated and clear.",
+      "required_internal_links": [
+        "/cornea/",
+        "/aqueous-humor/",
+        "/corneal-epithelium/",
+        "/crystalline-lens/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-592",
+        "CLM-593",
+        "CLM-594",
+        "CLM-595"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/corneal-epithelium/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/corneal-epithelium/",
+      "hreflang_group": "corneal-epithelium",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/corneal-epithelium.md",
+      "seo_title": "Corneal Epithelium | Zonules.com",
+      "meta_description": "The corneal epithelium is the outermost cellular layer of the cornea, a stratified non-keratinized surface that forms the eye's first refracting interface with air.",
+      "required_internal_links": [
+        "/cornea/",
+        "/tear-film/",
+        "/limbus/",
+        "/corneal-endothelium/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-596",
+        "CLM-597",
+        "CLM-598",
+        "CLM-599"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/limbus/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/limbus/",
+      "hreflang_group": "limbus",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/limbus.md",
+      "seo_title": "Limbus | Zonules.com",
+      "meta_description": "The limbus is the transitional border zone where the transparent cornea meets the opaque sclera and conjunctiva.",
+      "required_internal_links": [
+        "/cornea/",
+        "/sclera/",
+        "/corneal-epithelium/",
+        "/canal-of-schlemm/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-600",
+        "CLM-601",
+        "CLM-602",
+        "CLM-603"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/canal-of-schlemm/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/canal-of-schlemm/",
+      "hreflang_group": "canal-of-schlemm",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/canal-of-schlemm.md",
+      "seo_title": "Canal of Schlemm | Zonules.com",
+      "meta_description": "The canal of Schlemm is a circular channel at the iridocorneal angle that collects aqueous humor after it passes through the trabecular meshwork.",
+      "required_internal_links": [
+        "/trabecular-meshwork/",
+        "/aqueous-humor/",
+        "/ciliary-body/",
+        "/iris/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-604",
+        "CLM-605",
+        "CLM-606",
+        "CLM-607"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/ciliary-muscle/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/ciliary-muscle/",
+      "hreflang_group": "ciliary-muscle",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/ciliary-muscle.md",
+      "seo_title": "Ciliary Muscle | Zonules.com",
+      "meta_description": "The ciliary muscle is a ring of smooth muscle within the ciliary body whose contraction governs the tension carried by the zonular fibers.",
+      "required_internal_links": [
+        "/ciliary-body/",
+        "/zonules-of-zinn/",
+        "/uvea/",
+        "/crystalline-lens/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-608",
+        "CLM-609",
+        "CLM-610",
+        "CLM-611"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/bruchs-membrane/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/bruchs-membrane/",
+      "hreflang_group": "bruchs-membrane",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/bruchs-membrane.md",
+      "seo_title": "Bruch's Membrane | Zonules.com",
+      "meta_description": "Bruch's membrane is a thin acellular layer between the retinal pigment epithelium and the choroid.",
+      "required_internal_links": [
+        "/retinal-pigment-epithelium/",
+        "/choroid/",
+        "/retina/",
+        "/photoreceptors/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-612",
+        "CLM-613",
+        "CLM-614",
+        "CLM-615"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/foveola/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/foveola/",
+      "hreflang_group": "foveola",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/foveola.md",
+      "seo_title": "Foveola | Zonules.com",
+      "meta_description": "The foveola is the central floor of the fovea, roughly a third of a millimeter across, containing only cone photoreceptors and no rods.",
+      "required_internal_links": [
+        "/fovea-centralis/",
+        "/parafovea/",
+        "/photoreceptors/",
+        "/visual-resolution/"
+      ],
+      "source_requirements": [
+        "SRC-011",
+        "SRC-012"
+      ],
+      "claim_requirements": [
+        "CLM-616",
+        "CLM-617",
+        "CLM-618",
+        "CLM-619"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/parafovea/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/parafovea/",
+      "hreflang_group": "parafovea",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/parafovea.md",
+      "seo_title": "Parafovea | Zonules.com",
+      "meta_description": "The parafovea is the ring of retina immediately surrounding the fovea, containing a mix of cones and a rising density of rods.",
+      "required_internal_links": [
+        "/fovea-centralis/",
+        "/foveola/",
+        "/bruchs-membrane/",
+        "/retina/"
+      ],
+      "source_requirements": [
+        "SRC-011",
+        "SRC-012"
+      ],
+      "claim_requirements": [
+        "CLM-620",
+        "CLM-621",
+        "CLM-622",
+        "CLM-623"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/optic-disc/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/optic-disc/",
+      "hreflang_group": "optic-disc",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/optic-disc.md",
+      "seo_title": "Optic Disc | Zonules.com",
+      "meta_description": "The optic disc is the region of the retina where the axons of the retinal ganglion cells converge and leave the eye to form the optic nerve.",
+      "required_internal_links": [
+        "/optic-nerve/",
+        "/blind-spot/",
+        "/retinal-ganglion-cells/",
+        "/retina/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-013"
+      ],
+      "claim_requirements": [
+        "CLM-624",
+        "CLM-625",
+        "CLM-626",
+        "CLM-627"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/horizontal-cells/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/horizontal-cells/",
+      "hreflang_group": "horizontal-cells",
+      "layer": "L1",
+      "cluster": "retinal-circuitry",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/horizontal-cells.md",
+      "seo_title": "Horizontal Cells | Zonules.com",
+      "meta_description": "Horizontal cells are retinal interneurons that connect photoreceptors laterally and feed inhibitory signals back to them.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/bipolar-cells/",
+        "/retina/",
+        "/receptive-fields/"
+      ],
+      "source_requirements": [
+        "SRC-009",
+        "SRC-011"
+      ],
+      "claim_requirements": [
+        "CLM-628",
+        "CLM-629",
+        "CLM-630",
+        "CLM-631"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/bipolar-cells/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/bipolar-cells/",
+      "hreflang_group": "bipolar-cells",
+      "layer": "L1",
+      "cluster": "retinal-circuitry",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/bipolar-cells.md",
+      "seo_title": "Bipolar Cells | Zonules.com",
+      "meta_description": "Bipolar cells are the retinal interneurons that carry signals from photoreceptors to retinal ganglion cells.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/retinal-ganglion-cells/",
+        "/horizontal-cells/",
+        "/amacrine-cells/"
+      ],
+      "source_requirements": [
+        "SRC-009",
+        "SRC-011"
+      ],
+      "claim_requirements": [
+        "CLM-632",
+        "CLM-633",
+        "CLM-634",
+        "CLM-635"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/amacrine-cells/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/amacrine-cells/",
+      "hreflang_group": "amacrine-cells",
+      "layer": "L1",
+      "cluster": "retinal-circuitry",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/amacrine-cells.md",
+      "seo_title": "Amacrine Cells | Zonules.com",
+      "meta_description": "Amacrine cells are retinal interneurons that modulate the signal passing from bipolar cells to ganglion cells.",
+      "required_internal_links": [
+        "/bipolar-cells/",
+        "/retinal-ganglion-cells/",
+        "/optic-disc/",
+        "/retina/"
+      ],
+      "source_requirements": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "claim_requirements": [
+        "CLM-636",
+        "CLM-637",
+        "CLM-638",
+        "CLM-639"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/rod-cells/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/rod-cells/",
+      "hreflang_group": "rod-cells",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/rod-cells.md",
+      "seo_title": "Rod Cells | Zonules.com",
+      "meta_description": "Rod cells are the photoreceptors responsible for vision in dim light, far more numerous than cones in the human retina.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/scotopic-vision/",
+        "/rhodopsin/",
+        "/cone-cells/"
+      ],
+      "source_requirements": [
+        "SRC-011",
+        "SRC-012"
+      ],
+      "claim_requirements": [
+        "CLM-640",
+        "CLM-641",
+        "CLM-642",
+        "CLM-643"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/cone-cells/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/cone-cells/",
+      "hreflang_group": "cone-cells",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/cone-cells.md",
+      "seo_title": "Cone Cells | Zonules.com",
+      "meta_description": "Cone cells are the photoreceptors responsible for vision in bright light and for color.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/photopic-vision/",
+        "/color-perception/",
+        "/foveola/"
+      ],
+      "source_requirements": [
+        "SRC-011",
+        "SRC-012"
+      ],
+      "claim_requirements": [
+        "CLM-644",
+        "CLM-645",
+        "CLM-646",
+        "CLM-647"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/rhodopsin/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/rhodopsin/",
+      "hreflang_group": "rhodopsin",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/rhodopsin.md",
+      "seo_title": "Rhodopsin | Zonules.com",
+      "meta_description": "Rhodopsin is the light-sensitive pigment in rod photoreceptors, made of the protein opsin bound to a retinal chromophore.",
+      "required_internal_links": [
+        "/rod-cells/",
+        "/phototransduction/",
+        "/scotopic-vision/",
+        "/dark-adaptation/"
+      ],
+      "source_requirements": [
+        "SRC-011",
+        "SRC-012"
+      ],
+      "claim_requirements": [
+        "CLM-648",
+        "CLM-649",
+        "CLM-650",
+        "CLM-651"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/phototransduction/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/phototransduction/",
+      "hreflang_group": "phototransduction",
+      "layer": "L1",
+      "cluster": "photoreceptor-function",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/phototransduction.md",
+      "seo_title": "Phototransduction | Zonules.com",
+      "meta_description": "Phototransduction is the process by which a photoreceptor converts absorbed light into an electrical signal.",
+      "required_internal_links": [
+        "/photoreceptors/",
+        "/rhodopsin/",
+        "/rod-cells/",
+        "/cone-cells/"
+      ],
+      "source_requirements": [
+        "SRC-011",
+        "SRC-012",
+        "SRC-009"
+      ],
+      "claim_requirements": [
+        "CLM-652",
+        "CLM-653",
+        "CLM-654",
+        "CLM-655"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/pupil/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/pupil/",
+      "hreflang_group": "pupil",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/pupil.md",
+      "seo_title": "Pupil | Zonules.com",
+      "meta_description": "The pupil is the central aperture of the iris through which light enters the eye.",
+      "required_internal_links": [
+        "/iris/",
+        "/pupillary-reflex/",
+        "/retina/",
+        "/light-adaptation/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "claim_requirements": [
+        "CLM-656",
+        "CLM-657",
+        "CLM-658",
+        "CLM-659"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/uvea/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/uvea/",
+      "hreflang_group": "uvea",
+      "layer": "L1",
+      "cluster": "optical-pathway",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/uvea.md",
+      "seo_title": "Uvea | Zonules.com",
+      "meta_description": "The uvea is the pigmented middle layer of the eye, comprising the iris, the ciliary body, and the choroid.",
+      "required_internal_links": [
+        "/iris/",
+        "/ciliary-body/",
+        "/pupil/",
+        "/ciliary-muscle/"
+      ],
+      "source_requirements": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "claim_requirements": [
+        "CLM-660",
+        "CLM-661",
+        "CLM-662",
+        "CLM-663"
+      ],
+      "safety_class": "medical-educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/size-constancy/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/size-constancy/",
+      "hreflang_group": "size-constancy",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/size-constancy.md",
+      "seo_title": "Size Constancy | Zonules.com",
+      "meta_description": "Size constancy is the tendency to perceive an object as having a stable physical size despite changes in the size of its retinal image with distance.",
+      "required_internal_links": [
+        "/perceptual-constancy/",
+        "/depth-perception/",
+        "/depth-cues/",
+        "/shape-constancy/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-664",
+        "CLM-665",
+        "CLM-666",
+        "CLM-667"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/shape-constancy/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/shape-constancy/",
+      "hreflang_group": "shape-constancy",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/shape-constancy.md",
+      "seo_title": "Shape Constancy | Zonules.com",
+      "meta_description": "Shape constancy is the perception of an object's stable shape despite changes in the shape of its retinal projection with viewing angle.",
+      "required_internal_links": [
+        "/perceptual-constancy/",
+        "/size-constancy/",
+        "/object-recognition/",
+        "/depth-cues/",
+        "/lightness-constancy/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-668",
+        "CLM-669",
+        "CLM-670",
+        "CLM-671"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/lightness-constancy/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/lightness-constancy/",
+      "hreflang_group": "lightness-constancy",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/lightness-constancy.md",
+      "seo_title": "Lightness Constancy | Zonules.com",
+      "meta_description": "Lightness constancy is the perception of a surface's stable reflectance despite large changes in the amount of light it reflects.",
+      "required_internal_links": [
+        "/perceptual-constancy/",
+        "/color-constancy/",
+        "/contrast-sensitivity/",
+        "/figure-ground/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-672",
+        "CLM-673",
+        "CLM-674",
+        "CLM-675"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/depth-cues/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/depth-cues/",
+      "hreflang_group": "depth-cues",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/depth-cues.md",
+      "seo_title": "Depth Cues | Zonules.com",
+      "meta_description": "Depth cues are the sources of information the visual system uses to recover three-dimensional structure from two-dimensional retinal images.",
+      "required_internal_links": [
+        "/depth-perception/",
+        "/binocular-disparity/",
+        "/motion-parallax/",
+        "/stereopsis/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-676",
+        "CLM-677",
+        "CLM-678",
+        "CLM-679"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/binocular-disparity/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/binocular-disparity/",
+      "hreflang_group": "binocular-disparity",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/binocular-disparity.md",
+      "seo_title": "Binocular Disparity | Zonules.com",
+      "meta_description": "Binocular disparity is the small difference between the images of a scene formed in the two eyes because of their horizontal separation.",
+      "required_internal_links": [
+        "/stereopsis/",
+        "/binocular-vision/",
+        "/depth-cues/",
+        "/depth-perception/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-680",
+        "CLM-681",
+        "CLM-682",
+        "CLM-683"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/motion-parallax/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/motion-parallax/",
+      "hreflang_group": "motion-parallax",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/motion-parallax.md",
+      "seo_title": "Motion Parallax | Zonules.com",
+      "meta_description": "Motion parallax is the depth cue that arises when the observer moves and nearer objects sweep across the retina faster than farther ones.",
+      "required_internal_links": [
+        "/depth-cues/",
+        "/motion-perception/",
+        "/depth-perception/",
+        "/optokinetic-reflex/",
+        "/biological-motion/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-684",
+        "CLM-685",
+        "CLM-686",
+        "CLM-687"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/biological-motion/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/biological-motion/",
+      "hreflang_group": "biological-motion",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/biological-motion.md",
+      "seo_title": "Biological Motion | Zonules.com",
+      "meta_description": "Biological motion is the perception of a living, moving figure from only a few moving points, such as lights attached to the joints.",
+      "required_internal_links": [
+        "/motion-perception/",
+        "/action-recognition/",
+        "/object-recognition/",
+        "/apparent-motion/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-015"
+      ],
+      "claim_requirements": [
+        "CLM-688",
+        "CLM-689",
+        "CLM-690",
+        "CLM-691"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/amodal-completion/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/amodal-completion/",
+      "hreflang_group": "amodal-completion",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/amodal-completion.md",
+      "seo_title": "Amodal Completion | Zonules.com",
+      "meta_description": "Amodal completion is the perception of a whole object even when part of it is hidden behind an occluder.",
+      "required_internal_links": [
+        "/gestalt-principles/",
+        "/perceptual-grouping/",
+        "/object-recognition/",
+        "/figure-ground/",
+        "/iconic-memory/"
+      ],
+      "source_requirements": [
+        "SRC-006",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-692",
+        "CLM-693",
+        "CLM-694",
+        "CLM-695"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/iconic-memory/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/iconic-memory/",
+      "hreflang_group": "iconic-memory",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/iconic-memory.md",
+      "seo_title": "Iconic Memory | Zonules.com",
+      "meta_description": "Iconic memory is a very brief, high-capacity visual store that holds a detailed image of a scene for a fraction of a second after it disappears.",
+      "required_internal_links": [
+        "/visual-working-memory/",
+        "/temporal-integration/",
+        "/sustained-attention/",
+        "/visual-masking/",
+        "/divided-attention/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-009"
+      ],
+      "claim_requirements": [
+        "CLM-696",
+        "CLM-697",
+        "CLM-698",
+        "CLM-699"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/divided-attention/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/divided-attention/",
+      "hreflang_group": "divided-attention",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/divided-attention.md",
+      "seo_title": "Divided Attention | Zonules.com",
+      "meta_description": "Divided attention is the attempt to process two or more sources or tasks at the same time.",
+      "required_internal_links": [
+        "/selective-attention/",
+        "/sustained-attention/",
+        "/cognitive-load/",
+        "/perceptual-load/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-014"
+      ],
+      "claim_requirements": [
+        "CLM-700",
+        "CLM-701",
+        "CLM-702",
+        "CLM-703"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/feature-integration-theory/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/feature-integration-theory/",
+      "hreflang_group": "feature-integration-theory",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/feature-integration-theory.md",
+      "seo_title": "Feature Integration Theory | Zonules.com",
+      "meta_description": "Feature integration theory proposes that simple features such as color and orientation are registered in parallel across the visual field, while combining them into objects requires focused attention.",
+      "required_internal_links": [
+        "/visual-search/",
+        "/binding-problem/",
+        "/selective-attention/",
+        "/visual-attention/",
+        "/preattentive-processing/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-704",
+        "CLM-705",
+        "CLM-706",
+        "CLM-707"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/preattentive-processing/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/preattentive-processing/",
+      "hreflang_group": "preattentive-processing",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/preattentive-processing.md",
+      "seo_title": "Preattentive Processing | Zonules.com",
+      "meta_description": "Preattentive processing is the rapid, parallel analysis of basic visual features across the whole field before focused attention is applied.",
+      "required_internal_links": [
+        "/visual-saliency/",
+        "/bottom-up-processing/",
+        "/visual-search/",
+        "/feature-integration-theory/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-708",
+        "CLM-709",
+        "CLM-710",
+        "CLM-711"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/gist-perception/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/gist-perception/",
+      "hreflang_group": "gist-perception",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/gist-perception.md",
+      "seo_title": "Gist Perception | Zonules.com",
+      "meta_description": "Gist perception is the rapid extraction of the overall meaning of a scene from a single brief glance.",
+      "required_internal_links": [
+        "/scene-recognition/",
+        "/visual-scene-parsing/",
+        "/object-recognition/",
+        "/perceptual-priming/",
+        "/ensemble-perception/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-712",
+        "CLM-713",
+        "CLM-714",
+        "CLM-715"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/ensemble-perception/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/ensemble-perception/",
+      "hreflang_group": "ensemble-perception",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/ensemble-perception.md",
+      "seo_title": "Ensemble Perception | Zonules.com",
+      "meta_description": "Ensemble perception is the visual system's ability to summarize sets of similar items by their statistics, such as average size or orientation.",
+      "required_internal_links": [
+        "/gist-perception/",
+        "/visual-saliency/",
+        "/perceptual-grouping/",
+        "/scene-recognition/",
+        "/perceptual-learning/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-716",
+        "CLM-717",
+        "CLM-718",
+        "CLM-719"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/perceptual-learning/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/perceptual-learning/",
+      "hreflang_group": "perceptual-learning",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/perceptual-learning.md",
+      "seo_title": "Perceptual Learning | Zonules.com",
+      "meta_description": "Perceptual learning is the lasting improvement in perceptual ability that follows practice with a sensory task.",
+      "required_internal_links": [
+        "/perceptual-adaptation/",
+        "/perceptual-priming/",
+        "/visual-acuity/",
+        "/metacognition/",
+        "/categorical-perception/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-009"
+      ],
+      "claim_requirements": [
+        "CLM-720",
+        "CLM-721",
+        "CLM-722",
+        "CLM-723"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/categorical-perception/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/categorical-perception/",
+      "hreflang_group": "categorical-perception",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/categorical-perception.md",
+      "seo_title": "Categorical Perception | Zonules.com",
+      "meta_description": "Categorical perception is the tendency to perceive continuously varying stimuli as belonging to discrete categories.",
+      "required_internal_links": [
+        "/color-perception/",
+        "/face-perception/",
+        "/object-recognition/",
+        "/pattern-recognition/",
+        "/illusory-contours/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-015"
+      ],
+      "claim_requirements": [
+        "CLM-724",
+        "CLM-725",
+        "CLM-726",
+        "CLM-727"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/illusory-contours/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/illusory-contours/",
+      "hreflang_group": "illusory-contours",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/illusory-contours.md",
+      "seo_title": "Illusory Contours | Zonules.com",
+      "meta_description": "Illusory contours are perceived edges that appear where no luminance boundary exists in the image, as in the Kanizsa triangle.",
+      "required_internal_links": [
+        "/gestalt-principles/",
+        "/amodal-completion/",
+        "/figure-ground/",
+        "/visual-illusions/",
+        "/motion-aftereffect/"
+      ],
+      "source_requirements": [
+        "SRC-006",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-728",
+        "CLM-729",
+        "CLM-730",
+        "CLM-731"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/motion-aftereffect/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/motion-aftereffect/",
+      "hreflang_group": "motion-aftereffect",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/motion-aftereffect.md",
+      "seo_title": "Motion Aftereffect | Zonules.com",
+      "meta_description": "The motion aftereffect is the illusion of motion in the opposite direction seen after prolonged viewing of steady motion.",
+      "required_internal_links": [
+        "/perceptual-adaptation/",
+        "/motion-perception/",
+        "/apparent-motion/",
+        "/perceptual-error/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-014"
+      ],
+      "claim_requirements": [
+        "CLM-732",
+        "CLM-733",
+        "CLM-734",
+        "CLM-735"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/global-precedence/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/global-precedence/",
+      "hreflang_group": "global-precedence",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/global-precedence.md",
+      "seo_title": "Global Precedence | Zonules.com",
+      "meta_description": "Global precedence is the tendency to perceive the overall form of a configuration before its local parts.",
+      "required_internal_links": [
+        "/gestalt-principles/",
+        "/perceptual-grouping/",
+        "/scene-recognition/",
+        "/holistic-processing/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-736",
+        "CLM-737",
+        "CLM-738",
+        "CLM-739"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/holistic-processing/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/holistic-processing/",
+      "hreflang_group": "holistic-processing",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/holistic-processing.md",
+      "seo_title": "Holistic Processing | Zonules.com",
+      "meta_description": "Holistic processing is the perception of a stimulus as an integrated whole rather than a set of independent parts, most studied for faces.",
+      "required_internal_links": [
+        "/face-perception/",
+        "/global-precedence/",
+        "/object-recognition/",
+        "/gestalt-principles/",
+        "/context-effects/"
+      ],
+      "source_requirements": [
+        "SRC-015",
+        "SRC-005"
+      ],
+      "claim_requirements": [
+        "CLM-740",
+        "CLM-741",
+        "CLM-742",
+        "CLM-743"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/context-effects/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/context-effects/",
+      "hreflang_group": "context-effects",
+      "layer": "L2",
+      "cluster": "perceptual-clarity",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/context-effects.md",
+      "seo_title": "Context Effects | Zonules.com",
+      "meta_description": "Context effects are the influence of surrounding information on how an ambiguous stimulus is perceived.",
+      "required_internal_links": [
+        "/top-down-processing/",
+        "/scene-recognition/",
+        "/gist-perception/",
+        "/perceptual-error/"
+      ],
+      "source_requirements": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "claim_requirements": [
+        "CLM-744",
+        "CLM-745",
+        "CLM-746",
+        "CLM-747"
+      ],
+      "safety_class": "educational",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/edge-detection/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/edge-detection/",
+      "hreflang_group": "edge-detection",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/edge-detection.md",
+      "seo_title": "Edge Detection | Zonules.com",
+      "meta_description": "Edge detection is the computer vision operation that locates points in an image where intensity changes sharply.",
+      "required_internal_links": [
+        "/feature-extraction/",
+        "/feature-matching/",
+        "/computer-vision/",
+        "/semantic-segmentation/"
+      ],
+      "source_requirements": [
+        "SRC-007",
+        "SRC-016"
+      ],
+      "claim_requirements": [
+        "CLM-748",
+        "CLM-749",
+        "CLM-750",
+        "CLM-751"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/feature-matching/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/feature-matching/",
+      "hreflang_group": "feature-matching",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/feature-matching.md",
+      "seo_title": "Feature Matching | Zonules.com",
+      "meta_description": "Feature matching is the process of finding corresponding points or regions across different images of the same scene.",
+      "required_internal_links": [
+        "/keypoint-detection/",
+        "/feature-extraction/",
+        "/image-registration/",
+        "/stereo-matching/",
+        "/edge-detection/"
+      ],
+      "source_requirements": [
+        "SRC-007",
+        "SRC-016"
+      ],
+      "claim_requirements": [
+        "CLM-752",
+        "CLM-753",
+        "CLM-754",
+        "CLM-755"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/keypoint-detection/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/keypoint-detection/",
+      "hreflang_group": "keypoint-detection",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/keypoint-detection.md",
+      "seo_title": "Keypoint Detection | Zonules.com",
+      "meta_description": "Keypoint detection finds distinctive, repeatable points in an image, such as corners and blobs, that can be reliably located again.",
+      "required_internal_links": [
+        "/feature-matching/",
+        "/feature-extraction/",
+        "/pose-estimation/",
+        "/visual-slam/",
+        "/optical-character-recognition/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-756",
+        "CLM-757",
+        "CLM-758",
+        "CLM-759"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/optical-character-recognition/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/optical-character-recognition/",
+      "hreflang_group": "optical-character-recognition",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/optical-character-recognition.md",
+      "seo_title": "Optical Character Recognition | Zonules.com",
+      "meta_description": "Optical character recognition is the machine task of converting images of text into machine-readable characters.",
+      "required_internal_links": [
+        "/image-classification/",
+        "/semantic-segmentation/",
+        "/scene-understanding/",
+        "/pattern-recognition/",
+        "/panoptic-segmentation/"
+      ],
+      "source_requirements": [
+        "SRC-007",
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-760",
+        "CLM-761",
+        "CLM-762",
+        "CLM-763"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/panoptic-segmentation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/panoptic-segmentation/",
+      "hreflang_group": "panoptic-segmentation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/panoptic-segmentation.md",
+      "seo_title": "Panoptic Segmentation | Zonules.com",
+      "meta_description": "Panoptic segmentation assigns every pixel in an image both a class label and, for countable objects, an instance identity.",
+      "required_internal_links": [
+        "/semantic-segmentation/",
+        "/instance-segmentation/",
+        "/scene-understanding/",
+        "/object-detection/"
+      ],
+      "source_requirements": [
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-764",
+        "CLM-765",
+        "CLM-766",
+        "CLM-767"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/saliency-maps/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/saliency-maps/",
+      "hreflang_group": "saliency-maps",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/saliency-maps.md",
+      "seo_title": "Saliency Maps | Zonules.com",
+      "meta_description": "Saliency maps are visualizations that estimate how much each input pixel influenced a model's output.",
+      "required_internal_links": [
+        "/neural-network-interpretability/",
+        "/class-activation-mapping/",
+        "/visual-saliency/",
+        "/model-calibration/"
+      ],
+      "source_requirements": [
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-768",
+        "CLM-769",
+        "CLM-770",
+        "CLM-771"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/class-activation-mapping/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/class-activation-mapping/",
+      "hreflang_group": "class-activation-mapping",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/class-activation-mapping.md",
+      "seo_title": "Class Activation Mapping | Zonules.com",
+      "meta_description": "Class activation mapping highlights the image regions a convolutional network used to support a particular class prediction.",
+      "required_internal_links": [
+        "/saliency-maps/",
+        "/neural-network-interpretability/",
+        "/convolutional-neural-networks/",
+        "/image-classification/"
+      ],
+      "source_requirements": [
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-772",
+        "CLM-773",
+        "CLM-774",
+        "CLM-775"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/uncertainty-estimation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/uncertainty-estimation/",
+      "hreflang_group": "uncertainty-estimation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/uncertainty-estimation.md",
+      "seo_title": "Uncertainty Estimation | Zonules.com",
+      "meta_description": "Uncertainty estimation is the task of quantifying how confident a model should be in each prediction.",
+      "required_internal_links": [
+        "/model-calibration/",
+        "/out-of-distribution-detection/",
+        "/anomaly-detection/",
+        "/image-quality-assessment/"
+      ],
+      "source_requirements": [
+        "SRC-027",
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-776",
+        "CLM-777",
+        "CLM-778",
+        "CLM-779"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/anomaly-detection/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/anomaly-detection/",
+      "hreflang_group": "anomaly-detection",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/anomaly-detection.md",
+      "seo_title": "Anomaly Detection | Zonules.com",
+      "meta_description": "Anomaly detection identifies inputs that deviate from a learned model of normal data.",
+      "required_internal_links": [
+        "/out-of-distribution-detection/",
+        "/uncertainty-estimation/",
+        "/image-quality-assessment/",
+        "/medical-imaging-ai/",
+        "/robustness/"
+      ],
+      "source_requirements": [
+        "SRC-027",
+        "SRC-007"
+      ],
+      "claim_requirements": [
+        "CLM-780",
+        "CLM-781",
+        "CLM-782",
+        "CLM-783"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/robustness/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/robustness/",
+      "hreflang_group": "robustness",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-03",
+      "template": "term.html",
+      "content": "content/en/terms/robustness.md",
+      "seo_title": "Model Robustness | Zonules.com",
+      "meta_description": "Robustness is a model's ability to maintain performance under input perturbations, distribution change, and noise.",
+      "required_internal_links": [
+        "/adversarial-examples/",
+        "/domain-shift/",
+        "/out-of-distribution-detection/",
+        "/data-augmentation/"
+      ],
+      "source_requirements": [
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-784",
+        "CLM-785",
+        "CLM-786",
+        "CLM-787"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/dataset-bias/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/dataset-bias/",
+      "hreflang_group": "dataset-bias",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/dataset-bias.md",
+      "seo_title": "Dataset Bias | Zonules.com",
+      "meta_description": "Dataset bias is the systematic non-representativeness of a training set relative to the conditions where the model will be used.",
+      "required_internal_links": [
+        "/image-classification/",
+        "/domain-shift/",
+        "/transfer-learning/",
+        "/face-recognition/"
+      ],
+      "source_requirements": [
+        "SRC-022",
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-788",
+        "CLM-789",
+        "CLM-790",
+        "CLM-791"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/backpropagation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/backpropagation/",
+      "hreflang_group": "backpropagation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/backpropagation.md",
+      "seo_title": "Backpropagation | Zonules.com",
+      "meta_description": "Backpropagation is the algorithm that computes how a network's error changes with respect to each of its weights.",
+      "required_internal_links": [
+        "/convolutional-neural-networks/",
+        "/transfer-learning/",
+        "/residual-networks/",
+        "/transformer-architecture/"
+      ],
+      "source_requirements": [
+        "SRC-017",
+        "SRC-027"
+      ],
+      "claim_requirements": [
+        "CLM-792",
+        "CLM-793",
+        "CLM-794",
+        "CLM-795"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/residual-networks/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/residual-networks/",
+      "hreflang_group": "residual-networks",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/residual-networks.md",
+      "seo_title": "Residual Networks | Zonules.com",
+      "meta_description": "Residual networks add shortcut connections that let a layer learn a change to its input rather than a full transformation.",
+      "required_internal_links": [
+        "/convolutional-neural-networks/",
+        "/backpropagation/",
+        "/batch-normalization/",
+        "/image-classification/"
+      ],
+      "source_requirements": [
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-796",
+        "CLM-797",
+        "CLM-798",
+        "CLM-799"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/batch-normalization/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/batch-normalization/",
+      "hreflang_group": "batch-normalization",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-02",
+      "template": "term.html",
+      "content": "content/en/terms/batch-normalization.md",
+      "seo_title": "Batch Normalization | Zonules.com",
+      "meta_description": "Batch normalization standardizes the inputs to a layer using the statistics of each training batch.",
+      "required_internal_links": [
+        "/residual-networks/",
+        "/convolutional-neural-networks/",
+        "/backpropagation/",
+        "/data-augmentation/",
+        "/knowledge-distillation/"
+      ],
+      "source_requirements": [
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-800",
+        "CLM-801",
+        "CLM-802",
+        "CLM-803"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/knowledge-distillation/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/knowledge-distillation/",
+      "hreflang_group": "knowledge-distillation",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/knowledge-distillation.md",
+      "seo_title": "Knowledge Distillation | Zonules.com",
+      "meta_description": "Knowledge distillation trains a smaller student model to reproduce the outputs of a larger teacher model.",
+      "required_internal_links": [
+        "/transfer-learning/",
+        "/model-calibration/",
+        "/convolutional-neural-networks/",
+        "/few-shot-learning/"
+      ],
+      "source_requirements": [
+        "SRC-017"
+      ],
+      "claim_requirements": [
+        "CLM-804",
+        "CLM-805",
+        "CLM-806",
+        "CLM-807"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/diffusion-models/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/diffusion-models/",
+      "hreflang_group": "diffusion-models",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/diffusion-models.md",
+      "seo_title": "Diffusion Models | Zonules.com",
+      "meta_description": "Diffusion models generate images by learning to reverse a gradual process that turns data into noise.",
+      "required_internal_links": [
+        "/generative-adversarial-networks/",
+        "/generative-models/",
+        "/image-synthesis/",
+        "/synthetic-media/"
+      ],
+      "source_requirements": [
+        "SRC-017",
+        "SRC-023"
+      ],
+      "claim_requirements": [
+        "CLM-808",
+        "CLM-809",
+        "CLM-810",
+        "CLM-811"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/generative-adversarial-networks/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/generative-adversarial-networks/",
+      "hreflang_group": "generative-adversarial-networks",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/generative-adversarial-networks.md",
+      "seo_title": "Generative Adversarial Networks | Zonules.com",
+      "meta_description": "Generative adversarial networks pit a generator that creates images against a discriminator that tries to tell real from fake.",
+      "required_internal_links": [
+        "/diffusion-models/",
+        "/generative-models/",
+        "/synthetic-media/",
+        "/deepfake-detection/"
+      ],
+      "source_requirements": [
+        "SRC-017",
+        "SRC-024"
+      ],
+      "claim_requirements": [
+        "CLM-812",
+        "CLM-813",
+        "CLM-814",
+        "CLM-815"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/digital-watermarking/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/digital-watermarking/",
+      "hreflang_group": "digital-watermarking",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/digital-watermarking.md",
+      "seo_title": "Digital Watermarking | Zonules.com",
+      "meta_description": "Digital watermarking embeds an imperceptible, recoverable signal into an image to carry information about its origin or authenticity.",
+      "required_internal_links": [
+        "/image-provenance/",
+        "/synthetic-media/",
+        "/deepfake-detection/",
+        "/perceptual-hashing/"
+      ],
+      "source_requirements": [
+        "SRC-008",
+        "SRC-023"
+      ],
+      "claim_requirements": [
+        "CLM-816",
+        "CLM-817",
+        "CLM-818",
+        "CLM-819"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/perceptual-hashing/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/perceptual-hashing/",
+      "hreflang_group": "perceptual-hashing",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-04",
+      "template": "term.html",
+      "content": "content/en/terms/perceptual-hashing.md",
+      "seo_title": "Perceptual Hashing | Zonules.com",
+      "meta_description": "Perceptual hashing computes a compact fingerprint of an image that stays similar when the image is altered slightly.",
+      "required_internal_links": [
+        "/image-provenance/",
+        "/digital-watermarking/",
+        "/deepfake-detection/",
+        "/image-registration/"
+      ],
+      "source_requirements": [
+        "SRC-008",
+        "SRC-023"
+      ],
+      "claim_requirements": [
+        "CLM-820",
+        "CLM-821",
+        "CLM-822",
+        "CLM-823"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/face-recognition/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/face-recognition/",
+      "hreflang_group": "face-recognition",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-05",
+      "template": "term.html",
+      "content": "content/en/terms/face-recognition.md",
+      "seo_title": "Face Recognition | Zonules.com",
+      "meta_description": "Face recognition is the machine task of identifying or verifying a person from an image of their face.",
+      "required_internal_links": [
+        "/face-perception/",
+        "/image-classification/",
+        "/dataset-bias/",
+        "/deepfake-detection/"
+      ],
+      "source_requirements": [
+        "SRC-007",
+        "SRC-022"
+      ],
+      "claim_requirements": [
+        "CLM-824",
+        "CLM-825",
+        "CLM-826",
+        "CLM-827"
+      ],
+      "safety_class": "technical",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
+    },
+    {
+      "path": "/stereo-matching/",
+      "language": "en",
+      "page_type": "reference-unit",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/stereo-matching/",
+      "hreflang_group": "stereo-matching",
+      "layer": "L3",
+      "cluster": "machine-perception",
+      "fio_class": "FIO-01",
+      "template": "term.html",
+      "content": "content/en/terms/stereo-matching.md",
+      "seo_title": "Stereo Matching | Zonules.com",
+      "meta_description": "Stereo matching computes depth by finding corresponding points in two images taken from slightly different viewpoints.",
+      "required_internal_links": [
+        "/depth-estimation/",
+        "/feature-matching/",
+        "/binocular-disparity/",
+        "/visual-slam/"
+      ],
+      "source_requirements": [
+        "SRC-007",
+        "SRC-016"
+      ],
+      "claim_requirements": [
+        "CLM-828",
+        "CLM-829",
+        "CLM-830",
+        "CLM-831"
+      ],
+      "safety_class": "technical",
       "monetization": "none",
       "last_reviewed": "2026-06-14"
     }

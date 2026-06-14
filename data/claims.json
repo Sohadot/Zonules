@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.3",
+  "version": "1.4",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -5542,6 +5542,2174 @@
         "SRC-004"
       ],
       "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-592",
+      "status": "sourced",
+      "statement": "The corneal endothelium is a single layer of cells on the posterior surface of the cornea that pumps fluid out of the corneal stroma to keep it dehydrated and clear.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/corneal-endothelium/"
+    },
+    {
+      "id": "CLM-593",
+      "status": "sourced",
+      "statement": "Endothelial cells do not regenerate in significant numbers after birth, so their density declines across life while the remaining cells spread to maintain coverage.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/corneal-endothelium/"
+    },
+    {
+      "id": "CLM-594",
+      "status": "sourced",
+      "statement": "When endothelial pump function is lost, the stroma swells, scatters light, and the cornea loses transparency.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/corneal-endothelium/"
+    },
+    {
+      "id": "CLM-595",
+      "status": "internal-framework",
+      "statement": "The endothelium is a suspension-layer maintenance element: it holds the optical clarity of the cornea by continuously removing the fluid that would otherwise blur it.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/corneal-endothelium/"
+    },
+    {
+      "id": "CLM-596",
+      "status": "sourced",
+      "statement": "The corneal epithelium is the outermost cellular layer of the cornea, a stratified non-keratinized surface that forms the eye's first refracting interface with air.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/corneal-epithelium/"
+    },
+    {
+      "id": "CLM-597",
+      "status": "sourced",
+      "statement": "It regenerates rapidly from limbal stem cells, so minor surface abrasions can heal within days.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/corneal-epithelium/"
+    },
+    {
+      "id": "CLM-598",
+      "status": "sourced",
+      "statement": "The epithelium together with the overlying tear film creates the smooth optical surface responsible for most of the eye's refractive power.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/corneal-epithelium/"
+    },
+    {
+      "id": "CLM-599",
+      "status": "internal-framework",
+      "statement": "As a renewing protective surface, the epithelium is a suspension-layer element: it maintains the boundary conditions under which a sharp image can form.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/corneal-epithelium/"
+    },
+    {
+      "id": "CLM-600",
+      "status": "sourced",
+      "statement": "The limbus is the transitional border zone where the transparent cornea meets the opaque sclera and conjunctiva.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/limbus/"
+    },
+    {
+      "id": "CLM-601",
+      "status": "sourced",
+      "statement": "It houses the limbal stem cells that continuously renew the corneal epithelium.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/limbus/"
+    },
+    {
+      "id": "CLM-602",
+      "status": "sourced",
+      "statement": "The limbus also contains the drainage structures at the angle through which aqueous humor leaves the eye.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/limbus/"
+    },
+    {
+      "id": "CLM-603",
+      "status": "internal-framework",
+      "statement": "The limbus is a structural boundary that maintains the cornea's renewal and the eye's fluid balance — a suspension-layer maintenance zone.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/limbus/"
+    },
+    {
+      "id": "CLM-604",
+      "status": "sourced",
+      "statement": "The canal of Schlemm is a circular channel at the iridocorneal angle that collects aqueous humor after it passes through the trabecular meshwork.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/canal-of-schlemm/"
+    },
+    {
+      "id": "CLM-605",
+      "status": "sourced",
+      "statement": "It returns the aqueous humor to the venous circulation, completing the fluid's drainage pathway.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/canal-of-schlemm/"
+    },
+    {
+      "id": "CLM-606",
+      "status": "sourced",
+      "statement": "The balance between aqueous production and outflow through this canal sets the intraocular pressure that maintains ocular shape.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/canal-of-schlemm/"
+    },
+    {
+      "id": "CLM-607",
+      "status": "internal-framework",
+      "statement": "Schlemm's canal is a maintenance element of the suspension layer: stable outflow holds the pressure that keeps the optical geometry intact.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/canal-of-schlemm/"
+    },
+    {
+      "id": "CLM-608",
+      "status": "sourced",
+      "statement": "The ciliary muscle is a ring of smooth muscle within the ciliary body whose contraction governs the tension carried by the zonular fibers.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/ciliary-muscle/"
+    },
+    {
+      "id": "CLM-609",
+      "status": "sourced",
+      "statement": "When the ciliary muscle contracts, zonular tension falls and the elastic lens rounds up for near focus; when it relaxes, zonular tension rises and the lens flattens for distance.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/ciliary-muscle/"
+    },
+    {
+      "id": "CLM-610",
+      "status": "sourced",
+      "statement": "The muscle is driven by parasympathetic fibers traveling with the oculomotor nerve.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/ciliary-muscle/"
+    },
+    {
+      "id": "CLM-611",
+      "status": "internal-framework",
+      "statement": "The ciliary muscle is the actuator of the accommodation layer — the structure that changes the operating range of focus.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ciliary-muscle/"
+    },
+    {
+      "id": "CLM-612",
+      "status": "sourced",
+      "statement": "Bruch's membrane is a thin acellular layer between the retinal pigment epithelium and the choroid.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/bruchs-membrane/"
+    },
+    {
+      "id": "CLM-613",
+      "status": "sourced",
+      "statement": "It acts as a semipermeable barrier through which nutrients and waste pass between the choroidal blood supply and the outer retina.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/bruchs-membrane/"
+    },
+    {
+      "id": "CLM-614",
+      "status": "sourced",
+      "statement": "The membrane thickens and accumulates deposits with age, which can impede exchange across it.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/bruchs-membrane/"
+    },
+    {
+      "id": "CLM-615",
+      "status": "internal-framework",
+      "statement": "Bruch's membrane is a maintenance element of the suspension layer: it holds the exchange conditions that keep the photoreceptors supplied and functional.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/bruchs-membrane/"
+    },
+    {
+      "id": "CLM-616",
+      "status": "sourced",
+      "statement": "The foveola is the central floor of the fovea, roughly a third of a millimeter across, containing only cone photoreceptors and no rods.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/foveola/"
+    },
+    {
+      "id": "CLM-617",
+      "status": "sourced",
+      "statement": "At the foveola the overlying retinal layers are displaced aside, giving incoming light a nearly unobstructed path to the cones.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/foveola/"
+    },
+    {
+      "id": "CLM-618",
+      "status": "sourced",
+      "statement": "This is the region of highest spatial acuity in the human retina.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/foveola/"
+    },
+    {
+      "id": "CLM-619",
+      "status": "internal-framework",
+      "statement": "The foveola is the separation layer's sharpest instrument — the anatomical point where signal is resolved from noise at the finest scale.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/foveola/"
+    },
+    {
+      "id": "CLM-620",
+      "status": "sourced",
+      "statement": "The parafovea is the ring of retina immediately surrounding the fovea, containing a mix of cones and a rising density of rods.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/parafovea/"
+    },
+    {
+      "id": "CLM-621",
+      "status": "sourced",
+      "statement": "Spatial acuity falls steeply from the fovea through the parafovea toward the periphery.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/parafovea/"
+    },
+    {
+      "id": "CLM-622",
+      "status": "sourced",
+      "statement": "The parafovea contributes to the detection of detail just outside the point of fixation.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/parafovea/"
+    },
+    {
+      "id": "CLM-623",
+      "status": "internal-framework",
+      "statement": "The parafovea is a separation-layer gradient: it marks how quickly the retina trades resolution for coverage away from the center.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/parafovea/"
+    },
+    {
+      "id": "CLM-624",
+      "status": "sourced",
+      "statement": "The optic disc is the region of the retina where the axons of the retinal ganglion cells converge and leave the eye to form the optic nerve.",
+      "sources": [
+        "SRC-001",
+        "SRC-013"
+      ],
+      "page": "/optic-disc/"
+    },
+    {
+      "id": "CLM-625",
+      "status": "sourced",
+      "statement": "Because it contains no photoreceptors, the optic disc corresponds to the physiological blind spot.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/optic-disc/"
+    },
+    {
+      "id": "CLM-626",
+      "status": "sourced",
+      "statement": "The blood vessels of the inner retina enter and exit the eye through the optic disc.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/optic-disc/"
+    },
+    {
+      "id": "CLM-627",
+      "status": "internal-framework",
+      "statement": "The optic disc is a suspension-layer junction — the structural gateway through which the visual signal is gathered and routed out of the eye.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/optic-disc/"
+    },
+    {
+      "id": "CLM-628",
+      "status": "sourced",
+      "statement": "Horizontal cells are retinal interneurons that connect photoreceptors laterally and feed inhibitory signals back to them.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/horizontal-cells/"
+    },
+    {
+      "id": "CLM-629",
+      "status": "sourced",
+      "statement": "This lateral inhibition enhances contrast at edges by suppressing responses in uniformly lit regions.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/horizontal-cells/"
+    },
+    {
+      "id": "CLM-630",
+      "status": "sourced",
+      "statement": "Horizontal cells help build the center-surround organization of downstream receptive fields.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/horizontal-cells/"
+    },
+    {
+      "id": "CLM-631",
+      "status": "internal-framework",
+      "statement": "Horizontal cells are a separation-layer mechanism: they sharpen the boundary between signal and background before the image leaves the retina.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/horizontal-cells/"
+    },
+    {
+      "id": "CLM-632",
+      "status": "sourced",
+      "statement": "Bipolar cells are the retinal interneurons that carry signals from photoreceptors to retinal ganglion cells.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/bipolar-cells/"
+    },
+    {
+      "id": "CLM-633",
+      "status": "sourced",
+      "statement": "They split the visual signal into ON and OFF pathways that respond to increases and decreases in light.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/bipolar-cells/"
+    },
+    {
+      "id": "CLM-634",
+      "status": "sourced",
+      "statement": "Bipolar cells contribute the center to the center-surround receptive fields of ganglion cells.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/bipolar-cells/"
+    },
+    {
+      "id": "CLM-635",
+      "status": "internal-framework",
+      "statement": "Bipolar cells are a suspension-layer relay: they hold and route the photoreceptor signal into the channels the brain reads.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/bipolar-cells/"
+    },
+    {
+      "id": "CLM-636",
+      "status": "sourced",
+      "statement": "Amacrine cells are retinal interneurons that modulate the signal passing from bipolar cells to ganglion cells.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/amacrine-cells/"
+    },
+    {
+      "id": "CLM-637",
+      "status": "sourced",
+      "statement": "Many amacrine cell types are specialized; some are essential for detecting the direction of motion.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/amacrine-cells/"
+    },
+    {
+      "id": "CLM-638",
+      "status": "sourced",
+      "statement": "They shape the temporal dynamics of the retinal output, adapting it to changing conditions.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/amacrine-cells/"
+    },
+    {
+      "id": "CLM-639",
+      "status": "internal-framework",
+      "statement": "Amacrine cells are an accommodation-layer mechanism within the retina: they adjust the signal so the output stays useful as conditions change.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/amacrine-cells/"
+    },
+    {
+      "id": "CLM-640",
+      "status": "sourced",
+      "statement": "Rod cells are the photoreceptors responsible for vision in dim light, far more numerous than cones in the human retina.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/rod-cells/"
+    },
+    {
+      "id": "CLM-641",
+      "status": "sourced",
+      "statement": "A single rod can respond to an individual photon, giving the rod system extreme sensitivity.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/rod-cells/"
+    },
+    {
+      "id": "CLM-642",
+      "status": "sourced",
+      "statement": "Rods are absent from the foveola and reach their highest density in a ring in the peripheral retina.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/rod-cells/"
+    },
+    {
+      "id": "CLM-643",
+      "status": "internal-framework",
+      "statement": "Rods are a separation-layer instrument tuned for low signal: they pull a usable percept out of near-darkness.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/rod-cells/"
+    },
+    {
+      "id": "CLM-644",
+      "status": "sourced",
+      "statement": "Cone cells are the photoreceptors responsible for vision in bright light and for color.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/cone-cells/"
+    },
+    {
+      "id": "CLM-645",
+      "status": "sourced",
+      "statement": "Human retinas contain three cone types tuned to short, medium, and long wavelengths.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/cone-cells/"
+    },
+    {
+      "id": "CLM-646",
+      "status": "sourced",
+      "statement": "Cones are densely packed in the fovea, where they support the sharpest vision.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/cone-cells/"
+    },
+    {
+      "id": "CLM-647",
+      "status": "internal-framework",
+      "statement": "Cones are the separation layer's daytime instrument: they resolve fine detail and color when signal is plentiful.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/cone-cells/"
+    },
+    {
+      "id": "CLM-648",
+      "status": "sourced",
+      "statement": "Rhodopsin is the light-sensitive pigment in rod photoreceptors, made of the protein opsin bound to a retinal chromophore.",
+      "sources": [
+        "SRC-011",
+        "SRC-012"
+      ],
+      "page": "/rhodopsin/"
+    },
+    {
+      "id": "CLM-649",
+      "status": "sourced",
+      "statement": "Absorbing a photon changes the shape of the retinal molecule, triggering the cascade that signals light.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/rhodopsin/"
+    },
+    {
+      "id": "CLM-650",
+      "status": "sourced",
+      "statement": "The slow regeneration of rhodopsin after bleaching underlies the time course of dark adaptation.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/rhodopsin/"
+    },
+    {
+      "id": "CLM-651",
+      "status": "internal-framework",
+      "statement": "Rhodopsin is the molecular threshold of the separation layer — the first point at which a photon becomes signal.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/rhodopsin/"
+    },
+    {
+      "id": "CLM-652",
+      "status": "sourced",
+      "statement": "Phototransduction is the process by which a photoreceptor converts absorbed light into an electrical signal.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/phototransduction/"
+    },
+    {
+      "id": "CLM-653",
+      "status": "sourced",
+      "statement": "In darkness photoreceptors are depolarized; light closes ion channels and hyperpolarizes the cell, reducing its release of neurotransmitter.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/phototransduction/"
+    },
+    {
+      "id": "CLM-654",
+      "status": "sourced",
+      "statement": "The cascade amplifies a single absorbed photon into a measurable change in the cell's membrane current.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/phototransduction/"
+    },
+    {
+      "id": "CLM-655",
+      "status": "internal-framework",
+      "statement": "Phototransduction is the entry gate of the separation layer — the conversion that decides what counts as signal.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/phototransduction/"
+    },
+    {
+      "id": "CLM-656",
+      "status": "sourced",
+      "statement": "The pupil is the central aperture of the iris through which light enters the eye.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/pupil/"
+    },
+    {
+      "id": "CLM-657",
+      "status": "sourced",
+      "statement": "Its diameter is set by the opposing muscles of the iris and controls how much light reaches the retina.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/pupil/"
+    },
+    {
+      "id": "CLM-658",
+      "status": "sourced",
+      "statement": "A smaller pupil increases depth of field and reduces optical aberrations, while a larger pupil admits more light in dim conditions.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/pupil/"
+    },
+    {
+      "id": "CLM-659",
+      "status": "internal-framework",
+      "statement": "The pupil is a separation-layer aperture: it governs the trade-off between light gathered and image sharpness.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/pupil/"
+    },
+    {
+      "id": "CLM-660",
+      "status": "sourced",
+      "statement": "The uvea is the pigmented middle layer of the eye, comprising the iris, the ciliary body, and the choroid.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/uvea/"
+    },
+    {
+      "id": "CLM-661",
+      "status": "sourced",
+      "statement": "It supplies most of the blood to the eye and absorbs stray light to prevent internal scatter.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/uvea/"
+    },
+    {
+      "id": "CLM-662",
+      "status": "sourced",
+      "statement": "Its three structures together control the aperture, drive accommodation, and nourish the outer retina.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/uvea/"
+    },
+    {
+      "id": "CLM-663",
+      "status": "internal-framework",
+      "statement": "The uvea is a suspension-layer support system: it maintains the light environment and blood supply that hold the optical system in working order.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/uvea/"
+    },
+    {
+      "id": "CLM-664",
+      "status": "sourced",
+      "statement": "Size constancy is the tendency to perceive an object as having a stable physical size despite changes in the size of its retinal image with distance.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/size-constancy/"
+    },
+    {
+      "id": "CLM-665",
+      "status": "sourced",
+      "statement": "The visual system achieves this by scaling the retinal image against perceived distance.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/size-constancy/"
+    },
+    {
+      "id": "CLM-666",
+      "status": "sourced",
+      "statement": "When distance cues are removed or made misleading, size constancy breaks down and produces size illusions.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/size-constancy/"
+    },
+    {
+      "id": "CLM-667",
+      "status": "internal-framework",
+      "statement": "Size constancy is an accommodation-layer achievement — the percept holds steady as viewing conditions change.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/size-constancy/"
+    },
+    {
+      "id": "CLM-668",
+      "status": "sourced",
+      "statement": "Shape constancy is the perception of an object's stable shape despite changes in the shape of its retinal projection with viewing angle.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/shape-constancy/"
+    },
+    {
+      "id": "CLM-669",
+      "status": "sourced",
+      "statement": "A door swinging open projects a series of trapezoids, yet it is seen as a constant rectangle.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/shape-constancy/"
+    },
+    {
+      "id": "CLM-670",
+      "status": "sourced",
+      "statement": "The visual system uses slant and depth information to recover an object's true shape from its projection.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/shape-constancy/"
+    },
+    {
+      "id": "CLM-671",
+      "status": "internal-framework",
+      "statement": "Shape constancy is an accommodation-layer property — interpretation stays stable across the range of viewpoints.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/shape-constancy/"
+    },
+    {
+      "id": "CLM-672",
+      "status": "sourced",
+      "statement": "Lightness constancy is the perception of a surface's stable reflectance despite large changes in the amount of light it reflects.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/lightness-constancy/"
+    },
+    {
+      "id": "CLM-673",
+      "status": "sourced",
+      "statement": "A lump of coal in sunlight reflects more light than white paper indoors, yet the coal still looks black.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/lightness-constancy/"
+    },
+    {
+      "id": "CLM-674",
+      "status": "sourced",
+      "statement": "The visual system estimates reflectance by comparing a surface against its surroundings rather than reading absolute luminance.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/lightness-constancy/"
+    },
+    {
+      "id": "CLM-675",
+      "status": "internal-framework",
+      "statement": "Lightness constancy is an accommodation-layer achievement — the percept is anchored to the object, not to the fluctuating illumination.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/lightness-constancy/"
+    },
+    {
+      "id": "CLM-676",
+      "status": "sourced",
+      "statement": "Depth cues are the sources of information the visual system uses to recover three-dimensional structure from two-dimensional retinal images.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/depth-cues/"
+    },
+    {
+      "id": "CLM-677",
+      "status": "sourced",
+      "statement": "They are commonly divided into binocular cues, such as disparity, and monocular cues, such as occlusion, perspective, and shading.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/depth-cues/"
+    },
+    {
+      "id": "CLM-678",
+      "status": "sourced",
+      "statement": "No single cue is sufficient in all conditions, so the visual system combines the available cues to estimate depth.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/depth-cues/"
+    },
+    {
+      "id": "CLM-679",
+      "status": "internal-framework",
+      "statement": "Depth cues are interpretation-layer evidence — the inputs from which the percept of a third dimension is constructed.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/depth-cues/"
+    },
+    {
+      "id": "CLM-680",
+      "status": "sourced",
+      "statement": "Binocular disparity is the small difference between the images of a scene formed in the two eyes because of their horizontal separation.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/binocular-disparity/"
+    },
+    {
+      "id": "CLM-681",
+      "status": "sourced",
+      "statement": "The visual system measures this disparity and uses it to compute relative depth, the basis of stereopsis.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/binocular-disparity/"
+    },
+    {
+      "id": "CLM-682",
+      "status": "sourced",
+      "statement": "Disparity is most informative for objects within a few meters, where the angular difference between the eyes is largest.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/binocular-disparity/"
+    },
+    {
+      "id": "CLM-683",
+      "status": "internal-framework",
+      "statement": "Binocular disparity is interpretation-layer evidence — two slightly different signals fused into one depth judgment.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/binocular-disparity/"
+    },
+    {
+      "id": "CLM-684",
+      "status": "sourced",
+      "statement": "Motion parallax is the depth cue that arises when the observer moves and nearer objects sweep across the retina faster than farther ones.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/motion-parallax/"
+    },
+    {
+      "id": "CLM-685",
+      "status": "sourced",
+      "statement": "The relative image speed of objects provides information about their relative distance.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/motion-parallax/"
+    },
+    {
+      "id": "CLM-686",
+      "status": "sourced",
+      "statement": "It is a monocular cue, available to a single moving eye without binocular input.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/motion-parallax/"
+    },
+    {
+      "id": "CLM-687",
+      "status": "internal-framework",
+      "statement": "Motion parallax is interpretation-layer evidence — depth read out of the structure of changing motion.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/motion-parallax/"
+    },
+    {
+      "id": "CLM-688",
+      "status": "sourced",
+      "statement": "Biological motion is the perception of a living, moving figure from only a few moving points, such as lights attached to the joints.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/biological-motion/"
+    },
+    {
+      "id": "CLM-689",
+      "status": "sourced",
+      "statement": "Observers rapidly recognize walking, running, and even the identity or mood of a point-light figure from motion alone.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/biological-motion/"
+    },
+    {
+      "id": "CLM-690",
+      "status": "sourced",
+      "statement": "The percept collapses when the points are static, showing that the information is carried by the pattern of movement.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/biological-motion/"
+    },
+    {
+      "id": "CLM-691",
+      "status": "internal-framework",
+      "statement": "Biological motion is an interpretation-layer achievement — meaning recovered from motion structure that carries no form on its own.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/biological-motion/"
+    },
+    {
+      "id": "CLM-692",
+      "status": "sourced",
+      "statement": "Amodal completion is the perception of a whole object even when part of it is hidden behind an occluder.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/amodal-completion/"
+    },
+    {
+      "id": "CLM-693",
+      "status": "sourced",
+      "statement": "The visual system represents the occluded portion as present and continuous though it is not in the image.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/amodal-completion/"
+    },
+    {
+      "id": "CLM-694",
+      "status": "sourced",
+      "statement": "This filling-in follows regularities such as the good continuation of the visible contours.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/amodal-completion/"
+    },
+    {
+      "id": "CLM-695",
+      "status": "internal-framework",
+      "statement": "Amodal completion is an interpretation-layer inference — the percept asserts structure the signal does not directly contain.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/amodal-completion/"
+    },
+    {
+      "id": "CLM-696",
+      "status": "sourced",
+      "statement": "Iconic memory is a very brief, high-capacity visual store that holds a detailed image of a scene for a fraction of a second after it disappears.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/iconic-memory/"
+    },
+    {
+      "id": "CLM-697",
+      "status": "sourced",
+      "statement": "Partial-report experiments show that far more is briefly available than can be reported before the trace fades.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/iconic-memory/"
+    },
+    {
+      "id": "CLM-698",
+      "status": "sourced",
+      "statement": "The icon decays within roughly a few hundred milliseconds unless its contents are transferred to a more durable store.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/iconic-memory/"
+    },
+    {
+      "id": "CLM-699",
+      "status": "internal-framework",
+      "statement": "Iconic memory is a suspension-layer buffer — it holds the visual signal briefly so later stages can act on it.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/iconic-memory/"
+    },
+    {
+      "id": "CLM-700",
+      "status": "sourced",
+      "statement": "Divided attention is the attempt to process two or more sources or tasks at the same time.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/divided-attention/"
+    },
+    {
+      "id": "CLM-701",
+      "status": "sourced",
+      "statement": "Performance typically declines as tasks compete for limited capacity, especially when they draw on the same resources.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/divided-attention/"
+    },
+    {
+      "id": "CLM-702",
+      "status": "sourced",
+      "statement": "Some highly practiced combinations can be performed together with little cost, while novel or similar tasks interfere strongly.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/divided-attention/"
+    },
+    {
+      "id": "CLM-703",
+      "status": "internal-framework",
+      "statement": "Divided attention is a suspension-layer stress test — it reveals the limits of how much focus can be held at once.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/divided-attention/"
+    },
+    {
+      "id": "CLM-704",
+      "status": "sourced",
+      "statement": "Feature integration theory proposes that simple features such as color and orientation are registered in parallel across the visual field, while combining them into objects requires focused attention.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/feature-integration-theory/"
+    },
+    {
+      "id": "CLM-705",
+      "status": "sourced",
+      "statement": "It explains why searching for a single feature is fast and parallel, whereas searching for a conjunction of features is slow and serial.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/feature-integration-theory/"
+    },
+    {
+      "id": "CLM-706",
+      "status": "sourced",
+      "statement": "Without attention, features can be miscombined into illusory conjunctions.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/feature-integration-theory/"
+    },
+    {
+      "id": "CLM-707",
+      "status": "internal-framework",
+      "statement": "Feature integration theory frames binding as an interpretation-layer act — attention is what turns separate features into a correctly read object.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/feature-integration-theory/"
+    },
+    {
+      "id": "CLM-708",
+      "status": "sourced",
+      "statement": "Preattentive processing is the rapid, parallel analysis of basic visual features across the whole field before focused attention is applied.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/preattentive-processing/"
+    },
+    {
+      "id": "CLM-709",
+      "status": "sourced",
+      "statement": "Features that pop out, such as a single red item among green ones, are detected in roughly constant time regardless of the number of distractors.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/preattentive-processing/"
+    },
+    {
+      "id": "CLM-710",
+      "status": "sourced",
+      "statement": "It provides the salience map that guides where attention is subsequently directed.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/preattentive-processing/"
+    },
+    {
+      "id": "CLM-711",
+      "status": "internal-framework",
+      "statement": "Preattentive processing is a separation-layer first pass — it segregates candidate signal from background before focus is committed.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/preattentive-processing/"
+    },
+    {
+      "id": "CLM-712",
+      "status": "sourced",
+      "statement": "Gist perception is the rapid extraction of the overall meaning of a scene from a single brief glance.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/gist-perception/"
+    },
+    {
+      "id": "CLM-713",
+      "status": "sourced",
+      "statement": "Observers can categorize a scene as a beach, street, or forest within roughly a tenth of a second, before identifying individual objects.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/gist-perception/"
+    },
+    {
+      "id": "CLM-714",
+      "status": "sourced",
+      "statement": "The gist constrains expectations about which objects are likely present and where.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/gist-perception/"
+    },
+    {
+      "id": "CLM-715",
+      "status": "internal-framework",
+      "statement": "Gist perception is an interpretation-layer shortcut — meaning grasped before detail is resolved.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/gist-perception/"
+    },
+    {
+      "id": "CLM-716",
+      "status": "sourced",
+      "statement": "Ensemble perception is the visual system's ability to summarize sets of similar items by their statistics, such as average size or orientation.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/ensemble-perception/"
+    },
+    {
+      "id": "CLM-717",
+      "status": "sourced",
+      "statement": "Observers can report the mean of a group accurately even when they cannot report any individual member.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/ensemble-perception/"
+    },
+    {
+      "id": "CLM-718",
+      "status": "sourced",
+      "statement": "This summary representation provides a compact description of crowded or cluttered scenes.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/ensemble-perception/"
+    },
+    {
+      "id": "CLM-719",
+      "status": "internal-framework",
+      "statement": "Ensemble perception is a separation-layer compression — it extracts stable structure from many noisy elements.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ensemble-perception/"
+    },
+    {
+      "id": "CLM-720",
+      "status": "sourced",
+      "statement": "Perceptual learning is the lasting improvement in perceptual ability that follows practice with a sensory task.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/perceptual-learning/"
+    },
+    {
+      "id": "CLM-721",
+      "status": "sourced",
+      "statement": "Training can sharpen discriminations such as fine orientation or texture differences, sometimes specific to the trained location or feature.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/perceptual-learning/"
+    },
+    {
+      "id": "CLM-722",
+      "status": "sourced",
+      "statement": "The improvements reflect changes in how sensory information is weighted and read out, not changes in the stimulus.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/perceptual-learning/"
+    },
+    {
+      "id": "CLM-723",
+      "status": "internal-framework",
+      "statement": "Perceptual learning is an accommodation-layer change — the system retunes its range to the demands it has met.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/perceptual-learning/"
+    },
+    {
+      "id": "CLM-724",
+      "status": "sourced",
+      "statement": "Categorical perception is the tendency to perceive continuously varying stimuli as belonging to discrete categories.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/categorical-perception/"
+    },
+    {
+      "id": "CLM-725",
+      "status": "sourced",
+      "statement": "Differences that cross a category boundary are perceived more readily than equally large differences within a category.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/categorical-perception/"
+    },
+    {
+      "id": "CLM-726",
+      "status": "sourced",
+      "statement": "It appears in domains such as color and facial expression, where a smooth physical change is experienced as a set of distinct types.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/categorical-perception/"
+    },
+    {
+      "id": "CLM-727",
+      "status": "internal-framework",
+      "statement": "Categorical perception is an interpretation-layer commitment — the percept resolves a continuum into named kinds.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/categorical-perception/"
+    },
+    {
+      "id": "CLM-728",
+      "status": "sourced",
+      "statement": "Illusory contours are perceived edges that appear where no luminance boundary exists in the image, as in the Kanizsa triangle.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/illusory-contours/"
+    },
+    {
+      "id": "CLM-729",
+      "status": "sourced",
+      "statement": "The visual system infers a continuous edge and an occluding surface from the arrangement of surrounding inducers.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/illusory-contours/"
+    },
+    {
+      "id": "CLM-730",
+      "status": "sourced",
+      "statement": "The illusory surface is often seen as brighter than its physically identical background.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/illusory-contours/"
+    },
+    {
+      "id": "CLM-731",
+      "status": "internal-framework",
+      "statement": "Illusory contours are an interpretation-layer construction — a boundary asserted by the percept that the signal does not contain.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/illusory-contours/"
+    },
+    {
+      "id": "CLM-732",
+      "status": "sourced",
+      "statement": "The motion aftereffect is the illusion of motion in the opposite direction seen after prolonged viewing of steady motion.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/motion-aftereffect/"
+    },
+    {
+      "id": "CLM-733",
+      "status": "sourced",
+      "statement": "Adapting to downward motion, for example, makes a stationary scene appear to drift upward.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/motion-aftereffect/"
+    },
+    {
+      "id": "CLM-734",
+      "status": "sourced",
+      "statement": "The effect reflects adaptation in direction-selective motion detectors that become temporarily imbalanced.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/motion-aftereffect/"
+    },
+    {
+      "id": "CLM-735",
+      "status": "internal-framework",
+      "statement": "The motion aftereffect is an accommodation-layer cost — recalibration to one condition distorts the reading of the next.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/motion-aftereffect/"
+    },
+    {
+      "id": "CLM-736",
+      "status": "sourced",
+      "statement": "Global precedence is the tendency to perceive the overall form of a configuration before its local parts.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/global-precedence/"
+    },
+    {
+      "id": "CLM-737",
+      "status": "sourced",
+      "statement": "In hierarchical figures, where a large letter is made of small different letters, the global letter is usually identified faster.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/global-precedence/"
+    },
+    {
+      "id": "CLM-738",
+      "status": "sourced",
+      "statement": "Global structure can interfere with local judgments more than local structure interferes with global ones.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/global-precedence/"
+    },
+    {
+      "id": "CLM-739",
+      "status": "internal-framework",
+      "statement": "Global precedence is an interpretation-layer ordering — the whole is read before the parts.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/global-precedence/"
+    },
+    {
+      "id": "CLM-740",
+      "status": "sourced",
+      "statement": "Holistic processing is the perception of a stimulus as an integrated whole rather than a set of independent parts, most studied for faces.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/holistic-processing/"
+    },
+    {
+      "id": "CLM-741",
+      "status": "sourced",
+      "statement": "The composite and part-whole effects show that face features are hard to judge in isolation from the whole face.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/holistic-processing/"
+    },
+    {
+      "id": "CLM-742",
+      "status": "sourced",
+      "statement": "Inverting a face disrupts holistic processing and sharply impairs recognition.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/holistic-processing/"
+    },
+    {
+      "id": "CLM-743",
+      "status": "internal-framework",
+      "statement": "Holistic processing is an interpretation-layer mode — meaning read from the configuration, not the catalog of parts.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/holistic-processing/"
+    },
+    {
+      "id": "CLM-744",
+      "status": "sourced",
+      "statement": "Context effects are the influence of surrounding information on how an ambiguous stimulus is perceived.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/context-effects/"
+    },
+    {
+      "id": "CLM-745",
+      "status": "sourced",
+      "statement": "The same shape can be read as a letter or a number depending on the items flanking it.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/context-effects/"
+    },
+    {
+      "id": "CLM-746",
+      "status": "sourced",
+      "statement": "Scene context speeds recognition of objects that are consistent with it and slows recognition of inconsistent ones.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/context-effects/"
+    },
+    {
+      "id": "CLM-747",
+      "status": "internal-framework",
+      "statement": "Context effects are an interpretation-layer bias — surrounding evidence steers how the signal is read.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/context-effects/"
+    },
+    {
+      "id": "CLM-748",
+      "status": "sourced",
+      "statement": "Edge detection is the computer vision operation that locates points in an image where intensity changes sharply.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/edge-detection/"
+    },
+    {
+      "id": "CLM-749",
+      "status": "sourced",
+      "statement": "Classic operators estimate the image gradient and mark edges at local maxima, often after smoothing to suppress noise.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/edge-detection/"
+    },
+    {
+      "id": "CLM-750",
+      "status": "sourced",
+      "statement": "Marr argued that such intensity changes are a primitive from which later visual representations are built.",
+      "sources": [
+        "SRC-016"
+      ],
+      "page": "/edge-detection/"
+    },
+    {
+      "id": "CLM-751",
+      "status": "internal-framework",
+      "statement": "Edge detection is a separation-layer operation — it pulls meaningful boundaries out of a field of pixels.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/edge-detection/"
+    },
+    {
+      "id": "CLM-752",
+      "status": "sourced",
+      "statement": "Feature matching is the process of finding corresponding points or regions across different images of the same scene.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/feature-matching/"
+    },
+    {
+      "id": "CLM-753",
+      "status": "sourced",
+      "statement": "Distinctive local features are described by vectors that stay stable under changes in scale, rotation, and illumination, then matched by similarity.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/feature-matching/"
+    },
+    {
+      "id": "CLM-754",
+      "status": "sourced",
+      "statement": "Reliable correspondences are the foundation of image registration, stereo, and structure-from-motion.",
+      "sources": [
+        "SRC-016"
+      ],
+      "page": "/feature-matching/"
+    },
+    {
+      "id": "CLM-755",
+      "status": "internal-framework",
+      "statement": "Feature matching is a suspension-layer operation — it holds a stable reference frame across views so the same point can be tracked.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/feature-matching/"
+    },
+    {
+      "id": "CLM-756",
+      "status": "sourced",
+      "statement": "Keypoint detection finds distinctive, repeatable points in an image, such as corners and blobs, that can be reliably located again.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/keypoint-detection/"
+    },
+    {
+      "id": "CLM-757",
+      "status": "sourced",
+      "statement": "Good keypoints are invariant to scale and rotation and stable under moderate viewpoint and lighting change.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/keypoint-detection/"
+    },
+    {
+      "id": "CLM-758",
+      "status": "sourced",
+      "statement": "They anchor tasks ranging from image alignment to pose estimation.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/keypoint-detection/"
+    },
+    {
+      "id": "CLM-759",
+      "status": "internal-framework",
+      "statement": "Keypoints are suspension-layer anchors — fixed reference points that hold a spatial frame steady.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/keypoint-detection/"
+    },
+    {
+      "id": "CLM-760",
+      "status": "sourced",
+      "statement": "Optical character recognition is the machine task of converting images of text into machine-readable characters.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/optical-character-recognition/"
+    },
+    {
+      "id": "CLM-761",
+      "status": "sourced",
+      "statement": "Modern systems detect text regions and then recognize character sequences, often with neural networks trained end to end.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/optical-character-recognition/"
+    },
+    {
+      "id": "CLM-762",
+      "status": "sourced",
+      "statement": "Accuracy degrades with distortion, unusual fonts, and low resolution, which blur the boundaries between characters.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/optical-character-recognition/"
+    },
+    {
+      "id": "CLM-763",
+      "status": "internal-framework",
+      "statement": "OCR is an interpretation-layer task — it must resolve marks into the correct symbols, not merely detect that marks are present.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/optical-character-recognition/"
+    },
+    {
+      "id": "CLM-764",
+      "status": "sourced",
+      "statement": "Panoptic segmentation assigns every pixel in an image both a class label and, for countable objects, an instance identity.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/panoptic-segmentation/"
+    },
+    {
+      "id": "CLM-765",
+      "status": "sourced",
+      "statement": "It unifies semantic segmentation of amorphous regions with instance segmentation of distinct objects into one coherent labeling.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/panoptic-segmentation/"
+    },
+    {
+      "id": "CLM-766",
+      "status": "sourced",
+      "statement": "Each pixel receives exactly one explanation, leaving no part of the scene unaccounted for.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/panoptic-segmentation/"
+    },
+    {
+      "id": "CLM-767",
+      "status": "internal-framework",
+      "statement": "Panoptic segmentation is an interpretation-layer completion — every region of the scene must receive a correct reading.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/panoptic-segmentation/"
+    },
+    {
+      "id": "CLM-768",
+      "status": "sourced",
+      "statement": "Saliency maps are visualizations that estimate how much each input pixel influenced a model's output.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/saliency-maps/"
+    },
+    {
+      "id": "CLM-769",
+      "status": "sourced",
+      "statement": "They are computed from gradients or related signals to highlight the regions a network appears to rely on.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/saliency-maps/"
+    },
+    {
+      "id": "CLM-770",
+      "status": "sourced",
+      "statement": "Saliency maps can mislead, sometimes looking plausible even when they do not faithfully reflect the model's reasoning.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/saliency-maps/"
+    },
+    {
+      "id": "CLM-771",
+      "status": "internal-framework",
+      "statement": "Saliency maps are an interpretation-layer probe — an attempt to check whether a model focused on the right evidence.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/saliency-maps/"
+    },
+    {
+      "id": "CLM-772",
+      "status": "sourced",
+      "statement": "Class activation mapping highlights the image regions a convolutional network used to support a particular class prediction.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/class-activation-mapping/"
+    },
+    {
+      "id": "CLM-773",
+      "status": "sourced",
+      "statement": "It projects the weights of the output class back onto the spatial feature maps to produce a localization heatmap.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/class-activation-mapping/"
+    },
+    {
+      "id": "CLM-774",
+      "status": "sourced",
+      "statement": "It offers coarse evidence of where a model looked without requiring location labels during training.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/class-activation-mapping/"
+    },
+    {
+      "id": "CLM-775",
+      "status": "internal-framework",
+      "statement": "Class activation mapping is an interpretation-layer audit — it asks whether the right region drove the right answer.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/class-activation-mapping/"
+    },
+    {
+      "id": "CLM-776",
+      "status": "sourced",
+      "statement": "Uncertainty estimation is the task of quantifying how confident a model should be in each prediction.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/uncertainty-estimation/"
+    },
+    {
+      "id": "CLM-777",
+      "status": "sourced",
+      "statement": "It distinguishes uncertainty arising from inherent data noise from uncertainty due to limited or unfamiliar training data.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/uncertainty-estimation/"
+    },
+    {
+      "id": "CLM-778",
+      "status": "sourced",
+      "statement": "Well-estimated uncertainty lets a system flag predictions that should not be trusted or acted on automatically.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/uncertainty-estimation/"
+    },
+    {
+      "id": "CLM-779",
+      "status": "internal-framework",
+      "statement": "Uncertainty estimation is a provenance-layer instrument — it attaches a warranted confidence to what a model claims to see.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/uncertainty-estimation/"
+    },
+    {
+      "id": "CLM-780",
+      "status": "sourced",
+      "statement": "Anomaly detection identifies inputs that deviate from a learned model of normal data.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/anomaly-detection/"
+    },
+    {
+      "id": "CLM-781",
+      "status": "sourced",
+      "statement": "It is often trained on normal examples alone, flagging inputs that fit the learned pattern poorly.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/anomaly-detection/"
+    },
+    {
+      "id": "CLM-782",
+      "status": "sourced",
+      "statement": "It supports inspection and monitoring tasks where rare defects must be caught without examples of every failure.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/anomaly-detection/"
+    },
+    {
+      "id": "CLM-783",
+      "status": "internal-framework",
+      "statement": "Anomaly detection is a separation-layer alarm — it marks the input that does not belong with the signal.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/anomaly-detection/"
+    },
+    {
+      "id": "CLM-784",
+      "status": "sourced",
+      "statement": "Robustness is a model's ability to maintain performance under input perturbations, distribution change, and noise.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/robustness/"
+    },
+    {
+      "id": "CLM-785",
+      "status": "sourced",
+      "statement": "High accuracy on clean test data does not guarantee robustness, since small structured perturbations can cause large errors.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/robustness/"
+    },
+    {
+      "id": "CLM-786",
+      "status": "sourced",
+      "statement": "Robustness must be measured and engineered explicitly, for example through adversarial training or augmentation.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/robustness/"
+    },
+    {
+      "id": "CLM-787",
+      "status": "internal-framework",
+      "statement": "Robustness is a separation-layer property — it measures whether signal survives when noise is added to the input.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/robustness/"
+    },
+    {
+      "id": "CLM-788",
+      "status": "sourced",
+      "statement": "Dataset bias is the systematic non-representativeness of a training set relative to the conditions where the model will be used.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/dataset-bias/"
+    },
+    {
+      "id": "CLM-789",
+      "status": "sourced",
+      "statement": "Models can exploit incidental correlations in the data, such as backgrounds or capture conditions, instead of the intended object.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/dataset-bias/"
+    },
+    {
+      "id": "CLM-790",
+      "status": "sourced",
+      "statement": "Bias in the data propagates into the model and surfaces as poor or unequal performance on under-represented cases.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/dataset-bias/"
+    },
+    {
+      "id": "CLM-791",
+      "status": "internal-framework",
+      "statement": "Dataset bias is an interpretation-layer fault — the model learns to read the wrong evidence and reaches confident wrong conclusions.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/dataset-bias/"
+    },
+    {
+      "id": "CLM-792",
+      "status": "sourced",
+      "statement": "Backpropagation is the algorithm that computes how a network's error changes with respect to each of its weights.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/backpropagation/"
+    },
+    {
+      "id": "CLM-793",
+      "status": "sourced",
+      "statement": "It applies the chain rule backward through the layers to obtain the gradients used to update the weights.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/backpropagation/"
+    },
+    {
+      "id": "CLM-794",
+      "status": "sourced",
+      "statement": "It is the engine of supervised training for almost all modern deep networks.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/backpropagation/"
+    },
+    {
+      "id": "CLM-795",
+      "status": "internal-framework",
+      "statement": "Backpropagation is an accommodation-layer mechanism — it is how a model adjusts itself to fit a new operating range.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/backpropagation/"
+    },
+    {
+      "id": "CLM-796",
+      "status": "sourced",
+      "statement": "Residual networks add shortcut connections that let a layer learn a change to its input rather than a full transformation.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/residual-networks/"
+    },
+    {
+      "id": "CLM-797",
+      "status": "sourced",
+      "statement": "These connections ease the training of very deep networks by letting gradients flow more directly.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/residual-networks/"
+    },
+    {
+      "id": "CLM-798",
+      "status": "sourced",
+      "statement": "They made networks of hundreds of layers practical and improved image classification substantially.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/residual-networks/"
+    },
+    {
+      "id": "CLM-799",
+      "status": "internal-framework",
+      "statement": "Residual connections are a suspension-layer device — they hold the signal stable as it passes through great depth.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/residual-networks/"
+    },
+    {
+      "id": "CLM-800",
+      "status": "sourced",
+      "statement": "Batch normalization standardizes the inputs to a layer using the statistics of each training batch.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/batch-normalization/"
+    },
+    {
+      "id": "CLM-801",
+      "status": "sourced",
+      "statement": "It stabilizes and accelerates training and reduces sensitivity to weight initialization.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/batch-normalization/"
+    },
+    {
+      "id": "CLM-802",
+      "status": "sourced",
+      "statement": "It introduces learned scale and shift parameters so the network can recover the representations it needs.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/batch-normalization/"
+    },
+    {
+      "id": "CLM-803",
+      "status": "internal-framework",
+      "statement": "Batch normalization is an accommodation-layer regulator — it keeps internal signals in a usable range as the model adjusts.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/batch-normalization/"
+    },
+    {
+      "id": "CLM-804",
+      "status": "sourced",
+      "statement": "Knowledge distillation trains a smaller student model to reproduce the outputs of a larger teacher model.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/knowledge-distillation/"
+    },
+    {
+      "id": "CLM-805",
+      "status": "sourced",
+      "statement": "The student learns from the teacher's full output distribution, which carries more information than hard labels alone.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/knowledge-distillation/"
+    },
+    {
+      "id": "CLM-806",
+      "status": "sourced",
+      "statement": "It transfers much of the teacher's performance into a model that is cheaper to deploy.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/knowledge-distillation/"
+    },
+    {
+      "id": "CLM-807",
+      "status": "internal-framework",
+      "statement": "Knowledge distillation is an interpretation-layer transfer — it copies how one model reads inputs into another.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/knowledge-distillation/"
+    },
+    {
+      "id": "CLM-808",
+      "status": "sourced",
+      "statement": "Diffusion models generate images by learning to reverse a gradual process that turns data into noise.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-809",
+      "status": "sourced",
+      "statement": "Starting from noise, the model denoises step by step to produce a sample resembling its training distribution.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-810",
+      "status": "sourced",
+      "statement": "They produce highly realistic synthetic imagery, which raises provenance and authentication concerns.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-811",
+      "status": "internal-framework",
+      "statement": "Diffusion models are a provenance-layer challenge — they manufacture convincing images with no real-world referent.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-812",
+      "status": "sourced",
+      "statement": "Generative adversarial networks pit a generator that creates images against a discriminator that tries to tell real from fake.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/generative-adversarial-networks/"
+    },
+    {
+      "id": "CLM-813",
+      "status": "sourced",
+      "statement": "The two networks train in competition until the generator's outputs become difficult to distinguish from real data.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/generative-adversarial-networks/"
+    },
+    {
+      "id": "CLM-814",
+      "status": "sourced",
+      "statement": "They were central to early photorealistic face synthesis and the rise of deepfakes.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/generative-adversarial-networks/"
+    },
+    {
+      "id": "CLM-815",
+      "status": "internal-framework",
+      "statement": "Generative adversarial networks are a provenance-layer threat — they were built to make the synthetic indistinguishable from the real.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/generative-adversarial-networks/"
+    },
+    {
+      "id": "CLM-816",
+      "status": "sourced",
+      "statement": "Digital watermarking embeds an imperceptible, recoverable signal into an image to carry information about its origin or authenticity.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/digital-watermarking/"
+    },
+    {
+      "id": "CLM-817",
+      "status": "sourced",
+      "statement": "A robust watermark survives common operations such as compression and resizing while remaining invisible to viewers.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/digital-watermarking/"
+    },
+    {
+      "id": "CLM-818",
+      "status": "sourced",
+      "statement": "Watermarking is one proposed mechanism for marking AI-generated or authenticated media.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/digital-watermarking/"
+    },
+    {
+      "id": "CLM-819",
+      "status": "internal-framework",
+      "statement": "Digital watermarking is a provenance-layer tool — it tries to bind an origin claim to the image itself.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/digital-watermarking/"
+    },
+    {
+      "id": "CLM-820",
+      "status": "sourced",
+      "statement": "Perceptual hashing computes a compact fingerprint of an image that stays similar when the image is altered slightly.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-821",
+      "status": "sourced",
+      "statement": "Unlike cryptographic hashes, perceptual hashes change gradually with the image, so near-duplicates produce near-identical fingerprints.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-822",
+      "status": "sourced",
+      "statement": "They are used to match and track images across the web for provenance and content-matching.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-823",
+      "status": "internal-framework",
+      "statement": "Perceptual hashing is a provenance-layer index — it lets a system ask whether it has seen an image before.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/perceptual-hashing/"
+    },
+    {
+      "id": "CLM-824",
+      "status": "sourced",
+      "statement": "Face recognition is the machine task of identifying or verifying a person from an image of their face.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/face-recognition/"
+    },
+    {
+      "id": "CLM-825",
+      "status": "sourced",
+      "statement": "Modern systems map a face to a compact embedding and compare embeddings by distance.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/face-recognition/"
+    },
+    {
+      "id": "CLM-826",
+      "status": "sourced",
+      "statement": "Performance can vary across demographic groups and capture conditions, reflecting bias in the training data.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/face-recognition/"
+    },
+    {
+      "id": "CLM-827",
+      "status": "internal-framework",
+      "statement": "Face recognition is an interpretation-layer judgment — it assigns identity, the highest-stakes reading of a face.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/face-recognition/"
+    },
+    {
+      "id": "CLM-828",
+      "status": "sourced",
+      "statement": "Stereo matching computes depth by finding corresponding points in two images taken from slightly different viewpoints.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/stereo-matching/"
+    },
+    {
+      "id": "CLM-829",
+      "status": "sourced",
+      "statement": "The horizontal shift between matched points, the disparity, is inversely related to distance.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/stereo-matching/"
+    },
+    {
+      "id": "CLM-830",
+      "status": "sourced",
+      "statement": "Matching is hardest in textureless or repetitive regions where correspondences are ambiguous.",
+      "sources": [
+        "SRC-016"
+      ],
+      "page": "/stereo-matching/"
+    },
+    {
+      "id": "CLM-831",
+      "status": "internal-framework",
+      "statement": "Stereo matching is a suspension-layer computation — it holds two views in a common frame to recover where things are.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/stereo-matching/"
     }
   ]
 }

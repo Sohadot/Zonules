@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.2",
+  "version": "1.3",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -5254,6 +5254,294 @@
         "SRC-004"
       ],
       "page": "/image-synthesis/"
+    },
+    {
+      "id": "CLM-560",
+      "status": "sourced",
+      "statement": "Weakness, stretching, or rupture of the zonular fibers can allow the lens to shift from its normal centered position, a displacement described clinically as ectopia lentis.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-561",
+      "status": "internal-framework",
+      "statement": "Zonular failure is the prototype of FIO-01: the focal element remains intact while the structure that holds it gives way, so focus is lost without the lens itself being damaged.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-562",
+      "status": "sourced",
+      "statement": "Presbyopia, the progressive age-related loss of accommodative amplitude, typically becomes noticeable in the fifth decade of life as the crystalline lens loses elasticity.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-563",
+      "status": "internal-framework",
+      "statement": "Presbyopia is the clearest everyday instance of FIO-02: the suspension is intact and the eye still focuses, but the range across which it can hold focus has narrowed.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-564",
+      "status": "sourced",
+      "statement": "The crystalline lens contributes roughly one third of the eye's total refractive power, while the cornea provides the larger, fixed share.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/crystalline-lens/"
+    },
+    {
+      "id": "CLM-565",
+      "status": "internal-framework",
+      "statement": "The lens is the visible focal element whose performance depends entirely on structures it does not contain — the clearest physical statement of the asset's thesis.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/crystalline-lens/"
+    },
+    {
+      "id": "CLM-566",
+      "status": "sourced",
+      "statement": "The human retina contains on the order of 120 million rod photoreceptors and about 6 million cone photoreceptors, with cones densely concentrated in the central fovea.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-567",
+      "status": "internal-framework",
+      "statement": "The retina is the anatomical boundary where optical quality becomes interpretive ceiling: the system downstream can never recover detail the retina did not encode.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-568",
+      "status": "sourced",
+      "statement": "The axons of retinal ganglion cells converge at the optic disc to form the optic nerve, which is a tract of the central nervous system rather than a peripheral nerve.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-569",
+      "status": "internal-framework",
+      "statement": "Because the optic nerve is central-nervous-system tissue that does not regenerate, its integrity is a one-way structural dependency — a suspension that, once broken, is not rebuilt.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-570",
+      "status": "sourced",
+      "statement": "Hubel and Wiesel showed that neurons in the primary visual cortex are organized into orientation columns, with individual cells responding selectively to edges at particular orientations.",
+      "sources": [
+        "SRC-010"
+      ],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-571",
+      "status": "internal-framework",
+      "statement": "The visual cortex is where the same arriving signal can yield correct or incorrect meaning, which is why it carries FIO-05 inside the anatomy rather than a sensory failure class.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-572",
+      "status": "sourced",
+      "statement": "Perception is shaped by both bottom-up sensory data and top-down knowledge and expectation, so the same retinal input can yield different percepts depending on context and attention.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/visual-perception/"
+    },
+    {
+      "id": "CLM-573",
+      "status": "internal-framework",
+      "statement": "Attention is the perceptual suspension layer: it holds an interpretation steady against competing stimuli, and its collapse is the perceptual form of FIO-01.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-perception/"
+    },
+    {
+      "id": "CLM-574",
+      "status": "sourced",
+      "statement": "In the predictive-coding model, higher cortical areas send predictions to lower areas, which return only the residual prediction error — the part of the input the current model did not explain.",
+      "sources": [
+        "SRC-021"
+      ],
+      "page": "/predictive-coding/"
+    },
+    {
+      "id": "CLM-575",
+      "status": "sourced",
+      "statement": "Predictive coding is often situated within the free-energy principle, under which perception and action both serve to minimize long-run prediction error, or surprisal.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/predictive-coding/"
+    },
+    {
+      "id": "CLM-576",
+      "status": "internal-framework",
+      "statement": "When priors dominate, prediction overrides veridical input and the system perceives what it expects rather than what is present — a structured Interpretation Failure (FIO-05) rather than a loss of signal.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/predictive-coding/"
+    },
+    {
+      "id": "CLM-577",
+      "status": "sourced",
+      "statement": "The same error-minimization logic underlies the training of machine-learning models, which adjust their parameters to reduce the residual between prediction and target.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/predictive-coding/"
+    },
+    {
+      "id": "CLM-578",
+      "status": "sourced",
+      "statement": "Active inference, developed from the free-energy principle, treats perception and action as two routes to the same goal: reducing the discrepancy between predicted and sensed states.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/active-inference/"
+    },
+    {
+      "id": "CLM-579",
+      "status": "sourced",
+      "statement": "Under active inference, an organism can resolve prediction error either by updating its internal model (perception) or by acting on the world to change its sensory input (action).",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/active-inference/"
+    },
+    {
+      "id": "CLM-580",
+      "status": "internal-framework",
+      "statement": "Active inference reframes focus integrity as an active achievement: the system continually acts to keep its model and the world aligned, and FIO-05 failure is a confident misalignment that action does not correct.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/active-inference/"
+    },
+    {
+      "id": "CLM-581",
+      "status": "sourced",
+      "statement": "The shift to deep convolutional networks after 2012 was driven by large-scale benchmarks such as the ImageNet challenge, which evaluated recognition across a thousand object categories.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/computer-vision/"
+    },
+    {
+      "id": "CLM-582",
+      "status": "internal-framework",
+      "statement": "Benchmark accuracy measures interpretation under the training distribution; it does not certify suspension, accommodation, separation, or provenance, which is why a high-scoring system can still fail all five focus-integrity classes in deployment.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/computer-vision/"
+    },
+    {
+      "id": "CLM-583",
+      "status": "sourced",
+      "statement": "The transformer was introduced by Vaswani and colleagues in 2017, replacing recurrence and convolution with a self-attention mechanism that relates every position in a sequence to every other.",
+      "sources": [
+        "SRC-018"
+      ],
+      "page": "/transformer-architecture/"
+    },
+    {
+      "id": "CLM-584",
+      "status": "sourced",
+      "statement": "The Vision Transformer showed that an image split into fixed-size patches and treated as a sequence can be classified competitively using the same self-attention architecture.",
+      "sources": [
+        "SRC-019"
+      ],
+      "page": "/transformer-architecture/"
+    },
+    {
+      "id": "CLM-585",
+      "status": "internal-framework",
+      "statement": "Self-attention is a learned suspension layer (FIO-01): it holds the relevant parts of the input in relation to one another so that interpretation has a stable structure to act on.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/transformer-architecture/"
+    },
+    {
+      "id": "CLM-586",
+      "status": "sourced",
+      "statement": "Self-attention weights are computed dynamically from the input itself rather than fixed in advance, letting the model allocate context differently for every example.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/transformer-architecture/"
+    },
+    {
+      "id": "CLM-587",
+      "status": "sourced",
+      "statement": "Media-forensic approaches to deepfake detection search for low-level statistical traces left by the generation process rather than judging an image's plausibility.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-588",
+      "status": "sourced",
+      "statement": "Benchmark datasets such as FaceForensics++ provide labeled authentic and manipulated videos to train and evaluate detection methods.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-589",
+      "status": "internal-framework",
+      "statement": "Detection is a moving contest because generators and detectors co-evolve, whereas provenance is a record; this is why FIO-04 cannot be closed by detection alone.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-590",
+      "status": "sourced",
+      "statement": "Content-provenance standards such as C2PA bind a cryptographically signed, tamper-evident record of capture and edits to the media file itself.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-591",
+      "status": "internal-framework",
+      "statement": "Provenance and detection answer different questions — origin versus manipulation — so a complete provenance posture treats them as complementary rather than interchangeable.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/image-provenance/"
     }
   ]
 }

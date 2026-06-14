@@ -14,9 +14,9 @@ term_id: TRM-013
 concept_id: CON-interpretation-surface
 safety_class: medical-educational
 canonical: https://zonules.com/retina/
-last_reviewed: 2026-06-12
-claims: [CLM-049, CLM-050, CLM-051]
-sources: [SRC-001, SRC-003, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-049, CLM-050, CLM-051, CLM-566, CLM-567]
+sources: [SRC-001, SRC-003, SRC-004, SRC-011, SRC-012]
 related_terms: [cornea, photoreceptors, optic-nerve, crystalline-lens]
 seo_title: "Retina — Where the Optical System Meets the Interpretive One | Zonules.com"
 meta_description: "The retina converts focused light into neural signals, making it the anatomical interface between optics and interpretation. A governed reference unit on where focus integrity is decided."
@@ -62,6 +62,14 @@ In perception, the analogue of the retinal interface is the moment where sensory
 ## Relationship to Machine Vision (Layer 03)
 
 In machine vision, the sensor array plays the retinal role: it is the surface where the optical signal becomes data. A noisy or low-resolution sensor, like a degraded retina, sets a ceiling on the interpretation that downstream processing can achieve. This bridge is conceptual and is marked as internal framework language.
+
+## Mechanism
+
+The retina is not a uniform sensor. It carries on the order of 120 million rods, specialized for low light, and about 6 million cones, concentrated in the fovea and responsible for high-acuity, color vision. [CLM-566] This uneven sampling means the retina already commits the system to what can and cannot be resolved before any cortical interpretation begins. Whatever the retina fails to encode, no later stage can restore. [CLM-567]
+
+## Source Notes
+
+Retinal structure claims rest on vision-science and retina-specific references (SRC-001, SRC-003, SRC-011, SRC-012). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

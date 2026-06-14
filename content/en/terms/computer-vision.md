@@ -14,9 +14,9 @@ term_id: TRM-018
 concept_id: CON-machine-interpretation
 safety_class: technical
 canonical: https://zonules.com/computer-vision/
-last_reviewed: 2026-06-12
-claims: [CLM-067, CLM-068, CLM-069, CLM-070]
-sources: [SRC-007, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-067, CLM-068, CLM-069, CLM-070, CLM-581, CLM-582]
+sources: [SRC-007, SRC-004, SRC-022, SRC-016]
 related_terms: [image-classification, machine-vision, deepfake-detection, image-provenance]
 seo_title: "Computer Vision — The Machine Layer of Focus Integrity | Zonules.com"
 meta_description: "Computer vision enables machines to extract meaning from images. All five FIO failure classes can occur here. A governed reference unit on the machine layer of the focus-integrity thesis."
@@ -62,6 +62,14 @@ This makes computer vision the richest domain for the focus-integrity thesis: ev
 ## Relationship to the Governing Thesis
 
 The governing thesis is that focus is produced by hidden structural tension. In computer vision, the hidden structural tension is the calibration, training, and provenance infrastructure that a recognition system depends on — invisible in the output, decisive for whether the output is trustworthy. A system that produces correct outputs is not obviously hiding the fragility that will reveal itself when conditions shift.
+
+## Example Scenario
+
+The modern field was reshaped by measurement. The move to deep convolutional networks after 2012 was driven by large-scale benchmarks such as the ImageNet challenge, which scored recognition across a thousand object categories and made progress comparable. [CLM-581] But a benchmark measures interpretation under the distribution it was drawn from. A system at the top of a leaderboard can still lose spatial calibration (FIO-01), fail under domain shift (FIO-02), break on adversarial or degraded input (FIO-03), and have no way to establish whether its input is real (FIO-04). [CLM-582] The score certifies one class of performance, not focus integrity.
+
+## Source Notes
+
+Field-level claims rest on a standard computer-vision reference (SRC-007), a computational-vision foundation (SRC-016), and the ImageNet benchmark literature (SRC-022). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

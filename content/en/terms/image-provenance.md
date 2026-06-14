@@ -14,9 +14,9 @@ term_id: TRM-011
 concept_id: CON-provenance
 safety_class: technical
 canonical: https://zonules.com/image-provenance/
-last_reviewed: 2026-06-12
-claims: [CLM-042, CLM-043, CLM-044, CLM-045]
-sources: [SRC-008, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-042, CLM-043, CLM-044, CLM-045, CLM-590, CLM-591]
+sources: [SRC-008, SRC-004, SRC-023]
 related_terms: [machine-vision, deepfake-detection, synthetic-media, visual-perception]
 seo_title: "Image Provenance — The Origin Record Behind Visual Truth | Zonules.com"
 meta_description: "Image provenance records where an image came from and how it was changed. In the focus-integrity thesis it is the infrastructure of provenance integrity (FIO-04)."
@@ -59,6 +59,14 @@ Like deepfake detection, provenance has no anatomical counterpart. It is a purpo
 
 - **Provenance vs. detection.** Provenance is a record of origin; detection is an inference about manipulation. A complete system uses both.
 - **Metadata vs. provenance.** Ordinary metadata can be edited freely; provenance standards are designed to be tamper-evident, which is what makes them trustworthy.
+
+## Provenance vs Forensics
+
+Provenance and detection are often confused because both bear on whether an image can be trusted, but they answer different questions. Detection infers manipulation from the pixels; provenance documents origin from a record. Content-provenance standards such as C2PA bind a cryptographically signed, tamper-evident record of capture and edits to the file itself. [CLM-590] Because detection is a contest that erodes as generators improve while a signed record does not, the two are complementary rather than interchangeable, and a complete posture uses both. [CLM-591]
+
+## Source Notes
+
+Provenance claims rest on a content-provenance standards body (SRC-008), cited for the existence and purpose of provenance standards rather than any performance claim, with the detection contrast drawn from a media-forensics survey (SRC-023). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: constancy
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-016
@@ -47,7 +47,7 @@ Constancy failure is interpretive failure: the percept is present, the sensory i
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** constancy
 - **FIO class:** FIO-05 — Interpretation Failure (constancy failure is an interpretive failure: the signal is present but the interpretation of what it represents is wrong)
 - **FIS criterion:** FIS-5 — Interpretation (intact constancy means the correct meaning is produced even when sensory conditions vary)
 

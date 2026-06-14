@@ -15,7 +15,7 @@ concept_id: CON-involuntary-accommodation
 safety_class: medical-educational
 canonical: https://zonules.com/pupillary-reflex/
 last_reviewed: 2026-06-12
-claims: [CLM-110, CLM-111, CLM-112]
+claims: [CLM-110, CLM-111, CLM-112, CLM-837]
 sources: [SRC-001, SRC-003, SRC-004]
 related_terms: [iris, optic-nerve, lens-accommodation]
 seo_title: "Pupillary Light Reflex — Automatic Regulation of Signal Input | Zonules.com"
@@ -36,7 +36,9 @@ The pupillary light reflex is **consensual**: light directed into one eye produc
 
 The reflex is fast, involuntary, and continuous. It adjusts the aperture of the eye moment to moment as ambient light changes, keeping the amount of light reaching the retina within a workable range.
 
-*Sources: ocular basic science and ophthalmology education references (SRC-001, SRC-003). See the source registry for classification.*
+The National Eye Institute notes that the pupil narrows in bright light and widens in dim light to regulate how much light enters the eye. [CLM-837]
+
+*Sources: ocular basic science and ophthalmology education references (SRC-001, SRC-003, SRC-025). See the source registry for classification.*
 
 ## Involuntary Accommodation
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-181
@@ -43,7 +43,7 @@ Feature integration theory frames binding as an interpretation-layer act — att
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** attention
 - **FIO class:** FIO-05 — Interpretation Failure
 - **FIS criterion:** FIS-5 — Interpretation
 

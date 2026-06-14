@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: generative-vision
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-152
@@ -42,7 +42,7 @@ Image synthesis inverts the provenance chain (FIO-04): it produces appearance wi
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** generative-vision
 - **FIO class:** FIO-04 — Provenance
 - **FIS criterion:** FIS-4
 

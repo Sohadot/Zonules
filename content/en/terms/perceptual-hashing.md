@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: provenance
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-210
@@ -43,7 +43,7 @@ Perceptual hashing is a provenance-layer index — it lets a system ask whether 
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** provenance
 - **FIO class:** FIO-04 — Provenance Failure
 - **FIS criterion:** FIS-4 — Provenance
 

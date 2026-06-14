@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: recognition
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-141
@@ -42,7 +42,7 @@ Bottom-up processing is a signal-reading stage (FIO-03): it extracts the feature
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** recognition
 - **FIO class:** FIO-03 — Signal-Noise
 - **FIS criterion:** FIS-3
 

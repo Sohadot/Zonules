@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-193
@@ -43,7 +43,7 @@ Feature matching is a suspension-layer operation — it holds a stable reference
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-01 — Suspension Failure
 - **FIS criterion:** FIS-1 — Suspension
 

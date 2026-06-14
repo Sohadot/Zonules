@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: representation-learning
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-204
@@ -43,7 +43,7 @@ Residual connections are a suspension-layer device — they hold the signal stab
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** representation-learning
 - **FIO class:** FIO-01 — Suspension Failure
 - **FIS criterion:** FIS-1 — Suspension
 

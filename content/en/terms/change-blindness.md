@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-032
@@ -47,7 +47,7 @@ This places change blindness in FIO-04 alongside [inattentional blindness](/inat
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** attention
 - **FIO class:** FIO-04 — Provenance Failure (no stored prior means the change has no verifiable origin in the perceptual record)
 - **FIS criterion:** FIS-4 — Provenance (intact function means prior states are recorded well enough to detect when the world changes)
 

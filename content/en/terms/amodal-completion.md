@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: recognition
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-178
@@ -43,7 +43,7 @@ Amodal completion is an interpretation-layer inference — the percept asserts s
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** recognition
 - **FIO class:** FIO-05 — Interpretation Failure
 - **FIS criterion:** FIS-5 — Interpretation
 

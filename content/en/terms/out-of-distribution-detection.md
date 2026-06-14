@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: robustness
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-097
@@ -42,7 +42,7 @@ Out-of-distribution detection is a provenance check (FIO-04): it asks whether an
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** robustness
 - **FIO class:** FIO-04 — Provenance
 - **FIS criterion:** FIS-4
 

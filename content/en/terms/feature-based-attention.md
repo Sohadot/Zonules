@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-147
@@ -42,7 +42,7 @@ Feature-based attention is a signal selection mechanism (FIO-03): it amplifies s
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** attention
 - **FIO class:** FIO-03 — Signal-Noise
 - **FIS criterion:** FIS-3
 

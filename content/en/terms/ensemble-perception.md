@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: recognition
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-184
@@ -43,7 +43,7 @@ Ensemble perception is a separation-layer compression — it extracts stable str
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** recognition
 - **FIO class:** FIO-03 — Signal–Noise Failure
 - **FIS criterion:** FIS-3 — Separation
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: verification
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-197
@@ -43,7 +43,7 @@ Saliency maps are an interpretation-layer probe — an attempt to check whether 
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** verification
 - **FIO class:** FIO-05 — Interpretation Failure
 - **FIS criterion:** FIS-5 — Interpretation
 

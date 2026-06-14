@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-195
@@ -43,7 +43,7 @@ OCR is an interpretation-layer task — it must resolve marks into the correct s
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-05 — Interpretation Failure
 - **FIS criterion:** FIS-5 — Interpretation
 

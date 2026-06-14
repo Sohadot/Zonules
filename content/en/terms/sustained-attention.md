@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-031
@@ -47,7 +47,7 @@ This makes sustained attention an FIO-01 phenomenon viewed through time. The sus
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** attention
 - **FIO class:** FIO-01 — Suspension Failure (the temporal form: the attentional hold weakens over time, the vigilance decrement)
 - **FIS criterion:** FIS-1 — Suspension (intact function means the attentional hold on a focal target persists across the required duration)
 

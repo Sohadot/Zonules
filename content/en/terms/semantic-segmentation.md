@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: segmentation
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-065
@@ -42,7 +42,7 @@ In the Zonules FIO framework, semantic segmentation is classified under FIO-05 I
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** segmentation
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

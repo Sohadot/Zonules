@@ -15,7 +15,7 @@ concept_id: CON-aperture-regulation
 safety_class: medical-educational
 canonical: https://zonules.com/iris/
 last_reviewed: 2026-06-12
-claims: [CLM-075, CLM-076, CLM-077]
+claims: [CLM-075, CLM-076, CLM-077, CLM-833]
 sources: [SRC-001, SRC-002, SRC-004]
 related_terms: [cornea, crystalline-lens, vitreous-humor, lens-accommodation]
 seo_title: "Iris — The Aperture That Regulates Light | Zonules.com"
@@ -36,7 +36,9 @@ The iris contains two antagonistic sets of smooth muscle: the **sphincter pupill
 
 The response is primarily mediated by the autonomic nervous system and operates continuously and without conscious effort.
 
-*Sources: ocular basic science and anatomical references (SRC-001, SRC-002). See the source registry for classification.*
+The National Eye Institute describes the iris as the colored part of the eye that adjusts the size of the pupil to control how much light reaches the retina. [CLM-833]
+
+*Sources: ocular basic science and anatomical references (SRC-001, SRC-002, SRC-025). See the source registry for classification.*
 
 ## The Accommodation of Input
 

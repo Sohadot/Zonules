@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-092
@@ -42,7 +42,7 @@ Pose estimation is an interpretation (FIO-05): spatial structure is inferred fro
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-094
@@ -42,7 +42,7 @@ Visual SLAM is a suspension mechanism (FIO-01): it holds a stable spatial frame 
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-01 — Suspension
 - **FIS criterion:** FIS-1
 

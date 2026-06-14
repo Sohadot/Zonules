@@ -15,7 +15,7 @@ concept_id: CON-precision-zone
 safety_class: medical-educational
 canonical: https://zonules.com/macula/
 last_reviewed: 2026-06-12
-claims: [CLM-081, CLM-082, CLM-083]
+claims: [CLM-081, CLM-082, CLM-083, CLM-835]
 sources: [SRC-001, SRC-003, SRC-004]
 related_terms: [retina, photoreceptors, iris, vitreous-humor]
 seo_title: "Macula — The Zone of Precision at the Center of Vision | Zonules.com"
@@ -36,7 +36,9 @@ At the center of the macula is the **fovea** — a small pit roughly 1.5 mm in d
 
 The oculomotor system directs gaze continuously during visual tasks so that relevant details project onto the fovea. Reading, recognizing faces, threading a needle — all depend on this small zone.
 
-*Sources: ocular basic science and ophthalmology education references (SRC-001, SRC-003). See the source registry for classification.*
+The National Eye Institute describes the macula as the small central area of the retina responsible for sharp, straight-ahead vision. [CLM-835]
+
+*Sources: ocular basic science and ophthalmology education references (SRC-001, SRC-003, SRC-025). See the source registry for classification.*
 
 ## Signal Precision
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: perceptual-error
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-081
@@ -15,7 +15,7 @@ concept_id: CON-visual-acuity
 safety_class: educational
 canonical: https://zonules.com/visual-acuity/
 last_reviewed: 2026-06-13
-claims: [CLM-272, CLM-273, CLM-274, CLM-275]
+claims: [CLM-272, CLM-273, CLM-274, CLM-275, CLM-846]
 sources: [SRC-005, SRC-006]
 related_terms: [contrast-sensitivity, motion-perception, visual-masking, perceptual-constancy]
 seo_title: "Visual Acuity | Zonules.com"
@@ -33,7 +33,9 @@ Visual acuity is the capacity to resolve fine spatial detail, typically measured
 
 Acuity is highest at the fovea and falls rapidly with eccentricity into the periphery. [CLM-273] Acuity depends jointly on optical quality, photoreceptor sampling density, and neural processing. [CLM-274]
 
-*Sources: SRC-005, SRC-006. See the source registry for classification.*
+The World Health Organization's World Report on Vision estimates that at least 2.2 billion people live with vision impairment, much of it measured as reduced visual acuity and much of it preventable or correctable. [CLM-846]
+
+*Sources: SRC-005, SRC-006, SRC-026. See the source registry for classification.*
 
 ## Perceptual Role
 
@@ -42,7 +44,7 @@ Visual acuity is a signal-fidelity measure (FIO-03): the upper bound on the deta
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** perceptual-error
 - **FIO class:** FIO-03 — Signal-Noise
 - **FIS criterion:** FIS-3
 

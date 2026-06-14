@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: recognition
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-006
@@ -45,7 +45,7 @@ This is the conceptual hinge of the whole asset: the same structural logic appea
 ## Layer Classification
 
 - **Layer:** L2 — Perception (the clarity and meaning system)
-- **Cluster:** Perceptual clarity
+- **Cluster:** recognition
 - **FIO class:** FIO-01 — Suspension Failure (attentional anchoring as the perceptual suspension layer)
 - **FIS criterion:** FIS-1 — Suspension
 

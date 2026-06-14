@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: robustness
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-099
@@ -42,7 +42,7 @@ Data augmentation is an accommodation strategy (FIO-02): it widens the range ove
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** robustness
 - **FIO class:** FIO-02 — Accommodation
 - **FIS criterion:** FIS-2
 

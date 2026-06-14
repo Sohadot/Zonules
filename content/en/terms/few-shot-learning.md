@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: representation-learning
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-117
@@ -42,7 +42,7 @@ Few-shot learning is an accommodation problem (FIO-02): the system must extend i
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** representation-learning
 - **FIO class:** FIO-02 — Accommodation
 - **FIS criterion:** FIS-2
 

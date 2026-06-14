@@ -15,7 +15,7 @@ concept_id: CON-structural-conduit
 safety_class: medical-educational
 canonical: https://zonules.com/optic-nerve/
 last_reviewed: 2026-06-14
-claims: [CLM-056, CLM-057, CLM-058, CLM-568, CLM-569]
+claims: [CLM-056, CLM-057, CLM-058, CLM-568, CLM-569, CLM-844]
 sources: [SRC-001, SRC-002, SRC-004, SRC-009]
 related_terms: [retina, photoreceptors, cornea]
 seo_title: "Optic Nerve — The Structural Conduit That Carries Focus | Zonules.com"
@@ -36,7 +36,9 @@ The optic nerve is a one-way structural conduit. Unlike the peripheral nervous s
 
 This irreversibility is a structural feature, not a limitation of repair technology. It reflects the design reality that the optic nerve is not a peripheral signal cable but a tract of the central nervous system.
 
-*Sources: ocular basic science and anatomical references (SRC-001, SRC-002). See the source registry for classification.*
+The National Eye Institute describes the optic nerve as the bundle of more than a million nerve fibers that carries visual information from the retina to the brain. [CLM-844]
+
+*Sources: ocular basic science and anatomical references (SRC-001, SRC-002, SRC-025). See the source registry for classification.*
 
 ## Structural Role
 

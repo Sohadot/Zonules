@@ -15,7 +15,7 @@ concept_id: CON-structural-medium
 safety_class: medical-educational
 canonical: https://zonules.com/vitreous-humor/
 last_reviewed: 2026-06-12
-claims: [CLM-078, CLM-079, CLM-080]
+claims: [CLM-078, CLM-079, CLM-080, CLM-834]
 sources: [SRC-001, SRC-002, SRC-004]
 related_terms: [iris, retina, crystalline-lens, macula]
 seo_title: "Vitreous Humor — The Medium That Holds the Optical System Together | Zonules.com"
@@ -38,7 +38,9 @@ The vitreous humor provides the spatial separation between the lens and the reti
 
 In youth the vitreous is a coherent gel; with age it partially liquefies and can develop floaters — condensations within the medium that cast shadows on the retina. In severe cases the gel separates from the retina, creating risks to retinal integrity.
 
-*Sources: ocular basic science and anatomical references (SRC-001, SRC-002). See the source registry for classification.*
+The National Eye Institute describes the vitreous as the clear gel filling the space between the lens and the retina that helps the eye keep its shape. [CLM-834]
+
+*Sources: ocular basic science and anatomical references (SRC-001, SRC-002, SRC-025). See the source registry for classification.*
 
 ## Structural Role
 

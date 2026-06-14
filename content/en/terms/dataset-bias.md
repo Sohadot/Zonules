@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: robustness
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-202
@@ -43,7 +43,7 @@ Dataset bias is an interpretation-layer fault — the model learns to read the w
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** robustness
 - **FIO class:** FIO-05 — Interpretation Failure
 - **FIS criterion:** FIS-5 — Interpretation
 

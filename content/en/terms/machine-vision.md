@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-007
@@ -49,7 +49,7 @@ This is why the asset opens with anatomy but matters most here: the age of synth
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** Machine perception
+- **Cluster:** detection
 - **FIO class:** FIO-05 — Interpretation Failure (anchor; the page also routes to FIO-03 and FIO-04)
 - **FIS criterion:** FIS-5 — Interpretation
 

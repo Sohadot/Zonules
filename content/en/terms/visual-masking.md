@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: perceptual-error
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-084
@@ -42,7 +42,7 @@ Visual masking is a signal-noise failure (FIO-03): a present signal is suppresse
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** perceptual-error
 - **FIO class:** FIO-03 — Signal-Noise
 - **FIS criterion:** FIS-3
 

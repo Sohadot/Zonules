@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-019
@@ -51,7 +51,7 @@ Each of these failure modes maps to a different FIO class, but the proximate fai
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision and Verification
-- **Cluster:** Machine perception
+- **Cluster:** detection
 - **FIO class:** FIO-05 — Interpretation Failure (the task's defining requirement is correct categorical interpretation; all failure modes manifest as wrong labels)
 - **FIS criterion:** FIS-5 — Interpretation (intact function means the model produces the correct meaning for inputs it was designed to handle)
 

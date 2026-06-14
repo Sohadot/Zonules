@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: scene-understanding
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-174
@@ -43,7 +43,7 @@ Depth cues are interpretation-layer evidence — the inputs from which the perce
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** scene-understanding
 - **FIO class:** FIO-05 — Interpretation Failure
 - **FIS criterion:** FIS-5 — Interpretation
 

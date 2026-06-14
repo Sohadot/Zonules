@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-008
@@ -43,7 +43,7 @@ Selective attention is the **perceptual suspension mechanism**. It holds a focal
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** Perceptual clarity
+- **Cluster:** attention
 - **FIO class:** FIO-01 — Suspension Failure (attention as the perceptual suspension layer)
 - **FIS criterion:** FIS-1 — Suspension
 

@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: provenance
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-011
@@ -43,7 +43,7 @@ Image provenance is the **infrastructure of provenance integrity**. [CLM-045] It
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** Machine perception
+- **Cluster:** provenance
 - **FIO class:** FIO-04 — Provenance Failure
 - **FIS criterion:** FIS-4 — Provenance
 

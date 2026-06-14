@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: robustness
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-201
@@ -43,7 +43,7 @@ Robustness is a separation-layer property — it measures whether signal survive
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** robustness
 - **FIO class:** FIO-03 — Signal–Noise Failure
 - **FIS criterion:** FIS-3 — Separation
 

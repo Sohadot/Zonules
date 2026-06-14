@@ -15,7 +15,7 @@ concept_id: CON-signal-entry
 safety_class: medical-educational
 canonical: https://zonules.com/cornea/
 last_reviewed: 2026-06-12
-claims: [CLM-046, CLM-047, CLM-048]
+claims: [CLM-046, CLM-047, CLM-048, CLM-832]
 sources: [SRC-001, SRC-002, SRC-004]
 related_terms: [crystalline-lens, retina, photoreceptors, zonules-of-zinn]
 seo_title: "Cornea — The Signal Entry Surface of the Optical System | Zonules.com"
@@ -36,7 +36,9 @@ Its transparency is not incidental. It is structurally produced and metabolicall
 
 The cornea refracts light through curvature, not through a variable focus mechanism. Unlike the [crystalline lens](/crystalline-lens/), the cornea's refractive contribution is fixed. It bends light toward the posterior of the eye; the lens fine-tunes where that light lands on the [retina](/retina/).
 
-*Sources: anatomical and ocular basic science references (SRC-001, SRC-002). See the source registry for classification.*
+The National Eye Institute describes the cornea as the eye's clear, dome-shaped outer surface that helps focus incoming light. [CLM-832]
+
+*Sources: anatomical and ocular basic science references (SRC-001, SRC-002, SRC-025). See the source registry for classification.*
 
 ## Signal Role
 

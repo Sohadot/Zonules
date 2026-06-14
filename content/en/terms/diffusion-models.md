@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: generative-vision
 fio_class: FIO-04
 fis_criterion: FIS-4
 term_id: TRM-207
@@ -43,7 +43,7 @@ Diffusion models are a provenance-layer challenge — they manufacture convincin
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** generative-vision
 - **FIO class:** FIO-04 — Provenance Failure
 - **FIS criterion:** FIS-4 — Provenance
 

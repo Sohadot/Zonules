@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: prediction
 fio_class: FIO-05
 fis_criterion: FIS-5
 term_id: TRM-126
@@ -42,7 +42,7 @@ Multisensory integration is an interpretation (FIO-05): the unified percept of a
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** prediction
 - **FIO class:** FIO-05 — Interpretation
 - **FIS criterion:** FIS-5
 

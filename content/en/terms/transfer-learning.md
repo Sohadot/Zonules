@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: representation-learning
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-096
@@ -42,7 +42,7 @@ Transfer learning is an accommodation mechanism (FIO-02): it adapts a system's f
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** representation-learning
 - **FIO class:** FIO-02 — Accommodation
 - **FIS criterion:** FIS-2
 

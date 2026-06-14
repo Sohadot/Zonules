@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision & Verification
-cluster: machine-perception
+cluster: representation-learning
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-095
@@ -42,7 +42,7 @@ Feature extraction is a signal-noise step (FIO-03): it separates informative sig
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision & Verification
-- **Cluster:** machine-perception
+- **Cluster:** representation-learning
 - **FIO class:** FIO-03 — Signal-Noise
 - **FIS criterion:** FIS-3
 

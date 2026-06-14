@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-061
@@ -42,7 +42,7 @@ In the Zonules FIO framework, optical flow is classified under FIO-01 Suspension
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-01 — Suspension
 - **FIS criterion:** FIS-1
 

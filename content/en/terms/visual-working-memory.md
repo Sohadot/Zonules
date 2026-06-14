@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: memory
 fio_class: FIO-02
 fis_criterion: FIS-2
 term_id: TRM-025
@@ -47,7 +47,7 @@ Accommodation failure at this level is invisible: you do not experience working 
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
-- **Cluster:** Perceptual clarity
+- **Cluster:** memory
 - **FIO class:** FIO-02 — Accommodation Failure (working memory failure is a range failure — the system cannot maintain focus across the full set of relevant inputs when that set exceeds capacity)
 - **FIS criterion:** FIS-2 — Accommodation (intact function means the perceptual system can maintain and compare visual information across its required operating range)
 

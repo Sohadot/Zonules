@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: representation-learning
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-116
@@ -42,7 +42,7 @@ CNNs implement a structural suspension layer (FIO-01): local receptive fields an
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** representation-learning
 - **FIO class:** FIO-01 — Suspension
 - **FIS criterion:** FIS-1
 

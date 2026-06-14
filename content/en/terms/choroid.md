@@ -15,7 +15,7 @@ concept_id: CON-choroid
 safety_class: medical-educational
 canonical: https://zonules.com/choroid/
 last_reviewed: 2026-06-13
-claims: [CLM-157, CLM-158, CLM-159]
+claims: [CLM-157, CLM-158, CLM-159, CLM-842]
 sources: [SRC-001, SRC-003]
 related_terms: [retina, sclera, macula, photoreceptors, vitreous-humor]
 seo_title: "Choroid | Zonules.com"
@@ -33,7 +33,9 @@ The choroid is the highly vascular layer between the sclera and retina, supplyin
 
 The choriocapillaris beneath the macula has the highest blood flow per unit tissue of any structure in the body, reflecting the exceptional metabolic demands of macular photoreceptors. [CLM-158]
 
-*Sources: SRC-001, SRC-003. See the source registry for classification.*
+The National Eye Institute describes the choroid as the layer of blood vessels between the retina and the sclera that nourishes the outer retina. [CLM-842]
+
+*Sources: SRC-001, SRC-003, SRC-025. See the source registry for classification.*
 
 ## Structural Role
 

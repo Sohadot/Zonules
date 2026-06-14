@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L3
 layer_name: Machine Vision
-cluster: machine-perception
+cluster: detection
 fio_class: FIO-01
 fis_criterion: FIS-1
 term_id: TRM-134
@@ -42,7 +42,7 @@ Video understanding requires temporal suspension (FIO-01): the system must hold 
 ## Layer Classification
 
 - **Layer:** L3 — Machine Vision
-- **Cluster:** machine-perception
+- **Cluster:** detection
 - **FIO class:** FIO-01 — Suspension
 - **FIS criterion:** FIS-1
 

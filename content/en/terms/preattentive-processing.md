@@ -7,7 +7,7 @@ page_type: reference-unit
 status: approved
 layer: L2
 layer_name: Perception
-cluster: perceptual-clarity
+cluster: attention
 fio_class: FIO-03
 fis_criterion: FIS-3
 term_id: TRM-182
@@ -43,7 +43,7 @@ Preattentive processing is a separation-layer first pass — it segregates candi
 ## Layer Classification
 
 - **Layer:** L2 — Perception
-- **Cluster:** perceptual-clarity
+- **Cluster:** attention
 - **FIO class:** FIO-03 — Signal–Noise Failure
 - **FIS criterion:** FIS-3 — Separation
 

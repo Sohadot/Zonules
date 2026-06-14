@@ -64,6 +64,9 @@ The governing thesis is that focus is produced by hidden structural tension. In 
 - [Computer vision](/computer-vision/) — the field within which classification is a foundational task
 - [Machine vision](/machine-vision/) — the governing Layer 03 anchor
 - [Deepfake detection](/deepfake-detection/) — an adjacent task where interpretation meets provenance
+- [Class Activation Mapping](/class-activation-mapping/) — related governed reference unit.
+- [Dataset Bias](/dataset-bias/) — related governed reference unit.
+- [Face Recognition](/face-recognition/) — related governed reference unit.
 
 ## Reference Notes
 

@@ -65,6 +65,7 @@ Saliency models are used directly in machine vision to allocate processing — f
 - [Selective attention](/selective-attention/) — the top-down counterpart to bottom-up saliency
 - [Sustained attention](/sustained-attention/) — the maintenance of focus that saliency can interrupt
 - [Gestalt principles](/gestalt-principles/) — the grouping rules that operate alongside saliency to organize the field
+- [Preattentive Processing](/preattentive-processing/) — related governed reference unit.
 
 ## Reference Notes
 

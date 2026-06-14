@@ -57,6 +57,7 @@ Scene Recognition is one instance of the asset's governing claim: that focus is 
 - [Gestalt Principles](/gestalt-principles/) — governed reference unit linked within this cluster.
 - [Visual Crowding](/visual-crowding/) — governed reference unit linked within this cluster.
 - [Scene Understanding](/scene-understanding/) — governed reference unit linked within this cluster.
+- [Ensemble Perception](/ensemble-perception/) — related governed reference unit.
 
 ## Reference Notes
 

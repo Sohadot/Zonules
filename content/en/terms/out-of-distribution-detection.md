@@ -56,6 +56,7 @@ Out-of-Distribution Detection is one instance of the asset's governing claim: th
 - [Model Calibration](/model-calibration/) — governed reference unit linked within this cluster.
 - [Transfer Learning](/transfer-learning/) — governed reference unit linked within this cluster.
 - [Adversarial Examples](/adversarial-examples/) — governed reference unit linked within this cluster.
+- [Anomaly Detection](/anomaly-detection/) — related governed reference unit.
 
 ## Reference Notes
 

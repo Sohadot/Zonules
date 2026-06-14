@@ -56,6 +56,7 @@ Motion Perception is one instance of the asset's governing claim: that focus is 
 - [Depth Perception](/depth-perception/) — governed reference unit linked within this cluster.
 - [Color Perception](/color-perception/) — governed reference unit linked within this cluster.
 - [Visual Search](/visual-search/) — governed reference unit linked within this cluster.
+- [Biological Motion](/biological-motion/) — related governed reference unit.
 
 ## Reference Notes
 

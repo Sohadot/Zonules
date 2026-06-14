@@ -57,6 +57,8 @@ Oculomotor System is one instance of the asset's governing claim: that focus is 
 - [Lens Accommodation](/lens-accommodation/) — governed reference unit linked within this cluster.
 - [Pupillary Reflex](/pupillary-reflex/) — governed reference unit linked within this cluster.
 - [Binocular Vision](/binocular-vision/) — governed reference unit linked within this cluster.
+- [Gaze Estimation](/gaze-estimation/) — related governed reference unit.
+- [Nystagmus](/nystagmus/) — related governed reference unit.
 
 ## Reference Notes
 

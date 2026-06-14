@@ -77,6 +77,9 @@ Optical and anatomical claims rest on vision-science and ocular references (SRC-
 - [Zonules of Zinn](/zonules-of-zinn/) — the fibers that suspend and reshape the lens
 - [Ciliary body](/ciliary-body/) — the force source that tunes lens shape
 - [Lens accommodation](/lens-accommodation/) — the focus-shifting process the lens undergoes
+- [Accommodation Reflex](/accommodation-reflex/) — related governed reference unit.
+- [Ciliary Muscle](/ciliary-muscle/) — related governed reference unit.
+- [Lens Capsule](/lens-capsule/) — related governed reference unit.
 
 ## Reference Notes
 

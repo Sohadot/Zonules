@@ -57,6 +57,8 @@ Perceptual Error is one instance of the asset's governing claim: that focus is p
 - [Top-Down Processing](/top-down-processing/) — governed reference unit linked within this cluster.
 - [Signal Ambiguity](/signal-ambiguity/) — governed reference unit linked within this cluster.
 - [Visual Scene Parsing](/visual-scene-parsing/) — governed reference unit linked within this cluster.
+- [Context Effects](/context-effects/) — related governed reference unit.
+- [Motion Aftereffect](/motion-aftereffect/) — related governed reference unit.
 
 ## Reference Notes
 

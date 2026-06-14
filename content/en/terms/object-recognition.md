@@ -57,6 +57,8 @@ Object Recognition is one instance of the asset's governing claim: that focus is
 - [Visual Crowding](/visual-crowding/) — governed reference unit linked within this cluster.
 - [Pattern Recognition](/pattern-recognition/) — governed reference unit linked within this cluster.
 - [Image Classification](/image-classification/) — governed reference unit linked within this cluster.
+- [Categorical Perception](/categorical-perception/) — related governed reference unit.
+- [Shape Constancy](/shape-constancy/) — related governed reference unit.
 
 ## Reference Notes
 

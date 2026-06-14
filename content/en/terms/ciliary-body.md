@@ -70,6 +70,8 @@ In machine perception, the ciliary analogue is the control system that adjusts a
 - [Crystalline lens](/crystalline-lens/) — the optical element the system shapes
 - [Lens accommodation](/lens-accommodation/) — the process this structure drives
 - [Aqueous humor](/aqueous-humor/) — the maintenance fluid the ciliary body produces
+- [Canal of Schlemm](/canal-of-schlemm/) — related governed reference unit.
+- [Uvea](/uvea/) — related governed reference unit.
 
 ## Reference Notes
 

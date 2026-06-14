@@ -57,6 +57,7 @@ Synthetic Media is one instance of the asset's governing claim: that focus is pr
 - [Neural Network Interpretability](/neural-network-interpretability/) — governed reference unit linked within this cluster.
 - [Visual Grounding](/visual-grounding/) — governed reference unit linked within this cluster.
 - [Perceptual Error](/perceptual-error/) — governed reference unit linked within this cluster.
+- [Diffusion Models](/diffusion-models/) — related governed reference unit.
 
 ## Reference Notes
 

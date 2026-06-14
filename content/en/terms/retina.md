@@ -77,6 +77,13 @@ Retinal structure claims rest on vision-science and retina-specific references (
 - [Photoreceptors](/photoreceptors/) — the retinal cells that perform phototransduction
 - [Optic nerve](/optic-nerve/) — the structural conduit that carries retinal output toward interpretation
 - [Crystalline lens](/crystalline-lens/) — the optical element that focuses the signal the retina receives
+- [Amacrine Cells](/amacrine-cells/) — related governed reference unit.
+- [Bruch's Membrane](/bruchs-membrane/) — related governed reference unit.
+- [Horizontal Cells](/horizontal-cells/) — related governed reference unit.
+- [Optic Disc](/optic-disc/) — related governed reference unit.
+- [Parafovea](/parafovea/) — related governed reference unit.
+- [Pupil](/pupil/) — related governed reference unit.
+- [Scotoma](/scotoma/) — related governed reference unit.
 
 ## Reference Notes
 

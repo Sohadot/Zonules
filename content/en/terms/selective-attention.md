@@ -65,6 +65,8 @@ In machine perception, attention mechanisms gate which regions a model processes
 - [Visual Perception](/visual-perception/) — the system selective attention serves
 - [Figure-Ground Separation](/figure-ground/) — what attention helps the visual system resolve
 - [Zonules of Zinn](/zonules-of-zinn/) — the anatomical suspension system this parallels
+- [Divided Attention](/divided-attention/) — related governed reference unit.
+- [Feature Integration Theory](/feature-integration-theory/) — related governed reference unit.
 
 ## Reference Notes
 

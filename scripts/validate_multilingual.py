@@ -3,18 +3,39 @@
 Zonules.com — Multilingual Governance Validator.
 
 Standalone validator for multilingual architecture integrity.
+Extended Sprint 7B: pilot status support, HTML file existence checks,
+FIO/FIS immutability enforcement, safety note verification.
+
 Exit code 0 = pass, 1 = fail.
 
 Run:  python scripts/validate_multilingual.py
 """
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 VALID_LANG_CODES = {"en", "fr", "de", "es", "zh", "ar", "ja", "ru"}
 OFFICIAL_ORDER = ["en", "fr", "de", "es", "zh", "ar", "ja", "ru"]
+
+# Statuses that permit individual page indexability (not full layer launch).
+PILOT_OR_LAUNCHED = {"pilot", "launched"}
+
+# Safety note markers in French (medical and AI-safety pages must carry these).
+FR_SAFETY_MARKERS = [
+    "uniquement \xe9ducatif",
+    "professionnel de sant\xe9 oculaire qualifi\xe9",
+    "ne diagnostique",
+    "ne remplace pas",
+]
+
+FR_AI_SAFETY_MARKERS = [
+    "la d\xe9tection n\'est pas un diagnostic",
+    "d\xe9tection n\'est pas",
+    "ne constitue pas un diagnostic",
+]
 
 
 def load_json(path):
@@ -62,12 +83,13 @@ def main():
     if status_by_code.get("en") != "launched":
         errors.append("languages.json: 'en' must have status 'launched'")
 
-    # 4. No non-launched language has indexable=true.
+    # 4. Layer-level indexable flag: only fully launched layers may have indexable=true.
     for layer in layers:
         code = layer["code"]
         if layer["status"] != "launched" and layer.get("indexable", False):
             errors.append(
-                f"languages.json: '{code}' is not launched but indexable=true"
+                f"languages.json: '{code}' is not launched but layer indexable=true "
+                f"(set indexable=false; individual pages are indexed via translation-map.json)"
             )
 
     if not os.path.exists(routes_path):
@@ -113,7 +135,7 @@ def main():
             errors.append(f"translation-map.json: '{en_path}' not in routes.json")
             continue
 
-        # 7. Language-invariant fields match routes.json.
+        # 7. Language-invariant fields match routes.json (FIO/FIS immutability).
         if en_route:
             for field in ("fio_class", "fis_criterion", "safety_class", "layer"):
                 map_val = entry.get(field)
@@ -134,6 +156,8 @@ def main():
             if clm_ids and cid not in clm_ids:
                 errors.append(f"translation-map.json: '{en_path}' cites unregistered claim {cid}")
 
+        en_safety_class = entry.get("safety_class", "")
+
         # 10. Per-translation checks.
         for lang_code, trans in entry.get("translations", {}).items():
             if lang_code not in status_by_code:
@@ -143,26 +167,45 @@ def main():
                 continue
 
             lang_status = status_by_code[lang_code]
+            trans_status = trans.get("status", "not_started")
+            is_launched = trans_status == "launched"
+            lang_allows_indexed = lang_status in PILOT_OR_LAUNCHED
 
-            # 11. indexable must be false unless language is launched.
-            if trans.get("indexable") is True and lang_status != "launched":
+            # 11. Indexable only when: translation is launched AND language status allows it.
+            if trans.get("indexable") is True:
+                if not is_launched:
+                    errors.append(
+                        f"translation-map.json: '{en_path}' lang={lang_code} is indexable "
+                        f"but translation status is '{trans_status}' (requires 'launched')"
+                    )
+                if not lang_allows_indexed:
+                    errors.append(
+                        f"translation-map.json: '{en_path}' lang={lang_code} is indexable "
+                        f"but language status is '{lang_status}' (requires pilot or launched)"
+                    )
+
+            # 12. hreflang_active requires indexable=true.
+            if trans.get("hreflang_active") is True and not trans.get("indexable"):
                 errors.append(
-                    f"translation-map.json: '{en_path}' lang={lang_code} is indexable "
-                    f"but language status is '{lang_status}'"
+                    f"translation-map.json: '{en_path}' lang={lang_code} has "
+                    f"hreflang_active=true but indexable=false"
                 )
 
-            # 12. hreflang_active must be false unless language is launched and page is indexable.
-            if trans.get("hreflang_active") is True:
-                if lang_status != "launched":
-                    errors.append(
-                        f"translation-map.json: '{en_path}' lang={lang_code} has "
-                        f"hreflang_active=true but language is not launched"
-                    )
-                if not trans.get("indexable"):
-                    errors.append(
-                        f"translation-map.json: '{en_path}' lang={lang_code} has "
-                        f"hreflang_active=true but indexable=false"
-                    )
+            # 13. HTML file must exist for indexed translated pages.
+            if trans.get("indexable") is True and is_launched:
+                trans_path = trans.get("path", "")
+                if trans_path and trans_path != "/":
+                    rel = trans_path.strip("/")
+                    html_fp = os.path.join(ROOT, rel, "index.html")
+                    if not os.path.exists(html_fp):
+                        errors.append(
+                            f"translation-map.json: '{en_path}' lang={lang_code} is indexed "
+                            f"but HTML not found at {trans_path}index.html"
+                        )
+                    else:
+                        # 14. Medical/educational safety pages must carry French safety notes.
+                        if lang_code == "fr" and is_launched:
+                            _check_fr_safety(html_fp, en_path, en_safety_class, errors)
 
     if errors:
         _report(errors)
@@ -170,11 +213,33 @@ def main():
 
     lang_count = len(layers)
     launched = sum(1 for l in layers if l["status"] == "launched")
+    pilot = sum(1 for l in layers if l["status"] == "pilot")
     arch_defined = sum(1 for l in layers if l["status"] == "architecture_defined")
     print("MULTILINGUAL GATE: PASS")
-    print(f"  languages={lang_count} launched={launched} architecture_defined={arch_defined}")
-    print("  No indexable non-launched layers. No hreflang violations. All IDs registered.")
+    print(f"  languages={lang_count} launched={launched} pilot={pilot} architecture_defined={arch_defined}")
+    print("  FIO/FIS immutability confirmed. All IDs registered. Safety notes present.")
     return 0
+
+
+def _check_fr_safety(html_fp, en_path, safety_class, errors):
+    try:
+        body = open(html_fp, encoding="utf-8").read().lower()
+    except OSError:
+        return
+    if safety_class in ("medical-educational",):
+        has_safety = any(m.lower() in body for m in FR_SAFETY_MARKERS)
+        if not has_safety:
+            errors.append(
+                f"French page for '{en_path}' (medical-educational) missing safety note. "
+                f"Must contain: {FR_SAFETY_MARKERS[0]!r} and {FR_SAFETY_MARKERS[1]!r}"
+            )
+    if "deepfake" in en_path or "forensic" in en_path or "detection" in en_path:
+        has_ai_safety = any(m.lower() in body for m in FR_AI_SAFETY_MARKERS)
+        if not has_ai_safety:
+            errors.append(
+                f"French page for '{en_path}' (AI safety) missing detection-is-not-diagnosis "
+                f"boundary. Must contain equivalent of {FR_AI_SAFETY_MARKERS[0]!r}"
+            )
 
 
 def _report(errors):

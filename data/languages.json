@@ -1,11 +1,19 @@
 {
   "id": "LANGUAGES",
   "name": "Zonules.com Language Registry",
-  "version": "1.0",
+  "version": "1.1",
   "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
   "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
   "freeze_date": "2026-06-14",
   "official_order": ["en", "fr", "de", "es", "zh", "ar", "ja", "ru"],
+  "status_definitions": {
+    "launched": "Complete governed layer. All pages published, indexed, hreflang active.",
+    "pilot": "Partial governed layer. Selected anchor pages published and indexed. Hreflang active for completed pages only. Not a full launch.",
+    "in_progress": "Translation in progress. Not indexed. No hreflang.",
+    "review": "Translation complete. Governance review pending. Not indexed.",
+    "ready_to_launch": "Approved. Deployment pending.",
+    "architecture_defined": "Language registered. URL schema defined. No content translated. Not indexed."
+  },
   "layers": [
     {
       "code": "en",
@@ -17,19 +25,22 @@
       "priority": 1,
       "url_prefix": null,
       "launched_date": "2026-06-14",
+      "pilot_date": null,
       "note": "Canonical master. Served at root. Frozen as of Sprint 6F."
     },
     {
       "code": "fr",
       "name": "French",
-      "status": "architecture_defined",
+      "status": "pilot",
       "indexable": false,
       "direction": "ltr",
       "script": "Latin",
       "priority": 2,
       "url_prefix": "/fr/",
       "launched_date": null,
-      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+      "pilot_date": "2026-06-14",
+      "pilot_page_count": 12,
+      "note": "Pilot launched Sprint 7B. 12 anchor pages indexed. Layer-level indexable remains false; individual pages indexed via translation-map.json. Full launch requires 300 governed pages and DECISION_LOG.md entry."
     },
     {
       "code": "de",
@@ -41,6 +52,7 @@
       "priority": 3,
       "url_prefix": "/de/",
       "launched_date": null,
+      "pilot_date": null,
       "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
     },
     {
@@ -53,6 +65,7 @@
       "priority": 4,
       "url_prefix": "/es/",
       "launched_date": null,
+      "pilot_date": null,
       "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
     },
     {
@@ -65,6 +78,7 @@
       "priority": 5,
       "url_prefix": "/zh/",
       "launched_date": null,
+      "pilot_date": null,
       "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
     },
     {
@@ -77,6 +91,7 @@
       "priority": 6,
       "url_prefix": "/ar/",
       "launched_date": null,
+      "pilot_date": null,
       "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
     },
     {
@@ -89,6 +104,7 @@
       "priority": 7,
       "url_prefix": "/ja/",
       "launched_date": null,
+      "pilot_date": null,
       "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
     },
     {
@@ -101,6 +117,7 @@
       "priority": 8,
       "url_prefix": "/ru/",
       "launched_date": null,
+      "pilot_date": null,
       "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
     }
   ]

@@ -1,11 +1,11 @@
 {
   "id": "TRANSLATION-MAP",
   "name": "Zonules.com Route Translation Map",
-  "version": "1.0",
+  "version": "1.1",
   "schema_version": "1.0",
   "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
   "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
-  "note": "Schema-based registry. Not an exhaustive enumeration of all 300 routes. Add route mappings as translation sprints are authorized. All language-invariant fields (concept_id, term_id, fio_class, fis_criterion, safety_class, claim_ids, source_ids) are frozen from the English master and must not be mutated.",
+  "note": "Schema-based registry. Sprint 7B adds 12 French anchor routes at pilot status. All language-invariant fields (concept_id, term_id, fio_class, fis_criterion, safety_class, claim_ids, source_ids) are frozen from the English master and must not be mutated.",
   "field_definitions": {
     "english_path": "The frozen English route path from data/routes.json.",
     "concept_id": "Language-invariant concept identifier from English markdown frontmatter. Never mutated.",
@@ -19,19 +19,19 @@
     "translations": {
       "note": "Keyed by BCP 47 language code.",
       "path": "Full URL path including language prefix.",
-      "slug": "Translated term slug in the target language (not an English copy).",
+      "slug": "Translated term slug in the target language.",
       "status": "not_started | in_progress | review | ready_to_launch | launched",
       "indexable": "false until status=launched and governance entry authorizes.",
-      "hreflang_active": "false until post-launch governance entry authorizes."
+      "hreflang_active": "false until governance entry authorizes."
     }
   },
   "governance_rules": [
-    "All fields except translations.* are frozen from the English master. Mutation prohibited without governance entry.",
-    "translations.status may advance only via DECISION_LOG.md governance entry for status >= in_progress to launched.",
+    "All fields except translations.* are frozen from the English master.",
+    "translations.status may advance to launched only via DECISION_LOG.md governance entry.",
     "translations.indexable must remain false until status=launched.",
-    "translations.hreflang_active must remain false until a post-launch governance entry authorizes it.",
-    "Adding a new route mapping entry requires no governance entry if all translation statuses start as not_started.",
-    "Advancing any translation to status=launched requires a governance entry."
+    "translations.hreflang_active must remain false until a governance entry authorizes it.",
+    "Pilot status in languages.json allows individual page indexing when status=launched in this map.",
+    "Full language launch requires all 300 pages at status=launched and a DECISION_LOG.md entry."
   ],
   "routes": [
     {
@@ -55,6 +55,26 @@
       }
     },
     {
+      "english_path": "/zonules-of-zinn/",
+      "concept_id": "ZONE-ZONULES",
+      "term_id": "zonules-of-zinn",
+      "layer": "L1",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "medical-educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-001", "SRC-002", "SRC-003", "SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/zonules-de-zinn/", "slug": "zonules-de-zinn", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/zonulafasern/", "slug": "zonulafasern", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/zonulas-de-zinn/", "slug": "zonulas-de-zinn", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/xuan-ren-dai/", "slug": "xuan-ren-dai", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/ribat-al-ain/", "slug": "ribat-al-ain", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/mao-taikiken/", "slug": "mao-taikiken", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/tsinnovy-svyazki/", "slug": "tsinnovy-svyazki", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
       "english_path": "/retina/",
       "concept_id": "ZONE-RETINA",
       "term_id": "retina",
@@ -63,9 +83,9 @@
       "fis_criterion": "FIS-1",
       "safety_class": "medical-educational",
       "claim_ids": ["CLM-001"],
-      "source_ids": ["SRC-001"],
+      "source_ids": ["SRC-001", "SRC-009", "SRC-011", "SRC-012"],
       "translations": {
-        "fr": { "path": "/fr/retine/", "slug": "retine", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "fr": { "path": "/fr/retine/", "slug": "retine", "status": "launched", "indexable": true, "hreflang_active": true },
         "de": { "path": "/de/netzhaut/", "slug": "netzhaut", "status": "not_started", "indexable": false, "hreflang_active": false },
         "es": { "path": "/es/retina/", "slug": "retina", "status": "not_started", "indexable": false, "hreflang_active": false },
         "zh": { "path": "/zh/shiwang-mo/", "slug": "shiwang-mo", "status": "not_started", "indexable": false, "hreflang_active": false },
@@ -75,23 +95,203 @@
       }
     },
     {
-      "english_path": "/zonules-of-zinn/",
-      "concept_id": "ZONE-ZONULES",
-      "term_id": "zonules-of-zinn",
+      "english_path": "/lens-accommodation/",
+      "concept_id": "ZONE-ACCOMMODATION",
+      "term_id": "lens-accommodation",
+      "layer": "L1",
+      "fio_class": "FIO-02",
+      "fis_criterion": "FIS-2",
+      "safety_class": "medical-educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-001", "SRC-003", "SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/accommodation-du-cristallin/", "slug": "accommodation-du-cristallin", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/akkommodation/", "slug": "akkommodation", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/acomodacion-del-cristalino/", "slug": "acomodacion-del-cristalino", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/tiaojie/", "slug": "tiaojie", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/tawafuq/", "slug": "tawafuq", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/chosetsuno/", "slug": "chosetsuno", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/akkomodatsiya/", "slug": "akkomodatsiya", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/optic-nerve/",
+      "concept_id": "ZONE-OPTIC-NERVE",
+      "term_id": "optic-nerve",
       "layer": "L1",
       "fio_class": "FIO-01",
       "fis_criterion": "FIS-1",
       "safety_class": "medical-educational",
       "claim_ids": [],
-      "source_ids": ["SRC-001", "SRC-002"],
+      "source_ids": ["SRC-001", "SRC-009", "SRC-025"],
       "translations": {
-        "fr": { "path": "/fr/zonules-de-zinn/", "slug": "zonules-de-zinn", "status": "not_started", "indexable": false, "hreflang_active": false },
-        "de": { "path": "/de/zonulafasern/", "slug": "zonulafasern", "status": "not_started", "indexable": false, "hreflang_active": false },
-        "es": { "path": "/es/zonulas-de-zinn/", "slug": "zonulas-de-zinn", "status": "not_started", "indexable": false, "hreflang_active": false },
-        "zh": { "path": "/zh/xuan-ren-dai/", "slug": "xuan-ren-dai", "status": "not_started", "indexable": false, "hreflang_active": false },
-        "ar": { "path": "/ar/ribat-al-ain/", "slug": "ribat-al-ain", "status": "not_started", "indexable": false, "hreflang_active": false },
-        "ja": { "path": "/ja/mao-taikiken/", "slug": "mao-taikiken", "status": "not_started", "indexable": false, "hreflang_active": false },
-        "ru": { "path": "/ru/tsinnovy-svyazki/", "slug": "tsinnovy-svyazki", "status": "not_started", "indexable": false, "hreflang_active": false }
+        "fr": { "path": "/fr/nerf-optique/", "slug": "nerf-optique", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/sehnerv/", "slug": "sehnerv", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/nervio-optico/", "slug": "nervio-optico", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/shijing/", "slug": "shijing", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/al-asab-al-basari/", "slug": "al-asab-al-basari", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/shinkei/", "slug": "shinkei", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/zritelny-nerv/", "slug": "zritelny-nerv", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/visual-cortex/",
+      "concept_id": "ZONE-VISUAL-CORTEX",
+      "term_id": "visual-cortex",
+      "layer": "L1",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "medical-educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-009", "SRC-010", "SRC-013"],
+      "translations": {
+        "fr": { "path": "/fr/cortex-visuel/", "slug": "cortex-visuel", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/sehrinrinde/", "slug": "sehrinrinde", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/corteza-visual/", "slug": "corteza-visual", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/shijue-pixhi/", "slug": "shijue-pixhi", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/al-qishra-al-basariyya/", "slug": "al-qishra-al-basariyya", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/shikaku-hishitsu/", "slug": "shikaku-hishitsu", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/zritelna-kora/", "slug": "zritelna-kora", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/predictive-coding/",
+      "concept_id": "ZONE-PREDICTIVE-CODING",
+      "term_id": "predictive-coding",
+      "layer": "L2",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-020", "SRC-021", "SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/codage-predictif/", "slug": "codage-predictif", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/praediktive-kodierung/", "slug": "praediktive-kodierung", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/codificacion-predictiva/", "slug": "codificacion-predictiva", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/yuce-bianma/", "slug": "yuce-bianma", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/al-tarmiiz-al-tanabuiy/", "slug": "al-tarmiiz-al-tanabuiy", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/yosoku-fugouka/", "slug": "yosoku-fugouka", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/predskazatelnoe-kodirovanie/", "slug": "predskazatelnoe-kodirovanie", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/active-inference/",
+      "concept_id": "ZONE-ACTIVE-INFERENCE",
+      "term_id": "active-inference",
+      "layer": "L2",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-020", "SRC-027", "SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/inference-active/", "slug": "inference-active", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/aktive-inferenz/", "slug": "aktive-inferenz", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/inferencia-activa/", "slug": "inferencia-activa", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/zhudong-tuanli/", "slug": "zhudong-tuanli", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/al-istidlal-al-nashit/", "slug": "al-istidlal-al-nashit", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/nodo-suiron/", "slug": "nodo-suiron", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/aktivnoe-vyvod/", "slug": "aktivnoe-vyvod", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/computer-vision/",
+      "concept_id": "ZONE-COMPUTER-VISION",
+      "term_id": "computer-vision",
+      "layer": "L3",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "technical",
+      "claim_ids": [],
+      "source_ids": ["SRC-007", "SRC-022", "SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/vision-par-ordinateur/", "slug": "vision-par-ordinateur", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/computervision/", "slug": "computervision", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/vision-por-computadora/", "slug": "vision-por-computadora", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/jisuanji-shijue/", "slug": "jisuanji-shijue", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/al-ruya-al-aalia/", "slug": "al-ruya-al-aalia", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/konpyuta-bijon/", "slug": "konpyuta-bijon", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/mashinnoe-zrenie/", "slug": "mashinnoe-zrenie", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/transformer-architecture/",
+      "concept_id": "ZONE-TRANSFORMER",
+      "term_id": "transformer-architecture",
+      "layer": "L3",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "technical",
+      "claim_ids": [],
+      "source_ids": ["SRC-017", "SRC-018", "SRC-019"],
+      "translations": {
+        "fr": { "path": "/fr/architecture-transformer/", "slug": "architecture-transformer", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/transformer-architektur/", "slug": "transformer-architektur", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/arquitectura-transformer/", "slug": "arquitectura-transformer", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/bianhuan-qi-jiagou/", "slug": "bianhuan-qi-jiagou", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/mimaariyya-al-muhawwil/", "slug": "mimaariyya-al-muhawwil", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/toransufoma-akitekucha/", "slug": "toransufoma-akitekucha", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/arkhitektura-transformer/", "slug": "arkhitektura-transformer", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/deepfake-detection/",
+      "concept_id": "ZONE-DEEPFAKE-DETECTION",
+      "term_id": "deepfake-detection",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-023", "SRC-024", "SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/detection-des-deepfakes/", "slug": "detection-des-deepfakes", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/deepfake-erkennung/", "slug": "deepfake-erkennung", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/deteccion-de-deepfakes/", "slug": "deteccion-de-deepfakes", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/shen-jia-jiance/", "slug": "shen-jia-jiance", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/kashf-al-tazweer/", "slug": "kashf-al-tazweer", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/diipufaiku-kenshutsu/", "slug": "diipufaiku-kenshutsu", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/obnaruzhenie-deepfake/", "slug": "obnaruzhenie-deepfake", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/image-provenance/",
+      "concept_id": "ZONE-IMAGE-PROVENANCE",
+      "term_id": "image-provenance",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-008", "SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/provenance-des-images/", "slug": "provenance-des-images", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/bild-provenienz/", "slug": "bild-provenienz", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/procedencia-de-imagenes/", "slug": "procedencia-de-imagenes", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/tuxiang-laiyuan/", "slug": "tuxiang-laiyuan", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/asl-al-suwar/", "slug": "asl-al-suwar", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/gazo-no-kigen/", "slug": "gazo-no-kigen", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/provenans-izobrazhenia/", "slug": "provenans-izobrazhenia", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/focus-integrity-ontology/",
+      "concept_id": "ZONE-FIO",
+      "term_id": "focus-integrity-ontology",
+      "layer": "L1",
+      "fio_class": null,
+      "fis_criterion": null,
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-004"],
+      "translations": {
+        "fr": { "path": "/fr/integrite-du-focus/", "slug": "integrite-du-focus", "status": "launched", "indexable": true, "hreflang_active": true },
+        "de": { "path": "/de/fokus-integritaet/", "slug": "fokus-integritaet", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/integridad-del-foco/", "slug": "integridad-del-foco", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/jiaodian-wanzheng-xing/", "slug": "jiaodian-wanzheng-xing", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/nahaaj-al-wuduh/", "slug": "nahaaj-al-wuduh", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/foukasu-seigyo/", "slug": "foukasu-seigyo", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/tselostnost-fokusa/", "slug": "tselostnost-fokusa", "status": "not_started", "indexable": false, "hreflang_active": false }
       }
     }
   ]

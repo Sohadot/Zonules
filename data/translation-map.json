@@ -1,0 +1,98 @@
+{
+  "id": "TRANSLATION-MAP",
+  "name": "Zonules.com Route Translation Map",
+  "version": "1.0",
+  "schema_version": "1.0",
+  "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
+  "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
+  "note": "Schema-based registry. Not an exhaustive enumeration of all 300 routes. Add route mappings as translation sprints are authorized. All language-invariant fields (concept_id, term_id, fio_class, fis_criterion, safety_class, claim_ids, source_ids) are frozen from the English master and must not be mutated.",
+  "field_definitions": {
+    "english_path": "The frozen English route path from data/routes.json.",
+    "concept_id": "Language-invariant concept identifier from English markdown frontmatter. Never mutated.",
+    "term_id": "Language-invariant term identifier from English markdown frontmatter. Never mutated.",
+    "layer": "L1, L2, or L3 — same as English master. Language-invariant.",
+    "fio_class": "FIO class from data/routes.json — language-invariant.",
+    "fis_criterion": "FIS criterion from data/routes.json — language-invariant.",
+    "safety_class": "Safety classification from data/routes.json — language-invariant.",
+    "claim_ids": "Claim IDs from data/claims.json that apply to this route — language-invariant.",
+    "source_ids": "Source IDs from data/sources.json that apply to this route — language-invariant.",
+    "translations": {
+      "note": "Keyed by BCP 47 language code.",
+      "path": "Full URL path including language prefix.",
+      "slug": "Translated term slug in the target language (not an English copy).",
+      "status": "not_started | in_progress | review | ready_to_launch | launched",
+      "indexable": "false until status=launched and governance entry authorizes.",
+      "hreflang_active": "false until post-launch governance entry authorizes."
+    }
+  },
+  "governance_rules": [
+    "All fields except translations.* are frozen from the English master. Mutation prohibited without governance entry.",
+    "translations.status may advance only via DECISION_LOG.md governance entry for status >= in_progress to launched.",
+    "translations.indexable must remain false until status=launched.",
+    "translations.hreflang_active must remain false until a post-launch governance entry authorizes it.",
+    "Adding a new route mapping entry requires no governance entry if all translation statuses start as not_started.",
+    "Advancing any translation to status=launched requires a governance entry."
+  ],
+  "routes": [
+    {
+      "english_path": "/",
+      "concept_id": "ZONE-GATEWAY",
+      "term_id": "gateway",
+      "layer": "gateway",
+      "fio_class": null,
+      "fis_criterion": null,
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": [],
+      "translations": {
+        "fr": { "path": "/fr/", "slug": "", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "de": { "path": "/de/", "slug": "", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/", "slug": "", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/", "slug": "", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/", "slug": "", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/", "slug": "", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/", "slug": "", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/retina/",
+      "concept_id": "ZONE-RETINA",
+      "term_id": "retina",
+      "layer": "L1",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "medical-educational",
+      "claim_ids": ["CLM-001"],
+      "source_ids": ["SRC-001"],
+      "translations": {
+        "fr": { "path": "/fr/retine/", "slug": "retine", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "de": { "path": "/de/netzhaut/", "slug": "netzhaut", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/retina/", "slug": "retina", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/shiwang-mo/", "slug": "shiwang-mo", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/al-shabakiyya/", "slug": "al-shabakiyya", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/moumaku/", "slug": "moumaku", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/setchatka/", "slug": "setchatka", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    },
+    {
+      "english_path": "/zonules-of-zinn/",
+      "concept_id": "ZONE-ZONULES",
+      "term_id": "zonules-of-zinn",
+      "layer": "L1",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "medical-educational",
+      "claim_ids": [],
+      "source_ids": ["SRC-001", "SRC-002"],
+      "translations": {
+        "fr": { "path": "/fr/zonules-de-zinn/", "slug": "zonules-de-zinn", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "de": { "path": "/de/zonulafasern/", "slug": "zonulafasern", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "es": { "path": "/es/zonulas-de-zinn/", "slug": "zonulas-de-zinn", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "zh": { "path": "/zh/xuan-ren-dai/", "slug": "xuan-ren-dai", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ar": { "path": "/ar/ribat-al-ain/", "slug": "ribat-al-ain", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ja": { "path": "/ja/mao-taikiken/", "slug": "mao-taikiken", "status": "not_started", "indexable": false, "hreflang_active": false },
+        "ru": { "path": "/ru/tsinnovy-svyazki/", "slug": "tsinnovy-svyazki", "status": "not_started", "indexable": false, "hreflang_active": false }
+      }
+    }
+  ]
+}

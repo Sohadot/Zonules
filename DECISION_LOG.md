@@ -403,3 +403,44 @@ Matured source coverage and introduced sub-cluster architecture across L2 and L3
 ### Next recommendation
 
 The corpus is now source-mature (all 27 sources in use), sub-clustered, and graph-robust (every unit ≥2 inbound). It is ready for the final governed English expansion toward ~300 pages, which should fill the thinner sub-clusters first (L3 generative-vision and segmentation; L2 memory and prediction) and bias modestly toward FIO-04 provenance/verification, the narrowest failure class.
+
+## 2026-06-14 — Sprint 6B: Final English Expansion to 300 Governed Pages
+
+Final governed English expansion: added 87 reference units (TRM-213…TRM-299), advancing the corpus from 213 to **300 routes** and claims from 847 to **1195**. English only; no new sources required; no interface change; no multilingual; no monetization. Built on the source-mature, sub-clustered, graph-robust 6A baseline.
+
+### Batches
+
+- **Batch 6B-A — L2 memory/prediction + L3 generative-vision/segmentation.** L2 memory (visual-long-term-memory, visual-recognition-memory, spatial-memory, working-memory-capacity, eidetic-imagery, visual-memory-encoding) and prediction (bayesian-perception, prediction-error, prior-expectation, expectation-suppression, cue-integration, perceptual-decision-making, evidence-accumulation); L3 generative-vision (variational-autoencoders, latent-space, text-to-image-generation, image-inpainting, super-resolution, neural-style-transfer) and segmentation (superpixels, region-proposal, background-subtraction, interactive-segmentation, salient-object-detection, video-object-segmentation).
+- **Batch 6B-B — L3 verification/provenance/robustness, biased toward FIO-04.** provenance (media-forensics, content-authenticity, camera-fingerprinting, splicing-detection, copy-move-detection, tamper-detection — all FIO-04); verification (cross-validation, selective-prediction, evaluation-metrics, ground-truth, error-analysis); robustness (adversarial-training, corruption-robustness, test-time-adaptation, spurious-correlation, covariate-shift); detection (multi-object-tracking, small-object-detection, open-vocabulary-detection); representation-learning (foundation-models, image-embeddings).
+- **Batch 6B-C — L1 selective visual science + L2 perceptual-error/scene-understanding.** L1 added the cortical-processing cluster (magnocellular-/parvocellular-pathway, dorsal-/ventral-stream, cortical-magnification, orientation-selectivity, ocular-dominance-columns, simple-/complex-cells, area-mt) and retinal/optical units (müller-cells, midget-/parasol-ganglion-cells, lacrimal-gland, corneal-stroma, ora-serrata, ciliary-processes, refraction, optical-/chromatic-/spherical-aberration); L2 perceptual-error (afterimage, simultaneous-contrast, mach-bands, binocular-rivalry, troxler-fading, flash-lag-effect, geometric-illusions) and scene-understanding (self-motion-perception, heading-perception, kinetic-depth-effect, surface-perception, material-perception, spatial-layout-perception, egocentric-distance).
+- **Batch 6B-D — cluster/inbound balancing.** Remaining L2 attention (overt-/covert-attention), recognition (viewpoint-invariance, word-recognition), and constancy (velocity-/position-constancy) units; a ≥2-inbound guarantee pass distributed reciprocal links so every new unit carries at least two inbound and at least three outbound links.
+
+### Per-unit governance
+
+Each unit carries layer, cluster (sub-cluster), FIO/FIS classification, term_id, concept_id, canonical URL, safety class, source notes, and required internal links; links to `/focus-integrity-ontology/` and `/focus-integrity-codes/`; has exactly 3 sourced claims + 1 internal-framework claim (CLM-848…CLM-1195: 261 sourced, 87 internal-framework) and a Safety Notes section. The new route `fis_criterion` field (added in 6A) is populated, so the glossary renders both codes for all 290 reference units.
+
+### Cluster fill (thinner clusters prioritized)
+
+- **L2:** memory 5→11, prediction 7→14, perceptual-error 8→15, scene-understanding 9→16; attention 16→18, recognition 17→19, constancy 8→10. Total L2 70→103.
+- **L3:** generative-vision 4→10, segmentation 5→11, provenance 5→11, robustness 7→12, verification 8→13; detection 21→24, representation-learning 14→16. Total L3 64→97.
+- **L1:** new `cortical-processing` cluster (10) and `retinal-circuitry` 3→6, plus optical-pathway additions. Total L1 69→90.
+
+### FIO-04 (provenance) — modest bias, no overcorrection
+
+FIO-04 grew from 16 to **29** reference units (forensics, content authenticity, and the generative-vision pages that raise provenance concerns), remaining well below FIO-05 (99). Final FIO distribution: FIO-05 99, FIO-01 62, FIO-03 61, FIO-02 39, FIO-04 29.
+
+### Source posture
+
+No new sources were needed; all sourced claims rest on the existing 27-source registry (all of which remain in use). `data/sources.json` stays v0.3.
+
+### State changes
+
+`data/routes.json` v2.3 → **v2.4** (300 routes). `data/claims.json` v1.5 → **v1.6** (1195). `data/sources.json` unchanged (v0.3). `sitemap.xml` regenerated to **299** indexable URLs (/acquire/ noindex and excluded). Root pages, glossary, and ontology regenerated.
+
+### Verification
+
+Gate **PASS** — 300 pages, 1195 claims, 27 sources, layers [L1, L2, L3, cross]; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Every reference unit has ≥2 inbound and ≥3 outbound links (no orphan-risk). Sitemap = 299 = approved indexable routes; no `/site/` or `/static/` canonical paths; `/acquire/` excluded; root publishing intact. Glossary FIO/FIS coverage 290/290.
+
+### Next
+
+The English canonical corpus has reached its ~300-page target with preserved depth, source maturity, sub-cluster architecture, and link-graph integrity. Future work (separate decisions): governed multilingual expansion, or selective anchor deepening — not further numeric growth.

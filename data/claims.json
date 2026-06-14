@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.5",
+  "version": "1.6",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -7854,6 +7854,3159 @@
         "SRC-026"
       ],
       "page": "/ophthalmic-ai/"
+    },
+    {
+      "id": "CLM-848",
+      "status": "sourced",
+      "statement": "The lacrimal gland produces the watery component of the tear film that lubricates and protects the ocular surface.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/lacrimal-gland/"
+    },
+    {
+      "id": "CLM-849",
+      "status": "sourced",
+      "statement": "Its secretions are spread across the cornea by blinking and drain through the puncta into the nasolacrimal duct.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/lacrimal-gland/"
+    },
+    {
+      "id": "CLM-850",
+      "status": "sourced",
+      "statement": "The National Eye Institute notes that tears keep the surface of the eye smooth and clear, which is necessary for good vision.",
+      "sources": [
+        "SRC-025"
+      ],
+      "page": "/lacrimal-gland/"
+    },
+    {
+      "id": "CLM-851",
+      "status": "internal-framework",
+      "statement": "The lacrimal gland is a suspension-layer maintenance element: it sustains the smooth optical surface on which a sharp image depends.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/lacrimal-gland/"
+    },
+    {
+      "id": "CLM-852",
+      "status": "sourced",
+      "statement": "The corneal stroma is the thick middle layer that makes up about ninety percent of the cornea's thickness.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/corneal-stroma/"
+    },
+    {
+      "id": "CLM-853",
+      "status": "sourced",
+      "statement": "Its transparency depends on the precise, regular spacing of collagen fibrils, which minimizes the scattering of light.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/corneal-stroma/"
+    },
+    {
+      "id": "CLM-854",
+      "status": "sourced",
+      "statement": "When the stroma swells with fluid the regular spacing is disrupted and the cornea scatters light and clouds.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/corneal-stroma/"
+    },
+    {
+      "id": "CLM-855",
+      "status": "internal-framework",
+      "statement": "The stroma is a separation-layer structure: its ordered architecture is what lets signal pass without being scattered into noise.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/corneal-stroma/"
+    },
+    {
+      "id": "CLM-856",
+      "status": "sourced",
+      "statement": "The ora serrata is the serrated junction where the light-sensitive retina ends and the ciliary body begins.",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "page": "/ora-serrata/"
+    },
+    {
+      "id": "CLM-857",
+      "status": "sourced",
+      "statement": "It marks the anterior boundary of the neural retina.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/ora-serrata/"
+    },
+    {
+      "id": "CLM-858",
+      "status": "sourced",
+      "statement": "The peripheral retina near the ora serrata is thin and contains few photoreceptors.",
+      "sources": [
+        "SRC-002"
+      ],
+      "page": "/ora-serrata/"
+    },
+    {
+      "id": "CLM-859",
+      "status": "internal-framework",
+      "statement": "The ora serrata is a suspension-layer boundary: it defines the structural edge of the surface on which images are formed.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ora-serrata/"
+    },
+    {
+      "id": "CLM-860",
+      "status": "sourced",
+      "statement": "The ciliary processes are the folded structures of the ciliary body that secrete the aqueous humor.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/ciliary-processes/"
+    },
+    {
+      "id": "CLM-861",
+      "status": "sourced",
+      "statement": "They contain a rich capillary network from which the aqueous humor is produced.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/ciliary-processes/"
+    },
+    {
+      "id": "CLM-862",
+      "status": "sourced",
+      "statement": "The rate of aqueous production here, balanced against drainage, helps set the intraocular pressure.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/ciliary-processes/"
+    },
+    {
+      "id": "CLM-863",
+      "status": "internal-framework",
+      "statement": "The ciliary processes are a suspension-layer maintenance element: they generate the fluid that holds the eye's pressure and nourishment.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ciliary-processes/"
+    },
+    {
+      "id": "CLM-864",
+      "status": "sourced",
+      "statement": "Refraction is the bending of light as it passes between media of different optical density, which the eye uses to focus images on the retina.",
+      "sources": [
+        "SRC-011",
+        "SRC-001"
+      ],
+      "page": "/refraction/"
+    },
+    {
+      "id": "CLM-865",
+      "status": "sourced",
+      "statement": "Most of the eye's refractive power comes from the cornea, with the lens providing adjustable fine focus.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/refraction/"
+    },
+    {
+      "id": "CLM-866",
+      "status": "sourced",
+      "statement": "The total refractive power must match the eye's length for distant images to fall sharply on the retina.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/refraction/"
+    },
+    {
+      "id": "CLM-867",
+      "status": "internal-framework",
+      "statement": "Refraction is the accommodation layer's foundation: it is the act of bending light into a focal plane the system can hold.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/refraction/"
+    },
+    {
+      "id": "CLM-868",
+      "status": "sourced",
+      "statement": "Optical aberrations are imperfections in an optical system that prevent light from converging to a single ideal point.",
+      "sources": [
+        "SRC-011",
+        "SRC-007"
+      ],
+      "page": "/optical-aberration/"
+    },
+    {
+      "id": "CLM-869",
+      "status": "sourced",
+      "statement": "The eye exhibits both lower-order aberrations, such as defocus, and higher-order aberrations that degrade fine image quality.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/optical-aberration/"
+    },
+    {
+      "id": "CLM-870",
+      "status": "sourced",
+      "statement": "Aberrations reduce retinal image contrast even when the gross focus is correct.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/optical-aberration/"
+    },
+    {
+      "id": "CLM-871",
+      "status": "internal-framework",
+      "statement": "Optical aberration is a separation-layer limit: it is the residual noise an imperfect optical system adds to every signal it forms.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/optical-aberration/"
+    },
+    {
+      "id": "CLM-872",
+      "status": "sourced",
+      "statement": "Chromatic aberration arises because the refractive index of the eye's media varies with wavelength, so different colors focus at slightly different planes.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/chromatic-aberration/"
+    },
+    {
+      "id": "CLM-873",
+      "status": "sourced",
+      "statement": "The eye focuses long wavelengths slightly behind short wavelengths, producing longitudinal chromatic aberration.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/chromatic-aberration/"
+    },
+    {
+      "id": "CLM-874",
+      "status": "sourced",
+      "statement": "The visual system partly compensates for chromatic aberration in its neural processing.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/chromatic-aberration/"
+    },
+    {
+      "id": "CLM-875",
+      "status": "internal-framework",
+      "statement": "Chromatic aberration is a separation-layer artifact: the same dispersion that carries color also blurs the image across wavelength.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/chromatic-aberration/"
+    },
+    {
+      "id": "CLM-876",
+      "status": "sourced",
+      "statement": "Spherical aberration occurs when light passing through the periphery of a lens focuses at a different point than light through its center.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/spherical-aberration/"
+    },
+    {
+      "id": "CLM-877",
+      "status": "sourced",
+      "statement": "A larger pupil admits more peripheral rays and therefore increases spherical aberration.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/spherical-aberration/"
+    },
+    {
+      "id": "CLM-878",
+      "status": "sourced",
+      "statement": "The cornea and lens of the eye partly offset each other's spherical aberration.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/spherical-aberration/"
+    },
+    {
+      "id": "CLM-879",
+      "status": "internal-framework",
+      "statement": "Spherical aberration is a separation-layer trade-off: the same aperture that gathers more light also degrades its focus.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/spherical-aberration/"
+    },
+    {
+      "id": "CLM-880",
+      "status": "sourced",
+      "statement": "Müller cells are the principal glial cells of the retina, spanning its full thickness.",
+      "sources": [
+        "SRC-009",
+        "SRC-011"
+      ],
+      "page": "/muller-cells/"
+    },
+    {
+      "id": "CLM-881",
+      "status": "sourced",
+      "statement": "They provide structural support and maintain the chemical environment that retinal neurons need to function.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/muller-cells/"
+    },
+    {
+      "id": "CLM-882",
+      "status": "sourced",
+      "statement": "Müller cells also help recycle neurotransmitters and guide light toward the photoreceptors.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/muller-cells/"
+    },
+    {
+      "id": "CLM-883",
+      "status": "internal-framework",
+      "statement": "Müller cells are a suspension-layer scaffold: they hold the retina's architecture and chemistry stable so the image can be transduced.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/muller-cells/"
+    },
+    {
+      "id": "CLM-884",
+      "status": "sourced",
+      "statement": "Midget ganglion cells are small retinal ganglion cells that dominate the fovea and carry fine spatial and color detail.",
+      "sources": [
+        "SRC-009",
+        "SRC-012"
+      ],
+      "page": "/midget-ganglion-cells/"
+    },
+    {
+      "id": "CLM-885",
+      "status": "sourced",
+      "statement": "Each foveal midget cell can receive input from a single cone, giving very high spatial resolution.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/midget-ganglion-cells/"
+    },
+    {
+      "id": "CLM-886",
+      "status": "sourced",
+      "statement": "They feed the parvocellular pathway to the lateral geniculate nucleus.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/midget-ganglion-cells/"
+    },
+    {
+      "id": "CLM-887",
+      "status": "internal-framework",
+      "statement": "Midget cells are a separation-layer channel for detail: they resolve the finest spatial and chromatic signal the retina sends on.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/midget-ganglion-cells/"
+    },
+    {
+      "id": "CLM-888",
+      "status": "sourced",
+      "statement": "Parasol ganglion cells are large retinal ganglion cells with wide dendritic fields that pool input from many photoreceptors.",
+      "sources": [
+        "SRC-009",
+        "SRC-012"
+      ],
+      "page": "/parasol-ganglion-cells/"
+    },
+    {
+      "id": "CLM-889",
+      "status": "sourced",
+      "statement": "They respond quickly and transiently and are sensitive to motion and low-contrast luminance changes.",
+      "sources": [
+        "SRC-012"
+      ],
+      "page": "/parasol-ganglion-cells/"
+    },
+    {
+      "id": "CLM-890",
+      "status": "sourced",
+      "statement": "They feed the magnocellular pathway to the lateral geniculate nucleus.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/parasol-ganglion-cells/"
+    },
+    {
+      "id": "CLM-891",
+      "status": "internal-framework",
+      "statement": "Parasol cells are a separation-layer channel for change: they extract motion and contrast from the retinal signal.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/parasol-ganglion-cells/"
+    },
+    {
+      "id": "CLM-892",
+      "status": "sourced",
+      "statement": "The magnocellular pathway is a visual stream, originating in parasol ganglion cells, specialized for motion and coarse spatial detail.",
+      "sources": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "page": "/magnocellular-pathway/"
+    },
+    {
+      "id": "CLM-893",
+      "status": "sourced",
+      "statement": "It conducts signals rapidly and is highly sensitive to low contrast but largely color-blind.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/magnocellular-pathway/"
+    },
+    {
+      "id": "CLM-894",
+      "status": "sourced",
+      "statement": "It occupies the two ventral magnocellular layers of the lateral geniculate nucleus.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/magnocellular-pathway/"
+    },
+    {
+      "id": "CLM-895",
+      "status": "internal-framework",
+      "statement": "The magnocellular pathway is a separation-layer channel tuned to where and when, not what.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/magnocellular-pathway/"
+    },
+    {
+      "id": "CLM-896",
+      "status": "sourced",
+      "statement": "The parvocellular pathway is a visual stream, originating in midget ganglion cells, specialized for fine detail and color.",
+      "sources": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "page": "/parvocellular-pathway/"
+    },
+    {
+      "id": "CLM-897",
+      "status": "sourced",
+      "statement": "It conducts signals more slowly and sustains its response, supporting high spatial resolution.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/parvocellular-pathway/"
+    },
+    {
+      "id": "CLM-898",
+      "status": "sourced",
+      "statement": "It occupies the four dorsal parvocellular layers of the lateral geniculate nucleus.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/parvocellular-pathway/"
+    },
+    {
+      "id": "CLM-899",
+      "status": "internal-framework",
+      "statement": "The parvocellular pathway is a separation-layer channel tuned to what: fine, colored, detailed signal.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/parvocellular-pathway/"
+    },
+    {
+      "id": "CLM-900",
+      "status": "sourced",
+      "statement": "The dorsal stream is the cortical visual pathway running from the visual cortex toward the parietal lobe, associated with spatial location and visually guided action.",
+      "sources": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-901",
+      "status": "sourced",
+      "statement": "It is often summarized as the where, or how, pathway.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-902",
+      "status": "sourced",
+      "statement": "It draws heavily on fast magnocellular input.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-903",
+      "status": "internal-framework",
+      "statement": "The dorsal stream is an interpretation-layer route: it reads the scene for where things are and how to act on them.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/dorsal-stream/"
+    },
+    {
+      "id": "CLM-904",
+      "status": "sourced",
+      "statement": "The ventral stream is the cortical visual pathway running from the visual cortex toward the temporal lobe, associated with object recognition and identity.",
+      "sources": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-905",
+      "status": "sourced",
+      "statement": "It is often summarized as the what pathway.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-906",
+      "status": "sourced",
+      "statement": "It depends substantially on detailed parvocellular input.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-907",
+      "status": "internal-framework",
+      "statement": "The ventral stream is an interpretation-layer route: it reads the scene for what things are.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-908",
+      "status": "sourced",
+      "statement": "Cortical magnification is the disproportionate amount of visual cortex devoted to the central visual field relative to the periphery.",
+      "sources": [
+        "SRC-011",
+        "SRC-013"
+      ],
+      "page": "/cortical-magnification/"
+    },
+    {
+      "id": "CLM-909",
+      "status": "sourced",
+      "statement": "A tiny foveal region maps onto a large cortical area, mirroring the fovea's dense photoreceptor sampling.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/cortical-magnification/"
+    },
+    {
+      "id": "CLM-910",
+      "status": "sourced",
+      "statement": "This magnification underlies the steep fall of acuity from the center toward the periphery.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/cortical-magnification/"
+    },
+    {
+      "id": "CLM-911",
+      "status": "internal-framework",
+      "statement": "Cortical magnification is a separation-layer allocation: the system spends its resolution where the signal matters most.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/cortical-magnification/"
+    },
+    {
+      "id": "CLM-912",
+      "status": "sourced",
+      "statement": "Orientation selectivity is the property of many visual cortical neurons that respond most strongly to edges or bars at a particular orientation.",
+      "sources": [
+        "SRC-010",
+        "SRC-009"
+      ],
+      "page": "/orientation-selectivity/"
+    },
+    {
+      "id": "CLM-913",
+      "status": "sourced",
+      "statement": "Hubel and Wiesel found that such neurons are tuned to the angle of a contour within their receptive field.",
+      "sources": [
+        "SRC-010"
+      ],
+      "page": "/orientation-selectivity/"
+    },
+    {
+      "id": "CLM-914",
+      "status": "sourced",
+      "statement": "Orientation-tuned neurons are organized into systematic columns across the cortex.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/orientation-selectivity/"
+    },
+    {
+      "id": "CLM-915",
+      "status": "internal-framework",
+      "statement": "Orientation selectivity is a separation-layer primitive: it extracts the oriented edges from which form is built.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/orientation-selectivity/"
+    },
+    {
+      "id": "CLM-916",
+      "status": "sourced",
+      "statement": "Ocular dominance columns are alternating bands of visual cortex that respond preferentially to input from one eye or the other.",
+      "sources": [
+        "SRC-010",
+        "SRC-013"
+      ],
+      "page": "/ocular-dominance-columns/"
+    },
+    {
+      "id": "CLM-917",
+      "status": "sourced",
+      "statement": "Hubel and Wiesel mapped these columns and showed they reorganize if normal binocular input is disrupted during development.",
+      "sources": [
+        "SRC-010"
+      ],
+      "page": "/ocular-dominance-columns/"
+    },
+    {
+      "id": "CLM-918",
+      "status": "sourced",
+      "statement": "They provide the cortical substrate where the two eyes' signals are brought together.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/ocular-dominance-columns/"
+    },
+    {
+      "id": "CLM-919",
+      "status": "internal-framework",
+      "statement": "Ocular dominance columns are a suspension-layer structure: they hold the two monocular signals in the alignment binocular vision requires.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ocular-dominance-columns/"
+    },
+    {
+      "id": "CLM-920",
+      "status": "sourced",
+      "statement": "Simple cells are primary visual cortex neurons with receptive fields divided into distinct excitatory and inhibitory regions.",
+      "sources": [
+        "SRC-010",
+        "SRC-009"
+      ],
+      "page": "/simple-cells/"
+    },
+    {
+      "id": "CLM-921",
+      "status": "sourced",
+      "statement": "They respond best to an edge or bar of a specific orientation and position.",
+      "sources": [
+        "SRC-010"
+      ],
+      "page": "/simple-cells/"
+    },
+    {
+      "id": "CLM-922",
+      "status": "sourced",
+      "statement": "Their behavior can be approximated by a linear filter followed by a threshold.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/simple-cells/"
+    },
+    {
+      "id": "CLM-923",
+      "status": "internal-framework",
+      "statement": "Simple cells are a separation-layer filter: they convert the retinal image into a map of oriented edges.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/simple-cells/"
+    },
+    {
+      "id": "CLM-924",
+      "status": "sourced",
+      "statement": "Complex cells are visual cortex neurons that respond to an oriented edge anywhere within their receptive field.",
+      "sources": [
+        "SRC-010",
+        "SRC-009"
+      ],
+      "page": "/complex-cells/"
+    },
+    {
+      "id": "CLM-925",
+      "status": "sourced",
+      "statement": "Unlike simple cells, they are largely insensitive to the exact position of the stimulus.",
+      "sources": [
+        "SRC-010"
+      ],
+      "page": "/complex-cells/"
+    },
+    {
+      "id": "CLM-926",
+      "status": "sourced",
+      "statement": "Many complex cells are also direction-selective for motion.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/complex-cells/"
+    },
+    {
+      "id": "CLM-927",
+      "status": "internal-framework",
+      "statement": "Complex cells are a separation-layer abstraction: they report that an oriented feature is present without pinning it to one location.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/complex-cells/"
+    },
+    {
+      "id": "CLM-928",
+      "status": "sourced",
+      "statement": "Area MT, also called V5, is a cortical region specialized for processing visual motion.",
+      "sources": [
+        "SRC-013",
+        "SRC-009"
+      ],
+      "page": "/area-mt/"
+    },
+    {
+      "id": "CLM-929",
+      "status": "sourced",
+      "statement": "Most neurons in MT are tuned to the direction and speed of moving stimuli.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/area-mt/"
+    },
+    {
+      "id": "CLM-930",
+      "status": "sourced",
+      "statement": "Damage to MT can impair the perception of motion while leaving other vision largely intact.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/area-mt/"
+    },
+    {
+      "id": "CLM-931",
+      "status": "internal-framework",
+      "statement": "Area MT is an interpretation-layer specialist: it reads motion as a distinct dimension of meaning in the scene.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/area-mt/"
+    },
+    {
+      "id": "CLM-932",
+      "status": "sourced",
+      "statement": "Visual long-term memory is the durable store of visual information that can persist for hours, days, or years.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-long-term-memory/"
+    },
+    {
+      "id": "CLM-933",
+      "status": "sourced",
+      "statement": "Studies show people can remember thousands of images with surprising detail after a single viewing.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-long-term-memory/"
+    },
+    {
+      "id": "CLM-934",
+      "status": "sourced",
+      "statement": "Unlike working memory, its capacity appears very large and its contents relatively stable.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/visual-long-term-memory/"
+    },
+    {
+      "id": "CLM-935",
+      "status": "internal-framework",
+      "statement": "Visual long-term memory is a suspension-layer store: it holds visual structure available to perception long after the signal is gone.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-long-term-memory/"
+    },
+    {
+      "id": "CLM-936",
+      "status": "sourced",
+      "statement": "Visual recognition memory is the ability to judge whether a currently seen image has been encountered before.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-recognition-memory/"
+    },
+    {
+      "id": "CLM-937",
+      "status": "sourced",
+      "statement": "Recognition is typically faster and more accurate than free recall of the same material.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/visual-recognition-memory/"
+    },
+    {
+      "id": "CLM-938",
+      "status": "sourced",
+      "statement": "It can operate through a sense of familiarity or through explicit recollection of the prior encounter.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-recognition-memory/"
+    },
+    {
+      "id": "CLM-939",
+      "status": "internal-framework",
+      "statement": "Visual recognition memory is an interpretation-layer judgment: it reads a current percept as old or new.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-recognition-memory/"
+    },
+    {
+      "id": "CLM-940",
+      "status": "sourced",
+      "statement": "Spatial memory is the storage and retrieval of information about the locations of objects and the layout of environments.",
+      "sources": [
+        "SRC-005",
+        "SRC-009"
+      ],
+      "page": "/spatial-memory/"
+    },
+    {
+      "id": "CLM-941",
+      "status": "sourced",
+      "statement": "It supports navigation and the ability to return attention to remembered locations.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/spatial-memory/"
+    },
+    {
+      "id": "CLM-942",
+      "status": "sourced",
+      "statement": "It draws on brain regions including the hippocampus and parietal cortex.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/spatial-memory/"
+    },
+    {
+      "id": "CLM-943",
+      "status": "internal-framework",
+      "statement": "Spatial memory is a suspension-layer map: it holds where things are when they are no longer in view.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/spatial-memory/"
+    },
+    {
+      "id": "CLM-944",
+      "status": "sourced",
+      "statement": "Working memory capacity is the limited number of items that can be held in an active, accessible state at once.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/working-memory-capacity/"
+    },
+    {
+      "id": "CLM-945",
+      "status": "sourced",
+      "statement": "Visual working memory is typically limited to only a few objects at a time.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/working-memory-capacity/"
+    },
+    {
+      "id": "CLM-946",
+      "status": "sourced",
+      "statement": "Capacity is constrained by both the number and the complexity of the items held.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/working-memory-capacity/"
+    },
+    {
+      "id": "CLM-947",
+      "status": "internal-framework",
+      "statement": "Working memory capacity is a suspension-layer limit: it bounds how much focus can be held available at once.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/working-memory-capacity/"
+    },
+    {
+      "id": "CLM-948",
+      "status": "sourced",
+      "statement": "Eidetic imagery is the rare ability to retain a vivid, detailed visual image of a scene for an extended period after it is removed.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/eidetic-imagery/"
+    },
+    {
+      "id": "CLM-949",
+      "status": "sourced",
+      "statement": "It is most often reported in a small minority of children and is uncommon in adults.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/eidetic-imagery/"
+    },
+    {
+      "id": "CLM-950",
+      "status": "sourced",
+      "statement": "True eidetic images are scanned as if still present, distinguishing them from ordinary memory.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/eidetic-imagery/"
+    },
+    {
+      "id": "CLM-951",
+      "status": "internal-framework",
+      "statement": "Eidetic imagery is an interpretation-layer persistence: a percept treated as if its signal had not ended.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/eidetic-imagery/"
+    },
+    {
+      "id": "CLM-952",
+      "status": "sourced",
+      "statement": "Visual memory encoding is the process of transforming a perceived image into a stored representation.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-memory-encoding/"
+    },
+    {
+      "id": "CLM-953",
+      "status": "sourced",
+      "statement": "Attention at the time of viewing strongly determines what is encoded and later remembered.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-memory-encoding/"
+    },
+    {
+      "id": "CLM-954",
+      "status": "sourced",
+      "statement": "Information encoded with meaning or organization is remembered better than unstructured detail.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/visual-memory-encoding/"
+    },
+    {
+      "id": "CLM-955",
+      "status": "internal-framework",
+      "statement": "Visual memory encoding is an interpretation-layer commitment: it decides which of the seen becomes the remembered.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-memory-encoding/"
+    },
+    {
+      "id": "CLM-956",
+      "status": "sourced",
+      "statement": "Bayesian perception models the percept as the most probable interpretation of sensory data given prior expectations.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/bayesian-perception/"
+    },
+    {
+      "id": "CLM-957",
+      "status": "sourced",
+      "statement": "It combines incoming evidence with prior probabilities, weighting each by its reliability.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/bayesian-perception/"
+    },
+    {
+      "id": "CLM-958",
+      "status": "sourced",
+      "statement": "The framework explains why ambiguous or noisy input is resolved toward expected interpretations.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/bayesian-perception/"
+    },
+    {
+      "id": "CLM-959",
+      "status": "internal-framework",
+      "statement": "Bayesian perception is an interpretation-layer rule: meaning is the most probable cause of the signal, not the signal itself.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/bayesian-perception/"
+    },
+    {
+      "id": "CLM-960",
+      "status": "sourced",
+      "statement": "Prediction error is the mismatch between sensory input and the brain's prediction of that input.",
+      "sources": [
+        "SRC-021"
+      ],
+      "page": "/prediction-error/"
+    },
+    {
+      "id": "CLM-961",
+      "status": "sourced",
+      "statement": "In predictive-coding accounts, only this residual error is propagated forward to update the model.",
+      "sources": [
+        "SRC-021"
+      ],
+      "page": "/prediction-error/"
+    },
+    {
+      "id": "CLM-962",
+      "status": "sourced",
+      "statement": "Minimizing prediction error over time is proposed as a core principle of perception.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/prediction-error/"
+    },
+    {
+      "id": "CLM-963",
+      "status": "internal-framework",
+      "statement": "Prediction error is an interpretation-layer signal: it is the part of the input that meaning has not yet accounted for.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/prediction-error/"
+    },
+    {
+      "id": "CLM-964",
+      "status": "sourced",
+      "statement": "A prior expectation is prior knowledge or bias that shapes how an ambiguous stimulus is perceived.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/prior-expectation/"
+    },
+    {
+      "id": "CLM-965",
+      "status": "sourced",
+      "statement": "Strong priors can make perception faster but can also cause confident misperception when they are wrong.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/prior-expectation/"
+    },
+    {
+      "id": "CLM-966",
+      "status": "sourced",
+      "statement": "Priors are learned from the statistical regularities of past experience.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/prior-expectation/"
+    },
+    {
+      "id": "CLM-967",
+      "status": "internal-framework",
+      "statement": "Prior expectation is an interpretation-layer weight: it tilts the reading of the signal toward what was likely before.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/prior-expectation/"
+    },
+    {
+      "id": "CLM-968",
+      "status": "sourced",
+      "statement": "Expectation suppression is the reduced neural response to stimuli that are expected compared with unexpected ones.",
+      "sources": [
+        "SRC-021"
+      ],
+      "page": "/expectation-suppression/"
+    },
+    {
+      "id": "CLM-969",
+      "status": "sourced",
+      "statement": "It is consistent with the idea that the brain encodes what was not predicted rather than the full input.",
+      "sources": [
+        "SRC-021"
+      ],
+      "page": "/expectation-suppression/"
+    },
+    {
+      "id": "CLM-970",
+      "status": "sourced",
+      "statement": "The effect appears across many levels of the visual hierarchy.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/expectation-suppression/"
+    },
+    {
+      "id": "CLM-971",
+      "status": "internal-framework",
+      "statement": "Expectation suppression is an interpretation-layer economy: the predictable carries little signal, so the system spends less on it.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/expectation-suppression/"
+    },
+    {
+      "id": "CLM-972",
+      "status": "sourced",
+      "statement": "Cue integration is the combination of multiple, separately ambiguous cues into a single more reliable percept.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/cue-integration/"
+    },
+    {
+      "id": "CLM-973",
+      "status": "sourced",
+      "statement": "Cues are typically weighted by their reliability, with more reliable cues dominating the result.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/cue-integration/"
+    },
+    {
+      "id": "CLM-974",
+      "status": "sourced",
+      "statement": "Optimal integration can yield a percept more precise than any single cue alone.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/cue-integration/"
+    },
+    {
+      "id": "CLM-975",
+      "status": "internal-framework",
+      "statement": "Cue integration is an interpretation-layer synthesis: several weak signals are fused into one confident reading.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/cue-integration/"
+    },
+    {
+      "id": "CLM-976",
+      "status": "sourced",
+      "statement": "Perceptual decision-making is the process of committing to an interpretation of sensory evidence.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/perceptual-decision-making/"
+    },
+    {
+      "id": "CLM-977",
+      "status": "sourced",
+      "statement": "It is often modeled as the accumulation of evidence until a decision threshold is reached.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/perceptual-decision-making/"
+    },
+    {
+      "id": "CLM-978",
+      "status": "sourced",
+      "statement": "The threshold trades speed against accuracy: lower thresholds yield faster but more error-prone decisions.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/perceptual-decision-making/"
+    },
+    {
+      "id": "CLM-979",
+      "status": "internal-framework",
+      "statement": "Perceptual decision-making is an interpretation-layer commitment: the point at which a reading of the signal is declared.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/perceptual-decision-making/"
+    },
+    {
+      "id": "CLM-980",
+      "status": "sourced",
+      "statement": "Evidence accumulation is the gradual gathering of noisy sensory information toward a perceptual decision.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/evidence-accumulation/"
+    },
+    {
+      "id": "CLM-981",
+      "status": "sourced",
+      "statement": "Sequential-sampling models describe how evidence builds until it crosses a decision boundary.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/evidence-accumulation/"
+    },
+    {
+      "id": "CLM-982",
+      "status": "sourced",
+      "statement": "The rate of accumulation reflects the quality of the sensory signal.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/evidence-accumulation/"
+    },
+    {
+      "id": "CLM-983",
+      "status": "internal-framework",
+      "statement": "Evidence accumulation is an interpretation-layer process: meaning is reached by integrating signal over time, not in an instant.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/evidence-accumulation/"
+    },
+    {
+      "id": "CLM-984",
+      "status": "sourced",
+      "statement": "An afterimage is a visual impression that persists or appears after the original stimulus is removed.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/afterimage/"
+    },
+    {
+      "id": "CLM-985",
+      "status": "sourced",
+      "statement": "Negative afterimages, in complementary colors, follow prolonged fixation and reflect adaptation of photoreceptors and neurons.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/afterimage/"
+    },
+    {
+      "id": "CLM-986",
+      "status": "sourced",
+      "statement": "Afterimages move with the eyes because they originate in the retina.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/afterimage/"
+    },
+    {
+      "id": "CLM-987",
+      "status": "internal-framework",
+      "statement": "An afterimage is an accommodation-layer cost: the system's adjustment to one stimulus distorts the next percept.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/afterimage/"
+    },
+    {
+      "id": "CLM-988",
+      "status": "sourced",
+      "statement": "Simultaneous contrast is the shift in a region's apparent brightness or color caused by its surroundings.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/simultaneous-contrast/"
+    },
+    {
+      "id": "CLM-989",
+      "status": "sourced",
+      "statement": "An identical gray patch looks lighter on a dark background and darker on a light one.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/simultaneous-contrast/"
+    },
+    {
+      "id": "CLM-990",
+      "status": "sourced",
+      "statement": "The effect reflects lateral interactions that emphasize the differences between adjacent regions.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/simultaneous-contrast/"
+    },
+    {
+      "id": "CLM-991",
+      "status": "internal-framework",
+      "statement": "Simultaneous contrast is a separation-layer bias: the system reads a region against its surround, not in absolute terms.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/simultaneous-contrast/"
+    },
+    {
+      "id": "CLM-992",
+      "status": "sourced",
+      "statement": "Mach bands are illusory bright and dark bands seen at the edges of a luminance gradient.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/mach-bands/"
+    },
+    {
+      "id": "CLM-993",
+      "status": "sourced",
+      "statement": "They appear where the gradient changes slope, exaggerating the transition.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/mach-bands/"
+    },
+    {
+      "id": "CLM-994",
+      "status": "sourced",
+      "statement": "The effect is attributed to lateral inhibition in early visual processing.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/mach-bands/"
+    },
+    {
+      "id": "CLM-995",
+      "status": "internal-framework",
+      "statement": "Mach bands are a separation-layer artifact: edge-enhancing machinery invents contrast the signal does not contain.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/mach-bands/"
+    },
+    {
+      "id": "CLM-996",
+      "status": "sourced",
+      "statement": "Binocular rivalry is the alternation in perception that occurs when the two eyes view incompatible images.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/binocular-rivalry/"
+    },
+    {
+      "id": "CLM-997",
+      "status": "sourced",
+      "statement": "Rather than blending, awareness switches between the two images over time.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/binocular-rivalry/"
+    },
+    {
+      "id": "CLM-998",
+      "status": "sourced",
+      "statement": "Rivalry is studied as a window into how the brain selects a single conscious percept.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/binocular-rivalry/"
+    },
+    {
+      "id": "CLM-999",
+      "status": "internal-framework",
+      "statement": "Binocular rivalry is a separation-layer conflict: when two signals cannot be reconciled, only one is read at a time.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/binocular-rivalry/"
+    },
+    {
+      "id": "CLM-1000",
+      "status": "sourced",
+      "statement": "Troxler fading is the disappearance of a steady peripheral stimulus during prolonged fixation.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/troxler-fading/"
+    },
+    {
+      "id": "CLM-1001",
+      "status": "sourced",
+      "statement": "It occurs because unchanging input on stable retinal locations is adapted away.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/troxler-fading/"
+    },
+    {
+      "id": "CLM-1002",
+      "status": "sourced",
+      "statement": "Small eye movements normally refresh the image and prevent such fading.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/troxler-fading/"
+    },
+    {
+      "id": "CLM-1003",
+      "status": "internal-framework",
+      "statement": "Troxler fading is an accommodation-layer side effect: a signal that never changes is treated as no signal at all.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/troxler-fading/"
+    },
+    {
+      "id": "CLM-1004",
+      "status": "sourced",
+      "statement": "The flash-lag effect is the illusion that a moving object is ahead of a flash presented at the same physical location.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/flash-lag-effect/"
+    },
+    {
+      "id": "CLM-1005",
+      "status": "sourced",
+      "statement": "It suggests the visual system extrapolates the position of moving objects to offset neural delays.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/flash-lag-effect/"
+    },
+    {
+      "id": "CLM-1006",
+      "status": "sourced",
+      "statement": "The size of the effect depends on the speed of the moving object.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/flash-lag-effect/"
+    },
+    {
+      "id": "CLM-1007",
+      "status": "internal-framework",
+      "statement": "The flash-lag effect is an interpretation-layer correction: the system reads where a moving thing should be, not where it was.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/flash-lag-effect/"
+    },
+    {
+      "id": "CLM-1008",
+      "status": "sourced",
+      "statement": "Geometric illusions are systematic misperceptions of the length, size, or angle of figures.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/geometric-illusions/"
+    },
+    {
+      "id": "CLM-1009",
+      "status": "sourced",
+      "statement": "In the Müller-Lyer illusion, identical lines appear to differ in length because of their end decorations.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/geometric-illusions/"
+    },
+    {
+      "id": "CLM-1010",
+      "status": "sourced",
+      "statement": "Many such illusions are linked to mechanisms that normally aid depth and size interpretation.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/geometric-illusions/"
+    },
+    {
+      "id": "CLM-1011",
+      "status": "internal-framework",
+      "statement": "Geometric illusions are an interpretation-layer misfire: rules that usually recover real structure produce confident error.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/geometric-illusions/"
+    },
+    {
+      "id": "CLM-1012",
+      "status": "sourced",
+      "statement": "Self-motion perception is the sense of one's own movement through the environment, drawn from visual and vestibular cues.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/self-motion-perception/"
+    },
+    {
+      "id": "CLM-1013",
+      "status": "sourced",
+      "statement": "The expanding pattern of optic flow across the retina is a powerful visual cue to self-motion.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/self-motion-perception/"
+    },
+    {
+      "id": "CLM-1014",
+      "status": "sourced",
+      "statement": "Conflicts between visual and vestibular signals can produce illusions of movement.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/self-motion-perception/"
+    },
+    {
+      "id": "CLM-1015",
+      "status": "internal-framework",
+      "statement": "Self-motion perception is an interpretation-layer reading: it tells the observer that the world is stable and the self is moving.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/self-motion-perception/"
+    },
+    {
+      "id": "CLM-1016",
+      "status": "sourced",
+      "statement": "Heading perception is the judgment of one's direction of travel from the visual motion of the scene.",
+      "sources": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "page": "/heading-perception/"
+    },
+    {
+      "id": "CLM-1017",
+      "status": "sourced",
+      "statement": "The focus of expansion in the optic-flow field indicates the direction of heading.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/heading-perception/"
+    },
+    {
+      "id": "CLM-1018",
+      "status": "sourced",
+      "statement": "Observers can judge heading accurately from optic flow alone.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/heading-perception/"
+    },
+    {
+      "id": "CLM-1019",
+      "status": "internal-framework",
+      "statement": "Heading perception is an interpretation-layer inference: direction of travel read from the structure of motion.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/heading-perception/"
+    },
+    {
+      "id": "CLM-1020",
+      "status": "sourced",
+      "statement": "The kinetic depth effect is the perception of three-dimensional structure from the two-dimensional motion of a rotating object's projection.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/kinetic-depth-effect/"
+    },
+    {
+      "id": "CLM-1021",
+      "status": "sourced",
+      "statement": "A shadow of a bent wire figure looks flat when still but appears solid once it rotates.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/kinetic-depth-effect/"
+    },
+    {
+      "id": "CLM-1022",
+      "status": "sourced",
+      "statement": "The effect shows that motion alone can specify depth.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/kinetic-depth-effect/"
+    },
+    {
+      "id": "CLM-1023",
+      "status": "internal-framework",
+      "statement": "The kinetic depth effect is an interpretation-layer recovery: depth read out of changing two-dimensional motion.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/kinetic-depth-effect/"
+    },
+    {
+      "id": "CLM-1024",
+      "status": "sourced",
+      "statement": "Surface perception is the recovery of the surfaces in a scene, including their slant, boundaries, and continuity.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/surface-perception/"
+    },
+    {
+      "id": "CLM-1025",
+      "status": "sourced",
+      "statement": "The visual system groups image regions into surfaces and assigns them a depth order.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/surface-perception/"
+    },
+    {
+      "id": "CLM-1026",
+      "status": "sourced",
+      "statement": "Surfaces, not raw points of light, are treated as the basic units of many later perceptual judgments.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/surface-perception/"
+    },
+    {
+      "id": "CLM-1027",
+      "status": "internal-framework",
+      "statement": "Surface perception is an interpretation-layer structure: it organizes light into the surfaces a scene is made of.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/surface-perception/"
+    },
+    {
+      "id": "CLM-1028",
+      "status": "sourced",
+      "statement": "Material perception is the visual estimation of what a surface is made of, such as metal, cloth, or water.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/material-perception/"
+    },
+    {
+      "id": "CLM-1029",
+      "status": "sourced",
+      "statement": "Cues including gloss, texture, and the pattern of highlights inform material judgments.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/material-perception/"
+    },
+    {
+      "id": "CLM-1030",
+      "status": "sourced",
+      "statement": "Observers can often identify materials rapidly from a single image.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/material-perception/"
+    },
+    {
+      "id": "CLM-1031",
+      "status": "internal-framework",
+      "statement": "Material perception is an interpretation-layer reading: it infers substance from the way a surface scatters light.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/material-perception/"
+    },
+    {
+      "id": "CLM-1032",
+      "status": "sourced",
+      "statement": "Spatial layout perception is the apprehension of the overall geometric structure of a scene, such as its ground plane and boundaries.",
+      "sources": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "page": "/spatial-layout-perception/"
+    },
+    {
+      "id": "CLM-1033",
+      "status": "sourced",
+      "statement": "The layout can be grasped rapidly and guides navigation and the placement of objects.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/spatial-layout-perception/"
+    },
+    {
+      "id": "CLM-1034",
+      "status": "sourced",
+      "statement": "Surfaces such as the ground plane provide a reference frame for judging object positions and sizes.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/spatial-layout-perception/"
+    },
+    {
+      "id": "CLM-1035",
+      "status": "internal-framework",
+      "statement": "Spatial layout perception is an interpretation-layer frame: it builds the stage on which objects are located.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/spatial-layout-perception/"
+    },
+    {
+      "id": "CLM-1036",
+      "status": "sourced",
+      "statement": "Egocentric distance is the perceived distance of an object from the observer.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/egocentric-distance/"
+    },
+    {
+      "id": "CLM-1037",
+      "status": "sourced",
+      "statement": "It relies on cues such as height in the visual field, familiar size, and the ground surface.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/egocentric-distance/"
+    },
+    {
+      "id": "CLM-1038",
+      "status": "sourced",
+      "statement": "Egocentric distance judgments tend to compress at greater distances.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/egocentric-distance/"
+    },
+    {
+      "id": "CLM-1039",
+      "status": "internal-framework",
+      "statement": "Egocentric distance is an interpretation-layer measure: it places the world relative to the self that views it.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/egocentric-distance/"
+    },
+    {
+      "id": "CLM-1040",
+      "status": "sourced",
+      "statement": "Overt attention is the selection of a location or object accompanied by movement of the eyes to fixate it.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/overt-attention/"
+    },
+    {
+      "id": "CLM-1041",
+      "status": "sourced",
+      "statement": "Most everyday viewing uses overt shifts, moving the high-resolution fovea to points of interest.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/overt-attention/"
+    },
+    {
+      "id": "CLM-1042",
+      "status": "sourced",
+      "statement": "Eye-movement records are widely used to infer where overt attention is directed.",
+      "sources": [
+        "SRC-014"
+      ],
+      "page": "/overt-attention/"
+    },
+    {
+      "id": "CLM-1043",
+      "status": "internal-framework",
+      "statement": "Overt attention is a suspension-layer act: it holds focus by aiming the eye's sharpest region at the target.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/overt-attention/"
+    },
+    {
+      "id": "CLM-1044",
+      "status": "sourced",
+      "statement": "Covert attention is the selection of a location or object without moving the eyes to it.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/covert-attention/"
+    },
+    {
+      "id": "CLM-1045",
+      "status": "sourced",
+      "statement": "Attention can be shifted covertly to the periphery, improving detection there while fixation stays fixed.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/covert-attention/"
+    },
+    {
+      "id": "CLM-1046",
+      "status": "sourced",
+      "statement": "Covert shifts typically precede and help guide subsequent eye movements.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/covert-attention/"
+    },
+    {
+      "id": "CLM-1047",
+      "status": "internal-framework",
+      "statement": "Covert attention is a suspension-layer act: it holds focus on a target the eye is not pointed at.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/covert-attention/"
+    },
+    {
+      "id": "CLM-1048",
+      "status": "sourced",
+      "statement": "Viewpoint invariance is the ability to recognize an object across changes in viewing angle.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/viewpoint-invariance/"
+    },
+    {
+      "id": "CLM-1049",
+      "status": "sourced",
+      "statement": "Recognition is often slower for unusual or unfamiliar viewpoints, suggesting partial rather than complete invariance.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/viewpoint-invariance/"
+    },
+    {
+      "id": "CLM-1050",
+      "status": "sourced",
+      "statement": "Theories differ on whether recognition stores multiple views or recovers a viewpoint-independent structure.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/viewpoint-invariance/"
+    },
+    {
+      "id": "CLM-1051",
+      "status": "internal-framework",
+      "statement": "Viewpoint invariance is an interpretation-layer constancy: identity held stable across the angles a thing is seen from.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/viewpoint-invariance/"
+    },
+    {
+      "id": "CLM-1052",
+      "status": "sourced",
+      "statement": "Visual word recognition is the rapid identification of written words from their visual form.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/word-recognition/"
+    },
+    {
+      "id": "CLM-1053",
+      "status": "sourced",
+      "statement": "Skilled readers recognize familiar words largely as wholes rather than letter by letter.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/word-recognition/"
+    },
+    {
+      "id": "CLM-1054",
+      "status": "sourced",
+      "statement": "Word recognition is faster for real words than for equally long random letter strings.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/word-recognition/"
+    },
+    {
+      "id": "CLM-1055",
+      "status": "internal-framework",
+      "statement": "Visual word recognition is an interpretation-layer reading: marks resolved into language almost without effort.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/word-recognition/"
+    },
+    {
+      "id": "CLM-1056",
+      "status": "sourced",
+      "statement": "Velocity constancy is the tendency to perceive an object's speed as stable despite changes in the speed of its retinal image with distance.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/velocity-constancy/"
+    },
+    {
+      "id": "CLM-1057",
+      "status": "sourced",
+      "statement": "A car seen far away crosses the retina slowly yet is perceived as moving fast.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/velocity-constancy/"
+    },
+    {
+      "id": "CLM-1058",
+      "status": "sourced",
+      "statement": "The visual system scales retinal speed by perceived distance, as it does for size.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/velocity-constancy/"
+    },
+    {
+      "id": "CLM-1059",
+      "status": "internal-framework",
+      "statement": "Velocity constancy is an accommodation-layer achievement: perceived speed held stable as viewing distance changes.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/velocity-constancy/"
+    },
+    {
+      "id": "CLM-1060",
+      "status": "sourced",
+      "statement": "Position constancy is the perception of a stable world despite the constant motion of the retinal image caused by eye movements.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/position-constancy/"
+    },
+    {
+      "id": "CLM-1061",
+      "status": "sourced",
+      "statement": "The visual system uses information about its own eye movements to discount the resulting image motion.",
+      "sources": [
+        "SRC-006"
+      ],
+      "page": "/position-constancy/"
+    },
+    {
+      "id": "CLM-1062",
+      "status": "sourced",
+      "statement": "When this compensation fails, the world appears to move with the eyes.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/position-constancy/"
+    },
+    {
+      "id": "CLM-1063",
+      "status": "internal-framework",
+      "statement": "Position constancy is an accommodation-layer correction: the scene is held still against the motion the observer adds.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/position-constancy/"
+    },
+    {
+      "id": "CLM-1064",
+      "status": "sourced",
+      "statement": "A variational autoencoder is a generative model that encodes data into a probability distribution over a latent space and decodes samples back into data.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/variational-autoencoders/"
+    },
+    {
+      "id": "CLM-1065",
+      "status": "sourced",
+      "statement": "It is trained to reconstruct its inputs while keeping the latent distribution close to a simple prior.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/variational-autoencoders/"
+    },
+    {
+      "id": "CLM-1066",
+      "status": "sourced",
+      "statement": "Sampling from the latent prior and decoding produces new data resembling the training set.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/variational-autoencoders/"
+    },
+    {
+      "id": "CLM-1067",
+      "status": "internal-framework",
+      "statement": "Variational autoencoders are a provenance-layer concern: they synthesize plausible images with no real-world source.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/variational-autoencoders/"
+    },
+    {
+      "id": "CLM-1068",
+      "status": "sourced",
+      "statement": "A latent space is the learned, lower-dimensional space in which a model represents the essential factors of its data.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/latent-space/"
+    },
+    {
+      "id": "CLM-1069",
+      "status": "sourced",
+      "statement": "Nearby points in a well-structured latent space decode to similar images, and directions can correspond to interpretable attributes.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/latent-space/"
+    },
+    {
+      "id": "CLM-1070",
+      "status": "sourced",
+      "statement": "Generative models create new images by sampling points in the latent space and decoding them.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/latent-space/"
+    },
+    {
+      "id": "CLM-1071",
+      "status": "internal-framework",
+      "statement": "Latent space is a suspension-layer scaffold: it is the hidden coordinate frame that holds a model's sense of what images are.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/latent-space/"
+    },
+    {
+      "id": "CLM-1072",
+      "status": "sourced",
+      "statement": "Text-to-image generation produces images from natural-language descriptions.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/text-to-image-generation/"
+    },
+    {
+      "id": "CLM-1073",
+      "status": "sourced",
+      "statement": "Modern systems condition a generative model, often a diffusion model, on a text embedding.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/text-to-image-generation/"
+    },
+    {
+      "id": "CLM-1074",
+      "status": "sourced",
+      "statement": "The resulting photorealistic images of scenes that never occurred sharpen provenance concerns.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/text-to-image-generation/"
+    },
+    {
+      "id": "CLM-1075",
+      "status": "internal-framework",
+      "statement": "Text-to-image generation is a provenance-layer challenge: it manufactures convincing depictions of events that never happened.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/text-to-image-generation/"
+    },
+    {
+      "id": "CLM-1076",
+      "status": "sourced",
+      "statement": "Image inpainting fills in missing or removed regions of an image with plausible content.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/image-inpainting/"
+    },
+    {
+      "id": "CLM-1077",
+      "status": "sourced",
+      "statement": "Learned inpainting models synthesize the missing pixels conditioned on the surrounding context.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/image-inpainting/"
+    },
+    {
+      "id": "CLM-1078",
+      "status": "sourced",
+      "statement": "The same technique that restores damaged photos can seamlessly erase or alter real content.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/image-inpainting/"
+    },
+    {
+      "id": "CLM-1079",
+      "status": "internal-framework",
+      "statement": "Image inpainting is a provenance-layer tool: it can repair an image or quietly rewrite what it shows.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/image-inpainting/"
+    },
+    {
+      "id": "CLM-1080",
+      "status": "sourced",
+      "statement": "Super-resolution reconstructs a high-resolution image from a lower-resolution input.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/super-resolution/"
+    },
+    {
+      "id": "CLM-1081",
+      "status": "sourced",
+      "statement": "Learned methods hallucinate plausible detail that was not present in the low-resolution source.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/super-resolution/"
+    },
+    {
+      "id": "CLM-1082",
+      "status": "sourced",
+      "statement": "Because invented detail can look authentic, super-resolution outputs must not be treated as recovered ground truth.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/super-resolution/"
+    },
+    {
+      "id": "CLM-1083",
+      "status": "internal-framework",
+      "statement": "Super-resolution is a provenance-layer caution: the detail it adds is plausible invention, not retrieved fact.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/super-resolution/"
+    },
+    {
+      "id": "CLM-1084",
+      "status": "sourced",
+      "statement": "Neural style transfer recomposes the content of one image in the visual style of another.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/neural-style-transfer/"
+    },
+    {
+      "id": "CLM-1085",
+      "status": "sourced",
+      "statement": "It separates and recombines content and style representations extracted from a convolutional network.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/neural-style-transfer/"
+    },
+    {
+      "id": "CLM-1086",
+      "status": "sourced",
+      "statement": "It was an early demonstration that learned features can be manipulated to generate new imagery.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/neural-style-transfer/"
+    },
+    {
+      "id": "CLM-1087",
+      "status": "internal-framework",
+      "statement": "Neural style transfer is a provenance-layer reminder: appearance can be detached from source and reassigned at will.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/neural-style-transfer/"
+    },
+    {
+      "id": "CLM-1088",
+      "status": "sourced",
+      "statement": "Superpixels are perceptually meaningful clusters of adjacent pixels that share color and texture.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/superpixels/"
+    },
+    {
+      "id": "CLM-1089",
+      "status": "sourced",
+      "statement": "Grouping pixels into superpixels reduces the number of primitives later stages must process.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/superpixels/"
+    },
+    {
+      "id": "CLM-1090",
+      "status": "sourced",
+      "statement": "They respect image boundaries, providing a more natural unit than a fixed pixel grid.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/superpixels/"
+    },
+    {
+      "id": "CLM-1091",
+      "status": "internal-framework",
+      "statement": "Superpixels are a separation-layer simplification: they pre-group the image into coherent regions before meaning is assigned.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/superpixels/"
+    },
+    {
+      "id": "CLM-1092",
+      "status": "sourced",
+      "statement": "Region proposal generates candidate image regions that may contain objects, for later classification.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/region-proposal/"
+    },
+    {
+      "id": "CLM-1093",
+      "status": "sourced",
+      "statement": "It narrows an intractable search over all possible windows to a manageable set of likely regions.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/region-proposal/"
+    },
+    {
+      "id": "CLM-1094",
+      "status": "sourced",
+      "statement": "Proposal quality bounds the performance of the detection systems built on top of it.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/region-proposal/"
+    },
+    {
+      "id": "CLM-1095",
+      "status": "internal-framework",
+      "statement": "Region proposal is an interpretation-layer shortlist: it decides where the scene is worth reading closely.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/region-proposal/"
+    },
+    {
+      "id": "CLM-1096",
+      "status": "sourced",
+      "statement": "Background subtraction separates moving foreground objects from a static background in video.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/background-subtraction/"
+    },
+    {
+      "id": "CLM-1097",
+      "status": "sourced",
+      "statement": "It maintains a model of the background scene and flags the pixels that deviate from it.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/background-subtraction/"
+    },
+    {
+      "id": "CLM-1098",
+      "status": "sourced",
+      "statement": "Changing illumination and moving backgrounds are classic sources of error.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/background-subtraction/"
+    },
+    {
+      "id": "CLM-1099",
+      "status": "internal-framework",
+      "statement": "Background subtraction is a separation-layer operation: it pulls the relevant moving signal out of a static surround.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/background-subtraction/"
+    },
+    {
+      "id": "CLM-1100",
+      "status": "sourced",
+      "statement": "Interactive segmentation refines an object mask using human-provided hints such as clicks or scribbles.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/interactive-segmentation/"
+    },
+    {
+      "id": "CLM-1101",
+      "status": "sourced",
+      "statement": "A few user inputs can guide the model to an accurate boundary it would not find alone.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/interactive-segmentation/"
+    },
+    {
+      "id": "CLM-1102",
+      "status": "sourced",
+      "statement": "It is widely used to produce high-quality labeled masks efficiently.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/interactive-segmentation/"
+    },
+    {
+      "id": "CLM-1103",
+      "status": "internal-framework",
+      "statement": "Interactive segmentation is an interpretation-layer collaboration: human guidance resolves what the model cannot decide alone.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/interactive-segmentation/"
+    },
+    {
+      "id": "CLM-1104",
+      "status": "sourced",
+      "statement": "Salient object detection segments the most visually prominent object or region in an image.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/salient-object-detection/"
+    },
+    {
+      "id": "CLM-1105",
+      "status": "sourced",
+      "statement": "It models which parts of a scene would draw a human viewer's attention.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/salient-object-detection/"
+    },
+    {
+      "id": "CLM-1106",
+      "status": "sourced",
+      "statement": "The output is typically a mask of the standout object rather than a labeled category.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/salient-object-detection/"
+    },
+    {
+      "id": "CLM-1107",
+      "status": "internal-framework",
+      "statement": "Salient object detection is an interpretation-layer focus: it decides what in the scene most demands to be read.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/salient-object-detection/"
+    },
+    {
+      "id": "CLM-1108",
+      "status": "sourced",
+      "statement": "Video object segmentation tracks and delineates objects across the frames of a video.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/video-object-segmentation/"
+    },
+    {
+      "id": "CLM-1109",
+      "status": "sourced",
+      "statement": "It must maintain a consistent object identity and mask despite motion, occlusion, and appearance change.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/video-object-segmentation/"
+    },
+    {
+      "id": "CLM-1110",
+      "status": "sourced",
+      "statement": "Temporal coherence between frames is both a challenge and a source of information.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/video-object-segmentation/"
+    },
+    {
+      "id": "CLM-1111",
+      "status": "internal-framework",
+      "statement": "Video object segmentation is a suspension-layer task: it holds an object's identity steady across time.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/video-object-segmentation/"
+    },
+    {
+      "id": "CLM-1112",
+      "status": "sourced",
+      "statement": "Media forensics is the analysis of images and video to determine their authenticity and detect manipulation.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/media-forensics/"
+    },
+    {
+      "id": "CLM-1113",
+      "status": "sourced",
+      "statement": "It looks for traces left by editing, recompression, or synthesis that are invisible to the eye.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/media-forensics/"
+    },
+    {
+      "id": "CLM-1114",
+      "status": "sourced",
+      "statement": "Benchmark datasets of manipulated media support the development of forensic detectors.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/media-forensics/"
+    },
+    {
+      "id": "CLM-1115",
+      "status": "internal-framework",
+      "statement": "Media forensics is a provenance-layer discipline: it asks whether an image is what it claims to be.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/media-forensics/"
+    },
+    {
+      "id": "CLM-1116",
+      "status": "sourced",
+      "statement": "Content authenticity refers to verifiable evidence of where a piece of media came from and how it was edited.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1117",
+      "status": "sourced",
+      "statement": "Provenance standards attach cryptographically signed metadata recording an asset's origin and edit history.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1118",
+      "status": "sourced",
+      "statement": "Such credentials let a viewer check a claim of authenticity rather than trust appearance alone.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1119",
+      "status": "internal-framework",
+      "statement": "Content authenticity is a provenance-layer guarantee: it binds an origin claim to the media so it can be checked.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1120",
+      "status": "sourced",
+      "statement": "Camera fingerprinting identifies the source device of an image from sensor-specific noise patterns.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1121",
+      "status": "sourced",
+      "statement": "The photo-response non-uniformity of a sensor acts as a stable, device-unique signature.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1122",
+      "status": "sourced",
+      "statement": "A mismatch between a region's fingerprint and the rest of an image can reveal tampering.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1123",
+      "status": "internal-framework",
+      "statement": "Camera fingerprinting is a provenance-layer trace: it ties an image back to the device that captured it.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/camera-fingerprinting/"
+    },
+    {
+      "id": "CLM-1124",
+      "status": "sourced",
+      "statement": "Splicing detection identifies regions of an image that were copied in from a different source image.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/splicing-detection/"
+    },
+    {
+      "id": "CLM-1125",
+      "status": "sourced",
+      "statement": "Spliced regions often differ in noise, lighting, or compression history from the host image.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/splicing-detection/"
+    },
+    {
+      "id": "CLM-1126",
+      "status": "sourced",
+      "statement": "Detecting these inconsistencies is a core task of image forensics.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/splicing-detection/"
+    },
+    {
+      "id": "CLM-1127",
+      "status": "internal-framework",
+      "statement": "Splicing detection is a provenance-layer check: it finds the part of an image that came from somewhere else.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/splicing-detection/"
+    },
+    {
+      "id": "CLM-1128",
+      "status": "sourced",
+      "statement": "Copy-move detection finds regions of an image that were duplicated from elsewhere within the same image.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/copy-move-detection/"
+    },
+    {
+      "id": "CLM-1129",
+      "status": "sourced",
+      "statement": "Duplication is used to conceal content by covering it with a copied patch.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/copy-move-detection/"
+    },
+    {
+      "id": "CLM-1130",
+      "status": "sourced",
+      "statement": "Detectors search for suspiciously similar regions while allowing for small post-processing changes.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/copy-move-detection/"
+    },
+    {
+      "id": "CLM-1131",
+      "status": "internal-framework",
+      "statement": "Copy-move detection is a provenance-layer check: it exposes a forgery built from the image's own pixels.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/copy-move-detection/"
+    },
+    {
+      "id": "CLM-1132",
+      "status": "sourced",
+      "statement": "Tamper detection determines whether an image has been altered after capture.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/tamper-detection/"
+    },
+    {
+      "id": "CLM-1133",
+      "status": "sourced",
+      "statement": "It combines cues such as inconsistent noise, lighting, and compression artifacts.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/tamper-detection/"
+    },
+    {
+      "id": "CLM-1134",
+      "status": "sourced",
+      "statement": "Robust tamper detection must withstand benign edits like resizing while still catching malicious ones.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/tamper-detection/"
+    },
+    {
+      "id": "CLM-1135",
+      "status": "internal-framework",
+      "statement": "Tamper detection is a provenance-layer verdict: it judges whether what is shown has been changed.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/tamper-detection/"
+    },
+    {
+      "id": "CLM-1136",
+      "status": "sourced",
+      "statement": "Adversarial training improves robustness by including adversarially perturbed examples in the training data.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/adversarial-training/"
+    },
+    {
+      "id": "CLM-1137",
+      "status": "sourced",
+      "statement": "The model learns to resist the small, structured perturbations that would otherwise fool it.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/adversarial-training/"
+    },
+    {
+      "id": "CLM-1138",
+      "status": "sourced",
+      "statement": "Robustness gained this way often comes at some cost to accuracy on clean inputs.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/adversarial-training/"
+    },
+    {
+      "id": "CLM-1139",
+      "status": "internal-framework",
+      "statement": "Adversarial training is a separation-layer defense: it teaches the model to hold the signal against deliberate noise.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/adversarial-training/"
+    },
+    {
+      "id": "CLM-1140",
+      "status": "sourced",
+      "statement": "Corruption robustness is a model's resilience to common, non-adversarial image degradations such as blur, noise, and weather.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/corruption-robustness/"
+    },
+    {
+      "id": "CLM-1141",
+      "status": "sourced",
+      "statement": "Standard benchmarks apply graded corruptions to test sets to measure this resilience.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/corruption-robustness/"
+    },
+    {
+      "id": "CLM-1142",
+      "status": "sourced",
+      "statement": "Models strong on clean data can still fail badly under mild corruption.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/corruption-robustness/"
+    },
+    {
+      "id": "CLM-1143",
+      "status": "internal-framework",
+      "statement": "Corruption robustness is a separation-layer measure: it asks whether meaning survives ordinary degradation of the input.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/corruption-robustness/"
+    },
+    {
+      "id": "CLM-1144",
+      "status": "sourced",
+      "statement": "Test-time adaptation adjusts a model to new data during deployment, without labeled examples from the new domain.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/test-time-adaptation/"
+    },
+    {
+      "id": "CLM-1145",
+      "status": "sourced",
+      "statement": "It can update statistics or parameters using the unlabeled test inputs themselves.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/test-time-adaptation/"
+    },
+    {
+      "id": "CLM-1146",
+      "status": "sourced",
+      "statement": "It targets the performance drop that distribution shift causes after training.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/test-time-adaptation/"
+    },
+    {
+      "id": "CLM-1147",
+      "status": "internal-framework",
+      "statement": "Test-time adaptation is an accommodation-layer mechanism: it retunes a model's range to the conditions it now faces.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/test-time-adaptation/"
+    },
+    {
+      "id": "CLM-1148",
+      "status": "sourced",
+      "statement": "A spurious correlation is a statistical association in training data that does not reflect the true cause of the label.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/spurious-correlation/"
+    },
+    {
+      "id": "CLM-1149",
+      "status": "sourced",
+      "statement": "A model may learn to rely on a background or texture that happens to correlate with the class.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/spurious-correlation/"
+    },
+    {
+      "id": "CLM-1150",
+      "status": "sourced",
+      "statement": "Such shortcuts break when the spurious feature is absent or changed at deployment.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/spurious-correlation/"
+    },
+    {
+      "id": "CLM-1151",
+      "status": "internal-framework",
+      "statement": "Spurious correlation is an interpretation-layer trap: the model reads the wrong evidence and is confidently wrong off-distribution.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/spurious-correlation/"
+    },
+    {
+      "id": "CLM-1152",
+      "status": "sourced",
+      "statement": "Covariate shift occurs when the distribution of inputs changes between training and deployment while the labeling rule stays the same.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/covariate-shift/"
+    },
+    {
+      "id": "CLM-1153",
+      "status": "sourced",
+      "statement": "It is a common cause of silent performance degradation in deployed vision systems.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/covariate-shift/"
+    },
+    {
+      "id": "CLM-1154",
+      "status": "sourced",
+      "statement": "Detecting and correcting covariate shift is central to reliable deployment.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/covariate-shift/"
+    },
+    {
+      "id": "CLM-1155",
+      "status": "internal-framework",
+      "statement": "Covariate shift is an accommodation-layer failure: the operating conditions move and the model's range no longer fits.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/covariate-shift/"
+    },
+    {
+      "id": "CLM-1156",
+      "status": "sourced",
+      "statement": "Cross-validation estimates how well a model generalizes by repeatedly training and testing on different splits of the data.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/cross-validation/"
+    },
+    {
+      "id": "CLM-1157",
+      "status": "sourced",
+      "statement": "It uses the available data more efficiently than a single train-test split.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/cross-validation/"
+    },
+    {
+      "id": "CLM-1158",
+      "status": "sourced",
+      "statement": "It helps detect overfitting and guides the choice of model and hyperparameters.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/cross-validation/"
+    },
+    {
+      "id": "CLM-1159",
+      "status": "internal-framework",
+      "statement": "Cross-validation is an interpretation-layer check: it asks whether a model's readings hold on data it did not see.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/cross-validation/"
+    },
+    {
+      "id": "CLM-1160",
+      "status": "sourced",
+      "statement": "Selective prediction lets a model abstain from answering when its confidence is too low.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/selective-prediction/"
+    },
+    {
+      "id": "CLM-1161",
+      "status": "sourced",
+      "statement": "By declining uncertain cases, it can raise accuracy on the cases it does answer.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/selective-prediction/"
+    },
+    {
+      "id": "CLM-1162",
+      "status": "sourced",
+      "statement": "The trade-off between coverage and accuracy is set by a confidence threshold.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/selective-prediction/"
+    },
+    {
+      "id": "CLM-1163",
+      "status": "internal-framework",
+      "statement": "Selective prediction is a provenance-layer discipline: a system that can say it is not sure rather than assert blindly.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/selective-prediction/"
+    },
+    {
+      "id": "CLM-1164",
+      "status": "sourced",
+      "statement": "Evaluation metrics quantify how well a vision model performs against reference labels.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/evaluation-metrics/"
+    },
+    {
+      "id": "CLM-1165",
+      "status": "sourced",
+      "statement": "Different tasks use different metrics, such as accuracy, precision and recall, or intersection-over-union.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/evaluation-metrics/"
+    },
+    {
+      "id": "CLM-1166",
+      "status": "sourced",
+      "statement": "A metric that misrepresents the goal can make a poor model look strong.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/evaluation-metrics/"
+    },
+    {
+      "id": "CLM-1167",
+      "status": "internal-framework",
+      "statement": "Evaluation metrics are an interpretation-layer yardstick: they define what counts as reading the scene correctly.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/evaluation-metrics/"
+    },
+    {
+      "id": "CLM-1168",
+      "status": "sourced",
+      "statement": "Ground truth is the reference annotation against which a model's predictions are compared.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/ground-truth/"
+    },
+    {
+      "id": "CLM-1169",
+      "status": "sourced",
+      "statement": "It is usually produced by human labeling and is treated as the standard of correctness.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/ground-truth/"
+    },
+    {
+      "id": "CLM-1170",
+      "status": "sourced",
+      "statement": "Errors or bias in the ground truth propagate directly into measured performance and into the model.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/ground-truth/"
+    },
+    {
+      "id": "CLM-1171",
+      "status": "internal-framework",
+      "statement": "Ground truth is a provenance-layer anchor: it is the agreed reality a system's claims are checked against.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ground-truth/"
+    },
+    {
+      "id": "CLM-1172",
+      "status": "sourced",
+      "statement": "Error analysis is the systematic study of the cases a model gets wrong.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/error-analysis/"
+    },
+    {
+      "id": "CLM-1173",
+      "status": "sourced",
+      "statement": "Grouping errors by type reveals failure patterns that aggregate metrics hide.",
+      "sources": [
+        "SRC-027"
+      ],
+      "page": "/error-analysis/"
+    },
+    {
+      "id": "CLM-1174",
+      "status": "sourced",
+      "statement": "It guides targeted improvements more effectively than a single accuracy number.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/error-analysis/"
+    },
+    {
+      "id": "CLM-1175",
+      "status": "internal-framework",
+      "statement": "Error analysis is an interpretation-layer audit: it asks not how often a model is right but how and why it is wrong.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/error-analysis/"
+    },
+    {
+      "id": "CLM-1176",
+      "status": "sourced",
+      "statement": "Multi-object tracking follows several objects across video frames while maintaining a consistent identity for each.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/multi-object-tracking/"
+    },
+    {
+      "id": "CLM-1177",
+      "status": "sourced",
+      "statement": "It must associate detections over time and handle objects that occlude one another or leave the scene.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/multi-object-tracking/"
+    },
+    {
+      "id": "CLM-1178",
+      "status": "sourced",
+      "statement": "Identity switches, where two tracks are swapped, are a characteristic failure.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/multi-object-tracking/"
+    },
+    {
+      "id": "CLM-1179",
+      "status": "internal-framework",
+      "statement": "Multi-object tracking is a suspension-layer task: it holds each object's identity steady across time and occlusion.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/multi-object-tracking/"
+    },
+    {
+      "id": "CLM-1180",
+      "status": "sourced",
+      "statement": "Small object detection addresses the difficulty of finding objects that occupy very few pixels.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/small-object-detection/"
+    },
+    {
+      "id": "CLM-1181",
+      "status": "sourced",
+      "statement": "Small objects carry little feature information and are easily lost in downsampling.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/small-object-detection/"
+    },
+    {
+      "id": "CLM-1182",
+      "status": "sourced",
+      "statement": "Higher input resolution and multi-scale features are common remedies.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/small-object-detection/"
+    },
+    {
+      "id": "CLM-1183",
+      "status": "internal-framework",
+      "statement": "Small object detection is an interpretation-layer limit: it tests whether faint signal can still be correctly read.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/small-object-detection/"
+    },
+    {
+      "id": "CLM-1184",
+      "status": "sourced",
+      "statement": "Open-vocabulary detection localizes and names objects from categories not seen during training.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/open-vocabulary-detection/"
+    },
+    {
+      "id": "CLM-1185",
+      "status": "sourced",
+      "statement": "It typically aligns visual regions with a language model's text embeddings to generalize beyond fixed labels.",
+      "sources": [
+        "SRC-019"
+      ],
+      "page": "/open-vocabulary-detection/"
+    },
+    {
+      "id": "CLM-1186",
+      "status": "sourced",
+      "statement": "It extends detection from a closed label set toward arbitrary described categories.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/open-vocabulary-detection/"
+    },
+    {
+      "id": "CLM-1187",
+      "status": "internal-framework",
+      "statement": "Open-vocabulary detection is an interpretation-layer reach: it reads objects it was never explicitly trained to name.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/open-vocabulary-detection/"
+    },
+    {
+      "id": "CLM-1188",
+      "status": "sourced",
+      "statement": "Vision foundation models are large models pretrained on broad data that can be adapted to many downstream tasks.",
+      "sources": [
+        "SRC-019"
+      ],
+      "page": "/foundation-models/"
+    },
+    {
+      "id": "CLM-1189",
+      "status": "sourced",
+      "statement": "Pretraining at scale lets them transfer to new tasks with little task-specific data.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/foundation-models/"
+    },
+    {
+      "id": "CLM-1190",
+      "status": "sourced",
+      "statement": "The same broad pretraining that gives them generality can also propagate biases from the training data.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/foundation-models/"
+    },
+    {
+      "id": "CLM-1191",
+      "status": "internal-framework",
+      "statement": "Foundation models are a suspension-layer base: they hold a general visual representation that many tasks are built upon.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/foundation-models/"
+    },
+    {
+      "id": "CLM-1192",
+      "status": "sourced",
+      "statement": "An image embedding is a compact vector that represents an image so that similar images lie close together.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/image-embeddings/"
+    },
+    {
+      "id": "CLM-1193",
+      "status": "sourced",
+      "statement": "Embeddings let images be compared, searched, and clustered by vector distance.",
+      "sources": [
+        "SRC-022"
+      ],
+      "page": "/image-embeddings/"
+    },
+    {
+      "id": "CLM-1194",
+      "status": "sourced",
+      "statement": "Learned embeddings underpin retrieval, recognition, and cross-modal matching with text.",
+      "sources": [
+        "SRC-018"
+      ],
+      "page": "/image-embeddings/"
+    },
+    {
+      "id": "CLM-1195",
+      "status": "internal-framework",
+      "statement": "Image embeddings are a suspension-layer coordinate: they hold each image as a point in a space the system can reason over.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/image-embeddings/"
     }
   ]
 }

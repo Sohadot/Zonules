@@ -1,4 +1,3 @@
-
 **Zonules.com — Decision Log**
 **Sohadot Portfolio · agent@sohadot.com**
 
@@ -633,3 +632,111 @@ and excluded; no `/site/` or `/static/` canonical paths; static-first security i
 **Sprint 7A — Multilingual Architecture.** Begin governed multilingual expansion on the
 frozen English master: French first, anchors first, FIO/FIS and Safety Notes held
 invariant across all languages. No further English numeric growth before this phase.
+
+---
+
+## Sprint 7A — Multilingual Architecture on Frozen English Master
+
+**Date:** 2026-06-14  
+**Status:** Complete  
+**Branch:** `claude/english-master-freeze-nb3xuy`  
+**Commit:** `chore(i18n): define multilingual architecture on frozen English master`
+
+### Decision
+
+Define the governed multilingual architecture for Zonules.com on the frozen English
+master (Sprint 6F, `docs/ENGLISH_MASTER_FREEZE.md` v1.0). This sprint creates the
+governance scaffolding for future multilingual expansion without translating any
+content, modifying any English page, or advancing any language beyond
+`architecture_defined` status.
+
+The **No Partial Language Doctrine** is operationalized: a language is only
+`launched` when all its pages pass governance review, all routes pass the multilingual
+validator, and a governance entry in this log authorizes the status change.
+
+### Corpus state (unchanged from Sprint 6F)
+
+- **English pages:** 300 (frozen — no change)
+- **Sitemap:** 299 indexable URLs (frozen — no change)
+- **Claims:** 1336 registered claims (982 sourced, 354 internal-framework)
+- **Sources:** 27 registered sources
+- **Route registry:** `data/routes.json` v2.6 (frozen — no change)
+- **Claims registry:** `data/claims.json` v1.8 (frozen — no change)
+- **Sources registry:** `data/sources.json` v0.3 (frozen — no change)
+- **FIO/FIS:** v0.1 (frozen — no change)
+
+### Files created
+
+**`docs/MULTILINGUAL_ARCHITECTURE.md` (v1.0)**  
+Governs all multilingual decisions:
+- English master as sole source of truth
+- Official language order: en → fr → de → es → zh → ar → ja → ru (8 languages)
+- URL strategy: English at root; non-English at `/{lang}/` prefix with translated slugs
+- Hreflang policy: only active when a real indexed translated page exists
+- No Partial Language Doctrine (operational definition)
+- Translation quality requirements (FIO/FIS, safety, claims, sources, medical disclaimer)
+- Language-invariant vs. language-variable field table
+- Governance and change protocol
+- Authority chain: ASSET_THESIS → FOUNDATION_DOCTRINE → ENGLISH_MASTER_FREEZE →
+  MULTILINGUAL_ARCHITECTURE
+
+**`data/languages.json` (v1.0)**  
+Language registry with official 8-language order. Structure compatible with
+`scripts/validate_all.py` section 9b (`layers` array with `code` and `status` fields).
+
+- `en`: status=launched, indexable=true (canonical master, frozen Sprint 6F)
+- `fr`, `de`, `es`, `zh`, `ar`, `ja`, `ru`: status=architecture_defined,
+  indexable=false (no content translated, not indexed)
+
+**`data/translation-map.json` (v1.0)**  
+Schema-based route mapping registry (not an exhaustive enumeration of all 300 routes).
+Defines:
+- Language-invariant fields: concept_id, term_id, fio_class, fis_criterion,
+  safety_class, claim_ids, source_ids
+- Language-variable fields: path, slug, status, indexable, hreflang_active
+- Anchor route examples: `/` (gateway), `/retina/`, `/zonules-of-zinn/`
+- All translation statuses: not_started; indexable=false; hreflang_active=false
+
+**`scripts/validate_multilingual.py`**  
+Standalone multilingual governance validator. Enforces:
+
+- Valid BCP 47 language codes from the official order
+- Official order preserved (priority field)
+- English always status=launched
+- No non-launched language has indexable=true
+- No unregistered language codes in routes.json
+- FIO/FIS and safety_class match routes.json (language-invariant)
+- All source_ids and claim_ids in translation-map.json are registered
+- No hreflang_active unless language is launched and page is indexable
+
+**`scripts/validate_all.py`** (updated Sprint 7A)  
+Added:
+
+- **Section 9c:** Calls `validate_multilingual.py` as subprocess; propagates
+  failures as gate errors.
+- **Section 9d:** Validates `translation-map.json` schema_version field.
+
+### Governance gate
+
+Gate **PASS** — 300 pages, 1336 claims, 27 sources; broken_links=0, orphans=0,
+unsafe=0, unsourced_claims=0. Multilingual architecture defined: 8 languages
+registered, en=launched, all others=architecture_defined, no content translated,
+no indexable non-English routes, no hreflang emitted.
+
+### Non-actions (by design)
+
+- No English page translated (No Partial Language Doctrine; no complete layer exists)
+- No `/languages/` public page created (would require routes.json mutation; deferred)
+- No hreflang emitted (no launched translated pages)
+- No empty language folders created
+- No API or runtime dependencies added
+- No design or interface changes
+- `data/routes.json` not modified (frozen)
+
+### Next phase
+
+**Sprint 7B — First Anchor Translation (French).** Governed by
+`docs/MULTILINGUAL_ARCHITECTURE.md` §5 (Route Mapping Model), §6 (Translation
+Quality Requirements), §7 (No Partial Language Doctrine, Operational). A governance
+entry in this log is required before any translated content is created. French first;
+anchors first; FIO/FIS and Safety Notes held invariant.

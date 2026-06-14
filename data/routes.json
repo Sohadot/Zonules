@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "1.9",
+  "version": "2.0",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -118,11 +118,13 @@
         "CLM-002",
         "CLM-003",
         "CLM-004",
-        "CLM-005"
+        "CLM-005",
+        "CLM-560",
+        "CLM-561"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/ciliary-body/",
@@ -183,17 +185,20 @@
       "source_requirements": [
         "SRC-001",
         "SRC-002",
-        "SRC-003"
+        "SRC-003",
+        "SRC-011"
       ],
       "claim_requirements": [
         "CLM-010",
         "CLM-011",
         "CLM-012",
-        "CLM-013"
+        "CLM-013",
+        "CLM-564",
+        "CLM-565"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/lens-accommodation/",
@@ -217,17 +222,20 @@
       ],
       "source_requirements": [
         "SRC-001",
-        "SRC-003"
+        "SRC-003",
+        "SRC-025"
       ],
       "claim_requirements": [
         "CLM-014",
         "CLM-015",
         "CLM-016",
-        "CLM-017"
+        "CLM-017",
+        "CLM-562",
+        "CLM-563"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/lens-capsule/",
@@ -287,17 +295,20 @@
       ],
       "source_requirements": [
         "SRC-005",
-        "SRC-006"
+        "SRC-006",
+        "SRC-014"
       ],
       "claim_requirements": [
         "CLM-022",
         "CLM-023",
         "CLM-024",
-        "CLM-025"
+        "CLM-025",
+        "CLM-572",
+        "CLM-573"
       ],
       "safety_class": "educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/machine-vision/",
@@ -425,17 +436,22 @@
       ],
       "source_requirements": [
         "SRC-007",
-        "SRC-008"
+        "SRC-008",
+        "SRC-023",
+        "SRC-024"
       ],
       "claim_requirements": [
         "CLM-038",
         "CLM-039",
         "CLM-040",
-        "CLM-041"
+        "CLM-041",
+        "CLM-587",
+        "CLM-588",
+        "CLM-589"
       ],
       "safety_class": "technical",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/image-provenance/",
@@ -459,17 +475,20 @@
         "/synthetic-media/"
       ],
       "source_requirements": [
-        "SRC-008"
+        "SRC-008",
+        "SRC-023"
       ],
       "claim_requirements": [
         "CLM-042",
         "CLM-043",
         "CLM-044",
-        "CLM-045"
+        "CLM-045",
+        "CLM-590",
+        "CLM-591"
       ],
       "safety_class": "technical",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/focus-integrity-ontology/",
@@ -543,7 +562,8 @@
         "/source-policy/",
         "/glossary/",
         "/focus-integrity-ontology/",
-        "/editorial-policy/"
+        "/editorial-policy/",
+        "/focus-integrity-codes/"
       ],
       "source_requirements": [],
       "claim_requirements": [],
@@ -569,7 +589,8 @@
       "required_internal_links": [
         "/methodology/",
         "/glossary/",
-        "/medical-disclaimer/"
+        "/medical-disclaimer/",
+        "/focus-integrity-codes/"
       ],
       "source_requirements": [],
       "claim_requirements": [],
@@ -686,16 +707,20 @@
       ],
       "source_requirements": [
         "SRC-001",
-        "SRC-003"
+        "SRC-003",
+        "SRC-011",
+        "SRC-012"
       ],
       "claim_requirements": [
         "CLM-049",
         "CLM-050",
-        "CLM-051"
+        "CLM-051",
+        "CLM-566",
+        "CLM-567"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/photoreceptors/",
@@ -754,16 +779,19 @@
       ],
       "source_requirements": [
         "SRC-001",
-        "SRC-002"
+        "SRC-002",
+        "SRC-009"
       ],
       "claim_requirements": [
         "CLM-056",
         "CLM-057",
-        "CLM-058"
+        "CLM-058",
+        "CLM-568",
+        "CLM-569"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/perceptual-constancy/",
@@ -857,17 +885,21 @@
         "/image-provenance/"
       ],
       "source_requirements": [
-        "SRC-007"
+        "SRC-007",
+        "SRC-022",
+        "SRC-016"
       ],
       "claim_requirements": [
         "CLM-067",
         "CLM-068",
         "CLM-069",
-        "CLM-070"
+        "CLM-070",
+        "CLM-581",
+        "CLM-582"
       ],
       "safety_class": "technical",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/image-classification/",
@@ -1231,16 +1263,20 @@
       ],
       "source_requirements": [
         "SRC-001",
-        "SRC-005"
+        "SRC-005",
+        "SRC-010",
+        "SRC-009"
       ],
       "claim_requirements": [
         "CLM-107",
         "CLM-108",
-        "CLM-109"
+        "CLM-109",
+        "CLM-570",
+        "CLM-571"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/pupillary-reflex/",
@@ -3724,17 +3760,24 @@
       ],
       "source_requirements": [
         "SRC-005",
-        "SRC-006"
+        "SRC-006",
+        "SRC-021",
+        "SRC-020",
+        "SRC-017"
       ],
       "claim_requirements": [
         "CLM-384",
         "CLM-385",
         "CLM-386",
-        "CLM-387"
+        "CLM-387",
+        "CLM-574",
+        "CLM-575",
+        "CLM-576",
+        "CLM-577"
       ],
       "safety_class": "educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-13"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/face-perception/",
@@ -3938,17 +3981,24 @@
         "/self-supervised-learning/"
       ],
       "source_requirements": [
-        "SRC-007"
+        "SRC-007",
+        "SRC-018",
+        "SRC-019",
+        "SRC-017"
       ],
       "claim_requirements": [
         "CLM-408",
         "CLM-409",
         "CLM-410",
-        "CLM-411"
+        "CLM-411",
+        "CLM-583",
+        "CLM-584",
+        "CLM-585",
+        "CLM-586"
       ],
       "safety_class": "technical",
       "monetization": "none",
-      "last_reviewed": "2026-06-13"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/convolutional-neural-networks/",
@@ -4260,17 +4310,22 @@
       ],
       "source_requirements": [
         "SRC-005",
-        "SRC-006"
+        "SRC-006",
+        "SRC-020",
+        "SRC-013"
       ],
       "claim_requirements": [
         "CLM-444",
         "CLM-445",
         "CLM-446",
-        "CLM-447"
+        "CLM-447",
+        "CLM-578",
+        "CLM-579",
+        "CLM-580"
       ],
       "safety_class": "educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-13"
+      "last_reviewed": "2026-06-14"
     },
     {
       "path": "/mental-imagery/",
@@ -5273,6 +5328,34 @@
       "safety_class": "technical",
       "monetization": "none",
       "last_reviewed": "2026-06-13"
+    },
+    {
+      "path": "/focus-integrity-codes/",
+      "language": "en",
+      "page_type": "policy",
+      "status": "approved",
+      "indexable": true,
+      "canonical": "https://zonules.com/focus-integrity-codes/",
+      "hreflang_group": "focus-integrity-codes",
+      "layer": "cross",
+      "cluster": "governance",
+      "fio_class": "none",
+      "template": "term.html",
+      "content": "content/en/pages/focus-integrity-codes.md",
+      "seo_title": "Focus Integrity Codes | Zonules.com",
+      "meta_description": "What the FIO and FIS codes on every Zonules.com reference page mean: FIO names how focus fails, FIS names what intact focus requires. A short reader's key for people and AI agents.",
+      "required_internal_links": [
+        "/focus-integrity-ontology/",
+        "/glossary/",
+        "/methodology/",
+        "/focus-integrity-engine/",
+        "/zonules-of-zinn/"
+      ],
+      "source_requirements": [],
+      "claim_requirements": [],
+      "safety_class": "institutional",
+      "monetization": "none",
+      "last_reviewed": "2026-06-14"
     }
   ]
 }

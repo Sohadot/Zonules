@@ -14,9 +14,9 @@ term_id: TRM-003
 concept_id: CON-suspension
 safety_class: medical-educational
 canonical: https://zonules.com/crystalline-lens/
-last_reviewed: 2026-06-12
-claims: [CLM-010, CLM-011, CLM-012, CLM-013]
-sources: [SRC-001, SRC-002, SRC-003, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-010, CLM-011, CLM-012, CLM-013, CLM-564, CLM-565]
+sources: [SRC-001, SRC-002, SRC-003, SRC-004, SRC-011]
 related_terms: [zonules-of-zinn, ciliary-body, lens-accommodation]
 seo_title: "Crystalline Lens — The Focal Element of the Suspension System | Zonules.com"
 meta_description: "The crystalline lens refracts light onto the retina and changes shape to focus. Suspended by the zonules, it is present but unstable without them. A governed reference unit."
@@ -63,6 +63,14 @@ In machine perception, the lens analogue is the model's active representation of
 
 - **Lens vs. cornea.** Both refract light, but the cornea provides most of the eye's fixed optical power; the lens provides the *adjustable* portion through accommodation.
 - **The lens focuses by itself?** No. It is shaped and stabilized by the zonules and ciliary body. Alone, it is an optical element with no control system.
+
+## Mechanism
+
+The eye's optical power is divided: the cornea supplies most of it as a fixed contribution, while the lens supplies the smaller, adjustable share — roughly one third of the total — that makes accommodation possible. [CLM-564] The lens can perform this adjustable role only because the zonules hold it centered and the ciliary body changes the tension on it. Alone, it is an optical element with no control system. [CLM-565]
+
+## Source Notes
+
+Optical and anatomical claims rest on vision-science and ocular references (SRC-001, SRC-002, SRC-011). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

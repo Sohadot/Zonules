@@ -14,8 +14,8 @@ term_id: TRM-001
 concept_id: CON-suspension
 safety_class: medical-educational
 canonical: https://zonules.com/zonules-of-zinn/
-last_reviewed: 2026-06-12
-claims: [CLM-001, CLM-002, CLM-003, CLM-004, CLM-005]
+last_reviewed: 2026-06-14
+claims: [CLM-001, CLM-002, CLM-003, CLM-004, CLM-005, CLM-560, CLM-561]
 sources: [SRC-001, SRC-002, SRC-003, SRC-004]
 related_terms: [ciliary-body, crystalline-lens, lens-accommodation, lens-capsule]
 seo_title: "Zonules of Zinn — The Suspension System That Holds Focus | Zonules.com"
@@ -72,6 +72,14 @@ In machine perception, calibration and spatial grounding play the suspension rol
 - **Zonule vs. zonules.** A zonule names one fiber; the zonules name the suspension system. This asset is positioned around the system.
 - **Zonules vs. ciliary muscle.** The muscle generates force; the zonules transmit it. They are not the same structure and do not have the same function.
 - **Suspension vs. focusing.** The zonules do not focus light. They hold and reshape the lens that does. Confusing the holding structure with the optical element is exactly the error the focus-integrity thesis exists to correct.
+
+## Failure Mode
+
+When the zonular fibers weaken, stretch, or rupture, the lens is no longer held in even, centered tension and can tilt or displace — a condition described clinically as ectopia lentis. [CLM-560] The optical element itself is unchanged; what fails is the suspension that positions it. This is the defining signature of a Suspension Failure (FIO-01): the part everyone looks at is still present, and focus collapses anyway. [CLM-561]
+
+## Source Notes
+
+The anatomical claims on this page rest on standard ocular basic-science and anatomy references (SRC-001, SRC-002) and on institutional ophthalmology education material (SRC-003). The mapping of zonular mechanics onto the Focus Integrity Ontology is internal framework language (SRC-004) and is never presented as external clinical fact. For how these codes are read, see the [Focus Integrity Codes](/focus-integrity-codes/).
 
 ## Related Terms
 

@@ -14,9 +14,9 @@ term_id: TRM-029
 concept_id: CON-cortical-interpretation
 safety_class: medical-educational
 canonical: https://zonules.com/visual-cortex/
-last_reviewed: 2026-06-12
-claims: [CLM-107, CLM-108, CLM-109]
-sources: [SRC-001, SRC-005, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-107, CLM-108, CLM-109, CLM-570, CLM-571]
+sources: [SRC-001, SRC-005, SRC-004, SRC-010, SRC-009]
 related_terms: [optic-nerve, retina, visual-perception, macula]
 seo_title: "Visual Cortex — Where Interpretation Begins | Zonules.com"
 meta_description: "The primary visual cortex performs the first cortical stage of seeing, decomposing the retinal image into features. It is where interpretation begins. A governed reference unit."
@@ -58,6 +58,14 @@ The visual cortex is the physical substrate on which the perceptual processes of
 ## Relationship to Machine Vision (Layer 03)
 
 The feature-detecting organization of the visual cortex inspired the architecture of convolutional networks in machine vision, whose early layers also detect oriented edges and local features. The parallel is structural and historical, and is marked as internal framework language rather than a claim of equivalence.
+
+## Mechanism
+
+The primary visual cortex does not receive a finished picture; it decomposes the retinal signal into elementary features. Hubel and Wiesel demonstrated that its neurons are organized into orientation columns, each cell responding to edges at a particular orientation. [CLM-570] Higher areas combine these features into shapes, objects, and scenes. Because this is where signal becomes meaning, a cortical lesion can leave the eye and optic nerve intact yet still destroy recognition, motion perception, or awareness of half the visual field. [CLM-571]
+
+## Source Notes
+
+Cortical-physiology claims rest on neuroscience and perception references (SRC-001, SRC-005, SRC-009, SRC-010). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

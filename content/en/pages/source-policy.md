@@ -57,4 +57,4 @@ Anatomical and physiological reference content is educational only. It is not di
 
 ## Notes
 
-See the [methodology](/methodology/) for how this policy fits the wider governance system, the [medical disclaimer](/medical-disclaimer/) for the specific educational framing that applies to anatomical and physiological content, and the [glossary](/glossary/) for the reference units this policy governs.
+See the [methodology](/methodology/) for how this policy fits the wider governance system, the [medical disclaimer](/medical-disclaimer/) for the specific educational framing that applies to anatomical and physiological content, the [Focus Integrity Codes](/focus-integrity-codes/) for how each claim's failure class and standard criterion are tagged, and the [glossary](/glossary/) for the reference units this policy governs.

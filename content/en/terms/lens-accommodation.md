@@ -14,9 +14,9 @@ term_id: TRM-004
 concept_id: CON-accommodation
 safety_class: medical-educational
 canonical: https://zonules.com/lens-accommodation/
-last_reviewed: 2026-06-12
-claims: [CLM-014, CLM-015, CLM-016, CLM-017]
-sources: [SRC-001, SRC-003, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-014, CLM-015, CLM-016, CLM-017, CLM-562, CLM-563]
+sources: [SRC-001, SRC-003, SRC-004, SRC-025]
 related_terms: [zonules-of-zinn, ciliary-body, crystalline-lens]
 seo_title: "Lens Accommodation — Focus Integrity Across Distance | Zonules.com"
 meta_description: "Accommodation is how the eye changes optical power to focus across distances, driven by the ciliary muscle and the zonules. A governed reference unit on FIS-2."
@@ -63,6 +63,14 @@ In machine perception, accommodation corresponds to robustness against domain sh
 
 - **Accommodation vs. refraction.** Refraction is the bending of light by the eye's optics; accommodation is the *active adjustment* of the lens's contribution to that refraction.
 - **Presbyopia vs. failure of the zonules.** Age-related decline in accommodation is a normal change in the lens's elasticity and the accommodative system, not necessarily a failure of the zonular fibers themselves.
+
+## Failure Mode
+
+The characteristic failure of accommodation is not an inability to focus at all, but an inability to focus across a range. In presbyopia, the lens gradually loses the elasticity that lets it become more spherical for near work, and the near point recedes; the condition typically becomes noticeable in the fifth decade of life. [CLM-562] The suspension still holds and distance focus can remain intact — what is lost is range. [CLM-563] This is exactly the boundary FIS-2 names and FIO-02 describes.
+
+## Source Notes
+
+Physiological claims rest on ocular basic-science and institutional ophthalmology education references (SRC-001, SRC-003), with public eye-health framing available through the National Eye Institute (SRC-025). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

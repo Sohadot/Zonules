@@ -14,9 +14,9 @@ term_id: TRM-015
 concept_id: CON-structural-conduit
 safety_class: medical-educational
 canonical: https://zonules.com/optic-nerve/
-last_reviewed: 2026-06-12
-claims: [CLM-056, CLM-057, CLM-058]
-sources: [SRC-001, SRC-002, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-056, CLM-057, CLM-058, CLM-568, CLM-569]
+sources: [SRC-001, SRC-002, SRC-004, SRC-009]
 related_terms: [retina, photoreceptors, cornea]
 seo_title: "Optic Nerve — The Structural Conduit That Carries Focus | Zonules.com"
 meta_description: "The optic nerve carries one million retinal axons toward the brain. It is the structural conduit of vision: without its integrity, no signal reaches interpretation. A governed reference unit."
@@ -58,6 +58,14 @@ The optic nerve extends the thesis about hidden structural tension into the neur
 ## Relationship to Perception (Layer 02)
 
 In perception, the analogue of the optic nerve is the attentional pathway: the mechanism by which a selected percept reaches conscious processing. If that pathway is interrupted or overloaded, the signal does not reach interpretation regardless of how well attention selected it. This is a conceptual mapping, marked as internal framework language.
+
+## Failure Mode
+
+The optic nerve forms where retinal ganglion cell axons converge at the optic disc, and it behaves as central-nervous-system tissue rather than a peripheral nerve. [CLM-568] This has a structural consequence: damage to it produces visual-field loss that does not self-correct downstream, because the conduit cannot be rerouted and these axons do not regenerate in adults. [CLM-569] In focus-integrity terms it is a Suspension Failure (FIO-01) of the signal path: the focused signal exists but can no longer reach interpretation.
+
+## Source Notes
+
+Neuroanatomical claims rest on ocular and neuroscience references (SRC-001, SRC-002, SRC-009). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

@@ -1,7 +1,7 @@
 {
   "id": "SOURCES",
   "name": "Zonules.com Source Registry",
-  "version": "0.2",
+  "version": "0.3",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "classification_types": [
@@ -77,6 +77,158 @@
       "publisher": "C2PA",
       "scope": "Content provenance and authenticity standards relevant to image origin verification.",
       "note": "Standards-body reference for provenance and media authenticity. Cited for the existence and purpose of provenance standards, not for performance claims."
+    },
+    {
+      "id": "SRC-009",
+      "type": "academic-textbook",
+      "citation": "Kandel ER, Schwartz JH, Jessell TM, Siegelbaum SA, Hudspeth AJ. Principles of Neural Science.",
+      "publisher": "McGraw-Hill",
+      "scope": "Neuroscience of the visual pathway, retina, lateral geniculate nucleus, and visual cortex.",
+      "note": "Standard graduate reference for neuroscience and the central visual pathway."
+    },
+    {
+      "id": "SRC-010",
+      "type": "academic-textbook",
+      "citation": "Hubel DH, Wiesel TN. Brain and Visual Perception: The Story of a 25-Year Collaboration.",
+      "publisher": "Oxford University Press",
+      "scope": "Receptive-field organization and feature selectivity in the primary visual cortex.",
+      "note": "Primary-source account of orientation columns and cortical feature detection."
+    },
+    {
+      "id": "SRC-011",
+      "type": "academic-textbook",
+      "citation": "Wandell BA. Foundations of Vision.",
+      "publisher": "Sinauer Associates",
+      "scope": "Optics of the eye, retinal sampling, color, and the computational study of vision.",
+      "note": "Canonical vision-science reference bridging optics, retina, and perception."
+    },
+    {
+      "id": "SRC-012",
+      "type": "academic-textbook",
+      "citation": "Rodieck RW. The First Steps in Seeing.",
+      "publisher": "Sinauer Associates",
+      "scope": "Retinal structure and function, photoreceptors, and phototransduction.",
+      "note": "Detailed reference on the retina and the earliest stages of vision."
+    },
+    {
+      "id": "SRC-013",
+      "type": "academic-textbook",
+      "citation": "Purves D, Augustine GJ, Fitzpatrick D, et al. Neuroscience.",
+      "publisher": "Oxford University Press",
+      "scope": "General and visual neuroscience, oculomotor control, and central visual processing.",
+      "note": "Widely used neuroscience reference."
+    },
+    {
+      "id": "SRC-014",
+      "type": "academic-textbook",
+      "citation": "Snowden R, Thompson P, Troscianko T. Basic Vision: An Introduction to Visual Perception.",
+      "publisher": "Oxford University Press",
+      "scope": "Introductory visual perception: attention, organization, motion, and constancy.",
+      "note": "Accessible perception-science reference."
+    },
+    {
+      "id": "SRC-015",
+      "type": "academic-textbook",
+      "citation": "Bruce V, Green PR, Georgeson MA. Visual Perception: Physiology, Psychology and Ecology.",
+      "publisher": "Psychology Press",
+      "scope": "Perceptual physiology and psychology, including object and face perception.",
+      "note": "Standard reference integrating physiology and psychology of perception."
+    },
+    {
+      "id": "SRC-016",
+      "type": "academic-textbook",
+      "citation": "Marr D. Vision: A Computational Investigation into the Human Representation and Processing of Visual Information.",
+      "publisher": "MIT Press",
+      "scope": "Computational theory of vision; levels of analysis from signal to representation.",
+      "note": "Foundational text for computational approaches to vision."
+    },
+    {
+      "id": "SRC-017",
+      "type": "academic-textbook",
+      "citation": "Goodfellow I, Bengio Y, Courville A. Deep Learning.",
+      "publisher": "MIT Press",
+      "scope": "Deep learning theory and practice: representation learning, training, and generalization.",
+      "note": "Standard reference for deep learning methods."
+    },
+    {
+      "id": "SRC-018",
+      "type": "peer-reviewed",
+      "citation": "Vaswani A, Shazeer N, Parmar N, et al. Attention Is All You Need. Advances in Neural Information Processing Systems (NeurIPS), 2017.",
+      "publisher": "NeurIPS",
+      "scope": "Introduction of the transformer architecture and the self-attention mechanism.",
+      "note": "Peer-reviewed conference paper introducing the transformer."
+    },
+    {
+      "id": "SRC-019",
+      "type": "peer-reviewed",
+      "citation": "Dosovitskiy A, Beyer L, Kolesnikov A, et al. An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale. International Conference on Learning Representations (ICLR), 2021.",
+      "publisher": "ICLR",
+      "scope": "The Vision Transformer; treating image patches as a sequence for self-attention.",
+      "note": "Peer-reviewed paper extending transformers to images."
+    },
+    {
+      "id": "SRC-020",
+      "type": "peer-reviewed",
+      "citation": "Friston K. The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 2010.",
+      "publisher": "Nature Reviews Neuroscience",
+      "scope": "The free-energy principle and active inference as accounts of perception and action.",
+      "note": "Peer-reviewed review article on the free-energy principle."
+    },
+    {
+      "id": "SRC-021",
+      "type": "peer-reviewed",
+      "citation": "Rao RPN, Ballard DH. Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects. Nature Neuroscience, 1999.",
+      "publisher": "Nature Neuroscience",
+      "scope": "The predictive-coding model of hierarchical cortical processing.",
+      "note": "Peer-reviewed paper formalizing predictive coding in visual cortex."
+    },
+    {
+      "id": "SRC-022",
+      "type": "peer-reviewed",
+      "citation": "Russakovsky O, Deng J, Su H, et al. ImageNet Large Scale Visual Recognition Challenge. International Journal of Computer Vision, 2015.",
+      "publisher": "International Journal of Computer Vision",
+      "scope": "Large-scale image classification benchmark and its role in modern computer vision.",
+      "note": "Peer-reviewed paper documenting the ImageNet benchmark."
+    },
+    {
+      "id": "SRC-023",
+      "type": "peer-reviewed",
+      "citation": "Verdoliva L. Media Forensics and DeepFakes: An Overview. IEEE Journal of Selected Topics in Signal Processing, 2020.",
+      "publisher": "IEEE",
+      "scope": "Survey of deepfake generation and detection, and the limits of forensic detection.",
+      "note": "Peer-reviewed survey of media forensics and deepfake detection."
+    },
+    {
+      "id": "SRC-024",
+      "type": "peer-reviewed",
+      "citation": "Rossler A, Cozzolino D, Verdoliva L, et al. FaceForensics++: Learning to Detect Manipulated Facial Images. IEEE/CVF International Conference on Computer Vision (ICCV), 2019.",
+      "publisher": "ICCV",
+      "scope": "Benchmark dataset of authentic and manipulated facial videos for detection research.",
+      "note": "Peer-reviewed paper introducing a standard deepfake-detection benchmark."
+    },
+    {
+      "id": "SRC-025",
+      "type": "government-regulatory",
+      "citation": "National Eye Institute (NEI), U.S. National Institutes of Health — Public eye-health education resources.",
+      "publisher": "U.S. National Institutes of Health",
+      "scope": "Public, institutional eye-health and vision education material.",
+      "note": "Government health-institution reference, cited for public educational framing, not for diagnosis."
+    },
+    {
+      "id": "SRC-026",
+      "type": "medical-institution",
+      "citation": "World Health Organization — World Report on Vision.",
+      "publisher": "World Health Organization",
+      "scope": "Global vision health, the scope of vision impairment, and eye-care systems.",
+      "note": "Institutional reference for the public-health context of vision."
+    },
+    {
+      "id": "SRC-027",
+      "type": "academic-textbook",
+      "citation": "Bishop CM. Pattern Recognition and Machine Learning.",
+      "publisher": "Springer",
+      "scope": "Statistical pattern recognition, probabilistic models, and machine-learning foundations.",
+      "note": "Standard reference for the statistical foundations of machine learning."
     }
   ]
 }

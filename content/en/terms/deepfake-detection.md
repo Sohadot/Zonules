@@ -14,9 +14,9 @@ term_id: TRM-010
 concept_id: CON-provenance
 safety_class: technical
 canonical: https://zonules.com/deepfake-detection/
-last_reviewed: 2026-06-12
-claims: [CLM-038, CLM-039, CLM-040, CLM-041]
-sources: [SRC-007, SRC-008, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-038, CLM-039, CLM-040, CLM-041, CLM-587, CLM-588, CLM-589]
+sources: [SRC-007, SRC-008, SRC-004, SRC-023, SRC-024]
 related_terms: [machine-vision, image-provenance, synthetic-media, visual-perception]
 seo_title: "Deepfake Detection — The Provenance Problem of Machine Focus | Zonules.com"
 meta_description: "Deepfake detection asks whether what a system sees is real. In the focus-integrity thesis it is a provenance problem (FIO-04): detection is not the same as proof of origin."
@@ -59,6 +59,14 @@ Provenance has no anatomical analogue; the eye never evolved to ask whether ligh
 
 - **Detection vs. provenance.** Detection infers manipulation from the media; provenance establishes origin from a record. They are complementary, not interchangeable.
 - **Detection is permanent?** No. Detection and generation co-evolve; a detector accurate today can be defeated by a newer generator. Provenance does not decay the same way.
+
+## Why Detection Erodes
+
+Detection does not read an image's meaning; media-forensic methods search for low-level statistical traces left behind by the generation process. [CLM-587] Researchers train and test these methods on labeled benchmark datasets such as FaceForensics++, which pair authentic and manipulated videos. [CLM-588] The structural problem is that generators improve against exactly the traces detectors learn, so a detector accurate today can be defeated by a newer generator tomorrow. [CLM-589] Detection is a contest that erodes; provenance, a signed record of origin, is what does not. This is why FIO-04 is closed by provenance, not by ever-better detection alone.
+
+## Source Notes
+
+Detection claims rest on a media-forensics survey (SRC-023), a standard detection benchmark (SRC-024), and a computer-vision reference (SRC-007); provenance is sourced to a standards body (SRC-008). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

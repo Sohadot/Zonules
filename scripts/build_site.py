@@ -259,10 +259,17 @@ def render_unit(route, meta, body, claims_by_id, sources_by_id):
                   % (meta["layer"][-1], html.escape(LAYER_NAME[meta["layer"]]),
                      html.escape(meta.get("fio_class", "")),
                      html.escape(meta.get("fis_criterion", ""))))
+    codes_note = ""
+    if meta.get("layer") in ("L1", "L2", "L3"):
+        codes_note = ('<p class="rl-codes-note">These are '
+                      '<a href="/focus-integrity-codes/">Focus Integrity Codes</a>: '
+                      '<strong>FIO</strong> names the failure class this term belongs to in the '
+                      'ontology; <strong>FIS</strong> names the matching standard criterion. '
+                      '<a href="/focus-integrity-codes/">What do these codes mean?</a></p>')
     article = render_markdown(body)
     return (head(meta, route, json_ld(meta, route, cited)) +
             '\n<body class="rl">\n<main class="rl-wrap">\n' +
-            breadcrumb(meta, name) + badges + '<article class="rl-article">' +
+            breadcrumb(meta, name) + badges + codes_note + '<article class="rl-article">' +
             article + refs_html +
             '</article>\n'
             '<footer class="rl-foot"><a href="/glossary/">All reference units</a> · '
@@ -311,10 +318,16 @@ def render_glossary(routes, by_path):
             '<article class="rl-article"><h1>The Reference Index</h1>'
             '<p>Every unit below is a governed node in the focus-integrity system: '
             'registered, source-classified, internally linked, and safety-checked. '
-            'No page exists here that does not earn its place.</p>' +
+            'No page exists here that does not earn its place.</p>'
+            '<p>Each unit is tagged with two <a href="/focus-integrity-codes/">Focus Integrity '
+            'Codes</a>. The <strong>FIO</strong> code names the failure class the term belongs to; '
+            'the <strong>FIS</strong> code names the matching standard criterion. New readers can '
+            'start with <a href="/focus-integrity-codes/">what the codes mean</a> or the '
+            '<a href="/focus-integrity-ontology/">ontology</a> that defines them.</p>' +
             "".join(sections) +
             '</article>\n<footer class="rl-foot"><a href="/">Gateway</a> · '
             '<a href="/focus-integrity-ontology/">Ontology</a> · '
+            '<a href="/focus-integrity-codes/">Focus Integrity Codes</a> · '
             '<a href="/methodology/">Methodology</a> · <a href="/source-policy/">Source policy</a>'
             '</footer>\n</main>\n</body>\n</html>\n')
 
@@ -381,6 +394,10 @@ def render_ontology(routes, fio, fis):
             'defines what intact focus is; the <strong>Focus Integrity Ontology</strong> classifies how it '
             'fails. The same five-part structure runs through anatomy, perception, and machine vision — '
             'because the logic of held focus is one logic across all three.</p>'
+            '<p>Every reference unit is tagged with an <strong>FIO</strong> class and an '
+            '<strong>FIS</strong> criterion from this page. If you are meeting these codes for the '
+            'first time, the <a href="/focus-integrity-codes/">Focus Integrity Codes</a> page '
+            'explains what they are and how to read them.</p>'
             '<h2>The Focus Integrity Standard — what intact focus is</h2>'
             '<p>A seeing system has focus integrity when all five criteria hold (FIS v%s):</p>'
             '<ul class="ont-crit">%s</ul>'
@@ -390,6 +407,7 @@ def render_ontology(routes, fio, fis):
             '%s'
             '</article>\n'
             '<footer class="rl-foot"><a href="/glossary/">All reference units</a> · '
+            '<a href="/focus-integrity-codes/">Focus Integrity Codes</a> · '
             '<a href="/focus-integrity-engine/">Run the assessment</a> · '
             '<a href="/methodology/">Methodology</a></footer>\n'
             '</main>\n</body>\n</html>\n'

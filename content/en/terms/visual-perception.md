@@ -14,9 +14,9 @@ term_id: TRM-006
 concept_id: CON-perceptual-suspension
 safety_class: educational
 canonical: https://zonules.com/visual-perception/
-last_reviewed: 2026-06-12
-claims: [CLM-022, CLM-023, CLM-024, CLM-025]
-sources: [SRC-005, SRC-006, SRC-004]
+last_reviewed: 2026-06-14
+claims: [CLM-022, CLM-023, CLM-024, CLM-025, CLM-572, CLM-573]
+sources: [SRC-005, SRC-006, SRC-004, SRC-014]
 related_terms: [zonules-of-zinn, machine-vision]
 seo_title: "Visual Perception — How the Mind Holds Focus on Meaning | Zonules.com"
 meta_description: "Visual perception is the constructive process that turns visual input into stable meaning. The Layer 02 anchor of the focus-integrity thesis, bridging anatomy and machine vision."
@@ -61,6 +61,14 @@ Perception is the bridge to the technology layer. The questions perception answe
 
 - **Sensation vs. perception.** Sensation is the detection of stimuli; perception is their organization into meaning. The eye senses; the mind perceives.
 - **Seeing vs. understanding.** A clear retinal image does not guarantee correct interpretation. Perception can fail even when the optics are intact — the same gap that separates machine detection from machine understanding.
+
+## Human–Machine Bridge
+
+Perception is never a passive recording. It is shaped by both bottom-up sensory data and top-down knowledge and expectation, so the same retinal input can become different percepts depending on context and attention. [CLM-572] This is precisely the property that machine vision systems must engineer deliberately and often get wrong: a model, like a person, brings priors to an image, and those priors decide what it sees. Attention is the structure that holds an interpretation steady against competing stimuli; when it collapses, the percept is present but unstable — the perceptual form of suspension failure. [CLM-573]
+
+## Source Notes
+
+Perception-science claims rest on standard references in sensation, perception, and vision science (SRC-005, SRC-006, SRC-014). The focus-integrity mapping is internal framework language (SRC-004).
 
 ## Related Terms
 

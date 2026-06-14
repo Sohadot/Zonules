@@ -185,6 +185,23 @@ def main():
             elif status_by_code[code] != "launched" and r.get("indexable") is True:
                 errors.append(f"{r['path']} is in non-launched layer '{code}' but is indexable")
 
+    # 9c. Multilingual architecture validator (Sprint 7A).
+    multilingual_script = os.path.join(ROOT, "scripts", "validate_multilingual.py")
+    if os.path.exists(multilingual_script):
+        res = subprocess.run([sys.executable, multilingual_script],
+                             capture_output=True, text=True)
+        if res.returncode != 0:
+            for line in res.stdout.strip().splitlines():
+                if line.startswith("  - "):
+                    errors.append("multilingual: " + line[4:])
+
+    # 9d. Translation-map schema integrity (Sprint 7A).
+    tmap_path = os.path.join(ROOT, "data", "translation-map.json")
+    if os.path.exists(tmap_path):
+        tmap = load("translation-map.json")
+        if not tmap.get("schema_version"):
+            errors.append("translation-map.json: missing schema_version field")
+
     # 10. Static-security scan of content and data (No Hidden Infrastructure).
     # The generated engine page legitimately contains reviewed inline JS/CSS and
     # is excluded from this markdown-surface scan; its integrity is covered by 10a.

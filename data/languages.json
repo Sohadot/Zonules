@@ -1,36 +1,107 @@
 {
   "id": "LANGUAGES",
-  "name": "Zonules.com Language Layer Registry",
-  "version": "0.1",
-  "asset": "zonules.com",
-  "governing_document": "ASSET_THESIS.md",
-  "doctrine": "No Partial Language Doctrine: a language layer is exposed publicly (sitemap, hreflang, navigation) only when status == 'launched'. A registered but incomplete layer is 'blocked' and must never appear in public output.",
-  "canonical_language": "en",
+  "name": "Zonules.com Language Registry",
+  "version": "1.0",
+  "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
+  "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
+  "freeze_date": "2026-06-14",
+  "official_order": ["en", "fr", "de", "es", "zh", "ar", "ja", "ru"],
   "layers": [
     {
       "code": "en",
       "name": "English",
       "status": "launched",
-      "role": "Primary scientific, technical, institutional, and global reference layer.",
-      "public": true
+      "indexable": true,
+      "direction": "ltr",
+      "script": "Latin",
+      "priority": 1,
+      "url_prefix": null,
+      "launched_date": "2026-06-14",
+      "note": "Canonical master. Served at root. Frozen as of Sprint 6F."
     },
     {
       "code": "fr",
       "name": "French",
-      "status": "blocked",
-      "role": "Francophone scientific, medical, philosophical, educational, and AI reference layer.",
-      "public": false,
-      "launch_requirements": [
-        "Complete foundational navigation",
-        "Complete core reference units for all three layers",
-        "Complete metadata and canonical structure",
-        "Correct reciprocal hreflang with the English layer",
-        "Translated medical-safety, source, and acquisition language",
-        "Localized terminology reviewed for scientific meaning",
-        "No orphaned or machine-only-translated pages",
-        "Quality gate pass for the fr layer"
-      ],
-      "note": "Registered to reserve the architecture. Blocked from all public output until every launch requirement is met. Beginning a layer means registering and governing it — not exposing it partially."
+      "status": "architecture_defined",
+      "indexable": false,
+      "direction": "ltr",
+      "script": "Latin",
+      "priority": 2,
+      "url_prefix": "/fr/",
+      "launched_date": null,
+      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+    },
+    {
+      "code": "de",
+      "name": "German",
+      "status": "architecture_defined",
+      "indexable": false,
+      "direction": "ltr",
+      "script": "Latin",
+      "priority": 3,
+      "url_prefix": "/de/",
+      "launched_date": null,
+      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "status": "architecture_defined",
+      "indexable": false,
+      "direction": "ltr",
+      "script": "Latin",
+      "priority": 4,
+      "url_prefix": "/es/",
+      "launched_date": null,
+      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+    },
+    {
+      "code": "zh",
+      "name": "Chinese (Simplified)",
+      "status": "architecture_defined",
+      "indexable": false,
+      "direction": "ltr",
+      "script": "Han",
+      "priority": 5,
+      "url_prefix": "/zh/",
+      "launched_date": null,
+      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+    },
+    {
+      "code": "ar",
+      "name": "Arabic",
+      "status": "architecture_defined",
+      "indexable": false,
+      "direction": "rtl",
+      "script": "Arabic",
+      "priority": 6,
+      "url_prefix": "/ar/",
+      "launched_date": null,
+      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+    },
+    {
+      "code": "ja",
+      "name": "Japanese",
+      "status": "architecture_defined",
+      "indexable": false,
+      "direction": "ltr",
+      "script": "CJK",
+      "priority": 7,
+      "url_prefix": "/ja/",
+      "launched_date": null,
+      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+    },
+    {
+      "code": "ru",
+      "name": "Russian",
+      "status": "architecture_defined",
+      "indexable": false,
+      "direction": "ltr",
+      "script": "Cyrillic",
+      "priority": 8,
+      "url_prefix": "/ru/",
+      "launched_date": null,
+      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
     }
   ]
 }

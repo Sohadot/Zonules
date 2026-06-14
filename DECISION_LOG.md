@@ -1,4 +1,3 @@
-# DECISION_LOG.md
 
 **Zonules.com — Decision Log**
 **Sohadot Portfolio · agent@sohadot.com**
@@ -567,3 +566,70 @@ The English canonical master is **ready to freeze.** Evidence:
 - **Security/publication:** static-first; no APIs/forms/scripts/secrets; `/acquire/` noindex and excluded; sitemap = indexable routes.
 
 **Recommended next step:** declare the English corpus the canonical master and freeze the contract fields above, then proceed to **Sprint 7A — Multilingual Architecture** (governed translation on the frozen master, anchors first, FIO/FIS and Safety Notes held invariant). No further English numeric growth is needed before the freeze.
+
+
+## 2026-06-14 — Sprint 6F: English Canonical Master Freeze
+
+The English canonical master of Zonules.com is declared frozen. The 300-page corpus
+built over Sprints 1–6E has passed all governance gate checks and is accepted as the
+stable source of truth for all future multilingual expansion.
+
+### Freeze declaration
+
+- **English canonical corpus:** 300 governed reference pages accepted as the canonical
+  master. No further English numeric growth before multilingual expansion.
+- **Sitemap:** 299 indexable URLs (all approved, indexable routes). `/acquire/` noindex
+  and excluded.
+- **Claims:** 1336 registered claims (982 sourced, 354 internal-framework). All claims
+  resolve to registered sources. No unsourced claims.
+- **Sources:** 27 registered sources, all in use. `data/sources.json` v0.3.
+- **Route registry:** `data/routes.json` v2.6.
+- **Claims registry:** `data/claims.json` v1.8.
+- **FIO/FIS version:** v0.1 (frozen; version increment required for any class or
+  criterion redefinition).
+- **Interface:** Frozen. No structural, navigational, or CSS changes permitted without
+  a governance entry.
+- **Static-first posture:** Preserved. No APIs, Workers, forms, newsletter backend,
+  payment widgets, or third-party scripts present in any published page.
+
+### Governance gate
+
+Gate **PASS** — 300 pages, 1336 claims, 27 sources; broken_links=0, orphans=0,
+unsafe=0, unsourced_claims=0. Sitemap = 299 = indexable routes; `/acquire/` noindex
+and excluded; no `/site/` or `/static/` canonical paths; static-first security intact.
+
+### Freeze document created
+
+`docs/ENGLISH_MASTER_FREEZE.md` (v1.0) defines:
+
+- All frozen contract fields: `term_id`, `concept_id`, route `path` slug, `canonical`
+  URL, `fio_class` / `fis_criterion` (FIO/FIS classification), claim IDs
+  (`CLM-001`–`CLM-1336`), source IDs (`SRC-001`–`SRC-027`), `safety_class`, canonical
+  English title, canonical English definition, internal framework wording, Safety Notes
+  core meaning, medical disclaimer language, "detection is not diagnosis" language, and
+  source attribution boundaries.
+- The permitted-change / prohibited-change boundary.
+- Multilingual readiness requirements: English master as source of truth, route mapping,
+  concept identity, FIO/FIS identity, claim/source traceability, safety meaning, no thin
+  translation rule, no automatic uncontrolled translation rule.
+- Official future language order: English → French → German → Spanish → Chinese →
+  Arabic → Japanese → Russian.
+
+### Freeze validation added
+
+`scripts/validate_all.py` updated (Sprint 6F):
+
+- **Freeze floor guard:** Minimum count checks prevent silent deletion of frozen corpus
+  elements — route count must remain ≥ 300, claim count ≥ 1336, source count ≥ 27.
+- **`docs/` directory check refined:** Changed from checking the existence of the `docs/`
+  directory to checking for `docs/index.html` (the actual GitHub Pages publication risk),
+  allowing governance documents to reside in `docs/` without triggering a false gate
+  failure.
+- Future mutation-detection validator (freeze manifest, hreflang consistency) documented
+  as Sprint 7A — Multilingual Architecture requirement in `docs/ENGLISH_MASTER_FREEZE.md`.
+
+### Next phase
+
+**Sprint 7A — Multilingual Architecture.** Begin governed multilingual expansion on the
+frozen English master: French first, anchors first, FIO/FIS and Safety Notes held
+invariant across all languages. No further English numeric growth before this phase.

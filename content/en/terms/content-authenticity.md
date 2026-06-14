@@ -15,7 +15,7 @@ concept_id: CON-content-authenticity
 safety_class: technical
 canonical: https://zonules.com/content-authenticity/
 last_reviewed: 2026-06-14
-claims: [CLM-1116, CLM-1117, CLM-1118, CLM-1119]
+claims: [CLM-1116, CLM-1117, CLM-1118, CLM-1119, CLM-1286, CLM-1287, CLM-1288, CLM-1289, CLM-1290]
 sources: [SRC-008, SRC-004]
 related_terms: [image-provenance, digital-watermarking, media-forensics, synthetic-media, camera-fingerprinting]
 seo_title: "Content Authenticity | Zonules.com"
@@ -50,6 +50,27 @@ Content authenticity is a provenance-layer guarantee: it binds an origin claim t
 ## Relationship to the Governing Thesis
 
 Content Authenticity is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as an FIO-04 — Provenance concern, the same failure class whether the seeing system is made of tissue, attention, or silicon. The [Focus Integrity Codes](/focus-integrity-codes/) page explains how to read these codes.
+
+
+## Mechanism
+
+Content-authenticity systems attach cryptographically signed metadata at capture or edit, so that a later viewer verifies origin and edit history against the signature rather than trusting appearance. [CLM-1286]
+
+## Why It Matters
+
+As synthesis improves, authenticity cannot be read off the pixels, and a verifiable chain of custody becomes the only durable way to tell a real asset from a fabricated one. [CLM-1287]
+
+## Failure Mode
+
+Authenticity fails open: an asset without credentials is not proven fake, and credentials can be stripped, so the absence of provenance must be read as unknown rather than as falsity. [CLM-1288]
+
+## Common Misunderstanding
+
+Content credentials are sometimes expected to detect fakes; they do the opposite, certifying the authentic rather than catching the synthetic, which is why they complement forensics instead of replacing it. [CLM-1289]
+
+## Human–Machine Bridge
+
+Both human and machine consumers gain the same thing from provenance: an external warrant of origin that no internal visual analysis can supply. [CLM-1290]
 
 ## Related Terms
 

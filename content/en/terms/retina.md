@@ -15,7 +15,7 @@ concept_id: CON-interpretation-surface
 safety_class: medical-educational
 canonical: https://zonules.com/retina/
 last_reviewed: 2026-06-14
-claims: [CLM-049, CLM-050, CLM-051, CLM-566, CLM-567, CLM-843]
+claims: [CLM-049, CLM-050, CLM-051, CLM-566, CLM-567, CLM-843, CLM-1226, CLM-1227, CLM-1228, CLM-1229, CLM-1230]
 sources: [SRC-001, SRC-003, SRC-004, SRC-011, SRC-012]
 related_terms: [cornea, photoreceptors, optic-nerve, crystalline-lens]
 seo_title: "Retina — Where the Optical System Meets the Interpretive One | Zonules.com"
@@ -72,6 +72,19 @@ The retina is not a uniform sensor. It carries on the order of 120 million rods,
 ## Source Notes
 
 Retinal structure claims rest on vision-science and retina-specific references (SRC-001, SRC-003, SRC-011, SRC-012). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Why It Matters
+
+The retina is where light first becomes signal: every later act of perception and interpretation depends on what the retina does or fails to do at this conversion. [CLM-1226] It is the anchor for the separation layer of the thesis, the point at which the system first decides what counts as signal against noise. [CLM-1227]
+
+## Failure Mode
+
+Retinal failure degrades vision at its source: where photoreceptors or their supporting layers are lost, no downstream processing can recover the missing signal. [CLM-1228] The World Health Organization identifies retinal diseases among the significant contributors to the global burden of vision impairment. [CLM-1229]
+
+## Common Misunderstanding
+
+The retina is often described as a passive sensor like film, but it is an outgrowth of the brain that already performs substantial processing, including contrast enhancement, before any signal leaves the eye. [CLM-1230]
 
 ## Related Terms
 

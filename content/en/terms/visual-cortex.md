@@ -15,7 +15,7 @@ concept_id: CON-cortical-interpretation
 safety_class: medical-educational
 canonical: https://zonules.com/visual-cortex/
 last_reviewed: 2026-06-14
-claims: [CLM-107, CLM-108, CLM-109, CLM-570, CLM-571]
+claims: [CLM-107, CLM-108, CLM-109, CLM-570, CLM-571, CLM-1238, CLM-1239, CLM-1240, CLM-1241, CLM-1242]
 sources: [SRC-001, SRC-005, SRC-004, SRC-010, SRC-009]
 related_terms: [optic-nerve, retina, visual-perception, macula]
 seo_title: "Visual Cortex — Where Interpretation Begins | Zonules.com"
@@ -66,6 +66,19 @@ The primary visual cortex does not receive a finished picture; it decomposes the
 ## Source Notes
 
 Cortical-physiology claims rest on neuroscience and perception references (SRC-001, SRC-005, SRC-009, SRC-010). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Why It Matters
+
+The visual cortex is where the signal becomes sight: it is the first place the brain builds explicit representations of orientation, motion, depth, and form. [CLM-1238] It anchors the interpretation layer of the thesis, the level at which clean, held signal is finally read as meaning. [CLM-1239]
+
+## Failure Mode
+
+Cortical damage produces failures that the eye cannot explain: intact eyes can accompany an inability to recognize objects, perceive motion, or see one half of space. [CLM-1240] These dissociations show that interpretation is a distinct stage that can fail while every upstream structure remains sound. [CLM-1241]
+
+## Common Misunderstanding
+
+The visual cortex is sometimes imagined as a screen where an image is displayed; instead it is a network of feature-selective maps, with no single place where a finished picture appears. [CLM-1242]
 
 ## Related Terms
 

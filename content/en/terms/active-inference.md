@@ -15,7 +15,7 @@ concept_id: CON-active-inference
 safety_class: educational
 canonical: https://zonules.com/active-inference/
 last_reviewed: 2026-06-14
-claims: [CLM-444, CLM-445, CLM-446, CLM-447, CLM-578, CLM-579, CLM-580]
+claims: [CLM-444, CLM-445, CLM-446, CLM-447, CLM-578, CLM-579, CLM-580, CLM-1245, CLM-1246, CLM-1247]
 sources: [SRC-005, SRC-006, SRC-020, SRC-013]
 related_terms: ["predictive-coding", "visual-inference", "top-down-processing", "mental-imagery", "metacognition"]
 seo_title: "Active Inference | Zonules.com"
@@ -65,6 +65,15 @@ Active inference is influential in part because it describes agents in general, 
 ## Source Notes
 
 Claims rest on the free-energy literature (SRC-020) and standard perception and neuroscience references (SRC-005, SRC-006, SRC-013). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Why It Matters
+
+Active inference matters because it unifies perception and action under one objective: the system acts to make its sensory input match its predictions, not only updates its predictions to match input. [CLM-1245] For the thesis it shows that holding focus can be an active process, in which a seeing system moves and samples to keep uncertainty low. [CLM-1246]
+
+## Common Misunderstanding
+
+Active inference is often confused with simple prediction; the distinction is that the system also changes its sensory input through action, rather than only forecasting it. [CLM-1247]
 
 ## Related Terms
 

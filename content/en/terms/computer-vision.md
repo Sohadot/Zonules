@@ -15,7 +15,7 @@ concept_id: CON-machine-interpretation
 safety_class: technical
 canonical: https://zonules.com/computer-vision/
 last_reviewed: 2026-06-14
-claims: [CLM-067, CLM-068, CLM-069, CLM-070, CLM-581, CLM-582]
+claims: [CLM-067, CLM-068, CLM-069, CLM-070, CLM-581, CLM-582, CLM-1248, CLM-1249, CLM-1250, CLM-1251, CLM-1252]
 sources: [SRC-007, SRC-004, SRC-022, SRC-016]
 related_terms: [image-classification, machine-vision, deepfake-detection, image-provenance]
 seo_title: "Computer Vision — The Machine Layer of Focus Integrity | Zonules.com"
@@ -70,6 +70,19 @@ The modern field was reshaped by measurement. The move to deep convolutional net
 ## Source Notes
 
 Field-level claims rest on a standard computer-vision reference (SRC-007), a computational-vision foundation (SRC-016), and the ImageNet benchmark literature (SRC-022). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Why It Matters
+
+Computer vision matters because it is now embedded in consequential systems — medical screening, vehicles, content moderation, and surveillance — where a misread image carries real cost. [CLM-1248] In the thesis it is the layer where the entire focus-integrity standard becomes testable on machines, since every one of the five failure classes has a concrete computer-vision form. [CLM-1249]
+
+## Human–Machine Bridge
+
+Computer vision and biological vision are not analogies of convenience: both must suspend, accommodate, separate, attribute, and interpret, and both fail along those same five axes. [CLM-1250] This is the structural claim that lets Zonules.com treat anatomy, perception, and machine vision as one governed system rather than three fields. [CLM-1251]
+
+## Common Misunderstanding
+
+A persistent misunderstanding is that high benchmark accuracy means a system sees as a human does; benchmark accuracy measures performance on a distribution, not understanding, and can collapse under shift or attack. [CLM-1252]
 
 ## Related Terms
 

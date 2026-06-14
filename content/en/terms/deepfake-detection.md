@@ -15,7 +15,7 @@ concept_id: CON-provenance
 safety_class: technical
 canonical: https://zonules.com/deepfake-detection/
 last_reviewed: 2026-06-14
-claims: [CLM-038, CLM-039, CLM-040, CLM-041, CLM-587, CLM-588, CLM-589]
+claims: [CLM-038, CLM-039, CLM-040, CLM-041, CLM-587, CLM-588, CLM-589, CLM-1256, CLM-1257, CLM-1258, CLM-1259, CLM-1260, CLM-1261]
 sources: [SRC-007, SRC-008, SRC-004, SRC-023, SRC-024]
 related_terms: [machine-vision, image-provenance, synthetic-media, visual-perception]
 seo_title: "Deepfake Detection — The Provenance Problem of Machine Focus | Zonules.com"
@@ -67,6 +67,19 @@ Detection does not read an image's meaning; media-forensic methods search for lo
 ## Source Notes
 
 Detection claims rest on a media-forensics survey (SRC-023), a standard detection benchmark (SRC-024), and a computer-vision reference (SRC-007); provenance is sourced to a standards body (SRC-008). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Mechanism
+
+Deepfake detectors learn statistical traces left by synthesis — inconsistencies in texture, frequency, blending, or physiology — that distinguish generated media from captured media. [CLM-1256] Because detectors are trained against specific generators, their performance is tied to the manipulations they have seen. [CLM-1257]
+
+## Why It Matters
+
+Deepfake detection matters because synthetic media erodes the default assumption that an image is evidence, with direct consequences for journalism, courts, and public trust. [CLM-1258] In the thesis it is a provenance-layer concern: focus and clarity are intact, but the origin and authenticity of what is seen are in doubt. [CLM-1259]
+
+## Human–Machine Bridge
+
+Neither a human observer nor a detector can reliably establish authenticity from appearance alone once synthesis is good enough, which is why both ultimately need provenance, not sharper looking. [CLM-1260] The shared limit is the point of the FIO-04 class: separation and interpretation can succeed while provenance still fails. [CLM-1261]
 
 ## Related Terms
 

@@ -15,7 +15,7 @@ concept_id: CON-visual-field
 safety_class: medical-educational
 canonical: https://zonules.com/visual-field/
 last_reviewed: 2026-06-13
-claims: [CLM-376, CLM-377, CLM-378, CLM-379, CLM-845]
+claims: [CLM-376, CLM-377, CLM-378, CLM-379, CLM-845, CLM-1275, CLM-1276, CLM-1277, CLM-1278, CLM-1279, CLM-1280]
 sources: ["SRC-001", "SRC-003"]
 related_terms: ["fovea-centralis", "optic-nerve", "scotoma", "stereopsis", "vergence"]
 seo_title: "Visual Field | Zonules.com"
@@ -51,6 +51,27 @@ The visual field is a provenance boundary (FIO-04): it defines the scope of what
 ## Relationship to the Governing Thesis
 
 Visual Field is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as a FIO-04 — Provenance concern, the same failure class whether the seeing system is made of tissue, attention, or silicon.
+
+
+## Mechanism
+
+The visual field is the total area seen with the eyes held still, mapped onto the retina and preserved, in distorted form, through the visual pathway to the cortex. [CLM-1275]
+
+## Why It Matters
+
+Loss of part of the visual field can go unnoticed because the brain completes across the gap, which is why field testing is central to detecting conditions such as glaucoma; the World Health Organization lists glaucoma among leading causes of irreversible impairment. [CLM-1276] In the thesis the visual field is a provenance concern: the system cannot establish what occupies a region it does not sample. [CLM-1277]
+
+## Failure Mode
+
+Field defects are characteristically invisible to the person who has them, because the missing region is not seen as dark but is simply absent from awareness. [CLM-1278]
+
+## Common Misunderstanding
+
+A blind spot or field loss is often imagined as a black patch; in fact the visual system fills across it, so the loss is silent rather than visible. [CLM-1279]
+
+## Human–Machine Bridge
+
+A machine vision system has its own field of view and its own silent gaps beyond it, and like the eye it cannot report on what falls outside its sensor. [CLM-1280]
 
 ## Related Terms
 

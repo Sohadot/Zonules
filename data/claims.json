@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.6",
+  "version": "1.7",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -11007,6 +11007,958 @@
         "SRC-004"
       ],
       "page": "/image-embeddings/"
+    },
+    {
+      "id": "CLM-1196",
+      "status": "sourced",
+      "statement": "Object recognition is widely modeled as a processing hierarchy: early stages extract simple features such as edges and orientations, and later stages combine them into increasingly complex, view-tolerant representations of whole objects.",
+      "sources": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1197",
+      "status": "internal-framework",
+      "statement": "Within Zonules.com this hierarchy is read as a suspension structure for meaning: each level holds the level below in a stable relationship so that identity can survive changes in size, position, and lighting.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1198",
+      "status": "sourced",
+      "statement": "Object recognition is the perceptual act on which naming, memory, search, and action all depend; a system that cannot recognize cannot reliably remember or respond to what it sees.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1199",
+      "status": "internal-framework",
+      "statement": "In the focus-integrity thesis it marks the point where held, clean focus is finally converted into meaning, making it the payoff of every structural layer beneath it.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1200",
+      "status": "sourced",
+      "statement": "Recognition fails not only when an object is missed but when it is confidently misidentified: the percept is sharp and the wrong category is assigned.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1201",
+      "status": "sourced",
+      "statement": "Such errors rise with unusual viewpoints, partial occlusion, and atypical exemplars, where the learned regularities that normally recover identity no longer hold.",
+      "sources": [
+        "SRC-015"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1202",
+      "status": "sourced",
+      "statement": "Machine object recognition adopts the same hierarchical logic, learning feature detectors in early layers and category representations in deeper ones.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1203",
+      "status": "internal-framework",
+      "statement": "That shared structure is why one failure vocabulary, the focus-integrity ontology, can describe a person misreading a shape and a network misclassifying an image as the same FIO-05 interpretation failure.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1204",
+      "status": "sourced",
+      "statement": "A common misunderstanding is that recognizing an object is the same as detecting that something is present; detection locates, while recognition assigns identity, and a system can do one without the other.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/object-recognition/"
+    },
+    {
+      "id": "CLM-1205",
+      "status": "sourced",
+      "statement": "Scene understanding combines detection, segmentation, and relational reasoning so that a system represents not just which objects are present but how they are arranged and related.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1206",
+      "status": "sourced",
+      "statement": "It typically builds on lower-level outputs — labels, masks, and depth — and composes them into a structured description of the whole scene.",
+      "sources": [
+        "SRC-016"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1207",
+      "status": "sourced",
+      "statement": "Scene understanding is what separates a list of detections from a usable model of a situation, and it is the level at which autonomous systems decide how to act.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1208",
+      "status": "internal-framework",
+      "statement": "For the thesis it is the machine counterpart of held interpretation: the stage where separated, identified signal becomes a coherent reading of a world.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1209",
+      "status": "sourced",
+      "statement": "Scene understanding fails when individual elements are correct but their arrangement is misread, producing a confident description that does not match the real situation.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1210",
+      "status": "sourced",
+      "statement": "Because errors compound across stages, a small mistake in detection or depth can propagate into a wrong account of the entire scene.",
+      "sources": [
+        "SRC-016"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1211",
+      "status": "sourced",
+      "statement": "Human scene perception likewise integrates objects, surfaces, and spatial layout into a single gist rather than an inventory of parts.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1212",
+      "status": "internal-framework",
+      "statement": "Treating both under FIO-05 lets the same standard ask of a person and a machine whether the parts were assembled into the correct whole.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1213",
+      "status": "sourced",
+      "statement": "It is often assumed that accurate object detection implies scene understanding; in fact a system can label every object and still misunderstand how they relate.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/scene-understanding/"
+    },
+    {
+      "id": "CLM-1214",
+      "status": "sourced",
+      "statement": "The zonular fibers transmit the pull of the ciliary muscle to the lens capsule: when the muscle relaxes the fibers are taut and flatten the lens for distance, and when it contracts the fibers slacken and the elastic lens rounds up for near focus.",
+      "sources": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1215",
+      "status": "internal-framework",
+      "statement": "Focus is therefore set not by the lens alone but by a balance of tension across a ring of fibers that are never themselves in the image.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1216",
+      "status": "internal-framework",
+      "statement": "The zonules are the literal origin of the Zonules.com thesis: they are the hidden suspensory structure whose stable tension makes a sharp, adjustable image possible at all.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1217",
+      "status": "internal-framework",
+      "statement": "They make concrete a claim that recurs at every layer — that what holds focus is structural, invisible in the result, and noticed mainly when it fails.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1218",
+      "status": "internal-framework",
+      "statement": "A machine vision system has its own zonular equivalents: the calibration and spatial-grounding parameters that hold its reference frame steady so that what it focuses on stays where it belongs.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1219",
+      "status": "internal-framework",
+      "statement": "Naming this parallel is the point of the asset: the same suspension logic recurs whether the holding structure is fibrous tissue or learned calibration.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1220",
+      "status": "sourced",
+      "statement": "Accommodation changes the eye's focal power by reshaping the lens: ciliary-muscle contraction releases zonular tension, letting the elastic lens become more curved and shift focus to near objects.",
+      "sources": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-1221",
+      "status": "sourced",
+      "statement": "The process is continuous and reflexive, driven by retinal blur and disparity rather than conscious control.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-1222",
+      "status": "internal-framework",
+      "statement": "Accommodation is the eye's working proof that intact focus is range-dependent: a system that focuses at only one distance does not have focus integrity.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-1223",
+      "status": "internal-framework",
+      "statement": "It anchors the FIO-02 accommodation class for the whole corpus, giving the abstract idea of adjustable focus a concrete biological referent.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-1224",
+      "status": "internal-framework",
+      "statement": "The machine analogue of accommodation is a model's ability to adjust to new operating conditions; a network that performs only in its training regime is, in this sense, presbyopic.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-1225",
+      "status": "internal-framework",
+      "statement": "Domain shift in machine vision is the same failure class as a loss of accommodative range in the eye, which is why both map to FIO-02.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/lens-accommodation/"
+    },
+    {
+      "id": "CLM-1226",
+      "status": "sourced",
+      "statement": "The retina is where light first becomes signal: every later act of perception and interpretation depends on what the retina does or fails to do at this conversion.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-1227",
+      "status": "internal-framework",
+      "statement": "It is the anchor for the separation layer of the thesis, the point at which the system first decides what counts as signal against noise.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-1228",
+      "status": "sourced",
+      "statement": "Retinal failure degrades vision at its source: where photoreceptors or their supporting layers are lost, no downstream processing can recover the missing signal.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-1229",
+      "status": "sourced",
+      "statement": "The World Health Organization identifies retinal diseases among the significant contributors to the global burden of vision impairment.",
+      "sources": [
+        "SRC-026"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-1230",
+      "status": "sourced",
+      "statement": "The retina is often described as a passive sensor like film, but it is an outgrowth of the brain that already performs substantial processing, including contrast enhancement, before any signal leaves the eye.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/retina/"
+    },
+    {
+      "id": "CLM-1231",
+      "status": "sourced",
+      "statement": "The optic nerve carries the encoded output of more than a million retinal ganglion cells, whose axons converge at the optic disc and travel as a single bundle toward the brain.",
+      "sources": [
+        "SRC-001",
+        "SRC-013"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-1232",
+      "status": "sourced",
+      "statement": "The signal it carries is already processed: it is a stream of spikes encoding contrast and change, not a raw copy of the retinal image.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-1233",
+      "status": "sourced",
+      "statement": "The optic nerve is the sole channel between eye and brain; its integrity is a single point on which all of vision depends.",
+      "sources": [
+        "SRC-001"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-1234",
+      "status": "internal-framework",
+      "statement": "In thesis terms it is a suspension structure for the signal in transit: a hidden conduit whose failure is invisible until interpretation downstream goes dark.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-1235",
+      "status": "internal-framework",
+      "statement": "A machine vision pipeline has the same chokepoint wherever a single encoded representation is passed between stages, so that a corruption there cannot be recovered later.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-1236",
+      "status": "internal-framework",
+      "statement": "Both are FIO-01 suspension concerns: the question is whether the structure that carries the signal holds it intact.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-1237",
+      "status": "sourced",
+      "statement": "A frequent misunderstanding is that the optic nerve transmits a picture; it transmits a compressed neural code, which is why the brain, not the eye, is where the image is reconstructed.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/optic-nerve/"
+    },
+    {
+      "id": "CLM-1238",
+      "status": "sourced",
+      "statement": "The visual cortex is where the signal becomes sight: it is the first place the brain builds explicit representations of orientation, motion, depth, and form.",
+      "sources": [
+        "SRC-009",
+        "SRC-010"
+      ],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-1239",
+      "status": "internal-framework",
+      "statement": "It anchors the interpretation layer of the thesis, the level at which clean, held signal is finally read as meaning.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-1240",
+      "status": "sourced",
+      "statement": "Cortical damage produces failures that the eye cannot explain: intact eyes can accompany an inability to recognize objects, perceive motion, or see one half of space.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-1241",
+      "status": "sourced",
+      "statement": "These dissociations show that interpretation is a distinct stage that can fail while every upstream structure remains sound.",
+      "sources": [
+        "SRC-009"
+      ],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-1242",
+      "status": "sourced",
+      "statement": "The visual cortex is sometimes imagined as a screen where an image is displayed; instead it is a network of feature-selective maps, with no single place where a finished picture appears.",
+      "sources": [
+        "SRC-010"
+      ],
+      "page": "/visual-cortex/"
+    },
+    {
+      "id": "CLM-1243",
+      "status": "sourced",
+      "statement": "Predictive coding reframes perception as active inference rather than passive reception, which is why it matters far beyond neuroscience: it gives a single account of why expectation shapes what is seen.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/predictive-coding/"
+    },
+    {
+      "id": "CLM-1244",
+      "status": "internal-framework",
+      "statement": "In the thesis it explains how focus is stabilized — by continuously comparing incoming signal against structured expectation and propagating only the difference.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/predictive-coding/"
+    },
+    {
+      "id": "CLM-1245",
+      "status": "sourced",
+      "statement": "Active inference matters because it unifies perception and action under one objective: the system acts to make its sensory input match its predictions, not only updates its predictions to match input.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/active-inference/"
+    },
+    {
+      "id": "CLM-1246",
+      "status": "internal-framework",
+      "statement": "For the thesis it shows that holding focus can be an active process, in which a seeing system moves and samples to keep uncertainty low.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/active-inference/"
+    },
+    {
+      "id": "CLM-1247",
+      "status": "sourced",
+      "statement": "Active inference is often confused with simple prediction; the distinction is that the system also changes its sensory input through action, rather than only forecasting it.",
+      "sources": [
+        "SRC-020"
+      ],
+      "page": "/active-inference/"
+    },
+    {
+      "id": "CLM-1248",
+      "status": "sourced",
+      "statement": "Computer vision matters because it is now embedded in consequential systems — medical screening, vehicles, content moderation, and surveillance — where a misread image carries real cost.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/computer-vision/"
+    },
+    {
+      "id": "CLM-1249",
+      "status": "internal-framework",
+      "statement": "In the thesis it is the layer where the entire focus-integrity standard becomes testable on machines, since every one of the five failure classes has a concrete computer-vision form.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/computer-vision/"
+    },
+    {
+      "id": "CLM-1250",
+      "status": "internal-framework",
+      "statement": "Computer vision and biological vision are not analogies of convenience: both must suspend, accommodate, separate, attribute, and interpret, and both fail along those same five axes.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/computer-vision/"
+    },
+    {
+      "id": "CLM-1251",
+      "status": "internal-framework",
+      "statement": "This is the structural claim that lets Zonules.com treat anatomy, perception, and machine vision as one governed system rather than three fields.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/computer-vision/"
+    },
+    {
+      "id": "CLM-1252",
+      "status": "sourced",
+      "statement": "A persistent misunderstanding is that high benchmark accuracy means a system sees as a human does; benchmark accuracy measures performance on a distribution, not understanding, and can collapse under shift or attack.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/computer-vision/"
+    },
+    {
+      "id": "CLM-1253",
+      "status": "sourced",
+      "statement": "The attention mechanism at the core of transformers is a machine implementation of selective weighting, the same operation by which biological attention emphasizes some inputs over others.",
+      "sources": [
+        "SRC-018"
+      ],
+      "page": "/transformer-architecture/"
+    },
+    {
+      "id": "CLM-1254",
+      "status": "internal-framework",
+      "statement": "Reading both as ways of allocating limited focus is why attention failures in machines and in people share the suspension and interpretation classes of the ontology.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/transformer-architecture/"
+    },
+    {
+      "id": "CLM-1255",
+      "status": "sourced",
+      "statement": "It is commonly assumed that a transformer's attention weights are an explanation of its reasoning; attention indicates where the model looked, not why its output is correct, and the two can diverge.",
+      "sources": [
+        "SRC-019"
+      ],
+      "page": "/transformer-architecture/"
+    },
+    {
+      "id": "CLM-1256",
+      "status": "sourced",
+      "statement": "Deepfake detectors learn statistical traces left by synthesis — inconsistencies in texture, frequency, blending, or physiology — that distinguish generated media from captured media.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-1257",
+      "status": "sourced",
+      "statement": "Because detectors are trained against specific generators, their performance is tied to the manipulations they have seen.",
+      "sources": [
+        "SRC-024"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-1258",
+      "status": "sourced",
+      "statement": "Deepfake detection matters because synthetic media erodes the default assumption that an image is evidence, with direct consequences for journalism, courts, and public trust.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-1259",
+      "status": "internal-framework",
+      "statement": "In the thesis it is a provenance-layer concern: focus and clarity are intact, but the origin and authenticity of what is seen are in doubt.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-1260",
+      "status": "internal-framework",
+      "statement": "Neither a human observer nor a detector can reliably establish authenticity from appearance alone once synthesis is good enough, which is why both ultimately need provenance, not sharper looking.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-1261",
+      "status": "internal-framework",
+      "statement": "The shared limit is the point of the FIO-04 class: separation and interpretation can succeed while provenance still fails.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/deepfake-detection/"
+    },
+    {
+      "id": "CLM-1262",
+      "status": "sourced",
+      "statement": "Image provenance binds verifiable metadata to an asset — recording its origin and the chain of edits — typically through cryptographically signed content credentials.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-1263",
+      "status": "sourced",
+      "statement": "Unlike forensic detection, which infers authenticity after the fact, provenance is asserted at creation and checked later against a signature.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-1264",
+      "status": "sourced",
+      "statement": "Provenance matters because detection is an arms race it can lose; a durable record of origin shifts the question from can we spot the fake to can we verify the real.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-1265",
+      "status": "internal-framework",
+      "statement": "In the thesis it is the provenance criterion made operational: the standard by which a seeing system establishes where what it sees came from.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-1266",
+      "status": "internal-framework",
+      "statement": "Both people and machines need an external chain of custody to trust an image, because no amount of internal visual processing can recover an origin the pixels do not contain.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-1267",
+      "status": "internal-framework",
+      "statement": "This is why provenance is treated as infrastructure for visual trust rather than as another detection model.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/image-provenance/"
+    },
+    {
+      "id": "CLM-1268",
+      "status": "sourced",
+      "statement": "Visual acuity is set by the optics of the eye, the sampling density of foveal cones, and the neural processing that follows, and is commonly measured as the smallest detail resolvable at a standard distance.",
+      "sources": [
+        "SRC-011",
+        "SRC-005"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-1269",
+      "status": "sourced",
+      "statement": "Acuity is highest at the fovea and falls steeply into the periphery, so a single acuity value describes only central vision.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-1270",
+      "status": "sourced",
+      "statement": "Visual acuity is the most widely used practical index of how well an eye resolves detail, and the World Health Organization frames reduced acuity as the principal measure of vision impairment worldwide.",
+      "sources": [
+        "SRC-026"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-1271",
+      "status": "internal-framework",
+      "statement": "In the thesis it is a direct readout of the separation layer: how finely the system distinguishes signal from blur.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-1272",
+      "status": "sourced",
+      "statement": "Acuity degrades whenever any link in the chain fails — defocus, optical aberration, retinal loss, or neural damage — and a single number cannot say which link is responsible.",
+      "sources": [
+        "SRC-011"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-1273",
+      "status": "sourced",
+      "statement": "Twenty-twenty acuity is often taken to mean perfect vision; it is only a benchmark for central detail and says nothing about the visual field, contrast, color, or motion.",
+      "sources": [
+        "SRC-005"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-1274",
+      "status": "internal-framework",
+      "statement": "A camera or vision model has an analogous resolution limit, and like acuity it bounds the finest signal the system can separate before interpretation begins.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-acuity/"
+    },
+    {
+      "id": "CLM-1275",
+      "status": "sourced",
+      "statement": "The visual field is the total area seen with the eyes held still, mapped onto the retina and preserved, in distorted form, through the visual pathway to the cortex.",
+      "sources": [
+        "SRC-001",
+        "SRC-013"
+      ],
+      "page": "/visual-field/"
+    },
+    {
+      "id": "CLM-1276",
+      "status": "sourced",
+      "statement": "Loss of part of the visual field can go unnoticed because the brain completes across the gap, which is why field testing is central to detecting conditions such as glaucoma; the World Health Organization lists glaucoma among leading causes of irreversible impairment.",
+      "sources": [
+        "SRC-026"
+      ],
+      "page": "/visual-field/"
+    },
+    {
+      "id": "CLM-1277",
+      "status": "internal-framework",
+      "statement": "In the thesis the visual field is a provenance concern: the system cannot establish what occupies a region it does not sample.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-field/"
+    },
+    {
+      "id": "CLM-1278",
+      "status": "sourced",
+      "statement": "Field defects are characteristically invisible to the person who has them, because the missing region is not seen as dark but is simply absent from awareness.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/visual-field/"
+    },
+    {
+      "id": "CLM-1279",
+      "status": "sourced",
+      "statement": "A blind spot or field loss is often imagined as a black patch; in fact the visual system fills across it, so the loss is silent rather than visible.",
+      "sources": [
+        "SRC-013"
+      ],
+      "page": "/visual-field/"
+    },
+    {
+      "id": "CLM-1280",
+      "status": "internal-framework",
+      "statement": "A machine vision system has its own field of view and its own silent gaps beyond it, and like the eye it cannot report on what falls outside its sensor.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/visual-field/"
+    },
+    {
+      "id": "CLM-1281",
+      "status": "sourced",
+      "statement": "Diffusion models are trained to reverse a gradual noising process, learning at each step to denoise toward the data distribution, and they generate by running this learned reversal from pure noise.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-1282",
+      "status": "sourced",
+      "statement": "Diffusion models now produce photorealistic images and video at scale, which makes synthetic media cheap and ubiquitous and turns provenance from a niche concern into infrastructure.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-1283",
+      "status": "sourced",
+      "statement": "Their characteristic failure is not blur but confident fabrication: coherent depictions of things that never existed, plus subtle artifacts that detectors must keep chasing as the models improve.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-1284",
+      "status": "sourced",
+      "statement": "It is often assumed a realistic generated image must be based on a real source; a diffusion sample has no referent, which is exactly why appearance cannot certify authenticity.",
+      "sources": [
+        "SRC-023"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-1285",
+      "status": "internal-framework",
+      "statement": "Neither a person nor a detector can reliably distinguish a strong diffusion output from a photograph by looking, so both must fall back on provenance — the FIO-04 lesson.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/diffusion-models/"
+    },
+    {
+      "id": "CLM-1286",
+      "status": "sourced",
+      "statement": "Content-authenticity systems attach cryptographically signed metadata at capture or edit, so that a later viewer verifies origin and edit history against the signature rather than trusting appearance.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1287",
+      "status": "sourced",
+      "statement": "As synthesis improves, authenticity cannot be read off the pixels, and a verifiable chain of custody becomes the only durable way to tell a real asset from a fabricated one.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1288",
+      "status": "sourced",
+      "statement": "Authenticity fails open: an asset without credentials is not proven fake, and credentials can be stripped, so the absence of provenance must be read as unknown rather than as falsity.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1289",
+      "status": "sourced",
+      "statement": "Content credentials are sometimes expected to detect fakes; they do the opposite, certifying the authentic rather than catching the synthetic, which is why they complement forensics instead of replacing it.",
+      "sources": [
+        "SRC-008"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1290",
+      "status": "internal-framework",
+      "statement": "Both human and machine consumers gain the same thing from provenance: an external warrant of origin that no internal visual analysis can supply.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/content-authenticity/"
+    },
+    {
+      "id": "CLM-1291",
+      "status": "sourced",
+      "statement": "Ophthalmic AI applies image-analysis models to eye images such as retinal photographs and optical-coherence-tomography scans to flag patterns statistically associated with disease.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/ophthalmic-ai/"
+    },
+    {
+      "id": "CLM-1292",
+      "status": "sourced",
+      "statement": "Because much of the global vision-impairment burden is avoidable and access to specialists is uneven, the World Health Organization points to scalable screening, including ophthalmic AI, as a way to extend reach.",
+      "sources": [
+        "SRC-026"
+      ],
+      "page": "/ophthalmic-ai/"
+    },
+    {
+      "id": "CLM-1293",
+      "status": "sourced",
+      "statement": "These systems fail like other vision models — under distribution shift, biased data, and unfamiliar devices — and a flag is a statistical association, not a clinical finding.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/ophthalmic-ai/"
+    },
+    {
+      "id": "CLM-1294",
+      "status": "internal-framework",
+      "statement": "A common and consequential misunderstanding is that an AI flag is a diagnosis; detecting a pattern is not the same as a clinical determination, which remains the role of a qualified eye-care professional.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ophthalmic-ai/"
+    },
+    {
+      "id": "CLM-1295",
+      "status": "internal-framework",
+      "statement": "Ophthalmic AI and the clinician form a pipeline in which the model narrows attention and the human interprets and decides; treating the model's output as the decision collapses that division.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/ophthalmic-ai/"
+    },
+    {
+      "id": "CLM-1296",
+      "status": "sourced",
+      "statement": "Medical imaging AI trains models to detect, segment, or classify findings in modalities such as radiographs, computed tomography, magnetic resonance imaging, and pathology slides.",
+      "sources": [
+        "SRC-007"
+      ],
+      "page": "/medical-imaging-ai/"
+    },
+    {
+      "id": "CLM-1297",
+      "status": "sourced",
+      "statement": "It promises to extend scarce expert capacity, but the stakes of a misread make calibration, robustness, and human oversight matter more here than in almost any other application of vision.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/medical-imaging-ai/"
+    },
+    {
+      "id": "CLM-1298",
+      "status": "sourced",
+      "statement": "Models can latch onto spurious correlates — scanner type, markers, or acquisition artifacts — and report confident findings that do not generalize to a new hospital.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/medical-imaging-ai/"
+    },
+    {
+      "id": "CLM-1299",
+      "status": "sourced",
+      "statement": "High reported accuracy is often read as clinical readiness; performance on a curated dataset does not establish safety or generalization, and detection is not diagnosis.",
+      "sources": [
+        "SRC-017"
+      ],
+      "page": "/medical-imaging-ai/"
+    },
+    {
+      "id": "CLM-1300",
+      "status": "internal-framework",
+      "statement": "As in ophthalmic AI, the model is an attention and triage aid within a human-led process, and its output is evidence to be weighed rather than a verdict to be obeyed.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/medical-imaging-ai/"
     }
   ]
 }

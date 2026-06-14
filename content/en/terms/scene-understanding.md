@@ -15,7 +15,7 @@ concept_id: CON-scene-understanding
 safety_class: technical
 canonical: https://zonules.com/scene-understanding/
 last_reviewed: 2026-06-13
-claims: [CLM-196, CLM-197, CLM-198, CLM-199]
+claims: [CLM-196, CLM-197, CLM-198, CLM-199, CLM-1205, CLM-1206, CLM-1207, CLM-1208, CLM-1209, CLM-1210, CLM-1211, CLM-1212, CLM-1213]
 sources: [SRC-007]
 related_terms: [semantic-segmentation, visual-grounding, object-detection, optical-flow, visual-scene-parsing, neural-network-interpretability]
 seo_title: "Scene Understanding — Structured Semantic Interpretation in Machine Vision | Zonules.com"
@@ -49,6 +49,31 @@ In the Zonules FIO framework, scene understanding is classified under FIO-05 Int
 ## Relationship to the Governing Thesis
 
 Scene Understanding is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as a FIO-05 (Interpretation) concern, the same failure class whether the seeing system is made of tissue, attention, or silicon.
+
+
+## Mechanism
+
+Scene understanding combines detection, segmentation, and relational reasoning so that a system represents not just which objects are present but how they are arranged and related. [CLM-1205] It typically builds on lower-level outputs — labels, masks, and depth — and composes them into a structured description of the whole scene. [CLM-1206]
+
+## Why It Matters
+
+Scene understanding is what separates a list of detections from a usable model of a situation, and it is the level at which autonomous systems decide how to act. [CLM-1207] For the thesis it is the machine counterpart of held interpretation: the stage where separated, identified signal becomes a coherent reading of a world. [CLM-1208]
+
+## Failure Mode
+
+Scene understanding fails when individual elements are correct but their arrangement is misread, producing a confident description that does not match the real situation. [CLM-1209] Because errors compound across stages, a small mistake in detection or depth can propagate into a wrong account of the entire scene. [CLM-1210]
+
+## Human–Machine Bridge
+
+Human scene perception likewise integrates objects, surfaces, and spatial layout into a single gist rather than an inventory of parts. [CLM-1211] Treating both under FIO-05 lets the same standard ask of a person and a machine whether the parts were assembled into the correct whole. [CLM-1212]
+
+## Common Misunderstanding
+
+It is often assumed that accurate object detection implies scene understanding; in fact a system can label every object and still misunderstand how they relate. [CLM-1213]
+
+## Source Notes
+
+Scene-understanding claims rest on computer-vision references (SRC-007, SRC-016) for the machine account and a perception reference (SRC-005) for the human parallel. The framing of scene understanding as held machine interpretation is internal Zonules.com language (SRC-004).
 
 ## Related Terms
 

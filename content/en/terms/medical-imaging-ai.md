@@ -15,7 +15,7 @@ concept_id: CON-medical-imaging-ai
 safety_class: medical-educational
 canonical: https://zonules.com/medical-imaging-ai/
 last_reviewed: 2026-06-13
-claims: [CLM-216, CLM-217, CLM-218, CLM-219]
+claims: [CLM-216, CLM-217, CLM-218, CLM-219, CLM-1296, CLM-1297, CLM-1298, CLM-1299, CLM-1300]
 sources: [SRC-007]
 related_terms: [ophthalmic-ai, domain-shift, model-calibration, semantic-segmentation, neural-network-interpretability]
 seo_title: "Medical Imaging AI — High-Stakes Machine Interpretation of Clinical Images | Zonules.com"
@@ -49,6 +49,27 @@ In the Zonules FIO framework, medical imaging AI is classified under FIO-05 Inte
 ## Relationship to the Governing Thesis
 
 Medical Imaging AI is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as a FIO-05 (Interpretation) concern, the same failure class whether the seeing system is made of tissue, attention, or silicon.
+
+
+## Mechanism
+
+Medical imaging AI trains models to detect, segment, or classify findings in modalities such as radiographs, computed tomography, magnetic resonance imaging, and pathology slides. [CLM-1296]
+
+## Why It Matters
+
+It promises to extend scarce expert capacity, but the stakes of a misread make calibration, robustness, and human oversight matter more here than in almost any other application of vision. [CLM-1297]
+
+## Failure Mode
+
+Models can latch onto spurious correlates — scanner type, markers, or acquisition artifacts — and report confident findings that do not generalize to a new hospital. [CLM-1298]
+
+## Common Misunderstanding
+
+High reported accuracy is often read as clinical readiness; performance on a curated dataset does not establish safety or generalization, and detection is not diagnosis. [CLM-1299]
+
+## Human–Machine Bridge
+
+As in ophthalmic AI, the model is an attention and triage aid within a human-led process, and its output is evidence to be weighed rather than a verdict to be obeyed. [CLM-1300]
 
 ## Related Terms
 

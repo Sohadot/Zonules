@@ -494,3 +494,40 @@ Gate **PASS** — 300 pages, 1195 claims, 27 sources; broken_links=0, orphans=0,
 
 ### Recommendation
 Proceed to **Sprint 6D — Canonical Authority Hardening** on the Critical list above, then freeze the English master before any multilingual work (Sprint 7A). Translating before the anchors carry full reference depth would propagate weakness across every language; hardening first protects the path to ~2400 governed pages without loss of quality.
+
+## 2026-06-14 — Sprint 6D: Canonical Authority Hardening
+
+Deepened the critical spine and high-value pages into sovereign reference-grade anchors — no new pages, no interface change. The goal was authority and conceptual depth, not page count: making the pages that lead the corpus answer all five canonical questions (What / How / Why it matters / Where it fails / How it connects to focus integrity).
+
+### What was hardened
+
+**Critical spine (13 markdown anchors) — full analytical depth added where missing:** zonules-of-zinn, lens-accommodation, retina, optic-nerve, visual-cortex (L1); predictive-coding, active-inference, object-recognition (L2); scene-understanding, computer-vision, transformer-architecture, deepfake-detection, image-provenance (L3). Sections added per page from the set {Mechanism, Why It Matters, Failure Mode, Human–Machine Bridge, Common Misunderstanding, Source Notes}, with no heading duplicated against what each page already had. Word counts roughly doubled to tripled (e.g., object-recognition 337→730, scene-understanding →746, the anatomy/CV anchors to ~1000–1165 words). Batch total: +42 sections, +72 registered claims (CLM-1196…CLM-1267).
+
+**Important (6 pages) — same treatment, with strengthened medical-safety framing:** visual-acuity, visual-field (public-health relevance, WHO-anchored), diffusion-models, content-authenticity (provenance), ophthalmic-ai, medical-imaging-ai. The two medical-AI pages carry an explicit "detection is not diagnosis" Common Misunderstanding and a Human–Machine Bridge that keeps the model as a triage aid within a human-led process. Batch total: +30 sections, +33 claims (CLM-1268…CLM-1300).
+
+**Generated authority surfaces (focus-integrity-ontology, focus-integrity-codes, glossary):** reviewed and left unchanged. These are already governance-grade — the codes page already carries "how to read a page," a worked example, and an explicit "for AI agents and citation systems" section; the ontology and glossary are generated deterministically from the registries. Adding prose here would be filler, which the sprint forbids.
+
+### Authoring discipline
+
+Each added section is page-specific and non-templated: the Human–Machine Bridge on `optic-nerve` is about an irreversible single-channel chokepoint; on `transformer-architecture` it is about attention as machine selective weighting; on `content-authenticity` it is about an external warrant of origin. Every new factual sentence is a registered claim — sourced where a registered reference supports it, internal-framework (SRC-004) where it is Zonules.com thesis interpretation. No new sources were added; all 27 remain in use.
+
+### Results
+
+- **Deep-section coverage** (reference units containing each section): Mechanism 6→19, Why It Matters 1→19, Human–Machine Bridge 3→18, Failure Mode 5→15, Common Misunderstanding 1→15, Source Notes 13→15.
+- **Claims:** 1195 → **1300** (957 sourced, 343 internal-framework; sourced remains the majority). No page over-relies on internal-framework claims.
+- **Stakeholder reach:** each hardened page now serves at least three groups — e.g., the medical-AI pages serve developers, clinicians/regulators, and journalists with an explicit detection-vs-diagnosis boundary; the provenance pages serve journalists, companies, and AI teams.
+
+### State changes
+
+`data/routes.json` v2.4 → **v2.5** (claim_requirements/source_requirements extended on 19 pages; no route added). `data/claims.json` v1.6 → **v1.7** (1300). `data/sources.json` unchanged (v0.3). Page count unchanged (300); sitemap unchanged (299). Root pages regenerated.
+
+### Verification
+
+Gate **PASS** — 300 pages, 1300 claims, 27 sources; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Every reference unit retains ≥2 inbound and ≥3 outbound links (no orphan-risk). Sitemap = 299 = indexable routes; `/acquire/` noindex and excluded; no `/site/` or `/static/` canonical paths; static-first security intact; medical pages retain the eye-care disclaimer.
+
+### Recommendation — English master freeze
+
+The critical spine now carries reference-grade depth, the source registry is fully used, the link graph has no orphan-risk, and SEO/AI-readability/security audits are clean. The English canonical layer is ready to be declared the **canonical master** and frozen before multilingual work. Suggested path:
+1. **Optional Sprint 6E (minor):** harden the remaining Important-tier pages (visual-working-memory, perceptual-error, camera-fingerprinting, perceptual-hashing, dorsal-stream, ventral-stream) and optionally trim the ~20 long anchor metas — small, safe, non-blocking.
+2. **English Master Freeze:** declare the English corpus the canonical reference layer; freeze FIO/FIS codes, term_id/concept_id, canonical URLs, claim IDs, and source classifications as the stable contract that translations must preserve.
+3. **Sprint 7A — Multilingual Architecture:** begin governed translation on the frozen master, anchors first, with FIO/FIS and source notes held invariant across languages.

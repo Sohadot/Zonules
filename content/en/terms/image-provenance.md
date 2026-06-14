@@ -15,7 +15,7 @@ concept_id: CON-provenance
 safety_class: technical
 canonical: https://zonules.com/image-provenance/
 last_reviewed: 2026-06-14
-claims: [CLM-042, CLM-043, CLM-044, CLM-045, CLM-590, CLM-591]
+claims: [CLM-042, CLM-043, CLM-044, CLM-045, CLM-590, CLM-591, CLM-1262, CLM-1263, CLM-1264, CLM-1265, CLM-1266, CLM-1267]
 sources: [SRC-008, SRC-004, SRC-023]
 related_terms: [machine-vision, deepfake-detection, synthetic-media, visual-perception]
 seo_title: "Image Provenance — The Origin Record Behind Visual Truth | Zonules.com"
@@ -67,6 +67,19 @@ Provenance and detection are often confused because both bear on whether an imag
 ## Source Notes
 
 Provenance claims rest on a content-provenance standards body (SRC-008), cited for the existence and purpose of provenance standards rather than any performance claim, with the detection contrast drawn from a media-forensics survey (SRC-023). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Mechanism
+
+Image provenance binds verifiable metadata to an asset — recording its origin and the chain of edits — typically through cryptographically signed content credentials. [CLM-1262] Unlike forensic detection, which infers authenticity after the fact, provenance is asserted at creation and checked later against a signature. [CLM-1263]
+
+## Why It Matters
+
+Provenance matters because detection is an arms race it can lose; a durable record of origin shifts the question from can we spot the fake to can we verify the real. [CLM-1264] In the thesis it is the provenance criterion made operational: the standard by which a seeing system establishes where what it sees came from. [CLM-1265]
+
+## Human–Machine Bridge
+
+Both people and machines need an external chain of custody to trust an image, because no amount of internal visual processing can recover an origin the pixels do not contain. [CLM-1266] This is why provenance is treated as infrastructure for visual trust rather than as another detection model. [CLM-1267]
 
 ## Related Terms
 

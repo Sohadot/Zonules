@@ -15,7 +15,7 @@ concept_id: CON-diffusion-models
 safety_class: technical
 canonical: https://zonules.com/diffusion-models/
 last_reviewed: 2026-06-14
-claims: [CLM-808, CLM-809, CLM-810, CLM-811]
+claims: [CLM-808, CLM-809, CLM-810, CLM-811, CLM-1281, CLM-1282, CLM-1283, CLM-1284, CLM-1285]
 sources: [SRC-017, SRC-023, SRC-004]
 related_terms: [generative-adversarial-networks, generative-models, image-synthesis, synthetic-media]
 seo_title: "Diffusion Models | Zonules.com"
@@ -50,6 +50,27 @@ Diffusion models are a provenance-layer challenge — they manufacture convincin
 ## Relationship to the Governing Thesis
 
 Diffusion Models is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as an FIO-04 — Provenance concern, the same failure class whether the seeing system is made of tissue, attention, or silicon. The [Focus Integrity Codes](/focus-integrity-codes/) page explains how to read these codes.
+
+
+## Mechanism
+
+Diffusion models are trained to reverse a gradual noising process, learning at each step to denoise toward the data distribution, and they generate by running this learned reversal from pure noise. [CLM-1281]
+
+## Why It Matters
+
+Diffusion models now produce photorealistic images and video at scale, which makes synthetic media cheap and ubiquitous and turns provenance from a niche concern into infrastructure. [CLM-1282]
+
+## Failure Mode
+
+Their characteristic failure is not blur but confident fabrication: coherent depictions of things that never existed, plus subtle artifacts that detectors must keep chasing as the models improve. [CLM-1283]
+
+## Common Misunderstanding
+
+It is often assumed a realistic generated image must be based on a real source; a diffusion sample has no referent, which is exactly why appearance cannot certify authenticity. [CLM-1284]
+
+## Human–Machine Bridge
+
+Neither a person nor a detector can reliably distinguish a strong diffusion output from a photograph by looking, so both must fall back on provenance — the FIO-04 lesson. [CLM-1285]
 
 ## Related Terms
 

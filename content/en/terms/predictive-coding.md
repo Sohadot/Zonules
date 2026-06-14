@@ -15,7 +15,7 @@ concept_id: CON-predictive-coding
 safety_class: educational
 canonical: https://zonules.com/predictive-coding/
 last_reviewed: 2026-06-14
-claims: [CLM-384, CLM-385, CLM-386, CLM-387, CLM-574, CLM-575, CLM-576, CLM-577]
+claims: [CLM-384, CLM-385, CLM-386, CLM-387, CLM-574, CLM-575, CLM-576, CLM-577, CLM-1243, CLM-1244]
 sources: [SRC-005, SRC-006, SRC-021, SRC-020, SRC-017]
 related_terms: ["top-down-processing", "visual-inference", "active-inference", "face-perception", "object-recognition"]
 seo_title: "Predictive Coding | Zonules.com"
@@ -69,6 +69,11 @@ Predictive coding does not claim the brain ignores the senses. Sensory input rem
 ## Source Notes
 
 Cognitive-science claims rest on perception and neuroscience references (SRC-005, SRC-006, SRC-021) and the free-energy literature (SRC-020); the machine-learning parallel is sourced to a standard deep-learning reference (SRC-017). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Why It Matters
+
+Predictive coding reframes perception as active inference rather than passive reception, which is why it matters far beyond neuroscience: it gives a single account of why expectation shapes what is seen. [CLM-1243] In the thesis it explains how focus is stabilized — by continuously comparing incoming signal against structured expectation and propagating only the difference. [CLM-1244]
 
 ## Related Terms
 

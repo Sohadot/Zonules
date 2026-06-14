@@ -15,7 +15,7 @@ concept_id: CON-visual-acuity
 safety_class: educational
 canonical: https://zonules.com/visual-acuity/
 last_reviewed: 2026-06-13
-claims: [CLM-272, CLM-273, CLM-274, CLM-275, CLM-846]
+claims: [CLM-272, CLM-273, CLM-274, CLM-275, CLM-846, CLM-1268, CLM-1269, CLM-1270, CLM-1271, CLM-1272, CLM-1273, CLM-1274]
 sources: [SRC-005, SRC-006]
 related_terms: [contrast-sensitivity, motion-perception, visual-masking, perceptual-constancy]
 seo_title: "Visual Acuity | Zonules.com"
@@ -51,6 +51,27 @@ Visual acuity is a signal-fidelity measure (FIO-03): the upper bound on the deta
 ## Relationship to the Governing Thesis
 
 Visual Acuity is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as a FIO-03 — Signal-Noise concern, the same failure class whether the seeing system is made of tissue, attention, or silicon.
+
+
+## Mechanism
+
+Visual acuity is set by the optics of the eye, the sampling density of foveal cones, and the neural processing that follows, and is commonly measured as the smallest detail resolvable at a standard distance. [CLM-1268] Acuity is highest at the fovea and falls steeply into the periphery, so a single acuity value describes only central vision. [CLM-1269]
+
+## Why It Matters
+
+Visual acuity is the most widely used practical index of how well an eye resolves detail, and the World Health Organization frames reduced acuity as the principal measure of vision impairment worldwide. [CLM-1270] In the thesis it is a direct readout of the separation layer: how finely the system distinguishes signal from blur. [CLM-1271]
+
+## Failure Mode
+
+Acuity degrades whenever any link in the chain fails — defocus, optical aberration, retinal loss, or neural damage — and a single number cannot say which link is responsible. [CLM-1272]
+
+## Common Misunderstanding
+
+Twenty-twenty acuity is often taken to mean perfect vision; it is only a benchmark for central detail and says nothing about the visual field, contrast, color, or motion. [CLM-1273]
+
+## Human–Machine Bridge
+
+A camera or vision model has an analogous resolution limit, and like acuity it bounds the finest signal the system can separate before interpretation begins. [CLM-1274]
 
 ## Related Terms
 

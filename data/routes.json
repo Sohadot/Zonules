@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "2.4",
+  "version": "2.5",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -121,7 +121,13 @@
         "CLM-004",
         "CLM-005",
         "CLM-560",
-        "CLM-561"
+        "CLM-561",
+        "CLM-1214",
+        "CLM-1215",
+        "CLM-1216",
+        "CLM-1217",
+        "CLM-1218",
+        "CLM-1219"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -240,7 +246,13 @@
         "CLM-016",
         "CLM-017",
         "CLM-562",
-        "CLM-563"
+        "CLM-563",
+        "CLM-1220",
+        "CLM-1221",
+        "CLM-1222",
+        "CLM-1223",
+        "CLM-1224",
+        "CLM-1225"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -470,7 +482,13 @@
         "CLM-041",
         "CLM-587",
         "CLM-588",
-        "CLM-589"
+        "CLM-589",
+        "CLM-1256",
+        "CLM-1257",
+        "CLM-1258",
+        "CLM-1259",
+        "CLM-1260",
+        "CLM-1261"
       ],
       "safety_class": "technical",
       "monetization": "none",
@@ -508,7 +526,13 @@
         "CLM-044",
         "CLM-045",
         "CLM-590",
-        "CLM-591"
+        "CLM-591",
+        "CLM-1262",
+        "CLM-1263",
+        "CLM-1264",
+        "CLM-1265",
+        "CLM-1266",
+        "CLM-1267"
       ],
       "safety_class": "technical",
       "monetization": "none",
@@ -748,7 +772,9 @@
         "SRC-003",
         "SRC-011",
         "SRC-012",
-        "SRC-025"
+        "SRC-025",
+        "SRC-013",
+        "SRC-026"
       ],
       "claim_requirements": [
         "CLM-049",
@@ -756,7 +782,12 @@
         "CLM-051",
         "CLM-566",
         "CLM-567",
-        "CLM-843"
+        "CLM-843",
+        "CLM-1226",
+        "CLM-1227",
+        "CLM-1228",
+        "CLM-1229",
+        "CLM-1230"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -824,7 +855,8 @@
         "SRC-001",
         "SRC-002",
         "SRC-009",
-        "SRC-025"
+        "SRC-025",
+        "SRC-013"
       ],
       "claim_requirements": [
         "CLM-056",
@@ -832,7 +864,14 @@
         "CLM-058",
         "CLM-568",
         "CLM-569",
-        "CLM-844"
+        "CLM-844",
+        "CLM-1231",
+        "CLM-1232",
+        "CLM-1233",
+        "CLM-1234",
+        "CLM-1235",
+        "CLM-1236",
+        "CLM-1237"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -937,7 +976,8 @@
       "source_requirements": [
         "SRC-007",
         "SRC-022",
-        "SRC-016"
+        "SRC-016",
+        "SRC-017"
       ],
       "claim_requirements": [
         "CLM-067",
@@ -945,7 +985,12 @@
         "CLM-069",
         "CLM-070",
         "CLM-581",
-        "CLM-582"
+        "CLM-582",
+        "CLM-1248",
+        "CLM-1249",
+        "CLM-1250",
+        "CLM-1251",
+        "CLM-1252"
       ],
       "safety_class": "technical",
       "monetization": "none",
@@ -1341,14 +1386,20 @@
         "SRC-001",
         "SRC-005",
         "SRC-010",
-        "SRC-009"
+        "SRC-009",
+        "SRC-013"
       ],
       "claim_requirements": [
         "CLM-107",
         "CLM-108",
         "CLM-109",
         "CLM-570",
-        "CLM-571"
+        "CLM-571",
+        "CLM-1238",
+        "CLM-1239",
+        "CLM-1240",
+        "CLM-1241",
+        "CLM-1242"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -2237,13 +2288,24 @@
         "/visual-question-answering/"
       ],
       "source_requirements": [
-        "SRC-007"
+        "SRC-007",
+        "SRC-005",
+        "SRC-016"
       ],
       "claim_requirements": [
         "CLM-196",
         "CLM-197",
         "CLM-198",
-        "CLM-199"
+        "CLM-199",
+        "CLM-1205",
+        "CLM-1206",
+        "CLM-1207",
+        "CLM-1208",
+        "CLM-1209",
+        "CLM-1210",
+        "CLM-1211",
+        "CLM-1212",
+        "CLM-1213"
       ],
       "safety_class": "technical",
       "monetization": "none",
@@ -2393,7 +2455,12 @@
         "CLM-213",
         "CLM-214",
         "CLM-215",
-        "CLM-847"
+        "CLM-847",
+        "CLM-1291",
+        "CLM-1292",
+        "CLM-1293",
+        "CLM-1294",
+        "CLM-1295"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -2423,13 +2490,19 @@
         "/neural-network-interpretability/"
       ],
       "source_requirements": [
-        "SRC-007"
+        "SRC-007",
+        "SRC-017"
       ],
       "claim_requirements": [
         "CLM-216",
         "CLM-217",
         "CLM-218",
-        "CLM-219"
+        "CLM-219",
+        "CLM-1296",
+        "CLM-1297",
+        "CLM-1298",
+        "CLM-1299",
+        "CLM-1300"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -2933,14 +3006,22 @@
       "source_requirements": [
         "SRC-005",
         "SRC-006",
-        "SRC-026"
+        "SRC-026",
+        "SRC-011"
       ],
       "claim_requirements": [
         "CLM-272",
         "CLM-273",
         "CLM-274",
         "CLM-275",
-        "CLM-846"
+        "CLM-846",
+        "CLM-1268",
+        "CLM-1269",
+        "CLM-1270",
+        "CLM-1271",
+        "CLM-1272",
+        "CLM-1273",
+        "CLM-1274"
       ],
       "safety_class": "educational",
       "monetization": "none",
@@ -3869,14 +3950,21 @@
       "source_requirements": [
         "SRC-001",
         "SRC-003",
-        "SRC-026"
+        "SRC-026",
+        "SRC-013"
       ],
       "claim_requirements": [
         "CLM-376",
         "CLM-377",
         "CLM-378",
         "CLM-379",
-        "CLM-845"
+        "CLM-845",
+        "CLM-1275",
+        "CLM-1276",
+        "CLM-1277",
+        "CLM-1278",
+        "CLM-1279",
+        "CLM-1280"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
@@ -3958,7 +4046,9 @@
         "CLM-574",
         "CLM-575",
         "CLM-576",
-        "CLM-577"
+        "CLM-577",
+        "CLM-1243",
+        "CLM-1244"
       ],
       "safety_class": "educational",
       "monetization": "none",
@@ -4028,13 +4118,24 @@
       ],
       "source_requirements": [
         "SRC-005",
-        "SRC-006"
+        "SRC-006",
+        "SRC-015",
+        "SRC-017"
       ],
       "claim_requirements": [
         "CLM-392",
         "CLM-393",
         "CLM-394",
-        "CLM-395"
+        "CLM-395",
+        "CLM-1196",
+        "CLM-1197",
+        "CLM-1198",
+        "CLM-1199",
+        "CLM-1200",
+        "CLM-1201",
+        "CLM-1202",
+        "CLM-1203",
+        "CLM-1204"
       ],
       "safety_class": "educational",
       "monetization": "none",
@@ -4188,7 +4289,10 @@
         "CLM-583",
         "CLM-584",
         "CLM-585",
-        "CLM-586"
+        "CLM-586",
+        "CLM-1253",
+        "CLM-1254",
+        "CLM-1255"
       ],
       "safety_class": "technical",
       "monetization": "none",
@@ -4525,7 +4629,10 @@
         "CLM-447",
         "CLM-578",
         "CLM-579",
-        "CLM-580"
+        "CLM-580",
+        "CLM-1245",
+        "CLM-1246",
+        "CLM-1247"
       ],
       "safety_class": "educational",
       "monetization": "none",
@@ -7573,7 +7680,12 @@
         "CLM-808",
         "CLM-809",
         "CLM-810",
-        "CLM-811"
+        "CLM-811",
+        "CLM-1281",
+        "CLM-1282",
+        "CLM-1283",
+        "CLM-1284",
+        "CLM-1285"
       ],
       "safety_class": "technical",
       "monetization": "none",
@@ -10270,7 +10382,12 @@
         "CLM-1116",
         "CLM-1117",
         "CLM-1118",
-        "CLM-1119"
+        "CLM-1119",
+        "CLM-1286",
+        "CLM-1287",
+        "CLM-1288",
+        "CLM-1289",
+        "CLM-1290"
       ],
       "safety_class": "technical",
       "monetization": "none",

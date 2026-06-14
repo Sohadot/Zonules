@@ -15,7 +15,7 @@ concept_id: CON-suspension
 safety_class: medical-educational
 canonical: https://zonules.com/zonules-of-zinn/
 last_reviewed: 2026-06-14
-claims: [CLM-001, CLM-002, CLM-003, CLM-004, CLM-005, CLM-560, CLM-561]
+claims: [CLM-001, CLM-002, CLM-003, CLM-004, CLM-005, CLM-560, CLM-561, CLM-1214, CLM-1215, CLM-1216, CLM-1217, CLM-1218, CLM-1219]
 sources: [SRC-001, SRC-002, SRC-003, SRC-004]
 related_terms: [ciliary-body, crystalline-lens, lens-accommodation, lens-capsule]
 seo_title: "Zonules of Zinn — The Suspension System That Holds Focus | Zonules.com"
@@ -80,6 +80,19 @@ When the zonular fibers weaken, stretch, or rupture, the lens is no longer held 
 ## Source Notes
 
 The anatomical claims on this page rest on standard ocular basic-science and anatomy references (SRC-001, SRC-002) and on institutional ophthalmology education material (SRC-003). The mapping of zonular mechanics onto the Focus Integrity Ontology is internal framework language (SRC-004) and is never presented as external clinical fact. For how these codes are read, see the [Focus Integrity Codes](/focus-integrity-codes/).
+
+
+## Mechanism
+
+The zonular fibers transmit the pull of the ciliary muscle to the lens capsule: when the muscle relaxes the fibers are taut and flatten the lens for distance, and when it contracts the fibers slacken and the elastic lens rounds up for near focus. [CLM-1214] Focus is therefore set not by the lens alone but by a balance of tension across a ring of fibers that are never themselves in the image. [CLM-1215]
+
+## Why It Matters
+
+The zonules are the literal origin of the Zonules.com thesis: they are the hidden suspensory structure whose stable tension makes a sharp, adjustable image possible at all. [CLM-1216] They make concrete a claim that recurs at every layer — that what holds focus is structural, invisible in the result, and noticed mainly when it fails. [CLM-1217]
+
+## Human–Machine Bridge
+
+A machine vision system has its own zonular equivalents: the calibration and spatial-grounding parameters that hold its reference frame steady so that what it focuses on stays where it belongs. [CLM-1218] Naming this parallel is the point of the asset: the same suspension logic recurs whether the holding structure is fibrous tissue or learned calibration. [CLM-1219]
 
 ## Related Terms
 

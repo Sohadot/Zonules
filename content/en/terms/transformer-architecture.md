@@ -15,7 +15,7 @@ concept_id: CON-transformer-architecture
 safety_class: technical
 canonical: https://zonules.com/transformer-architecture/
 last_reviewed: 2026-06-14
-claims: [CLM-408, CLM-409, CLM-410, CLM-411, CLM-583, CLM-584, CLM-585, CLM-586]
+claims: [CLM-408, CLM-409, CLM-410, CLM-411, CLM-583, CLM-584, CLM-585, CLM-586, CLM-1253, CLM-1254, CLM-1255]
 sources: [SRC-007, SRC-018, SRC-019, SRC-017]
 related_terms: ["attention-mechanism", "convolutional-neural-networks", "vision-language-models", "transfer-learning", "self-supervised-learning"]
 seo_title: "Transformer Architecture | Zonules.com"
@@ -65,6 +65,15 @@ A transformer can attend to the right regions of an image and still misread the 
 ## Source Notes
 
 Architecture claims rest on the original transformer and Vision Transformer papers (SRC-018, SRC-019) and a standard deep-learning reference (SRC-007, SRC-017). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Human–Machine Bridge
+
+The attention mechanism at the core of transformers is a machine implementation of selective weighting, the same operation by which biological attention emphasizes some inputs over others. [CLM-1253] Reading both as ways of allocating limited focus is why attention failures in machines and in people share the suspension and interpretation classes of the ontology. [CLM-1254]
+
+## Common Misunderstanding
+
+It is commonly assumed that a transformer's attention weights are an explanation of its reasoning; attention indicates where the model looked, not why its output is correct, and the two can diverge. [CLM-1255]
 
 ## Related Terms
 

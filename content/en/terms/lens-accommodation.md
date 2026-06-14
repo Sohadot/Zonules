@@ -15,7 +15,7 @@ concept_id: CON-accommodation
 safety_class: medical-educational
 canonical: https://zonules.com/lens-accommodation/
 last_reviewed: 2026-06-14
-claims: [CLM-014, CLM-015, CLM-016, CLM-017, CLM-562, CLM-563]
+claims: [CLM-014, CLM-015, CLM-016, CLM-017, CLM-562, CLM-563, CLM-1220, CLM-1221, CLM-1222, CLM-1223, CLM-1224, CLM-1225]
 sources: [SRC-001, SRC-003, SRC-004, SRC-025]
 related_terms: [zonules-of-zinn, ciliary-body, crystalline-lens]
 seo_title: "Lens Accommodation — Focus Integrity Across Distance | Zonules.com"
@@ -71,6 +71,19 @@ The characteristic failure of accommodation is not an inability to focus at all,
 ## Source Notes
 
 Physiological claims rest on ocular basic-science and institutional ophthalmology education references (SRC-001, SRC-003), with public eye-health framing available through the National Eye Institute (SRC-025). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Mechanism
+
+Accommodation changes the eye's focal power by reshaping the lens: ciliary-muscle contraction releases zonular tension, letting the elastic lens become more curved and shift focus to near objects. [CLM-1220] The process is continuous and reflexive, driven by retinal blur and disparity rather than conscious control. [CLM-1221]
+
+## Why It Matters
+
+Accommodation is the eye's working proof that intact focus is range-dependent: a system that focuses at only one distance does not have focus integrity. [CLM-1222] It anchors the FIO-02 accommodation class for the whole corpus, giving the abstract idea of adjustable focus a concrete biological referent. [CLM-1223]
+
+## Human–Machine Bridge
+
+The machine analogue of accommodation is a model's ability to adjust to new operating conditions; a network that performs only in its training regime is, in this sense, presbyopic. [CLM-1224] Domain shift in machine vision is the same failure class as a loss of accommodative range in the eye, which is why both map to FIO-02. [CLM-1225]
 
 ## Related Terms
 

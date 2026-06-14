@@ -15,7 +15,7 @@ concept_id: CON-ophthalmic-ai
 safety_class: medical-educational
 canonical: https://zonules.com/ophthalmic-ai/
 last_reviewed: 2026-06-13
-claims: [CLM-212, CLM-213, CLM-214, CLM-215, CLM-847]
+claims: [CLM-212, CLM-213, CLM-214, CLM-215, CLM-847, CLM-1291, CLM-1292, CLM-1293, CLM-1294, CLM-1295]
 sources: [SRC-007]
 related_terms: [medical-imaging-ai, semantic-segmentation, domain-shift, retina, macula, fovea-centralis]
 seo_title: "Ophthalmic AI — Machine Vision Applied to the Eye | Zonules.com"
@@ -51,6 +51,27 @@ In the Zonules FIO framework, ophthalmic AI is classified under FIO-05 Interpret
 ## Relationship to the Governing Thesis
 
 Ophthalmic AI is one instance of the asset's governing claim: that focus is produced and held by structure that is not itself visible in the result. Its place in the [focus-integrity ontology](/focus-integrity-ontology/) is fixed as a FIO-05 (Interpretation) concern, the same failure class whether the seeing system is made of tissue, attention, or silicon.
+
+
+## Mechanism
+
+Ophthalmic AI applies image-analysis models to eye images such as retinal photographs and optical-coherence-tomography scans to flag patterns statistically associated with disease. [CLM-1291]
+
+## Why It Matters
+
+Because much of the global vision-impairment burden is avoidable and access to specialists is uneven, the World Health Organization points to scalable screening, including ophthalmic AI, as a way to extend reach. [CLM-1292]
+
+## Failure Mode
+
+These systems fail like other vision models — under distribution shift, biased data, and unfamiliar devices — and a flag is a statistical association, not a clinical finding. [CLM-1293]
+
+## Common Misunderstanding
+
+A common and consequential misunderstanding is that an AI flag is a diagnosis; detecting a pattern is not the same as a clinical determination, which remains the role of a qualified eye-care professional. [CLM-1294]
+
+## Human–Machine Bridge
+
+Ophthalmic AI and the clinician form a pipeline in which the model narrows attention and the human interprets and decides; treating the model's output as the decision collapses that division. [CLM-1295]
 
 ## Related Terms
 

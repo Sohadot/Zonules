@@ -15,7 +15,7 @@ concept_id: CON-structural-conduit
 safety_class: medical-educational
 canonical: https://zonules.com/optic-nerve/
 last_reviewed: 2026-06-14
-claims: [CLM-056, CLM-057, CLM-058, CLM-568, CLM-569, CLM-844]
+claims: [CLM-056, CLM-057, CLM-058, CLM-568, CLM-569, CLM-844, CLM-1231, CLM-1232, CLM-1233, CLM-1234, CLM-1235, CLM-1236, CLM-1237]
 sources: [SRC-001, SRC-002, SRC-004, SRC-009]
 related_terms: [retina, photoreceptors, cornea]
 seo_title: "Optic Nerve — The Structural Conduit That Carries Focus | Zonules.com"
@@ -68,6 +68,23 @@ The optic nerve forms where retinal ganglion cell axons converge at the optic di
 ## Source Notes
 
 Neuroanatomical claims rest on ocular and neuroscience references (SRC-001, SRC-002, SRC-009). The focus-integrity mapping is internal framework language (SRC-004).
+
+
+## Mechanism
+
+The optic nerve carries the encoded output of more than a million retinal ganglion cells, whose axons converge at the optic disc and travel as a single bundle toward the brain. [CLM-1231] The signal it carries is already processed: it is a stream of spikes encoding contrast and change, not a raw copy of the retinal image. [CLM-1232]
+
+## Why It Matters
+
+The optic nerve is the sole channel between eye and brain; its integrity is a single point on which all of vision depends. [CLM-1233] In thesis terms it is a suspension structure for the signal in transit: a hidden conduit whose failure is invisible until interpretation downstream goes dark. [CLM-1234]
+
+## Human–Machine Bridge
+
+A machine vision pipeline has the same chokepoint wherever a single encoded representation is passed between stages, so that a corruption there cannot be recovered later. [CLM-1235] Both are FIO-01 suspension concerns: the question is whether the structure that carries the signal holds it intact. [CLM-1236]
+
+## Common Misunderstanding
+
+A frequent misunderstanding is that the optic nerve transmits a picture; it transmits a compressed neural code, which is why the brain, not the eye, is where the image is reconstructed. [CLM-1237]
 
 ## Related Terms
 

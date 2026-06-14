@@ -58,6 +58,9 @@ Scene Understanding is one instance of the asset's governing claim: that focus i
 - [Optical Flow](/optical-flow/) — governed reference unit linked within this cluster.
 - [Visual Scene Parsing](/visual-scene-parsing/) — governed reference unit linked within this cluster.
 - [Neural Network Interpretability](/neural-network-interpretability/) — governed reference unit linked within this cluster.
+- [Optical Character Recognition](/optical-character-recognition/) — related governed reference unit.
+- [Panoptic Segmentation](/panoptic-segmentation/) — related governed reference unit.
+- [Visual Question Answering](/visual-question-answering/) — related governed reference unit.
 
 ## Reference Notes
 

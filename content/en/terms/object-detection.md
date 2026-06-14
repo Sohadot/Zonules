@@ -62,6 +62,7 @@ Detection is the machine analogue of fixation: the optical system of the eye mov
 - [Computer vision](/computer-vision/) — the field within which detection is a core task
 - [Adversarial examples](/adversarial-examples/) — structured inputs that defeat detection by corrupting the signal
 - [Machine vision](/machine-vision/) — the governing Layer 03 anchor
+- [Video Understanding](/video-understanding/) — related governed reference unit.
 
 ## Reference Notes
 

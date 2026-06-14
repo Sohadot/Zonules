@@ -57,6 +57,7 @@ Semantic Segmentation is one instance of the asset's governing claim: that focus
 - [Visual Grounding](/visual-grounding/) — governed reference unit linked within this cluster.
 - [Visual Scene Parsing](/visual-scene-parsing/) — governed reference unit linked within this cluster.
 - [Ophthalmic AI](/ophthalmic-ai/) — governed reference unit linked within this cluster.
+- [Edge Detection](/edge-detection/) — related governed reference unit.
 
 ## Reference Notes
 

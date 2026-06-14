@@ -61,6 +61,8 @@ At Layer 01, the optical system delivers a 2D focused image to the retina. At La
 - [Perceptual constancy](/perceptual-constancy/) — interpretation stability across varying conditions
 - [Inattentional blindness](/inattentional-blindness/) — the failure to register an input despite its presence
 - [Gestalt principles](/gestalt-principles/) — the structural grammar that organizes the scene before depth is interpreted
+- [Motion Parallax](/motion-parallax/) — related governed reference unit.
+- [Size Constancy](/size-constancy/) — related governed reference unit.
 
 ## Reference Notes
 

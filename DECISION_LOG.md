@@ -335,3 +335,35 @@ Continue corpus expansion and reference authority building.
 - **Verification:** gate PASS — 213 pages, 831 claims, 27 sources, layers [L1, L2, L3, cross]; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Sitemap count (212) equals approved indexable routes (212). All five builders fresh; root-publication checks intact.
 - **Affected:** `content/en/terms/*.md` (60 new units), `data/{routes,claims}.json`, regenerated root pages, `sitemap.xml`.
 - **Next:** Hold at the 200–225 band; future sprints deepen sourcing or begin governed multilingual expansion only under a separate decision.
+
+## 2026-06-14 — Sprint 5C: Corpus Coherence & Authority Audit (213 pages)
+
+Audit of the 213-page English canonical corpus for coherence, internal authority, anchor strength, cluster balance, FIO/FIS distribution, source maturity, and publication integrity. No broad new corpus pages were added; only surgical coherence fixes were applied.
+
+### Findings
+
+- **Internal link graph:** 0 true orphans (validator-confirmed). However, **57 reference units sat at exactly 1 inbound link** (orphan-risk — a single link removal would orphan them), including pre-5B pages (accommodation-reflex, conjunctiva, lens-capsule, nystagmus, optic-radiations, scotoma, gaze-estimation, video-understanding, visual-question-answering) and most Sprint 5B leaves. Outbound was already healthy (every reference unit ≥3 outbound; distribution 3–6). All Sprint 5B pages already link `/focus-integrity-codes/` and `/focus-integrity-ontology/`.
+- **Glossary accuracy defect:** the glossary rendered the FIO code for all 203 units but the **FIS code was blank for every entry**, because `render_glossary` reads `fis_criterion` from the route registry while routes carried only `fio_class`. Labels and L1/L2/L3 layer grouping were correct; all 203 reference units were represented.
+- **Cluster balance:** L1 = 69 (optical-pathway 45, photoreceptor-function 11, lens-suspension 5, oculomotor 5, retinal-circuitry 3); L2 = 70 (single cluster `perceptual-clarity`); L3 = 64 (single cluster `machine-perception`). L1 is well sub-clustered but optical-pathway-heavy; **L2 and L3 are flat (one cluster each)** — a navigability limit, not a governance defect.
+- **FIO/FIS distribution:** FIO-05 Interpretation 66, FIO-01 Suspension 47, FIO-03 Separation 42, FIO-02 Accommodation 32, FIO-04 Provenance 16. FIS mirrors FIO one-to-one by number, as required by `REFERENCE_ARCHITECTURE.md`. Distribution is conceptually sound: interpretation is the richest failure space (L2/L3), provenance the narrowest (L3-weighted, conceptual bridge at L1). No misclassifications found.
+- **Source maturity:** 0 pages with zero sourced claims; 182 pages at 3 sourced claims, 11 at 2, 10 at 4+. **SRC-025 (National Eye Institute) and SRC-026 (WHO World Report on Vision) are registered but never cited.** Deep anchor sources (Hubel & Wiesel, Vaswani, ViT, Rao & Ballard) are each cited once, which is expected for anchor-specific references.
+- **Canonical / publication integrity:** sitemap = 212 URLs = approved indexable routes; no `/site/` or `/static/` canonical paths; `/acquire/` remains noindex and excluded; root-publication checks pass.
+
+### Fixes applied (surgical)
+
+- **Glossary FIS codes (defect fix):** added a `fis_criterion` field to all 203 reference-unit routes, sourced authoritatively from each unit's markdown frontmatter. The glossary now renders both codes (e.g., `FIO-02 · FIS-2`) for every entry. Unit pages are unaffected (they already read FIS from frontmatter).
+- **Orphan-risk elimination:** added **57 reciprocal internal links across 30 donor pages** so that **every reference unit now has ≥2 inbound links** (min inbound 1 → 2). Each new inbound was drawn from the target's own related set, choosing the highest-authority related node as donor, so the new edges are conceptually natural reciprocal links (e.g., the `retina` anchor now links to its retinal-layer leaves) and push hub authority toward the leaves. Bullets were inserted into donor markdown `Related Terms` sections and mirrored in `required_internal_links`.
+
+### Registry / state changes
+
+- `data/routes.json` v2.1 → **v2.2** (added `fis_criterion` to 203 routes; +57 `required_internal_links` across 30 pages). `data/claims.json` unchanged (v1.4). `data/sources.json` unchanged (v0.3). `sitemap.xml` regenerated (212 URLs, unchanged count). Root pages and glossary regenerated.
+
+### Verification
+
+- Gate **PASS** — 213 pages, 831 claims, 27 sources, layers [L1, L2, L3, cross]; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Post-fix: min inbound across all reference units = 2; glossary FIS coverage 203/203; sitemap = 212 = indexable approved routes; `/acquire/` excluded.
+
+### Next recommendation (Sprint 6A)
+
+1. **Source maturity:** wire SRC-025 (NEI) and SRC-026 (WHO) into relevant public-health/anatomy pages (e.g., visual-field, contrast-sensitivity, color-perception, macula) by adding them as supporting sources to existing claims, and lift the 11 two-sourced pages toward three sourced claims.
+2. **Cluster depth:** introduce sub-clusters within L2 (`perceptual-clarity`) and L3 (`machine-perception`) — e.g., attention / constancy / scene for L2 and recognition / generation-provenance / geometry for L3 — to improve navigability before further numeric growth.
+3. **FIO-04 balance:** if expanding, bias slightly toward provenance/verification (FIO-04/FIS-4), the narrowest class.

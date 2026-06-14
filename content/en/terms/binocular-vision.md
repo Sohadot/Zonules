@@ -58,6 +58,7 @@ Binocular Vision is one instance of the asset's governing claim: that focus is p
 - [Macula](/macula/) — governed reference unit linked within this cluster.
 - [Oculomotor System](/oculomotor-system/) — governed reference unit linked within this cluster.
 - [Fovea Centralis](/fovea-centralis/) — governed reference unit linked within this cluster.
+- [Optic Radiations](/optic-radiations/) — related governed reference unit.
 
 ## Reference Notes
 

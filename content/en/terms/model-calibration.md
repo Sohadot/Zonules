@@ -66,6 +66,9 @@ The anatomical instance of this class is the zonular suspension of the lens; the
 - [Computer vision](/computer-vision/) — the field in which calibration is foundational
 - [Domain shift](/domain-shift/) — the accommodation failure that calibration stability does not by itself prevent
 - [Object detection](/object-detection/) — a task whose localization accuracy depends directly on calibration
+- [Knowledge Distillation](/knowledge-distillation/) — related governed reference unit.
+- [Saliency Maps](/saliency-maps/) — related governed reference unit.
+- [Uncertainty Estimation](/uncertainty-estimation/) — related governed reference unit.
 
 ## Reference Notes
 

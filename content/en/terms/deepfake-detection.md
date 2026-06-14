@@ -74,6 +74,9 @@ Detection claims rest on a media-forensics survey (SRC-023), a standard detectio
 - [Image Provenance](/image-provenance/) — the origin record that complements detection
 - [Synthetic Media](/synthetic-media/) — the broader class of machine-generated content detection must contend with
 - [Visual Perception](/visual-perception/) — the human counterpart with weak provenance instincts
+- [Digital Watermarking](/digital-watermarking/) — related governed reference unit.
+- [Generative Adversarial Networks](/generative-adversarial-networks/) — related governed reference unit.
+- [Perceptual Hashing](/perceptual-hashing/) — related governed reference unit.
 
 ## Reference Notes
 

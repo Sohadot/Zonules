@@ -56,6 +56,7 @@ Visual Acuity is one instance of the asset's governing claim: that focus is prod
 - [Motion Perception](/motion-perception/) — governed reference unit linked within this cluster.
 - [Visual Masking](/visual-masking/) — governed reference unit linked within this cluster.
 - [Perceptual Constancy](/perceptual-constancy/) — governed reference unit linked within this cluster.
+- [Perceptual Learning](/perceptual-learning/) — related governed reference unit.
 
 ## Reference Notes
 

@@ -56,6 +56,7 @@ Feature Extraction is one instance of the asset's governing claim: that focus is
 - [Transfer Learning](/transfer-learning/) — governed reference unit linked within this cluster.
 - [Object Detection](/object-detection/) — governed reference unit linked within this cluster.
 - [Data Augmentation](/data-augmentation/) — governed reference unit linked within this cluster.
+- [Keypoint Detection](/keypoint-detection/) — related governed reference unit.
 
 ## Reference Notes
 

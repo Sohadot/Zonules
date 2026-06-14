@@ -57,6 +57,7 @@ Convolutional Neural Networks is one instance of the asset's governing claim: th
 - [Feature Extraction](/feature-extraction/) — governed reference unit linked within this cluster.
 - [Image Classification](/image-classification/) — governed reference unit linked within this cluster.
 - [Object Detection](/object-detection/) — governed reference unit linked within this cluster.
+- [Batch Normalization](/batch-normalization/) — related governed reference unit.
 
 ## Reference Notes
 

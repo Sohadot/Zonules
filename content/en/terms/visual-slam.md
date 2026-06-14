@@ -57,6 +57,7 @@ Visual SLAM is one instance of the asset's governing claim: that focus is produc
 - [Image Registration](/image-registration/) — governed reference unit linked within this cluster.
 - [Visual Tracking](/visual-tracking/) — governed reference unit linked within this cluster.
 - [Model Calibration](/model-calibration/) — governed reference unit linked within this cluster.
+- [Stereo Matching](/stereo-matching/) — related governed reference unit.
 
 ## Reference Notes
 

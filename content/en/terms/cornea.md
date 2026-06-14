@@ -65,6 +65,9 @@ At the perceptual layer, the analogue of corneal clarity is the absence of noise
 - [Retina](/retina/) — the surface where the focused signal lands
 - [Photoreceptors](/photoreceptors/) — the signal transducers the cornea must serve
 - [Zonules of Zinn](/zonules-of-zinn/) — the suspension system that maintains lens geometry behind the cornea
+- [Conjunctiva](/conjunctiva/) — related governed reference unit.
+- [Corneal Endothelium](/corneal-endothelium/) — related governed reference unit.
+- [Limbus](/limbus/) — related governed reference unit.
 
 ## Reference Notes
 

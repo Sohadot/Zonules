@@ -60,6 +60,7 @@ The governing thesis holds that focus is produced by hidden structural tension. 
 - [Selective attention](/selective-attention/) — the mechanism that controls what enters working memory
 - [Inattentional blindness](/inattentional-blindness/) — the failure to record an input; working memory receives only what attention selects
 - [Figure-ground](/figure-ground/) — the organizational process that determines what counts as a discrete item in memory
+- [Iconic Memory](/iconic-memory/) — related governed reference unit.
 
 ## Reference Notes
 

@@ -69,6 +69,8 @@ In machine vision, the analogue of Gestalt organization is the process by which 
 - [Visual perception](/visual-perception/) — the Layer 02 anchor this unit deepens
 - [Figure-ground](/figure-ground/) — the specific grouping law that separates signal from background
 - [Selective attention](/selective-attention/) — the mechanism that selects among organized percepts
+- [Global Precedence](/global-precedence/) — related governed reference unit.
+- [Holistic Processing](/holistic-processing/) — related governed reference unit.
 
 ## Reference Notes
 

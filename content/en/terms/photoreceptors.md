@@ -64,6 +64,7 @@ In perception, the analogue of photoreceptor sensitivity is sensory threshold: t
 - [Retina](/retina/) — the tissue that houses photoreceptors and performs initial neural processing
 - [Cornea](/cornea/) — the signal entry surface that must deliver clear light to the photoreceptors
 - [Optic nerve](/optic-nerve/) — the conduit that carries processed photoreceptor output toward the brain
+- [Phototransduction](/phototransduction/) — related governed reference unit.
 
 ## Reference Notes
 

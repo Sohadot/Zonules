@@ -65,6 +65,9 @@ Segmentation — separating objects from background — is the [machine vision](
 - [Visual Perception](/visual-perception/) — the system this separation serves
 - [Selective Attention](/selective-attention/) — what helps resolve an ambiguous figure
 - [Machine Vision](/machine-vision/) — the artificial counterpart that segments scenes
+- [Amodal Completion](/amodal-completion/) — related governed reference unit.
+- [Illusory Contours](/illusory-contours/) — related governed reference unit.
+- [Lightness Constancy](/lightness-constancy/) — related governed reference unit.
 
 ## Reference Notes
 

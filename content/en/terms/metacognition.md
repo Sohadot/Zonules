@@ -57,6 +57,7 @@ Metacognition is one instance of the asset's governing claim: that focus is prod
 - [Visual Inference](/visual-inference/) — governed reference unit linked within this cluster.
 - [Model Calibration](/model-calibration/) — governed reference unit linked within this cluster.
 - [Neural Network Interpretability](/neural-network-interpretability/) — governed reference unit linked within this cluster.
+- [Perceptual Adaptation](/perceptual-adaptation/) — related governed reference unit.
 
 ## Reference Notes
 

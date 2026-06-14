@@ -57,6 +57,7 @@ Visual Question Answering is one instance of the asset's governing claim: that f
 - [Visual Grounding](/visual-grounding/) — governed reference unit linked within this cluster.
 - [Scene Understanding](/scene-understanding/) — governed reference unit linked within this cluster.
 - [Zero Shot Learning](/zero-shot-learning/) — governed reference unit linked within this cluster.
+- [Instance Segmentation](/instance-segmentation/) — related governed reference unit.
 
 ## Reference Notes
 

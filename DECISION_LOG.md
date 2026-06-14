@@ -444,3 +444,53 @@ Gate **PASS** — 300 pages, 1195 claims, 27 sources, layers [L1, L2, L3, cross]
 ### Next
 
 The English canonical corpus has reached its ~300-page target with preserved depth, source maturity, sub-cluster architecture, and link-graph integrity. Future work (separate decisions): governed multilingual expansion, or selective anchor deepening — not further numeric growth.
+
+## 2026-06-14 — Sprint 6C: Canonical Readiness & Authority Audit (300 pages)
+
+Audited the 300-page English canonical corpus not only for technical correctness but for sovereign-reference readiness: strategic-story alignment, conceptual depth, stakeholder usefulness, source credibility, SEO integrity, AI readability, security posture, and multilingual readiness. No broad new pages. Only small, safe surgical fixes applied.
+
+### 1. Strategic story alignment — PASS
+Every reference unit carries a "Relationship to the Governing Thesis" section and the FIO/FIS codes, so anatomy (L1), perception (L2), and machine vision (L3) are presented as one focus-integrity system rather than three topics. The shared five-class FIO/FIS spine runs through all layers; the ontology and `/focus-integrity-codes/` pages bind them. The thesis "hidden structure makes vision possible" is expressed structurally on every page.
+
+### 2. Conceptual depth — classification recorded
+By inbound authority: **Anchor (≥10 inbound) 44, Core (5–9) 52, Supporting (<5) 194**, plus 5 governance (policy), 1 acquisition, and the gateway/engine/ontology/glossary surfaces. No thin pages (minimum 337 words; median 380). **Gap identified:** the deeper analytical layers — Mechanism, Failure Mode, Human–Machine Bridge, Common Misunderstanding — exist only on the ~13 Sprint-5A-deepened anchors. The 287 core/supporting units answer four of the five canonical questions (What / How / system role / focus-integrity link) but lack explicit **Failure Mode ("Where does it fail?")** and **Why-it-matters / Human–Machine Bridge** sections. This is by design under the tiered-depth doctrine, and is the primary Sprint-6D target.
+
+### 3. Stakeholder usefulness — mapped
+- **Students / academics:** glossary + governance pages + FIO/FIS codes give a teachable structure.
+- **Scientists / researchers:** registered claims with classified sources and References sections support citation.
+- **Developers / AI teams:** L3 sub-clusters (detection, segmentation, representation-learning, generative-vision, robustness, verification, provenance) form a navigable technical map.
+- **AI systems:** stable headings, JSON-LD (DefinedTerm + citations + BreadcrumbList), and explicit claim/source classification make pages machine-parseable.
+- **Investors / companies:** the acquisition surface plus the governance documents present the asset's structure without selling.
+- **Journalists / governments:** provenance/verification cluster (media-forensics, content-authenticity, deepfake-detection, image-provenance) and the medical-safety framing serve visual-trust and public-interest use.
+
+### 4. Source credibility — PASS with targets
+All **27 sources are used**. No page over-relies on internal-framework claims (every reference unit has ≥2 sourced claims; none has sourced < internal). Anchor pages would benefit from greater source *diversity* (several anchors lean on one or two textbooks); recorded as a 6D target, not a defect.
+
+### 5. SEO integrity — PASS
+No duplicate `seo_title`; no duplicate `meta_description`; no meta under 50 chars; no `/site/` or `/static/` canonical paths; sitemap (299) equals indexable routes; glossary lists all 290 reference units. Minor: 20 anchor metas exceed ~165 chars (display-truncation only, not a penalty) — left as authored, flagged for optional 6D trimming. No keyword-stuffing or near-duplicate pages found.
+
+### 6. AI readability — PASS
+Consistent heading skeleton across units (Definition → Scientific Grounding → role → Layer Classification → Relationship to Governing Thesis → Related Terms → Reference Notes → Safety Notes); FIO/FIS codes present and now rendered with both codes in the glossary; claims classified as sourced/internal-framework; no meaning depends on visual design alone.
+
+### 7. Technical & security posture — PASS
+Static-first confirmed: no APIs, no form/newsletter/payment backends, no third-party public scripts, no `<form>`/`<iframe>`/external `<script src>` in any published page (the engine page's reviewed inline JS is the sole, governed exception), no `http://` or external hrefs in content, no secrets. Gate: broken_links=0, orphans=0, unsafe=0, unsourced_claims=0; every reference unit has ≥2 inbound and ≥3 outbound links.
+
+### 8. Multilingual readiness
+- **Ready for translation now:** governance pages and the deepened Sprint-5A anchors.
+- **Harden before translation:** the 194 supporting units lacking Failure-Mode / Why-it-matters depth — translating them first would multiply thinness across languages.
+- **Must remain stable across languages:** FIO/FIS codes and class names, `term_id`/`concept_id`, canonical URLs, claim IDs, and source classifications. Source notes must not be weakened or made vaguer in translation.
+
+### Surgical fixes applied (small + safe)
+- **Weak internal-link repair:** four routes carried a `required_internal_link` that was registered but never rendered in the page body (leftover route-only reciprocal links from Sprint 4): `/vergence/`→`/accommodation-reflex/`, `/metacognition/`→`/perceptual-adaptation/`, `/action-recognition/`→`/gaze-estimation/`, `/visual-question-answering/`→`/instance-segmentation/`. Each is now a real rendered link in the Related Terms section. Registered-but-unrendered links: 4 → **0**.
+
+### 9. Authority-gap ranking for Sprint 6D (Canonical Authority Hardening)
+Deepen ~25–30 authority pages — not numeric growth — adding, per type, the missing layers (Mechanism, Failure Mode, Human–Machine Bridge, Common Misunderstanding, broadened Source Notes) so each answers all five canonical questions.
+- **Critical (the spine — deepen first):** zonules-of-zinn, lens-accommodation, retina, optic-nerve, visual-cortex, predictive-coding, active-inference, object-recognition, scene-understanding, computer-vision, transformer-architecture, deepfake-detection, image-provenance, focus-integrity-ontology, focus-integrity-codes, glossary.
+- **Important:** visual-acuity, visual-field, visual-working-memory, perceptual-error, diffusion-models, content-authenticity, camera-fingerprinting, perceptual-hashing, ophthalmic-ai, medical-imaging-ai, dorsal-stream, ventral-stream.
+- **Later:** broaden source diversity on remaining anchors; optional meta-length trim on the 20 long-meta pages; selective Failure-Mode lines on high-traffic supporting units.
+
+### Verification
+Gate **PASS** — 300 pages, 1195 claims, 27 sources; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Sitemap = 299 = indexable routes; `/acquire/` noindex and excluded; no `/site/` or `/static/` canonical paths. Registries unchanged in version (no schema change this sprint): routes v2.4, claims v1.6, sources v0.3.
+
+### Recommendation
+Proceed to **Sprint 6D — Canonical Authority Hardening** on the Critical list above, then freeze the English master before any multilingual work (Sprint 7A). Translating before the anchors carry full reference depth would propagate weakness across every language; hardening first protects the path to ~2400 governed pages without loss of quality.

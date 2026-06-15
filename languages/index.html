@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Languages — Multilingual Reference Architecture | Zonules.com</title>
+<meta name="description" content="Zonules.com is a sovereign multilingual visual reference system. The English master is frozen. French pilot pages are active. Seven additional languages are architecture-defined. Our translation governance policy.">
+<link rel="canonical" href="https://zonules.com/languages/">
+<link rel="alternate" hreflang="en" href="https://zonules.com/languages/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Languages — Multilingual Reference Architecture | Zonules.com">
+<meta property="og:url" content="https://zonules.com/languages/">
+<link rel="stylesheet" href="../assets/css/reference.css">
+</head>
+<body class="rl">
+<main class="rl-wrap">
+<nav class="rl-crumb" aria-label="Breadcrumb"><a href="/">Zonules.com</a> <span aria-hidden="true">/</span> <span aria-current="page">Languages</span></nav>
+<article class="rl-article">
+<h1>Languages</h1>
+<blockquote>Translation is not copying. Every language that carries this reference system must carry it without loss of meaning, without loss of source traceability, and without loss of safety boundaries.</blockquote>
+
+<h2>Current status</h2>
+<p>Zonules.com is built on an eight-language architecture. This page explains where each language stands today and why.</p>
+
+<table>
+<thead><tr><th>Language</th><th>Code</th><th>Status</th><th>Pages</th></tr></thead>
+<tbody>
+<tr><td><strong>English</strong></td><td>en</td><td>Launched — master</td><td>300 (frozen Sprint 6F)</td></tr>
+<tr><td><strong>French</strong></td><td>fr</td><td>Pilot — 12 anchor pages</td><td>12 indexed (Sprint 7B)</td></tr>
+<tr><td>German</td><td>de</td><td>Architecture defined</td><td>0</td></tr>
+<tr><td>Spanish</td><td>es</td><td>Architecture defined</td><td>0</td></tr>
+<tr><td>Chinese</td><td>zh</td><td>Architecture defined</td><td>0</td></tr>
+<tr><td>Arabic</td><td>ar</td><td>Architecture defined</td><td>0</td></tr>
+<tr><td>Japanese</td><td>ja</td><td>Architecture defined</td><td>0</td></tr>
+<tr><td>Russian</td><td>ru</td><td>Architecture defined</td><td>0</td></tr>
+</tbody>
+</table>
+
+<h2>English: the frozen master</h2>
+<p>The English corpus of 300 pages was frozen in Sprint 6F (2026-06-14). The freeze means:</p>
+<ul>
+<li>All English routes, canonical URLs, and slugs are immutable</li>
+<li>All claim IDs (CLM-001 through CLM-1336) and source IDs (SRC-001 through SRC-027) are frozen</li>
+<li>All FIO/FIS classifications and safety classes are frozen</li>
+<li>All medical disclaimers are frozen</li>
+<li>Additive hreflang metadata for launched translations is permitted</li>
+</ul>
+<p>The English master is the sole source of truth for every translation. No translated page may contradict a frozen English field.</p>
+
+<h2>French: active pilot (Sprint 7B)</h2>
+<p>French is at pilot status — a governed state between architecture-defined and fully launched. Twelve anchor pages are indexed and carry active hreflang. The pilot does not constitute a full language launch.</p>
+<p>The twelve French anchor pages cover the three reference layers:</p>
+<ul>
+<li><strong>Layer 1 — Anatomy:</strong> <a href="/fr/zonules-de-zinn/">Zonules de Zinn</a>, <a href="/fr/accommodation-du-cristallin/">Accommodation du cristallin</a>, <a href="/fr/retine/">Rétine</a>, <a href="/fr/nerf-optique/">Nerf optique</a>, <a href="/fr/cortex-visuel/">Cortex visuel</a></li>
+<li><strong>Layer 2 — Perception:</strong> <a href="/fr/codage-predictif/">Codage prédictif</a>, <a href="/fr/inference-active/">Inférence active</a></li>
+<li><strong>Layer 3 — Machine Vision:</strong> <a href="/fr/vision-par-ordinateur/">Vision par ordinateur</a>, <a href="/fr/architecture-transformer/">Architecture Transformer</a>, <a href="/fr/detection-des-deepfakes/">Détection des deepfakes</a>, <a href="/fr/provenance-des-images/">Provenance des images</a>, <a href="/fr/integrite-du-focus/">Intégrité du Focus</a></li>
+</ul>
+<p>A full French launch requires all 300 pages to be translated, validated, and governed by a DECISION_LOG.md entry.</p>
+
+<h2>Other languages: architecture defined</h2>
+<p>German, Spanish, Chinese, Arabic, Japanese, and Russian have route structures defined in <code>data/translation-map.json</code> and are registered in <code>data/languages.json</code>. No content has been translated. No pages exist. No hreflang is emitted for these languages.</p>
+<p>Creating content for an architecture-defined language requires a governance entry in DECISION_LOG.md before any page is created.</p>
+
+<h2>Translation governance policy</h2>
+<p>Every translation is governed by <code>docs/MULTILINGUAL_ARCHITECTURE.md</code>. The core requirements:</p>
+
+<h3>Language-invariant fields (must not change with translation)</h3>
+<ul>
+<li><strong>concept_id</strong> — the internal concept identifier (e.g., ZONE-ZONULES)</li>
+<li><strong>term_id</strong> — the canonical term identifier (e.g., zonules-of-zinn)</li>
+<li><strong>fio_class</strong> — the FIO failure class (e.g., FIO-01)</li>
+<li><strong>fis_criterion</strong> — the FIS standard criterion (e.g., FIS-1)</li>
+<li><strong>safety_class</strong> — the safety classification (e.g., medical-educational)</li>
+<li><strong>claim_ids</strong> — all claim traceability identifiers</li>
+<li><strong>source_ids</strong> — all source traceability identifiers</li>
+</ul>
+
+<h3>What must be preserved in every translation</h3>
+<ul>
+<li>Medical disclaimers (translated with preserved meaning — not softened, not removed)</li>
+<li>The "detection is not diagnosis" boundary in AI/forensics content</li>
+<li>Source attribution (SRC-001 through SRC-027 are language-invariant)</li>
+<li>FIO/FIS codes (displayed as-is in all languages — they are invariant identifiers)</li>
+</ul>
+
+<h3>No partial language doctrine</h3>
+<p>A language is either launched (all governed pages complete) or it is not. There is no in-between state for production indexing. The pilot status is a governed exception allowing anchor page indexing before a full launch — it is not a workaround for the doctrine.</p>
+
+<h2>Validation</h2>
+<p>All translated content is validated by <code>scripts/validate_multilingual.py</code> and <code>scripts/validate_all.py</code>. These scripts enforce:</p>
+<ul>
+<li>HTML file existence for all indexed translated routes</li>
+<li>Safety marker presence in medical-educational pages</li>
+<li>AI safety marker presence in deepfake/detection pages</li>
+<li>FIO/FIS immutability across translations</li>
+<li>No hreflang active unless language is pilot or launched and page is indexable</li>
+</ul>
+
+<h2>Next phases</h2>
+<p>Following Sprint 7B (French pilot), the planned sequence is:</p>
+<ol>
+<li><strong>Sprint 7C</strong> — Expand French from 12 pilot pages toward full 300-page corpus</li>
+<li><strong>Sprint 7D</strong> — French full launch (all 300 pages at governed status)</li>
+<li><strong>Sprint 8</strong> — First anchor translation in a second language (German or Spanish)</li>
+</ol>
+<p>Each phase requires a governance entry in DECISION_LOG.md before content is created.</p>
+</article>
+<footer class="rl-foot"><a href="/glossary/">All reference units</a> · <a href="/focus-integrity-ontology/">Ontology</a> · <a href="/methodology/">Methodology</a> · <a href="/source-policy/">Source policy</a> · <a href="/focus-integrity-engine/">Focus Integrity Engine</a></footer>
+</main>
+</body>
+</html>

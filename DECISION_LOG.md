@@ -225,7 +225,7 @@ This log is **append-only**. Entries are never edited or deleted; corrections ar
   - Every scientific claim sourced to SRC-001…SRC-008; every framework claim marked internal-framework (SRC-004).
   - Every page registered in routes.json before publication; no phantom surfaces.
   - Static-first maintained: no API, no network calls, no data collection, no third-party scripts.
-- **Verification:** Official audit sequence run — `git status` (clean) → `validate_all.py` (PASS) → `generate_sitemap.py` (100 urls) → `validate_all.py` (PASS), idempotent. Final gate: 101 pages, 355 claims, 8 sources, layers L1/L2/L3/cross; broken_links=0, orphans=0, unsourced_claims=0, unsafe=0. Sitemap reconciliation: 100 URLs, zero unmapped to a route.
+- **Verification:** Official audit sequence run — `git status` (clean) → `validate_all.py` (PASS) → `generate_sitemap.py` (100 urls) → `validate_all.py` (PASS), idempotent. Final gate: 101 pages, 355 claims, 8 sources, layers L1/L2/L3/cross; broken_links=0, orphans=0, unsafe=0, unsourced_claims=0. Sitemap reconciliation: 100 URLs, zero unmapped to a route.
 - **Type:** Sprint 3 English corpus expansion; routes v1.4→v1.7, claims v0.8→v0.9, TRM-069…TRM-101.
 - **Affected:** `content/en/terms/*.md` (33 new units), `data/{routes,claims}.json`, regenerated `site/` and `static/{sitemap.xml,robots.txt}`.
 

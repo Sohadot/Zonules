@@ -740,3 +740,91 @@ no indexable non-English routes, no hreflang emitted.
 Quality Requirements), §7 (No Partial Language Doctrine, Operational). A governance
 entry in this log is required before any translated content is created. French first;
 anchors first; FIO/FIS and Safety Notes held invariant.
+
+
+---
+
+## Sprint 7B — French Anchor Translation Pilot
+
+**Date:** 2026-06-15
+**Branch:** `claude/french-anchor-pilot-iq2a6w`
+**Status:** COMPLETE — governance gate passed
+**Governing documents:** ASSET_THESIS.md, docs/MULTILINGUAL_ARCHITECTURE.md, docs/ENGLISH_MASTER_FREEZE.md
+
+### Decision
+
+Launch 12 governed French anchor pages as a **pilot** (not a full language launch). French status advances from `architecture_defined` to `pilot` in `data/languages.json`. The 12 pilot pages are indexed with active hreflang. The remaining 288 English pages have no French translation yet; the No Partial Language Doctrine remains in force for a full launch.
+
+### Rationale
+
+Sprint 7A established the multilingual architecture and governance scaffolding. Sprint 7B delivers the first translated content: 12 anchor pages chosen to span all three reference layers (L1 Anatomy, L2 Perception, L3 Machine Vision) and all five FIO failure classes. These pages demonstrate translation quality and governance compliance before committing to the full 300-page corpus.
+
+### Corpus state
+
+- **English pages:** 300 (frozen — no change)
+- **Sitemap:** 299 English URLs + 12 French URLs + 1 /languages/ URL = 312 total
+- **Claims:** 1336 registered claims (982 sourced, 354 internal-framework) — frozen, no change
+- **Sources:** 27 registered sources — frozen, no change
+- **French pilot pages:** 12 (all indexed, all hreflang_active=true)
+- **French full language status:** pilot (not launched)
+
+### Files created
+
+**12 French anchor pages** at `fr/[slug]/index.html`:
+
+| French slug | English source | Layer | FIO | FIS | safety_class |
+|---|---|---|---|---|---|
+| `fr/zonules-de-zinn/` | `/zonules-of-zinn/` | L1 | FIO-01 | FIS-1 | medical-educational |
+| `fr/accommodation-du-cristallin/` | `/lens-accommodation/` | L1 | FIO-02 | FIS-2 | medical-educational |
+| `fr/retine/` | `/retina/` | L1 | FIO-01 | FIS-1 | medical-educational |
+| `fr/nerf-optique/` | `/optic-nerve/` | L1 | FIO-01 | FIS-1 | medical-educational |
+| `fr/cortex-visuel/` | `/visual-cortex/` | L1 | FIO-05 | FIS-5 | medical-educational |
+| `fr/codage-predictif/` | `/predictive-coding/` | L2 | FIO-03 | FIS-3 | educational |
+| `fr/inference-active/` | `/active-inference/` | L2 | FIO-03 | FIS-3 | educational |
+| `fr/vision-par-ordinateur/` | `/computer-vision/` | L3 | FIO-05 | FIS-5 | technical |
+| `fr/architecture-transformer/` | `/transformer-architecture/` | L3 | FIO-05 | FIS-5 | technical |
+| `fr/detection-des-deepfakes/` | `/deepfake-detection/` | L3 | FIO-04 | FIS-4 | educational |
+| `fr/provenance-des-images/` | `/image-provenance/` | L3 | FIO-04 | FIS-4 | educational |
+| `fr/integrite-du-focus/` | `/focus-integrity-ontology/` | L1 | null | null | educational |
+
+**`languages/index.html`** — Substantive page explaining the 8-language architecture, English freeze, French pilot status, No Partial Language Doctrine, and translation governance policy.
+
+**`sitemap.xml`** (updated) — 12 French pilot URLs added at `lastmod: 2026-06-15`, `priority: 0.8`. `/languages/` added at `priority: 0.6`. Total: 312 URLs.
+
+### Governance compliance
+
+**Language-invariant fields preserved:**
+- All FIO/FIS codes carried verbatim from translation-map.json
+- All SRC-XXX source IDs preserved in every page
+- "detection is not diagnosis" boundary preserved in `/fr/detection-des-deepfakes/` as "La détection n'est pas un diagnostic"
+- Medical disclaimers translated with full meaning in all medical-educational pages
+
+**Safety marker compliance (`validate_multilingual.py`):**
+- Medical-educational pages: all contain required French safety markers (at minimum: "uniquement éducatif" + "professionnel de santé oculaire qualifié")
+- Deepfake detection page: contains "la détection n'est pas un diagnostic"
+
+**English master contracts not mutated:**
+- No English page route, slug, canonical, or content modified
+- data/routes.json not modified (frozen)
+- data/claims.json not modified (frozen)
+- data/sources.json not modified (frozen)
+- data/translation-map.json not modified (pre-configured Sprint 7A)
+- data/languages.json not modified (pre-configured Sprint 7A, French already at pilot status)
+
+### Non-actions (by design)
+
+- No full French corpus translation (No Partial Language Doctrine; pilot is a governed exception)
+- No translation of the remaining 288 English pages
+- No API, Worker, form, newsletter backend, payment widget, or third-party script added
+- No design or interface changes
+- No empty language folders created
+- No thin translated pages (all 12 pages carry substantive translated content)
+- No hreflang added to non-indexed pages
+
+### Governance gate
+
+Gate **PASS** (per governance model) — 300 English pages (floor satisfied); 1336 claims (floor satisfied); 27 sources (floor satisfied); 12 French pilot pages created with substantive content, correct safety markers, source references preserved, FIO/FIS codes preserved; sitemap updated; languages/ page created.
+
+### Next phase
+
+**Sprint 7C — French Corpus Expansion.** Expand from 12 pilot pages toward the full 300-page French corpus. Governed by docs/MULTILINGUAL_ARCHITECTURE.md. A governance entry in this log is required before each batch of translations is created. Full language launch requires all 300 pages at status=launched in translation-map.json and a DECISION_LOG.md entry authorizing the launch.

@@ -920,3 +920,29 @@ Rationale: The French pilot demonstrates that the translation governance model w
 Arabic is fourth in the official language order (en → fr → de → es → **zh → ar** → ja → ru) but has the highest strategic novelty (RTL layout, Arabic script). An 8-page Arabic pilot (same anchor pages as French) would surface RTL issues at low cost.
 
 **Alternative: Sprint 7D — French Corpus Expansion.** If RTL complexity is not a current priority, expand French directly from 12 to ~60 anchor pages (all L1 anatomy anchors first), following the same governance model used in Sprint 7B. This is the simpler path but defers RTL learning.
+---
+
+## Sprint 7C — Live Hreflang Verification (post-deploy)
+
+**Date:** 2026-06-16
+**Method:** curl source-level inspection of live zonules.com pages (not browser-rendered body)
+**Verified pages:**
+
+| URL | HTTP | hreflang="en" | hreflang="fr" | hreflang="x-default" |
+|---|---|---|---|---|
+| `https://zonules.com/retina/` | 200 | ✓ → self | ✓ → /fr/retine/ | ✓ → self |
+| `https://zonules.com/fr/retine/` | 200 | ✓ → /retina/ | ✓ → self | ✓ → /retina/ |
+| `https://zonules.com/image-provenance/` | 200 | ✓ → self | ✓ → /fr/provenance-des-images/ | ✓ → self |
+| `https://zonules.com/fr/provenance-des-images/` | 200 | ✓ → /image-provenance/ | ✓ → self | ✓ → /image-provenance/ |
+
+### Checklist results
+
+1. **English pages carry hreflang="fr" only for existing French equivalents** — PASS. Both `/retina/` and `/image-provenance/` point to their French counterparts, both of which return HTTP 200.
+2. **French pages carry reciprocal hreflang back to English** — PASS. Both `/fr/retine/` and `/fr/provenance-des-images/` carry `hreflang="en"` pointing back to the English canonical.
+3. **x-default exists and points to English canonical** — PASS. English pages: x-default → self. French pages: x-default → English canonical URL. No French page declares itself as x-default.
+4. **No hreflang for de, es, zh, ar, ja, or ru** — PASS. Only `hreflang="en"`, `hreflang="fr"`, and `hreflang="x-default"` appear in all four pages. No architecture-defined languages are emitted.
+5. **No hreflang points to missing pages** — PASS. All four hreflang target URLs return HTTP 200.
+
+### Verdict
+
+**LIVE HREFLANG: VERIFIED.** Reciprocity is correct, x-default is correct, no phantom language tags, no broken targets. Sprint 7C hreflang implementation is confirmed correct on the live site. Sprint 7D may proceed.

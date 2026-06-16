@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -143,6 +144,7 @@ def main():
     _check_languages_page(layers_by_code, routes, errors)
     _check_arabic_rtl_pages(errors)
     _check_arabic_hreflang_reciprocity(errors)
+    _check_sitemap_hreflang_groups(tmap, errors)
 
     if errors:
         _report(errors)
@@ -154,7 +156,7 @@ def main():
     arch_defined = sum(1 for l in layers if l["status"] == "architecture_defined")
     print("MULTILINGUAL GATE: PASS")
     print(f"  languages={lang_count} launched={launched} pilot={pilot} architecture_defined={arch_defined}")
-    print("  language page counts, FIO/FIS immutability, safety notes, and RTL checks confirmed.")
+    print("  language page counts, FIO/FIS immutability, safety notes, RTL checks, and sitemap hreflang groups confirmed.")
     return 0
 
 
@@ -452,6 +454,94 @@ def _check_arabic_hreflang_reciprocity(errors):
                     errors.append(
                         f'ar/{en_slug}/index.html: missing hreflang="{lang}" to {expected_url}'
                     )
+
+
+def _check_sitemap_hreflang_groups(tmap, errors):
+    sitemap_path = os.path.join(ROOT, "sitemap.xml")
+    if not os.path.exists(sitemap_path):
+        errors.append("sitemap.xml not found")
+        return
+
+    ns = {
+        "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
+        "xhtml": "http://www.w3.org/1999/xhtml",
+    }
+
+    try:
+        tree = ET.parse(sitemap_path)
+    except ET.ParseError as exc:
+        errors.append(f"sitemap.xml: XML parse error: {exc}")
+        return
+
+    sitemap_hreflang = {}
+    for url_node in tree.getroot().findall("sm:url", ns):
+        loc_node = url_node.find("sm:loc", ns)
+        if loc_node is None or not loc_node.text:
+            continue
+        links = {}
+        for link_node in url_node.findall("xhtml:link", ns):
+            hreflang = link_node.attrib.get("hreflang")
+            href = link_node.attrib.get("href")
+            if hreflang and href:
+                links[hreflang] = href
+        sitemap_hreflang[loc_node.text] = links
+
+    blocked_langs = {"de", "es", "zh", "ja", "ru"}
+    for loc, links in sitemap_hreflang.items():
+        forbidden = blocked_langs & set(links)
+        if forbidden:
+            errors.append(
+                f"sitemap.xml: {loc} has hreflang for non-launched language(s): "
+                + ", ".join(sorted(forbidden))
+            )
+
+    for entry in tmap.get("routes", []):
+        expected = _expected_hreflang_group(entry)
+        if not expected:
+            continue
+
+        urls_to_check = [BASE + entry["english_path"]]
+        for trans in entry.get("translations", {}).values():
+            if _translation_is_active(trans):
+                urls_to_check.append(BASE + trans["path"])
+
+        for loc in urls_to_check:
+            actual = sitemap_hreflang.get(loc)
+            if actual is None:
+                errors.append(f"sitemap.xml: missing indexed hreflang URL {loc}")
+            elif actual != expected:
+                errors.append(
+                    f"sitemap.xml: hreflang group mismatch for {loc}; "
+                    f"expected {expected}, found {actual}"
+                )
+
+
+def _expected_hreflang_group(entry):
+    en_path = entry.get("english_path")
+    if not en_path:
+        return {}
+
+    active = []
+    for lang_code, trans in entry.get("translations", {}).items():
+        if _translation_is_active(trans):
+            active.append((lang_code, trans["path"]))
+
+    if not active:
+        return {}
+
+    group = {"en": BASE + en_path}
+    for lang_code, path in active:
+        group[lang_code] = BASE + path
+    group["x-default"] = BASE + en_path
+    return group
+
+
+def _translation_is_active(trans):
+    return (
+        trans.get("status") == "launched"
+        and trans.get("indexable") is True
+        and trans.get("hreflang_active") is True
+    )
 
 
 def _report(errors):

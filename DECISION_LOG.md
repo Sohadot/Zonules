@@ -1079,3 +1079,39 @@ No English master content was mutated. Additive `hreflang="ar"` metadata was ins
 - `scripts/build_site.py`: PASS
 - `scripts/validate_multilingual.py`: PASS
 - `scripts/validate_all.py`: PASS
+
+---
+
+## Sprint 7E -- Arabic RTL QA and Multilingual Consistency Audit
+
+**Date**: 2026-06-16
+**Commit**: `chore(i18n): audit Arabic RTL pilot and multilingual consistency`
+
+### Audit Result
+
+Arabic RTL pilot QA accepted for the 8 governed anchor pages. The Arabic pages preserve `lang="ar"`, `dir="rtl"`, Arabic titles and descriptions, FIO/FIS badges, safety notes, source/provenance notes, and EN/FR/AR/x-default HTML hreflang reciprocity.
+
+French pilot remains unchanged at 12 indexed anchor pages. English master remains frozen; no English content was mutated.
+
+### Generator and Validator Fix
+
+Sprint 7E found one real consistency gap: translated sitemap entries carried only EN+self+x-default alternates, while HTML pages already emitted the complete EN+FR+AR+x-default group where all three variants exist.
+
+`scripts/generate_sitemap.py` now emits the full active hreflang group for translated sitemap entries. `scripts/validate_multilingual.py` now validates sitemap hreflang groups against `data/translation-map.json` and rejects hreflang entries for German, Spanish, Chinese, Japanese, or Russian while those languages remain architecture-defined.
+
+### Verification
+
+- `scripts/generate_sitemap.py`: PASS
+- `scripts/build_site.py`: PASS
+- `scripts/validate_multilingual.py`: PASS
+- `scripts/validate_all.py`: PASS
+- `sitemap.xml`: 320 URLs
+- `/acquire/`: excluded
+- Broken links: 0
+- Orphans: 0
+- Unsafe claims: 0
+- Unsourced claims: 0
+
+### Next Recommendation
+
+Before any French or Arabic expansion, keep Sprint 7F limited to translation QA hardening: source-note parity checks, language-specific thin-translation heuristics, and live deployment spot checks after merge. Do not add translated pages until those guardrails are in place.

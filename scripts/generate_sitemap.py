@@ -127,10 +127,7 @@ def build_sitemap(routes, tmap):
         lines.append("    <lastmod>2026-06-14</lastmod>")
         lines.append("    <priority>0.8</priority>")
         if group:
-            en_url = BASE + tp["english_path"]
-            lines.append('    <xhtml:link rel="alternate" hreflang="en" href="%s"/>' % en_url)
-            lines.append('    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (tp["lang"], loc))
-            lines.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % en_url)
+            lines.extend(hreflang_block(tp["english_path"]))
         lines.append("  </url>")
 
     languages_html = os.path.join(ROOT, "languages", "index.html")

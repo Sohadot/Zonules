@@ -1,11 +1,11 @@
 {
   "id": "TRANSLATION-MAP",
   "name": "Zonules.com Route Translation Map",
-  "version": "1.1",
+  "version": "1.2",
   "schema_version": "1.0",
   "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
   "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
-  "note": "Schema-based registry. Sprint 7B adds 12 French anchor routes at pilot status. All language-invariant fields (concept_id, term_id, fio_class, fis_criterion, safety_class, claim_ids, source_ids) are frozen from the English master and must not be mutated.",
+  "note": "Schema-based registry. Sprint 7F expands the governed French layer to 50 indexed anchor/core pages. All language-invariant fields (concept_id, term_id, fio_class, fis_criterion, safety_class, claim_ids, source_ids) are frozen from the English master and must not be mutated.",
   "field_definitions": {
     "english_path": "The frozen English route path from data/routes.json.",
     "concept_id": "Language-invariant concept identifier from English markdown frontmatter. Never mutated.",
@@ -165,72 +165,63 @@
       }
     },
     {
-      "english_path": "/retina/",
-      "concept_id": "ZONE-RETINA",
-      "term_id": "retina",
+      "english_path": "/ciliary-body/",
+      "concept_id": "CON-suspension",
+      "term_id": "TRM-002",
       "layer": "L1",
-      "fio_class": "FIO-05",
-      "fis_criterion": "FIS-5",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
       "safety_class": "medical-educational",
       "claim_ids": [
-        "CLM-001"
+        "CLM-006",
+        "CLM-007",
+        "CLM-008",
+        "CLM-009"
       ],
       "source_ids": [
         "SRC-001",
-        "SRC-009",
-        "SRC-011",
-        "SRC-012"
+        "SRC-002",
+        "SRC-003"
       ],
       "translations": {
         "fr": {
-          "path": "/fr/retine/",
-          "slug": "retine",
+          "path": "/fr/corps-ciliaire/",
+          "slug": "corps-ciliaire",
           "status": "launched",
           "indexable": true,
           "hreflang_active": true
-        },
-        "de": {
-          "path": "/de/netzhaut/",
-          "slug": "netzhaut",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "es": {
-          "path": "/es/retina/",
-          "slug": "retina",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "zh": {
-          "path": "/zh/shiwang-mo/",
-          "slug": "shiwang-mo",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ar": {
+        }
+      }
+    },
+    {
+      "english_path": "/crystalline-lens/",
+      "concept_id": "CON-suspension",
+      "term_id": "TRM-003",
+      "layer": "L1",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-010",
+        "CLM-011",
+        "CLM-012",
+        "CLM-013",
+        "CLM-564",
+        "CLM-565"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003",
+        "SRC-011"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/cristallin/",
+          "slug": "cristallin",
           "status": "launched",
-          "path": "/ar/retina/",
           "indexable": true,
-          "hreflang_active": true,
-          "launched_date": "2026-06-16",
-          "pilot_sprint": "7D"
-        },
-        "ja": {
-          "path": "/ja/moumaku/",
-          "slug": "moumaku",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ru": {
-          "path": "/ru/setchatka/",
-          "slug": "setchatka",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "hreflang_active": true
         }
       }
     },
@@ -302,402 +293,116 @@
       }
     },
     {
-      "english_path": "/optic-nerve/",
-      "concept_id": "ZONE-OPTIC-NERVE",
-      "term_id": "optic-nerve",
+      "english_path": "/lens-capsule/",
+      "concept_id": "CON-suspension",
+      "term_id": "TRM-005",
       "layer": "L1",
       "fio_class": "FIO-01",
       "fis_criterion": "FIS-1",
       "safety_class": "medical-educational",
-      "claim_ids": [],
+      "claim_ids": [
+        "CLM-018",
+        "CLM-019",
+        "CLM-020",
+        "CLM-021"
+      ],
       "source_ids": [
         "SRC-001",
-        "SRC-009",
-        "SRC-025"
+        "SRC-002"
       ],
       "translations": {
         "fr": {
-          "path": "/fr/nerf-optique/",
-          "slug": "nerf-optique",
+          "path": "/fr/capsule-du-cristallin/",
+          "slug": "capsule-du-cristallin",
           "status": "launched",
           "indexable": true,
           "hreflang_active": true
-        },
-        "de": {
-          "path": "/de/sehnerv/",
-          "slug": "sehnerv",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "es": {
-          "path": "/es/nervio-optico/",
-          "slug": "nervio-optico",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "zh": {
-          "path": "/zh/shijing/",
-          "slug": "shijing",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ar": {
-          "status": "launched",
-          "path": "/ar/optic-nerve/",
-          "indexable": true,
-          "hreflang_active": true,
-          "launched_date": "2026-06-16",
-          "pilot_sprint": "7D"
-        },
-        "ja": {
-          "path": "/ja/shinkei/",
-          "slug": "shinkei",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ru": {
-          "path": "/ru/zritelny-nerv/",
-          "slug": "zritelny-nerv",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
         }
       }
     },
     {
-      "english_path": "/visual-cortex/",
-      "concept_id": "ZONE-VISUAL-CORTEX",
-      "term_id": "visual-cortex",
-      "layer": "L1",
-      "fio_class": "FIO-05",
-      "fis_criterion": "FIS-5",
-      "safety_class": "medical-educational",
-      "claim_ids": [],
-      "source_ids": [
-        "SRC-009",
-        "SRC-010",
-        "SRC-013"
-      ],
-      "translations": {
-        "fr": {
-          "path": "/fr/cortex-visuel/",
-          "slug": "cortex-visuel",
-          "status": "launched",
-          "indexable": true,
-          "hreflang_active": true
-        },
-        "de": {
-          "path": "/de/sehrinrinde/",
-          "slug": "sehrinrinde",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "es": {
-          "path": "/es/corteza-visual/",
-          "slug": "corteza-visual",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "zh": {
-          "path": "/zh/shijue-pixhi/",
-          "slug": "shijue-pixhi",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ar": {
-          "status": "launched",
-          "path": "/ar/visual-cortex/",
-          "indexable": true,
-          "hreflang_active": true,
-          "launched_date": "2026-06-16",
-          "pilot_sprint": "7D"
-        },
-        "ja": {
-          "path": "/ja/shikaku-hishitsu/",
-          "slug": "shikaku-hishitsu",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ru": {
-          "path": "/ru/zritelna-kora/",
-          "slug": "zritelna-kora",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        }
-      }
-    },
-    {
-      "english_path": "/predictive-coding/",
-      "concept_id": "ZONE-PREDICTIVE-CODING",
-      "term_id": "predictive-coding",
+      "english_path": "/visual-perception/",
+      "concept_id": "CON-perceptual-suspension",
+      "term_id": "TRM-006",
       "layer": "L2",
-      "fio_class": "FIO-05",
-      "fis_criterion": "FIS-5",
-      "safety_class": "educational",
-      "claim_ids": [],
-      "source_ids": [
-        "SRC-020",
-        "SRC-021",
-        "SRC-004"
-      ],
-      "translations": {
-        "fr": {
-          "path": "/fr/codage-predictif/",
-          "slug": "codage-predictif",
-          "status": "launched",
-          "indexable": true,
-          "hreflang_active": true
-        },
-        "de": {
-          "path": "/de/praediktive-kodierung/",
-          "slug": "praediktive-kodierung",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "es": {
-          "path": "/es/codificacion-predictiva/",
-          "slug": "codificacion-predictiva",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "zh": {
-          "path": "/zh/yuce-bianma/",
-          "slug": "yuce-bianma",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ar": {
-          "status": "launched",
-          "path": "/ar/predictive-coding/",
-          "indexable": true,
-          "hreflang_active": true,
-          "launched_date": "2026-06-16",
-          "pilot_sprint": "7D"
-        },
-        "ja": {
-          "path": "/ja/yosoku-fugouka/",
-          "slug": "yosoku-fugouka",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ru": {
-          "path": "/ru/predskazatelnoe-kodirovanie/",
-          "slug": "predskazatelnoe-kodirovanie",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        }
-      }
-    },
-    {
-      "english_path": "/active-inference/",
-      "concept_id": "ZONE-ACTIVE-INFERENCE",
-      "term_id": "active-inference",
-      "layer": "L2",
-      "fio_class": "FIO-05",
-      "fis_criterion": "FIS-5",
-      "safety_class": "educational",
-      "claim_ids": [],
-      "source_ids": [
-        "SRC-020",
-        "SRC-027",
-        "SRC-004"
-      ],
-      "translations": {
-        "fr": {
-          "path": "/fr/inference-active/",
-          "slug": "inference-active",
-          "status": "launched",
-          "indexable": true,
-          "hreflang_active": true
-        },
-        "de": {
-          "path": "/de/aktive-inferenz/",
-          "slug": "aktive-inferenz",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "es": {
-          "path": "/es/inferencia-activa/",
-          "slug": "inferencia-activa",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "zh": {
-          "path": "/zh/zhudong-tuanli/",
-          "slug": "zhudong-tuanli",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ar": {
-          "path": "/ar/al-istidlal-al-nashit/",
-          "slug": "al-istidlal-al-nashit",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ja": {
-          "path": "/ja/nodo-suiron/",
-          "slug": "nodo-suiron",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ru": {
-          "path": "/ru/aktivnoe-vyvod/",
-          "slug": "aktivnoe-vyvod",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        }
-      }
-    },
-    {
-      "english_path": "/computer-vision/",
-      "concept_id": "ZONE-COMPUTER-VISION",
-      "term_id": "computer-vision",
-      "layer": "L3",
-      "fio_class": "FIO-05",
-      "fis_criterion": "FIS-5",
-      "safety_class": "technical",
-      "claim_ids": [],
-      "source_ids": [
-        "SRC-007",
-        "SRC-022",
-        "SRC-004"
-      ],
-      "translations": {
-        "fr": {
-          "path": "/fr/vision-par-ordinateur/",
-          "slug": "vision-par-ordinateur",
-          "status": "launched",
-          "indexable": true,
-          "hreflang_active": true
-        },
-        "de": {
-          "path": "/de/computervision/",
-          "slug": "computervision",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "es": {
-          "path": "/es/vision-por-computadora/",
-          "slug": "vision-por-computadora",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "zh": {
-          "path": "/zh/jisuanji-shijue/",
-          "slug": "jisuanji-shijue",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ar": {
-          "status": "launched",
-          "path": "/ar/computer-vision/",
-          "indexable": true,
-          "hreflang_active": true,
-          "launched_date": "2026-06-16",
-          "pilot_sprint": "7D"
-        },
-        "ja": {
-          "path": "/ja/konpyuta-bijon/",
-          "slug": "konpyuta-bijon",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ru": {
-          "path": "/ru/mashinnoe-zrenie/",
-          "slug": "mashinnoe-zrenie",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        }
-      }
-    },
-    {
-      "english_path": "/transformer-architecture/",
-      "concept_id": "ZONE-TRANSFORMER",
-      "term_id": "transformer-architecture",
-      "layer": "L3",
       "fio_class": "FIO-01",
       "fis_criterion": "FIS-1",
-      "safety_class": "technical",
-      "claim_ids": [],
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-022",
+        "CLM-023",
+        "CLM-024",
+        "CLM-025",
+        "CLM-572",
+        "CLM-573"
+      ],
       "source_ids": [
-        "SRC-017",
-        "SRC-018",
-        "SRC-019"
+        "SRC-005",
+        "SRC-006",
+        "SRC-014"
       ],
       "translations": {
         "fr": {
-          "path": "/fr/architecture-transformer/",
-          "slug": "architecture-transformer",
+          "path": "/fr/perception-visuelle/",
+          "slug": "perception-visuelle",
           "status": "launched",
           "indexable": true,
           "hreflang_active": true
-        },
-        "de": {
-          "path": "/de/transformer-architektur/",
-          "slug": "transformer-architektur",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "es": {
-          "path": "/es/arquitectura-transformer/",
-          "slug": "arquitectura-transformer",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "zh": {
-          "path": "/zh/bianhuan-qi-jiagou/",
-          "slug": "bianhuan-qi-jiagou",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ar": {
-          "path": "/ar/mimaariyya-al-muhawwil/",
-          "slug": "mimaariyya-al-muhawwil",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ja": {
-          "path": "/ja/toransufoma-akitekucha/",
-          "slug": "toransufoma-akitekucha",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
-        },
-        "ru": {
-          "path": "/ru/arkhitektura-transformer/",
-          "slug": "arkhitektura-transformer",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/selective-attention/",
+      "concept_id": "CON-perceptual-suspension",
+      "term_id": "TRM-008",
+      "layer": "L2",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-030",
+        "CLM-031",
+        "CLM-032",
+        "CLM-033"
+      ],
+      "source_ids": [
+        "SRC-005"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/attention-selective/",
+          "slug": "attention-selective",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/figure-ground/",
+      "concept_id": "CON-signal-separation",
+      "term_id": "TRM-009",
+      "layer": "L2",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-034",
+        "CLM-035",
+        "CLM-036",
+        "CLM-037"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/figure-fond/",
+          "slug": "figure-fond",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
         }
       }
     },
@@ -894,6 +599,1476 @@
           "status": "not_started",
           "indexable": false,
           "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/cornea/",
+      "concept_id": "CON-signal-entry",
+      "term_id": "TRM-012",
+      "layer": "L1",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-046",
+        "CLM-047",
+        "CLM-048",
+        "CLM-832"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-025"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/cornee/",
+          "slug": "cornee",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/retina/",
+      "concept_id": "ZONE-RETINA",
+      "term_id": "retina",
+      "layer": "L1",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-001"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-009",
+        "SRC-011",
+        "SRC-012"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/retine/",
+          "slug": "retine",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        },
+        "de": {
+          "path": "/de/netzhaut/",
+          "slug": "netzhaut",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "es": {
+          "path": "/es/retina/",
+          "slug": "retina",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "zh": {
+          "path": "/zh/shiwang-mo/",
+          "slug": "shiwang-mo",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ar": {
+          "status": "launched",
+          "path": "/ar/retina/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
+        },
+        "ja": {
+          "path": "/ja/moumaku/",
+          "slug": "moumaku",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ru": {
+          "path": "/ru/setchatka/",
+          "slug": "setchatka",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/photoreceptors/",
+      "concept_id": "CON-signal-transduction",
+      "term_id": "TRM-014",
+      "layer": "L1",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-052",
+        "CLM-053",
+        "CLM-054",
+        "CLM-055"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/photorecepteurs/",
+          "slug": "photorecepteurs",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/optic-nerve/",
+      "concept_id": "ZONE-OPTIC-NERVE",
+      "term_id": "optic-nerve",
+      "layer": "L1",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "medical-educational",
+      "claim_ids": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-009",
+        "SRC-025"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/nerf-optique/",
+          "slug": "nerf-optique",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        },
+        "de": {
+          "path": "/de/sehnerv/",
+          "slug": "sehnerv",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "es": {
+          "path": "/es/nervio-optico/",
+          "slug": "nervio-optico",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "zh": {
+          "path": "/zh/shijing/",
+          "slug": "shijing",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ar": {
+          "status": "launched",
+          "path": "/ar/optic-nerve/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
+        },
+        "ja": {
+          "path": "/ja/shinkei/",
+          "slug": "shinkei",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ru": {
+          "path": "/ru/zritelny-nerv/",
+          "slug": "zritelny-nerv",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/perceptual-constancy/",
+      "concept_id": "CON-stable-interpretation",
+      "term_id": "TRM-016",
+      "layer": "L2",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-059",
+        "CLM-060",
+        "CLM-061",
+        "CLM-062"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/constance-perceptive/",
+          "slug": "constance-perceptive",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/gestalt-principles/",
+      "concept_id": "CON-perceptual-organization",
+      "term_id": "TRM-017",
+      "layer": "L2",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-063",
+        "CLM-064",
+        "CLM-065",
+        "CLM-066"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/principes-de-la-gestalt/",
+          "slug": "principes-de-la-gestalt",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/computer-vision/",
+      "concept_id": "ZONE-COMPUTER-VISION",
+      "term_id": "computer-vision",
+      "layer": "L3",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "technical",
+      "claim_ids": [],
+      "source_ids": [
+        "SRC-007",
+        "SRC-022",
+        "SRC-004"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/vision-par-ordinateur/",
+          "slug": "vision-par-ordinateur",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        },
+        "de": {
+          "path": "/de/computervision/",
+          "slug": "computervision",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "es": {
+          "path": "/es/vision-por-computadora/",
+          "slug": "vision-por-computadora",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "zh": {
+          "path": "/zh/jisuanji-shijue/",
+          "slug": "jisuanji-shijue",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ar": {
+          "status": "launched",
+          "path": "/ar/computer-vision/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
+        },
+        "ja": {
+          "path": "/ja/konpyuta-bijon/",
+          "slug": "konpyuta-bijon",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ru": {
+          "path": "/ru/mashinnoe-zrenie/",
+          "slug": "mashinnoe-zrenie",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/iris/",
+      "concept_id": "CON-aperture-regulation",
+      "term_id": "TRM-020",
+      "layer": "L1",
+      "fio_class": "FIO-02",
+      "fis_criterion": "FIS-2",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-075",
+        "CLM-076",
+        "CLM-077",
+        "CLM-833"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-025"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/iris/",
+          "slug": "iris",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/macula/",
+      "concept_id": "CON-precision-zone",
+      "term_id": "TRM-022",
+      "layer": "L1",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-081",
+        "CLM-082",
+        "CLM-083",
+        "CLM-835"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-025"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/macula/",
+          "slug": "macula",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/visual-working-memory/",
+      "concept_id": "CON-active-holding",
+      "term_id": "TRM-025",
+      "layer": "L2",
+      "fio_class": "FIO-02",
+      "fis_criterion": "FIS-2",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-092",
+        "CLM-093",
+        "CLM-094",
+        "CLM-095",
+        "CLM-1301",
+        "CLM-1302",
+        "CLM-1303",
+        "CLM-1304",
+        "CLM-1305",
+        "CLM-1306"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006",
+        "SRC-009",
+        "SRC-014"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/memoire-visuelle-de-travail/",
+          "slug": "memoire-visuelle-de-travail",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/visual-cortex/",
+      "concept_id": "ZONE-VISUAL-CORTEX",
+      "term_id": "visual-cortex",
+      "layer": "L1",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "medical-educational",
+      "claim_ids": [],
+      "source_ids": [
+        "SRC-009",
+        "SRC-010",
+        "SRC-013"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/cortex-visuel/",
+          "slug": "cortex-visuel",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        },
+        "de": {
+          "path": "/de/sehrinrinde/",
+          "slug": "sehrinrinde",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "es": {
+          "path": "/es/corteza-visual/",
+          "slug": "corteza-visual",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "zh": {
+          "path": "/zh/shijue-pixhi/",
+          "slug": "shijue-pixhi",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ar": {
+          "status": "launched",
+          "path": "/ar/visual-cortex/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
+        },
+        "ja": {
+          "path": "/ja/shikaku-hishitsu/",
+          "slug": "shikaku-hishitsu",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ru": {
+          "path": "/ru/zritelna-kora/",
+          "slug": "zritelna-kora",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/fovea-centralis/",
+      "concept_id": "CON-fovea-centralis",
+      "term_id": "TRM-045",
+      "layer": "L1",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-133",
+        "CLM-134",
+        "CLM-135",
+        "CLM-136"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/fovea-centrale/",
+          "slug": "fovea-centrale",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/perceptual-error/",
+      "concept_id": "CON-perceptual-error",
+      "term_id": "TRM-058",
+      "layer": "L2",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-180",
+        "CLM-181",
+        "CLM-182",
+        "CLM-183",
+        "CLM-1307",
+        "CLM-1308",
+        "CLM-1309",
+        "CLM-1310",
+        "CLM-1311",
+        "CLM-1312"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006",
+        "SRC-017"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/erreur-perceptive/",
+          "slug": "erreur-perceptive",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/scene-understanding/",
+      "concept_id": "CON-scene-understanding",
+      "term_id": "TRM-062",
+      "layer": "L3",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-196",
+        "CLM-197",
+        "CLM-198",
+        "CLM-199",
+        "CLM-1205",
+        "CLM-1206",
+        "CLM-1207",
+        "CLM-1208",
+        "CLM-1209",
+        "CLM-1210",
+        "CLM-1211",
+        "CLM-1212",
+        "CLM-1213"
+      ],
+      "source_ids": [
+        "SRC-007",
+        "SRC-005",
+        "SRC-016"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/comprehension-de-scenes/",
+          "slug": "comprehension-de-scenes",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/synthetic-media/",
+      "concept_id": "CON-synthetic-media",
+      "term_id": "TRM-063",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-200",
+        "CLM-201",
+        "CLM-202",
+        "CLM-203"
+      ],
+      "source_ids": [
+        "SRC-007",
+        "SRC-008"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/medias-synthetiques/",
+          "slug": "medias-synthetiques",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/ophthalmic-ai/",
+      "concept_id": "CON-ophthalmic-ai",
+      "term_id": "TRM-066",
+      "layer": "L3",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-212",
+        "CLM-213",
+        "CLM-214",
+        "CLM-215",
+        "CLM-847",
+        "CLM-1291",
+        "CLM-1292",
+        "CLM-1293",
+        "CLM-1294",
+        "CLM-1295"
+      ],
+      "source_ids": [
+        "SRC-007",
+        "SRC-026"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/ia-ophtalmique/",
+          "slug": "ia-ophtalmique",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/medical-imaging-ai/",
+      "concept_id": "CON-medical-imaging-ai",
+      "term_id": "TRM-067",
+      "layer": "L3",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-216",
+        "CLM-217",
+        "CLM-218",
+        "CLM-219",
+        "CLM-1296",
+        "CLM-1297",
+        "CLM-1298",
+        "CLM-1299",
+        "CLM-1300"
+      ],
+      "source_ids": [
+        "SRC-007",
+        "SRC-017"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/ia-en-imagerie-medicale/",
+          "slug": "ia-en-imagerie-medicale",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/tear-film/",
+      "concept_id": "CON-tear-film",
+      "term_id": "TRM-079",
+      "layer": "L1",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-264",
+        "CLM-265",
+        "CLM-266",
+        "CLM-267"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/film-lacrymal/",
+          "slug": "film-lacrymal",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/visual-acuity/",
+      "concept_id": "CON-visual-acuity",
+      "term_id": "TRM-081",
+      "layer": "L2",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-272",
+        "CLM-273",
+        "CLM-274",
+        "CLM-275",
+        "CLM-846",
+        "CLM-1268",
+        "CLM-1269",
+        "CLM-1270",
+        "CLM-1271",
+        "CLM-1272",
+        "CLM-1273",
+        "CLM-1274"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006",
+        "SRC-026",
+        "SRC-011"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/acuite-visuelle/",
+          "slug": "acuite-visuelle",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/binding-problem/",
+      "concept_id": "CON-binding-problem",
+      "term_id": "TRM-087",
+      "layer": "L2",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-296",
+        "CLM-297",
+        "CLM-298",
+        "CLM-299"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/probleme-de-liaison/",
+          "slug": "probleme-de-liaison",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/visual-field/",
+      "concept_id": "CON-visual-field",
+      "term_id": "TRM-107",
+      "layer": "L1",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-376",
+        "CLM-377",
+        "CLM-378",
+        "CLM-379",
+        "CLM-845",
+        "CLM-1275",
+        "CLM-1276",
+        "CLM-1277",
+        "CLM-1278",
+        "CLM-1279",
+        "CLM-1280"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-026",
+        "SRC-013"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/champ-visuel/",
+          "slug": "champ-visuel",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/predictive-coding/",
+      "concept_id": "ZONE-PREDICTIVE-CODING",
+      "term_id": "predictive-coding",
+      "layer": "L2",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": [
+        "SRC-020",
+        "SRC-021",
+        "SRC-004"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/codage-predictif/",
+          "slug": "codage-predictif",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        },
+        "de": {
+          "path": "/de/praediktive-kodierung/",
+          "slug": "praediktive-kodierung",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "es": {
+          "path": "/es/codificacion-predictiva/",
+          "slug": "codificacion-predictiva",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "zh": {
+          "path": "/zh/yuce-bianma/",
+          "slug": "yuce-bianma",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ar": {
+          "status": "launched",
+          "path": "/ar/predictive-coding/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
+        },
+        "ja": {
+          "path": "/ja/yosoku-fugouka/",
+          "slug": "yosoku-fugouka",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ru": {
+          "path": "/ru/predskazatelnoe-kodirovanie/",
+          "slug": "predskazatelnoe-kodirovanie",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/object-recognition/",
+      "concept_id": "CON-object-recognition",
+      "term_id": "TRM-111",
+      "layer": "L2",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-392",
+        "CLM-393",
+        "CLM-394",
+        "CLM-395",
+        "CLM-1196",
+        "CLM-1197",
+        "CLM-1198",
+        "CLM-1199",
+        "CLM-1200",
+        "CLM-1201",
+        "CLM-1202",
+        "CLM-1203",
+        "CLM-1204"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006",
+        "SRC-015",
+        "SRC-017"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/reconnaissance-des-objets/",
+          "slug": "reconnaissance-des-objets",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/attention-mechanism/",
+      "concept_id": "CON-attention-mechanism",
+      "term_id": "TRM-114",
+      "layer": "L3",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-404",
+        "CLM-405",
+        "CLM-406",
+        "CLM-407"
+      ],
+      "source_ids": [
+        "SRC-007"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/mecanisme-d-attention/",
+          "slug": "mecanisme-d-attention",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/transformer-architecture/",
+      "concept_id": "ZONE-TRANSFORMER",
+      "term_id": "transformer-architecture",
+      "layer": "L3",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "technical",
+      "claim_ids": [],
+      "source_ids": [
+        "SRC-017",
+        "SRC-018",
+        "SRC-019"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/architecture-transformer/",
+          "slug": "architecture-transformer",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        },
+        "de": {
+          "path": "/de/transformer-architektur/",
+          "slug": "transformer-architektur",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "es": {
+          "path": "/es/arquitectura-transformer/",
+          "slug": "arquitectura-transformer",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "zh": {
+          "path": "/zh/bianhuan-qi-jiagou/",
+          "slug": "bianhuan-qi-jiagou",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ar": {
+          "path": "/ar/mimaariyya-al-muhawwil/",
+          "slug": "mimaariyya-al-muhawwil",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ja": {
+          "path": "/ja/toransufoma-akitekucha/",
+          "slug": "toransufoma-akitekucha",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ru": {
+          "path": "/ru/arkhitektura-transformer/",
+          "slug": "arkhitektura-transformer",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/active-inference/",
+      "concept_id": "ZONE-ACTIVE-INFERENCE",
+      "term_id": "active-inference",
+      "layer": "L2",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "educational",
+      "claim_ids": [],
+      "source_ids": [
+        "SRC-020",
+        "SRC-027",
+        "SRC-004"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/inference-active/",
+          "slug": "inference-active",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        },
+        "de": {
+          "path": "/de/aktive-inferenz/",
+          "slug": "aktive-inferenz",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "es": {
+          "path": "/es/inferencia-activa/",
+          "slug": "inferencia-activa",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "zh": {
+          "path": "/zh/zhudong-tuanli/",
+          "slug": "zhudong-tuanli",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ar": {
+          "path": "/ar/al-istidlal-al-nashit/",
+          "slug": "al-istidlal-al-nashit",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ja": {
+          "path": "/ja/nodo-suiron/",
+          "slug": "nodo-suiron",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        },
+        "ru": {
+          "path": "/ru/aktivnoe-vyvod/",
+          "slug": "aktivnoe-vyvod",
+          "status": "not_started",
+          "indexable": false,
+          "hreflang_active": false
+        }
+      }
+    },
+    {
+      "english_path": "/visual-attention/",
+      "concept_id": "CON-visual-attention",
+      "term_id": "TRM-145",
+      "layer": "L2",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "educational",
+      "claim_ids": [
+        "CLM-528",
+        "CLM-529",
+        "CLM-530",
+        "CLM-531"
+      ],
+      "source_ids": [
+        "SRC-005",
+        "SRC-006"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/attention-visuelle/",
+          "slug": "attention-visuelle",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/optic-disc/",
+      "concept_id": "CON-optic-disc",
+      "term_id": "TRM-161",
+      "layer": "L1",
+      "fio_class": "FIO-01",
+      "fis_criterion": "FIS-1",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-624",
+        "CLM-625",
+        "CLM-626",
+        "CLM-627"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-013"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/disque-optique/",
+          "slug": "disque-optique",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/pupil/",
+      "concept_id": "CON-pupil",
+      "term_id": "TRM-169",
+      "layer": "L1",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-656",
+        "CLM-657",
+        "CLM-658",
+        "CLM-659"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/pupille/",
+          "slug": "pupille",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/diffusion-models/",
+      "concept_id": "CON-diffusion-models",
+      "term_id": "TRM-207",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-808",
+        "CLM-809",
+        "CLM-810",
+        "CLM-811",
+        "CLM-1281",
+        "CLM-1282",
+        "CLM-1283",
+        "CLM-1284",
+        "CLM-1285"
+      ],
+      "source_ids": [
+        "SRC-017",
+        "SRC-023"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/modeles-de-diffusion/",
+          "slug": "modeles-de-diffusion",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/digital-watermarking/",
+      "concept_id": "CON-digital-watermarking",
+      "term_id": "TRM-209",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-816",
+        "CLM-817",
+        "CLM-818",
+        "CLM-819"
+      ],
+      "source_ids": [
+        "SRC-008",
+        "SRC-023"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/filigrane-numerique/",
+          "slug": "filigrane-numerique",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/perceptual-hashing/",
+      "concept_id": "CON-perceptual-hashing",
+      "term_id": "TRM-210",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-820",
+        "CLM-821",
+        "CLM-822",
+        "CLM-823",
+        "CLM-1319",
+        "CLM-1320",
+        "CLM-1321",
+        "CLM-1322",
+        "CLM-1323",
+        "CLM-1324"
+      ],
+      "source_ids": [
+        "SRC-008",
+        "SRC-023"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/hachage-perceptuel/",
+          "slug": "hachage-perceptuel",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/dorsal-stream/",
+      "concept_id": "CON-dorsal-stream",
+      "term_id": "TRM-226",
+      "layer": "L1",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-900",
+        "CLM-901",
+        "CLM-902",
+        "CLM-903",
+        "CLM-1325",
+        "CLM-1326",
+        "CLM-1327",
+        "CLM-1328",
+        "CLM-1329",
+        "CLM-1330"
+      ],
+      "source_ids": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/voie-dorsale/",
+          "slug": "voie-dorsale",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/ventral-stream/",
+      "concept_id": "CON-ventral-stream",
+      "term_id": "TRM-227",
+      "layer": "L1",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "medical-educational",
+      "claim_ids": [
+        "CLM-904",
+        "CLM-905",
+        "CLM-906",
+        "CLM-907",
+        "CLM-1331",
+        "CLM-1332",
+        "CLM-1333",
+        "CLM-1334",
+        "CLM-1335",
+        "CLM-1336"
+      ],
+      "source_ids": [
+        "SRC-009",
+        "SRC-013",
+        "SRC-015",
+        "SRC-017"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/voie-ventrale/",
+          "slug": "voie-ventrale",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/media-forensics/",
+      "concept_id": "CON-media-forensics",
+      "term_id": "TRM-279",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-1112",
+        "CLM-1113",
+        "CLM-1114",
+        "CLM-1115"
+      ],
+      "source_ids": [
+        "SRC-023",
+        "SRC-024"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/analyse-forensique-des-medias/",
+          "slug": "analyse-forensique-des-medias",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/content-authenticity/",
+      "concept_id": "CON-content-authenticity",
+      "term_id": "TRM-280",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-1116",
+        "CLM-1117",
+        "CLM-1118",
+        "CLM-1119",
+        "CLM-1286",
+        "CLM-1287",
+        "CLM-1288",
+        "CLM-1289",
+        "CLM-1290"
+      ],
+      "source_ids": [
+        "SRC-008"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/authenticite-du-contenu/",
+          "slug": "authenticite-du-contenu",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/camera-fingerprinting/",
+      "concept_id": "CON-camera-fingerprinting",
+      "term_id": "TRM-281",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-1120",
+        "CLM-1121",
+        "CLM-1122",
+        "CLM-1123",
+        "CLM-1313",
+        "CLM-1314",
+        "CLM-1315",
+        "CLM-1316",
+        "CLM-1317",
+        "CLM-1318"
+      ],
+      "source_ids": [
+        "SRC-023",
+        "SRC-024"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/empreinte-camera/",
+          "slug": "empreinte-camera",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/evaluation-metrics/",
+      "concept_id": "CON-evaluation-metrics",
+      "term_id": "TRM-292",
+      "layer": "L3",
+      "fio_class": "FIO-05",
+      "fis_criterion": "FIS-5",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-1164",
+        "CLM-1165",
+        "CLM-1166",
+        "CLM-1167"
+      ],
+      "source_ids": [
+        "SRC-022",
+        "SRC-007",
+        "SRC-027"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/metriques-d-evaluation/",
+          "slug": "metriques-d-evaluation",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
+        }
+      }
+    },
+    {
+      "english_path": "/ground-truth/",
+      "concept_id": "CON-ground-truth",
+      "term_id": "TRM-293",
+      "layer": "L3",
+      "fio_class": "FIO-04",
+      "fis_criterion": "FIS-4",
+      "safety_class": "technical",
+      "claim_ids": [
+        "CLM-1168",
+        "CLM-1169",
+        "CLM-1170",
+        "CLM-1171"
+      ],
+      "source_ids": [
+        "SRC-022",
+        "SRC-017"
+      ],
+      "translations": {
+        "fr": {
+          "path": "/fr/verite-terrain/",
+          "slug": "verite-terrain",
+          "status": "launched",
+          "indexable": true,
+          "hreflang_active": true
         }
       }
     }

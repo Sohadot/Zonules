@@ -30,7 +30,9 @@ FR_SAFETY_MARKERS = [
 
 FR_AI_SAFETY_MARKERS = [
     "la d\u00e9tection n'est pas un diagnostic",
+    "la d\u00e9tection n\u2019est pas un diagnostic",
     "d\u00e9tection n'est pas",
+    "d\u00e9tection n\u2019est pas",
     "ne constitue pas un diagnostic",
 ]
 
@@ -264,6 +266,7 @@ def _check_translation_html(entry, trans, lang_code, en_path, routes_by_path, er
         return
 
     if lang_code == "fr":
+        _check_french_page_quality(entry, trans, html_path, lang_code, en_path, errors)
         _check_fr_safety(html_path, en_path, entry.get("safety_class", ""), errors)
         fr_url = BASE + trans_path
         en_url = routes_by_path.get(en_path, {}).get("canonical", "") if en_path else ""
@@ -277,11 +280,49 @@ def _check_fr_safety(html_path, en_path, safety_class, errors):
             errors.append(
                 f"French page for '{en_path}' (medical-educational) missing safety note"
             )
-    if "deepfake" in en_path or "forensic" in en_path or "detection" in en_path:
+    ai_diagnosis_paths = ("deepfake", "forensic", "detection", "ophthalmic-ai", "medical-imaging-ai")
+    if any(fragment in en_path for fragment in ai_diagnosis_paths):
         if not any(marker.lower() in body for marker in FR_AI_SAFETY_MARKERS):
             errors.append(
                 f"French page for '{en_path}' (AI safety) missing detection-is-not-diagnosis boundary"
             )
+
+
+def _check_french_page_quality(entry, trans, html_path, lang_code, en_path, errors):
+    body = read_text(html_path)
+    trans_path = trans.get("path", "")
+    canonical = BASE + trans_path
+
+    if '<html lang="fr"' not in body:
+        errors.append(f"French page {trans_path}: missing html lang=\"fr\"")
+    if f'<link rel="canonical" href="{canonical}"' not in body:
+        errors.append(f"French page {trans_path}: missing canonical {canonical}")
+    if f'hreflang="{lang_code}" href="{canonical}"' not in body:
+        errors.append(f"French page {trans_path}: missing self hreflang")
+
+    for token in (entry.get("fio_class"), entry.get("fis_criterion")):
+        if token and token not in body:
+            errors.append(f"French page {trans_path}: missing invariant code {token}")
+
+    visible = re.sub(r"<script.*?</script>|<style.*?</style>", " ", body, flags=re.S | re.I)
+    visible = re.sub(r"<[^>]+>", " ", visible)
+    visible = html.unescape(" ".join(visible.split()))
+    letters = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]", visible)
+    if len(letters) < 1500:
+        errors.append(f"French page {trans_path}: appears thin ({len(letters)} letters)")
+
+    english_section_markers = ("Scientific Grounding", "Safety Notes", "Source Notes", "Failure Mode")
+    for marker in english_section_markers:
+        if marker in body:
+            errors.append(f"French page {trans_path}: contains untranslated English section marker '{marker}'")
+
+    french_signal_markers = ("Définition", "Ancrage", "sécurité", "Source", "Référence", "Ce contenu")
+    if not any(marker.lower() in body.lower() for marker in french_signal_markers):
+        errors.append(f"French page {trans_path}: missing recognizable French governance sections")
+
+    source_ids = entry.get("source_ids", [])
+    if source_ids and not any(source_id in body for source_id in source_ids):
+        errors.append(f"French page {trans_path}: no registered source IDs visible for {en_path}")
 
 
 def _check_hreflang_reciprocity(fr_html_path, fr_url, en_path, en_url, errors):
@@ -364,7 +405,7 @@ def _check_languages_page(layers_by_code, routes, errors):
     }
     expected_status_fragments = {
         "en": ["Launched", "master"],
-        "fr": ["Pilot", "12 anchor pages"],
+        "fr": ["Pilot/core expansion", "50 anchor/core pages"],
         "ar": ["Pilot", "8 RTL anchor pages"],
         "de": ["Architecture defined"],
         "es": ["Architecture defined"],

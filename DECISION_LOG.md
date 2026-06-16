@@ -1115,3 +1115,38 @@ Sprint 7E found one real consistency gap: translated sitemap entries carried onl
 ### Next Recommendation
 
 Before any French or Arabic expansion, keep Sprint 7F limited to translation QA hardening: source-note parity checks, language-specific thin-translation heuristics, and live deployment spot checks after merge. Do not add translated pages until those guardrails are in place.
+
+---
+
+## Sprint 7F -- French Governed Layer Expansion to 50 Pages
+
+**Date**: 2026-06-16
+**Commit**: `feat(i18n): expand French governed layer to 50 pages`
+
+### Change
+
+French was expanded from the 12-page pilot to a 50-page governed anchor/core layer. The 38 added French pages focus on core anatomy, visual science, perception/cognition, machine vision, authenticity, and verification concepts already hardened in the English master.
+
+English remains the frozen master at 300 registered pages. Arabic remains an 8-page RTL pilot. German, Spanish, Chinese, Japanese, and Russian remain architecture-defined with 0 launched pages.
+
+### Governance
+
+`data/languages.json` and `data/translation-map.json` now register 50 launched/indexable French pages with preserved `term_id`, `concept_id`, FIO/FIS classification, `safety_class`, claim IDs, and source IDs. Hreflang is active only for completed equivalents, with Arabic alternates present only where the Arabic pilot exists.
+
+`scripts/validate_multilingual.py` now includes French page quality checks for visible French content, metadata, FIO/FIS preservation, source visibility, and diagnosis-boundary language on AI/forensic pages.
+
+### Verification
+
+- `scripts/generate_sitemap.py`: PASS; sitemap expected at 358 URLs
+- `scripts/build_site.py`: PASS
+- `scripts/validate_multilingual.py`: PASS
+- `scripts/validate_all.py`: PASS
+- French pages: 50
+- Arabic pages: 8
+- English governed pages: 300
+- `/acquire/`: excluded
+- German/Spanish/Chinese/Japanese/Russian hreflang: absent
+
+### Next Recommendation
+
+After deployment, run live checks for `/languages/`, `sitemap.xml`, several new French pages, the French/English/Arabic overlap pages, and sitemap hreflang groups. Keep the next sprint focused on live QA and targeted French quality review before any Arabic expansion.

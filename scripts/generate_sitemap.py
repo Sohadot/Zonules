@@ -182,7 +182,12 @@ def main():
         fh.write(robots)
     en_count = len(eligible_english(routes))
     tr_count = len(translated_pages(tmap))
-    print("Built sitemap.xml (%d English + %d translated = %d urls) and robots.txt" % (en_count, tr_count, en_count + tr_count))
+    language_count = 1 if os.path.exists(os.path.join(ROOT, "languages", "index.html")) else 0
+    total_count = en_count + tr_count + language_count
+    print(
+        "Built sitemap.xml (%d English + %d translated + %d language status = %d urls) and robots.txt"
+        % (en_count, tr_count, language_count, total_count)
+    )
     return 0
 
 

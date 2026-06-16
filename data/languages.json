@@ -1,7 +1,7 @@
 {
   "id": "LANGUAGES",
   "name": "Zonules.com Language Registry",
-  "version": "1.1",
+  "version": "1.2",
   "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
   "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
   "freeze_date": "2026-06-14",
@@ -48,8 +48,8 @@
       "url_prefix": "/fr/",
       "launched_date": null,
       "pilot_date": "2026-06-14",
-      "pilot_page_count": 12,
-      "note": "Pilot launched Sprint 7B. 12 anchor pages indexed. Layer-level indexable remains false; individual pages indexed via translation-map.json. Full launch requires 300 governed pages and DECISION_LOG.md entry."
+      "pilot_page_count": 50,
+      "note": "Pilot/core expansion: Sprint 7F expanded French to 50 governed anchor/core pages. Layer-level indexable remains false; individual pages indexed via translation-map.json. Full launch requires 300 governed pages and DECISION_LOG.md entry."
     },
     {
       "code": "de",

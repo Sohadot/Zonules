@@ -10,12 +10,12 @@
     "english_path": "The frozen English route path from data/routes.json.",
     "concept_id": "Language-invariant concept identifier from English markdown frontmatter. Never mutated.",
     "term_id": "Language-invariant term identifier from English markdown frontmatter. Never mutated.",
-    "layer": "L1, L2, or L3 — same as English master. Language-invariant.",
-    "fio_class": "FIO class from data/routes.json — language-invariant.",
-    "fis_criterion": "FIS criterion from data/routes.json — language-invariant.",
-    "safety_class": "Safety classification from data/routes.json — language-invariant.",
-    "claim_ids": "Claim IDs from data/claims.json that apply to this route — language-invariant.",
-    "source_ids": "Source IDs from data/sources.json that apply to this route — language-invariant.",
+    "layer": "L1, L2, or L3 â same as English master. Language-invariant.",
+    "fio_class": "FIO class from data/routes.json â language-invariant.",
+    "fis_criterion": "FIS criterion from data/routes.json â language-invariant.",
+    "safety_class": "Safety classification from data/routes.json â language-invariant.",
+    "claim_ids": "Claim IDs from data/claims.json that apply to this route â language-invariant.",
+    "source_ids": "Source IDs from data/sources.json that apply to this route â language-invariant.",
     "translations": {
       "note": "Keyed by BCP 47 language code.",
       "path": "Full URL path including language prefix.",
@@ -141,11 +141,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/ribat-al-ain/",
-          "slug": "ribat-al-ain",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/zonules-of-zinn/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/mao-taikiken/",
@@ -210,11 +211,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/al-shabakiyya/",
-          "slug": "al-shabakiyya",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/retina/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/moumaku/",
@@ -276,11 +278,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/tawafuq/",
-          "slug": "tawafuq",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/lens-accommodation/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/chosetsuno/",
@@ -342,11 +345,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/al-asab-al-basari/",
-          "slug": "al-asab-al-basari",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/optic-nerve/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/shinkei/",
@@ -408,11 +412,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/al-qishra-al-basariyya/",
-          "slug": "al-qishra-al-basariyya",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/visual-cortex/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/shikaku-hishitsu/",
@@ -474,11 +479,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/al-tarmiiz-al-tanabuiy/",
-          "slug": "al-tarmiiz-al-tanabuiy",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/predictive-coding/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/yosoku-fugouka/",
@@ -606,11 +612,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/al-ruya-al-aalia/",
-          "slug": "al-ruya-al-aalia",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/computer-vision/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/konpyuta-bijon/",
@@ -803,11 +810,12 @@
           "hreflang_active": false
         },
         "ar": {
-          "path": "/ar/asl-al-suwar/",
-          "slug": "asl-al-suwar",
-          "status": "not_started",
-          "indexable": false,
-          "hreflang_active": false
+          "status": "launched",
+          "path": "/ar/image-provenance/",
+          "indexable": true,
+          "hreflang_active": true,
+          "launched_date": "2026-06-16",
+          "pilot_sprint": "7D"
         },
         "ja": {
           "path": "/ja/gazo-no-kigen/",

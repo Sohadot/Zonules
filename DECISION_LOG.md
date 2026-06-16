@@ -1053,3 +1053,29 @@ No English master content was mutated. Additive `hreflang="ar"` metadata was ins
 | No broken links / orphans | ✓ PASS |
 | No unsafe/unsourced claims | ✓ PASS |
 | Arabic safety notes present | ✓ PASS |
+---
+
+## Sprint 7D Hotfix -- Languages Page Arabic Pilot Status
+
+**Date**: 2026-06-16
+**Commit**: `fix(i18n): align languages page with Arabic RTL pilot status`
+
+### Change
+
+`/languages/` was stale after Sprint 7D: the status table still listed Arabic as architecture-defined with 0 pages, and the future-planning copy still described the Arabic RTL pilot as pending. The page now reflects the governed live state:
+
+- English: launched master, 300 registered pages
+- French: pilot, 12 indexed anchor pages
+- Arabic: pilot, 8 indexed RTL anchor pages
+- German, Spanish, Chinese, Japanese, and Russian: architecture-defined, 0 pages
+
+### Validator Coverage
+
+`scripts/validate_multilingual.py` now checks the visible `/languages/` status table against the language registry and translation map counts, and the Arabic RTL/hreflang checks now run as part of the normal validator path.
+
+### Verification
+
+- `scripts/generate_sitemap.py`: PASS; sitemap remains 320 URLs
+- `scripts/build_site.py`: PASS
+- `scripts/validate_multilingual.py`: PASS
+- `scripts/validate_all.py`: PASS

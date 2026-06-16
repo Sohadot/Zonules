@@ -248,7 +248,17 @@ def breadcrumb(meta, name):
             % (html.escape(layer), html.escape(name)))
 
 
-def render_unit(route, meta, body, claims_by_id, sources_by_id, hreflang_fr_url=""):
+def render_hreflang_links(translated_urls):
+    return "".join(
+        '<link rel="alternate" hreflang="%s" href="%s">\n' % (
+            html.escape(item["lang"], quote=True),
+            html.escape(item["url"], quote=True),
+        )
+        for item in translated_urls
+    )
+
+
+def render_unit(route, meta, body, claims_by_id, sources_by_id, translated_urls=None):
     name = meta.get("term") or meta.get("title", "")
     refs_html, cited = references_section(meta, claims_by_id, sources_by_id)
     badges = ""
@@ -268,10 +278,7 @@ def render_unit(route, meta, body, claims_by_id, sources_by_id, hreflang_fr_url=
                       'ontology; <strong>FIS</strong> names the matching standard criterion. '
                       '<a href="/focus-integrity-codes/">What do these codes mean?</a></p>')
     article = render_markdown(body)
-    hreflang_links = (
-        '<link rel="alternate" hreflang="fr" href="%s">\n' % hreflang_fr_url
-        if hreflang_fr_url else ""
-    )
+    hreflang_links = render_hreflang_links(translated_urls or [])
     return (head(meta, route, json_ld(meta, route, cited), hreflang_links=hreflang_links) +
             '\n<body class="rl">\n<main class="rl-wrap">\n' +
             breadcrumb(meta, name) + badges + codes_note + '<article class="rl-article">' +
@@ -337,7 +344,7 @@ def render_glossary(routes, by_path):
             '</footer>\n</main>\n</body>\n</html>\n')
 
 
-def render_ontology(routes, fio, fis, hreflang_fr_url=""):
+def render_ontology(routes, fio, fis, translated_urls=None):
     """Generate the ontology hub from FIO + FIS — the governing spine, browsable and citable."""
     fis_by_inv = {c["inverse_of"]: c for c in fis["criteria"]}
     units_by_class = {}
@@ -391,10 +398,7 @@ def render_ontology(routes, fio, fis, hreflang_fr_url=""):
           "hasDefinedTerm": [{"@type": "DefinedTerm", "termCode": c["id"], "name": c["name"],
                               "description": c["definition"]} for c in fio["classes"]]}
     extra = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=True, separators=(",", ":"))
-    hreflang_links = (
-        '<link rel="alternate" hreflang="fr" href="%s">\n' % hreflang_fr_url
-        if hreflang_fr_url else ""
-    )
+    hreflang_links = render_hreflang_links(translated_urls or [])
     return (head(meta, route, extra, hreflang_links=hreflang_links) +
             '\n<body class="rl">\n<main class="rl-wrap">\n' +
             breadcrumb(meta, "Focus Integrity Ontology") +
@@ -423,8 +427,8 @@ def render_ontology(routes, fio, fis, hreflang_fr_url=""):
             % (html.escape(fis["version"]), crit_rows, html.escape(fio["version"]), "".join(class_blocks)))
 
 
-def _load_fr_hreflang_map():
-    """Return {english_path: french_canonical_url} for all active French hreflang entries."""
+def _load_hreflang_map():
+    """Return {english_path: [{lang, url}]} for all active translated hreflang entries."""
     tmap_path = os.path.join(ROOT, "data", "translation-map.json")
     if not os.path.exists(tmap_path):
         return {}
@@ -433,11 +437,16 @@ def _load_fr_hreflang_map():
     result = {}
     for entry in tmap.get("routes", []):
         en_path = entry.get("english_path")
-        fr = entry.get("translations", {}).get("fr", {})
-        if fr.get("hreflang_active") and fr.get("indexable"):
-            fr_path = fr.get("path", "")
-            if fr_path:
-                result[en_path] = BASE + fr_path
+        if not en_path:
+            continue
+        active = []
+        for lang, trans in entry.get("translations", {}).items():
+            if trans.get("hreflang_active") and trans.get("indexable"):
+                trans_path = trans.get("path", "")
+                if trans_path:
+                    active.append({"lang": lang, "url": BASE + trans_path})
+        if active:
+            result[en_path] = active
     return result
 
 
@@ -448,7 +457,7 @@ def outputs():
     fio = load("focus-integrity-ontology.json")
     fis = load("focus-integrity-standard.json")
     by_path = {r["path"]: r for r in routes}
-    fr_hreflang = _load_fr_hreflang_map()
+    hreflang = _load_hreflang_map()
     pages = {}
     for r in routes:
         if r.get("page_type") not in ("reference-unit", "policy"):
@@ -456,12 +465,12 @@ def outputs():
         src = os.path.join(ROOT, r["content"])
         with open(src, encoding="utf-8") as fh:
             meta, body = parse_frontmatter(fh.read())
-        fr_url = fr_hreflang.get(r["path"], "")
-        pages[r["path"]] = render_unit(r, meta, body, claims, sources, hreflang_fr_url=fr_url)
+        translated_urls = hreflang.get(r["path"], [])
+        pages[r["path"]] = render_unit(r, meta, body, claims, sources, translated_urls=translated_urls)
     pages["/glossary/"] = render_glossary(routes, by_path)
     pages["/focus-integrity-ontology/"] = render_ontology(
         routes, fio, fis,
-        hreflang_fr_url=fr_hreflang.get("/focus-integrity-ontology/", "")
+        translated_urls=hreflang.get("/focus-integrity-ontology/", [])
     )
     return pages
 

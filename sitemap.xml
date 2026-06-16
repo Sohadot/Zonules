@@ -230,7 +230,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/computer-vision/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/vision-par-ordinateur/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/computer-vision/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/computer-vision/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/computer-vision/"/>
   </url>
   <url>
@@ -620,7 +620,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/image-provenance/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/provenance-des-images/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/image-provenance/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/image-provenance/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/image-provenance/"/>
   </url>
   <url>
@@ -694,7 +694,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/lens-accommodation/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/accommodation-du-cristallin/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/lens-accommodation/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/lens-accommodation/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/lens-accommodation/"/>
   </url>
   <url>
@@ -873,7 +873,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-nerve/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/nerf-optique/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/optic-nerve/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/optic-nerve/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-nerve/"/>
   </url>
   <url>
@@ -1037,7 +1037,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/predictive-coding/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/codage-predictif/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/predictive-coding/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/predictive-coding/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/predictive-coding/"/>
   </url>
   <url>
@@ -1081,7 +1081,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retina/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/retine/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/retina/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/retina/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retina/"/>
   </url>
   <url>
@@ -1418,7 +1418,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-cortex/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cortex-visuel/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/visual-cortex/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/visual-cortex/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-cortex/"/>
   </url>
   <url>
@@ -1537,7 +1537,71 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/zonules-of-zinn/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/zonules-de-zinn/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/zonules-of-zinn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/zonules-of-zinn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/zonules-of-zinn/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/computer-vision/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/computer-vision/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/computer-vision/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/computer-vision/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/image-provenance/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/image-provenance/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/image-provenance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/image-provenance/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/lens-accommodation/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/lens-accommodation/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/lens-accommodation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/lens-accommodation/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/optic-nerve/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-nerve/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/optic-nerve/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-nerve/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/predictive-coding/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/predictive-coding/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/predictive-coding/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/predictive-coding/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/retina/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retina/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/retina/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retina/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/visual-cortex/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-cortex/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/visual-cortex/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-cortex/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/ar/zonules-of-zinn/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/zonules-of-zinn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/zonules-of-zinn/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/zonules-of-zinn/"/>
   </url>
   <url>
@@ -1546,7 +1610,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/lens-accommodation/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/accommodation-du-cristallin/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/lens-accommodation/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/lens-accommodation/"/>
   </url>
   <url>
@@ -1563,7 +1626,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/predictive-coding/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/codage-predictif/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/predictive-coding/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/predictive-coding/"/>
   </url>
   <url>
@@ -1572,7 +1634,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-cortex/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cortex-visuel/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/visual-cortex/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-cortex/"/>
   </url>
   <url>
@@ -1605,7 +1666,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-nerve/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/nerf-optique/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/optic-nerve/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-nerve/"/>
   </url>
   <url>
@@ -1614,7 +1674,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/image-provenance/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/provenance-des-images/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/image-provenance/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/image-provenance/"/>
   </url>
   <url>
@@ -1623,7 +1682,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retina/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/retine/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/retina/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retina/"/>
   </url>
   <url>
@@ -1632,7 +1690,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/computer-vision/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/vision-par-ordinateur/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/computer-vision/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/computer-vision/"/>
   </url>
   <url>
@@ -1641,85 +1698,11 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/zonules-of-zinn/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/zonules-de-zinn/"/>
-      <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/zonules-of-zinn/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/zonules-of-zinn/"/>
   </url>
   <url>
     <loc>https://zonules.com/languages/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://zonules.com/ar/zonules-of-zinn/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/zonules-of-zinn/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/zonules-of-zinn/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/zonules-de-zinn/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/zonules-of-zinn/"/>
-  </url>
-  <url>
-    <loc>https://zonules.com/ar/lens-accommodation/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/lens-accommodation/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/lens-accommodation/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/accommodation-du-cristallin/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/lens-accommodation/"/>
-  </url>
-  <url>
-    <loc>https://zonules.com/ar/retina/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retina/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retina/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/retine/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/retina/"/>
-  </url>
-  <url>
-    <loc>https://zonules.com/ar/optic-nerve/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-nerve/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-nerve/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/nerf-optique/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/optic-nerve/"/>
-  </url>
-  <url>
-    <loc>https://zonules.com/ar/visual-cortex/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-cortex/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-cortex/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cortex-visuel/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/visual-cortex/"/>
-  </url>
-  <url>
-    <loc>https://zonules.com/ar/predictive-coding/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/predictive-coding/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/predictive-coding/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/codage-predictif/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/predictive-coding/"/>
-  </url>
-  <url>
-    <loc>https://zonules.com/ar/computer-vision/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/computer-vision/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/computer-vision/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/vision-par-ordinateur/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/computer-vision/"/>
-  </url>
-  <url>
-    <loc>https://zonules.com/ar/image-provenance/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/image-provenance/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/image-provenance/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/provenance-des-images/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/image-provenance/"/>
   </url>
 </urlset>

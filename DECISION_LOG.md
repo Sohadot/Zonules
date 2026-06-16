@@ -827,4 +827,96 @@ Gate **PASS** (per governance model) — 300 English pages (floor satisfied); 13
 
 ### Next phase
 
-**Sprint 7C — French Corpus Expansion.** Expand from 12 pilot pages toward the full 300-page French corpus. Governed by docs/MULTILINGUAL_ARCHITECTURE.md. A governance entry in this log is required before each batch of translations is created. Full language launch requires all 300 pages at status=launched in translation-map.json and a DECISION_LOG.md entry authorizing the launch.
+**Sprint 7D — French Corpus Expansion.** Expand from 12 pilot pages toward the full 300-page French corpus. Governed by docs/MULTILINGUAL_ARCHITECTURE.md. A governance entry in this log is required before each batch of translations is created. Full language launch requires all 300 pages at status=launched in translation-map.json and a DECISION_LOG.md entry authorizing the launch.
+
+---
+
+## Sprint 7C — French Pilot QA & Hreflang Audit
+
+**Date:** 2026-06-15
+**Branch:** `claude/french-anchor-pilot-iq2a6w`
+**Status:** COMPLETE — governance gate passed
+**Governing documents:** ASSET_THESIS.md, docs/MULTILINGUAL_ARCHITECTURE.md, docs/ENGLISH_MASTER_FREEZE.md, docs/ENGLISH_MASTER_FREEZE.md §Future Validator Requirements
+
+### Decision
+
+Conduct a full quality audit of the 12 French pilot pages and the hreflang implementation before expanding the French corpus or starting any additional language. Apply corrections; update the validator; record the recommendation for the next phase.
+
+### Audit scope and findings
+
+**1. French page quality — PASS**
+All 12 French pages carry substantive translated content (no thin translation). Safety markers present in all medical-educational pages; "la détection n'est pas un diagnostic" boundary present in `fr/detection-des-deepfakes/`. All SRC-XXX source IDs preserved. All FIO/FIS codes verified against translation-map.json.
+
+**2. Hreflang audit — DEFECTS FOUND AND CORRECTED**
+`MULTILINGUAL_ARCHITECTURE.md §4.1` requires reciprocal hreflang tags: if a French page declares `hreflang="en"` for the English URL, the English page must declare `hreflang="fr"` for the French URL, and both must carry `hreflang="x-default"` pointing to the English canonical.
+
+Defects found:
+- 12 English pilot pages were missing `hreflang="fr"` pointing to their French counterparts
+- 12 French pilot pages were missing `hreflang="x-default"` pointing to the English canonical
+
+**Corrections applied (24 files):** Added `<link rel="alternate" hreflang="fr" href="https://zonules.com/fr/[slug]/">` to all 12 English pages. Added `<link rel="alternate" hreflang="x-default" href="https://zonules.com/[en-path]/">` to all 12 French pages. No English content was modified; only additive hreflang `<link>` metadata was inserted (permitted by `docs/ENGLISH_MASTER_FREEZE.md`).
+
+**3. Typo corrected — `fr/nerf-optique/index.html`**
+Safety Notes contained "inexplique" (missing feminine agreement). Corrected to "inexpliquée".
+
+**4. Sitemap — PASS**
+312 URLs: 299 English + 12 French pilot + 1 `/languages/`. No empty language folders in sitemap. `/acquire/` excluded. No architecture-defined languages included.
+
+**5. Translation-map.json — PASS**
+13 routes registered (12 French + 1 gateway). All `indexable=true`, `hreflang_active=true`. All FIO/FIS/layer/safety_class values match `routes.json`. Invariant fields match frozen English master.
+
+**6. /languages/ page — CORRECTED**
+`languages/index.html` incorrectly listed `fr/integrite-du-focus/` (Intégrité du Focus) under "Layer 3 — Machine Vision". The `/focus-integrity-ontology/` English source is `layer: cross` in translation-map.json. Corrected by moving it to a new "Cross-layer — Ontologie" bullet. Next-phases section updated to reflect Sprint 7C as QA sprint (completed).
+
+**7. Validator improvement — hreflang HTML reciprocity check added**
+`scripts/validate_multilingual.py` extended (Sprint 7C): for every indexed French page, the validator now reads the HTML of both the French page and its English counterpart and verifies that:
+- The French page carries `hreflang="x-default"` pointing to the English canonical URL
+- The English page carries `hreflang="fr"` pointing to the French URL
+- Both carry `hreflang="en"` and `hreflang="fr"` cross-linking each other
+
+### Sprint 7B FIO/FIS table correction (record only — no data files changed)
+
+The Sprint 7B DECISION_LOG.md table contained incorrect FIO/FIS values prior to the hotfix applied at end of Sprint 7B. The corrected values (as they exist in translation-map.json and in all French pages) are:
+
+| French page | Correct FIO | Correct FIS | Correct layer |
+|---|---|---|---|
+| `fr/retine/` | FIO-05 | FIS-5 | L1 |
+| `fr/codage-predictif/` | FIO-03 | FIS-3 | L2 |
+| `fr/inference-active/` | FIO-03 | FIS-3 | L2 |
+| `fr/architecture-transformer/` | FIO-05 | FIS-5 | L3 |
+| `fr/integrite-du-focus/` | null (cross-layer ontology) | null | cross |
+
+All other rows in the Sprint 7B table are correct. No data files required modification.
+
+### Corpus state (unchanged from Sprint 7B)
+
+- **English pages:** 300 (frozen — no change)
+- **Sitemap:** 312 URLs (unchanged — no new pages added)
+- **Claims:** 1336 registered claims (frozen — no change)
+- **Sources:** 27 registered sources (frozen — no change)
+- **French pilot pages:** 12 (no new pages; hreflang metadata corrected)
+
+### Non-actions (by design)
+
+- No new translated pages added
+- No English master content modified (hreflang `<link>` metadata is additive — permitted by freeze doc)
+- No redesign or interface change
+- No APIs, Workers, forms, newsletter backend, payment widgets, or third-party scripts added
+- No architecture-defined languages activated or given hreflang
+
+### Governance gate
+
+Gate **PASS** — 300 English pages (floor satisfied); 1336 claims (floor satisfied); 27 sources (floor satisfied); 12 French pilot pages with correct hreflang reciprocity, correct safety markers, correct FIO/FIS codes; `validate_multilingual.py` PASS; `validate_all.py` PASS.
+
+### Recommendation — next phase
+
+**Recommended: Sprint 7D — Arabic RTL Pilot (8 anchor pages), before expanding French.**
+
+Rationale: The French pilot demonstrates that the translation governance model works. Before expanding to 300 French pages (a large commitment), establishing a second language pilot in Arabic (RTL, `ar`) would:
+1. Validate that the validator, sitemap generator, and hreflang architecture handle RTL correctly before the French expansion locks in conventions
+2. Test the governance model under a genuinely different script and text direction
+3. Produce a two-language proof of concept for the asset's multilingual architecture
+
+Arabic is fourth in the official language order (en → fr → de → es → **zh → ar** → ja → ru) but has the highest strategic novelty (RTL layout, Arabic script). An 8-page Arabic pilot (same anchor pages as French) would surface RTL issues at low cost.
+
+**Alternative: Sprint 7D — French Corpus Expansion.** If RTL complexity is not a current priority, expand French directly from 12 to ~60 anchor pages (all L1 anatomy anchors first), following the same governance model used in Sprint 7B. This is the simpler path but defers RTL learning.

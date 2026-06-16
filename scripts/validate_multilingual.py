@@ -206,6 +206,19 @@ def main():
                         # 14. Medical/educational safety pages must carry French safety notes.
                         if lang_code == "fr" and is_launched:
                             _check_fr_safety(html_fp, en_path, en_safety_class, errors)
+                        # 15. Hreflang HTML reciprocity: French page must carry x-default;
+                        #     English page must carry hreflang="fr" pointing to French URL.
+                        if lang_code == "fr" and is_launched:
+                            fr_path = trans.get("path", "")
+                            fr_url = (
+                                "https://zonules.com" + fr_path
+                                if fr_path and not fr_path.startswith("http")
+                                else fr_path
+                            )
+                            en_url = routes_by_path.get(en_path, {}).get("canonical", "") if en_path else ""
+                            _check_hreflang_reciprocity(
+                                html_fp, fr_url, en_path, en_url, ROOT, errors
+                            )
 
     if errors:
         _report(errors)
@@ -239,6 +252,42 @@ def _check_fr_safety(html_fp, en_path, safety_class, errors):
             errors.append(
                 f"French page for '{en_path}' (AI safety) missing detection-is-not-diagnosis "
                 f"boundary. Must contain equivalent of {FR_AI_SAFETY_MARKERS[0]!r}"
+            )
+
+
+def _check_hreflang_reciprocity(fr_html_fp, fr_url, en_path, en_url, root, errors):
+    """Verify hreflang reciprocity between a French page and its English counterpart."""
+    try:
+        fr_body = open(fr_html_fp, encoding="utf-8").read()
+    except OSError:
+        return
+
+    # French page must carry hreflang="x-default" pointing to English URL.
+    if en_url and f'hreflang="x-default"' not in fr_body:
+        errors.append(
+            f"French page {fr_html_fp}: missing hreflang=\"x-default\" "
+            f"(should point to {en_url})"
+        )
+    elif en_url and f'hreflang="x-default" href="{en_url}"' not in fr_body:
+        errors.append(
+            f"French page {fr_html_fp}: hreflang=\"x-default\" does not point to "
+            f"English canonical {en_url}"
+        )
+
+    # English page must carry hreflang="fr" pointing to French URL.
+    if en_path and en_path != "/":
+        rel = en_path.strip("/")
+        en_html_fp = os.path.join(root, rel, "index.html")
+        if not os.path.exists(en_html_fp):
+            return
+        try:
+            en_body = open(en_html_fp, encoding="utf-8").read()
+        except OSError:
+            return
+        if fr_url and f'hreflang="fr" href="{fr_url}"' not in en_body:
+            errors.append(
+                f"English page {en_html_fp}: missing hreflang=\"fr\" pointing to "
+                f"French URL {fr_url}"
             )
 
 

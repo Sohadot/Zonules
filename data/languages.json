@@ -5,7 +5,16 @@
   "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
   "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
   "freeze_date": "2026-06-14",
-  "official_order": ["en", "fr", "de", "es", "zh", "ar", "ja", "ru"],
+  "official_order": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "zh",
+    "ar",
+    "ja",
+    "ru"
+  ],
   "status_definitions": {
     "launched": "Complete governed layer. All pages published, indexed, hreflang active.",
     "pilot": "Partial governed layer. Selected anchor pages published and indexed. Hreflang active for completed pages only. Not a full launch.",
@@ -84,15 +93,16 @@
     {
       "code": "ar",
       "name": "Arabic",
-      "status": "architecture_defined",
+      "status": "pilot",
       "indexable": false,
       "direction": "rtl",
       "script": "Arabic",
       "priority": 6,
       "url_prefix": "/ar/",
       "launched_date": null,
-      "pilot_date": null,
-      "note": "Architecture defined Sprint 7A. No content translated. Not indexed."
+      "pilot_date": "2026-06-16",
+      "note": "Sprint 7D: 8 governed Arabic RTL pilot pages launched. ASCII slugs under /ar/. Full hreflang EN+FR+AR reciprocity.",
+      "pilot_page_count": 8
     },
     {
       "code": "ja",

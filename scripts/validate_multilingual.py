@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Zonules.com — Multilingual Governance Validator.
+Zonules.com â Multilingual Governance Validator.
 
 Standalone validator for multilingual architecture integrity.
 Extended Sprint 7B: pilot status support, HTML file existence checks,
@@ -142,7 +142,7 @@ def main():
                 route_val = en_route.get(field)
                 if map_val is not None and map_val != route_val:
                     errors.append(
-                        f"translation-map.json: '{en_path}' {field} mismatch — "
+                        f"translation-map.json: '{en_path}' {field} mismatch â "
                         f"map={map_val} route={route_val}"
                     )
 
@@ -300,3 +300,138 @@ def _report(errors):
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+# ── Sprint 7D: Arabic RTL Checks ────────────────────────────────────────────
+
+AR_PILOT_SLUGS = [
+    "zonules-of-zinn",
+    "lens-accommodation",
+    "retina",
+    "optic-nerve",
+    "visual-cortex",
+    "predictive-coding",
+    "computer-vision",
+    "image-provenance",
+]
+
+AR_EN_FR_PAIRS = {
+    "zonules-of-zinn": "zonules-de-zinn",
+    "lens-accommodation": "accommodation-du-cristallin",
+    "retina": "retine",
+    "optic-nerve": "nerf-optique",
+    "visual-cortex": "cortex-visuel",
+    "predictive-coding": "codage-predictif",
+    "computer-vision": "vision-par-ordinateur",
+    "image-provenance": "provenance-des-images",
+}
+
+
+def check_arabic_rtl_pages(repo_root: str) -> list[str]:
+    """Check Arabic RTL pages for required lang/dir attributes and FIO/FIS presence."""
+    errors = []
+    for slug in AR_PILOT_SLUGS:
+        page_path = os.path.join(repo_root, "ar", slug, "index.html")
+        if not os.path.exists(page_path):
+            errors.append(f"MISSING Arabic page: ar/{slug}/index.html")
+            continue
+        with open(page_path, encoding="utf-8") as f:
+            html = f.read()
+        # Must have lang="ar"
+        if 'lang="ar"' not in html:
+            errors.append(f"ar/{slug}/index.html: missing lang="ar"")
+        # Must have dir="rtl"
+        if 'dir="rtl"' not in html:
+            errors.append(f"ar/{slug}/index.html: missing dir="rtl"")
+        # Must have canonical ar URL
+        ar_canonical = f'https://zonules.com/ar/{slug}/'
+        if ar_canonical not in html:
+            errors.append(f"ar/{slug}/index.html: missing canonical {ar_canonical}")
+        # Must have FIO badge (FIO-0x pattern)
+        if not re.search(r'FIO-0[1-5]', html):
+            errors.append(f"ar/{slug}/index.html: missing FIO badge")
+        # Must have FIS badge (FIS-x pattern)
+        if not re.search(r'FIS-[1-5]', html):
+            errors.append(f"ar/{slug}/index.html: missing FIS badge")
+        # Must have Arabic safety note
+        if 'ملاحظات السلامة' not in html and 'السلامة' not in html:
+            errors.append(f"ar/{slug}/index.html: missing Arabic safety section")
+    return errors
+
+
+def check_arabic_hreflang_reciprocity(repo_root: str) -> list[str]:
+    """Check that EN, FR, and AR pages each list all three hreflang variants."""
+    errors = []
+    for en_slug, fr_slug in AR_EN_FR_PAIRS.items():
+        ar_url = f"https://zonules.com/ar/{en_slug}/"
+        en_url = f"https://zonules.com/{en_slug}/"
+        fr_url = f"https://zonules.com/fr/{fr_slug}/"
+
+        # Check English page has ar hreflang
+        en_path = os.path.join(repo_root, en_slug, "index.html")
+        if os.path.exists(en_path):
+            with open(en_path, encoding="utf-8") as f:
+                en_html = f.read()
+            if f'hreflang="ar"' not in en_html:
+                errors.append(f"{en_slug}/index.html: missing hreflang="ar" → {ar_url}")
+            if f'hreflang="fr"' not in en_html:
+                errors.append(f"{en_slug}/index.html: missing hreflang="fr"")
+        else:
+            errors.append(f"MISSING EN page: {en_slug}/index.html")
+
+        # Check French page has ar hreflang
+        fr_path = os.path.join(repo_root, "fr", fr_slug, "index.html")
+        if os.path.exists(fr_path):
+            with open(fr_path, encoding="utf-8") as f:
+                fr_html = f.read()
+            if f'hreflang="ar"' not in fr_html:
+                errors.append(f"fr/{fr_slug}/index.html: missing hreflang="ar" → {ar_url}")
+        else:
+            errors.append(f"MISSING FR page: fr/{fr_slug}/index.html")
+
+        # Check Arabic page has en, fr, ar, x-default hreflang
+        ar_path = os.path.join(repo_root, "ar", en_slug, "index.html")
+        if os.path.exists(ar_path):
+            with open(ar_path, encoding="utf-8") as f:
+                ar_html = f.read()
+            for lang, expected_url in [
+                ("en", en_url), ("fr", fr_url), ("ar", ar_url), ("x-default", en_url)
+            ]:
+                if f'hreflang="{lang}"' not in ar_html:
+                    errors.append(f"ar/{en_slug}/index.html: missing hreflang="{lang}"")
+        else:
+            errors.append(f"MISSING AR page: ar/{en_slug}/index.html")
+
+    return errors
+
+
+def run_arabic_rtl_checks(repo_root: str) -> dict:
+    """Run all Arabic RTL validation checks. Returns summary dict."""
+    results = {}
+
+    rtl_errors = check_arabic_rtl_pages(repo_root)
+    results["arabic_rtl_structure"] = {
+        "pass": len(rtl_errors) == 0,
+        "errors": rtl_errors,
+        "checked": len(AR_PILOT_SLUGS),
+    }
+
+    hreflang_errors = check_arabic_hreflang_reciprocity(repo_root)
+    results["arabic_hreflang_reciprocity"] = {
+        "pass": len(hreflang_errors) == 0,
+        "errors": hreflang_errors,
+        "checked": len(AR_EN_FR_PAIRS) * 3,
+    }
+
+    all_pass = all(v["pass"] for v in results.values())
+    total_errors = sum(len(v["errors"]) for v in results.values())
+
+    print(f"Arabic RTL Checks: {'PASS' if all_pass else 'FAIL'} ({total_errors} errors)")
+    for check_name, result in results.items():
+        status = "PASS" if result["pass"] else "FAIL"
+        print(f"  [{status}] {check_name}: {result['checked']} items checked")
+        for err in result["errors"]:
+            print(f"    ERROR: {err}")
+
+    return results
+

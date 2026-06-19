@@ -87,6 +87,30 @@ class StatusTableParser(HTMLParser):
             self.current_row = []
 
 
+class LinkTextParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.current_href = None
+        self.current_text = []
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            self.current_href = dict(attrs).get("href")
+            self.current_text = []
+
+    def handle_data(self, data):
+        if self.current_href is not None:
+            self.current_text.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "a" and self.current_href is not None:
+            text = " ".join("".join(self.current_text).split())
+            self.links.append((self.current_href, html.unescape(text)))
+            self.current_href = None
+            self.current_text = []
+
+
 def load_json(path):
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
@@ -323,6 +347,15 @@ def _check_french_page_quality(entry, trans, html_path, lang_code, en_path, erro
     source_ids = entry.get("source_ids", [])
     if source_ids and not any(source_id in body for source_id in source_ids):
         errors.append(f"French page {trans_path}: no registered source IDs visible for {en_path}")
+
+    link_parser = LinkTextParser()
+    link_parser.feed(body)
+    slug_label = re.compile(r"^[a-z]+(?:-[a-z0-9]+)+$")
+    for href, text in link_parser.links:
+        if href.startswith("/fr/") and slug_label.match(text):
+            errors.append(
+                f"French page {trans_path}: internal French link {href} uses untranslated slug label '{text}'"
+            )
 
 
 def _check_hreflang_reciprocity(fr_html_path, fr_url, en_path, en_url, errors):

@@ -1185,3 +1185,38 @@ The French pages retain visible source IDs, safety notes, diagnosis-boundary wor
 ### Next Recommendation
 
 Before expanding French again, run a focused live QA pass over the 100-page French layer: sitemap counts, hreflang groups, several anatomy/perception/machine-vision samples, and source-note readability. The next expansion should either move French from 100 to 150 or run a French quality-hardening sprint before further scale.
+
+---
+
+## Sprint 7H -- French Internal Link Quality Hardening
+
+**Date**: 2026-06-19
+**Commit**: `chore(i18n): harden French internal link quality`
+
+### Change
+
+Sprint 7H performed a post-7G quality hardening pass over the 100-page French layer. It fixed untranslated slug-like anchor text inside French internal links, replacing labels such as English route slugs with the visible French page titles.
+
+No new pages were added. English master content remains unchanged except for previously authorized hreflang metadata. Arabic remains an 8-page RTL pilot. German, Spanish, Chinese, Japanese, and Russian remain architecture-defined with 0 launched pages.
+
+### Validator Coverage
+
+`scripts/validate_multilingual.py` now rejects French pages where an internal `/fr/` link displays an untranslated English slug label. This prevents future generated or manually edited French pages from degrading into mixed-language navigation text.
+
+### Verification
+
+- Live spot checks after Sprint 7G deployment: `/languages/`, `sitemap.xml`, `/fr/vision-machine/`, `/fr/humeur-vitree/`, and `/fr/detection-d-objets/`: HTTP 200
+- `scripts/generate_sitemap.py`: PASS; sitemap remains 408 URLs
+- `scripts/build_site.py`: PASS
+- `scripts/validate_multilingual.py`: PASS
+- `scripts/validate_all.py`: PASS
+- French pages: 100
+- Arabic pages: 8
+- Broken links: 0
+- Orphans: 0
+- Unsafe claims: 0
+- Unsourced claims: 0
+
+### Next Recommendation
+
+Run a broader French semantic QA sprint before the next expansion: improve page-specific meta descriptions, reduce repeated phrasing across generated French pages, and preserve the same registry-backed source and claim discipline.

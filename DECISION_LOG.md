@@ -1150,3 +1150,38 @@ English remains the frozen master at 300 registered pages. Arabic remains an 8-p
 ### Next Recommendation
 
 After deployment, run live checks for `/languages/`, `sitemap.xml`, several new French pages, the French/English/Arabic overlap pages, and sitemap hreflang groups. Keep the next sprint focused on live QA and targeted French quality review before any Arabic expansion.
+
+---
+
+## Sprint 7G -- French Governed Layer Expansion to 100 Pages
+
+**Date**: 2026-06-19
+**Commit**: `feat(i18n): expand French governed layer to 100 pages`
+
+### Change
+
+French was expanded from 50 to 100 governed anchor/core pages. The 50 added pages deepen the French layer across ocular anatomy, visual pathway structure, attention, scene interpretation, perceptual error, machine vision, model robustness, segmentation, calibration, and interpretability.
+
+English remains the frozen master at 300 registered pages. Arabic remains an 8-page RTL pilot. German, Spanish, Chinese, Japanese, and Russian remain architecture-defined with 0 launched pages.
+
+### Governance
+
+`data/languages.json` and `data/translation-map.json` now register 100 launched/indexable French pages with preserved `term_id`, `concept_id`, FIO/FIS classification, `safety_class`, claim IDs, and source IDs. Hreflang is active only for completed equivalents, with Arabic alternates still limited to the 8 Arabic pilot pages.
+
+The French pages retain visible source IDs, safety notes, diagnosis-boundary wording where detection language appears, and language-invariant governance codes. No Arabic or future-language pages were added.
+
+### Verification
+
+- `scripts/generate_sitemap.py`: PASS; sitemap expected at 408 URLs
+- `scripts/build_site.py`: PASS
+- `scripts/validate_multilingual.py`: PASS
+- `scripts/validate_all.py`: PASS
+- French pages: 100
+- Arabic pages: 8
+- English governed pages: 300
+- `/acquire/`: excluded
+- German/Spanish/Chinese/Japanese/Russian hreflang: absent
+
+### Next Recommendation
+
+Before expanding French again, run a focused live QA pass over the 100-page French layer: sitemap counts, hreflang groups, several anatomy/perception/machine-vision samples, and source-note readability. The next expansion should either move French from 100 to 150 or run a French quality-hardening sprint before further scale.

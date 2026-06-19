@@ -405,7 +405,7 @@ def _check_languages_page(layers_by_code, routes, errors):
     }
     expected_status_fragments = {
         "en": ["Launched", "master"],
-        "fr": ["Pilot/core expansion", "50 anchor/core pages"],
+        "fr": ["Pilot/core expansion", "100 anchor/core pages"],
         "ar": ["Pilot", "8 RTL anchor pages"],
         "de": ["Architecture defined"],
         "es": ["Architecture defined"],

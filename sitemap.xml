@@ -28,6 +28,9 @@
     <loc>https://zonules.com/adversarial-examples/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/adversarial-examples/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/exemples-adversariaux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/adversarial-examples/"/>
   </url>
   <url>
     <loc>https://zonules.com/adversarial-training/</loc>
@@ -58,11 +61,17 @@
     <loc>https://zonules.com/apparent-motion/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/apparent-motion/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/mouvement-apparent/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/apparent-motion/"/>
   </url>
   <url>
     <loc>https://zonules.com/aqueous-humor/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/aqueous-humor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/humeur-aqueuse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/aqueous-humor/"/>
   </url>
   <url>
     <loc>https://zonules.com/area-mt/</loc>
@@ -73,6 +82,9 @@
     <loc>https://zonules.com/attention-capture/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/attention-capture/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/capture-attentionnelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/attention-capture/"/>
   </url>
   <url>
     <loc>https://zonules.com/attention-mechanism/</loc>
@@ -129,6 +141,9 @@
     <loc>https://zonules.com/binocular-vision/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/binocular-vision/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/vision-binoculaire/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/binocular-vision/"/>
   </url>
   <url>
     <loc>https://zonules.com/biological-motion/</loc>
@@ -144,11 +159,17 @@
     <loc>https://zonules.com/bistable-perception/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/bistable-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-bistable/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/bistable-perception/"/>
   </url>
   <url>
     <loc>https://zonules.com/blind-spot/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/blind-spot/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/tache-aveugle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/blind-spot/"/>
   </url>
   <url>
     <loc>https://zonules.com/bottom-up-processing/</loc>
@@ -182,11 +203,17 @@
     <loc>https://zonules.com/change-blindness/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/change-blindness/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cecite-au-changement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/change-blindness/"/>
   </url>
   <url>
     <loc>https://zonules.com/choroid/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/choroid/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/choroide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/choroid/"/>
   </url>
   <url>
     <loc>https://zonules.com/chromatic-aberration/</loc>
@@ -230,6 +257,9 @@
     <loc>https://zonules.com/color-perception/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/color-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-des-couleurs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/color-perception/"/>
   </url>
   <url>
     <loc>https://zonules.com/complex-cells/</loc>
@@ -254,6 +284,9 @@
     <loc>https://zonules.com/conjunctiva/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/conjunctiva/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/conjonctive/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/conjunctiva/"/>
   </url>
   <url>
     <loc>https://zonules.com/content-authenticity/</loc>
@@ -272,6 +305,9 @@
     <loc>https://zonules.com/contrast-sensitivity/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/contrast-sensitivity/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/sensibilite-au-contraste/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/contrast-sensitivity/"/>
   </url>
   <url>
     <loc>https://zonules.com/contrast-threshold/</loc>
@@ -391,6 +427,9 @@
     <loc>https://zonules.com/depth-perception/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/depth-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-de-la-profondeur/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/depth-perception/"/>
   </url>
   <url>
     <loc>https://zonules.com/diffusion-models/</loc>
@@ -417,6 +456,9 @@
     <loc>https://zonules.com/domain-shift/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/domain-shift/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/changement-de-domaine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/domain-shift/"/>
   </url>
   <url>
     <loc>https://zonules.com/dorsal-stream/</loc>
@@ -478,6 +520,9 @@
     <loc>https://zonules.com/extraocular-muscles/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/extraocular-muscles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/muscles-extraoculaires/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/extraocular-muscles/"/>
   </url>
   <url>
     <loc>https://zonules.com/face-perception/</loc>
@@ -526,6 +571,9 @@
     <loc>https://zonules.com/fixation/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/fixation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/fixation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/fixation/"/>
   </url>
   <url>
     <loc>https://zonules.com/flash-lag-effect/</loc>
@@ -648,6 +696,9 @@
     <loc>https://zonules.com/image-classification/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/image-classification/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/classification-d-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/image-classification/"/>
   </url>
   <url>
     <loc>https://zonules.com/image-embeddings/</loc>
@@ -687,6 +738,9 @@
     <loc>https://zonules.com/inattentional-blindness/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/inattentional-blindness/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cecite-inattentionnelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/inattentional-blindness/"/>
   </url>
   <url>
     <loc>https://zonules.com/instance-segmentation/</loc>
@@ -735,6 +789,9 @@
     <loc>https://zonules.com/lateral-geniculate-nucleus/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/lateral-geniculate-nucleus/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/corps-genouille-lateral/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/lateral-geniculate-nucleus/"/>
   </url>
   <url>
     <loc>https://zonules.com/lens-accommodation/</loc>
@@ -777,6 +834,9 @@
     <loc>https://zonules.com/machine-vision/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/machine-vision/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/vision-machine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/machine-vision/"/>
   </url>
   <url>
     <loc>https://zonules.com/macula/</loc>
@@ -841,6 +901,9 @@
     <loc>https://zonules.com/model-calibration/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/model-calibration/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/calibration-du-modele/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/model-calibration/"/>
   </url>
   <url>
     <loc>https://zonules.com/motion-aftereffect/</loc>
@@ -856,6 +919,9 @@
     <loc>https://zonules.com/motion-perception/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/motion-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-du-mouvement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/motion-perception/"/>
   </url>
   <url>
     <loc>https://zonules.com/muller-cells/</loc>
@@ -876,6 +942,9 @@
     <loc>https://zonules.com/neural-network-interpretability/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/neural-network-interpretability/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/interpretabilite-des-reseaux-neuronaux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/neural-network-interpretability/"/>
   </url>
   <url>
     <loc>https://zonules.com/neural-style-transfer/</loc>
@@ -891,6 +960,9 @@
     <loc>https://zonules.com/object-detection/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/object-detection/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/detection-d-objets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/object-detection/"/>
   </url>
   <url>
     <loc>https://zonules.com/object-recognition/</loc>
@@ -909,6 +981,9 @@
     <loc>https://zonules.com/oculomotor-system/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/oculomotor-system/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/systeme-oculomoteur/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/oculomotor-system/"/>
   </url>
   <url>
     <loc>https://zonules.com/open-vocabulary-detection/</loc>
@@ -927,6 +1002,9 @@
     <loc>https://zonules.com/optic-chiasm/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-chiasm/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/chiasma-optique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-chiasm/"/>
   </url>
   <url>
     <loc>https://zonules.com/optic-disc/</loc>
@@ -949,11 +1027,17 @@
     <loc>https://zonules.com/optic-radiations/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-radiations/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/radiations-optiques/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-radiations/"/>
   </url>
   <url>
     <loc>https://zonules.com/optic-tract/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-tract/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/tractus-optique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-tract/"/>
   </url>
   <url>
     <loc>https://zonules.com/optical-aberration/</loc>
@@ -969,6 +1053,9 @@
     <loc>https://zonules.com/optical-flow/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optical-flow/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/flux-optique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optical-flow/"/>
   </url>
   <url>
     <loc>https://zonules.com/optokinetic-reflex/</loc>
@@ -1019,6 +1106,9 @@
     <loc>https://zonules.com/pattern-recognition/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/pattern-recognition/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/reconnaissance-de-motifs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/pattern-recognition/"/>
   </url>
   <url>
     <loc>https://zonules.com/perceptual-adaptation/</loc>
@@ -1068,11 +1158,17 @@
     <loc>https://zonules.com/perceptual-load/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/perceptual-load/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/charge-perceptive/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/perceptual-load/"/>
   </url>
   <url>
     <loc>https://zonules.com/perceptual-priming/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/perceptual-priming/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/amorcage-perceptif/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/perceptual-priming/"/>
   </url>
   <url>
     <loc>https://zonules.com/photopic-vision/</loc>
@@ -1138,6 +1234,9 @@
     <loc>https://zonules.com/pupillary-reflex/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/pupillary-reflex/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/reflexe-pupillaire/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/pupillary-reflex/"/>
   </url>
   <url>
     <loc>https://zonules.com/receptive-fields/</loc>
@@ -1172,11 +1271,17 @@
     <loc>https://zonules.com/retinal-ganglion-cells/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retinal-ganglion-cells/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cellules-ganglionnaires-retiniennes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retinal-ganglion-cells/"/>
   </url>
   <url>
     <loc>https://zonules.com/retinal-pigment-epithelium/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retinal-pigment-epithelium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/epithelium-pigmentaire-retinien/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retinal-pigment-epithelium/"/>
   </url>
   <url>
     <loc>https://zonules.com/rhodopsin/</loc>
@@ -1197,6 +1302,9 @@
     <loc>https://zonules.com/saccades/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/saccades/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/saccades/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/saccades/"/>
   </url>
   <url>
     <loc>https://zonules.com/saliency-maps/</loc>
@@ -1230,6 +1338,9 @@
     <loc>https://zonules.com/sclera/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/sclera/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/sclere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/sclera/"/>
   </url>
   <url>
     <loc>https://zonules.com/scotoma/</loc>
@@ -1268,6 +1379,9 @@
     <loc>https://zonules.com/semantic-segmentation/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/semantic-segmentation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/segmentation-semantique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/semantic-segmentation/"/>
   </url>
   <url>
     <loc>https://zonules.com/shape-constancy/</loc>
@@ -1278,6 +1392,9 @@
     <loc>https://zonules.com/signal-ambiguity/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/signal-ambiguity/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/ambiguite-du-signal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/signal-ambiguity/"/>
   </url>
   <url>
     <loc>https://zonules.com/simple-cells/</loc>
@@ -1303,6 +1420,9 @@
     <loc>https://zonules.com/smooth-pursuit/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/smooth-pursuit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/poursuite-oculaire-lisse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/smooth-pursuit/"/>
   </url>
   <url>
     <loc>https://zonules.com/source-policy/</loc>
@@ -1378,6 +1498,9 @@
     <loc>https://zonules.com/sustained-attention/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/sustained-attention/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/attention-soutenue/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/sustained-attention/"/>
   </url>
   <url>
     <loc>https://zonules.com/synthetic-media/</loc>
@@ -1419,11 +1542,17 @@
     <loc>https://zonules.com/top-down-processing/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/top-down-processing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/traitement-descendant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/top-down-processing/"/>
   </url>
   <url>
     <loc>https://zonules.com/trabecular-meshwork/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/trabecular-meshwork/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/trabeculum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/trabecular-meshwork/"/>
   </url>
   <url>
     <loc>https://zonules.com/transfer-learning/</loc>
@@ -1543,6 +1672,9 @@
     <loc>https://zonules.com/visual-grounding/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-grounding/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/ancrage-visuel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-grounding/"/>
   </url>
   <url>
     <loc>https://zonules.com/visual-illusions/</loc>
@@ -1553,6 +1685,9 @@
     <loc>https://zonules.com/visual-inference/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-inference/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/inference-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-inference/"/>
   </url>
   <url>
     <loc>https://zonules.com/visual-long-term-memory/</loc>
@@ -1563,6 +1698,9 @@
     <loc>https://zonules.com/visual-masking/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-masking/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/masquage-visuel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-masking/"/>
   </url>
   <url>
     <loc>https://zonules.com/visual-memory-encoding/</loc>
@@ -1596,16 +1734,25 @@
     <loc>https://zonules.com/visual-saliency/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-saliency/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/saillance-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-saliency/"/>
   </url>
   <url>
     <loc>https://zonules.com/visual-scene-parsing/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-scene-parsing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/analyse-de-scene-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-scene-parsing/"/>
   </url>
   <url>
     <loc>https://zonules.com/visual-search/</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-search/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/recherche-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-search/"/>
   </url>
   <url>
     <loc>https://zonules.com/visual-slam/</loc>
@@ -1629,6 +1776,9 @@
     <loc>https://zonules.com/vitreous-humor/</loc>
     <lastmod>2026-06-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/vitreous-humor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/humeur-vitree/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/vitreous-humor/"/>
   </url>
   <url>
     <loc>https://zonules.com/word-recognition/</loc>
@@ -1744,12 +1894,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-acuity/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/ambiguite-du-signal/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/signal-ambiguity/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/ambiguite-du-signal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/signal-ambiguity/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/amorcage-perceptif/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/perceptual-priming/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/amorcage-perceptif/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/perceptual-priming/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/analyse-de-scene-visuelle/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-scene-parsing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/analyse-de-scene-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-scene-parsing/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/analyse-forensique-des-medias/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/media-forensics/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/analyse-forensique-des-medias/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/media-forensics/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/ancrage-visuel/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-grounding/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/ancrage-visuel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-grounding/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/architecture-transformer/</loc>
@@ -1768,6 +1950,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/selective-attention/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/attention-soutenue/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/sustained-attention/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/attention-soutenue/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/sustained-attention/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/attention-visuelle/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
@@ -1784,6 +1974,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/content-authenticity/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/calibration-du-modele/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/model-calibration/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/calibration-du-modele/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/model-calibration/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/capsule-du-cristallin/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
@@ -1792,12 +1990,84 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/lens-capsule/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/capture-attentionnelle/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/attention-capture/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/capture-attentionnelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/attention-capture/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/cecite-au-changement/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/change-blindness/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cecite-au-changement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/change-blindness/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/cecite-inattentionnelle/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/inattentional-blindness/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cecite-inattentionnelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/inattentional-blindness/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/cellules-ganglionnaires-retiniennes/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retinal-ganglion-cells/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cellules-ganglionnaires-retiniennes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retinal-ganglion-cells/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/champ-visuel/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-field/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/champ-visuel/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-field/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/changement-de-domaine/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/domain-shift/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/changement-de-domaine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/domain-shift/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/charge-perceptive/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/perceptual-load/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/charge-perceptive/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/perceptual-load/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/chiasma-optique/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-chiasm/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/chiasma-optique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-chiasm/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/choroide/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/choroid/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/choroide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/choroid/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/classification-d-image/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/image-classification/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/classification-d-image/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/image-classification/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/codage-predictif/</loc>
@@ -1815,6 +2085,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/scene-understanding/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/comprehension-de-scenes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/scene-understanding/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/conjonctive/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/conjunctiva/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/conjonctive/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/conjunctiva/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/constance-perceptive/</loc>
@@ -1841,6 +2119,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/ciliary-body/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/corps-genouille-lateral/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/lateral-geniculate-nucleus/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/corps-genouille-lateral/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/lateral-geniculate-nucleus/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/cortex-visuel/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
@@ -1856,6 +2142,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/crystalline-lens/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/cristallin/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/crystalline-lens/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/detection-d-objets/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/object-detection/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/detection-d-objets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/object-detection/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/detection-des-deepfakes/</loc>
@@ -1882,12 +2176,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/camera-fingerprinting/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/epithelium-pigmentaire-retinien/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/retinal-pigment-epithelium/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/epithelium-pigmentaire-retinien/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retinal-pigment-epithelium/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/erreur-perceptive/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/perceptual-error/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/erreur-perceptive/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/perceptual-error/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/exemples-adversariaux/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/adversarial-examples/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/exemples-adversariaux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/adversarial-examples/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/figure-fond/</loc>
@@ -1914,6 +2224,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/tear-film/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/fixation/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/fixation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/fixation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/fixation/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/flux-optique/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optical-flow/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/flux-optique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optical-flow/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/fovea-centrale/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
@@ -1928,6 +2254,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/perceptual-hashing/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/hachage-perceptuel/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/perceptual-hashing/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/humeur-aqueuse/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/aqueous-humor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/humeur-aqueuse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/aqueous-humor/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/humeur-vitree/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/vitreous-humor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/humeur-vitree/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/vitreous-humor/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/ia-en-imagerie-medicale/</loc>
@@ -1954,12 +2296,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/active-inference/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/inference-visuelle/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-inference/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/inference-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-inference/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/integrite-du-focus/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/focus-integrity-ontology/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/integrite-du-focus/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/focus-integrity-ontology/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/interpretabilite-des-reseaux-neuronaux/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/neural-network-interpretability/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/interpretabilite-des-reseaux-neuronaux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/neural-network-interpretability/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/iris/</loc>
@@ -1976,6 +2334,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/macula/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/macula/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/macula/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/masquage-visuel/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-masking/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/masquage-visuel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-masking/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/mecanisme-d-attention/</loc>
@@ -2018,6 +2384,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/diffusion-models/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/mouvement-apparent/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/apparent-motion/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/mouvement-apparent/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/apparent-motion/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/muscles-extraoculaires/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/extraocular-muscles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/muscles-extraoculaires/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/extraocular-muscles/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/nerf-optique/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
@@ -2025,6 +2407,38 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/nerf-optique/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zonules.com/ar/optic-nerve/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-nerve/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/perception-bistable/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/bistable-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-bistable/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/bistable-perception/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/perception-de-la-profondeur/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/depth-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-de-la-profondeur/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/depth-perception/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/perception-des-couleurs/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/color-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-des-couleurs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/color-perception/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/perception-du-mouvement/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/motion-perception/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/perception-du-mouvement/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/motion-perception/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/perception-visuelle/</loc>
@@ -2041,6 +2455,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/photoreceptors/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/photorecepteurs/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/photoreceptors/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/poursuite-oculaire-lisse/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/smooth-pursuit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/poursuite-oculaire-lisse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/smooth-pursuit/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/principes-de-la-gestalt/</loc>
@@ -2076,12 +2498,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/pupil/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/radiations-optiques/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-radiations/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/radiations-optiques/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-radiations/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/recherche-visuelle/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-search/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/recherche-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-search/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/reconnaissance-de-motifs/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/pattern-recognition/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/reconnaissance-de-motifs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/pattern-recognition/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/reconnaissance-des-objets/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/object-recognition/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/reconnaissance-des-objets/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/object-recognition/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/reflexe-pupillaire/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/pupillary-reflex/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/reflexe-pupillaire/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/pupillary-reflex/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/retine/</loc>
@@ -2093,12 +2547,108 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/retina/"/>
   </url>
   <url>
+    <loc>https://zonules.com/fr/saccades/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/saccades/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/saccades/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/saccades/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/saillance-visuelle/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/visual-saliency/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/saillance-visuelle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/visual-saliency/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/sclere/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/sclera/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/sclere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/sclera/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/segmentation-semantique/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/semantic-segmentation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/segmentation-semantique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/semantic-segmentation/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/sensibilite-au-contraste/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/contrast-sensitivity/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/sensibilite-au-contraste/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/contrast-sensitivity/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/systeme-oculomoteur/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/oculomotor-system/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/systeme-oculomoteur/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/oculomotor-system/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/tache-aveugle/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/blind-spot/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/tache-aveugle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/blind-spot/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/trabeculum/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/trabecular-meshwork/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/trabeculum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/trabecular-meshwork/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/tractus-optique/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/optic-tract/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/tractus-optique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/optic-tract/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/traitement-descendant/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/top-down-processing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/traitement-descendant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/top-down-processing/"/>
+  </url>
+  <url>
     <loc>https://zonules.com/fr/verite-terrain/</loc>
     <lastmod>2026-06-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/ground-truth/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/verite-terrain/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/ground-truth/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/vision-binoculaire/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/binocular-vision/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/vision-binoculaire/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/binocular-vision/"/>
+  </url>
+  <url>
+    <loc>https://zonules.com/fr/vision-machine/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zonules.com/machine-vision/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zonules.com/fr/vision-machine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zonules.com/machine-vision/"/>
   </url>
   <url>
     <loc>https://zonules.com/fr/vision-par-ordinateur/</loc>

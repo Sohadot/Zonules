@@ -233,10 +233,10 @@
     {
       "id": "SRC-028",
       "type": "peer-reviewed",
-      "citation": "Goodfellow IJ, Shlens J, Szegedy C. Explaining and Harnessing Adversarial Examples. International Conference on Learning Representations (ICLR), 2015.",
+      "citation": "Goodfellow IJ, Shlens J, Szegedy C. Explaining and Harnessing Adversarial Examples. International Conference on Learning Representations (ICLR), 2015. arXiv:1412.6572. doi:10.48550/arXiv.1412.6572.",
       "publisher": "ICLR",
-      "scope": "Adversarial perturbations of image inputs and their effect on image-classifier outputs, including the panda/gibbon demonstration.",
-      "note": "Peer-reviewed conference paper. Cited in the Focus Integrity Engine worked example CASE-C for the existence of the documented demonstration, not for any new performance claim."
+      "scope": "Adversarial perturbations of image inputs and the fast gradient sign method, including the GoogLeNet/ImageNet panda-to-gibbon demonstration (Figure 1).",
+      "note": "Peer-reviewed conference paper (bibliographic data verified against the arXiv record and the paper's ICLR 2015 header on 2026-10-26). Cited in the Focus Integrity Engine worked example CASE-C for the existence of the documented demonstration, not for any new performance claim."
     }
   ]
 }

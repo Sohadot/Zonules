@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "2.7",
+  "version": "2.8",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -1202,8 +1202,8 @@
       "hreflang_group": "inattentional-blindness",
       "layer": "L2",
       "cluster": "attention",
-      "fio_class": "FIO-04",
-      "fis_criterion": "FIS-4",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
       "template": "term.html",
       "content": "content/en/terms/inattentional-blindness.md",
       "seo_title": "Inattentional Blindness | Zonules.com",
@@ -1225,7 +1225,7 @@
       ],
       "safety_class": "educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/visual-working-memory/",
@@ -1502,8 +1502,8 @@
       "hreflang_group": "change-blindness",
       "layer": "L2",
       "cluster": "attention",
-      "fio_class": "FIO-04",
-      "fis_criterion": "FIS-4",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
       "template": "term.html",
       "content": "content/en/terms/change-blindness.md",
       "seo_title": "Change Blindness | Zonules.com",
@@ -1525,7 +1525,7 @@
       ],
       "safety_class": "educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/visual-saliency/",

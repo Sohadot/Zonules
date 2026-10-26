@@ -1,7 +1,7 @@
 {
   "id": "TRANSLATION-MAP",
   "name": "Zonules.com Route Translation Map",
-  "version": "1.3",
+  "version": "1.4",
   "schema_version": "1.0",
   "governing_document": "docs/MULTILINGUAL_ARCHITECTURE.md",
   "english_master_freeze": "docs/ENGLISH_MASTER_FREEZE.md",
@@ -2189,8 +2189,8 @@
       "concept_id": "CON-provenance-failure",
       "term_id": "TRM-024",
       "layer": "L2",
-      "fio_class": "FIO-04",
-      "fis_criterion": "FIS-4",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
       "safety_class": "educational",
       "claim_ids": [
         "CLM-088",
@@ -2355,8 +2355,8 @@
       "concept_id": "CON-temporal-provenance",
       "term_id": "TRM-032",
       "layer": "L2",
-      "fio_class": "FIO-04",
-      "fis_criterion": "FIS-4",
+      "fio_class": "FIO-03",
+      "fis_criterion": "FIS-3",
       "safety_class": "educational",
       "claim_ids": [
         "CLM-117",

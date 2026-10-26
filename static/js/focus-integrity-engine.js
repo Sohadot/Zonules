@@ -181,6 +181,7 @@
         if (state.selections[cid] === st) input.checked = true;
         input.addEventListener("change", function () {
           state.selections[cid] = st;
+          state.example = null; // edited inputs are no longer the published example
         });
         label.appendChild(input);
         label.appendChild(el("span", { text: STATE_LABEL[st] }));
@@ -220,6 +221,8 @@
       var fis = fisById[c.id];
       var fioId = fis.inverse_of;
       var sign = c.state === "failed" ? L.prompts[c.id].failed_sign : L.prompts[c.id].atrisk_sign;
+      var notes = state.example && state.example.input_notes;
+      if (notes && notes[c.id]) sign = notes[c.id];
       findings.push({
         criterion: fis, state: c.state, sign: sign, fio: fioById[fioId],
         links: FIE.class_links[fioId] || []

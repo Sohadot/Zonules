@@ -1257,3 +1257,44 @@ A claim-level audit of the gateway, engine, `/zonules-of-zinn/`, and `/acquire/`
 ### Verification
 
 See the commands and results recorded in the delivery report for this sprint: `build_gateway.py`, `build_engine.py`, `build_acquire.py`, `build_site.py`, `generate_sitemap.py`, `test_engine.js`, `validate_multilingual.py`, `validate_all.py`; headless-Chromium render at 1280px and 390px with no console errors and no horizontal overflow.
+
+---
+
+## Sprint 8B -- Pre-Merge Credibility Review: Source Verification, Example Mappings, FIO-04 Reclassification
+
+**Date**: 2026-10-26
+**Commit**: `fix: pre-merge credibility review — verify SRC-028, tighten example mappings, reclassify two FIO-04 routes`
+
+### Source Verification
+
+SRC-028 was checked against the arXiv record (arXiv:1412.6572; v1 2014-12-20, v3 2015-03-20; authors Ian J. Goodfellow, Jonathon Shlens, Christian Szegedy) and against the paper's own header ("Published as a conference paper at ICLR 2015") and Figure 1 caption (fast gradient sign method applied to GoogLeNet on ImageNet; "panda" 57.7% -> "gibbon" 99.3%). The citation now carries the arXiv identifier and DOI `10.48550/arXiv.1412.6572`; scope and note were updated. CASE-C now cites SRC-028 only: the earlier co-citation of SRC-017 for this figure was not verified and was removed from the example (no claim registry entry was affected).
+
+### Worked-Example Corrections
+
+- **CASE-B (Rubin's figure).** FIS-5 changed from at risk to **intact**. FIO-05 requires a wrong meaning; both readings of a reversible figure are correct. Result is now FIO-03 at risk only. An example-specific note replaces the generic "salience is partly misallocated" sign, which misdescribed genuinely ambiguous input.
+- **CASE-C (panda/gibbon).** FIS-1 and FIS-5 changed to **not assessed**. FIO-05 presupposes clean input, which an adversarial case lacks, so the wrong label is attributed to FIO-03; a single confident error is consistent with, but does not establish, miscalibration (a population-level property). Result is now FIO-03 failed only.
+- Example-specific `input_notes` are displayed in the static card and, while the published example is loaded unmodified, in the interactive reading.
+
+### FIO-04 Reclassification (frozen-field change)
+
+**Change:** `/inattentional-blindness/` and `/change-blindness/` reassigned from FIO-04 / FIS-4 to **FIO-03 / FIS-3** in `data/routes.json`, the English markdown, `data/translation-map.json`, the two French pages (`/fr/cecite-inattentionnelle/`, `/fr/cecite-au-changement/`), and the engine's `class_links`.
+
+**Rationale:** FIO-04 is governed as "the system cannot establish whether what it sees is real or where it came from" (L2: misattributed source of a percept; false confidence in an illusion). Both pages had redefined "provenance" as "never registered in the perceptual record", which is outside that definition: in neither phenomenon is a source misattributed. Their own sourced claims describe salience allocation — CLM-090 (misses rise with dissimilarity to the attended target) and CLM-119 (unattended changes go unnoticed), with CLM-117 noting that the disruption removes the change's pop-out transient. That is FIO-03 at L2 ("figure-ground collapse; salience misallocation"). FIO and FIS definitions are unchanged.
+
+**Governance authority:** `docs/ENGLISH_MASTER_FREEZE.md` permits FIO/FIS reassignment with a `DECISION_LOG.md` entry and a routes-registry version increment. Routes registry 2.7 -> **2.8**; translation map 1.3 -> **1.4**. Internal-framework claims CLM-091 and CLM-120 were restated to the FIO-03 reading (IDs, status, and SRC-004 attribution unchanged). The frozen `term_id` values are unchanged. The frozen `concept_id` values (`CON-provenance-failure`, `CON-temporal-provenance`) are **retained unchanged** as identifiers despite their now-inaccurate labels; renaming them would break multilingual identity and needs its own decision.
+
+**French pages:** classification strings were replaced with the existing governed French FIO-03 template wording already used on other FIO-03 pages (for example `/fr/ambiguite-du-signal/`). No new French prose was written.
+
+**Engine:** `class_links` FIO-04 now resolves to `/machine-vision/`, `/deepfake-detection/`, `/image-provenance/`, `/synthetic-media/`, `/content-authenticity/`; the two reclassified pages moved to FIO-03.
+
+### Claim Source-Coverage Audit (1,341 claims)
+
+Structural coverage is complete: 986 sourced claims all cite at least one registered external source; 355 internal-framework claims all cite SRC-004 only; no sourced claim relies on SRC-004; every claim's page exists and every claim is cited in its own page body. Material limitations, recorded and not changed:
+
+- Attribution is at the level of the work, not the passage: no chapter, page, or edition is recorded, and 19 of 27 external sources carry no year or edition. 730 sourced claims rely on a single source.
+- CLM-870, CLM-874, and CLM-878 (aberrations and retinal image contrast; neural compensation for chromatic aberration; corneal/lenticular offset of spherical aberration) are attributed only to SRC-007 (a computer-vision textbook), which is unlikely to be the best support for physiological-optics claims. Adding a source is permitted, but none was added without verifying the passage.
+- CLM-1337 to CLM-1340 (Sprint 8A) follow the same work-level attribution convention and have not been passage-verified.
+
+### Public Exposure
+
+The governance Markdown at the repository root is live on `zonules.com` (HTTP 200, `text/markdown`), including `ASSET_INTELLIGENCE_FACTORY_PLAN.md` (banana-sale analogy, "moat", income plan, "The Loss Question") and the "Inevitability Principle" in `ASSET_THESIS.md`. No prices for this asset, buyer names, or credentials are exposed. No document was deleted or rewritten; options are recorded in `docs/DUE_DILIGENCE_INVENTORY.md` for owner decision.

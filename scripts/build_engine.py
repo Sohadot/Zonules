@@ -111,8 +111,10 @@ def examples_html():
     cards = []
     for ex in fie.get("examples", []):
         layer = fie["layers"][ex["layer"]]
+        notes = ex.get("input_notes", {})
         inputs = "".join(
-            "<li>%s %s — %s</li>" % (cid, esc(fis[cid]["name"]), STATE_LABEL[st])
+            "<li>%s %s — %s%s</li>" % (cid, esc(fis[cid]["name"]), STATE_LABEL[st],
+                                      (". " + esc(notes[cid])) if cid in notes else "")
             for cid, st in ex["inputs"].items()
         )
         for cid in layer.get("not_applicable", {}):

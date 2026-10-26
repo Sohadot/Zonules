@@ -849,7 +849,7 @@
     {
       "id": "CLM-091",
       "status": "internal-framework",
-      "statement": "Inattentional blindness is a provenance failure (FIO-04): the input has no provenance in working memory.",
+      "statement": "Inattentional blindness is a signal–noise failure of the salience-misallocation kind (FIO-03): a visible signal is not separated from the ground because attention is tuned to other features.",
       "sources": [
         "SRC-004"
       ],
@@ -1115,7 +1115,7 @@
     {
       "id": "CLM-120",
       "status": "internal-framework",
-      "statement": "Change blindness is a provenance failure across time (FIO-04).",
+      "statement": "Change blindness is a signal–noise failure across time (FIO-03): a global disruption masks the local change signal.",
       "sources": [
         "SRC-004"
       ],

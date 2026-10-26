@@ -43,14 +43,16 @@
       "/figure-ground/",
       "/gestalt-principles/",
       "/visual-saliency/",
-      "/adversarial-examples/"
+      "/adversarial-examples/",
+      "/inattentional-blindness/",
+      "/change-blindness/"
     ],
     "FIO-04": [
       "/machine-vision/",
       "/deepfake-detection/",
       "/image-provenance/",
-      "/inattentional-blindness/",
-      "/change-blindness/"
+      "/synthetic-media/",
+      "/content-authenticity/"
     ],
     "FIO-05": [
       "/retina/",
@@ -243,27 +245,29 @@
         "FIS-2": null,
         "FIS-3": "at-risk",
         "FIS-4": "intact",
-        "FIS-5": "at-risk"
+        "FIS-5": "intact"
       },
       "expected": {
         "verdict": "at-risk",
         "classes": {
-          "FIO-03": "at-risk",
-          "FIO-05": "at-risk"
+          "FIO-03": "at-risk"
         },
         "not_applicable": [],
         "not_assessed": [
           "FIS-2"
         ]
       },
-      "interpretation": "Figure–ground separation is unstable (FIO-03, at risk) and two interpretations compete (FIO-05, at risk). Nothing is marked failed: the visual system is behaving normally in response to genuinely ambiguous input. Perceptual constancy (FIS-2) is not tested by this figure and is reported as not assessed rather than intact.",
+      "interpretation": "Figure–ground separation is unstable, recorded as at risk under FIO-03. Nothing is marked failed, and interpretation (FIS-5) is intact: both the vase and the faces are correct readings of the stimulus, and FIO-05 requires a wrong meaning, not an alternating one. Perceptual constancy (FIS-2) is not tested by this figure and is reported as not assessed rather than intact.",
       "limitations": "The perceptual phenomenon is documented; its mapping to FIO classes is a conceptual analogy within the Zonules.com framework, not a finding of perception science. Reversible figures are not perceptual disorders.",
       "references": [
         "/figure-ground/",
         "/bistable-perception/",
         "/gestalt-principles/",
         "/visual-perception/"
-      ]
+      ],
+      "input_notes": {
+        "FIS-3": "Figure–ground assignment alternates between two equally valid organizations; the input is genuinely ambiguous, not noisy."
+      }
     },
     {
       "id": "CASE-C",
@@ -271,39 +275,41 @@
       "layer": "L3",
       "kind": "published-empirical",
       "application": "technical",
-      "context": "Goodfellow, Shlens and Szegedy (2015) showed that adding a small, visually imperceptible perturbation to an image correctly classified as a panda caused an image classifier to label it a gibbon with high confidence. The example is reproduced in the standard deep-learning reference text.",
+      "context": "Goodfellow, Shlens and Szegedy (ICLR 2015, Figure 1) applied the fast gradient sign method to GoogLeNet on ImageNet: an image classified as “panda” with 57.7% confidence, after the addition of an imperceptibly small perturbation, was classified as “gibbon” with 99.3% confidence.",
       "evidence": [
-        "SRC-028",
-        "SRC-017"
+        "SRC-028"
       ],
       "inputs": {
-        "FIS-1": "at-risk",
+        "FIS-1": null,
         "FIS-2": null,
         "FIS-3": "failed",
         "FIS-4": null,
-        "FIS-5": "failed"
+        "FIS-5": null
       },
       "expected": {
         "verdict": "compromised",
         "classes": {
-          "FIO-01": "at-risk",
-          "FIO-03": "failed",
-          "FIO-05": "failed"
+          "FIO-03": "failed"
         },
         "not_applicable": [],
         "not_assessed": [
+          "FIS-1",
           "FIS-2",
-          "FIS-4"
+          "FIS-4",
+          "FIS-5"
         ]
       },
-      "interpretation": "Separation from adversarial noise fails (FIO-03) and the output label is wrong (FIO-05). High confidence in a wrong label indicates that confidence did not track correctness, recorded as a calibration risk (FIO-01, at risk). Robustness to operating conditions and input provenance were not part of the published demonstration and are reported as not assessed.",
-      "limitations": "The classification restates a published result in FIO vocabulary; it is not a new experiment, benchmark, or performance claim. The engine did not analyse any image. Provenance is a separate property: a perfectly provenanced image can still be adversarially perturbed, and an unperturbed image can lack provenance.",
+      "interpretation": "Separation from adversarial noise fails (FIO-03, failed); the wrong label is the consequence of that input failure. Interpretation (FIS-5) is not scored separately because FIO-05 presupposes clean input, which this case lacks. A single confident error is consistent with, but does not establish, miscalibration, which is a property measured across many predictions; FIS-1 is therefore not assessed. Robustness across operating conditions (FIS-2) and provenance (FIS-4) were not part of the demonstration.",
+      "limitations": "The classification restates a published result in FIO vocabulary; it is not a new experiment, benchmark, or performance claim, and the engine analysed no image. Provenance is a separate property: a well-provenanced image can still be adversarially perturbed, and an unperturbed image can lack provenance.",
       "references": [
         "/adversarial-examples/",
         "/model-calibration/",
         "/robustness/",
         "/image-classification/"
-      ]
+      ],
+      "input_notes": {
+        "FIS-3": "A crafted perturbation, invisible to a human observer, overrides the image signal and changes the output label."
+      }
     }
   ]
 }

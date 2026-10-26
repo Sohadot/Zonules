@@ -8,23 +8,23 @@ status: approved
 layer: L2
 layer_name: Perception
 cluster: attention
-fio_class: FIO-04
-fis_criterion: FIS-4
+fio_class: FIO-03
+fis_criterion: FIS-3
 term_id: TRM-024
 concept_id: CON-provenance-failure
 safety_class: educational
 canonical: https://zonules.com/inattentional-blindness/
-last_reviewed: 2026-06-12
+last_reviewed: 2026-10-26
 claims: [CLM-088, CLM-089, CLM-090, CLM-091]
 sources: [SRC-005, SRC-004]
 related_terms: [selective-attention, visual-working-memory, depth-perception]
-seo_title: "Inattentional Blindness — When What You See Has No Provenance | Zonules.com"
-meta_description: "Inattentional blindness is the failure to notice a fully visible unexpected stimulus. The input was present but formed no record. A governed reference unit on perceptual provenance failure."
+seo_title: "Inattentional Blindness — When a Visible Signal Is Never Selected | Zonules.com"
+meta_description: "Inattentional blindness is the failure to notice a fully visible unexpected stimulus while attention is engaged elsewhere. A governed reference unit on salience misallocation (FIO-03)."
 ---
 
 # Inattentional Blindness
 
-> The input was present. The eyes were open. The visual cortex was active. And still, it was not seen. That is not a failure of vision — it is a failure of provenance.
+> The input was present. The eyes were open. The visual cortex was active. And still, it was not seen. That is not a failure of the eye — it is a failure of selection.
 
 ## Definition
 
@@ -40,18 +40,18 @@ The probability that an unexpected stimulus will be missed increases when it is 
 
 *Source: sensation and perception reference (SRC-005). See the source registry for classification.*
 
-## Provenance Failure
+## Signal–Noise Failure (Salience Misallocation)
 
-Inattentional blindness is a provenance failure in the perceptual system. [CLM-091] The visual signal was present — photons arrived, the retina responded — but the system has no record of it. No attended representation was formed, no trace enters working memory, and no content is available for subsequent report or comparison. In the focus-integrity sense, the input has no provenance: it existed in the world but not in the perceptual record.
+Within the Focus Integrity framework, inattentional blindness is a signal–noise failure of the salience-misallocation kind (FIO-03). [CLM-091] The unexpected stimulus is a real, visible signal, but attention is tuned to the features of the task target, so the stimulus is treated as part of the ground rather than separated out as figure. The dependence on dissimilarity from the attended target is exactly what a misallocation of salience predicts.
 
-This maps inattentional blindness to FIO-04 (Provenance Failure): the issue is not that the signal was too weak (signal-noise), not that it was interpreted wrongly (interpretation), but that it was never registered as having a representational origin.
+This is not a provenance failure (FIO-04): nothing is misattributed and no source is mistaken — the stimulus is simply never selected. Nor is it an interpretation failure (FIO-05), because no percept is formed to be misread. *(Reclassified from FIO-04 to FIO-03 on 2026-10-26; see `DECISION_LOG.md`.)*
 
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
 - **Cluster:** attention
-- **FIO class:** FIO-04 — Provenance Failure (the input was present but the perceptual system holds no record of it; it has no representational origin)
-- **FIS criterion:** FIS-4 — Provenance (intact perception means the source of attended inputs is correctly tracked and recorded)
+- **FIO class:** FIO-03 — Signal–Noise Failure (salience misallocation: a visible signal is not separated from the ground because attention is tuned elsewhere)
+- **FIS criterion:** FIS-3 — Separation (intact perception separates meaningful signal from the background within the limits of attention)
 
 ## Relationship to the Governing Thesis
 

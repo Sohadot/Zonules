@@ -57,7 +57,7 @@ Status key: **Verified in repo** — checkable from repository contents · **Nee
 
 ## Disclosure Note: Public Governance Documents
 
-Because the repository is public and served from its root, files such as `ASSET_THESIS.md`, `ASSET_INTELLIGENCE_FACTORY_PLAN.md`, and `ACQUISITION_POSTURE.md` are readable by anyone, and earlier versions remain in Git history. They contain internal positioning language (for example, the "Inevitability" and "Loss Question" framing) but no prices, buyer names, or credentials.
+Because the repository is public and served from its root, files such as `ASSET_THESIS.md`, `ASSET_INTELLIGENCE_FACTORY_PLAN.md`, `ACQUISITION_POSTURE.md`, and `DECISION_LOG.md` are readable by anyone (each returned HTTP 200 as `text/markdown` from `https://zonules.com/` on 2026-10-26), and earlier versions remain in Git history. They contain internal positioning language — the "Inevitability Principle" (`ASSET_THESIS.md`), and in `ASSET_INTELLIGENCE_FACTORY_PLAN.md` the "Banana Problem" analogy (which cites a six-million-dollar artwork sale and could be read as a price anchor), "moat" language, an income plan, and "The Loss Question" — but no prices for this asset, buyer names, or credentials.
 
 Minimal forward-looking mitigations, none applied without owner decision:
 

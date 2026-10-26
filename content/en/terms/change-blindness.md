@@ -8,18 +8,18 @@ status: approved
 layer: L2
 layer_name: Perception
 cluster: attention
-fio_class: FIO-04
-fis_criterion: FIS-4
+fio_class: FIO-03
+fis_criterion: FIS-3
 term_id: TRM-032
 concept_id: CON-temporal-provenance
 safety_class: educational
 canonical: https://zonules.com/change-blindness/
-last_reviewed: 2026-06-12
+last_reviewed: 2026-10-26
 claims: [CLM-117, CLM-118, CLM-119, CLM-120]
 sources: [SRC-005, SRC-006, SRC-004]
 related_terms: [inattentional-blindness, visual-working-memory, selective-attention]
-seo_title: "Change Blindness — Provenance Failure Across Time | Zonules.com"
-meta_description: "Change blindness is the failure to detect a large scene change across a brief disruption. Without a stored prior, the change has no detectable origin. A governed reference unit on perceptual provenance."
+seo_title: "Change Blindness — When a Change Signal Is Masked | Zonules.com"
+meta_description: "Change blindness is the failure to detect a large scene change across a brief disruption that masks the change signal. A governed reference unit on signal–noise failure across time (FIO-03)."
 ---
 
 # Change Blindness
@@ -38,18 +38,18 @@ Consistent with this, changes to objects that are the current focus of attention
 
 *Sources: sensation and perception and vision science references (SRC-005, SRC-006). See the source registry for classification.*
 
-## Provenance Failure Across Time
+## Signal–Noise Failure Across Time
 
-Change blindness is a provenance failure across time. [CLM-120] To detect a change, the system needs a record of the prior state to verify the new state against. Without a stored prior representation — because the changed element was never attended and stored — the system has no record against which to check, and the change has no detectable origin in the perceptual record. The new scene simply *is*; there is no remembered "before" to reveal that it differs.
+Within the Focus Integrity framework, change blindness is a signal–noise failure across time (FIO-03). [CLM-120] Normally a change produces a local transient that draws attention to it. The disruption — a flicker, a cut, a saccade — produces transients across the whole scene at once, so the change signal is no longer separable from the surrounding noise. Unless the changed element was already attended and stored, nothing singles it out.
 
-This places change blindness in FIO-04 alongside [inattentional blindness](/inattentional-blindness/), but along a different axis. Inattentional blindness is the failure to register a present stimulus at all. Change blindness is the failure to register that a stimulus has *changed* — a provenance failure not about a single input but about the relationship between two views across time. Both are failures of the perceptual record, not of the eye.
+This places change blindness in FIO-03 alongside [inattentional blindness](/inattentional-blindness/), along a different axis: inattentional blindness is a present signal that is never selected; change blindness is a change signal masked by global disruption. It is not a provenance failure (FIO-04): no source is misattributed. *(Reclassified from FIO-04 to FIO-03 on 2026-10-26; see `DECISION_LOG.md`.)*
 
 ## Layer Classification
 
 - **Layer:** L2 — Perception (attention as the second suspension)
 - **Cluster:** attention
-- **FIO class:** FIO-04 — Provenance Failure (no stored prior means the change has no verifiable origin in the perceptual record)
-- **FIS criterion:** FIS-4 — Provenance (intact function means prior states are recorded well enough to detect when the world changes)
+- **FIO class:** FIO-03 — Signal–Noise Failure (a global disruption masks the local change signal, so the change cannot be separated out)
+- **FIS criterion:** FIS-3 — Separation (intact function separates a meaningful change from disruption across views)
 
 ## Relationship to the Governing Thesis
 

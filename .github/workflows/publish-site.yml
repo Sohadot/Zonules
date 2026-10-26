@@ -1,16 +1,23 @@
-# Zonules.com — allowlisted static publication.
+# Zonules.com — publish the allowlisted static site to the public repository.
 #
-# Builds the public artifact from the repository (scripts/build_public_site.py),
-# runs every governance gate plus the publication safety gate, and deploys only
-# that artifact to GitHub Pages. Governance documents, scripts, registries, and
-# content sources are never part of the deployment.
+# Source (this repository, to become PRIVATE): Sohadot/Zonules
+# Publication (PUBLIC, GitHub Pages, clean history): Sohadot/zonules-public
 #
-# Deployment is OFF until the owner opts in. The deploy job runs only when ALL hold:
-#   - the run is on main,
-#   - the repository variable PAGES_PUBLISH_MODE is set to "actions",
-#   - Settings > Pages > Source is "GitHub Actions" (otherwise Pages rejects it).
-# Until then every push to main only builds and validates. Pushes to other
-# branches do not trigger this workflow at all.
+# The build job runs every governance gate, assembles the allowlisted artifact
+# (scripts/build_public_site.py), and re-validates it. The publish job checks
+# out the PUBLIC repository separately, syncs the artifact into it with
+# scripts/publish_public_repo.py (which refuses any shared history and re-runs
+# the publication gate on the exact tree), and makes a normal push of that
+# checkout's own branch. Source history, scripts, and registries never leave
+# this repository. There is no mirror push and no push from the source tree.
+#
+# Credential: an SSH deploy key with write access to Sohadot/zonules-public
+# ONLY, stored here as the secret PUBLIC_SITE_DEPLOY_KEY. It cannot read or
+# write any other repository.
+#
+# Publishing is OFF until the owner opts in by setting the repository variable
+# PUBLIC_PUBLISH_MODE=repo. Until then, pushes to main only build and validate.
+# Pushes to other branches do not trigger this workflow.
 name: Publish site
 
 on:
@@ -22,7 +29,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: pages
+  group: publish-public-site
   cancel-in-progress: false
 
 jobs:
@@ -36,22 +43,58 @@ jobs:
         run: python3 scripts/build_public_site.py --out _site
       - name: Publication safety gate on the exact artifact
         run: python3 scripts/validate_publication.py _site
-      - name: Upload Pages artifact
-        if: github.ref == 'refs/heads/main' && vars.PAGES_PUBLISH_MODE == 'actions'
-        uses: actions/upload-pages-artifact@v3
+      - name: Retain the validated artifact privately (rollback copy)
+        uses: actions/upload-artifact@v4
         with:
+          name: zonules-public-site
           path: _site
+          include-hidden-files: true
+          retention-days: 90
 
-  deploy:
+  publish:
     needs: build
-    if: github.ref == 'refs/heads/main' && vars.PAGES_PUBLISH_MODE == 'actions'
+    if: github.ref == 'refs/heads/main' && vars.PUBLIC_PUBLISH_MODE == 'repo'
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Check out source with full history (for the shared-history guard)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: source
+          persist-credentials: false
+      - name: Assemble and validate the artifact
+        run: |
+          python3 source/scripts/build_public_site.py --out "$RUNNER_TEMP/_site"
+          python3 source/scripts/validate_publication.py "$RUNNER_TEMP/_site"
+      - name: Configure the single-repository deploy key
+        env:
+          DEPLOY_KEY: ${{ secrets.PUBLIC_SITE_DEPLOY_KEY }}
+        run: |
+          test -n "$DEPLOY_KEY" || { echo "PUBLIC_SITE_DEPLOY_KEY is not set"; exit 1; }
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/zonules_public
+          chmod 600 ~/.ssh/zonules_public
+          # GitHub's published SSH host key (pinned; no trust-on-first-use).
+          echo 'github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl' > ~/.ssh/known_hosts
+          printf 'Host github.com\n  IdentityFile ~/.ssh/zonules_public\n  IdentitiesOnly yes\n' > ~/.ssh/config
+      - name: Clone the public repository
+        run: |
+          git clone --quiet git@github.com:Sohadot/zonules-public.git public
+          # Track main explicitly even if the remote default HEAD points elsewhere.
+          if git -C public ls-remote --exit-code --heads origin main >/dev/null; then
+            git -C public checkout -q -B main origin/main
+          fi
+      - name: Sync, guard, and commit
+        run: |
+          # First publish into the newly created, empty public repository.
+          INIT=""
+          if ! git -C public rev-parse --verify HEAD >/dev/null 2>&1; then
+            INIT="--allow-init"
+            git -C public symbolic-ref HEAD refs/heads/main
+          fi
+          python3 source/scripts/publish_public_repo.py --artifact "$RUNNER_TEMP/_site" --repo public --source source $INIT
+      - name: Push (normal fast-forward of the public checkout only)
+        run: git -C public push origin HEAD:main
+      - name: Remove the key from the runner
+        if: always()
+        run: rm -f ~/.ssh/zonules_public

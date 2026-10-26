@@ -19,6 +19,7 @@ It checks a built artifact directory independently of the script that built it:
 Usage:
   python scripts/validate_publication.py          # build to a temp dir and check
   python scripts/validate_publication.py DIR      # check an existing artifact
+  python scripts/validate_publication.py --repo DIR   # check a public-repo checkout
 """
 import importlib.util
 import json
@@ -32,7 +33,7 @@ BASE = "https://zonules.com"
 
 # The explicit public-output allowlist. Changing it is a publication decision
 # and requires a DECISION_LOG.md entry.
-ALLOWED_FILES = {"CNAME", "robots.txt", "sitemap.xml", "assets/css/reference.css"}
+ALLOWED_FILES = {"CNAME", ".nojekyll", "robots.txt", "sitemap.xml", "assets/css/reference.css"}
 ALLOWED_EXTRA_PAGES = {"/languages/"}
 
 DENY_EXTENSIONS = (".md", ".py", ".json", ".yml", ".yaml", ".js", ".mjs", ".ts",
@@ -81,10 +82,16 @@ def resolve(href, page_rel):
     return rel + "index.html" if rel.endswith("/") else rel
 
 
-def validate(art):
+def validate(art, repo_mode=False):
+    """repo_mode: art is a checkout of the public publication repository; its
+    own top-level .git directory is skipped (and nothing else is)."""
     errors = []
     files = set()
-    for dirpath, _dirs, names in os.walk(art):
+    for dirpath, dirs, names in os.walk(art):
+        if repo_mode and os.path.abspath(dirpath) == os.path.abspath(art) and ".git" in dirs:
+            if not os.path.isdir(os.path.join(art, ".git")):
+                errors.append(".git is not a directory")
+            dirs.remove(".git")
         for n in names:
             files.add(os.path.relpath(os.path.join(dirpath, n), art).replace(os.sep, "/"))
 
@@ -125,9 +132,10 @@ def validate(art):
 
 
 def main():
-    if len(sys.argv) > 1:
-        art = os.path.abspath(sys.argv[1])
-        errors, n = validate(art)
+    args = [a for a in sys.argv[1:] if a != "--repo"]
+    if args:
+        art = os.path.abspath(args[0])
+        errors, n = validate(art, repo_mode="--repo" in sys.argv)
     else:
         spec = importlib.util.spec_from_file_location(
             "build_public_site", os.path.join(ROOT, "scripts", "build_public_site.py"))

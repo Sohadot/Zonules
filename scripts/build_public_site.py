@@ -30,7 +30,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Files outside page directories that the public site needs.
-PUBLIC_FILES = ["CNAME", "robots.txt", "sitemap.xml", "assets/css/reference.css"]
+PUBLIC_FILES = ["CNAME", ".nojekyll", "robots.txt", "sitemap.xml", "assets/css/reference.css"]
 # Public pages that are generated but not held in a route registry.
 EXTRA_PAGES = ["/languages/"]
 

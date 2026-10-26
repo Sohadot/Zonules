@@ -1329,3 +1329,47 @@ These claims were attributed only to SRC-007 (a computer-vision textbook). SRC-0
 - **CLM-874** previously stated neural compensation for chromatic aberration as fact. The most direct source found, **SRC-031** Barkan & Spitzer, Frontiers in Bioengineering and Biotechnology 6:12, 2018, doi:10.3389/fbioe.2018.00012, states that compensation has been suggested but a general mechanism "still remains to be discovered". The claim and page sentence are **restated** to: "Several studies suggest that the visual system partly compensates for chromatic aberration in its neural processing, but no mechanism has been established." SRC-031 is cited for the status of the evidence, not for a mechanism.
 
 SRC-011 (Wandell) could not be checked: its online edition was unreachable. No translation exists for the three affected pages.
+
+---
+
+## Sprint 8D -- Private Source / Public Publication Separation (prepared, not cut over)
+
+**Date**: 2026-10-26
+**Commit**: `feat(publish): private-source to public-repo publication pipeline and cutover runbook`
+**Authority**: owner decision, 2026-10-26 — internal Zonules.com files must not remain accessible in any public GitHub repository.
+
+### Decision
+
+`Sohadot/Zonules` will become **private** and keep everything, with history unchanged. The website will be served from a new public repository, `Sohadot/zonules-public`, which has independent history and holds only the allowlisted artifact. This supersedes the Sprint 8C Pages-from-Actions design, which assumed a public source repository.
+
+### Changes
+
+- `scripts/publish_public_repo.py` (new) is the only path into the public repository. It enforces an exact-origin check (credentials never printed), a no-shared-commit guard against the source repository, re-validation of the exact tree, and a neutral `zonules-publisher` commit. It never pushes.
+- `scripts/validate_publication.py` gains `--repo` mode, which skips only the checkout's own `.git`. `.nojekyll` joins the allowlist (414 files).
+- `.github/workflows/publish-site.yml` is rewritten:
+  - the build job runs all gates and retains the artifact privately for 90 days;
+  - the publish job runs only on `main` and only with `PUBLIC_PUBLISH_MODE=repo`;
+  - it uses a write deploy key scoped to `zonules-public` (`PUBLIC_SITE_DEPLOY_KEY`) and the pinned GitHub ed25519 host key (checked against GitHub's published fingerprint page);
+  - it makes a normal fast-forward push only — no mirror and no force.
+- `docs/PUBLICATION_ARCHITECTURE.md` v0.2: audit, architecture, exposure statement, cutover runbook, and rollback that never republishes the internal repository.
+
+### Verification (local simulation against a bare repository)
+
+- First publish into an empty repository: 1 commit, 414 files.
+- Re-run: no-op. Content change: a second commit, fast-forward.
+- A restricted file in the artifact is refused.
+- A clone of the source history posing as the public repository is refused (113 shared commits detected).
+- A wrong origin is refused, and an embedded credential is masked in the error.
+- Across all public history, only allowlisted paths exist, and no public commit exists in the source repository.
+
+### Audit facts
+
+- Pages is legacy branch deployment from `Zonules/main` root.
+- Cloudflare proxies the apex domain; there is no GitHub verified-domain TXT record.
+- The owner is the sole collaborator. There are 0 forks.
+- No credentials were found in the 113-commit history.
+- The session cannot create repositories (HTTP 403), so `zonules-public` must be created by the owner.
+
+### Not done (owner actions; see the runbook)
+
+Verifying the domain, creating `zonules-public`, adding the deploy key and secret, merging, first publish, the Pages cutover, and making `Zonules` private. Nothing affecting production was executed.

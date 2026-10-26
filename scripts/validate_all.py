@@ -117,6 +117,17 @@ def main():
                     errors.append(f"{path} acquisition surface contains a price/valuation figure")
                 if "noindex" not in low:
                     errors.append(f"{path} acquisition surface must be noindex")
+                # Claim discipline: no unsupported exclusivity, validation, or value claims.
+                overclaims = ["indispensable", "impossible to recreate", "impossible to replicate",
+                              "exclusive ownership of the category", "scientifically validated",
+                              "guaranteed", "category intelligence factory", "sovereign"]
+                for phrase in overclaims:
+                    if phrase in low:
+                        errors.append(f"{path} acquisition surface contains unsupported claim '{phrase}'")
+                if "secure transaction" not in low or "escrow" not in low:
+                    errors.append(f"{path} acquisition surface missing the Secure Transaction (escrow) section")
+                if "mailto:agent@sohadot.com" not in low:
+                    errors.append(f"{path} acquisition surface missing the institutional contact path")
         else:
             # 4. Every claim cited in the body is registered; sourced claims are used.
             refs = set(re.findall(r"CLM-\d+", body))
@@ -163,6 +174,29 @@ def main():
             for link in links:
                 if link not in route_paths:
                     errors.append(f"engine class {cls} links to unregistered route {link}")
+        # Worked examples: references resolve, evidence is registered, kind is declared.
+        kinds = set(fie.get("example_kinds", {}))
+        for ex in fie.get("examples", []):
+            if ex.get("kind") not in kinds:
+                errors.append(f"engine example {ex.get('id')} has undeclared kind {ex.get('kind')}")
+            for sid in ex.get("evidence", []):
+                if sid not in src_ids:
+                    errors.append(f"engine example {ex['id']} cites unregistered source {sid}")
+            for link in ex.get("references", []):
+                if link not in route_paths:
+                    errors.append(f"engine example {ex['id']} links to unregistered route {link}")
+            if not ex.get("limitations"):
+                errors.append(f"engine example {ex['id']} missing limitations")
+        # Reproducibility: the engine's own classify() must reproduce every example.
+        # Requires Node.js; when absent the check is reported, not silently passed.
+        test_js = os.path.join(ROOT, "scripts", "test_engine.js")
+        if os.path.exists(test_js):
+            try:
+                res = subprocess.run(["node", test_js], capture_output=True, text=True)
+                if res.returncode != 0:
+                    errors.append("engine reproducibility tests failed: " + res.stdout.strip())
+            except FileNotFoundError:
+                print("  note: node not found; engine reproducibility tests not run")
     # 10b. Generated pages must be freshly built from their governed sources.
     for builder_name in ("build_engine.py", "build_gateway.py", "build_acquire.py",
                           "build_site.py", "generate_sitemap.py"):

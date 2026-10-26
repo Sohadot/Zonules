@@ -138,6 +138,8 @@ The reproducible procedure the engine executes:
 
 Reproducibility requirement: two operators applying FIA to the same structured input must reach the same FIO mapping. The protocol is rule-based; it contains no interpretive discretion.
 
+**Engine handling of uncertain input (FIE v0.2, 2026-10-26).** An applicable criterion that the operator leaves unanswered is reported as `not-assessed` and is never counted as `intact`; if no criterion is at risk or failed but any is not assessed, the verdict is "not fully assessed". Criteria outside a layer's `applicable_layers` (FIS-4 and FIS-5 at L1) are reported as `not-applicable` and are never scored, even if a value is supplied. These rules implement the existing FIS report states; FIO and FIS themselves are unchanged at v0.1. The engine classifies operator-supplied judgements; it does not verify them.
+
 The full engine specification is in `ASSET_INTELLIGENCE_FACTORY_PLAN.md` §6. The engine remains static, deterministic, client-side, and free of any network call or data collection.
 
 ---

@@ -10,9 +10,52 @@
  * Source of truth: data/focus-integrity-ontology.json,
  * data/focus-integrity-standard.json, data/focus-integrity-engine.json.
  * This file is inlined into static/engine/index.html by scripts/build_engine.py.
+ *
+ * classify() is the whole assessment protocol (FIA). It is a pure function and
+ * is exported for scripts/test_engine.js, so the worked examples published on
+ * the page are reproduced by the same code visitors run.
  */
 (function () {
   "use strict";
+
+  // FIA: a pure function of (layer, selections). Unanswered applicable criteria
+  // are "not-assessed" (never counted as intact); criteria outside the layer's
+  // scope are "not-applicable" and never scored.
+  function classify(FIE, FIS, layerId, selections) {
+    var L = FIE.layers[layerId];
+    var sel = selections || {};
+    var criteria = [], classes = {}, notApplicable = [], notAssessed = [];
+    var anyFailed = false, anyAtRisk = false;
+
+    FIS.criteria.forEach(function (c) {
+      if (L.criteria.indexOf(c.id) === -1) {
+        notApplicable.push(c.id);
+        criteria.push({ id: c.id, state: "not-applicable" });
+        return;
+      }
+      var st = sel[c.id];
+      if (st !== "intact" && st !== "at-risk" && st !== "failed") {
+        notAssessed.push(c.id);
+        criteria.push({ id: c.id, state: "not-assessed" });
+        return;
+      }
+      criteria.push({ id: c.id, state: st });
+      if (st === "failed") { anyFailed = true; classes[c.inverse_of] = "failed"; }
+      else if (st === "at-risk") { anyAtRisk = true; classes[c.inverse_of] = "at-risk"; }
+    });
+
+    var verdict = anyFailed ? "compromised"
+      : anyAtRisk ? "at-risk"
+      : notAssessed.length ? "incomplete"
+      : "intact";
+    return { layer: layerId, verdict: verdict, classes: classes, criteria: criteria,
+             not_applicable: notApplicable, not_assessed: notAssessed };
+  }
+
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = { classify: classify };
+  }
+  if (typeof document === "undefined") return;
 
   function readJSON(id) {
     var el = document.getElementById(id);
@@ -38,7 +81,9 @@
   FIO.classes.forEach(function (c) { fioById[c.id] = c; });
 
   var STATES = ["intact", "at-risk", "failed"];
-  var STATE_LABEL = { "intact": "Intact", "at-risk": "At risk", "failed": "Failed" };
+  var STATE_LABEL = { "intact": "Intact", "at-risk": "At risk", "failed": "Failed",
+    "not-assessed": "Not assessed", "not-applicable": "Not applicable" };
+  var VERDICT_CLASS = { "compromised": "failed", "at-risk": "at-risk", "intact": "intact", "incomplete": "incomplete" };
 
   var app = document.getElementById("fie-app");
   if (!app) return;
@@ -69,7 +114,8 @@
     var list = el("div", { "class": "fie-layers" });
     Object.keys(FIE.layers).forEach(function (lid) {
       var L = FIE.layers[lid];
-      var btn = el("button", { "type": "button", "class": "fie-layer", "data-layer": lid });
+      var btn = el("button", { "type": "button", "class": "fie-layer", "data-layer": lid,
+        "aria-pressed": state.layer === lid ? "true" : "false" });
       btn.appendChild(el("span", { "class": "fie-layer-id", text: lid }));
       btn.appendChild(el("span", { "class": "fie-layer-label", text: L.label }));
       btn.appendChild(el("span", { "class": "fie-layer-framing", text: L.framing }));
@@ -77,10 +123,32 @@
       list.appendChild(btn);
     });
     wrap.appendChild(list);
+    if (FIE.examples && FIE.examples.length) {
+      var ex = el("div", { "class": "fie-presets", "role": "group", "aria-label": "Load a worked example" });
+      ex.appendChild(el("span", { "class": "fie-presets-label", text: "Or load a worked example:" }));
+      FIE.examples.forEach(function (e) {
+        var b = el("button", { "type": "button", "class": "fie-preset", text: e.id + " · " + e.title });
+        b.addEventListener("click", function () { loadExample(e); });
+        ex.appendChild(b);
+      });
+      wrap.appendChild(ex);
+    }
     return wrap;
   }
 
+  function loadExample(e) {
+    state.layer = e.layer;
+    state.selections = {};
+    Object.keys(e.inputs).forEach(function (cid) {
+      if (e.inputs[cid]) state.selections[cid] = e.inputs[cid];
+    });
+    state.example = e;
+    render();
+    computeReading();
+  }
+
   function selectLayer(lid) {
+    state.example = null;
     state.layer = lid;
     state.selections = {};
     render();
@@ -122,6 +190,18 @@
       wrap.appendChild(row);
     });
 
+    Object.keys(L.not_applicable || {}).forEach(function (cid) {
+      var fis = fisById[cid];
+      wrap.appendChild(el("div", { "class": "fie-q fie-q-na" }, [
+        el("p", { "class": "fie-q-text" }, [
+          el("span", { "class": "fie-crit-id", text: fis.id + " · " + fis.name + " · not applicable" }),
+          el("span", { "class": "fie-q-question", text: L.not_applicable[cid] })
+        ])
+      ]));
+    });
+    wrap.appendChild(el("p", { "class": "fie-note", text:
+      "Leave a criterion unanswered if you cannot judge it. It is reported as not assessed and is never counted as intact." }));
+
     var actions = el("div", { "class": "fie-actions" });
     var run = el("button", { "type": "button", "class": "fie-run", text: "Compute reading" });
     run.addEventListener("click", computeReading);
@@ -133,44 +213,32 @@
   // Step 3 — deterministic reading
   function computeReading() {
     var L = FIE.layers[state.layer];
+    var result = classify(FIE, FIS, state.layer, state.selections);
     var findings = [];
-    var worst = "intact";
-
-    L.criteria.forEach(function (cid) {
-      var st = state.selections[cid] || "intact";
-      if (st === "failed") worst = "failed";
-      else if (st === "at-risk" && worst !== "failed") worst = "at-risk";
-      if (st === "intact") return;
-      var fis = fisById[cid];
+    result.criteria.forEach(function (c) {
+      if (c.state !== "failed" && c.state !== "at-risk") return;
+      var fis = fisById[c.id];
       var fioId = fis.inverse_of;
-      var fio = fioById[fioId];
-      var sign = st === "failed" ? L.prompts[cid].failed_sign : L.prompts[cid].atrisk_sign;
+      var sign = c.state === "failed" ? L.prompts[c.id].failed_sign : L.prompts[c.id].atrisk_sign;
       findings.push({
-        criterion: fis, state: st, sign: sign, fio: fio,
+        criterion: fis, state: c.state, sign: sign, fio: fioById[fioId],
         links: FIE.class_links[fioId] || []
       });
     });
-
-    renderReading(worst, findings);
+    renderReading(result, findings);
   }
 
-  function verdictKey(worst) {
-    if (worst === "failed") return "compromised";
-    if (worst === "at-risk") return "at-risk";
-    return "intact";
-  }
-
-  function renderReading(worst, findings) {
+  function renderReading(result, findings) {
     var L = FIE.layers[state.layer];
     var out = document.getElementById("fie-reading");
     clear(out);
     out.hidden = false;
 
-    var vkey = verdictKey(worst);
-    out.appendChild(el("h2", { "class": "fie-verdict fie-verdict-" + worst, "tabindex": "-1",
-      text: FIE.verdict_labels[vkey] }));
+    out.appendChild(el("h2", { "class": "fie-verdict fie-verdict-" + VERDICT_CLASS[result.verdict], "tabindex": "-1",
+      text: FIE.verdict_labels[result.verdict] }));
     out.appendChild(el("p", { "class": "fie-reading-sub",
-      text: "Focus Integrity Assessment · " + L.label }));
+      text: "Focus Integrity Assessment · " + L.label +
+        (state.example ? " · worked example " + state.example.id : "") }));
 
     if (L.medical_guard) {
       out.appendChild(el("p", { "class": "fie-guard", text:
@@ -178,9 +246,12 @@
         "It is not a diagnosis or assessment of any individual's eyes and is no substitute for a qualified eye-care professional." }));
     }
 
-    if (!findings.length) {
+    if (!findings.length && result.verdict === "intact") {
       out.appendChild(el("p", { "class": "fie-clean", text:
-        "Every applicable criterion is intact. Under this assessment, the suspension layer is holding focus." }));
+        "Every applicable criterion was judged intact. On the inputs supplied, no FIO class is triggered." }));
+    } else if (!findings.length) {
+      out.appendChild(el("p", { "class": "fie-note", text:
+        "No criterion was judged at risk or failed, but not every applicable criterion was assessed, so integrity cannot be reported as intact." }));
     } else {
       var list = el("div", { "class": "fie-findings" });
       findings.forEach(function (f) {
@@ -208,6 +279,18 @@
       });
       out.appendChild(list);
     }
+
+    function stateLine(ids, label) {
+      if (!ids.length) return;
+      out.appendChild(el("p", { "class": "fie-note", text: label + ": " + ids.map(function (id) {
+        return id + " " + fisById[id].name;
+      }).join(" · ") + "." }));
+    }
+    stateLine(result.not_assessed, "Not assessed (not counted as intact)");
+    stateLine(result.not_applicable, "Not applicable at this layer (not scored)");
+
+    out.appendChild(el("p", { "class": "fie-note", text:
+      "This reading classifies the judgements you supplied. It does not verify them, inspect any media, or replace domain-specific evaluation." }));
 
     out.appendChild(el("p", { "class": "fie-provenance", text:
       "Computed locally from FIO v" + FIO.version + " · FIS v" + FIS.version +

@@ -4,10 +4,13 @@
  * Embodies the thesis in three meaningful states:
  *   held      — the lens appears in focus; the fibers are hidden.
  *   revealed  — the hidden zonular fibers that hold it become visible.
- *   collapsed — the fibers are cut; the lens drifts and focus is lost.
+ *   collapsed — the fibers are cut; the lens loses its centred hold and the
+ *               image it helps form degrades.
  *
- * The visitor is meant to feel that focus was never a property of the lens.
- * It was produced by hidden tension. No network, no data collection.
+ * The visitor is meant to feel that focus was never a property of the lens
+ * alone. Captions keep the anatomy accurate: the zonules suspend the lens and
+ * transmit accommodative tension; they are one structure among many that
+ * vision depends on. No network, no data collection.
  * Inlined into static/gateway/index.html by scripts/build_gateway.py.
  */
 (function () {
@@ -16,15 +19,15 @@
   var STATES = {
     held: {
       cls: "",
-      text: "This is the lens, apparently in focus. <strong>Nothing visible is holding it.</strong>"
+      text: "This is the crystalline lens, apparently holding its place. <strong>Nothing visible is holding it.</strong>"
     },
     revealed: {
       cls: "is-revealed",
-      text: "These are the <strong>zonules</strong> — the hidden fibers that suspend the lens in precise tension. Focus was never the lens alone."
+      text: "These are the <strong>zonules</strong> — fine fibers that suspend the lens from the ciliary body and transmit the tension that lets it change shape for near and far focus. The lens never focused alone."
     },
     collapsed: {
       cls: "is-collapsed",
-      text: "Cut the fibers and the lens is still present — but <strong>focus collapses.</strong> Focus is a product of hidden structural tension."
+      text: "Weaken or break the fibers and the lens is still present — but it can tilt or shift and lose its ability to adjust. <strong>The image degrades.</strong> (Simplified: the cornea, retina, and brain matter too.)"
     }
   };
   var ORDER = ["held", "revealed", "collapsed"];

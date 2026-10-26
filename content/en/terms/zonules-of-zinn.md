@@ -14,9 +14,9 @@ term_id: TRM-001
 concept_id: CON-suspension
 safety_class: medical-educational
 canonical: https://zonules.com/zonules-of-zinn/
-last_reviewed: 2026-06-14
-claims: [CLM-001, CLM-002, CLM-003, CLM-004, CLM-005, CLM-560, CLM-561, CLM-1214, CLM-1215, CLM-1216, CLM-1217, CLM-1218, CLM-1219]
-sources: [SRC-001, SRC-002, SRC-003, SRC-004]
+last_reviewed: 2026-10-26
+claims: [CLM-001, CLM-002, CLM-003, CLM-004, CLM-005, CLM-560, CLM-561, CLM-1214, CLM-1215, CLM-1216, CLM-1217, CLM-1218, CLM-1219, CLM-1337, CLM-1338, CLM-1339, CLM-1340, CLM-1341]
+sources: [SRC-001, SRC-002, SRC-003, SRC-004, SRC-009, SRC-011]
 related_terms: [ciliary-body, crystalline-lens, lens-accommodation, lens-capsule]
 seo_title: "Zonules of Zinn — The Suspension System That Holds Focus | Zonules.com"
 meta_description: "The zonules of Zinn suspend the crystalline lens in precise tension, making accommodation and optical focus possible. A governed reference unit on the hidden suspension layer of vision."
@@ -42,11 +42,11 @@ The structure is named after **Johann Gottfried Zinn**, the 18th-century anatomi
 
 ## System Role
 
-Within the eye, the zonules occupy a specific functional position: they are not optical and they are not muscular. They are **structural**. They convert the contraction of a muscle into a controlled change in the geometry of a lens. Without them, the muscle has nothing to act upon and the lens has nothing to hold it.
+Within the eye, the zonules occupy a specific functional position: they are not optical and they are not muscular. They are **structural**. They convert the contraction of a muscle into a controlled change in the geometry of a lens. Without them, the ciliary muscle cannot act on the lens, and the lens is no longer held in its centred position.
 
 This is the role the entire asset is named for:
 
-> The eye may receive light, but without zonular support, focus collapses. [CLM-005]
+> The eye may receive light, but without zonular support the lens can be neither held in place nor adjusted, and focus degrades. [CLM-005]
 
 ## Layer Classification
 
@@ -71,7 +71,7 @@ In machine perception, calibration and spatial grounding play the suspension rol
 
 - **Zonule vs. zonules.** A zonule names one fiber; the zonules name the suspension system. This asset is positioned around the system.
 - **Zonules vs. ciliary muscle.** The muscle generates force; the zonules transmit it. They are not the same structure and do not have the same function.
-- **Suspension vs. focusing.** The zonules do not focus light. They hold and reshape the lens that does. Confusing the holding structure with the optical element is exactly the error the focus-integrity thesis exists to correct.
+- **Suspension vs. focusing.** The zonules do not focus light. They hold the lens and transmit the tension that lets it change shape. Confusing the holding structure with the optical element is exactly the error the focus-integrity thesis exists to correct.
 
 ## Failure Mode
 
@@ -94,6 +94,14 @@ The zonules are the literal origin of the Zonules.com thesis: they are the hidde
 
 A machine vision system has its own zonular equivalents: the calibration and spatial-grounding parameters that hold its reference frame steady so that what it focuses on stays where it belongs. [CLM-1218] Naming this parallel is the point of the asset: the same suspension logic recurs whether the holding structure is fibrous tissue or learned calibration. [CLM-1219]
 
+## Scope and Limits
+
+The zonules are necessary for a stable, adjustable lens; they are not the whole of focus, and they are not vision. Most of the eye's refractive power is supplied by the cornea; the crystalline lens contributes a smaller, adjustable share, and that adjustable share is what accommodation changes. [CLM-1337] Age-related loss of accommodation (presbyopia) is attributed mainly to progressive stiffening of the lens, not to failure of the zonules. [CLM-1338]
+
+Zonular weakness or rupture is associated with causes that include ocular trauma, inherited connective-tissue disorders such as Marfan syndrome, and pseudoexfoliation. [CLM-1339] Seeing also depends on the retina, the optic nerve, and central visual processing: zonular support is necessary for a well-positioned, adjustable lens but is not sufficient for vision. [CLM-1340]
+
+The extension of this suspension logic to attention and to machine calibration is the Zonules.com framework: an interpretive analogy that organizes the reference, not an anatomical finding or a proven universal law. [CLM-1341]
+
 ## Related Terms
 
 - [Ciliary body](/ciliary-body/) — the source of zonular tension and the muscle of accommodation
@@ -103,8 +111,8 @@ A machine vision system has its own zonular equivalents: the calibration and spa
 
 ## Reference Notes
 
-- **Sources:** SRC-001, SRC-002, SRC-003 (anatomical fact); SRC-004 (internal framework mapping).
-- **Claims:** CLM-001 through CLM-004 are sourced; CLM-005 is internal framework language.
+- **Sources:** SRC-001, SRC-002, SRC-003, SRC-009, SRC-011 (anatomical and physiological fact); SRC-004 (internal framework mapping).
+- **Claims:** CLM-001 through CLM-004 and CLM-1337 through CLM-1340 are sourced; CLM-005 and CLM-1341 are internal framework language.
 - **FIO/FIS:** governed by `REFERENCE_ARCHITECTURE.md`.
 
 ## Safety Notes

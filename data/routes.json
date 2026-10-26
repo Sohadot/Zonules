@@ -1,7 +1,7 @@
 {
   "id": "ROUTES",
   "name": "Zonules.com Route Registry",
-  "version": "2.6",
+  "version": "2.7",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "No public page may exist without an entry here. Draft pages must not appear in navigation, sitemap, or hreflang output.",
@@ -20,17 +20,19 @@
       "template": "acquire/index.html",
       "content": "acquire/index.html",
       "seo_title": "Acquisition — Zonules.com",
-      "meta_description": "Zonules.com is a developed category asset: a governed reference system and Category Intelligence Factory for focus, perception, and visual truth. Strategic inquiries only.",
+      "meta_description": "Zonules.com is a developed, governed reference framework for focus, perception, and machine vision: domain, ontology, standard, deterministic engine, reference corpus, and governance record. Private strategic inquiries only.",
       "required_internal_links": [
         "/",
-        "/focus-integrity-engine/"
+        "/focus-integrity-engine/",
+        "/focus-integrity-ontology/",
+        "/methodology/"
       ],
       "source_requirements": [],
       "claim_requirements": [],
       "safety_class": "institutional",
       "monetization": "acquisition",
       "governing_standard": "ACQUISITION_POSTURE.md",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/",
@@ -46,7 +48,7 @@
       "template": "index.html",
       "content": "index.html",
       "seo_title": "Zonules.com — The Hidden System That Makes Vision Possible",
-      "meta_description": "Zonules are not vision. They are what makes vision possible. A sovereign visual reference system mapping the hidden structures that hold focus across anatomy, perception, and machine vision.",
+      "meta_description": "Zonules are not vision. They are what makes vision possible. A governed, source-backed reference framework mapping the hidden structures that hold focus across anatomy, perception, and machine vision.",
       "required_internal_links": [
         "/zonules-of-zinn/",
         "/visual-perception/",
@@ -58,7 +60,7 @@
       "claim_requirements": [],
       "safety_class": "educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/focus-integrity-engine/",
@@ -74,7 +76,7 @@
       "template": "focus-integrity-engine/index.html",
       "content": "focus-integrity-engine/index.html",
       "seo_title": "Focus Integrity Engine | Zonules.com",
-      "meta_description": "Run the Focus Integrity Assessment: the same five criteria decide whether focus holds in the eye, in perception, or in a machine. Deterministic, computed locally, no data collected.",
+      "meta_description": "Run the Focus Integrity Assessment: one shared framework, layer-specific criteria, traceable failure classifications across anatomy, perception, and machine vision. Deterministic, computed locally, no data collected.",
       "required_internal_links": [
         "/zonules-of-zinn/",
         "/visual-perception/",
@@ -85,7 +87,7 @@
       "claim_requirements": [],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-12"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/zonules-of-zinn/",
@@ -112,7 +114,9 @@
       "source_requirements": [
         "SRC-001",
         "SRC-002",
-        "SRC-003"
+        "SRC-003",
+        "SRC-009",
+        "SRC-011"
       ],
       "claim_requirements": [
         "CLM-001",
@@ -127,11 +131,16 @@
         "CLM-1216",
         "CLM-1217",
         "CLM-1218",
-        "CLM-1219"
+        "CLM-1219",
+        "CLM-1337",
+        "CLM-1338",
+        "CLM-1339",
+        "CLM-1340",
+        "CLM-1341"
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-14"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/ciliary-body/",

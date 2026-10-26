@@ -58,3 +58,13 @@ body.aq {
 .aq-foot a { color: var(--focus-ring); }
 
 a { color: var(--focus-ring); }
+
+/* Verifiable facts, fit descriptions, and qualifying notes. */
+.aq-facts { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: 0.45rem; }
+.aq-facts li { border-left: 2px solid var(--fiber); padding-left: 0.8rem; }
+.aq-facts strong { color: var(--fiber-bright); }
+.aq-note { color: var(--muted); font-size: 0.88rem; margin: 1rem 0 0; }
+.aq-fit { margin: 0; display: grid; gap: 0.2rem; }
+.aq-fit dt { font-weight: 600; margin-top: 0.8rem; }
+.aq-fit dd { margin: 0; color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }

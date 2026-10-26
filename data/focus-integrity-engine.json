@@ -1,31 +1,77 @@
 {
   "id": "FIE",
   "name": "Focus Integrity Engine",
-  "version": "0.1",
+  "version": "0.2",
   "asset": "zonules.com",
   "protocol": "FIA",
   "governing_document": "REFERENCE_ARCHITECTURE.md",
-  "determinism_note": "Every reading is a pure function of the selected inputs, computed by inverting FIS criteria into FIO classes. No randomness, no network call, no data collection, no input leaves the device.",
-  "thesis_line": "The same five questions decide focus integrity — whether the system that sees is made of tissue, of attention, or of silicon.",
-  "verdict_order": ["failed", "at-risk", "intact"],
+  "determinism_note": "Every reading is a pure function of the selected inputs, computed by inverting FIS criteria into FIO classes. Unanswered criteria are reported as not assessed and never counted as intact; criteria outside a layer's scope are reported as not applicable and never scored. No randomness, no network call, no data collection, no input leaves the device.",
+  "thesis_line": "One shared framework. Layer-specific criteria. Traceable failure classifications.",
+  "verdict_order": [
+    "failed",
+    "at-risk",
+    "intact"
+  ],
   "verdict_labels": {
     "intact": "Focus integrity: intact",
     "at-risk": "Focus integrity: at risk",
-    "compromised": "Focus integrity: compromised"
+    "compromised": "Focus integrity: compromised",
+    "incomplete": "Focus integrity: not fully assessed"
   },
   "class_links": {
-    "FIO-01": ["/zonules-of-zinn/", "/vitreous-humor/", "/aqueous-humor/", "/optic-nerve/", "/visual-perception/", "/selective-attention/", "/sustained-attention/", "/model-calibration/"],
-    "FIO-02": ["/lens-accommodation/", "/iris/", "/pupillary-reflex/", "/visual-working-memory/", "/domain-shift/"],
-    "FIO-03": ["/cornea/", "/photoreceptors/", "/macula/", "/figure-ground/", "/gestalt-principles/", "/visual-saliency/", "/adversarial-examples/"],
-    "FIO-04": ["/machine-vision/", "/deepfake-detection/", "/image-provenance/", "/inattentional-blindness/", "/change-blindness/"],
-    "FIO-05": ["/retina/", "/visual-cortex/", "/depth-perception/", "/perceptual-constancy/", "/computer-vision/", "/object-detection/", "/image-classification/"]
+    "FIO-01": [
+      "/zonules-of-zinn/",
+      "/vitreous-humor/",
+      "/aqueous-humor/",
+      "/optic-nerve/",
+      "/visual-perception/",
+      "/selective-attention/",
+      "/sustained-attention/",
+      "/model-calibration/"
+    ],
+    "FIO-02": [
+      "/lens-accommodation/",
+      "/iris/",
+      "/pupillary-reflex/",
+      "/visual-working-memory/",
+      "/domain-shift/"
+    ],
+    "FIO-03": [
+      "/cornea/",
+      "/photoreceptors/",
+      "/macula/",
+      "/figure-ground/",
+      "/gestalt-principles/",
+      "/visual-saliency/",
+      "/adversarial-examples/"
+    ],
+    "FIO-04": [
+      "/machine-vision/",
+      "/deepfake-detection/",
+      "/image-provenance/",
+      "/inattentional-blindness/",
+      "/change-blindness/"
+    ],
+    "FIO-05": [
+      "/retina/",
+      "/visual-cortex/",
+      "/depth-perception/",
+      "/perceptual-constancy/",
+      "/computer-vision/",
+      "/object-detection/",
+      "/image-classification/"
+    ]
   },
   "layers": {
     "L1": {
       "label": "The biological eye",
-      "framing": "Anatomy is where the thesis is literal: fibers hold a lens in tension so focus can exist.",
+      "framing": "Anatomy is where the suspension logic is literal: zonular fibers hold the lens so that accommodation can occur. Three criteria apply; provenance and interpretation are not anatomical properties.",
       "medical_guard": true,
-      "criteria": ["FIS-1", "FIS-2", "FIS-3"],
+      "criteria": [
+        "FIS-1",
+        "FIS-2",
+        "FIS-3"
+      ],
       "prompts": {
         "FIS-1": {
           "question": "Are the structures that suspend the focal element identified and stable?",
@@ -42,13 +88,23 @@
           "failed_sign": "Signal is lost in scatter or opacity before it resolves.",
           "atrisk_sign": "Contrast is reduced but signal still resolves."
         }
+      },
+      "not_applicable": {
+        "FIS-4": "Provenance is not an anatomical property of the eye; recorded in FIO only as a conceptual bridge.",
+        "FIS-5": "Interpretation is performed beyond the eye's optics; it is not an anatomical property of lens suspension."
       }
     },
     "L2": {
       "label": "Human perception",
-      "framing": "In perception, attention is the suspension system: it holds an interpretation in place the way the zonules hold the lens.",
+      "framing": "In perception the suspension logic is a conceptual analogy: attention is modelled as the structure that holds an interpretation in place. All five criteria apply as analogies grounded in perception science.",
       "medical_guard": false,
-      "criteria": ["FIS-1", "FIS-2", "FIS-3", "FIS-4", "FIS-5"],
+      "criteria": [
+        "FIS-1",
+        "FIS-2",
+        "FIS-3",
+        "FIS-4",
+        "FIS-5"
+      ],
       "prompts": {
         "FIS-1": {
           "question": "Is attention holding the focal target steady against competing stimuli?",
@@ -79,9 +135,15 @@
     },
     "L3": {
       "label": "A machine vision system",
-      "framing": "In a machine, calibration and grounding play the suspension role. The age of synthetic media is a crisis of machine focus integrity.",
+      "framing": "In machine vision the criteria are technical applications: calibration and grounding, robustness to shift, separation from noise, provenance, and interpretation. The framework describes these failures; it does not detect them.",
       "medical_guard": false,
-      "criteria": ["FIS-1", "FIS-2", "FIS-3", "FIS-4", "FIS-5"],
+      "criteria": [
+        "FIS-1",
+        "FIS-2",
+        "FIS-3",
+        "FIS-4",
+        "FIS-5"
+      ],
       "prompts": {
         "FIS-1": {
           "question": "Is the model's spatial grounding and calibration stable?",
@@ -110,5 +172,138 @@
         }
       }
     }
-  }
+  },
+  "scope_statement": {
+    "is": "A deterministic, rule-based classifier. It maps structured judgements that you supply (intact, at risk, failed) onto the Focus Integrity Standard (FIS) and returns the corresponding Focus Integrity Ontology (FIO) classes with links to the reference units that explain them.",
+    "is_not": [
+      "an independent scientific validator — it does not verify whether your inputs are true",
+      "an automated authenticity or deepfake detector — it inspects no image or media",
+      "a medical or diagnostic tool — it assesses no individual's eyes",
+      "a machine-learning inference service — it contains no model and makes no network call",
+      "a replacement for qualified, domain-specific evaluation"
+    ]
+  },
+  "example_kinds": {
+    "published-empirical": "A phenomenon documented in published, peer-reviewed or standard reference literature.",
+    "source-derived": "A scenario constructed from registered reference sources; not a specific published case.",
+    "hypothetical": "An illustrative demonstration with no empirical basis claimed."
+  },
+  "examples": [
+    {
+      "id": "CASE-A",
+      "title": "Zonular weakness and lens-support instability",
+      "layer": "L1",
+      "kind": "source-derived",
+      "application": "literal",
+      "context": "An educational scenario drawn from standard ocular-anatomy references: the zonular fibers are weakened or partly ruptured, so the crystalline lens is no longer held in even, centred tension and can tilt or shift (described clinically as ectopia lentis). The lens itself is assumed clear.",
+      "evidence": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "inputs": {
+        "FIS-1": "failed",
+        "FIS-2": "at-risk",
+        "FIS-3": "intact"
+      },
+      "expected": {
+        "verdict": "compromised",
+        "classes": {
+          "FIO-01": "failed",
+          "FIO-02": "at-risk"
+        },
+        "not_applicable": [
+          "FIS-4",
+          "FIS-5"
+        ],
+        "not_assessed": []
+      },
+      "interpretation": "Suspension Failure (FIO-01) is the primary class: the focal element is present but its holding structure has given way. Because accommodation depends on tension transmitted through the zonules, the adjustable range is recorded as at risk (FIO-02). Provenance and interpretation are not applicable at the anatomical layer and do not affect the reading.",
+      "limitations": "Educational illustration only. It is not a clinical case, does not describe any individual, and is not a diagnosis. Real zonular disorders vary in cause and severity and require examination by a qualified eye-care professional. Lens clarity (FIS-3) is set by the scenario, not inferred.",
+      "references": [
+        "/zonules-of-zinn/",
+        "/crystalline-lens/",
+        "/lens-accommodation/",
+        "/ciliary-body/"
+      ]
+    },
+    {
+      "id": "CASE-B",
+      "title": "The reversible vase–faces figure",
+      "layer": "L2",
+      "kind": "published-empirical",
+      "application": "conceptual-analogy",
+      "context": "Rubin's reversible figure can be seen either as a vase or as two facing profiles. The image does not change; the assignment of figure and ground alternates. The phenomenon is documented in standard perception-science references.",
+      "evidence": [
+        "SRC-006",
+        "SRC-005"
+      ],
+      "inputs": {
+        "FIS-1": "intact",
+        "FIS-2": null,
+        "FIS-3": "at-risk",
+        "FIS-4": "intact",
+        "FIS-5": "at-risk"
+      },
+      "expected": {
+        "verdict": "at-risk",
+        "classes": {
+          "FIO-03": "at-risk",
+          "FIO-05": "at-risk"
+        },
+        "not_applicable": [],
+        "not_assessed": [
+          "FIS-2"
+        ]
+      },
+      "interpretation": "Figure–ground separation is unstable (FIO-03, at risk) and two interpretations compete (FIO-05, at risk). Nothing is marked failed: the visual system is behaving normally in response to genuinely ambiguous input. Perceptual constancy (FIS-2) is not tested by this figure and is reported as not assessed rather than intact.",
+      "limitations": "The perceptual phenomenon is documented; its mapping to FIO classes is a conceptual analogy within the Zonules.com framework, not a finding of perception science. Reversible figures are not perceptual disorders.",
+      "references": [
+        "/figure-ground/",
+        "/bistable-perception/",
+        "/gestalt-principles/",
+        "/visual-perception/"
+      ]
+    },
+    {
+      "id": "CASE-C",
+      "title": "An adversarial perturbation causes a confident misclassification",
+      "layer": "L3",
+      "kind": "published-empirical",
+      "application": "technical",
+      "context": "Goodfellow, Shlens and Szegedy (2015) showed that adding a small, visually imperceptible perturbation to an image correctly classified as a panda caused an image classifier to label it a gibbon with high confidence. The example is reproduced in the standard deep-learning reference text.",
+      "evidence": [
+        "SRC-028",
+        "SRC-017"
+      ],
+      "inputs": {
+        "FIS-1": "at-risk",
+        "FIS-2": null,
+        "FIS-3": "failed",
+        "FIS-4": null,
+        "FIS-5": "failed"
+      },
+      "expected": {
+        "verdict": "compromised",
+        "classes": {
+          "FIO-01": "at-risk",
+          "FIO-03": "failed",
+          "FIO-05": "failed"
+        },
+        "not_applicable": [],
+        "not_assessed": [
+          "FIS-2",
+          "FIS-4"
+        ]
+      },
+      "interpretation": "Separation from adversarial noise fails (FIO-03) and the output label is wrong (FIO-05). High confidence in a wrong label indicates that confidence did not track correctness, recorded as a calibration risk (FIO-01, at risk). Robustness to operating conditions and input provenance were not part of the published demonstration and are reported as not assessed.",
+      "limitations": "The classification restates a published result in FIO vocabulary; it is not a new experiment, benchmark, or performance claim. The engine did not analyse any image. Provenance is a separate property: a perfectly provenanced image can still be adversarially perturbed, and an unperturbed image can lack provenance.",
+      "references": [
+        "/adversarial-examples/",
+        "/model-calibration/",
+        "/robustness/",
+        "/image-classification/"
+      ]
+    }
+  ]
 }

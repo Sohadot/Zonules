@@ -1220,3 +1220,40 @@ No new pages were added. English master content remains unchanged except for pre
 ### Next Recommendation
 
 Run a broader French semantic QA sprint before the next expansion: improve page-specific meta descriptions, reduce repeated phrasing across generated French pages, and preserve the same registry-backed source and claim discipline.
+
+---
+
+## Sprint 8A -- Strategic Asset Hardening: Claim Discipline, Engine Uncertainty Handling, Worked Examples, Acquisition Surface
+
+**Date**: 2026-10-26
+**Commit**: `feat: harden claim discipline, engine uncertainty handling, and acquisition surface`
+
+### Rationale
+
+A claim-level audit of the gateway, engine, `/zonules-of-zinn/`, and `/acquire/` found the governing structure sound but several public statements stronger than the evidence: the gateway caption said cutting the fibers makes "focus collapse"; the engine said "the same five questions" apply everywhere although L1 applies three; the engine counted unanswered criteria as `intact`; and `/acquire/` used "sovereign" and "Category Intelligence Factory" as public descriptors without qualification. Corrections favour qualified precision. Governing sentences, FIO/FIS definitions, route identities, and the noindex policy for `/acquire/` are unchanged.
+
+### Changes
+
+- **Engine (FIE 0.1 -> 0.2).** `classify()` extracted as a pure, exported function. Unanswered applicable criteria are reported as `not-assessed` and never counted as `intact`; a new verdict "not fully assessed" applies when nothing is at risk or failed but something is unassessed. Not-applicable criteria (FIS-4/FIS-5 at L1) are shown with their reason and never scored. Layer framings now state the epistemic status of each layer (literal / conceptual analogy / technical application). A static "What this engine is — and is not" section was added. Layer buttons now expose `aria-pressed`.
+- **Worked examples.** Three examples added to `data/focus-integrity-engine.json` and rendered statically and as one-click presets: CASE-A (L1, source-derived zonular-weakness scenario -> FIO-01 failed, FIO-02 at risk), CASE-B (L2, Rubin's reversible figure, published phenomenon, conceptual analogy -> FIO-03 and FIO-05 at risk), CASE-C (L3, Goodfellow et al. 2015 adversarial example, published -> FIO-03 and FIO-05 failed, FIO-01 at risk). Each carries context, evidence, inputs, criteria, result, interpretation, limitations, and references.
+- **Reproducibility tests.** `scripts/test_engine.js` runs the engine's own `classify()` against every example and checks determinism, not-applicable handling, not-assessed handling, and FIS scope agreement. `scripts/validate_all.py` runs it when Node.js is available and validates example sources, kinds, routes, and limitations.
+- **Sources registry 0.3 -> 0.4.** SRC-028 added (Goodfellow, Shlens, Szegedy, ICLR 2015) for CASE-C. Extension only; no existing source changed.
+- **Claims registry 1.8 -> 1.9; routes registry 2.6 -> 2.7.** `/zonules-of-zinn/` gains a "Scope and Limits" section with CLM-1337 to CLM-1340 (sourced: corneal vs lenticular refractive share, presbyopia mainly lenticular, causes associated with zonular weakness, zonules necessary but not sufficient for vision) and CLM-1341 (internal framework: the cross-domain extension is an interpretive analogy, not a law). Three sentences were tightened ("focus collapses" -> "can be neither held in place nor adjusted, and focus degrades"; zonules "transmit the tension" rather than "reshape" the lens; the muscle "cannot act on the lens"). SRC-009 and SRC-011 added to the route's source requirements. The canonical definition paragraph is unchanged.
+- **Gateway.** Eyebrow and meta description now read "Governed Visual Reference Framework" in place of "Sovereign Visual Reference System". Suspension-reveal captions corrected for anatomy and marked as simplified. Added a one-line note framing the governing sentence as a conceptual thesis; claim-status tags on each layer card; a "How to read this reference" key (anatomical fact / conceptual analogy / technical application / strategic hypothesis); a short "Why this matters now" section separating sharpness, reliability, authenticity, provenance, and interpretation; and a clearer, still restrained ownership link ("For institutions exploring strategic ownership").
+- **Acquisition surface.** Rebuilt around five buyer questions: what the asset is; implemented-and-verifiable facts computed from the registries at build time; what is explicitly not claimed; the problem the framework organizes (and that it does not solve it operationally); plausible fit by category with name-fit, framework utility, and demand kept separate; components that may be included and what is not included; what recreating the package would involve (effort, not value); due diligence; a **Secure transaction** section on optional, mutually agreed independent escrow; and the private contact path. Still `noindex`, still excluded from the sitemap, no price, no named buyer.
+- **Quality gate.** `/acquire/` now also fails on unsupported claims ("indispensable", "impossible to recreate", "exclusive ownership of the category", "scientifically validated", "guaranteed", "sovereign", "category intelligence factory") and requires the escrow section and `mailto:` contact.
+- **Governance documents.** `ACQUISITION_POSTURE.md` 0.1 -> 0.2 (Evidence Posture replaces the public-facing Inevitability framing; claim discipline and escrow clause added). `REFERENCE_ARCHITECTURE.md` records engine handling of not-assessed and not-applicable criteria (FIO/FIS remain v0.1). New `docs/DUE_DILIGENCE_INVENTORY.md` (factual component inventory; no negotiation content).
+
+### Multilingual Effect
+
+`/fr/zonules-de-zinn/` and `/ar/zonules-of-zinn/` are condensed translations that predate the English "Scope and Limits" section and the tightened CLM-005 sentence. They remain accurate in substance but are now less complete than the English master. They are **flagged for translation review**, not regenerated and not re-marked as current. No other translated page is affected: the gateway, engine, and `/acquire/` have no translations.
+
+### Audit Observations (not changed)
+
+- `/inattentional-blindness/` and `/change-blindness/` are frozen as FIO-04 (Provenance). The mapping is defensible only through the "misattributed percept" reading of FIO-04 L2; a future FIO MINOR/MAJOR review may reconsider it. Not changed: frozen fields require their own governance entry.
+- `class_links` in the engine mix layers within a class (for example L1 anatomy pages appear in an L3 reading). Harmless but could be made layer-aware in a later engine version.
+- Governance Markdown at the repository root is publicly served; see `docs/DUE_DILIGENCE_INVENTORY.md` for proposed mitigation. Git history is not rewritten.
+
+### Verification
+
+See the commands and results recorded in the delivery report for this sprint: `build_gateway.py`, `build_engine.py`, `build_acquire.py`, `build_site.py`, `generate_sitemap.py`, `test_engine.js`, `validate_multilingual.py`, `validate_all.py`; headless-Chromium render at 1280px and 390px with no console errors and no horizontal overflow.

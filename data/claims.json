@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.8",
+  "version": "1.9",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -12287,6 +12287,54 @@
         "SRC-013"
       ],
       "page": "/ventral-stream/"
+    },
+    {
+      "id": "CLM-1337",
+      "status": "sourced",
+      "statement": "Most of the eye's refractive power is supplied by the cornea; the crystalline lens contributes a smaller, adjustable share, which is the part accommodation changes.",
+      "sources": [
+        "SRC-001",
+        "SRC-011"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1338",
+      "status": "sourced",
+      "statement": "Age-related loss of accommodation (presbyopia) is attributed mainly to progressive stiffening of the lens rather than to failure of the zonules.",
+      "sources": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1339",
+      "status": "sourced",
+      "statement": "Zonular weakness or rupture is associated with causes including ocular trauma, inherited connective-tissue disorders such as Marfan syndrome, and pseudoexfoliation.",
+      "sources": [
+        "SRC-003"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1340",
+      "status": "sourced",
+      "statement": "Vision also depends on the retina, the optic nerve, and central visual processing; zonular support is necessary for a well-positioned, adjustable lens but not sufficient for vision.",
+      "sources": [
+        "SRC-001",
+        "SRC-009"
+      ],
+      "page": "/zonules-of-zinn/"
+    },
+    {
+      "id": "CLM-1341",
+      "status": "internal-framework",
+      "statement": "Extending the zonular suspension logic to attention and machine calibration is an interpretive framework analogy, not an anatomical finding or a universal law.",
+      "sources": [
+        "SRC-004"
+      ],
+      "page": "/zonules-of-zinn/"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "SOURCES",
   "name": "Zonules.com Source Registry",
-  "version": "0.3",
+  "version": "0.4",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "classification_types": [
@@ -229,6 +229,14 @@
       "publisher": "Springer",
       "scope": "Statistical pattern recognition, probabilistic models, and machine-learning foundations.",
       "note": "Standard reference for the statistical foundations of machine learning."
+    },
+    {
+      "id": "SRC-028",
+      "type": "peer-reviewed",
+      "citation": "Goodfellow IJ, Shlens J, Szegedy C. Explaining and Harnessing Adversarial Examples. International Conference on Learning Representations (ICLR), 2015.",
+      "publisher": "ICLR",
+      "scope": "Adversarial perturbations of image inputs and their effect on image-classifier outputs, including the panda/gibbon demonstration.",
+      "note": "Peer-reviewed conference paper. Cited in the Focus Integrity Engine worked example CASE-C for the existence of the documented demonstration, not for any new performance claim."
     }
   ]
 }

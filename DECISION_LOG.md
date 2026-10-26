@@ -1298,3 +1298,34 @@ Structural coverage is complete: 986 sourced claims all cite at least one regist
 ### Public Exposure
 
 The governance Markdown at the repository root is live on `zonules.com` (HTTP 200, `text/markdown`), including `ASSET_INTELLIGENCE_FACTORY_PLAN.md` (banana-sale analogy, "moat", income plan, "The Loss Question") and the "Inevitability Principle" in `ASSET_THESIS.md`. No prices for this asset, buyer names, or credentials are exposed. No document was deleted or rewritten; options are recorded in `docs/DUE_DILIGENCE_INVENTORY.md` for owner decision.
+
+---
+
+## Sprint 8C -- Publication Isolation, Optics Citation Corrections, Arabic Link Repair
+
+**Date**: 2026-10-26
+**Commit**: `feat(publish): allowlisted Pages artifact pipeline; fix optics citations and Arabic dead links`
+
+### Publication isolation
+
+**Finding:** Pages deploys from `main` / root with `.nojekyll`, so every repository file is served on `zonules.com`, including governance Markdown, `docs/`, `data/`, `scripts/`, and `content/` (verified HTTP 200 on 2026-10-26).
+
+**Change:** `scripts/build_public_site.py` assembles an allowlisted artifact (413 files: registered routes, launched translations, `/languages/`, `CNAME`, `robots.txt`, `sitemap.xml`, `assets/css/reference.css`). `scripts/validate_publication.py` independently enforces the explicit allowlist, a denylist, registry completeness, in-artifact link/sitemap/hreflang integrity, and internal-strategy markers; it is blocking and runs inside `validate_all.py`. `.github/workflows/publish-site.yml` deploys only that artifact, only from `main`, and only after the owner sets `PAGES_PUBLISH_MODE=actions` and switches Pages to GitHub Actions. Pushing this branch triggers nothing.
+
+**Doctrine:** the root-publication doctrine (validator section 11) is retained on purpose: the root remains a complete generated site, which makes rollback a single settings change. The public allowlist is now a governed publication decision; changing it requires an entry here. Full plan, residual risks, and the repository-privacy recommendation: `docs/PUBLICATION_ARCHITECTURE.md`.
+
+**Scope limit:** this removes internal files from the website only. The GitHub repository remains public with its full history.
+
+### Arabic pilot dead links (found by the new gate)
+
+`/ar/lens-accommodation/`, `/ar/optic-nerve/`, and `/ar/retina/` linked to `/presbyopia/`, `/glaucoma/`, and `/macular-degeneration/`, which are not routes (404 on the live site). Related-term links now point to existing corpus pages: `/crystalline-lens/` (العدسة البلورية), `/optic-disc/` (القرص البصري), `/macula/` (البقعة). The same page rendered presbyopia as «قصر النظر الشيخي», which literally reads as myopia («short-sightedness»); corrected in two places to «طول النظر الشيخوخي». Flagged for native-speaker review.
+
+### Optics citation corrections (CLM-870, CLM-874, CLM-878)
+
+These claims were attributed only to SRC-007 (a computer-vision textbook). SRC-007 is retained (the freeze forbids reducing a sourced claim's attribution) but is not relied on. Sources registry 0.4 -> **0.5**; claims registry 1.9 -> **1.10**.
+
+- **CLM-870** ("aberrations reduce retinal image contrast even when the gross focus is correct"): + **SRC-029** Liang & Williams, JOSA A 14(11):2873-2883, 1997. Full text checked: aberrations beyond defocus and astigmatism reduce the eye's MTF and image quality, substantially at large pupils.
+- **CLM-878** ("cornea and lens partly offset each other's spherical aberration"): + **SRC-030** Artal & Guirao, Optics Letters 23(21):1713-1715, 1998, doi:10.1364/OL.23.001713. Abstract checked: corneal spherical aberration and coma exceed the whole eye's, indicating partial lenticular compensation.
+- **CLM-874** previously stated neural compensation for chromatic aberration as fact. The most direct source found, **SRC-031** Barkan & Spitzer, Frontiers in Bioengineering and Biotechnology 6:12, 2018, doi:10.3389/fbioe.2018.00012, states that compensation has been suggested but a general mechanism "still remains to be discovered". The claim and page sentence are **restated** to: "Several studies suggest that the visual system partly compensates for chromatic aberration in its neural processing, but no mechanism has been established." SRC-031 is cited for the status of the evidence, not for a mechanism.
+
+SRC-011 (Wandell) could not be checked: its online edition was unreachable. No translation exists for the three affected pages.

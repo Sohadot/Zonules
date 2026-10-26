@@ -14,9 +14,9 @@ term_id: TRM-219
 concept_id: CON-chromatic-aberration
 safety_class: medical-educational
 canonical: https://zonules.com/chromatic-aberration/
-last_reviewed: 2026-06-14
+last_reviewed: 2026-10-26
 claims: [CLM-872, CLM-873, CLM-874, CLM-875]
-sources: [SRC-011, SRC-007, SRC-004]
+sources: [SRC-011, SRC-007, SRC-031, SRC-004]
 related_terms: [optical-aberration, refraction, color-perception, cone-cells, spherical-aberration]
 seo_title: "Chromatic Aberration | Zonules.com"
 meta_description: "Chromatic aberration arises because the refractive index of the eye's media varies with wavelength, so different colors focus at slightly different planes."
@@ -32,9 +32,9 @@ Chromatic aberration arises because the refractive index of the eye's media vari
 
 ## Scientific Grounding
 
-The eye focuses long wavelengths slightly behind short wavelengths, producing longitudinal chromatic aberration. [CLM-873] The visual system partly compensates for chromatic aberration in its neural processing. [CLM-874]
+The eye focuses long wavelengths slightly behind short wavelengths, producing longitudinal chromatic aberration. [CLM-873] Several studies suggest that the visual system partly compensates for chromatic aberration in its neural processing, but no mechanism has been established. [CLM-874]
 
-*Sources: SRC-011, SRC-007. See the source registry for classification.*
+*Sources: SRC-011, SRC-007, SRC-031. See the source registry for classification.*
 
 ## Anatomical Role
 
@@ -61,7 +61,7 @@ Chromatic Aberration is one instance of the asset's governing claim: that focus 
 
 ## Reference Notes
 
-- **Sources:** SRC-011, SRC-007 (registered); SRC-004 (internal framework mapping).
+- **Sources:** SRC-011, SRC-007, SRC-031 (registered); SRC-004 (internal framework mapping).
 - **Claims:** CLM-872, CLM-873, CLM-874 sourced; CLM-875 internal framework.
 - **FIO/FIS:** governed by `REFERENCE_ARCHITECTURE.md`.
 

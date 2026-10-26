@@ -1,0 +1,57 @@
+# Zonules.com — allowlisted static publication.
+#
+# Builds the public artifact from the repository (scripts/build_public_site.py),
+# runs every governance gate plus the publication safety gate, and deploys only
+# that artifact to GitHub Pages. Governance documents, scripts, registries, and
+# content sources are never part of the deployment.
+#
+# Deployment is OFF until the owner opts in. The deploy job runs only when ALL hold:
+#   - the run is on main,
+#   - the repository variable PAGES_PUBLISH_MODE is set to "actions",
+#   - Settings > Pages > Source is "GitHub Actions" (otherwise Pages rejects it).
+# Until then every push to main only builds and validates. Pushes to other
+# branches do not trigger this workflow at all.
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Governance, multilingual, engine, and publication gates
+        run: python3 scripts/validate_all.py
+      - name: Assemble the allowlisted public artifact
+        run: python3 scripts/build_public_site.py --out _site
+      - name: Publication safety gate on the exact artifact
+        run: python3 scripts/validate_publication.py _site
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && vars.PAGES_PUBLISH_MODE == 'actions'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main' && vars.PAGES_PUBLISH_MODE == 'actions'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

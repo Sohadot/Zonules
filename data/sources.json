@@ -1,7 +1,7 @@
 {
   "id": "SOURCES",
   "name": "Zonules.com Source Registry",
-  "version": "0.4",
+  "version": "0.5",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "classification_types": [
@@ -237,6 +237,30 @@
       "publisher": "ICLR",
       "scope": "Adversarial perturbations of image inputs and the fast gradient sign method, including the GoogLeNet/ImageNet panda-to-gibbon demonstration (Figure 1).",
       "note": "Peer-reviewed conference paper (bibliographic data verified against the arXiv record and the paper's ICLR 2015 header on 2026-10-26). Cited in the Focus Integrity Engine worked example CASE-C for the existence of the documented demonstration, not for any new performance claim."
+    },
+    {
+      "id": "SRC-029",
+      "type": "peer-reviewed",
+      "citation": "Liang J, Williams DR. Aberrations and retinal image quality of the normal human eye. Journal of the Optical Society of America A, 14(11):2873-2883, 1997.",
+      "publisher": "Optica (Optical Society of America)",
+      "scope": "Wave-front measurement of the eye's classical and irregular aberrations and their effect on the modulation transfer function and retinal image quality.",
+      "note": "Peer-reviewed. Full text checked on 2026-10-26: aberrations beyond defocus and astigmatism reduce retinal image quality, substantially at large (7.3 mm) pupils and little at small (3 mm) pupils."
+    },
+    {
+      "id": "SRC-030",
+      "type": "peer-reviewed",
+      "citation": "Artal P, Guirao A. Contributions of the cornea and the lens to the aberrations of the human eye. Optics Letters, 23(21):1713-1715, 1998. doi:10.1364/OL.23.001713.",
+      "publisher": "Optica (Optical Society of America)",
+      "scope": "Relative contributions of corneal and lenticular aberrations, including spherical aberration and coma, to whole-eye optical quality.",
+      "note": "Peer-reviewed. Abstract checked on 2026-10-26: corneal spherical aberration and coma exceed those of the whole eye, indicating partial compensation by the crystalline lens."
+    },
+    {
+      "id": "SRC-031",
+      "type": "peer-reviewed",
+      "citation": "Barkan Y, Spitzer H. Neuronal Mechanism for Compensation of Longitudinal Chromatic Aberration-Derived Algorithm. Frontiers in Bioengineering and Biotechnology, 6:12, 2018. doi:10.3389/fbioe.2018.00012.",
+      "publisher": "Frontiers",
+      "scope": "Proposed S-cone-pathway model of neural compensation for longitudinal chromatic aberration, with a review of prior evidence.",
+      "note": "Peer-reviewed. Full text checked on 2026-10-26. Cited for the status of the evidence: neural compensation has been suggested, but the authors state that a general mechanism 'still remains to be discovered'. Not cited as establishing a mechanism."
     }
   ]
 }

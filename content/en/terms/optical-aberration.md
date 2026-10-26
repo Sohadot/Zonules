@@ -14,9 +14,9 @@ term_id: TRM-218
 concept_id: CON-optical-aberration
 safety_class: medical-educational
 canonical: https://zonules.com/optical-aberration/
-last_reviewed: 2026-06-14
+last_reviewed: 2026-10-26
 claims: [CLM-868, CLM-869, CLM-870, CLM-871]
-sources: [SRC-011, SRC-007, SRC-004]
+sources: [SRC-011, SRC-007, SRC-029, SRC-004]
 related_terms: [refraction, chromatic-aberration, spherical-aberration, crystalline-lens]
 seo_title: "Optical Aberration | Zonules.com"
 meta_description: "Optical aberrations are imperfections in an optical system that prevent light from converging to a single ideal point."
@@ -34,7 +34,7 @@ Optical aberrations are imperfections in an optical system that prevent light fr
 
 The eye exhibits both lower-order aberrations, such as defocus, and higher-order aberrations that degrade fine image quality. [CLM-869] Aberrations reduce retinal image contrast even when the gross focus is correct. [CLM-870]
 
-*Sources: SRC-011, SRC-007. See the source registry for classification.*
+*Sources: SRC-011, SRC-007, SRC-029. See the source registry for classification.*
 
 ## Anatomical Role
 
@@ -60,7 +60,7 @@ Optical Aberration is one instance of the asset's governing claim: that focus is
 
 ## Reference Notes
 
-- **Sources:** SRC-011, SRC-007 (registered); SRC-004 (internal framework mapping).
+- **Sources:** SRC-011, SRC-007, SRC-029 (registered); SRC-004 (internal framework mapping).
 - **Claims:** CLM-868, CLM-869, CLM-870 sourced; CLM-871 internal framework.
 - **FIO/FIS:** governed by `REFERENCE_ARCHITECTURE.md`.
 

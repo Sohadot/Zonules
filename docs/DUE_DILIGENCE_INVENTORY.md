@@ -29,12 +29,12 @@ Status key: **Verified in repo** — checkable from repository contents · **Nee
 | Registries (`data/routes.json`, `claims.json`, `sources.json`, `languages.json`, `translation-map.json`) | Original structured data. | No licence file. | Transferable by agreement. | Verified in repo |
 | Build and validation scripts (`scripts/`) | Original code. Python standard library only; Node.js used only for the optional engine test. | No licence file. | Transferable by agreement. No third-party package licences to carry. | Verified in repo |
 | Stylesheets and inline SVG illustrations | Original. No web fonts, images, or icon libraries are loaded. | No licence file. | Transferable by agreement. | Verified in repo |
-| Cited works (27 external sources, `data/sources.json`) | Third-party textbooks, papers, institutional and standards-body material. | Owned by their publishers. | **Not transferable and not included.** The corpus cites them; it does not reproduce them. | Verified in repo (citation only) |
+| Cited works (30 external sources, `data/sources.json`) | Third-party textbooks, papers, institutional and standards-body material. | Owned by their publishers. | **Not transferable and not included.** The corpus cites them; it does not reproduce them. | Verified in repo (citation only) |
 | Scientific terminology ("zonules", "zonules of Zinn", "ciliary zonule", etc.) | Public scientific vocabulary. | n/a | **Not ownable and not included.** | n/a |
 | Third-party standards referenced (e.g. C2PA) | Owned by their bodies. | Their own terms. | Referenced only; Zonules.com is not affiliated with, and does not replace, any standard. | Verified in repo |
 | Trademarks | None represented in the repository. | n/a | Any trademark position would need independent search and verification. | Needs external verification |
 | Version history (Git) | 110 commits at the time of writing, authored under the owner's accounts and by AI coding agents (commits attributed to "Claude"; two with a Cursor co-author trailer). | n/a | Confirm that AI-assisted contributions were made at the owner's direction under the tools' terms of service. | Needs external verification |
-| Hosting | GitHub Pages, published from the repository root. | GitHub terms. | Repository transfer or re-hosting; no runtime service, database, or credentials to migrate. | Verified in repo |
+| Hosting | GitHub Pages. Currently published from the repository root; an allowlisted artifact pipeline is prepared (`docs/PUBLICATION_ARCHITECTURE.md`). | GitHub terms. | Repository transfer or re-hosting; no runtime service, database, or credentials to migrate. | Verified in repo |
 
 ---
 
@@ -62,5 +62,6 @@ Because the repository is public and served from its root, files such as `ASSET_
 Minimal forward-looking mitigations, none applied without owner decision:
 
 - Keep all pricing, negotiation, and buyer-specific material out of this repository permanently.
-- Optionally publish the site from a build directory or separate branch so that governance Markdown is no longer served on `zonules.com`. This changes the root-publication doctrine and needs a `DECISION_LOG.md` entry.
+- Website exposure: addressed by the allowlisted publication pipeline prepared in Sprint 8C (`docs/PUBLICATION_ARCHITECTURE.md`); it takes effect only after the owner switches Pages to GitHub Actions. It does not affect visibility on github.com.
+- Repository exposure: only a private source repository (with a paid plan for Pages, or a separate public artifact repository) removes current files from public view; neither recalls existing clones, forks, or caches.
 - Do not rewrite Git history; treat it as part of the inspectable governance record.

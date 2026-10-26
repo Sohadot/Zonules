@@ -1,7 +1,7 @@
 {
   "id": "CLAIMS",
   "name": "Zonules.com Claim Registry",
-  "version": "1.9",
+  "version": "1.10",
   "asset": "zonules.com",
   "governing_document": "ASSET_THESIS.md",
   "note": "Every scientific claim is supported by a registered source, marked as conceptual interpretation, marked as internal framework, or excluded.",
@@ -8063,7 +8063,8 @@
       "status": "sourced",
       "statement": "Aberrations reduce retinal image contrast even when the gross focus is correct.",
       "sources": [
-        "SRC-007"
+        "SRC-007",
+        "SRC-029"
       ],
       "page": "/optical-aberration/"
     },
@@ -8097,9 +8098,10 @@
     {
       "id": "CLM-874",
       "status": "sourced",
-      "statement": "The visual system partly compensates for chromatic aberration in its neural processing.",
+      "statement": "Several studies suggest that the visual system partly compensates for chromatic aberration in its neural processing, but no mechanism has been established.",
       "sources": [
-        "SRC-007"
+        "SRC-007",
+        "SRC-031"
       ],
       "page": "/chromatic-aberration/"
     },
@@ -8135,7 +8137,8 @@
       "status": "sourced",
       "statement": "The cornea and lens of the eye partly offset each other's spherical aberration.",
       "sources": [
-        "SRC-007"
+        "SRC-007",
+        "SRC-030"
       ],
       "page": "/spherical-aberration/"
     },

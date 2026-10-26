@@ -14,9 +14,9 @@ term_id: TRM-220
 concept_id: CON-spherical-aberration
 safety_class: medical-educational
 canonical: https://zonules.com/spherical-aberration/
-last_reviewed: 2026-06-14
+last_reviewed: 2026-10-26
 claims: [CLM-876, CLM-877, CLM-878, CLM-879]
-sources: [SRC-011, SRC-007, SRC-004]
+sources: [SRC-011, SRC-007, SRC-030, SRC-004]
 related_terms: [optical-aberration, refraction, pupil, crystalline-lens, chromatic-aberration]
 seo_title: "Spherical Aberration | Zonules.com"
 meta_description: "Spherical aberration occurs when light passing through the periphery of a lens focuses at a different point than light through its center."
@@ -34,7 +34,7 @@ Spherical aberration occurs when light passing through the periphery of a lens f
 
 A larger pupil admits more peripheral rays and therefore increases spherical aberration. [CLM-877] The cornea and lens of the eye partly offset each other's spherical aberration. [CLM-878]
 
-*Sources: SRC-011, SRC-007. See the source registry for classification.*
+*Sources: SRC-011, SRC-007, SRC-030. See the source registry for classification.*
 
 ## Anatomical Role
 
@@ -61,7 +61,7 @@ Spherical Aberration is one instance of the asset's governing claim: that focus 
 
 ## Reference Notes
 
-- **Sources:** SRC-011, SRC-007 (registered); SRC-004 (internal framework mapping).
+- **Sources:** SRC-011, SRC-007, SRC-030 (registered); SRC-004 (internal framework mapping).
 - **Claims:** CLM-876, CLM-877, CLM-878 sourced; CLM-879 internal framework.
 - **FIO/FIS:** governed by `REFERENCE_ARCHITECTURE.md`.
 

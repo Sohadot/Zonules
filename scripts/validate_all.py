@@ -229,6 +229,16 @@ def main():
                 if line.startswith("  - "):
                     errors.append("multilingual: " + line[4:])
 
+    # 9e. Publication safety gate (Sprint 8C): the deployment artifact contains
+    #     only allowlisted public files and every link in it resolves.
+    publication_script = os.path.join(ROOT, "scripts", "validate_publication.py")
+    if os.path.exists(publication_script):
+        res = subprocess.run([sys.executable, publication_script], capture_output=True, text=True)
+        if res.returncode != 0:
+            for line in res.stdout.strip().splitlines():
+                if line.startswith("  - "):
+                    errors.append("publication: " + line[4:])
+
     # 9d. Translation-map schema integrity (Sprint 7A).
     tmap_path = os.path.join(ROOT, "data", "translation-map.json")
     if os.path.exists(tmap_path):

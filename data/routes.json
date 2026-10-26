@@ -8114,7 +8114,8 @@
       ],
       "source_requirements": [
         "SRC-011",
-        "SRC-007"
+        "SRC-007",
+        "SRC-029"
       ],
       "claim_requirements": [
         "CLM-868",
@@ -8124,7 +8125,7 @@
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-14"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/chromatic-aberration/",
@@ -8151,7 +8152,8 @@
       ],
       "source_requirements": [
         "SRC-011",
-        "SRC-007"
+        "SRC-007",
+        "SRC-031"
       ],
       "claim_requirements": [
         "CLM-872",
@@ -8161,7 +8163,7 @@
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-14"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/spherical-aberration/",
@@ -8188,7 +8190,8 @@
       ],
       "source_requirements": [
         "SRC-011",
-        "SRC-007"
+        "SRC-007",
+        "SRC-030"
       ],
       "claim_requirements": [
         "CLM-876",
@@ -8198,7 +8201,7 @@
       ],
       "safety_class": "medical-educational",
       "monetization": "none",
-      "last_reviewed": "2026-06-14"
+      "last_reviewed": "2026-10-26"
     },
     {
       "path": "/muller-cells/",
